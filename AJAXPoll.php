@@ -31,7 +31,7 @@ $wgExtensionCredits['parserhook'][] = array(
 	'version' => '1.4.1',
 	'author' => array( 'Dariusz Siedlecki', 'Jack Phoenix' ),
 	'description' => 'Allows AJAX-based polls with <tt>&lt;poll&gt;</tt> tag',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:AJAX_Poll'
+	'url' => 'https://www.mediawiki.org/wiki/Extension:AJAX_Poll'
 );
 
 // Internationalization + AJAX function
