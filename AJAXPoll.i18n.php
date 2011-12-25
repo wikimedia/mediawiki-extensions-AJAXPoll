@@ -208,7 +208,7 @@ $messages['nl'] = array(
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Nghtwlkr
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'poll-vote-update' => 'Din stemme har blitt oppdatert.',
 	'poll-vote-add' => 'Din stemme har blitt lagt til.',
 	'poll-vote-error' => 'Det oppstod et problem med behandlingen av din stemme, vennligst prøv igjen.',
