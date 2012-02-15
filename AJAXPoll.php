@@ -29,7 +29,7 @@ if( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'AJAX Poll',
-	'version' => '1.4.1',
+	'version' => '1.4.2',
 	'author' => array( 'Dariusz Siedlecki', 'Jack Phoenix' ),
 	'description' => 'Allows AJAX-based polls with <tt>&lt;poll&gt;</tt> tag',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:AJAX_Poll',
@@ -321,7 +321,7 @@ function buildHTML( $ID, $user, $lines = '', $extra_from_ajax = '' ) {
 				$percent = $wgLang->formatNum( round( ( isset( $poll_result[$i + 1] ) ? $poll_result[$i + 1] : 0 ) * 100 / $amountOfVotes, 2 ) );
 			}
 
-			if ( isset( $r[0] ) && $r[0] == $i ) {
+			if ( isset( $r[0] ) && ( $r[0] - 1 == $i ) ) {
 				$our = true;
 			} else {
 				$our = false;

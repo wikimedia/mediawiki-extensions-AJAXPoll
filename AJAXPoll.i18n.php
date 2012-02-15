@@ -66,8 +66,8 @@ $messages['de'] = array(
 	'poll-percent-votes' => '$1% aller Stimmen',
 	'poll-your-vote' => 'Du hast bereits für "$1" abgestimmt (am $2). Du kannst deine Stimme ändern, indem du eine der untenstehenden Antworten anklickst.',
 	'poll-no-vote' => 'Bitte stimme unten ab.',
-	'poll-info' => 'Es gab $1 Stimmen, seit der Erstellung der Umfrage am $2.', // @todo FIXME: out of date, needs PLURAL
-	'poll-submitting' => 'Bitte warte kurz, deine Stimme wird verarbeitet.',
+	'poll-info' => 'Es gab $1 Stimmen seit der Erstellung der Umfrage am $2.', // @todo FIXME: out of date, needs PLURAL
+	'poll-submitting' => 'Bitte warte kurz. Deine Stimme wird verarbeitet.',
 );
 
 /** Greek (Ελληνικά)
