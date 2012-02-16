@@ -26,14 +26,15 @@
 }
 
 .poll .pollAnswerName {
-	padding-left: 10px;
+	margin-top: 5px;
+	padding-left: 0px;
 	font-size: 0.9em;
 }
 
 .poll .pollAnswerVotes {
 	border: 1px solid #CCC;
 	width: 100%;
-	margin-left: 10px;
+	margin-left: 0px;
 	height: 12px;
 	font-size: 10px;
 	position: relative;
@@ -66,4 +67,21 @@
 
 .poll label {
 	cursor: pointer;
+}
+.poll input {
+	cursor: pointer;
+	vertical-align: middle; 
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+.poll #pollInfo {
+	margin-top: 20px;
+	color: grey;
+}
+
+.poll .pollMisc {
+	margin-bottom: 20px;
+	color: grey;
 }

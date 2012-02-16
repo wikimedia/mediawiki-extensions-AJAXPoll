@@ -17,7 +17,8 @@
  * @ingroup Extensions
  * @author Dariusz Siedlecki <datrio@gmail.com>
  * @author Jack Phoenix <jack@countervandalism.net>
- * @version 1.4.1
+ * @author Thomas Gries
+ * @version 1.500
  * @link http://www.mediawiki.org/wiki/Extension:AJAX_Poll Documentation
  */
 
@@ -29,8 +30,8 @@ if( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'AJAX Poll',
-	'version' => '1.4.2',
-	'author' => array( 'Dariusz Siedlecki', 'Jack Phoenix' ),
+	'version' => '1.500',
+	'author' => array( 'Dariusz Siedlecki', 'Jack Phoenix', 'Thomas Gries', ),
 	'description' => 'Allows AJAX-based polls with <tt>&lt;poll&gt;</tt> tag',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:AJAX_Poll',
 );
@@ -188,7 +189,7 @@ function submitVote( $ID, $answer ) {
 		'COUNT(*) AS c',
 		array(
 			'poll_id' => $ID,
-			'poll_user' => $dbw->addQuotes( $user )
+			'poll_user' => $user
 		),
 		__METHOD__
 	);
@@ -198,12 +199,12 @@ function submitVote( $ID, $answer ) {
 		$updateQuery = $dbw->update(
 			'poll_vote',
 			array(
-				"poll_answer='{$answer}'",
+				'poll_answer' => $answer,
 				'poll_date' => wfTimestampNow()
 			),
 			array(
 				'poll_id' => $ID,
-				'poll_user' => $dbw->addQuotes( $user )
+				'poll_user' => $user
 			),
 			__METHOD__
 		);
@@ -218,7 +219,7 @@ function submitVote( $ID, $answer ) {
 			'poll_vote',
 			array(
 				'poll_id' => $ID,
-				'poll_user' => $dbw->addQuotes( $user ),
+				'poll_user' => $user,
 				'poll_ip' => wfGetIP(),
 				'poll_answer' => $answer,
 				'poll_date' => wfTimestampNow()
@@ -275,7 +276,7 @@ function buildHTML( $ID, $user, $lines = '', $extra_from_ajax = '' ) {
 		array( 'poll_answer', 'poll_date' ),
 		array(
 			'poll_id' => $ID,
-			'poll_user' => $dbw->addQuotes( $user )
+			'poll_user' => $user
 		),
 		__METHOD__
 	);
@@ -321,17 +322,13 @@ function buildHTML( $ID, $user, $lines = '', $extra_from_ajax = '' ) {
 				$percent = $wgLang->formatNum( round( ( isset( $poll_result[$i + 1] ) ? $poll_result[$i + 1] : 0 ) * 100 / $amountOfVotes, 2 ) );
 			}
 
-			if ( isset( $r[0] ) && ( $r[0] - 1 == $i ) ) {
-				$our = true;
-			} else {
-				$our = false;
-			}
+			$our = ( isset( $r[0] ) && ( $r[0] - 1 == $i ) );
 
 			// If AJAX is enabled, as it is by default in modern MWs, we can
 			// just use sajax library function here for that AJAX-y feel.
 			// If not, we'll have to submit the form old-school way...
 			if ( $wgUseAjax ) {
-				$submitJS = "sajax_do_call(\"submitVote\", [\"" . $ID . "\", \"" . $i . "\"], document.getElementById(\"pollContainer" . $ID . "\"));";
+				$submitJS = "sajax_do_call(\"submitVote\",[\"" . $ID . "\",\"" . $i . "\"], document.getElementById(\"pollContainer" . $ID . "\"));";
 			} else {
 				$submitJS = "document.getElementById(\"pollIdAnswer" . $ID . "\").submit();";
 			}
@@ -343,9 +340,9 @@ function buildHTML( $ID, $user, $lines = '', $extra_from_ajax = '' ) {
 				$ans_no . "' onclick='document.getElementById(\"pollAjax" .
 				$ID . "\").innerHTML=\"" . wfMsg( 'poll-submitting' ) .
 				"\"; document.getElementById(\"pollAjax" . $ID .
-				"\").style.display=\"block\"; this.getElementsByTagName(\"input\")[0].checked = true; " .
+				"\").style.display=\"block\";this.getElementsByTagName(\"input\")[0].checked=true; " .
 				$submitJS . "'><input type='radio' id='p_answer" . $ans_no .
-				"' name='p_answer' value='" . $i . "' />" .
+				"' name='p_answer' value='" . $i . "'" . ( $our ? 'checked=true ' : '' ) . "/>" .
 				strip_tags( $lines[$i] ) .
 				"</label></div> <div class='pollAnswerVotes" . ( $our ? ' ourVote' : '' ) .
 				"' onmouseover='span=this.getElementsByTagName(\"span\")[0];tmpPollVar=span.innerHTML;span.innerHTML=span.title;span.title=\"\";' onmouseout='span=this.getElementsByTagName(\"span\")[0];span.title=span.innerHTML;span.innerHTML=tmpPollVar;'><span title='" .
