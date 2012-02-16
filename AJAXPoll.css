@@ -3,6 +3,7 @@
  * @file
  * @ingroup Extensions
  * @author Dariusz Siedlecki
+ * @author Thomas Gries
  */
 
 .poll {
@@ -12,11 +13,11 @@
 	padding: 10px 20px 10px 10px
 }
 
-.poll .pollQuestion {
+.poll .poll-question {
 	font-weight: bold;
 }
 
-.poll .pollAjax {
+.poll .poll-ajax {
 	background: #FFFFCF;
 	padding: 1px 4px;
 	width: 200px;
@@ -25,13 +26,13 @@
 	display: none;
 }
 
-.poll .pollAnswerName {
+.poll .poll-answer-name {
 	margin-top: 5px;
 	padding-left: 0px;
 	font-size: 0.9em;
 }
 
-.poll .pollAnswerVotes {
+.poll .poll-answer-vote {
 	border: 1px solid #CCC;
 	width: 100%;
 	margin-left: 0px;
@@ -40,7 +41,7 @@
 	position: relative;
 }
 
-.poll .pollAnswerVotes div {
+.poll .poll-answer-vote div {
 	border-right: 1px solid #CCC;
 	background: #E5E5E5;
 	position: absolute;
@@ -52,13 +53,13 @@
 	z-index: 2;
 }
 
-.poll .ourVote div {
+.poll .poll-our-vote div {
 	border: 1px solid #008000;
 	top: -1px;
 	left: -1px;
 }
 
-.poll .pollAnswerVotes span {
+.poll .poll-answer-vote span {
 	position: absolute;
 	top: -3px;
 	left: 3px;
@@ -76,12 +77,12 @@
 	margin-left: 0px;
 }
 
-.poll #pollInfo {
+.poll #poll-info {
 	margin-top: 20px;
 	color: grey;
 }
 
-.poll .pollMisc {
+.poll .poll-misc {
 	margin-bottom: 20px;
 	color: grey;
 }

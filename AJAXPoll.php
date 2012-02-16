@@ -75,8 +75,8 @@ function renderPoll( $input ) {
 	$lines = explode( "\n", trim( $input ) );
 
 	// Deprecating AJAX
-	/*if ( isset( $_POST['p_id'] ) && isset( $_POST['p_answer'] ) && $_POST['p_id'] == $ID ) {
-		submitVote( $_POST['p_id'], intval( $_POST['p_answer'] ) );
+	/*if ( isset( $_POST['poll-post-id'] ) && isset( $_POST['poll-post-answer'] ) && $_POST['poll-post-id'] == $ID ) {
+		submitVote( $_POST['poll-post-id'], intval( $_POST['poll-post-answer'] ) );
 	}*/
 
 	$dbw = wfGetDB( DB_MASTER );
@@ -112,7 +112,7 @@ function renderPoll( $input ) {
 			$retVal = buildStats( $ID, $user );
 			break;
 		default:
-			$retVal = '<div id="pollContainer' . $ID . '">' .
+			$retVal = '<div id="poll-container' . $ID . '">' .
 				buildHTML( $ID, $user, $lines ) .
 				'</div>';
 			break;
@@ -182,7 +182,7 @@ function submitVote( $ID, $answer ) {
 		return buildHTML( $ID, $user );
 	}
 
-	$answer = $dbw->strencode( ++$answer );
+	$answer = ++$answer;
 
 	$q = $dbw->select(
 		'poll_vote',
@@ -299,19 +299,19 @@ function buildHTML( $ID, $user, $lines = '', $extra_from_ajax = '' ) {
 		}
 		// HTML output has to be on one line thanks to a MediaWiki bug
 		// @see https://bugzilla.wikimedia.org/show_bug.cgi?id=1319
-		$ret = '<div id="pollId' . $ID . '" class="poll"><div class="pollAjax" id="pollAjax' . $ID . '"' .
+		$ret = '<div id="poll-id-' . $ID . '" class="poll"><div id="poll-ajax-' . $ID . '" class="poll-ajax"' .
 			$additionalAttributes . '>' . $message .
 			'</div><div class="pollQuestion">' . strip_tags( $lines[0] ) . '</div>';
 
 		// Different message depending on if the user has already voted or not.
 		if ( isset( $r[0] ) ) {
-			$ret .= '<div class="pollMisc">' . $tmp_date . '</div>';
+			$ret .= '<div class="poll-misc">' . $tmp_date . '</div>';
 		} else {
-			$ret .= '<div class="pollMisc">' . wfMsg( 'poll-no-vote' ) . '</div>';
+			$ret .= '<div class="poll-misc">' . wfMsg( 'poll-no-vote' ) . '</div>';
 		}
 
 		$ret .= '<form method="post" action="' . $wgTitle->getLocalURL() .
-			'" id="pollIdAnswer' . $ID . '"><input type="hidden" name="p_id" value="' . $ID . '" />';
+			'" id="poll-answer-id-' . $ID . '"><input type="hidden" name="poll-post-id" value="' . $ID . '" />';
 
 		for ( $i = 1; $i < count( $lines ); $i++ ) {
 			$ans_no = $i - 1;
@@ -328,27 +328,18 @@ function buildHTML( $ID, $user, $lines = '', $extra_from_ajax = '' ) {
 			// just use sajax library function here for that AJAX-y feel.
 			// If not, we'll have to submit the form old-school way...
 			if ( $wgUseAjax ) {
-				$submitJS = "sajax_do_call(\"submitVote\",[\"" . $ID . "\",\"" . $i . "\"], document.getElementById(\"pollContainer" . $ID . "\"));";
+				$submitJS = "sajax_do_call(\"submitVote\",[\"" . $ID . "\",\"" . $i . "\"], $(\"#poll-container" . $ID . "\")[0]);";
 			} else {
-				$submitJS = "document.getElementById(\"pollIdAnswer" . $ID . "\").submit();";
+				$submitJS = "$(\"#poll-answer-id-" . $ID . "\").submit();";
 			}
 
 			// HTML output has to be on one line thanks to a MediaWiki bug
 			// @see https://bugzilla.wikimedia.org/show_bug.cgi?id=1319
-			$ret .= "<div class='pollAnswer' id='pollAnswer" . $ans_no .
-				"'><div class='pollAnswerName'><label for='pollAnswerRadio" .
-				$ans_no . "' onclick='document.getElementById(\"pollAjax" .
-				$ID . "\").innerHTML=\"" . wfMsg( 'poll-submitting' ) .
-				"\"; document.getElementById(\"pollAjax" . $ID .
-				"\").style.display=\"block\";this.getElementsByTagName(\"input\")[0].checked=true; " .
-				$submitJS . "'><input type='radio' id='p_answer" . $ans_no .
-				"' name='p_answer' value='" . $i . "'" . ( $our ? 'checked=true ' : '' ) . "/>" .
-				strip_tags( $lines[$i] ) .
-				"</label></div> <div class='pollAnswerVotes" . ( $our ? ' ourVote' : '' ) .
-				"' onmouseover='span=this.getElementsByTagName(\"span\")[0];tmpPollVar=span.innerHTML;span.innerHTML=span.title;span.title=\"\";' onmouseout='span=this.getElementsByTagName(\"span\")[0];span.title=span.innerHTML;span.innerHTML=tmpPollVar;'><span title='" .
-				wfMsg( 'poll-percent-votes', sprintf( $percent ) ) . "'>" .
-				( ( isset( $poll_result ) && !empty( $poll_result[$i + 1] ) ) ? $poll_result[$i + 1] : 0 ) .
-				"</span><div style='width: " . $percent . "%;" . ( $percent == 0 ? ' border:0;' : '' ) . "'></div></div></div>";
+			$ret .= "
+<div id='poll-answer" . $ans_no . "' class='poll-answer'><div class='poll-answer-name'><label for='poll-answer-radio" . $ans_no . "' onclick='$(\"#poll-ajax-" . $ID . "\").innerHTML=\"" . wfMsg( 'poll-submitting' ) . "\";$(\"#poll-ajax-" . $ID . "\").css(\"display\",\"block\");this.getElementsByTagName(\"input\")[0].checked=true; " . $submitJS . "'><input type='radio' id='poll-post-answer" . $ans_no . "' name='poll-post-answer' value='" . $i . "'" . ( $our ? 'checked=true ' : '' ) . "/>" . strip_tags( $lines[$i] ) .
+"</label></div><div class='poll-answer-vote" . ( $our ? ' poll-our-vote' : '' ) ."' onmouseover='span=this.getElementsByTagName(\"span\")[0];tmpPollVar=span.innerHTML;span.innerHTML=span.title;span.title=\"\";' onmouseout='span=this.getElementsByTagName(\"span\")[0];span.title=span.innerHTML;span.innerHTML=tmpPollVar;'><span title='" . wfMsg( 'poll-percent-votes', sprintf( $percent ) ) . "'>" . ( ( isset( $poll_result ) && !empty( $poll_result[$i + 1] ) ) ? $poll_result[$i + 1] : 0 ) . "</span><div style='width: " . $percent . "%;" . ( $percent == 0 ? ' border:0;' : '' ) . "'></div></div>
+</div>
+";
 		}
 
 		$ret .= '</form>';
@@ -361,7 +352,7 @@ function buildHTML( $ID, $user, $lines = '', $extra_from_ajax = '' ) {
 			$wgLang->timeanddate( wfTimestamp( TS_MW, $start_date ), true /* adjust? */ )
 		);
 
-		$ret .= '<div id="pollInfo">' . $tmp_date . '</div>';
+		$ret .= '<div id="poll-info">' . $tmp_date . '</div>';
 
 		$ret .= '</div>';
 	} else {
