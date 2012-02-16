@@ -9,7 +9,7 @@
  * Question
  * Answer 1
  * Answer 2
- * ...
+ * Answer ...
  * Answer n
  * </poll>
  *
@@ -18,7 +18,8 @@
  * @author Dariusz Siedlecki <datrio@gmail.com>
  * @author Jack Phoenix <jack@countervandalism.net>
  * @author Thomas Gries
- * @version 1.500
+ * @maintainer Thomas Gries
+ * @version 1.600
  * @link http://www.mediawiki.org/wiki/Extension:AJAX_Poll Documentation
  */
 
@@ -30,7 +31,7 @@ if( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'AJAX Poll',
-	'version' => '1.500',
+	'version' => '1.600 20120216',
 	'author' => array( 'Dariusz Siedlecki', 'Jack Phoenix', 'Thomas Gries', ),
 	'description' => 'Allows AJAX-based polls with <tt>&lt;poll&gt;</tt> tag',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:AJAX_Poll',
@@ -75,8 +76,8 @@ function renderPoll( $input ) {
 	$lines = explode( "\n", trim( $input ) );
 
 	// Deprecating AJAX
-	/*if ( isset( $_POST['poll-post-id'] ) && isset( $_POST['poll-post-answer'] ) && $_POST['poll-post-id'] == $ID ) {
-		submitVote( $_POST['poll-post-id'], intval( $_POST['poll-post-answer'] ) );
+	/*if ( isset( $_POST['ajaxpoll-post-id'] ) && isset( $_POST['ajaxpoll-post-answer'] ) && $_POST['ajaxpoll-post-id'] == $ID ) {
+		submitVote( $_POST['ajaxpoll-post-id'], intval( $_POST['ajaxpoll-post-answer'] ) );
 	}*/
 
 	$dbw = wfGetDB( DB_MASTER );
@@ -112,7 +113,7 @@ function renderPoll( $input ) {
 			$retVal = buildStats( $ID, $user );
 			break;
 		default:
-			$retVal = '<div id="poll-container' . $ID . '">' .
+			$retVal = '<div id="ajaxpoll-container-' . $ID . '">' .
 				buildHTML( $ID, $user, $lines ) .
 				'</div>';
 			break;
@@ -164,7 +165,9 @@ function buildStats( $ID, $user ) {
 	);
 	$tab2 = $dbw->fetchRow( $res );
 
-	return "There are $tab[1] polls and $tab[0] votes given by $tab[2] different people.<br />The last vote has been given $clockago ago.<br/>During the last 48 hours, $tab2[0] votes have been given.";
+	return "There are $tab[1] polls and $tab[0] votes given by $tab[2] different people.<br />
+		The last vote has been given $clockago ago.<br/>
+		During the last 48 hours, $tab2[0] votes have been given.";
 }
 
 function submitVote( $ID, $answer ) {
@@ -210,9 +213,9 @@ function submitVote( $ID, $answer ) {
 		);
 		$dbw->commit();
 		if ( $updateQuery ) {
-			return buildHTML( $ID, $user, '', 'poll-vote-update' );
+			return buildHTML( $ID, $user, '', 'ajaxpoll-vote-update' );
 		} else {
-			return buildHTML( $ID, $user, '', 'poll-vote-error' );
+			return buildHTML( $ID, $user, '', 'ajaxpoll-vote-error' );
 		}
 	} else {
 		$insertQuery = $dbw->insert(
@@ -228,9 +231,9 @@ function submitVote( $ID, $answer ) {
 		);
 		$dbw->commit();
 		if ( $insertQuery ) {
-			return buildHTML( $ID, $user, '', 'poll-vote-add' );
+			return buildHTML( $ID, $user, '', 'ajaxpoll-vote-add' );
 		} else {
-			return buildHTML( $ID, $user, '', 'poll-vote-error' );
+			return buildHTML( $ID, $user, '', 'ajaxpoll-vote-error' );
 		}
 	}
 }
@@ -283,7 +286,7 @@ function buildHTML( $ID, $user, $lines = '', $extra_from_ajax = '' ) {
 
 	if ( $r = $dbw->fetchRow( $q ) ) {
 		$tmp_date = wfMsg(
-			'poll-your-vote',
+			'ajaxpoll-your-vote',
 			$lines[$r[0] - 1],
 			$wgLang->timeanddate( wfTimestamp( TS_MW, $r[1] ), true /* adjust? */ )
 		);
@@ -299,19 +302,34 @@ function buildHTML( $ID, $user, $lines = '', $extra_from_ajax = '' ) {
 		}
 		// HTML output has to be on one line thanks to a MediaWiki bug
 		// @see https://bugzilla.wikimedia.org/show_bug.cgi?id=1319
-		$ret = '<div id="poll-id-' . $ID . '" class="poll"><div id="poll-ajax-' . $ID . '" class="poll-ajax"' .
+		$ret = '<div id="ajaxpoll-id-' . $ID . '" class="ajaxpoll"><div id="ajaxpoll-ajax-' . $ID . '" class="ajaxpoll-ajax"' .
 			$additionalAttributes . '>' . $message .
-			'</div><div class="pollQuestion">' . strip_tags( $lines[0] ) . '</div>';
+			'</div>
+<script>
+var tmp;
+function mover(x){
+	var sp=$(x).find("span");
+	tmp=sp.html();
+	sp.text(sp.attr("title"));
+	sp.attr("title","");
+}
+function mout(x){
+	var sp=$(x).find("span");
+	sp.attr("title",sp.text());
+	sp.text(tmp);
+}
+</script>
+<div class="ajaxpoll-question">' . strip_tags( $lines[0] ) . '</div>';
 
 		// Different message depending on if the user has already voted or not.
 		if ( isset( $r[0] ) ) {
-			$ret .= '<div class="poll-misc">' . $tmp_date . '</div>';
+			$ret .= '<div class="ajaxpoll-misc">' . $tmp_date . '</div>';
 		} else {
-			$ret .= '<div class="poll-misc">' . wfMsg( 'poll-no-vote' ) . '</div>';
+			$ret .= '<div class="ajaxpoll-misc">' . wfMsg( 'ajaxpoll-no-vote' ) . '</div>';
 		}
 
 		$ret .= '<form method="post" action="' . $wgTitle->getLocalURL() .
-			'" id="poll-answer-id-' . $ID . '"><input type="hidden" name="poll-post-id" value="' . $ID . '" />';
+			'" id="ajaxpoll-answer-id-' . $ID . '"><input type="hidden" name="ajaxpoll-post-id" value="' . $ID . '" />';
 
 		for ( $i = 1; $i < count( $lines ); $i++ ) {
 			$ans_no = $i - 1;
@@ -328,16 +346,16 @@ function buildHTML( $ID, $user, $lines = '', $extra_from_ajax = '' ) {
 			// just use sajax library function here for that AJAX-y feel.
 			// If not, we'll have to submit the form old-school way...
 			if ( $wgUseAjax ) {
-				$submitJS = "sajax_do_call(\"submitVote\",[\"" . $ID . "\",\"" . $i . "\"], $(\"#poll-container" . $ID . "\")[0]);";
+				$submitJS = "sajax_do_call(\"submitVote\",[\"" . $ID . "\",\"" . $i . "\"], $(\"#ajaxpoll-container-" . $ID . "\")[0]);";
 			} else {
-				$submitJS = "$(\"#poll-answer-id-" . $ID . "\").submit();";
+				$submitJS = "$(\"#ajaxpoll-answer-id-" . $ID . "\").submit();";
 			}
 
 			// HTML output has to be on one line thanks to a MediaWiki bug
 			// @see https://bugzilla.wikimedia.org/show_bug.cgi?id=1319
 			$ret .= "
-<div id='poll-answer" . $ans_no . "' class='poll-answer'><div class='poll-answer-name'><label for='poll-answer-radio" . $ans_no . "' onclick='$(\"#poll-ajax-" . $ID . "\").innerHTML=\"" . wfMsg( 'poll-submitting' ) . "\";$(\"#poll-ajax-" . $ID . "\").css(\"display\",\"block\");this.getElementsByTagName(\"input\")[0].checked=true; " . $submitJS . "'><input type='radio' id='poll-post-answer" . $ans_no . "' name='poll-post-answer' value='" . $i . "'" . ( $our ? 'checked=true ' : '' ) . "/>" . strip_tags( $lines[$i] ) .
-"</label></div><div class='poll-answer-vote" . ( $our ? ' poll-our-vote' : '' ) ."' onmouseover='span=this.getElementsByTagName(\"span\")[0];tmpPollVar=span.innerHTML;span.innerHTML=span.title;span.title=\"\";' onmouseout='span=this.getElementsByTagName(\"span\")[0];span.title=span.innerHTML;span.innerHTML=tmpPollVar;'><span title='" . wfMsg( 'poll-percent-votes', sprintf( $percent ) ) . "'>" . ( ( isset( $poll_result ) && !empty( $poll_result[$i + 1] ) ) ? $poll_result[$i + 1] : 0 ) . "</span><div style='width: " . $percent . "%;" . ( $percent == 0 ? ' border:0;' : '' ) . "'></div></div>
+<div id='ajaxpoll-answer-" . $ans_no . "' class='ajaxpoll-answer'><div class='ajaxpoll-answer-name'><label for='ajaxpoll-answer-radio-" . $ans_no . "' onclick='$(\"#ajaxpoll-ajax-" . $ID . "\").html(\"" . wfMsg( 'ajaxpoll-submitting' ) . "\");$(\"#ajaxpoll-ajax-" . $ID . "\").css(\"display\",\"block\");$(this).addClass(\"ajaxpoll-checkevent\").prop(\"checked\",true); " . $submitJS . "'><input type='radio' id='ajaxpoll-post-answer-" . $ans_no . "' name='ajaxpoll-post-answer' value='" . $i . "'" . ( $our ? 'checked=true ' : '' ) . "/>" . strip_tags( $lines[$i] ) .
+"</label></div><div class='ajaxpoll-answer-vote" . ( $our ? ' ajaxpoll-our-vote' : '' ) ."' onmouseover='mover(this)' onmouseout='mout(this);'><span title='" . wfMsg( 'ajaxpoll-percent-votes', sprintf( $percent ) ) . "'>" . ( ( isset( $poll_result ) && !empty( $poll_result[$i + 1] ) ) ? $poll_result[$i + 1] : 0 ) . "</span><div style='width: " . $percent . "%;" . ( $percent == 0 ? ' border:0;' : '' ) . "'></div></div>
 </div>
 ";
 		}
@@ -346,13 +364,13 @@ function buildHTML( $ID, $user, $lines = '', $extra_from_ajax = '' ) {
 
 		// Display information about the poll (creation date, amount of votes)
 		$tmp_date = wfMsgExt(
-			'poll-info',
+			'ajaxpoll-info',
 			'parsemag', // parse PLURAL
 			$amountOfVotes, // amount of votes
 			$wgLang->timeanddate( wfTimestamp( TS_MW, $start_date ), true /* adjust? */ )
 		);
 
-		$ret .= '<div id="poll-info">' . $tmp_date . '</div>';
+		$ret .= '<div id="ajaxpoll-info">' . $tmp_date . '</div>';
 
 		$ret .= '</div>';
 	} else {
