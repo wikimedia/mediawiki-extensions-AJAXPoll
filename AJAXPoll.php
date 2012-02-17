@@ -32,8 +32,8 @@ $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'AJAX Poll',
 	'version' => '1.600 20120216',
-	'author' => array( 'Dariusz Siedlecki', 'Jack Phoenix', 'Thomas Gries', ),
-	'description' => 'Allows AJAX-based polls with <tt>&lt;poll&gt;</tt> tag',
+	'author' => array( 'Dariusz Siedlecki', 'Jack Phoenix', 'Thomas Gries' ),
+	'descriptionmsg' => 'ajaxpoll-desc',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:AJAX_Poll',
 );
 

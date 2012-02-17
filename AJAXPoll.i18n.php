@@ -12,14 +12,22 @@ $messages = array();
  * @author Dariusz Siedlecki
  */
 $messages['en'] = array(
+	'ajaxpoll-desc' => 'Allows AJAX-based polls with <tt>&lt;poll&gt;</tt> tag',
 	'ajaxpoll-vote-update' => 'Your vote has been updated.',
 	'ajaxpoll-vote-add' => 'Your vote has been added.',
 	'ajaxpoll-vote-error' => 'There was a problem with processing your vote, please try again.',
-	'ajaxpoll-percent-votes' => '$1% of all votes', // $1 is the percentage number of the votes
-	'ajaxpoll-your-vote' => 'You already voted for "$1" on $2, you can change your vote by clicking an answer below.', // $1 is the answer name, $2 is the date when the answer was casted
+	'ajaxpoll-percent-votes' => '$1% of all votes',
+	'ajaxpoll-your-vote' => 'You already voted for "$1" on $2, you can change your vote by clicking an answer below.',
 	'ajaxpoll-no-vote' => 'Please vote below.', // http://trac.wikia-code.com/changeset/867
-	'ajaxpoll-info' => 'There {{PLURAL:$1|was one vote|were $1 votes}} since the poll was created on $2.', // $1 is the number of votes, $2 is when the poll was started
+	'ajaxpoll-info' => 'There {{PLURAL:$1|was one vote|were $1 votes}} since the poll was created on $2.',
 	'ajaxpoll-submitting' => 'Please wait, submitting your vote.',
+);
+
+/** Message documenation */
+$messages['qqq'] = array(
+	'ajaxpoll-percent-votes' => '$1 is the percentage number of the votes',
+	'ajaxpoll-your-vote' => '$1 is the answer name, $2 is the date when the answer was casted',
+	'ajaxpoll-info' => '$1 is the number of votes, $2 is when the poll was started',
 );
 
 /** Afrikaans (Afrikaans)
