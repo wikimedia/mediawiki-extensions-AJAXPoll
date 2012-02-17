@@ -23,7 +23,7 @@ $messages['en'] = array(
 	'ajaxpoll-submitting' => 'Please wait, submitting your vote.',
 );
 
-/** Message documenation */
+/** Message documentation (Message documentation) */
 $messages['qqq'] = array(
 	'ajaxpoll-percent-votes' => '$1 is the percentage number of the votes',
 	'ajaxpoll-your-vote' => '$1 is the answer name, $2 is the date when the answer was casted',
@@ -46,7 +46,7 @@ $messages['af'] = array(
 $messages['ar'] = array(
 	'ajaxpoll-vote-update' => 'تم تحديث صوتك.',
 	'ajaxpoll-vote-add' => 'تم إضافة تصويتك',
-	'ajaxpoll-info' => 'هذه كانت $1 تصويتا منذ بداية التصويت في $2.', // @todo FIXME: out of date, needs PLURAL
+	'ajaxpoll-info' => 'هذه كانت $1 تصويتا منذ بداية التصويت في $2.',
 	'ajaxpoll-submitting' => 'من فضلك انتظر، يرسل صوتك.',
 );
 
@@ -58,24 +58,38 @@ $messages['br'] = array(
 	'ajaxpoll-vote-add' => 'Ouzhpennet eo bet ho vot.',
 	'ajaxpoll-vote-error' => "Ur gudenn a zo bet pa vezer oc'h ober war-dro ho vot. Mar plij klaskit adarre.",
 	'ajaxpoll-percent-votes' => '$1% eus hollad ar mouezhioù',
-	'ajaxpoll-your-vote' => "Votet ho peus dija evit \"$1\" d'an $2, tu 'zo deoc'h kemmañ ho vot en ur klikañ war unan eus ar respontoù da heul.",
+	'ajaxpoll-your-vote' => 'Votet ho peus dija evit "$1" d\'an $2, tu \'zo deoc\'h kemmañ ho vot en ur klikañ war unan eus ar respontoù da heul.',
 	'ajaxpoll-no-vote' => 'Mar plij votit amañ dindan.',
-	'ajaxpoll-info' => "$1 vot a zo bet abaoe ma 'z eo bet krouet ar sontadeg war $2.", // @todo FIXME: out of date, needs PLURAL
+	'ajaxpoll-info' => "$1 vot a zo bet abaoe ma 'z eo bet krouet ar sontadeg war $2.",
 	'ajaxpoll-submitting' => "Mar plij gortozit, emeur oc'h ober war-dro ho vot.",
 );
 
 /** German (Deutsch)
+ * @author Kghbln
  * @author Tim 'Avatar' Bartel
  */
 $messages['de'] = array(
+	'ajaxpoll-desc' => 'Ergänzt das Tag <code>&lt;poll&gt;</code> zum Erstellen AJAX-gestützter Umfragen',
 	'ajaxpoll-vote-update' => 'Deine Stimme wurde aktualisiert.',
 	'ajaxpoll-vote-add' => 'Deine Stimme wurde gezählt.',
-	'ajaxpoll-vote-error' => 'Es gab ein Problem bei der Verarbeitung deiner Stimme. Probiere es bitte noch einmal.',
-	'ajaxpoll-percent-votes' => '$1% aller Stimmen',
-	'ajaxpoll-your-vote' => 'Du hast bereits für "$1" abgestimmt (am $2). Du kannst deine Stimme ändern, indem du eine der untenstehenden Antworten anklickst.',
+	'ajaxpoll-vote-error' => 'Es gab ein Problem beim Verarbeiten deiner Stimme. Probiere es bitte noch einmal.',
+	'ajaxpoll-percent-votes' => '$1 % aller Stimmen',
+	'ajaxpoll-your-vote' => 'Du hast bereits am $2 für „$1“ abgestimmt. Du kannst deine Stimme ändern, indem du eine der untenstehenden Antworten anklickst.',
 	'ajaxpoll-no-vote' => 'Bitte stimme unten ab.',
-	'ajaxpoll-info' => 'Es gab $1 Stimmen seit der Erstellung der Umfrage am $2.', // @todo FIXME: out of date, needs PLURAL
+	'ajaxpoll-info' => 'Es {{PLURAL:$1|wurde|wurden}} seit Erstellung der Umfrage am $2 {{PLURAL:$1|eine Stimme|$1 Stimmen}} abgegeben.',
 	'ajaxpoll-submitting' => 'Bitte warte kurz. Deine Stimme wird verarbeitet.',
+);
+
+/** German (formal address) (‪Deutsch (Sie-Form)‬)
+ * @author Kghbln
+ */
+$messages['de-formal'] = array(
+	'ajaxpoll-vote-update' => 'Ihre Stimme wurde aktualisiert.',
+	'ajaxpoll-vote-add' => 'Ihre Stimme wurde gezählt.',
+	'ajaxpoll-vote-error' => 'Es gab ein Problem beim Verarbeiten Ihrer Stimme. Probieren Sie bitte noch einmal.',
+	'ajaxpoll-your-vote' => 'Sie haben bereits am $2 für „$1“ abgestimmt. Sie können Ihre Stimme ändern, indem Sie eine der untenstehenden Antworten anklicken.',
+	'ajaxpoll-no-vote' => 'Bitte stimmen Sie unten ab.',
+	'ajaxpoll-submitting' => 'Bitte warten Sie kurz. Ihre Stimme wird verarbeitet.',
 );
 
 /** Greek (Ελληνικά)
@@ -88,14 +102,16 @@ $messages['el'] = array(
 	'ajaxpoll-percent-votes' => '$1% επί των συνολικών ψήφων',
 	'ajaxpoll-your-vote' => 'Έχετε ήδη ψηφίσει το $1 στο $2, μπορείτε να αλλάξετε τη ψήφο σας πατώντας μια απάντηση παρακάτω.',
 	'ajaxpoll-no-vote' => 'Παρακαλώ ψηφίστε παρακάτω.',
-	'ajaxpoll-info' => 'Υπάρχουν $1 ψήφοι από τότε που δημιουργήθηκε η ψηφοφορία στις $2.', // @todo FIXME: out of date, needs PLURAL
+	'ajaxpoll-info' => 'Υπάρχουν $1 ψήφοι από τότε που δημιουργήθηκε η ψηφοφορία στις $2.',
 	'ajaxpoll-submitting' => 'Παρακαλώ περιμένετε,η ψήφο σας υποβάλλεται.',
 );
 
 /** Spanish (Español)
+ * @author Armando-Martin
  * @author Bola
  */
 $messages['es'] = array(
+	'ajaxpoll-desc' => 'Permite encuestas basadas en AJAX con etiqueta <tt>&lt;poll&gt;</tt>',
 	'ajaxpoll-vote-update' => 'Tu voto ha sido actualizado.',
 	'ajaxpoll-vote-add' => 'Tu voto ha sido añadido.',
 	'ajaxpoll-vote-error' => 'Ha habido un problema cuando comprobábamos tu voto, por favor, inténtalo de nuevo.',
@@ -162,13 +178,14 @@ $messages['hu'] = array(
  * @author McDutchie
  */
 $messages['ia'] = array(
+	'ajaxpoll-desc' => 'Permitte sondages a base de AJAX con le etiquetta <tt>&lt;poll&gt;</tt>',
 	'ajaxpoll-vote-update' => 'Tu voto ha essite actualisate.',
 	'ajaxpoll-vote-add' => 'Tu voto ha essite addite.',
 	'ajaxpoll-vote-error' => 'Un problema occurreva durante le tractamento de tu voto. Per favor reproba.',
 	'ajaxpoll-percent-votes' => '$1% de tote le votos',
 	'ajaxpoll-your-vote' => 'Tu ha ja votate pro "$1" in $2. Tu pote cambiar tu voto per cliccar super un responsa hic infra.',
 	'ajaxpoll-no-vote' => 'Per favor vota hic infra.',
-	'ajaxpoll-info' => 'Il habeva $1 votos post le creation del sondage le $2.', // @todo FIXME: out of date, needs PLURAL
+	'ajaxpoll-info' => 'Il habeva $1 {{PLURAL:$1|voto|votos}} post le creation del sondage al $2.',
 	'ajaxpoll-submitting' => 'Un momento, tu voto es submittite.',
 );
 
@@ -195,22 +212,8 @@ $messages['mk'] = array(
 	'ajaxpoll-percent-votes' => '$1% од вкупниот број на гласови',
 	'ajaxpoll-your-vote' => 'Веќе имате гласано за „$1“ на $2; можете да го промените гласот со кликнување на еден од одговорите подолу.',
 	'ajaxpoll-no-vote' => 'Гласајте подолу.',
-	'ajaxpoll-info' => 'Откако е создадена анкетата ($2) гласано е $1 пати.', // @todo FIXME: out of date, needs PLURAL
+	'ajaxpoll-info' => 'Откако е создадена анкетата ($2) гласано е $1 пати.',
 	'ajaxpoll-submitting' => 'Почекајте, го заведувам вашиот глас.',
-);
-
-/** Dutch (Nederlands)
- * @author Siebrand
- */
-$messages['nl'] = array(
-	'ajaxpoll-vote-update' => 'Uw stem is bijgewerkt.',
-	'ajaxpoll-vote-add' => 'Uw stem is toegevoegd.',
-	'ajaxpoll-vote-error' => 'Er is een probleem opgetreden tijdens het verwerken van uw stem. Probeer het opnieuw.',
-	'ajaxpoll-percent-votes' => '$1% van alle stemmen',
-	'ajaxpoll-your-vote' => 'U hebt al voor "$1" gestemd op $2. U kunt uw stem wijzigen door hieronder op een antwoord te klikken.',
-	'ajaxpoll-no-vote' => 'Stem hieronder.',
-	'ajaxpoll-info' => 'Er zijn {{PLURAL:$1|een stem|$1 stemmen}} uitgebracht sinds de peiling op $2 is aangemaakt.',
-	'ajaxpoll-submitting' => 'Even geduld alstublieft. Uw stem wordt opgeslagen...',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
@@ -227,7 +230,23 @@ $messages['nb'] = array(
 	'ajaxpoll-submitting' => 'Vennligst vent, sender inn stemmen din.',
 );
 
-/** Polish (Polskie)
+/** Dutch (Nederlands)
+ * @author SPQRobin
+ * @author Siebrand
+ */
+$messages['nl'] = array(
+	'ajaxpoll-desc' => 'Maakt AJAX-gebaseerde polls mogelijk met de tag <tt>&lt;poll&gt;</tt>',
+	'ajaxpoll-vote-update' => 'Uw stem is bijgewerkt.',
+	'ajaxpoll-vote-add' => 'Uw stem is toegevoegd.',
+	'ajaxpoll-vote-error' => 'Er is een probleem opgetreden tijdens het verwerken van uw stem. Probeer het opnieuw.',
+	'ajaxpoll-percent-votes' => '$1% van alle stemmen',
+	'ajaxpoll-your-vote' => 'U hebt al voor "$1" gestemd op $2. U kunt uw stem wijzigen door hieronder op een antwoord te klikken.',
+	'ajaxpoll-no-vote' => 'Stem hieronder.',
+	'ajaxpoll-info' => 'Er zijn {{PLURAL:$1|een stem|$1 stemmen}} uitgebracht sinds de peiling op $2 is aangemaakt.',
+	'ajaxpoll-submitting' => 'Even geduld alstublieft. Uw stem wordt opgeslagen...',
+);
+
+/** Polish (Polski)
  * @author Dariusz Siedlecki
  */
 $messages['pl'] = array(
@@ -237,7 +256,7 @@ $messages['pl'] = array(
 	'ajaxpoll-percent-votes' => '$1% wszystkich głosów',
 	'ajaxpoll-your-vote' => 'Zagłosowałeś juz na "$1" $2, możesz zaktualizować swój głos klikając na odpowiedź poniżej.',
 	'ajaxpoll-no-vote' => 'Podaj swój głos poniżej.',
-	'ajaxpoll-info' => 'Oddano już $1 głosy/ów od założenia ankiety dnia $2.', // @todo FIXME: out of date, needs PLURAL
+	'ajaxpoll-info' => 'Oddano już $1 głosy/ów od założenia ankiety dnia $2.',
 	'ajaxpoll-submitting' => 'Proszę czekać, trwa dodawanie głosu.',
 );
 
@@ -252,7 +271,7 @@ $messages['pms'] = array(
 	'ajaxpoll-percent-votes' => '$1% ëd tùit ij vot',
 	'ajaxpoll-your-vote' => 'A l\'ha già votà për "$1" su $2; a peul cangé sò vot an sgnacand su na rispòsta sì-sota.',
 	'ajaxpoll-no-vote' => 'Për piasì, voté sì-sota.',
-	'ajaxpoll-info' => "A son staje $1 vot da quand ël sondagi a l'é stàit creà su $2.", // @todo FIXME: out of date, needs PLURAL
+	'ajaxpoll-info' => "A son staje $1 vot da quand ël sondagi a l'é stàit creà su $2.",
 	'ajaxpoll-submitting' => "Për piasì ch'a speta, sò vot a l'é an camin ch'a riva.",
 );
 
@@ -275,17 +294,17 @@ $messages['pt-br'] = array(
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
-	'ajaxpoll-vote-add' => 'Ваш голос добавлен.',
 	'ajaxpoll-vote-update' => 'Ваш голос обновлён.',
+	'ajaxpoll-vote-add' => 'Ваш голос добавлен.',
 	'ajaxpoll-vote-error' => 'Возникла проблема с обработкой вашего голоса, пожалуйста, попробуйте ещё раз.',
 	'ajaxpoll-percent-votes' => '$1% от всех голосов',
 	'ajaxpoll-your-vote' => 'Вы уже проголосовали «$1» $2. Вы можете изменить свой выбор, нажав на один из представленных ниже ответов.',
 	'ajaxpoll-no-vote' => 'Пожалуйста, проголосуйте ниже.',
-	'ajaxpoll-info' => 'С момента создания голосования $2 поступило $1 голосов.', // @todo FIXME: out of date, needs PLURAL
+	'ajaxpoll-info' => 'С момента создания голосования $2 поступило $1 голосов.',
 	'ajaxpoll-submitting' => 'Пожалуйста, подождите, ваш голос обрабатывается.',
 );
 
-/** Serbian Cyrillic ekavian (Српски (ћирилица))
+/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
  * @author Sasa Stefanovic
  * @author Verlor
  */
@@ -308,3 +327,4 @@ $messages['zh'] = array(
 	'ajaxpoll-vote-error' => '投票過程發生問題，請再試一次',
 	'ajaxpoll-vote-update' => '你的投票已更新',
 );
+
