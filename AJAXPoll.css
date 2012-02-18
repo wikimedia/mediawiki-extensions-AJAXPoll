@@ -17,15 +17,6 @@
 	font-weight: bold;
 }
 
-.ajaxpoll .ajaxpoll-ajax {
-	background: #FFFFCF;
-	padding: 1px 4px;
-	width: 200px;
-	border-radius: 0.5em;
-	-moz-border-radius: 0.5em;
-	display: none;
-}
-
 .ajaxpoll .ajaxpoll-answer-name {
 	margin-top: 5px;
 	padding-left: 0px;
@@ -81,12 +72,20 @@
 	background: cyan;
 }
 
-.ajaxpoll #ajaxpoll-info {
-	margin-top: 20px;
+.ajaxpoll .ajaxpoll-misc {
+	margin-bottom: 10px;
 	color: grey;
 }
 
-.ajaxpoll .ajaxpoll-misc {
-	margin-bottom: 20px;
+.ajaxpoll .ajaxpoll-ajax {
+	background: #FFFFCF;
+	padding: 1px 4px;
+	width: 200px;
+	border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+}
+
+.ajaxpoll .ajaxpoll-info {
+	margin-top: 20px;
 	color: grey;
 }
