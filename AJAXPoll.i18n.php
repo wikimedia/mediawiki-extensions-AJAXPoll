@@ -50,6 +50,21 @@ $messages['ar'] = array(
 	'ajaxpoll-submitting' => 'من فضلك انتظر، يرسل صوتك.',
 );
 
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+ * @author Wizardist
+ */
+$messages['be-tarask'] = array(
+	'ajaxpoll-desc' => 'AJAX-апытаньні, якія можна дадаць тэгам <tt>&lt;poll&gt;</tt>',
+	'ajaxpoll-vote-update' => 'Ваш голас абноўлены.',
+	'ajaxpoll-vote-add' => 'Ваш голас захаваны.',
+	'ajaxpoll-vote-error' => 'Адбылася памылка падчас захаваньня Вашага голасу, калі ласка, паспрабуйце яшчэ.',
+	'ajaxpoll-percent-votes' => '$1% ад усіх галасоў',
+	'ajaxpoll-your-vote' => 'Вы ўжо прагаласавалі за варыянт «$1» $2. Вы можаце зьмяніць свой выбар, націснуўжы адзін з пададзеных ніжэй адказаў.',
+	'ajaxpoll-no-vote' => 'Калі ласка, прагаласуйце ніжэй.',
+	'ajaxpoll-info' => 'З моманту стварэньня галасаваньня $2 {{PLURAL:$1|пададзены $1 голас|пададзеныя $1 галасы|пададзена $1 галасоў}}.',
+	'ajaxpoll-submitting' => 'Калі ласкай, чакайце, ваш голас апрацоўваецца.',
+);
+
 /** Breton (Brezhoneg)
  * @author Y-M D
  */
@@ -124,6 +139,7 @@ $messages['es'] = array(
 
 /** Finnish (Suomi)
  * @author Jack Phoenix
+ * @author Nike
  */
 $messages['fi'] = array(
 	'ajaxpoll-vote-update' => 'Äänesi on päivitetty',
@@ -131,9 +147,9 @@ $messages['fi'] = array(
 	'ajaxpoll-vote-error' => 'Äänesi prosessoimisessa oli ongelma, yritä uudelleen.',
 	'ajaxpoll-percent-votes' => '$1% kaikista äänistä',
 	'ajaxpoll-your-vote' => 'Äänestit jo vaihtoehtoa "$1" $2, voit muuttaa ääntäsi napsauttamalla vastausta alempana',
-	'ajaxpoll-no-vote' => 'Äänestä alempana.',
+	'ajaxpoll-no-vote' => 'Voit äänestää alempana.',
 	'ajaxpoll-info' => '{{PLURAL:$1|Yksi ääni|$1 ääntä}} on annettu siitä lähtien kun tämä äänestys tehtiin, $2.',
-	'ajaxpoll-submitting' => 'Odota hetki, lähetetään ääntäsi.',
+	'ajaxpoll-submitting' => 'Odota hetki, äänesi lähetetään kirjattavaksi.',
 );
 
 /** French (Français)
@@ -154,13 +170,14 @@ $messages['fr'] = array(
  * @author Toliño
  */
 $messages['gl'] = array(
+	'ajaxpoll-desc' => 'Permite as enquisas baseadas en AJAX mediante a etiqueta <tt>&lt;poll&gt;</tt>',
 	'ajaxpoll-vote-update' => 'Actualizouse o seu voto.',
 	'ajaxpoll-vote-add' => 'Engadiuse o seu voto.',
-	'ajaxpoll-vote-error' => 'Houbo algún problema co procesamento do seu voto, por favor, inténteo de novo.',
+	'ajaxpoll-vote-error' => 'Houbo algún problema co procesamento do seu voto. Por favor, inténteo de novo.',
 	'ajaxpoll-percent-votes' => '$1% do total dos votos',
-	'ajaxpoll-your-vote' => 'Xa votou por "$1" o $2, pode cambiar o seu voto premendo nunha resposta das que aparecen a continuación.',
+	'ajaxpoll-your-vote' => 'Xa votou por "$1" o $2. Pode cambiar o seu voto premendo nunha resposta das que aparecen a continuación.',
 	'ajaxpoll-no-vote' => 'Por favor, vote a continuación.',
-	'ajaxpoll-info' => 'Recibíronse {{PLURAL:$1|un voto|$1 votos}} des que a enquisa foi creada o $2.',
+	'ajaxpoll-info' => '{{PLURAL:$1|Recibiuse un voto|Recibíronse $1 votos}} desde que a enquisa foi creada o $2.',
 	'ajaxpoll-submitting' => 'Por favor, agarde durante o envío do seu voto.',
 );
 
@@ -202,17 +219,30 @@ $messages['ja'] = array(
 	'ajaxpoll-submitting' => '投票を処理しています。少しお待ちください。',
 );
 
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'ajaxpoll-vote-update' => 'Är Stëmm gouf aktualiséiert.',
+	'ajaxpoll-vote-add' => 'Är Stëmm gouf derbäigesat.',
+	'ajaxpoll-vote-error' => 'Et gouf e Problem beim Verschaffe vun Ärer Stëmm, probéiert et w.e.g. nach eng kéier.',
+	'ajaxpoll-percent-votes' => '$1% vun alle Stëmmen',
+	'ajaxpoll-no-vote' => 'Stëmmt w.e.g hei drënner mat of.',
+	'ajaxpoll-submitting' => 'Waart w.e.g., Är Stëmm gëtt verschafft.',
+);
+
 /** Macedonian (Македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
+	'ajaxpoll-desc' => 'Овозможува анкети на основа на AJAX со ознаката <tt>&lt;poll&gt;</tt>',
 	'ajaxpoll-vote-update' => 'Вашиот глас е подновен.',
 	'ajaxpoll-vote-add' => 'Вашиот глас е додаден.',
 	'ajaxpoll-vote-error' => 'Се појави проблем при обработката на вашиот глас. Обидете се повторно.',
 	'ajaxpoll-percent-votes' => '$1% од вкупниот број на гласови',
 	'ajaxpoll-your-vote' => 'Веќе имате гласано за „$1“ на $2; можете да го промените гласот со кликнување на еден од одговорите подолу.',
 	'ajaxpoll-no-vote' => 'Гласајте подолу.',
-	'ajaxpoll-info' => 'Откако е создадена анкетата ($2) гласано е $1 пати.',
+	'ajaxpoll-info' => 'Откако е создадена анкетата ($2) {{PLURAL:$1|даден еден глас|дадени се $1 гласа}}.',
 	'ajaxpoll-submitting' => 'Почекајте, го заведувам вашиот глас.',
 );
 
@@ -247,6 +277,7 @@ $messages['nl'] = array(
 );
 
 /** Polish (Polski)
+ * @author BeginaFelicysym
  * @author Dariusz Siedlecki
  */
 $messages['pl'] = array(
@@ -256,7 +287,7 @@ $messages['pl'] = array(
 	'ajaxpoll-percent-votes' => '$1% wszystkich głosów',
 	'ajaxpoll-your-vote' => 'Zagłosowałeś juz na "$1" $2, możesz zaktualizować swój głos klikając na odpowiedź poniżej.',
 	'ajaxpoll-no-vote' => 'Podaj swój głos poniżej.',
-	'ajaxpoll-info' => 'Oddano już $1 głosy/ów od założenia ankiety dnia $2.',
+	'ajaxpoll-info' => 'Oddano już {{PLURAL:$1|jeden głos|$1 głosy|$1 głosów}} od założenia ankiety dnia $2.',
 	'ajaxpoll-submitting' => 'Proszę czekać, trwa dodawanie głosu.',
 );
 
