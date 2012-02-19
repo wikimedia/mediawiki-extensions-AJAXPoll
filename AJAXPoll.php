@@ -31,7 +31,7 @@ if( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'AJAX Poll',
-	'version' => '1.601 20120218',
+	'version' => '1.602 20120219',
 	'author' => array( 'Dariusz Siedlecki', 'Jack Phoenix', 'Thomas Gries' ),
 	'descriptionmsg' => 'ajaxpoll-desc',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:AJAX_Poll',
