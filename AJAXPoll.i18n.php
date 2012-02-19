@@ -107,6 +107,21 @@ $messages['de-formal'] = array(
 	'ajaxpoll-submitting' => 'Bitte warten Sie kurz. Ihre Stimme wird verarbeitet.',
 );
 
+/** Lower Sorbian (Dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'ajaxpoll-desc' => 'Pśidawa toflicku <tt>&lt;poll&gt;</tt> za wótgłosowanja na zakłaźe AJAX',
+	'ajaxpoll-vote-update' => 'Twójo wótgłosowanje jo se zaktualizěrowało.',
+	'ajaxpoll-vote-add' => 'Twójo wótgłosowanje jo se pśidało.',
+	'ajaxpoll-vote-error' => 'Jo problem był pśi pśeźěłowanju twójogo głosa, pšosym wopytaj hyšći raz.',
+	'ajaxpoll-percent-votes' => '$1 % wšyknych głosow',
+	'ajaxpoll-your-vote' => 'Sy južo $2 za "$1" wótgłosował, móžoš swój głos změniś, z tym až kliknjoš dołojce na wótegrono.',
+	'ajaxpoll-no-vote' => 'Pšosym wótgłosuj dołojce.',
+	'ajaxpoll-info' => '{{PLURAL:$1|Jo se jaden głos wótedał|Stej se $1 głosa wótedałej|Su se $1 głose wótedali|Jo se $1 głosow wótedało}}, wót casa ako wótgłosowanje jo se $2 napórało.',
+	'ajaxpoll-submitting' => 'Pšosym cakaj, twój głos se pśeźěłujo.',
+);
+
 /** Greek (Ελληνικά)
  * @author Περίεργος
  */
@@ -179,6 +194,21 @@ $messages['gl'] = array(
 	'ajaxpoll-no-vote' => 'Por favor, vote a continuación.',
 	'ajaxpoll-info' => '{{PLURAL:$1|Recibiuse un voto|Recibíronse $1 votos}} desde que a enquisa foi creada o $2.',
 	'ajaxpoll-submitting' => 'Por favor, agarde durante o envío do seu voto.',
+);
+
+/** Upper Sorbian (Hornjoserbsce)
+ * @author Michawiki
+ */
+$messages['hsb'] = array(
+	'ajaxpoll-desc' => 'Přidawa tafličku <tt>&lt;poll&gt;</tt> za wotghosowanja na zakładźe AJAX',
+	'ajaxpoll-vote-update' => 'Twoje wothłosowanje je so zaktualizowało.',
+	'ajaxpoll-vote-add' => 'Twoje wothłosowanje je so přidało.',
+	'ajaxpoll-vote-error' => 'Je problem při předźěłowanju twojeho hłosa był, prošu spytaj hišće raz.',
+	'ajaxpoll-percent-votes' => '$1 % wšěch hłosow',
+	'ajaxpoll-your-vote' => 'Sy hižo $2 za "$1" wothłosował, móžeš swój hłós změnić, kliknjo deleka na wotmołwu.',
+	'ajaxpoll-no-vote' => 'Prošu wothłosuj deleka.',
+	'ajaxpoll-info' => '{{PLURAL:$1|Je so jedyn hłós wotedał|Stej so $1 hłosaj wotedałoj|Su so $1 hłosy wotedali|Je so $1 hłosow wotedało}}, wot toho časa, zo wothłosowanje je so $2 wutworiło.',
+	'ajaxpoll-submitting' => 'Prošu čakaj, twój hłós so předźěłuje.',
 );
 
 /** Hungarian (Magyar)
@@ -281,6 +311,7 @@ $messages['nl'] = array(
  * @author Dariusz Siedlecki
  */
 $messages['pl'] = array(
+	'ajaxpoll-desc' => 'Umożliwia wstawienie opartych na technologii AJAX ankiet przy pomocy znacznika <tt>&lt;poll&gt;</tt>',
 	'ajaxpoll-vote-update' => 'Twój głos został zmieniony.',
 	'ajaxpoll-vote-add' => 'Twój głos został dodany.',
 	'ajaxpoll-vote-error' => 'Wystąpił błąd w czasie dodawania głosu, proszę spróbować później.',
