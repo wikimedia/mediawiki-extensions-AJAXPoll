@@ -51,18 +51,19 @@ $messages['ar'] = array(
 );
 
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+ * @author Jim-by
  * @author Wizardist
  */
 $messages['be-tarask'] = array(
-	'ajaxpoll-desc' => 'AJAX-апытаньні, якія можна дадаць тэгам <tt>&lt;poll&gt;</tt>',
-	'ajaxpoll-vote-update' => 'Ваш голас абноўлены.',
-	'ajaxpoll-vote-add' => 'Ваш голас захаваны.',
+	'ajaxpoll-desc' => 'Дазваляе AJAX-апытаньні, якія можна дадаць тэгам <tt>&lt;poll&gt;</tt>',
+	'ajaxpoll-vote-update' => 'Ваш голас быў абноўлены.',
+	'ajaxpoll-vote-add' => 'Ваш голас быў даданы.',
 	'ajaxpoll-vote-error' => 'Адбылася памылка падчас захаваньня Вашага голасу, калі ласка, паспрабуйце яшчэ.',
 	'ajaxpoll-percent-votes' => '$1% ад усіх галасоў',
-	'ajaxpoll-your-vote' => 'Вы ўжо прагаласавалі за варыянт «$1» $2. Вы можаце зьмяніць свой выбар, націснуўжы адзін з пададзеных ніжэй адказаў.',
+	'ajaxpoll-your-vote' => 'Вы ўжо прагаласавалі за варыянт «$1» $2, Вы можаце зьмяніць свой выбар, націснуўжы адзін з пададзеных ніжэй адказаў.',
 	'ajaxpoll-no-vote' => 'Калі ласка, прагаласуйце ніжэй.',
 	'ajaxpoll-info' => 'З моманту стварэньня галасаваньня $2 {{PLURAL:$1|пададзены $1 голас|пададзеныя $1 галасы|пададзена $1 галасоў}}.',
-	'ajaxpoll-submitting' => 'Калі ласкай, чакайце, ваш голас апрацоўваецца.',
+	'ajaxpoll-submitting' => 'Калі ласкай, чакайце, ваш голас дадаецца.',
 );
 
 /** Breton (Brezhoneg)
@@ -96,12 +97,13 @@ $messages['de'] = array(
 );
 
 /** German (formal address) (‪Deutsch (Sie-Form)‬)
+ * @author Geitost
  * @author Kghbln
  */
 $messages['de-formal'] = array(
 	'ajaxpoll-vote-update' => 'Ihre Stimme wurde aktualisiert.',
 	'ajaxpoll-vote-add' => 'Ihre Stimme wurde gezählt.',
-	'ajaxpoll-vote-error' => 'Es gab ein Problem beim Verarbeiten Ihrer Stimme. Probieren Sie bitte noch einmal.',
+	'ajaxpoll-vote-error' => 'Es gab ein Problem beim Verarbeiten Ihrer Stimme. Probieren Sie es bitte noch einmal.',
 	'ajaxpoll-your-vote' => 'Sie haben bereits am $2 für „$1“ abgestimmt. Sie können Ihre Stimme ändern, indem Sie eine der untenstehenden Antworten anklicken.',
 	'ajaxpoll-no-vote' => 'Bitte stimmen Sie unten ab.',
 	'ajaxpoll-submitting' => 'Bitte warten Sie kurz. Ihre Stimme wird verarbeitet.',
@@ -168,9 +170,11 @@ $messages['fi'] = array(
 );
 
 /** French (Français)
+ * @author Gomoko
  * @author Tim 'Avatar' Bartel
  */
 $messages['fr'] = array(
+	'ajaxpoll-desc' => 'Autorise les interrogations basées sur AJAX avec <tt>&lt;poll&gt;</tt> tag',
 	'ajaxpoll-vote-update' => 'Ta voix est actualisé.',
 	'ajaxpoll-vote-add' => 'Ta voix était compté.',
 	'ajaxpoll-vote-error' => "Il y avait une problème avec le traitement de ta voix. Essaie-cela s'il te plaît encore une fois.",
