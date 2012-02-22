@@ -265,10 +265,10 @@ class AJAXPoll {
 
 		if ( is_object( $wgTitle ) ) {
 			if( !empty( $extra_from_ajax ) ) {
-				$attributes = ' style="display: block;"';
+				$attributes = ' style="display:block;"';
 				$ajaxMessage = wfMsg( $extra_from_ajax );
 			} else {
-				$attributes = '';
+				$attributes = ' style="display:none;"';
 				$ajaxMessage = '';
 			}
 			// HTML output has to be on one line thanks to a MediaWiki bug
