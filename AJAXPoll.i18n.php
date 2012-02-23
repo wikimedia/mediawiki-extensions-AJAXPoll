@@ -162,8 +162,8 @@ $messages['fi'] = array(
 	'ajaxpoll-vote-update' => 'Äänesi on päivitetty',
 	'ajaxpoll-vote-add' => 'Äänesi on lisätty.',
 	'ajaxpoll-vote-error' => 'Äänesi prosessoimisessa oli ongelma, yritä uudelleen.',
-	'ajaxpoll-percent-votes' => '$1% kaikista äänistä',
-	'ajaxpoll-your-vote' => 'Äänestit jo vaihtoehtoa "$1" $2, voit muuttaa ääntäsi napsauttamalla vastausta alempana',
+	'ajaxpoll-percent-votes' => '$1 % kaikista äänistä',
+	'ajaxpoll-your-vote' => 'Äänestit jo vaihtoehtoa ”$1” $2, voit muuttaa ääntäsi napsauttamalla vastausta alempana',
 	'ajaxpoll-no-vote' => 'Voit äänestää alempana.',
 	'ajaxpoll-info' => '{{PLURAL:$1|Yksi ääni|$1 ääntä}} on annettu siitä lähtien kun tämä äänestys tehtiin, $2.',
 	'ajaxpoll-submitting' => 'Odota hetki, äänesi lähetetään kirjattavaksi.',
@@ -257,11 +257,14 @@ $messages['ja'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
+	'ajaxpoll-desc' => 'Erlaabt AJAX-baséiert Ëmfroe mam Tag <tt>&lt;poll&gt;</tt>',
 	'ajaxpoll-vote-update' => 'Är Stëmm gouf aktualiséiert.',
 	'ajaxpoll-vote-add' => 'Är Stëmm gouf derbäigesat.',
 	'ajaxpoll-vote-error' => 'Et gouf e Problem beim Verschaffe vun Ärer Stëmm, probéiert et w.e.g. nach eng kéier.',
 	'ajaxpoll-percent-votes' => '$1% vun alle Stëmmen',
+	'ajaxpoll-your-vote' => 'Dir hutt schonn den $2 fir "$1" gestëmmt, Dir kënnt Är Stëmm änneren an deem Dir op d\'Äntwert hei drënner klickt.',
 	'ajaxpoll-no-vote' => 'Stëmmt w.e.g hei drënner mat of.',
+	'ajaxpoll-info' => 'Zënter dem Ufank vun der Ëmfro den $2 {{PLURAL:$1 gouf eng Stëmm|goufe(n) $1 Stëmmen}} ofginn.',
 	'ajaxpoll-submitting' => 'Waart w.e.g., Är Stëmm gëtt verschafft.',
 );
 
