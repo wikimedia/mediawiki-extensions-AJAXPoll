@@ -53,7 +53,7 @@ class AJAXPoll {
 		}*/
 
 		$dbw = wfGetDB( DB_MASTER );
-		$dbw->begin();
+		$dbw->begin( __METHOD__ );
 		/**
 		* Register poll in the database
 		*/
@@ -76,7 +76,7 @@ class AJAXPoll {
 				__METHOD__
 			);
 		}
-		$dbw->commit();
+		$dbw->commit( __METHOD__ );
 
 		// Add CSS
 		$wgOut->addExtensionStyle( $wgScriptPath . '/extensions/AJAXPoll/AJAXPoll.css' );
