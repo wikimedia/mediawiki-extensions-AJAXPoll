@@ -309,7 +309,7 @@ $messages['nl'] = array(
 	'ajaxpoll-percent-votes' => '$1% van alle stemmen',
 	'ajaxpoll-your-vote' => 'U hebt al voor "$1" gestemd op $2. U kunt uw stem wijzigen door hieronder op een antwoord te klikken.',
 	'ajaxpoll-no-vote' => 'Stem hieronder.',
-	'ajaxpoll-info' => 'Er zijn {{PLURAL:$1|een stem|$1 stemmen}} uitgebracht sinds de peiling op $2 is aangemaakt.',
+	'ajaxpoll-info' => 'Er {{PLURAL:$1|is één stem|zijn $1 stemmen}} uitgebracht sinds de peiling op $2 is aangemaakt.',
 	'ajaxpoll-submitting' => 'Even geduld alstublieft. Uw stem wordt opgeslagen...',
 );
 
@@ -384,6 +384,20 @@ $messages['sr-ec'] = array(
 	'ajaxpoll-percent-votes' => '$1% од свих гласова',
 	'ajaxpoll-no-vote' => 'Молимо гласајте испод.',
 	'ajaxpoll-submitting' => 'Чекајте, шаљемо ваш глас.',
+);
+
+/** Ukrainian (Українська)
+ * @author A1
+ */
+$messages['uk'] = array(
+	'ajaxpoll-desc' => 'Дозволяє голосування на основі AJAX з міткою <tt>&lt;poll&gt;</tt>',
+	'ajaxpoll-vote-update' => 'Ваш голос був поновлений.',
+	'ajaxpoll-vote-add' => 'Ваш голос був доданий.',
+	'ajaxpoll-vote-error' => 'Виникла проблема з обробкою вашого голосу, будь-ласка, спробуйте знову.',
+	'ajaxpoll-percent-votes' => '$1% усіх голосів',
+	'ajaxpoll-your-vote' => 'Ви вже проголосували за " $1 " на  $2 , ви можете змінити свій голос, натиснувши відповідь нижче.',
+	'ajaxpoll-no-vote' => 'Будь ласка, голосуйте нижче.',
+	'ajaxpoll-submitting' => 'Будь ласка, почекайте, ваш голос обробляється  ...',
 );
 
 /** Chinese (中文)
