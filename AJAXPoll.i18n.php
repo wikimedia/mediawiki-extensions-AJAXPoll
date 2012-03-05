@@ -66,6 +66,13 @@ $messages['be-tarask'] = array(
 	'ajaxpoll-submitting' => 'Калі ласкай, чакайце, ваш голас дадаецца.',
 );
 
+/** Bulgarian (Български)
+ * @author DCLXVI
+ */
+$messages['bg'] = array(
+	'ajaxpoll-percent-votes' => '$1% от всички гласове',
+);
+
 /** Breton (Brezhoneg)
  * @author Y-M D
  */
