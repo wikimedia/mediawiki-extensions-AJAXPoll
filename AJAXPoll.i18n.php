@@ -341,13 +341,14 @@ $messages['pl'] = array(
  * @author Dragonòt
  */
 $messages['pms'] = array(
+	'ajaxpoll-desc' => 'A përmëtt votassion basà su AJAX con tichëtta <tt>&lt;poll&gt;</tt>',
 	'ajaxpoll-vote-update' => "Tò vot a l'é stàit modificà.",
 	'ajaxpoll-vote-add' => "Tò vot a l'é stàit giontà.",
 	'ajaxpoll-vote-error' => "A l'é staje un problema an tratand sò vot, për piasì ch'a preuva torna.",
 	'ajaxpoll-percent-votes' => '$1% ëd tùit ij vot',
 	'ajaxpoll-your-vote' => 'A l\'ha già votà për "$1" su $2; a peul cangé sò vot an sgnacand su na rispòsta sì-sota.',
 	'ajaxpoll-no-vote' => 'Për piasì, voté sì-sota.',
-	'ajaxpoll-info' => "A son staje $1 vot da quand ël sondagi a l'é stàit creà su $2.",
+	'ajaxpoll-info' => "A {{PLURAL:$1|l'é staje un vot|son staje $1 vot}} da quand ël sondagi a l'é stàit creà su $2.",
 	'ajaxpoll-submitting' => "Për piasì ch'a speta, sò vot a l'é an camin ch'a riva.",
 );
 
