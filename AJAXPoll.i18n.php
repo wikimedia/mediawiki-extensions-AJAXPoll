@@ -207,6 +207,21 @@ $messages['gl'] = array(
 	'ajaxpoll-submitting' => 'Por favor, agarde durante o envío do seu voto.',
 );
 
+/** Hebrew (עברית)
+ * @author Amire80
+ */
+$messages['he'] = array(
+	'ajaxpoll-desc' => 'אפשרות להוסיף הצבעות בטכנולוגיית AJAX באמצעות התג <tt>&lt;poll&gt;</tt>',
+	'ajaxpoll-vote-update' => 'הקול שלך עודכן.',
+	'ajaxpoll-vote-add' => 'הקול שלך נוסף.',
+	'ajaxpoll-vote-error' => 'הייתה בעיה בעיבוד הקול שלך, נא לנסות שוב.',
+	'ajaxpoll-percent-votes' => '$1% מכל הקולות.',
+	'ajaxpoll-your-vote' => 'כבר הצבעת בעד "$1" ב{{GRAMMAR:תחילית|$2}}, אפשר לשנות את קולך באמצעות לחיצה על תשובה להלן.',
+	'ajaxpoll-no-vote' => 'נא להצביע להלן.',
+	'ajaxpoll-info' => '{{PLURAL:$1|נקלט קול אחד|נקלטו $1 קולות}} מאז שההצבעה נוצרה ב־$2.',
+	'ajaxpoll-submitting' => 'נא להמתין הזמן שליחת הצבעתך.',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
