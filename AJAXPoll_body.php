@@ -10,7 +10,7 @@
  * @author Jack Phoenix <jack@countervandalism.net>
  * @author Thomas Gries
  * @maintainer Thomas Gries
- * @version 1.603
+ * @version 1.61
  * @link http://www.mediawiki.org/wiki/Extension:AJAX_Poll Documentation
  */
 
@@ -29,9 +29,16 @@ class AJAXPoll {
 
 	# The callback function for converting the input text to HTML output
 	static function AJAXPollRender( $input ) {
-		global $wgParser, $wgUser, $wgOut, $wgTitle, $wgScriptPath;
+		global $wgParser, $wgUser, $wgOut, $wgTitle, $wgScriptPath,
+			$wgAJAXPollTrackingCategory;
 
 		$wgParser->disableCache();
+
+		if ( $wgAJAXPollTrackingCategory === true ) {
+			$wgParser->addTrackingCategory( 'ajaxpoll-tracking-category' );
+		} elseif ( is_string( $wgAJAXPollTrackingCategory ) ) {
+			$wgParser->addTrackingCategory( $wgAJAXPollTrackingCategory );
+		}
 
 		if ( $wgUser->getName() == '' ) {
 			$user = wfGetIP();
@@ -53,7 +60,7 @@ class AJAXPoll {
 		}*/
 
 		$dbw = wfGetDB( DB_MASTER );
-		$dbw->begin( __METHOD__ );
+		$dbw->begin();
 		/**
 		* Register poll in the database
 		*/
@@ -76,7 +83,7 @@ class AJAXPoll {
 				__METHOD__
 			);
 		}
-		$dbw->commit( __METHOD__ );
+		$dbw->commit();
 
 		// Add CSS
 		$wgOut->addExtensionStyle( $wgScriptPath . '/extensions/AJAXPoll/AJAXPoll.css' );

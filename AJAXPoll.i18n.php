@@ -13,6 +13,7 @@ $messages = array();
  */
 $messages['en'] = array(
 	'ajaxpoll-desc' => 'Allows AJAX-based polls with <tt>&lt;poll&gt;</tt> tag',
+	'ajaxpoll-tracking-category' => 'Poll',
 	'ajaxpoll-vote-update' => 'Your vote has been updated.',
 	'ajaxpoll-vote-add' => 'Your vote has been added.',
 	'ajaxpoll-vote-error' => 'There was a problem with processing your vote, please try again.',
@@ -25,6 +26,7 @@ $messages['en'] = array(
 
 /** Message documentation (Message documentation) */
 $messages['qqq'] = array(
+	'ajaxpoll-tracking-category' => 'The name of a category for all pages which use the <poll> parser extension tag. The category is automatically added unless the feature is disabled.',
 	'ajaxpoll-percent-votes' => '$1 is the percentage number of the votes',
 	'ajaxpoll-your-vote' => '$1 is the answer name, $2 is the date when the answer was casted',
 	'ajaxpoll-info' => '$1 is the number of votes, $2 is when the poll was started',

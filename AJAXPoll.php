@@ -19,7 +19,7 @@
  * @author Jack Phoenix <jack@countervandalism.net>
  * @author Thomas Gries
  * @maintainer Thomas Gries
- * @version 1.603
+ * @version 1.61
  * @link http://www.mediawiki.org/wiki/Extension:AJAX_Poll Documentation
  */
 
@@ -31,7 +31,7 @@ if( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'AJAX Poll',
-	'version' => '1.604 20120222',
+	'version' => '1.61 20120309',
 	'author' => array( 'Dariusz Siedlecki', 'Jack Phoenix', 'Thomas Gries' ),
 	'descriptionmsg' => 'ajaxpoll-desc',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:AJAX_Poll',
@@ -43,3 +43,16 @@ $wgExtensionMessagesFiles['AJAXPoll'] = $dir . 'AJAXPoll.i18n.php';
 $wgAutoloadClasses['AJAXPoll'] = $dir . 'AJAXPoll_body.php';
 $wgAjaxExportList[] = 'AJAXPoll::submitVote';
 $wgHooks['ParserFirstCallInit'][] = 'AJAXPoll::AJAXPollParserInit';
+
+// Parameter to enable the automatic tracking category
+// for all pages using this parser extension
+//
+// Category name [[MediaWiki:Ajaxpoll-tracking-category]] (default)
+// $wgAJAXPollTrackingCategory = true;
+//
+// you can assign a specific category name [[MediaWiki:Ajaxpoll-mycategory]]
+// $wgAJAXPollTrackingCategory = 'ajaxpoll-mycategory';
+//
+// you can disable the use of a tracking category
+// $wgAJAXPollTrackingCategory = false;
+$wgAJAXPollTrackingCategory = true;
