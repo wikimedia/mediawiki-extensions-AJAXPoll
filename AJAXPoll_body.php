@@ -83,7 +83,7 @@ class AJAXPoll {
 				__METHOD__
 			);
 		}
-		 $dbw->begin( __METHOD__ );
+		$dbw->commit( __METHOD__ );
 
 		// Add CSS
 		$wgOut->addExtensionStyle( $wgScriptPath . '/extensions/AJAXPoll/AJAXPoll.css' );
