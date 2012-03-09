@@ -13,7 +13,7 @@ $messages = array();
  */
 $messages['en'] = array(
 	'ajaxpoll-desc' => 'Allows AJAX-based polls with <tt>&lt;poll&gt;</tt> tag',
-	'ajaxpoll-tracking-category' => 'Poll',
+	'ajaxpoll-tracking-category' => 'Pages with a poll',
 	'ajaxpoll-vote-update' => 'Your vote has been updated.',
 	'ajaxpoll-vote-add' => 'Your vote has been added.',
 	'ajaxpoll-vote-error' => 'There was a problem with processing your vote, please try again.',
