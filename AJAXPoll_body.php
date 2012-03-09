@@ -28,16 +28,16 @@ class AJAXPoll {
 	}
 
 	# The callback function for converting the input text to HTML output
-	static function AJAXPollRender( $input ) {
-		global $wgParser, $wgUser, $wgOut, $wgTitle, $wgScriptPath,
+	static function AJAXPollRender( $input, $params = array(), Parser $parser ) {
+		global $wgUser, $wgOut, $wgTitle, $wgScriptPath,
 			$wgAJAXPollTrackingCategory;
 
-		$wgParser->disableCache();
+		$parser->disableCache();
 
 		if ( $wgAJAXPollTrackingCategory === true ) {
-			$wgParser->addTrackingCategory( 'ajaxpoll-tracking-category' );
+			$parser->addTrackingCategory( 'ajaxpoll-tracking-category' );
 		} elseif ( is_string( $wgAJAXPollTrackingCategory ) ) {
-			$wgParser->addTrackingCategory( $wgAJAXPollTrackingCategory );
+			$parser->addTrackingCategory( $wgAJAXPollTrackingCategory );
 		}
 
 		if ( $wgUser->getName() == '' ) {
