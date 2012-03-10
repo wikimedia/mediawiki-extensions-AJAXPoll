@@ -160,7 +160,7 @@ class AJAXPoll {
 			$user = $wgUser->getName();
 		}
 
-		if ( $wgUser->isAllowed( 'bot' ) ) {
+		if ( !$wgUser->isAllowed( 'ajaxpoll-vote' ) || $wgUser->isAllowed( 'bot' ) ) {
 			return AJAXPoll::buildHTML( $ID, $user );
 		}
 
@@ -348,7 +348,7 @@ function mout(x){
 				} else {
 
 					$ret .= "
-<div id='ajaxpoll-answer-" . $ans_no . "' class='ajaxpoll-answer'><div class='ajaxpoll-answer-name'><label for='ajaxpoll-post-answer-" . $ans_no . "' onclick='$(\"#ajaxpoll-ajax-" . $ID . "\").html(\"" . wfMsg( 'ajaxpoll-vote-permission' ) . "\");$(\"#ajaxpoll-ajax-" . $ID . "\").css(\"display\",\"block\");'><input disabled='disabled' type='radio' id='ajaxpoll-post-answer-" . $ans_no . "' name='ajaxpoll-post-answer-" . $ans_no . "' value='" . $i . "'" . ( $our ? 'checked=true ' : '' ) . "/>" . strip_tags( $lines[$i] ) .
+<div id='ajaxpoll-answer-" . $ans_no . "' class='ajaxpoll-answer'><div class='ajaxpoll-answer-name'><label for='ajaxpoll-post-answer-" . $ans_no . "' onclick='$(\"#ajaxpoll-ajax-" . $ID . "\").html(\"" . wfMsg( 'ajaxpoll-vote-permission' ) . "\");$(\"#ajaxpoll-ajax-" . $ID . "\").css(\"display\",\"block\");'><input disabled='disabled' type='radio' id='ajaxpoll-post-answer-" . $ans_no . "' name='ajaxpoll-post-answer-" . $ans_no . "' value='" . $i . "'/>" . strip_tags( $lines[$i] ) .
 "</label></div><div class='ajaxpoll-answer-vote" . ( $our ? ' ajaxpoll-our-vote' : '' ) ."' onmouseover='mover(this)' onmouseout='mout(this);'><span title='" . wfMsg( 'ajaxpoll-percent-votes', sprintf( $percent ) ) . "'>" . ( ( isset( $poll_result ) && !empty( $poll_result[$i + 1] ) ) ? $poll_result[$i + 1] : 0 ) . "</span><div style='width: " . $percent . "%;" . ( $percent == 0 ? ' border:0;' : '' ) . "'></div></div>
 </div>
 ";

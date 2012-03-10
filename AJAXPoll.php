@@ -19,7 +19,7 @@
  * @author Jack Phoenix <jack@countervandalism.net>
  * @author Thomas Gries
  * @maintainer Thomas Gries
- * @version 1.62
+ * @version 1.63
  * @link http://www.mediawiki.org/wiki/Extension:AJAX_Poll Documentation
  */
 
@@ -31,7 +31,7 @@ if( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'AJAX Poll',
-	'version' => '1.62 20120310',
+	'version' => '1.63 20120310',
 	'author' => array( 'Dariusz Siedlecki', 'Jack Phoenix', 'Thomas Gries' ),
 	'descriptionmsg' => 'ajaxpoll-desc',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:AJAX_Poll',
@@ -48,7 +48,7 @@ $wgHooks['ParserFirstCallInit'][] = 'AJAXPoll::AJAXPollParserInit';
 $wgAvailableRights[] = 'ajaxpoll-vote';
 
 # default: everyone can vote
-$wgGroupPermissions['*']['ajaxpoll-vote'] = true;
+$wgGroupPermissions['*']['ajaxpoll-vote'] = false;
 # if you want only users to vote use
 # $wgGroupPermissions['user']['ajaxpoll-vote'] = true;
 
