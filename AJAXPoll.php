@@ -19,7 +19,7 @@
  * @author Jack Phoenix <jack@countervandalism.net>
  * @author Thomas Gries
  * @maintainer Thomas Gries
- * @version 1.61
+ * @version 1.62
  * @link http://www.mediawiki.org/wiki/Extension:AJAX_Poll Documentation
  */
 
@@ -31,7 +31,7 @@ if( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'AJAX Poll',
-	'version' => '1.61 20120309',
+	'version' => '1.62 20120310',
 	'author' => array( 'Dariusz Siedlecki', 'Jack Phoenix', 'Thomas Gries' ),
 	'descriptionmsg' => 'ajaxpoll-desc',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:AJAX_Poll',
@@ -43,6 +43,14 @@ $wgExtensionMessagesFiles['AJAXPoll'] = $dir . 'AJAXPoll.i18n.php';
 $wgAutoloadClasses['AJAXPoll'] = $dir . 'AJAXPoll_body.php';
 $wgAjaxExportList[] = 'AJAXPoll::submitVote';
 $wgHooks['ParserFirstCallInit'][] = 'AJAXPoll::AJAXPollParserInit';
+
+# new user rights
+$wgAvailableRights[] = 'ajaxpoll-vote';
+
+# default: everyone can vote
+$wgGroupPermissions['*']['ajaxpoll-vote'] = true;
+# if you want only users to vote use
+# $wgGroupPermissions['user']['ajaxpoll-vote'] = true;
 
 // Parameter to enable the automatic tracking category
 // for all pages using this parser extension

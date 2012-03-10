@@ -10,6 +10,7 @@ $messages = array();
 
 /** English
  * @author Dariusz Siedlecki
+ * @author Thomas Gries
  */
 $messages['en'] = array(
 	'ajaxpoll-desc' => 'Allows AJAX-based polls with <tt>&lt;poll&gt;</tt> tag',
@@ -22,6 +23,9 @@ $messages['en'] = array(
 	'ajaxpoll-no-vote' => 'Please vote below.', // http://trac.wikia-code.com/changeset/867
 	'ajaxpoll-info' => 'There {{PLURAL:$1|was one vote|were $1 votes}} since the poll was created on $2.',
 	'ajaxpoll-submitting' => 'Please wait, submitting your vote.',
+	'ajaxpoll-vote-permission' => 'You cannot vote.',
+
+	'right-ajaxpoll-vote' => 'Can vote in AJAX-based polls',
 );
 
 /** Message documentation (Message documentation) */
@@ -30,6 +34,9 @@ $messages['qqq'] = array(
 	'ajaxpoll-percent-votes' => '$1 is the percentage number of the votes',
 	'ajaxpoll-your-vote' => '$1 is the answer name, $2 is the date when the answer was casted',
 	'ajaxpoll-info' => '$1 is the number of votes, $2 is when the poll was started',
+	'ajaxpoll-vote-permission' => 'Text for viewers who do not have the right to vote',
+
+	'right-ajaxpoll-vote' => 'Text for the group right allowed to vote',
 );
 
 /** Afrikaans (Afrikaans)
