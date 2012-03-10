@@ -28,15 +28,16 @@ $messages['en'] = array(
 	'right-ajaxpoll-vote' => 'Can vote in AJAX-based polls',
 );
 
-/** Message documentation (Message documentation) */
+/** Message documentation (Message documentation)
+ * @author Umherirrender
+ */
 $messages['qqq'] = array(
 	'ajaxpoll-tracking-category' => 'The name of a category for all pages which use the &lt;poll&gt; parser extension tag. The category is automatically added unless the feature is disabled.',
 	'ajaxpoll-percent-votes' => '$1 is the percentage number of the votes',
 	'ajaxpoll-your-vote' => '$1 is the answer name, $2 is the date when the answer was casted',
 	'ajaxpoll-info' => '$1 is the number of votes, $2 is when the poll was started',
 	'ajaxpoll-vote-permission' => 'Text for viewers who do not have the right to vote',
-
-	'right-ajaxpoll-vote' => 'Text for the group right allowed to vote',
+	'right-ajaxpoll-vote' => '{{doc-right|ajaxpoll-vote}}',
 );
 
 /** Afrikaans (Afrikaans)
@@ -65,6 +66,7 @@ $messages['ar'] = array(
  */
 $messages['be-tarask'] = array(
 	'ajaxpoll-desc' => 'Дазваляе AJAX-апытаньні, якія можна дадаць тэгам <tt>&lt;poll&gt;</tt>',
+	'ajaxpoll-tracking-category' => 'Старонкі з апытаньнямі',
 	'ajaxpoll-vote-update' => 'Ваш голас быў абноўлены.',
 	'ajaxpoll-vote-add' => 'Ваш голас быў даданы.',
 	'ajaxpoll-vote-error' => 'Адбылася памылка падчас захаваньня Вашага голасу, калі ласка, паспрабуйце яшчэ.',
@@ -73,6 +75,8 @@ $messages['be-tarask'] = array(
 	'ajaxpoll-no-vote' => 'Калі ласка, прагаласуйце ніжэй.',
 	'ajaxpoll-info' => 'З моманту стварэньня галасаваньня $2 {{PLURAL:$1|пададзены $1 голас|пададзеныя $1 галасы|пададзена $1 галасоў}}.',
 	'ajaxpoll-submitting' => 'Калі ласкай, чакайце, ваш голас дадаецца.',
+	'ajaxpoll-vote-permission' => 'Вы ня можаце галасаваць.',
+	'right-ajaxpoll-vote' => 'магчымасьць галасаваць у AJAX-апытаньнях',
 );
 
 /** Bulgarian (Български)
@@ -99,9 +103,11 @@ $messages['br'] = array(
 /** German (Deutsch)
  * @author Kghbln
  * @author Tim 'Avatar' Bartel
+ * @author Wikinaut
  */
 $messages['de'] = array(
 	'ajaxpoll-desc' => 'Ergänzt das Tag <code>&lt;poll&gt;</code> zum Erstellen AJAX-gestützter Umfragen',
+	'ajaxpoll-tracking-category' => 'Seiten mit einer Umfrage',
 	'ajaxpoll-vote-update' => 'Deine Stimme wurde aktualisiert.',
 	'ajaxpoll-vote-add' => 'Deine Stimme wurde gezählt.',
 	'ajaxpoll-vote-error' => 'Es gab ein Problem beim Verarbeiten deiner Stimme. Probiere es bitte noch einmal.',
@@ -110,6 +116,8 @@ $messages['de'] = array(
 	'ajaxpoll-no-vote' => 'Bitte stimme unten ab.',
 	'ajaxpoll-info' => 'Es {{PLURAL:$1|wurde|wurden}} seit Erstellung der Umfrage am $2 {{PLURAL:$1|eine Stimme|$1 Stimmen}} abgegeben.',
 	'ajaxpoll-submitting' => 'Bitte warte kurz. Deine Stimme wird verarbeitet.',
+	'ajaxpoll-vote-permission' => 'Du kannst nicht abstimmen.',
+	'right-ajaxpoll-vote' => 'An AJAX-gestützen Umfragen teilnehmen',
 );
 
 /** German (formal address) (‪Deutsch (Sie-Form)‬)
@@ -123,6 +131,7 @@ $messages['de-formal'] = array(
 	'ajaxpoll-your-vote' => 'Sie haben bereits am $2 für „$1“ abgestimmt. Sie können Ihre Stimme ändern, indem Sie eine der untenstehenden Antworten anklicken.',
 	'ajaxpoll-no-vote' => 'Bitte stimmen Sie unten ab.',
 	'ajaxpoll-submitting' => 'Bitte warten Sie kurz. Ihre Stimme wird verarbeitet.',
+	'ajaxpoll-vote-permission' => 'Sie können nicht abstimmen.',
 );
 
 /** Lower Sorbian (Dolnoserbski)
@@ -130,6 +139,7 @@ $messages['de-formal'] = array(
  */
 $messages['dsb'] = array(
 	'ajaxpoll-desc' => 'Pśidawa toflicku <tt>&lt;poll&gt;</tt> za wótgłosowanja na zakłaźe AJAX',
+	'ajaxpoll-tracking-category' => 'Boki z wótgłosowanim',
 	'ajaxpoll-vote-update' => 'Twójo wótgłosowanje jo se zaktualizěrowało.',
 	'ajaxpoll-vote-add' => 'Twójo wótgłosowanje jo se pśidało.',
 	'ajaxpoll-vote-error' => 'Jo problem był pśi pśeźěłowanju twójogo głosa, pšosym wopytaj hyšći raz.',
@@ -138,6 +148,8 @@ $messages['dsb'] = array(
 	'ajaxpoll-no-vote' => 'Pšosym wótgłosuj dołojce.',
 	'ajaxpoll-info' => '{{PLURAL:$1|Jo se jaden głos wótedał|Stej se $1 głosa wótedałej|Su se $1 głose wótedali|Jo se $1 głosow wótedało}}, wót casa ako wótgłosowanje jo se $2 napórało.',
 	'ajaxpoll-submitting' => 'Pšosym cakaj, twój głos se pśeźěłujo.',
+	'ajaxpoll-vote-permission' => 'Njamóžoš wótgłosowaś.',
+	'right-ajaxpoll-vote' => 'Na wótgłosowanjach bazěrowanych na AJAX se wobźěliś',
 );
 
 /** Greek (Ελληνικά)
@@ -160,6 +172,7 @@ $messages['el'] = array(
  */
 $messages['es'] = array(
 	'ajaxpoll-desc' => 'Permite encuestas basadas en AJAX con etiqueta <tt>&lt;poll&gt;</tt>',
+	'ajaxpoll-tracking-category' => 'Páginas con una encuesta',
 	'ajaxpoll-vote-update' => 'Tu voto ha sido actualizado.',
 	'ajaxpoll-vote-add' => 'Tu voto ha sido añadido.',
 	'ajaxpoll-vote-error' => 'Ha habido un problema cuando comprobábamos tu voto, por favor, inténtalo de nuevo.',
@@ -168,6 +181,8 @@ $messages['es'] = array(
 	'ajaxpoll-no-vote' => 'Por favor, vota debajo.',
 	'ajaxpoll-info' => 'Ha habido {{PLURAL:$1|un voto|$1 votos}} desde que la encuesta fue creada el $2.',
 	'ajaxpoll-submitting' => 'Por favor espera, estamos comprobando tu voto, ten paciencia.',
+	'ajaxpoll-vote-permission' => 'No puede votar.',
+	'right-ajaxpoll-vote' => 'Puede votar en las encuestas basadas en AJAX',
 );
 
 /** Finnish (Suomi)
@@ -236,6 +251,7 @@ $messages['he'] = array(
  */
 $messages['hsb'] = array(
 	'ajaxpoll-desc' => 'Přidawa tafličku <tt>&lt;poll&gt;</tt> za wotghosowanja na zakładźe AJAX',
+	'ajaxpoll-tracking-category' => 'Strony z wothłosowanjom',
 	'ajaxpoll-vote-update' => 'Twoje wothłosowanje je so zaktualizowało.',
 	'ajaxpoll-vote-add' => 'Twoje wothłosowanje je so přidało.',
 	'ajaxpoll-vote-error' => 'Je problem při předźěłowanju twojeho hłosa był, prošu spytaj hišće raz.',
@@ -244,6 +260,8 @@ $messages['hsb'] = array(
 	'ajaxpoll-no-vote' => 'Prošu wothłosuj deleka.',
 	'ajaxpoll-info' => '{{PLURAL:$1|Je so jedyn hłós wotedał|Stej so $1 hłosaj wotedałoj|Su so $1 hłosy wotedali|Je so $1 hłosow wotedało}}, wot toho časa, zo wothłosowanje je so $2 wutworiło.',
 	'ajaxpoll-submitting' => 'Prošu čakaj, twój hłós so předźěłuje.',
+	'ajaxpoll-vote-permission' => 'Njemóžeš wothłosować.',
+	'right-ajaxpoll-vote' => 'Na wothłosowanjach bazowanych na AJAX so wobdźělić',
 );
 
 /** Hungarian (Magyar)
@@ -261,6 +279,7 @@ $messages['hu'] = array(
  */
 $messages['ia'] = array(
 	'ajaxpoll-desc' => 'Permitte sondages a base de AJAX con le etiquetta <tt>&lt;poll&gt;</tt>',
+	'ajaxpoll-tracking-category' => 'Paginas con sondage',
 	'ajaxpoll-vote-update' => 'Tu voto ha essite actualisate.',
 	'ajaxpoll-vote-add' => 'Tu voto ha essite addite.',
 	'ajaxpoll-vote-error' => 'Un problema occurreva durante le tractamento de tu voto. Per favor reproba.',
@@ -269,6 +288,8 @@ $messages['ia'] = array(
 	'ajaxpoll-no-vote' => 'Per favor vota hic infra.',
 	'ajaxpoll-info' => 'Il habeva $1 {{PLURAL:$1|voto|votos}} post le creation del sondage al $2.',
 	'ajaxpoll-submitting' => 'Un momento, tu voto es submittite.',
+	'ajaxpoll-vote-permission' => 'Tu non pote votar.',
+	'right-ajaxpoll-vote' => 'Pote votar in sondages a base de AJAX',
 );
 
 /** Japanese (日本語)
@@ -304,6 +325,7 @@ $messages['lb'] = array(
  */
 $messages['mk'] = array(
 	'ajaxpoll-desc' => 'Овозможува анкети на основа на AJAX со ознаката <tt>&lt;poll&gt;</tt>',
+	'ajaxpoll-tracking-category' => 'Страници со анкета',
 	'ajaxpoll-vote-update' => 'Вашиот глас е подновен.',
 	'ajaxpoll-vote-add' => 'Вашиот глас е додаден.',
 	'ajaxpoll-vote-error' => 'Се појави проблем при обработката на вашиот глас. Обидете се повторно.',
@@ -312,6 +334,8 @@ $messages['mk'] = array(
 	'ajaxpoll-no-vote' => 'Гласајте подолу.',
 	'ajaxpoll-info' => 'Откако е создадена анкетата ($2) {{PLURAL:$1|даден еден глас|дадени се $1 гласа}}.',
 	'ajaxpoll-submitting' => 'Почекајте, го заведувам вашиот глас.',
+	'ajaxpoll-vote-permission' => 'Не можете да гласате.',
+	'right-ajaxpoll-vote' => 'Може да гласа на анкети на основа на AJAX.',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
