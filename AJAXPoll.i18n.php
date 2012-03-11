@@ -236,6 +236,7 @@ $messages['gl'] = array(
  */
 $messages['he'] = array(
 	'ajaxpoll-desc' => 'אפשרות להוסיף הצבעות בטכנולוגיית AJAX באמצעות התג <tt>&lt;poll&gt;</tt>',
+	'ajaxpoll-tracking-category' => 'דפים עם סקר',
 	'ajaxpoll-vote-update' => 'הקול שלך עודכן.',
 	'ajaxpoll-vote-add' => 'הקול שלך נוסף.',
 	'ajaxpoll-vote-error' => 'הייתה בעיה בעיבוד הקול שלך, נא לנסות שוב.',
@@ -244,6 +245,8 @@ $messages['he'] = array(
 	'ajaxpoll-no-vote' => 'נא להצביע להלן.',
 	'ajaxpoll-info' => '{{PLURAL:$1|נקלט קול אחד|נקלטו $1 קולות}} מאז שההצבעה נוצרה ב־$2.',
 	'ajaxpoll-submitting' => 'נא להמתין הזמן שליחת הצבעתך.',
+	'ajaxpoll-vote-permission' => 'אין לך זכות הצבעה.',
+	'right-ajaxpoll-vote' => 'להצביע בסקרים מבוססי AJAX.',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
@@ -290,6 +293,13 @@ $messages['ia'] = array(
 	'ajaxpoll-submitting' => 'Un momento, tu voto es submittite.',
 	'ajaxpoll-vote-permission' => 'Tu non pote votar.',
 	'right-ajaxpoll-vote' => 'Pote votar in sondages a base de AJAX',
+);
+
+/** Indonesian (Bahasa Indonesia)
+ * @author Anashir
+ */
+$messages['id'] = array(
+	'ajaxpoll-vote-permission' => 'Anda tidak dapat memberikan suara.',
 );
 
 /** Japanese (日本語)
@@ -353,11 +363,13 @@ $messages['nb'] = array(
 );
 
 /** Dutch (Nederlands)
+ * @author AvatarTeam
  * @author SPQRobin
  * @author Siebrand
  */
 $messages['nl'] = array(
 	'ajaxpoll-desc' => 'Maakt AJAX-gebaseerde polls mogelijk met de tag <tt>&lt;poll&gt;</tt>',
+	'ajaxpoll-tracking-category' => "Pagina's met een peiling",
 	'ajaxpoll-vote-update' => 'Uw stem is bijgewerkt.',
 	'ajaxpoll-vote-add' => 'Uw stem is toegevoegd.',
 	'ajaxpoll-vote-error' => 'Er is een probleem opgetreden tijdens het verwerken van uw stem. Probeer het opnieuw.',
@@ -366,6 +378,7 @@ $messages['nl'] = array(
 	'ajaxpoll-no-vote' => 'Stem hieronder.',
 	'ajaxpoll-info' => 'Er {{PLURAL:$1|is één stem|zijn $1 stemmen}} uitgebracht sinds de peiling op $2 is aangemaakt.',
 	'ajaxpoll-submitting' => 'Even geduld alstublieft. Uw stem wordt opgeslagen...',
+	'ajaxpoll-vote-permission' => 'U kunt niet stemmen.',
 );
 
 /** Polish (Polski)
