@@ -23,7 +23,7 @@ $messages['en'] = array(
 	'ajaxpoll-no-vote' => 'Please vote below.', // http://trac.wikia-code.com/changeset/867
 	'ajaxpoll-info' => 'There {{PLURAL:$1|was one vote|were $1 votes}} since the poll was created on $2.',
 	'ajaxpoll-submitting' => 'Please wait, submitting your vote.',
-	'ajaxpoll-vote-permission' => 'You cannot vote.',
+	'ajaxpoll-vote-permission' => 'You are not enttitled to vote.',
 
 	'right-ajaxpoll-vote' => 'Can vote in AJAX-based polls',
 );
