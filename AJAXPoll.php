@@ -31,7 +31,7 @@ if( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'AJAX Poll',
-	'version' => '1.65 20120312',
+	'version' => '1.66 20120312',
 	'author' => array( 'Dariusz Siedlecki', 'Jack Phoenix', 'Thomas Gries' ),
 	'descriptionmsg' => 'ajaxpoll-desc',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:AJAX_Poll',
@@ -47,9 +47,11 @@ $wgHooks['ParserFirstCallInit'][] = 'AJAXPoll::AJAXPollParserInit';
 # new user rights
 $wgAvailableRights[] = 'ajaxpoll-vote';
 
-# default: nobody can vote
-$wgGroupPermissions['*']['ajaxpoll-vote'] = false;
-# allow users to vote
+# default: everyone can vote
+$wgGroupPermissions['*']['ajaxpoll-vote'] = true;
+# if you want to allow only users to vote, use the following code lines
+# in your LocalSettings.php after calling the AJAXPoll extension:
+# $wgGroupPermissions['*']['ajaxpoll-vote'] = false;
 # $wgGroupPermissions['user']['ajaxpoll-vote'] = true;
 
 // Parameter to enable the automatic tracking category
