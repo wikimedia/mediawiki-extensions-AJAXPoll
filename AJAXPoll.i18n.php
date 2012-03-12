@@ -206,6 +206,7 @@ $messages['fi'] = array(
  */
 $messages['fr'] = array(
 	'ajaxpoll-desc' => 'Autorise les interrogations basées sur AJAX avec <tt>&lt;poll&gt;</tt> tag',
+	'ajaxpoll-tracking-category' => 'Pages avec un sondage',
 	'ajaxpoll-vote-update' => 'Ta voix est actualisé.',
 	'ajaxpoll-vote-add' => 'Ta voix était compté.',
 	'ajaxpoll-vote-error' => "Il y avait une problème avec le traitement de ta voix. Essaie-cela s'il te plaît encore une fois.",
@@ -214,6 +215,8 @@ $messages['fr'] = array(
 	'ajaxpoll-no-vote' => 'Vote en bas.',
 	'ajaxpoll-info' => "Il y avait {{PLURAL:$1|une voix|$1 voix}}, depuis l'élaboration du sondage au $2.",
 	'ajaxpoll-submitting' => 'Attends une moment, ta voix est traité...',
+	'ajaxpoll-vote-permission' => 'Vous ne pouvez pas voter.',
+	'right-ajaxpoll-vote' => 'Peut voter dans des sondages basés sur AJAX',
 );
 
 /** Galician (Galego)
@@ -221,6 +224,7 @@ $messages['fr'] = array(
  */
 $messages['gl'] = array(
 	'ajaxpoll-desc' => 'Permite as enquisas baseadas en AJAX mediante a etiqueta <tt>&lt;poll&gt;</tt>',
+	'ajaxpoll-tracking-category' => 'Páxinas cunha enquisa',
 	'ajaxpoll-vote-update' => 'Actualizouse o seu voto.',
 	'ajaxpoll-vote-add' => 'Engadiuse o seu voto.',
 	'ajaxpoll-vote-error' => 'Houbo algún problema co procesamento do seu voto. Por favor, inténteo de novo.',
@@ -229,6 +233,8 @@ $messages['gl'] = array(
 	'ajaxpoll-no-vote' => 'Por favor, vote a continuación.',
 	'ajaxpoll-info' => '{{PLURAL:$1|Recibiuse un voto|Recibíronse $1 votos}} desde que a enquisa foi creada o $2.',
 	'ajaxpoll-submitting' => 'Por favor, agarde durante o envío do seu voto.',
+	'ajaxpoll-vote-permission' => 'Non pode votar.',
+	'right-ajaxpoll-vote' => 'Pode votar nas enquisas baseadas en AJAX',
 );
 
 /** Hebrew (עברית)
@@ -379,6 +385,7 @@ $messages['nl'] = array(
 	'ajaxpoll-info' => 'Er {{PLURAL:$1|is één stem|zijn $1 stemmen}} uitgebracht sinds de peiling op $2 is aangemaakt.',
 	'ajaxpoll-submitting' => 'Even geduld alstublieft. Uw stem wordt opgeslagen...',
 	'ajaxpoll-vote-permission' => 'U kunt niet stemmen.',
+	'right-ajaxpoll-vote' => 'Kunnen in AJAX-gebaseerde peilingen stemmen',
 );
 
 /** Polish (Polski)
