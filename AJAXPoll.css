@@ -23,6 +23,14 @@
 	font-size: 0.9em;
 }
 
+.ajaxpoll .ajaxpoll-hover-vote {
+	background: cyan;
+}
+
+.ajaxpoll .ajaxpoll-hover-revoke {
+	background: gold;
+}
+
 .ajaxpoll .ajaxpoll-answer-vote {
 	border: 1px solid #CCC;
 	width: 100%;

@@ -24,6 +24,8 @@ $messages['en'] = array(
 	'ajaxpoll-info' => 'There {{PLURAL:$1|was one vote|were $1 votes}} since the poll was created on $2.',
 	'ajaxpoll-submitting' => 'Please wait, submitting your vote.',
 	'ajaxpoll-vote-permission' => 'You are not entitled to vote.',
+	'ajaxpoll-revoke-vote' => 'I want to revoke my vote',
+	'ajaxpoll-vote-revoked' => 'You succesfully revoked your vote.',
 
 	'right-ajaxpoll-vote' => 'Can vote in AJAX-based polls',
 );

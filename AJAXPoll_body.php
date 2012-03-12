@@ -165,51 +165,68 @@ class AJAXPoll {
 			return AJAXPoll::buildHTML( $id, $user );
 		}
 
-		$answer = ++$answer;
+		if ( $answer != 0 ) {
 
-		$q = $dbw->select(
-			'poll_vote',
-			'COUNT(*) AS c',
-			array(
-				'poll_id' => $id,
-				'poll_user' => $user
-			),
-			__METHOD__
-		);
-		$row = $dbw->fetchRow( $q );
+			$answer = ++$answer;
 
-		if ( $row['c'] > 0 ) {
-
-			$updateQuery = $dbw->update(
+			$q = $dbw->select(
 				'poll_vote',
-				array(
-					'poll_answer' => $answer,
-					'poll_date' => wfTimestampNow()
-				),
+				'COUNT(*) AS count',
 				array(
 					'poll_id' => $id,
 					'poll_user' => $user
 				),
 				__METHOD__
 			);
-			$dbw->commit();
-			$pollContainerText = ( $updateQuery ) ? 'ajaxpoll-vote-update' : 'ajaxpoll-vote-error';
+			$row = $dbw->fetchRow( $q );
 
-		} else {
+			if ( $row['count'] > 0 ) {
 
-			$insertQuery = $dbw->insert(
+				$updateQuery = $dbw->update(
+					'poll_vote',
+					array(
+						'poll_answer' => $answer,
+						'poll_date' => wfTimestampNow()
+					),
+					array(
+						'poll_id' => $id,
+						'poll_user' => $user,
+					),
+					__METHOD__
+				);
+				$dbw->commit();
+				$pollContainerText = ( $updateQuery ) ? 'ajaxpoll-vote-update' : 'ajaxpoll-vote-error';
+
+			} else {
+
+				$insertQuery = $dbw->insert(
+					'poll_vote',
+					array(
+						'poll_id' => $id,
+						'poll_user' => $user,
+						'poll_ip' => wfGetIP(),
+						'poll_answer' => $answer,
+						'poll_date' => wfTimestampNow()
+					),
+					__METHOD__
+				);
+				$dbw->commit();
+				$pollContainerText = ( $insertQuery ) ? 'ajaxpoll-vote-add' : 'ajaxpoll-vote-error';
+
+			}
+		
+		} else { // revoking a vote
+
+			$deleteQuery = $dbw->delete(
 				'poll_vote',
 				array(
 					'poll_id' => $id,
 					'poll_user' => $user,
-					'poll_ip' => wfGetIP(),
-					'poll_answer' => $answer,
-					'poll_date' => wfTimestampNow()
 				),
 				__METHOD__
 			);
 			$dbw->commit();
-			$pollContainerText = ( $insertQuery ) ? 'ajaxpoll-vote-add' : 'ajaxpoll-vote-error';
+			$pollContainerText = ( $deleteQuery ) ? 'ajaxpoll-vote-revoked' : 'ajaxpoll-vote-error';
 
 		}
 
@@ -301,7 +318,12 @@ function mout(x){
 			// Different message depending on if the user has already voted or not, or is entitled to vote
 
 			if ( $wgUser->isAllowed( 'ajaxpoll-vote' ) ) {
-				$message = ( isset( $row[0] ) ) ? $ourLastVoteDate : wfMsg( 'ajaxpoll-no-vote' );
+				if ( isset( $row[0] ) ) {
+					$message = $ourLastVoteDate;
+					$lines[] = wfMsg( 'ajaxpoll-revoke-vote' );
+				} else {
+					$message = wfMsg( 'ajaxpoll-no-vote' );
+				}
 			} else {
 				$message = wfMsg( 'ajaxpoll-vote-permission' );
 			}
@@ -313,6 +335,9 @@ function mout(x){
 				'" id="ajaxpoll-answer-id-' . $id . '"><input type="hidden" name="ajaxpoll-post-id" value="' . $id . '" />';
 
 			for ( $i = 1; $i < count( $lines ); $i++ ) {
+
+				$vote = ( $i != count( $lines ) - 1 );
+				$voteValue = ( $vote ) ? $i : 0;
 				$ans_no = $i - 1;
 
 				if ( $amountOfVotes == 0 ) {
@@ -330,19 +355,28 @@ function mout(x){
 				if ( $wgUser->isAllowed( 'ajaxpoll-vote' ) ) {
 
 					if ( $wgUseAjax ) {
-						$submitJS = "sajax_do_call(\"AJAXPoll::submitVote\",[\"" . $id . "\",\"" . $i . "\"], $(\"#ajaxpoll-container-" . $id . "\")[0]);";
+						$submitJS = "sajax_do_call(\"AJAXPoll::submitVote\",[\"" . $id . "\",\"" . $voteValue . "\"], $(\"#ajaxpoll-container-" . $id . "\")[0]);";
 					} else {
 						$submitJS = "$(\"#ajaxpoll-answer-id-" . $id . "\").submit();";
 					}
 
 
-				// HTML output has to be on one line thanks to a MediaWiki bug
-				// @see https://bugzilla.wikimedia.org/show_bug.cgi?id=1319
-					$ret .= "
-<div id='ajaxpoll-answer-" . $ans_no . "' class='ajaxpoll-answer'><div class='ajaxpoll-answer-name'><label for='ajaxpoll-post-answer-" . $ans_no . "' onclick='$(\"#ajaxpoll-ajax-" . $id . "\").html(\"" . wfMsg( 'ajaxpoll-submitting' ) . "\");$(\"#ajaxpoll-ajax-" . $id . "\").css(\"display\",\"block\");$(this).addClass(\"ajaxpoll-checkevent\").prop(\"checked\",true); " . $submitJS . "'><input type='radio' id='ajaxpoll-post-answer-" . $ans_no . "' name='ajaxpoll-post-answer-" . $ans_no . "' value='" . $i . "'" . ( $our ? 'checked=true ' : '' ) . "/>" . strip_tags( $lines[$i] ) .
+					// HTML output has to be on one line thanks to a MediaWiki bug
+					// @see https://bugzilla.wikimedia.org/show_bug.cgi?id=1319
+
+					if ( $vote ) {
+						$ret .= "
+<div id='ajaxpoll-answer-" . $ans_no . "' class='ajaxpoll-answer'><div class='ajaxpoll-answer-name'><label for='ajaxpoll-post-answer-" . $ans_no . "' onmouseover='$(this).addClass(\"ajaxpoll-hover-vote\");' onmouseout='$(this).removeClass(\"ajaxpoll-hover-vote\");' onclick='$(\"#ajaxpoll-ajax-" . $id . "\").html(\"" . wfMsg( 'ajaxpoll-submitting' ) . "\");$(\"#ajaxpoll-ajax-" . $id . "\").css(\"display\",\"block\");$(this).addClass(\"ajaxpoll-checkevent\").prop(\"checked\",true); " . $submitJS . "'><input type='radio' id='ajaxpoll-post-answer-" . $ans_no . "' name='ajaxpoll-post-answer-" . $ans_no . "' value='" . $voteValue . "' " . ( $our ? 'checked=true ' : '' ) . "/>" . strip_tags( $lines[$i] ) .
 "</label></div><div class='ajaxpoll-answer-vote" . ( $our ? ' ajaxpoll-our-vote' : '' ) ."' onmouseover='mover(this)' onmouseout='mout(this);'><span title='" . wfMsg( 'ajaxpoll-percent-votes', sprintf( $percent ) ) . "'>" . ( ( isset( $poll_result ) && !empty( $poll_result[$i + 1] ) ) ? $poll_result[$i + 1] : 0 ) . "</span><div style='width: " . $percent . "%;" . ( $percent == 0 ? ' border:0;' : '' ) . "'></div></div>
 </div>
 ";
+					} else {
+						$ret .= "
+<div id='ajaxpoll-answer-" . $ans_no . "' class='ajaxpoll-answer'><div class='ajaxpoll-answer-name'><label for='ajaxpoll-post-answer-" . $ans_no . "' onmouseover='$(this).addClass(\"ajaxpoll-hover-revoke\");' onmouseout='$(this).removeClass(\"ajaxpoll-hover-revoke\");' onclick='$(\"#ajaxpoll-ajax-" . $id . "\").html(\"" . wfMsg( 'ajaxpoll-submitting' ) . "\");$(\"#ajaxpoll-ajax-" . $id . "\").css(\"display\",\"block\");$(this).addClass(\"ajaxpoll-checkevent\").prop(\"checked\",true); " . $submitJS . "'><input type='radio' id='ajaxpoll-post-answer-" . $ans_no . "' name='ajaxpoll-post-answer-" . $ans_no . "' value='" . $voteValue . "' " . ( $our ? 'checked=true ' : '' ) . "/>" . strip_tags( $lines[$i] ) .
+"</label></div>
+</div>
+";
+					}
 
 				} else {
 
@@ -351,7 +385,6 @@ function mout(x){
 "</label></div><div class='ajaxpoll-answer-vote" . ( $our ? ' ajaxpoll-our-vote' : '' ) ."' onmouseover='mover(this)' onmouseout='mout(this);'><span title='" . wfMsg( 'ajaxpoll-percent-votes', sprintf( $percent ) ) . "'>" . ( ( isset( $poll_result ) && !empty( $poll_result[$i + 1] ) ) ? $poll_result[$i + 1] : 0 ) . "</span><div style='width: " . $percent . "%;" . ( $percent == 0 ? ' border:0;' : '' ) . "'></div></div>
 </div>
 ";
-
 				}
 
 			}
