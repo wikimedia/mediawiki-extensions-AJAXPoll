@@ -90,3 +90,9 @@
 	margin-top: 20px;
 	color: grey;
 }
+
+.ajaxpoll .ajaxpoll-id-info {
+	color:#FAFAFA;
+	font-size: 100%;
+	float: right;
+}

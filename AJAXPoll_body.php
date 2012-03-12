@@ -297,10 +297,8 @@ function mout(x){
 </script>
 <div class="ajaxpoll-question">' . strip_tags( $lines[0] ) . '</div>';
 
-			// Different message depending on if the user has already voted or not.
+			// Different message depending on if the user has already voted or not, or is entitled to vote
 
-			// $message = ( isset( $row[0] ) ) ? $ourLastVoteDate : wfMsg( 'ajaxpoll-no-vote' );
-			
 			if ( $wgUser->isAllowed( 'ajaxpoll-vote' ) ) {
 				$message = ( isset( $row[0] ) ) ? $ourLastVoteDate : wfMsg( 'ajaxpoll-no-vote' );
 			} else {
@@ -367,9 +365,7 @@ function mout(x){
 				$wgLang->timeanddate( wfTimestamp( TS_MW, $start_date ), true /* adjust? */ )
 			);
 
-			$ret .= '<div id="ajaxpoll-info-' . $ID . '" class="ajaxpoll-info">' . $pollSummary . '</div>';
-
-			$ret .= '</div>';
+			$ret .= '<div id="ajaxpoll-info-' . $ID . '" class="ajaxpoll-info">' . $pollSummary . '<div class="ajaxpoll-id-info">poll-id ' . $ID . '</div></div></div>';
 		} else {
 			$ret = '';
 		}
