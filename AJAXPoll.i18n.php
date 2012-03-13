@@ -40,6 +40,8 @@ $messages['qqq'] = array(
 	'ajaxpoll-info' => '$1 is the number of votes, $2 is when the poll was started',
 	'ajaxpoll-vote-permission' => 'Text for viewers who do not have the right to vote',
 	'right-ajaxpoll-vote' => '{{doc-right|ajaxpoll-vote}}',
+	'ajaxpoll-revoke-vote' => 'Voters can revoke their vote and this is the message text to be clicked when a voter wants to revoke a previous vote. The text is only shown for persons who already voted, in extra line below the block of answers.',
+	'ajaxpoll-vote-revoked' => 'System response that the vote was successfully revoked.',
 );
 
 /** Afrikaans (Afrikaans)
