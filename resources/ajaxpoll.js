@@ -18,23 +18,23 @@ $(".ajaxpoll-answer-vote").live("mouseout",
 );
 
 
-$(".ajaxpoll-answer-name:not(.ajaxpoll-answer-name-revoke)").live("mouseover",
+$(".ajaxpoll-answer-name:not(.ajaxpoll-answer-name-revoke) label").live("mouseover",
 	function(){
 		$(this).addClass("ajaxpoll-hover-vote");
 	}
 );
-$(".ajaxpoll-answer-name:not(.ajaxpoll-answer-name-revoke)").live("mouseout",
+$(".ajaxpoll-answer-name:not(.ajaxpoll-answer-name-revoke) label").live("mouseout",
 	function(){
 		$(this).removeClass("ajaxpoll-hover-vote");
 	}
 );
 
-$(".ajaxpoll-answer-name-revoke").live("mouseover", 
+$(".ajaxpoll-answer-name-revoke label").live("mouseover", 
 	function(){
 		$(this).addClass("ajaxpoll-hover-revoke");
 	}
 );
-$(".ajaxpoll-answer-name-revoke").live("mouseout", 
+$(".ajaxpoll-answer-name-revoke label").live("mouseout", 
 	function(){
 		$(this).removeClass("ajaxpoll-hover-revoke");
 	}
