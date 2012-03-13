@@ -39,9 +39,9 @@ $messages['qqq'] = array(
 	'ajaxpoll-your-vote' => '$1 is the answer name, $2 is the date when the answer was casted',
 	'ajaxpoll-info' => '$1 is the number of votes, $2 is when the poll was started',
 	'ajaxpoll-vote-permission' => 'Text for viewers who do not have the right to vote',
-	'right-ajaxpoll-vote' => '{{doc-right|ajaxpoll-vote}}',
 	'ajaxpoll-revoke-vote' => 'Voters can revoke their vote and this is the message text to be clicked when a voter wants to revoke a previous vote. The text is only shown for persons who already voted, in an extra line below the block of answers.',
 	'ajaxpoll-vote-revoked' => 'System response that the vote was successfully revoked.',
+	'right-ajaxpoll-vote' => '{{doc-right|ajaxpoll-vote}}',
 );
 
 /** Afrikaans (Afrikaans)
@@ -121,6 +121,8 @@ $messages['de'] = array(
 	'ajaxpoll-info' => 'Es {{PLURAL:$1|wurde|wurden}} seit Erstellung der Umfrage am $2 {{PLURAL:$1|eine Stimme|$1 Stimmen}} abgegeben.',
 	'ajaxpoll-submitting' => 'Bitte warte kurz. Deine Stimme wird verarbeitet.',
 	'ajaxpoll-vote-permission' => 'Du kannst nicht abstimmen.',
+	'ajaxpoll-revoke-vote' => 'Ich möchte meine Stimme widerrufen',
+	'ajaxpoll-vote-revoked' => 'Du hast deine Stimme erfolgreich widerrufen.',
 	'right-ajaxpoll-vote' => 'An AJAX-gestützen Umfragen teilnehmen',
 );
 
@@ -136,6 +138,7 @@ $messages['de-formal'] = array(
 	'ajaxpoll-no-vote' => 'Bitte stimmen Sie unten ab.',
 	'ajaxpoll-submitting' => 'Bitte warten Sie kurz. Ihre Stimme wird verarbeitet.',
 	'ajaxpoll-vote-permission' => 'Sie können nicht abstimmen.',
+	'ajaxpoll-vote-revoked' => 'Sie haben Ihre Stimme erfolgreich widerrufen.',
 );
 
 /** Lower Sorbian (Dolnoserbski)
@@ -153,6 +156,8 @@ $messages['dsb'] = array(
 	'ajaxpoll-info' => '{{PLURAL:$1|Jo se jaden głos wótedał|Stej se $1 głosa wótedałej|Su se $1 głose wótedali|Jo se $1 głosow wótedało}}, wót casa ako wótgłosowanje jo se $2 napórało.',
 	'ajaxpoll-submitting' => 'Pšosym cakaj, twój głos se pśeźěłujo.',
 	'ajaxpoll-vote-permission' => 'Njamóžoš wótgłosowaś.',
+	'ajaxpoll-revoke-vote' => 'Cu swój głos anulěrowaś',
+	'ajaxpoll-vote-revoked' => 'Sy swój głos wuspěšnje anulěrował.',
 	'right-ajaxpoll-vote' => 'Na wótgłosowanjach bazěrowanych na AJAX se wobźěliś',
 );
 
@@ -186,6 +191,8 @@ $messages['es'] = array(
 	'ajaxpoll-info' => 'Ha habido {{PLURAL:$1|un voto|$1 votos}} desde que la encuesta fue creada el $2.',
 	'ajaxpoll-submitting' => 'Por favor espera, estamos comprobando tu voto, ten paciencia.',
 	'ajaxpoll-vote-permission' => 'No puede votar.',
+	'ajaxpoll-revoke-vote' => 'Quiero revocar mi voto',
+	'ajaxpoll-vote-revoked' => 'Revocó su voto correctamente .',
 	'right-ajaxpoll-vote' => 'Puede votar en las encuestas basadas en AJAX',
 );
 
@@ -238,6 +245,8 @@ $messages['gl'] = array(
 	'ajaxpoll-info' => '{{PLURAL:$1|Recibiuse un voto|Recibíronse $1 votos}} desde que a enquisa foi creada o $2.',
 	'ajaxpoll-submitting' => 'Por favor, agarde durante o envío do seu voto.',
 	'ajaxpoll-vote-permission' => 'Non pode votar.',
+	'ajaxpoll-revoke-vote' => 'Quero anular o meu voto',
+	'ajaxpoll-vote-revoked' => 'Anulou o voto correctamente.',
 	'right-ajaxpoll-vote' => 'Pode votar nas enquisas baseadas en AJAX',
 );
 
@@ -274,6 +283,8 @@ $messages['hsb'] = array(
 	'ajaxpoll-info' => '{{PLURAL:$1|Je so jedyn hłós wotedał|Stej so $1 hłosaj wotedałoj|Su so $1 hłosy wotedali|Je so $1 hłosow wotedało}}, wot toho časa, zo wothłosowanje je so $2 wutworiło.',
 	'ajaxpoll-submitting' => 'Prošu čakaj, twój hłós so předźěłuje.',
 	'ajaxpoll-vote-permission' => 'Njemóžeš wothłosować.',
+	'ajaxpoll-revoke-vote' => 'Chcu swój hłós anulować',
+	'ajaxpoll-vote-revoked' => 'Sy swój hłós wuspěšnje anulował.',
 	'right-ajaxpoll-vote' => 'Na wothłosowanjach bazowanych na AJAX so wobdźělić',
 );
 
@@ -302,6 +313,8 @@ $messages['ia'] = array(
 	'ajaxpoll-info' => 'Il habeva $1 {{PLURAL:$1|voto|votos}} post le creation del sondage al $2.',
 	'ajaxpoll-submitting' => 'Un momento, tu voto es submittite.',
 	'ajaxpoll-vote-permission' => 'Tu non pote votar.',
+	'ajaxpoll-revoke-vote' => 'Io vole revocar mi voto',
+	'ajaxpoll-vote-revoked' => 'Tu ha revocate tu voto con successo.',
 	'right-ajaxpoll-vote' => 'Pote votar in sondages a base de AJAX',
 );
 
@@ -389,6 +402,8 @@ $messages['nl'] = array(
 	'ajaxpoll-info' => 'Er {{PLURAL:$1|is één stem|zijn $1 stemmen}} uitgebracht sinds de peiling op $2 is aangemaakt.',
 	'ajaxpoll-submitting' => 'Even geduld alstublieft. Uw stem wordt opgeslagen...',
 	'ajaxpoll-vote-permission' => 'U kunt niet stemmen.',
+	'ajaxpoll-revoke-vote' => 'Ik wil mijn stem intrekken',
+	'ajaxpoll-vote-revoked' => 'Uw stem is ingetrokken.',
 	'right-ajaxpoll-vote' => 'Kunnen in AJAX-gebaseerde peilingen stemmen',
 );
 
@@ -413,7 +428,7 @@ $messages['pl'] = array(
  * @author Dragonòt
  */
 $messages['pms'] = array(
-	'ajaxpoll-desc' => 'A përmëtt votassion basà su AJAX con tichëtta <tt>&lt;poll&gt;</tt>',
+	'ajaxpoll-desc' => "A përmët j'anterogassion basà su AJAX con tichëtta <tt>&lt;poll&gt;</tt>",
 	'ajaxpoll-vote-update' => "Tò vot a l'é stàit modificà.",
 	'ajaxpoll-vote-add' => "Tò vot a l'é stàit giontà.",
 	'ajaxpoll-vote-error' => "A l'é staje un problema an tratand sò vot, për piasì ch'a preuva torna.",
