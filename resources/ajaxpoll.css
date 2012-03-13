@@ -17,7 +17,7 @@
 	font-weight: bold;
 }
 
-.ajaxpoll .ajaxpoll-answer-name {
+.ajaxpoll .ajaxpoll-answer-name,.ajaxpoll-answer-name-revoke {
 	margin-top: 5px;
 	padding-left: 0px;
 	font-size: 0.9em;

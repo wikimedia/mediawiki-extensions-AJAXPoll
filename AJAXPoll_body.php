@@ -22,7 +22,9 @@ class AJAXPoll {
 	* @return Boolean: true
 	*/
 	static function AJAXPollParserInit( $parser ) {
+		global $wgOut;
 		$parser->setHook( 'poll', array( __CLASS__, 'AJAXPollRender' ) );
+		$wgOut->addModules( 'ext.ajaxpoll' );
 		return true;
 	}
 
@@ -53,11 +55,6 @@ class AJAXPoll {
 		$input = trim( strip_tags( $input->getText() ) );
 		$lines = explode( "\n", trim( $input ) );
 
-		// Deprecating AJAX
-		/*if ( isset( $_POST['ajaxpoll-post-id'] ) && isset( $_POST['ajaxpoll-post-answer'] ) && $_POST['ajaxpoll-post-id'] == $id ) {
-			AJAXPoll::submitVote( $_POST['ajaxpoll-post-id'], intval( $_POST['ajaxpoll-post-answer'] ) );
-		}*/
-
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->begin( __METHOD__ );
 
@@ -79,15 +76,13 @@ class AJAXPoll {
 					'poll_id' => $id,
 					'poll_txt' => $input,
 					'poll_date' => wfTimestampNow(),
-					'poll_title' => $wgParser->mTitle->getText()
+					'poll_title' => $parser->mTitle->getText()
 				),
 				__METHOD__
 			);
 		}
 		$dbw->commit( __METHOD__ );
 
-		// Add CSS
-		$wgOut->addExtensionStyle( $wgScriptPath . '/extensions/AJAXPoll/AJAXPoll.css' );
 		switch( $lines[0] ) {
 			case 'STATS':
 				$retVal = AJAXPoll::buildStats( $id, $user );
@@ -300,19 +295,6 @@ class AJAXPoll {
 			// @see https://bugzilla.wikimedia.org/show_bug.cgi?id=1319
 			$ret = '<div id="ajaxpoll-id-' . $id . '" class="ajaxpoll">
 <div id="ajaxpoll-ajax-' . $id . '" class="ajaxpoll-ajax"' . $attributes . '>' . $ajaxMessage . '</div>
-<script>var tmp;
-function mover(x){
-	var sp=$(x).find("span");
-	tmp=sp.html();
-	sp.text(sp.attr("title"));
-	sp.attr("title","");
-}
-function mout(x){
-	var sp=$(x).find("span");
-	sp.attr("title",sp.text());
-	sp.text(tmp);
-}
-</script>
 <div class="ajaxpoll-question">' . strip_tags( $lines[0] ) . '</div>';
 
 			// Different message depending on if the user has already voted or not, or is entitled to vote
@@ -343,6 +325,7 @@ function mout(x){
 				$voteValue = ( $vote ) ? $i : 0;
 
 				$ans_no = $i - 1;
+				$xid = "$id-$ans_no";
 
 				if ( $amountOfVotes == 0 ) {
 					$percent = 0;
@@ -359,7 +342,7 @@ function mout(x){
 				if ( $wgUser->isAllowed( 'ajaxpoll-vote' ) ) {
 
 					if ( $wgUseAjax ) {
-						$submitJS = "sajax_do_call(\"AJAXPoll::submitVote\",[\"" . $id . "\",\"" . $voteValue . "\"], $(\"#ajaxpoll-container-" . $id . "\")[0]);";
+						$submitJS = "sajax_do_call(\"AJAXPoll::submitVote\",[\"" . $id . "\",\"" . $voteValue . "\"],$(\"#ajaxpoll-container-" . $id . "\")[0]);";
 					} else {
 						$submitJS = "$(\"#ajaxpoll-answer-id-" . $id . "\").submit();";
 					}
@@ -370,13 +353,13 @@ function mout(x){
 
 					if ( $vote ) {
 						$ret .= "
-<div id='ajaxpoll-answer-" . $ans_no . "' class='ajaxpoll-answer'><div class='ajaxpoll-answer-name'><label for='ajaxpoll-post-answer-" . $ans_no . "' onmouseover='$(this).addClass(\"ajaxpoll-hover-vote\");' onmouseout='$(this).removeClass(\"ajaxpoll-hover-vote\");' onclick='$(\"#ajaxpoll-ajax-" . $id . "\").html(\"" . wfMsg( 'ajaxpoll-submitting' ) . "\");$(\"#ajaxpoll-ajax-" . $id . "\").css(\"display\",\"block\");$(this).addClass(\"ajaxpoll-checkevent\").prop(\"checked\",true); " . $submitJS . "'><input type='radio' id='ajaxpoll-post-answer-" . $ans_no . "' name='ajaxpoll-post-answer-" . $ans_no . "' value='" . $voteValue . "' " . ( $our ? 'checked=true ' : '' ) . "/>" . strip_tags( $lines[$i] ) .
-"</label></div><div class='ajaxpoll-answer-vote" . ( $our ? ' ajaxpoll-our-vote' : '' ) ."' onmouseover='mover(this)' onmouseout='mout(this);'><span title='" . wfMsg( 'ajaxpoll-percent-votes', sprintf( $percent ) ) . "'>" . ( ( isset( $poll_result ) && !empty( $poll_result[$i + 1] ) ) ? $poll_result[$i + 1] : 0 ) . "</span><div style='width: " . $percent . "%;" . ( $percent == 0 ? ' border:0;' : '' ) . "'></div></div>
+<div id='ajaxpoll-answer-$xid' class='ajaxpoll-answer'><div class='ajaxpoll-answer-name'><label for='ajaxpoll-post-answer-$xid' onclick='$(\"#ajaxpoll-ajax-" . $id . "\").html(\"" . wfMsg( 'ajaxpoll-submitting' ) . "\");$(\"#ajaxpoll-ajax-" . $id . "\").css(\"display\",\"block\");$(this).addClass(\"ajaxpoll-checkevent\").prop(\"checked\",true); " . $submitJS . "'><input type='radio' id='ajaxpoll-post-answer-$xid' name='ajaxpoll-post-answer-$xid' value='" . $voteValue . "' " . ( $our ? 'checked=true ' : '' ) . "/>" . strip_tags( $lines[$i] ) .
+"</label></div><div class='ajaxpoll-answer-vote" . ( $our ? ' ajaxpoll-our-vote' : '' ) ."'><span title='" . wfMsg( 'ajaxpoll-percent-votes', sprintf( $percent ) ) . "'>" . ( ( isset( $poll_result ) && !empty( $poll_result[$i + 1] ) ) ? $poll_result[$i + 1] : 0 ) . "</span><div style='width: " . $percent . "%;" . ( $percent == 0 ? ' border:0;' : '' ) . "'></div></div>
 </div>
 ";
 					} else {
 						$ret .= "
-<div id='ajaxpoll-answer-" . $ans_no . "' class='ajaxpoll-answer'><div class='ajaxpoll-answer-name'><label for='ajaxpoll-post-answer-" . $ans_no . "' onmouseover='$(this).addClass(\"ajaxpoll-hover-revoke\");' onmouseout='$(this).removeClass(\"ajaxpoll-hover-revoke\");' onclick='$(\"#ajaxpoll-ajax-" . $id . "\").html(\"" . wfMsg( 'ajaxpoll-submitting' ) . "\");$(\"#ajaxpoll-ajax-" . $id . "\").css(\"display\",\"block\");$(this).addClass(\"ajaxpoll-checkevent\").prop(\"checked\",true); " . $submitJS . "'><input type='radio' id='ajaxpoll-post-answer-" . $ans_no . "' name='ajaxpoll-post-answer-" . $ans_no . "' value='" . $voteValue . "' " . ( $our ? 'checked=true ' : '' ) . "/>" . strip_tags( $lines[$i] ) .
+<div id='ajaxpoll-answer-$xid' class='ajaxpoll-answer'><div class='ajaxpoll-answer-name ajaxpoll-answer-name-revoke'><label for='ajaxpoll-post-answer-$xid' onclick='$(\"#ajaxpoll-ajax-" . $id . "\").html(\"" . wfMsg( 'ajaxpoll-submitting' ) . "\");$(\"#ajaxpoll-ajax-" . $id . "\").css(\"display\",\"block\");$(this).addClass(\"ajaxpoll-checkevent\").prop(\"checked\",true); " . $submitJS . "'><input type='radio' id='ajaxpoll-post-answer-$xid' name='ajaxpoll-post-answer-$xid' value='" . $voteValue . "' " . ( $our ? 'checked=true ' : '' ) . "/>" . strip_tags( $lines[$i] ) .
 "</label></div>
 </div>
 ";
@@ -385,8 +368,8 @@ function mout(x){
 				} else {
 
 					$ret .= "
-<div id='ajaxpoll-answer-" . $ans_no . "' class='ajaxpoll-answer'><div class='ajaxpoll-answer-name'><label for='ajaxpoll-post-answer-" . $ans_no . "' onclick='$(\"#ajaxpoll-ajax-" . $id . "\").html(\"" . wfMsg( 'ajaxpoll-vote-permission' ) . "\");$(\"#ajaxpoll-ajax-" . $id . "\").css(\"display\",\"block\");'><input disabled='disabled' type='radio' id='ajaxpoll-post-answer-" . $ans_no . "' name='ajaxpoll-post-answer-" . $ans_no . "' value='" . $i . "'/>" . strip_tags( $lines[$i] ) .
-"</label></div><div class='ajaxpoll-answer-vote" . ( $our ? ' ajaxpoll-our-vote' : '' ) ."' onmouseover='mover(this)' onmouseout='mout(this);'><span title='" . wfMsg( 'ajaxpoll-percent-votes', sprintf( $percent ) ) . "'>" . ( ( isset( $poll_result ) && !empty( $poll_result[$i + 1] ) ) ? $poll_result[$i + 1] : 0 ) . "</span><div style='width: " . $percent . "%;" . ( $percent == 0 ? ' border:0;' : '' ) . "'></div></div>
+<div id='ajaxpoll-answer-" . $id . "' class='ajaxpoll-answer'><div class='ajaxpoll-answer-name'><label for='ajaxpoll-post-answer-" . $id . "' onclick='$(\"#ajaxpoll-ajax-" . $id . "\").html(\"" . wfMsg( 'ajaxpoll-vote-permission' ) . "\");$(\"#ajaxpoll-ajax-" . $id . "\").css(\"display\",\"block\");'><input disabled='disabled' type='radio' id='ajaxpoll-post-answer-" . $id . "' name='ajaxpoll-post-answer-" . $id . "' value='" . $voteValue . "'/>" . strip_tags( $lines[$i] ) .
+"</label></div><div class='ajaxpoll-answer-vote" . ( $our ? ' ajaxpoll-our-vote' : '' ) ."'><span title='" . wfMsg( 'ajaxpoll-percent-votes', sprintf( $percent ) ) . "'>" . ( ( isset( $poll_result ) && !empty( $poll_result[$i + 1] ) ) ? $poll_result[$i + 1] : 0 ) . "</span><div style='width: " . $percent . "%;" . ( $percent == 0 ? ' border:0;' : '' ) . "'></div></div>
 </div>
 ";
 				}
