@@ -317,9 +317,12 @@ function mout(x){
 
 			// Different message depending on if the user has already voted or not, or is entitled to vote
 
+			$canRevoke = false;
+
 			if ( $wgUser->isAllowed( 'ajaxpoll-vote' ) ) {
 				if ( isset( $row[0] ) ) {
 					$message = $ourLastVoteDate;
+					$canRevoke = true;
 					$lines[] = wfMsg( 'ajaxpoll-revoke-vote' );
 				} else {
 					$message = wfMsg( 'ajaxpoll-no-vote' );
@@ -336,8 +339,9 @@ function mout(x){
 
 			for ( $i = 1; $i < count( $lines ); $i++ ) {
 
-				$vote = ( $i != count( $lines ) - 1 );
+				$vote = !( $canRevoke && ( $i == count( $lines ) - 1 ) );
 				$voteValue = ( $vote ) ? $i : 0;
+
 				$ans_no = $i - 1;
 
 				if ( $amountOfVotes == 0 ) {
