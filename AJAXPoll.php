@@ -19,7 +19,7 @@
  * @author Jack Phoenix <jack@countervandalism.net>
  * @author Thomas Gries
  * @maintainer Thomas Gries
- * @version 1.71
+ * @version 1.72
  * @link http://www.mediawiki.org/wiki/Extension:AJAX_Poll Documentation
  */
 
@@ -31,7 +31,7 @@ if( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'AJAX Poll',
-	'version' => '1.71 20120314',
+	'version' => '1.72 20120314',
 	'author' => array( 'Dariusz Siedlecki', 'Jack Phoenix', 'Thomas Gries' ),
 	'descriptionmsg' => 'ajaxpoll-desc',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:AJAX_Poll',
@@ -42,7 +42,8 @@ $dir = dirname( __FILE__ );
 $wgExtensionMessagesFiles['AJAXPoll'] = $dir . '/AJAXPoll.i18n.php';
 $wgAutoloadClasses['AJAXPoll'] = $dir . '/AJAXPoll_body.php';
 $wgAjaxExportList[] = 'AJAXPoll::submitVote';
-$wgHooks['ParserFirstCallInit'][] = 'AJAXPoll::AJAXPollParserInit';
+$wgHooks['ParserFirstCallInit'][] = 'AJAXPoll::onParserInit';
+$wgHooks['LoadExtensionSchemaUpdates'][] = 'AJAXPoll::onLoadExtensionSchemaUpdates';
 
 $myResourceTemplate = array(
 	'localBasePath' => dirname( __FILE__ ) . "/resources",

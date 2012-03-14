@@ -21,7 +21,7 @@ class AJAXPoll {
 	* @param $parser Object: instance of Parser (not necessarily $wgParser)
 	* @return Boolean: true
 	*/
-	static function AJAXPollParserInit( $parser ) {
+	static function onParserInit( $parser ) {
 		global $wgOut;
 		$parser->setHook( 'poll', array( __CLASS__, 'AJAXPollRender' ) );
 		$wgOut->addModules( 'ext.ajaxpoll' );
@@ -76,7 +76,6 @@ class AJAXPoll {
 					'poll_id' => $id,
 					'poll_txt' => $input,
 					'poll_date' => wfTimestampNow(),
-					'poll_title' => $parser->mTitle->getPrefixedText()
 				),
 				__METHOD__
 			);
@@ -392,6 +391,32 @@ class AJAXPoll {
 		}
 
 		return $ret;
+	}
+
+	public static function onLoadExtensionSchemaUpdates( $updater = null ) {
+		if ( $updater === null ) {
+			// no < 1.17 support
+		} else {
+			// >= 1.17 support
+
+			# poll_info.poll_title field was dropped in AJAXPoll version 1.72
+			$updater->dropExtensionField( 
+				'poll_info',
+				'poll_title',
+				dirname( __FILE__ ) . '/patches/drop-field--poll_info-poll_title.sql' 
+			);
+
+			$updater->addExtensionTable(
+				'ajaxpoll_info',
+				dirname( __FILE__ ) . '/patches/create-table--ajaxpoll_info.sql' 
+			);
+			$updater->addExtensionTable(
+				'ajaxpoll_vote',
+				dirname( __FILE__ ) . '/patches/create-table--ajaxpoll_vote.sql' 
+			);
+
+		}
+		return true;
 	}
 
 } /* class AJAXPoll */
