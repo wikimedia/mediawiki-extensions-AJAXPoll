@@ -399,23 +399,38 @@ class AJAXPoll {
 		} else {
 			// >= 1.17 support
 
-			# poll_info.poll_title field was dropped in AJAXPoll version 1.72
-			$updater->dropExtensionField( 
-				'poll_info',
-				'poll_title',
-				dirname( __FILE__ ) . '/patches/drop-field--poll_info-poll_title.sql' 
-			);
+			if ( $updater->extensionTableExists( 'poll_info' ) ) {
+				# poll_info.poll_title field was dropped in AJAXPoll version 1.72
+				$updater->dropExtensionField( 
+					'poll_info',
+					'poll_title',
+					dirname( __FILE__ ) . '/patches/drop-field--poll_info-poll_title.sql' 
+				);
+				$updater->addExtensionTable(
+					'ajaxpoll_info',
+					dirname( __FILE__ ) . '/patches/rename-table--poll_info.sql' 
+				);
+			} else {
+				$updater->addExtensionTable(
+					'ajaxpoll_info',
+					dirname( __FILE__ ) . '/patches/create-table--ajaxpoll_info.sql' 
+				);
+			}
 
-			$updater->addExtensionTable(
-				'ajaxpoll_info',
-				dirname( __FILE__ ) . '/patches/create-table--ajaxpoll_info.sql' 
-			);
-			$updater->addExtensionTable(
-				'ajaxpoll_vote',
-				dirname( __FILE__ ) . '/patches/create-table--ajaxpoll_vote.sql' 
-			);
+			if ( $updater->extensionTableExists( 'poll_vote' ) ) {
+				$updater->addExtensionTable(
+					'ajaxpoll_vote',
+					dirname( __FILE__ ) . '/patches/rename-table--poll_vote.sql' 
+				);
+			} else {
+				$updater->addExtensionTable(
+					'ajaxpoll_vote',
+					dirname( __FILE__ ) . '/patches/create-table--ajaxpoll_vote.sql' 
+				);
+			}
 
 		}
+
 		return true;
 	}
 
