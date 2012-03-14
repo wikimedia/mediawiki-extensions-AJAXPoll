@@ -76,7 +76,7 @@ class AJAXPoll {
 					'poll_id' => $id,
 					'poll_txt' => $input,
 					'poll_date' => wfTimestampNow(),
-					'poll_title' => $parser->mTitle->getText()
+					'poll_title' => $parser->mTitle->getPrefixedText()
 				),
 				__METHOD__
 			);
