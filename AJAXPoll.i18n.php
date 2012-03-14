@@ -80,6 +80,8 @@ $messages['be-tarask'] = array(
 	'ajaxpoll-info' => 'З моманту стварэньня галасаваньня $2 {{PLURAL:$1|пададзены $1 голас|пададзеныя $1 галасы|пададзена $1 галасоў}}.',
 	'ajaxpoll-submitting' => 'Калі ласкай, чакайце, ваш голас дадаецца.',
 	'ajaxpoll-vote-permission' => 'Вы ня можаце галасаваць.',
+	'ajaxpoll-revoke-vote' => 'Я хачу адклікаць мой голас',
+	'ajaxpoll-vote-revoked' => 'Вы пасьпяхова адклікалі ваш голас.',
 	'right-ajaxpoll-vote' => 'магчымасьць галасаваць у AJAX-апытаньнях',
 );
 
@@ -227,6 +229,8 @@ $messages['fr'] = array(
 	'ajaxpoll-info' => "Il y avait {{PLURAL:$1|une voix|$1 voix}}, depuis l'élaboration du sondage au $2.",
 	'ajaxpoll-submitting' => 'Attends une moment, ta voix est traité...',
 	'ajaxpoll-vote-permission' => 'Vous ne pouvez pas voter.',
+	'ajaxpoll-revoke-vote' => 'Je veux annuler mon vote',
+	'ajaxpoll-vote-revoked' => 'Vous avez annulé votre vote.',
 	'right-ajaxpoll-vote' => 'Peut voter dans des sondages basés sur AJAX',
 );
 
@@ -368,6 +372,8 @@ $messages['mk'] = array(
 	'ajaxpoll-info' => 'Откако е создадена анкетата ($2) {{PLURAL:$1|даден еден глас|дадени се $1 гласа}}.',
 	'ajaxpoll-submitting' => 'Почекајте, го заведувам вашиот глас.',
 	'ajaxpoll-vote-permission' => 'Не можете да гласате.',
+	'ajaxpoll-revoke-vote' => 'Сакам да го повлечам гласот',
+	'ajaxpoll-vote-revoked' => 'Успешно го повлековте гласот.',
 	'right-ajaxpoll-vote' => 'Може да гласа на анкети на основа на AJAX.',
 );
 
