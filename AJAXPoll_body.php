@@ -63,7 +63,7 @@ class AJAXPoll {
 		*/
 
 		$row = $dbw->selectRow(
-			array( 'poll_info' ),
+			array( 'ajaxpoll_info' ),
 			array( 'COUNT(poll_id) AS count' ),
 			array( 'poll_id' => $id ),
 			__METHOD__
@@ -71,7 +71,7 @@ class AJAXPoll {
 
 		if( empty( $row->count ) ) {
 			$dbw->insert(
-				'poll_info',
+				'ajaxpoll_info',
 				array(
 					'poll_id' => $id,
 					'poll_txt' => $input,
@@ -99,7 +99,7 @@ class AJAXPoll {
 		$dbr = wfGetDB( DB_SLAVE );
 
 		$res = $dbr->select(
-			'poll_vote',
+			'ajaxpoll_vote',
 			array(
 				'COUNT(*)',
 				'COUNT(DISTINCT poll_id)',
@@ -132,7 +132,7 @@ class AJAXPoll {
 		$clockago = $x . ' ' . $y . ( $x > 1 ? 's' : '' );
 
 		$res = $dbr->select(
-			'poll_vote',
+			'ajaxpoll_vote',
 			'COUNT(*)',
 			array( 'DATE_SUB(CURDATE(), INTERVAL 2 DAY) <= poll_date' ),
 			__METHOD__
@@ -164,7 +164,7 @@ class AJAXPoll {
 			$answer = ++$answer;
 
 			$q = $dbw->select(
-				'poll_vote',
+				'ajaxpoll_vote',
 				'COUNT(*) AS count',
 				array(
 					'poll_id' => $id,
@@ -177,7 +177,7 @@ class AJAXPoll {
 			if ( $row['count'] > 0 ) {
 
 				$updateQuery = $dbw->update(
-					'poll_vote',
+					'ajaxpoll_vote',
 					array(
 						'poll_answer' => $answer,
 						'poll_date' => wfTimestampNow()
@@ -194,7 +194,7 @@ class AJAXPoll {
 			} else {
 
 				$insertQuery = $dbw->insert(
-					'poll_vote',
+					'ajaxpoll_vote',
 					array(
 						'poll_id' => $id,
 						'poll_user' => $user,
@@ -212,7 +212,7 @@ class AJAXPoll {
 		} else { // revoking a vote
 
 			$deleteQuery = $dbw->delete(
-				'poll_vote',
+				'ajaxpoll_vote',
 				array(
 					'poll_id' => $id,
 					'poll_user' => $user,
@@ -234,7 +234,7 @@ class AJAXPoll {
 		$dbr = wfGetDB( DB_SLAVE );
 
 		$q = $dbr->select(
-			'poll_info',
+			'ajaxpoll_info',
 			array( 'poll_txt', 'poll_date' ),
 			array( 'poll_id' => $id ),
 			__METHOD__
@@ -248,7 +248,7 @@ class AJAXPoll {
 		$start_date = $row['poll_date'];
 
 		$q = $dbr->select(
-			'poll_vote',
+			'ajaxpoll_vote',
 			array( 'poll_answer', 'COUNT(*)' ),
 			array( 'poll_id' => $id ),
 			__METHOD__,
@@ -265,7 +265,7 @@ class AJAXPoll {
 
 		// Did we vote?
 		$q = $dbr->select(
-			'poll_vote',
+			'ajaxpoll_vote',
 			array( 'poll_answer', 'poll_date' ),
 			array(
 				'poll_id' => $id,
