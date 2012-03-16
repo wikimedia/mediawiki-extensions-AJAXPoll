@@ -410,7 +410,7 @@ $messages['nl'] = array(
 	'ajaxpoll-vote-permission' => 'U kunt niet stemmen.',
 	'ajaxpoll-revoke-vote' => 'Ik wil mijn stem intrekken',
 	'ajaxpoll-vote-revoked' => 'Uw stem is ingetrokken.',
-	'right-ajaxpoll-vote' => 'Kunnen in AJAX-gebaseerde peilingen stemmen',
+	'right-ajaxpoll-vote' => 'Kan in AJAX-gebaseerde peilingen stemmen',
 );
 
 /** Polish (Polski)
