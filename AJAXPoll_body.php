@@ -30,7 +30,7 @@ class AJAXPoll {
 
 	# The callback function for converting the input text to HTML output
 	static function AJAXPollRender( $input, $params = array(), Parser $parser ) {
-		global $wgUser, $wgOut, $wgTitle, $wgScriptPath,
+		global $wgUser, $wgOut, $wgTitle, $wgScriptPath, $wgUseAjax,
 			$wgAJAXPollTrackingCategory;
 
 		$parser->disableCache();
@@ -55,6 +55,16 @@ class AJAXPoll {
 		$input = trim( strip_tags( $input->getText() ) );
 		$lines = explode( "\n", trim( $input ) );
 
+		// compatibility for non-ajax requests - just in case
+		if ( !$wgUseAjax ) {
+			$responseId = "ajaxpoll-post-id";
+			$responseAnswer = "ajaxpoll-post-answer-$id";
+		
+			if ( isset( $_POST[$responseId] ) && isset( $_POST[$responseAnswer] ) && $_POST[$responseId] == $id ) {
+				AJAXPoll::submitVote( $id, intval( $_POST[$responseAnswer] ) );
+			}
+		}
+		
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->begin( __METHOD__ );
 
@@ -146,6 +156,7 @@ class AJAXPoll {
 
 	public static function submitVote( $id, $answer ) {
 		global $wgUser,$wgOut;
+		// echo "id: $id ans $answer<br/>";
 
 		$dbw = wfGetDB( DB_MASTER );
 
@@ -292,7 +303,8 @@ class AJAXPoll {
 			}
 			// HTML output has to be on one line thanks to a MediaWiki bug
 			// @see https://bugzilla.wikimedia.org/show_bug.cgi?id=1319
-			$ret = '<div id="ajaxpoll-id-' . $id . '" class="ajaxpoll">
+			$ret = '<script>var useAjax='. ( !empty($wgUseAjax) ? "true" : "false" ) . ';</script>
+<div id="ajaxpoll-id-' . $id . '" class="ajaxpoll">
 <div id="ajaxpoll-ajax-' . $id . '" class="ajaxpoll-ajax"' . $attributes . '>' . $ajaxMessage . '</div>
 <div class="ajaxpoll-question">' . strip_tags( $lines[0] ) . '</div>';
 
@@ -343,25 +355,18 @@ class AJAXPoll {
 
 				if ( $wgUser->isAllowed( 'ajaxpoll-vote' ) ) {
 
-					if ( $wgUseAjax ) {
-						$submitJS = "sajax_do_call(\"AJAXPoll::submitVote\",[\"" . $id . "\",\"" . $answer . "\"],$(\"#ajaxpoll-container-" . $id . "\")[0]);";
-					} else {
-						$submitJS = "$(\"#ajaxpoll-answer-id-" . $id . "\").submit();";
-					}
-
-
 					// HTML output has to be on one line thanks to a MediaWiki bug
 					// @see https://bugzilla.wikimedia.org/show_bug.cgi?id=1319
 
 					if ( $vote ) {
 						$ret .= "
-<div id='ajaxpoll-answer-$xid' class='ajaxpoll-answer'><div class='ajaxpoll-answer-name'><label for='ajaxpoll-post-answer-$xid' onclick='$(\"#ajaxpoll-ajax-" . $xid . "\").html(\"" . wfMsg( 'ajaxpoll-submitting' ) . "\").css(\"display\",\"block\");$(this).addClass(\"ajaxpoll-checkevent\").prop(\"checked\",true);" . $submitJS . "'><input type='radio' id='ajaxpoll-post-answer-$xid' name='ajaxpoll-post-answer-$xid' value='" . $answer . "' " . ( $our ? 'checked=true ' : '' ) . "/>" . strip_tags( $lines[$i] ) .
+<div id='ajaxpoll-answer-$xid' class='ajaxpoll-answer' poll='$id' answer='$answer'><div class='ajaxpoll-answer-name'><label for='ajaxpoll-post-answer-$xid'><input type='radio' id='ajaxpoll-post-answer-$xid' name='ajaxpoll-post-answer-$id' value='" . $answer . "' " . ( $our ? 'checked=true ' : '' ) . "/>" . strip_tags( $lines[$i] ) .
 "</label></div><div class='ajaxpoll-answer-vote" . ( $our ? ' ajaxpoll-our-vote' : '' ) ."'><span title='" . wfMsg( 'ajaxpoll-percent-votes', sprintf( $percent ) ) . "'>" . ( ( isset( $poll_result ) && !empty( $poll_result[$i + 1] ) ) ? $poll_result[$i + 1] : 0 ) . "</span><div style='width: " . $percent . "%;" . ( $percent == 0 ? ' border:0;' : '' ) . "'></div></div>
 </div>
 ";
 					} else {
 						$ret .= "
-<div id='ajaxpoll-answer-$xid' class='ajaxpoll-answer'><div class='ajaxpoll-answer-name ajaxpoll-answer-name-revoke'><label for='ajaxpoll-post-answer-$xid' onclick='$(\"#ajaxpoll-ajax-" . $xid . "\").html(\"" . wfMsg( 'ajaxpoll-submitting' ) . "\").css(\"display\",\"block\");$(this).addClass(\"ajaxpoll-checkevent\").prop(\"checked\",true);" . $submitJS . "'><input type='radio' id='ajaxpoll-post-answer-$xid' name='ajaxpoll-post-answer-$xid' value='" . $answer . "' " . ( $our ? 'checked=true ' : '' ) . "/>" . strip_tags( $lines[$i] ) .
+<div id='ajaxpoll-answer-$xid' class='ajaxpoll-answer' poll='$id' answer='$answer'><div class='ajaxpoll-answer-name ajaxpoll-answer-name-revoke'><label for='ajaxpoll-post-answer-$xid'><input type='radio' id='ajaxpoll-post-answer-$xid' name='ajaxpoll-post-answer-$id' value='" . $answer . "' " . ( $our ? 'checked=true ' : '' ) . "/>" . strip_tags( $lines[$i] ) .
 "</label></div>
 </div>
 ";
@@ -370,7 +375,7 @@ class AJAXPoll {
 				} else {
 
 					$ret .= "
-<div id='ajaxpoll-answer-" . $xid . "' class='ajaxpoll-answer'><div class='ajaxpoll-answer-name'><label for='ajaxpoll-post-answer-" . $xid . "' onclick='$(\"#ajaxpoll-ajax-" . $xid . "\").html(\"" . wfMsg( 'ajaxpoll-vote-permission' ) . "\").css(\"display\",\"block\");'><input disabled='disabled' type='radio' id='ajaxpoll-post-answer-" . $xid . "' name='ajaxpoll-post-answer-" . $xid . "' value='" . $answer . "'/>" . strip_tags( $lines[$i] ) .
+<div id='ajaxpoll-answer-" . $xid . "' class='ajaxpoll-answer' poll='$id' answer='$answer'><div class='ajaxpoll-answer-name'><label for='ajaxpoll-post-answer-" . $xid . "' onclick='$(\"#ajaxpoll-ajax-" . $xid . "\").html(\"" . wfMsg( 'ajaxpoll-vote-permission' ) . "\").css(\"display\",\"block\");'><input disabled='disabled' type='radio' id='ajaxpoll-post-answer-" . $xid . "' name='ajaxpoll-post-answer-" . $id . "' value='" . $answer . "'/>" . strip_tags( $lines[$i] ) .
 "</label></div><div class='ajaxpoll-answer-vote" . ( $our ? ' ajaxpoll-our-vote' : '' ) ."'><span title='" . wfMsg( 'ajaxpoll-percent-votes', sprintf( $percent ) ) . "'>" . ( ( isset( $poll_result ) && !empty( $poll_result[$i + 1] ) ) ? $poll_result[$i + 1] : 0 ) . "</span><div style='width: " . $percent . "%;" . ( $percent == 0 ? ' border:0;' : '' ) . "'></div></div>
 </div>
 ";
