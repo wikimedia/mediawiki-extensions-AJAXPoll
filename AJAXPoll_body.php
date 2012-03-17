@@ -402,7 +402,7 @@ class AJAXPoll {
 		} else {
 			// >= 1.17 support
 
-			if ( $updater->extensionTableExists( 'poll_info' ) ) {
+			if ( $updater->tableExists( 'poll_info' ) ) {
 				# poll_info.poll_title field was dropped in AJAXPoll version 1.72
 				$updater->dropExtensionField( 
 					'poll_info',
@@ -420,7 +420,7 @@ class AJAXPoll {
 				);
 			}
 
-			if ( $updater->extensionTableExists( 'poll_vote' ) ) {
+			if ( $updater->tableExists( 'poll_vote' ) ) {
 				$updater->addExtensionTable(
 					'ajaxpoll_vote',
 					dirname( __FILE__ ) . '/patches/rename-table--poll_vote.sql' 
