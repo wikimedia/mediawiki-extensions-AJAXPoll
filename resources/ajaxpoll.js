@@ -18,16 +18,16 @@ $(".ajaxpoll-answer-vote").live("mouseout",
 );
 
 /* attach click handler */
-$(".ajaxpoll-answer")
+$(".ajaxpoll-answer-name label")
 	.live("click",
 		function(event){
 			event.preventDefault();
 			event.stopPropagation();
-			$this = $(this);
+			$this = $(this).parent().parent();
 			var poll = $this.attr( "poll" );
 			var answer = $this.attr("answer");
 			$this.find(".ajaxpoll-hover-vote").addClass("ajaxpoll-checkevent");
-			$this.find("input").prop("checked",true);
+			$this.find("input").prop("checked","checked");
 			$( "#ajaxpoll-ajax-"+poll )
 				.html("Please wait, submitting your vote.")
 				.css("display","block");
