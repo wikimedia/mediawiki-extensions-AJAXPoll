@@ -19,7 +19,7 @@
  * @author Jack Phoenix <jack@countervandalism.net>
  * @author Thomas Gries
  * @maintainer Thomas Gries
- * @version 1.75
+ * @version 1.76
  * @link http://www.mediawiki.org/wiki/Extension:AJAX_Poll Documentation
  */
 
@@ -31,7 +31,7 @@ if( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'AJAX Poll',
-	'version' => '1.75 20120317',
+	'version' => '1.76 20120318',
 	'author' => array( 'Dariusz Siedlecki', 'Jack Phoenix', 'Thomas Gries' ),
 	'descriptionmsg' => 'ajaxpoll-desc',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:AJAX_Poll',

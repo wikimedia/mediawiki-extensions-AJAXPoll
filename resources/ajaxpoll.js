@@ -26,9 +26,8 @@ $(".ajaxpoll-answer")
 			$this = $(this);
 			var poll = $this.attr( "poll" );
 			var answer = $this.attr("answer");
-			$this
-				.addClass("ajaxpoll-checkevent")
-				.find("input").prop("checked",true);
+			$this.find(".ajaxpoll-hover-vote").addClass("ajaxpoll-checkevent");
+			$this.find("input").prop("checked",true);
 			$( "#ajaxpoll-ajax-"+poll )
 				.html("Please wait, submitting your vote.")
 				.css("display","block");

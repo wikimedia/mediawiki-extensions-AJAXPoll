@@ -24,11 +24,11 @@
 }
 
 .ajaxpoll .ajaxpoll-hover-vote {
-	background: cyan;
+	background: #00FFFF;
 }
 
 .ajaxpoll .ajaxpoll-hover-revoke {
-	background: gold;
+	background: #FFD700;
 }
 
 .ajaxpoll .ajaxpoll-answer-vote {
@@ -77,12 +77,12 @@
 }
 
 .ajaxpoll .ajaxpoll-checkevent {
-	background: cyan;
+	background: #00FF00;
 }
 
 .ajaxpoll .ajaxpoll-misc {
 	margin-bottom: 10px;
-	color: grey;
+	color: #808080;
 }
 
 .ajaxpoll .ajaxpoll-ajax {
@@ -96,11 +96,11 @@
 
 .ajaxpoll .ajaxpoll-info {
 	margin-top: 20px;
-	color: grey;
+	color: #808080;
 }
 
 .ajaxpoll .ajaxpoll-id-info {
-	color:#FAFAFA;
+	color: #FAFAFA;
 	font-size: 100%;
 	float: right;
 }
