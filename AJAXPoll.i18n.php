@@ -419,6 +419,7 @@ $messages['nl'] = array(
  */
 $messages['pl'] = array(
 	'ajaxpoll-desc' => 'Umożliwia wstawienie opartych na technologii AJAX ankiet przy pomocy znacznika <tt>&lt;poll&gt;</tt>',
+	'ajaxpoll-tracking-category' => 'Strony z sondażami',
 	'ajaxpoll-vote-update' => 'Twój głos został zmieniony.',
 	'ajaxpoll-vote-add' => 'Twój głos został dodany.',
 	'ajaxpoll-vote-error' => 'Wystąpił błąd w czasie dodawania głosu, proszę spróbować później.',
@@ -427,6 +428,10 @@ $messages['pl'] = array(
 	'ajaxpoll-no-vote' => 'Podaj swój głos poniżej.',
 	'ajaxpoll-info' => 'Oddano już {{PLURAL:$1|jeden głos|$1 głosy|$1 głosów}} od założenia ankiety dnia $2.',
 	'ajaxpoll-submitting' => 'Proszę czekać, trwa dodawanie głosu.',
+	'ajaxpoll-vote-permission' => 'Nie masz uprawnień do głosowania.',
+	'ajaxpoll-revoke-vote' => 'Chcę wycofać swój głos',
+	'ajaxpoll-vote-revoked' => 'Pomyślnie wycofano twój głos',
+	'right-ajaxpoll-vote' => 'Można głosować w sondażach opartych na technologii AJAX',
 );
 
 /** Piedmontese (Piemontèis)
