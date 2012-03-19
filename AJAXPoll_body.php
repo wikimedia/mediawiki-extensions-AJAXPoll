@@ -30,16 +30,10 @@ class AJAXPoll {
 
 	# The callback function for converting the input text to HTML output
 	static function AJAXPollRender( $input, $params = array(), Parser $parser ) {
-		global $wgUser, $wgOut, $wgTitle, $wgScriptPath, $wgUseAjax,
-			$wgAJAXPollTrackingCategory;
+		global $wgUser, $wgOut, $wgTitle, $wgScriptPath, $wgUseAjax;
 
 		$parser->disableCache();
-
-		if ( $wgAJAXPollTrackingCategory === true ) {
-			$parser->addTrackingCategory( 'ajaxpoll-tracking-category' );
-		} elseif ( is_string( $wgAJAXPollTrackingCategory ) ) {
-			$parser->addTrackingCategory( $wgAJAXPollTrackingCategory );
-		}
+		$parser->addTrackingCategory( 'ajaxpoll-tracking-category' );
 
 		if ( $wgUser->getName() == '' ) {
 			$user = wfGetIP();
