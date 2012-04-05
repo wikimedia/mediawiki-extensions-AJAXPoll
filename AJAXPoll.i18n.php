@@ -64,6 +64,26 @@ $messages['ar'] = array(
 	'ajaxpoll-submitting' => 'من فضلك انتظر، يرسل صوتك.',
 );
 
+/** Asturian (Asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'ajaxpoll-desc' => "Permite les encuestes basaes n'AJAX con <tt>&lt;poll&gt;</tt>",
+	'ajaxpoll-tracking-category' => 'Páxines con una encuesta',
+	'ajaxpoll-vote-update' => "El to votu s'anovó.",
+	'ajaxpoll-vote-add' => "Amestóse'l to votu.",
+	'ajaxpoll-vote-error' => 'Hebo un problema al procesar el to votu; tentalo otra vuelta, por favor.',
+	'ajaxpoll-percent-votes' => '$1% de tolos votos',
+	'ajaxpoll-your-vote' => 'Ya votasti por "$1" el $2, pues camudar el to votu calcando nuna de les rempuestes d\'abaxo.',
+	'ajaxpoll-no-vote' => 'Por favor, vota abaxo.',
+	'ajaxpoll-info' => 'Hebo {{PLURAL:$1|un votu|$1 votos}} dende que se creó la encuesta el $2.',
+	'ajaxpoll-submitting' => "Aguarda, por favor, ta unviandose'l to votu.",
+	'ajaxpoll-vote-permission' => 'Nun tienes drechu al votu.',
+	'ajaxpoll-revoke-vote' => 'Quiero anular el mio votu',
+	'ajaxpoll-vote-revoked' => 'Anulasti el to votu correutamente.',
+	'right-ajaxpoll-vote' => "Pue votar nes encuestes basaes n'AJAX",
+);
+
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author Jim-by
  * @author Wizardist
@@ -107,6 +127,7 @@ $messages['br'] = array(
 );
 
 /** German (Deutsch)
+ * @author Geitost
  * @author Kghbln
  * @author Tim 'Avatar' Bartel
  * @author Wikinaut
@@ -122,7 +143,7 @@ $messages['de'] = array(
 	'ajaxpoll-no-vote' => 'Bitte stimme unten ab.',
 	'ajaxpoll-info' => 'Es {{PLURAL:$1|wurde|wurden}} seit Erstellung der Umfrage am $2 {{PLURAL:$1|eine Stimme|$1 Stimmen}} abgegeben.',
 	'ajaxpoll-submitting' => 'Bitte warte kurz. Deine Stimme wird verarbeitet.',
-	'ajaxpoll-vote-permission' => 'Du kannst nicht abstimmen.',
+	'ajaxpoll-vote-permission' => 'Du bist nicht stimmberechtigt.',
 	'ajaxpoll-revoke-vote' => 'Ich möchte meine Stimme widerrufen',
 	'ajaxpoll-vote-revoked' => 'Du hast deine Stimme erfolgreich widerrufen.',
 	'right-ajaxpoll-vote' => 'An AJAX-gestützen Umfragen teilnehmen',
@@ -139,7 +160,7 @@ $messages['de-formal'] = array(
 	'ajaxpoll-your-vote' => 'Sie haben bereits am $2 für „$1“ abgestimmt. Sie können Ihre Stimme ändern, indem Sie eine der untenstehenden Antworten anklicken.',
 	'ajaxpoll-no-vote' => 'Bitte stimmen Sie unten ab.',
 	'ajaxpoll-submitting' => 'Bitte warten Sie kurz. Ihre Stimme wird verarbeitet.',
-	'ajaxpoll-vote-permission' => 'Sie können nicht abstimmen.',
+	'ajaxpoll-vote-permission' => 'Sie sind nicht stimmberechtigt.',
 	'ajaxpoll-vote-revoked' => 'Sie haben Ihre Stimme erfolgreich widerrufen.',
 );
 
@@ -347,6 +368,7 @@ $messages['ja'] = array(
  */
 $messages['lb'] = array(
 	'ajaxpoll-desc' => 'Erlaabt AJAX-baséiert Ëmfroe mam Tag <tt>&lt;poll&gt;</tt>',
+	'ajaxpoll-tracking-category' => 'Säite mat enger Ëmfro',
 	'ajaxpoll-vote-update' => 'Är Stëmm gouf aktualiséiert.',
 	'ajaxpoll-vote-add' => 'Är Stëmm gouf derbäigesat.',
 	'ajaxpoll-vote-error' => 'Et gouf e Problem beim Verschaffe vun Ärer Stëmm, probéiert et w.e.g. nach eng kéier.',
@@ -355,6 +377,10 @@ $messages['lb'] = array(
 	'ajaxpoll-no-vote' => 'Stëmmt w.e.g hei drënner mat of.',
 	'ajaxpoll-info' => 'Zënter dem Ufank vun der Ëmfro den $2 {{PLURAL:$1 gouf eng Stëmm|goufe(n) $1 Stëmmen}} ofginn.',
 	'ajaxpoll-submitting' => 'Waart w.e.g., Är Stëmm gëtt verschafft.',
+	'ajaxpoll-vote-permission' => 'Dir sidd net berechtegt fir ofzestëmmen.',
+	'ajaxpoll-revoke-vote' => 'Ech wëll meng Stëmm zréckzéien',
+	'ajaxpoll-vote-revoked' => 'Dir hutt Är Stëmm zréckgezunn.',
+	'right-ajaxpoll-vote' => 'Däerf bäi AJAX-baséierten Ëmfroe matmaachen',
 );
 
 /** Macedonian (Македонски)
