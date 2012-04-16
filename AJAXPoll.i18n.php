@@ -544,3 +544,16 @@ $messages['zh'] = array(
 	'ajaxpoll-vote-update' => '你的投票已更新',
 );
 
+/** Simplified Chinese (‪中文(简体)‬)
+ * @author Yfdyh000
+ */
+$messages['zh-hans'] = array(
+	'ajaxpoll-your-vote' => '您在$2已经投票给“$1”，您可以点击下面的答案更改您的投票。',
+	'ajaxpoll-no-vote' => '请在下面投票。',
+	'ajaxpoll-submitting' => '请稍候，正在提交您的投票。',
+	'ajaxpoll-vote-permission' => '您没有投票权。',
+	'ajaxpoll-revoke-vote' => '我想要撤销我的投票',
+	'ajaxpoll-vote-revoked' => '您已成功撤销您的投票。',
+	'right-ajaxpoll-vote' => '可在基于AJAX的投票区投票',
+);
+
