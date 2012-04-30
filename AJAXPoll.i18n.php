@@ -198,6 +198,26 @@ $messages['el'] = array(
 	'ajaxpoll-submitting' => 'Παρακαλώ περιμένετε,η ψήφο σας υποβάλλεται.',
 );
 
+/** Esperanto (Esperanto)
+ * @author ArnoLagrange
+ */
+$messages['eo'] = array(
+	'ajaxpoll-desc' => 'Ebligas enketojn bazitajn sur AJAX per markilo <tt>&lt;poll&gt;</tt>',
+	'ajaxpoll-tracking-category' => 'Paĝoj kun enketo',
+	'ajaxpoll-vote-update' => 'Via baloto estis ĝisdatigita',
+	'ajaxpoll-vote-add' => 'Via baloto estis aldonita',
+	'ajaxpoll-vote-error' => 'Estiĝis problemo kun pritrakto de via baloto, bonvolu reprovi.',
+	'ajaxpoll-percent-votes' => '$1% el ĉiuj balotoj',
+	'ajaxpoll-your-vote' => 'Vi jam balotis por "$1" je "$2", vi povas ŝanĝi vian baloton alklakante iun respondon sube.',
+	'ajaxpoll-no-vote' => 'Bonvolu baloti sube.',
+	'ajaxpoll-info' => 'Estis {{PLURAL:$1|unu baloto|$1 balotoj}} post kiam la enketo estis kreita sur  $2.',
+	'ajaxpoll-submitting' => 'Bonvolu atendi dum traktado de via baloto.',
+	'ajaxpoll-vote-permission' => 'Vi ne rajtas baloti.',
+	'ajaxpoll-revoke-vote' => 'Mi volas nuligi mian baloton.',
+	'ajaxpoll-vote-revoked' => 'Vi sukcese nuligis vian baloton.',
+	'right-ajaxpoll-vote' => 'Povas baloti en enketoj bazitaj sur AJAX',
+);
+
 /** Spanish (Español)
  * @author Armando-Martin
  * @author Bola
