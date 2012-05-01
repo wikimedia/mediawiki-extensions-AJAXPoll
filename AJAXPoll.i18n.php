@@ -124,6 +124,7 @@ $messages['br'] = array(
 	'ajaxpoll-no-vote' => 'Mar plij votit amañ dindan.',
 	'ajaxpoll-info' => "$1 vot a zo bet abaoe ma 'z eo bet krouet ar sontadeg war $2.",
 	'ajaxpoll-submitting' => "Mar plij gortozit, emeur oc'h ober war-dro ho vot.",
+	'ajaxpoll-vote-permission' => "Ne c'hellit ket votiñ.",
 );
 
 /** German (Deutsch)
