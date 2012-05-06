@@ -331,6 +331,8 @@ $messages['he'] = array(
 	'ajaxpoll-info' => '{{PLURAL:$1|נקלט קול אחד|נקלטו $1 קולות}} מאז שההצבעה נוצרה ב־$2.',
 	'ajaxpoll-submitting' => 'נא להמתין הזמן שליחת הצבעתך.',
 	'ajaxpoll-vote-permission' => 'אין לך זכות הצבעה.',
+	'ajaxpoll-revoke-vote' => 'אני רוצה לבטל את הקול שלי',
+	'ajaxpoll-vote-revoked' => 'פסלת את הקול שלך.',
 	'right-ajaxpoll-vote' => 'להצביע בסקרים מבוססי AJAX.',
 );
 
@@ -392,16 +394,21 @@ $messages['id'] = array(
 );
 
 /** Japanese (日本語)
+ * @author Shirayuki
  * @author Shun Fukuzawa
  */
 $messages['ja'] = array(
+	'ajaxpoll-desc' => '<tt>&lt;poll&gt;</tt> タグで AJAX ベースの投票所を許可する',
+	'ajaxpoll-tracking-category' => '投票所があるページ',
 	'ajaxpoll-vote-update' => '投票を更新しました。',
 	'ajaxpoll-vote-add' => '投票が追加されました。',
 	'ajaxpoll-vote-error' => '問題が発生しました。少ししてから再度投票してください。',
 	'ajaxpoll-percent-votes' => '全体の$1%',
 	'ajaxpoll-your-vote' => '$2について、$1に投票しています。以下の回答をクリックすると、投票を変更できます。',
 	'ajaxpoll-no-vote' => 'さあ、投票しよう!',
+	'ajaxpoll-info' => '$2 に投票所が作成されて以来、{{PLURAL:$1|$1 票}}の投票がありました。',
 	'ajaxpoll-submitting' => '投票を処理しています。少しお待ちください。',
+	'right-ajaxpoll-vote' => 'AJAX ベースの投票所で投票',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
