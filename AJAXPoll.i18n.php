@@ -393,6 +393,26 @@ $messages['id'] = array(
 	'ajaxpoll-vote-permission' => 'Anda tidak dapat memberikan suara.',
 );
 
+/** Italian (Italiano)
+ * @author Beta16
+ */
+$messages['it'] = array(
+	'ajaxpoll-desc' => 'Permette sondaggi tramite AJAX con il tag <tt>&lt;poll&gt;</tt>',
+	'ajaxpoll-tracking-category' => 'Pagine con un sondaggio',
+	'ajaxpoll-vote-update' => 'Il tuo voto è stato aggiornato.',
+	'ajaxpoll-vote-add' => 'Il tuo voto è stato aggiunto.',
+	'ajaxpoll-vote-error' => "C'è stato un problema con l'elaborazione del tuo voto, si prega di riprovare.",
+	'ajaxpoll-percent-votes' => '$1% di tutti i voti',
+	'ajaxpoll-your-vote' => 'Hai già votato per "$1" su $2, è possibile cambiare il tuo voto cliccando una risposta qui sotto.',
+	'ajaxpoll-no-vote' => 'Si prega di votare sotto.',
+	'ajaxpoll-info' => "{{PLURAL:$1|C'è stato un voto|Ci sono stati $1 voti}} dal quando il sondaggio è stato creato il $2.",
+	'ajaxpoll-submitting' => 'Attendere prego, stiamo elaborando il tuo voto.',
+	'ajaxpoll-vote-permission' => 'Non hai diritto di voto.',
+	'ajaxpoll-revoke-vote' => 'Voglio revocare il mio voto',
+	'ajaxpoll-vote-revoked' => 'Hai revocato con successo il tuo voto.',
+	'right-ajaxpoll-vote' => 'Vota nei sondaggi tramite AJAX',
+);
+
 /** Japanese (日本語)
  * @author Shirayuki
  * @author Shun Fukuzawa
