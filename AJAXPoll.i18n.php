@@ -113,6 +113,7 @@ $messages['bg'] = array(
 );
 
 /** Breton (Brezhoneg)
+ * @author Fulup
  * @author Y-M D
  */
 $messages['br'] = array(
@@ -122,7 +123,7 @@ $messages['br'] = array(
 	'ajaxpoll-percent-votes' => '$1% eus hollad ar mouezhioù',
 	'ajaxpoll-your-vote' => 'Votet ho peus dija evit "$1" d\'an $2, tu \'zo deoc\'h kemmañ ho vot en ur klikañ war unan eus ar respontoù da heul.',
 	'ajaxpoll-no-vote' => 'Mar plij votit amañ dindan.',
-	'ajaxpoll-info' => "$1 vot a zo bet abaoe ma 'z eo bet krouet ar sontadeg war $2.",
+	'ajaxpoll-info' => "{{PLURAL:$1|vot|$1 vot}} zo bet abaoe ma'z eo bet krouet ar sontadeg war $2.",
 	'ajaxpoll-submitting' => "Mar plij gortozit, emeur oc'h ober war-dro ho vot.",
 	'ajaxpoll-vote-permission' => "Ne c'hellit ket votiñ.",
 );
@@ -429,6 +430,26 @@ $messages['ja'] = array(
 	'ajaxpoll-info' => '$2 に投票所が作成されて以来、{{PLURAL:$1|$1 票}}の投票がありました。',
 	'ajaxpoll-submitting' => '投票を処理しています。少しお待ちください。',
 	'right-ajaxpoll-vote' => 'AJAX ベースの投票所で投票',
+);
+
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'ajaxpoll-desc' => '<tt>&lt;poll&gt;</tt> 태그를 바탕으로 AJAX 기반 투표를 허용',
+	'ajaxpoll-tracking-category' => '설문 조사 문서',
+	'ajaxpoll-vote-update' => '투표가 업데이트되었습니다.',
+	'ajaxpoll-vote-add' => '투표가 더해졌습니다.',
+	'ajaxpoll-vote-error' => '토표를 처리하는 데 문제가 있습니다. 다시 시도하세요.',
+	'ajaxpoll-percent-votes' => '모든 투표 중 $1%',
+	'ajaxpoll-your-vote' => '이미 $2에 "$1"(을)를 투표했습니다. 아래의 답변을 클릭하여 투표를 바꿀 수 있습니다.',
+	'ajaxpoll-no-vote' => '아래에 투표하세요.',
+	'ajaxpoll-info' => '$2에 설문 조사가 만들어진 뒤 {{PLURAL:$1|1표|$1표}}가 있습니다.',
+	'ajaxpoll-submitting' => '투표를 제출하는 동안 잠시 기다려주세요.',
+	'ajaxpoll-vote-permission' => '투표를 받을 수 없습니다.',
+	'ajaxpoll-revoke-vote' => '투표 취소를 함',
+	'ajaxpoll-vote-revoked' => '성공적으로 투표를 취소했습니다.',
+	'right-ajaxpoll-vote' => 'AJAX 기반 설문 조사에 투표할 수 있음',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
