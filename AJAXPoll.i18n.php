@@ -126,6 +126,7 @@ $messages['br'] = array(
 	'ajaxpoll-info' => "{{PLURAL:$1|vot|$1 vot}} zo bet abaoe ma'z eo bet krouet ar sontadeg war $2.",
 	'ajaxpoll-submitting' => "Mar plij gortozit, emeur oc'h ober war-dro ho vot.",
 	'ajaxpoll-vote-permission' => "Ne c'hellit ket votiñ.",
+	'ajaxpoll-revoke-vote' => "C'hoant am eus da zistreiñ war ar pezh am eus votet",
 );
 
 /** German (Deutsch)
