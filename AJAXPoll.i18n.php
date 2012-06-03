@@ -112,7 +112,7 @@ $messages['bg'] = array(
 	'ajaxpoll-percent-votes' => '$1% от всички гласове',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  * @author Y-M D
  */
@@ -395,7 +395,7 @@ $messages['id'] = array(
 	'ajaxpoll-vote-permission' => 'Anda tidak dapat memberikan suara.',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Beta16
  */
 $messages['it'] = array(
