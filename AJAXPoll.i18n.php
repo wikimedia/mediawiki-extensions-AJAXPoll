@@ -117,6 +117,7 @@ $messages['bg'] = array(
  * @author Y-M D
  */
 $messages['br'] = array(
+	'ajaxpoll-tracking-category' => 'Pajennoù enno ur sontadeg',
 	'ajaxpoll-vote-update' => 'Hizivaet eo bet ho vot.',
 	'ajaxpoll-vote-add' => 'Ouzhpennet eo bet ho vot.',
 	'ajaxpoll-vote-error' => "Ur gudenn a zo bet pa vezer oc'h ober war-dro ho vot. Mar plij klaskit adarre.",
@@ -420,14 +421,14 @@ $messages['it'] = array(
  * @author Shun Fukuzawa
  */
 $messages['ja'] = array(
-	'ajaxpoll-desc' => '<tt>&lt;poll&gt;</tt> タグで AJAX ベースの投票所を許可する',
+	'ajaxpoll-desc' => '<tt>&lt;poll&gt;</tt> タグで AJAX ベースの投票所を使用できるようにする',
 	'ajaxpoll-tracking-category' => '投票所があるページ',
 	'ajaxpoll-vote-update' => '投票を更新しました。',
-	'ajaxpoll-vote-add' => '投票が追加されました。',
-	'ajaxpoll-vote-error' => '問題が発生しました。少ししてから再度投票してください。',
+	'ajaxpoll-vote-add' => '投票を追加しました。',
+	'ajaxpoll-vote-error' => '投票の処理中に問題が発生しました。再投票してください。',
 	'ajaxpoll-percent-votes' => '全体の$1%',
 	'ajaxpoll-your-vote' => '$2について、$1に投票しています。以下の回答をクリックすると、投票を変更できます。',
-	'ajaxpoll-no-vote' => 'さあ、投票しよう!',
+	'ajaxpoll-no-vote' => '投票してください。',
 	'ajaxpoll-info' => '$2 に投票所が作成されて以来、{{PLURAL:$1|$1 票}}の投票がありました。',
 	'ajaxpoll-submitting' => '投票を処理しています。少しお待ちください。',
 	'right-ajaxpoll-vote' => 'AJAX ベースの投票所で投票',
