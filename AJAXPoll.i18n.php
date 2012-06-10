@@ -421,7 +421,7 @@ $messages['it'] = array(
  * @author Shun Fukuzawa
  */
 $messages['ja'] = array(
-	'ajaxpoll-desc' => '<tt>&lt;poll&gt;</tt> タグで AJAX ベースの投票所を使用できるようにする',
+	'ajaxpoll-desc' => '<tt>&lt;poll&gt;</tt> タグで Ajax ベースの投票所を使用できるようにする',
 	'ajaxpoll-tracking-category' => '投票所があるページ',
 	'ajaxpoll-vote-update' => '投票を更新しました。',
 	'ajaxpoll-vote-add' => '投票を追加しました。',
@@ -431,7 +431,7 @@ $messages['ja'] = array(
 	'ajaxpoll-no-vote' => '投票してください。',
 	'ajaxpoll-info' => '$2 に投票所が作成されて以来、{{PLURAL:$1|$1 票}}の投票がありました。',
 	'ajaxpoll-submitting' => '投票を処理しています。少しお待ちください。',
-	'right-ajaxpoll-vote' => 'AJAX ベースの投票所で投票',
+	'right-ajaxpoll-vote' => 'Ajax ベースの投票所で投票',
 );
 
 /** Korean (한국어)
