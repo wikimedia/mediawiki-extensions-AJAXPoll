@@ -64,7 +64,7 @@ $messages['ar'] = array(
 	'ajaxpoll-submitting' => 'من فضلك انتظر، يرسل صوتك.',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Xuacu
  */
 $messages['ast'] = array(
@@ -105,7 +105,7 @@ $messages['be-tarask'] = array(
 	'right-ajaxpoll-vote' => 'магчымасьць галасаваць у AJAX-апытаньнях',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author DCLXVI
  */
 $messages['bg'] = array(
@@ -222,7 +222,7 @@ $messages['eo'] = array(
 	'right-ajaxpoll-vote' => 'Povas baloti en enketoj bazitaj sur AJAX',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Armando-Martin
  * @author Bola
  */
@@ -243,7 +243,7 @@ $messages['es'] = array(
 	'right-ajaxpoll-vote' => 'Puede votar en las encuestas basadas en AJAX',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Jack Phoenix
  * @author Nike
  */
@@ -258,7 +258,7 @@ $messages['fi'] = array(
 	'ajaxpoll-submitting' => 'Odota hetki, äänesi lähetetään kirjattavaksi.',
 );
 
-/** French (Français)
+/** French (français)
  * @author Gomoko
  * @author Tim 'Avatar' Bartel
  */
@@ -359,7 +359,7 @@ $messages['hsb'] = array(
 	'right-ajaxpoll-vote' => 'Na wothłosowanjach bazowanych na AJAX so wobdźělić',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Glanthor Reviol
  */
 $messages['hu'] = array(
@@ -369,7 +369,7 @@ $messages['hu'] = array(
 	'ajaxpoll-submitting' => 'Kérlek várj a szavazatod elküldésére.',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -474,7 +474,7 @@ $messages['lb'] = array(
 	'right-ajaxpoll-vote' => 'Däerf bäi AJAX-baséierten Ëmfroe matmaachen',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -530,7 +530,7 @@ $messages['nl'] = array(
 	'right-ajaxpoll-vote' => 'Kan in AJAX-gebaseerde peilingen stemmen',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author BeginaFelicysym
  * @author Dariusz Siedlecki
  */
@@ -567,7 +567,7 @@ $messages['pms'] = array(
 	'ajaxpoll-submitting' => "Për piasì ch'a speta, sò vot a l'é an camin ch'a riva.",
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Daemorris
  */
 $messages['pt-br'] = array(
@@ -581,7 +581,7 @@ $messages['pt-br'] = array(
 	'ajaxpoll-submitting' => 'Por favor aguarde, enviando sua opção.',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Lockal
  * @author Александр Сигачёв
  */
@@ -597,7 +597,7 @@ $messages['ru'] = array(
 	'ajaxpoll-submitting' => 'Пожалуйста, подождите, ваш голос обрабатывается.',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Sasa Stefanovic
  * @author Verlor
  */
@@ -629,7 +629,7 @@ $messages['tl'] = array(
 	'right-ajaxpoll-vote' => 'Makakaboto sa mga halalang nakabatay sa AJAX',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author A1
  */
 $messages['uk'] = array(
@@ -655,7 +655,7 @@ $messages['zh'] = array(
 	'ajaxpoll-vote-update' => '你的投票已更新',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
