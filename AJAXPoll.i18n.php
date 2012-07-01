@@ -84,7 +84,7 @@ $messages['ast'] = array(
 	'right-ajaxpoll-vote' => "Pue votar nes encuestes basaes n'AJAX",
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author Jim-by
  * @author Wizardist
  */
@@ -168,7 +168,7 @@ $messages['de-formal'] = array(
 	'ajaxpoll-vote-revoked' => 'Sie haben Ihre Stimme erfolgreich widerrufen.',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -279,7 +279,7 @@ $messages['fr'] = array(
 	'right-ajaxpoll-vote' => 'Peut voter dans des sondages basés sur AJAX',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -339,7 +339,7 @@ $messages['he'] = array(
 	'right-ajaxpoll-vote' => 'להצביע בסקרים מבוססי AJAX.',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
