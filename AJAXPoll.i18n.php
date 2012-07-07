@@ -474,6 +474,17 @@ $messages['lb'] = array(
 	'right-ajaxpoll-vote' => 'Däerf bäi AJAX-baséierten Ëmfroe matmaachen',
 );
 
+/** Lithuanian (lietuvių)
+ * @author Eitvys200
+ */
+$messages['lt'] = array(
+	'ajaxpoll-tracking-category' => 'Puslapiai su apklausa',
+	'ajaxpoll-vote-update' => 'Jūsų balsas buvo atnaujintas.',
+	'ajaxpoll-vote-add' => 'Jūsų balsas buvo pridėtas.',
+	'ajaxpoll-percent-votes' => '$1% visų balsų',
+	'ajaxpoll-no-vote' => 'Prašome balsuoti žemiau.',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
