@@ -593,11 +593,13 @@ $messages['pt-br'] = array(
 );
 
 /** Russian (русский)
+ * @author DCamer
  * @author Lockal
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
 	'ajaxpoll-desc' => 'Позволяет проводить голосования на основе AJAX с помощью тега <tt>&lt;poll&gt;</tt>',
+	'ajaxpoll-tracking-category' => 'Страницы с опросами',
 	'ajaxpoll-vote-update' => 'Ваш голос обновлён.',
 	'ajaxpoll-vote-add' => 'Ваш голос добавлен.',
 	'ajaxpoll-vote-error' => 'Возникла проблема с обработкой вашего голоса, пожалуйста, попробуйте ещё раз.',
@@ -606,6 +608,10 @@ $messages['ru'] = array(
 	'ajaxpoll-no-vote' => 'Пожалуйста, проголосуйте ниже.',
 	'ajaxpoll-info' => 'С момента создания голосования $2 {{PLURAL:$1|поступил $1 голос|поступило $1 голоса|поступило $1 голосов}}.',
 	'ajaxpoll-submitting' => 'Пожалуйста, подождите, ваш голос обрабатывается.',
+	'ajaxpoll-vote-permission' => 'Вы не можете голосовать.',
+	'ajaxpoll-revoke-vote' => 'Я хочу отменить свой голос',
+	'ajaxpoll-vote-revoked' => 'Вы успешно отменили свой голос.',
+	'right-ajaxpoll-vote' => 'Может голосовать в опросах на основе AJAX',
 );
 
 /** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
