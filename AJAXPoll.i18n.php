@@ -505,7 +505,7 @@ $messages['mk'] = array(
 	'right-ajaxpoll-vote' => 'Може да гласа на анкети на основа на AJAX.',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
@@ -515,7 +515,7 @@ $messages['nb'] = array(
 	'ajaxpoll-percent-votes' => '$1% av alle stemmer',
 	'ajaxpoll-your-vote' => 'Du har allerede stemt på «$1» den $2, du kan endre din stemme ved å klikke på et svar nedenfor.',
 	'ajaxpoll-no-vote' => 'Vennligst stem nedenfor.',
-	'ajaxpoll-info' => 'Det var $1 stemmer siden spørreundersøkelsen ble opprettet den $2.', // @todo FIXME: out of date, needs PLURAL
+	'ajaxpoll-info' => 'Det var $1 stemmer siden spørreundersøkelsen ble opprettet den $2.',
 	'ajaxpoll-submitting' => 'Vennligst vent, sender inn stemmen din.',
 );
 
