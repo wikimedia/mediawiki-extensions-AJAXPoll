@@ -626,6 +626,26 @@ $messages['sr-ec'] = array(
 	'ajaxpoll-submitting' => 'Чекајте, шаљемо ваш глас.',
 );
 
+/** Swedish (svenska)
+ * @author WikiPhoenix
+ */
+$messages['sv'] = array(
+	'ajaxpoll-desc' => 'Gör AJAX-baserade omröstningar med <tt>&lt;poll&gt;</tt>-tagg',
+	'ajaxpoll-tracking-category' => 'Sidor med en omröstning',
+	'ajaxpoll-vote-update' => 'Din röst har uppdaterats.',
+	'ajaxpoll-vote-add' => 'Din röst har lagts till.',
+	'ajaxpoll-vote-error' => 'Det uppstod ett problem med bearbetningen av din röst, var god försök igen.',
+	'ajaxpoll-percent-votes' => '$1% av alla röster',
+	'ajaxpoll-your-vote' => 'Du har redan röstat på "$1" den $2, du kan ändra din röst genom att klicka på ett svar nedan.',
+	'ajaxpoll-no-vote' => 'Var god rösta nedan.',
+	'ajaxpoll-info' => 'Det var {{PLURAL:$1|en röst|$1 röster}} sedan omröstningen skapades den $2.',
+	'ajaxpoll-submitting' => 'Var god vänta, skickar in din röst.',
+	'ajaxpoll-vote-permission' => 'Du är inte berättigad att rösta.',
+	'ajaxpoll-revoke-vote' => 'Jag vill återkalla min röst',
+	'ajaxpoll-vote-revoked' => 'Du har återkallat din röst.',
+	'right-ajaxpoll-vote' => 'Kan rösta i AJAX-baserade omröstningar',
+);
+
 /** Tagalog (Tagalog)
  * @author AnakngAraw
  */
