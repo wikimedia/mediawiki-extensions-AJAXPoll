@@ -434,6 +434,14 @@ $messages['ja'] = array(
 	'right-ajaxpoll-vote' => 'Ajax ベースの投票所で投票',
 );
 
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'ajaxpoll-vote-update' => 'თქვენი ხმა განახლდა.',
+	'ajaxpoll-vote-add' => 'თქვენი ხმა დაემატა.',
+);
+
 /** Korean (한국어)
  * @author 아라
  */
@@ -578,6 +586,22 @@ $messages['pms'] = array(
 	'ajaxpoll-submitting' => "Për piasì ch'a speta, sò vot a l'é an camin ch'a riva.",
 );
 
+/** Portuguese (português)
+ * @author SandroHc
+ */
+$messages['pt'] = array(
+	'ajaxpoll-desc' => 'Permite votações baseadas em AJAX com a etiqueta <tt>&lt;poll&gt;</tt>',
+	'ajaxpoll-tracking-category' => 'Páginas com votação',
+	'ajaxpoll-vote-update' => 'O seu voto foi atualizado.',
+	'ajaxpoll-vote-add' => 'O seu voto foi adicionado.',
+	'ajaxpoll-vote-error' => 'Ocorreu um erro ao processar o seu voto, por favor tente novamente.',
+	'ajaxpoll-percent-votes' => '$1% de todos os votos',
+	'ajaxpoll-your-vote' => 'Você já votou em "$1" em $2, você pode alterar o voto ao clicar numa opção abaixo.',
+	'ajaxpoll-no-vote' => 'Por favor, vote abaixo.',
+	'ajaxpoll-info' => '{{PLURAL:$1|Um voto|$1 votos}} desde a criação da votação em $2.',
+	'ajaxpoll-submitting' => 'Por favor aguarde, enviando o seu voto.',
+);
+
 /** Brazilian Portuguese (português do Brasil)
  * @author Daemorris
  */
@@ -693,6 +717,7 @@ $messages['zh'] = array(
 );
 
 /** Simplified Chinese (‪中文（简体）‬)
+ * @author Simon Shek
  * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
@@ -700,8 +725,20 @@ $messages['zh-hans'] = array(
 	'ajaxpoll-no-vote' => '请在下面投票。',
 	'ajaxpoll-submitting' => '请稍候，正在提交您的投票。',
 	'ajaxpoll-vote-permission' => '您没有投票权。',
-	'ajaxpoll-revoke-vote' => '我想要撤销我的投票',
+	'ajaxpoll-revoke-vote' => '我想撤销我的投票',
 	'ajaxpoll-vote-revoked' => '您已成功撤销您的投票。',
 	'right-ajaxpoll-vote' => '可在基于AJAX的投票区投票',
+);
+
+/** Traditional Chinese (‪中文（繁體）‬)
+ * @author Simon Shek
+ */
+$messages['zh-hant'] = array(
+	'ajaxpoll-percent-votes' => '所有選票的$1%',
+	'ajaxpoll-no-vote' => '請在下面投票。',
+	'ajaxpoll-submitting' => '請稍候，正提交您的投票.',
+	'ajaxpoll-vote-permission' => '您無權投票。',
+	'ajaxpoll-revoke-vote' => '我想撤銷我的投票',
+	'ajaxpoll-vote-revoked' => '您已成功撤銷您的投票。',
 );
 
