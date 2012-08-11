@@ -513,6 +513,26 @@ $messages['mk'] = array(
 	'right-ajaxpoll-vote' => 'Може да гласа на анкети на основа на AJAX.',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'ajaxpoll-desc' => 'Membolehkan tinjauan berasaskan AJAX dengan teg <tt>&lt;poll&gt;</tt>',
+	'ajaxpoll-tracking-category' => 'Halaman dengan tinjauan',
+	'ajaxpoll-vote-update' => 'Undian anda telah dikemaskinikan.',
+	'ajaxpoll-vote-add' => 'Undian anda telah ditambahkan.',
+	'ajaxpoll-vote-error' => 'Ada masalah dengan pemprosesan undian anda, sila cuba lagi.',
+	'ajaxpoll-percent-votes' => '$1% daripada semua undian',
+	'ajaxpoll-your-vote' => 'Anda sudah mengundi "$1" pada $2, tetapi anda boleh mengubah undian anda dengan mengklik jawapan di bawah.',
+	'ajaxpoll-no-vote' => 'Sila undi di bawah.',
+	'ajaxpoll-info' => 'Tinjauan ini menerima {{PLURAL:$1|satu|$1}} undian semenjak dibuka pada $2.',
+	'ajaxpoll-submitting' => 'Sila tunggu, undian anda sedang diserahkan.',
+	'ajaxpoll-vote-permission' => 'Anda tidak diberi hak untuk mengundi.',
+	'ajaxpoll-revoke-vote' => 'Saya ingin menarik balik undian saya',
+	'ajaxpoll-vote-revoked' => 'Anda berjaya menarik balik undian anda.',
+	'right-ajaxpoll-vote' => 'Boleh mengundi dalam tinjauan berasaskan AJAX',
+);
+
 /** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Nghtwlkr
  */
