@@ -658,6 +658,15 @@ $messages['ru'] = array(
 	'right-ajaxpoll-vote' => 'Может голосовать в опросах на основе AJAX',
 );
 
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'ajaxpoll-vote-update' => 'ඔබේ මනාපය යාවත්කාලීන කරන ලදී.',
+	'ajaxpoll-vote-add' => 'ඔබේ මනාපය එක් කරන ලදී.',
+	'ajaxpoll-no-vote' => 'කරුණාකර පහතින් මනාපය දෙන්න.',
+);
+
 /** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Sasa Stefanovic
  * @author Verlor
@@ -688,6 +697,20 @@ $messages['sv'] = array(
 	'ajaxpoll-revoke-vote' => 'Jag vill återkalla min röst',
 	'ajaxpoll-vote-revoked' => 'Du har återkallat din röst.',
 	'right-ajaxpoll-vote' => 'Kan rösta i AJAX-baserade omröstningar',
+);
+
+/** Tamil (தமிழ்)
+ * @author Karthi.dr
+ */
+$messages['ta'] = array(
+	'ajaxpoll-tracking-category' => 'வாக்கெடுப்புடன் கூடிய பக்கங்கள்',
+	'ajaxpoll-vote-update' => 'உங்கள் வாக்கு இற்றைப்படுத்தப்பட்டது.',
+	'ajaxpoll-vote-add' => 'உங்கள் வாக்கு சேர்த்துக் கொள்ளப்பட்டது.',
+	'ajaxpoll-vote-error' => 'உங்கள் வாக்கைச் செயற்படுத்துவதில் ஒரு சிக்கல் ஏற்பட்டது.
+அருள்கூர்ந்து மீண்டும் முயற்சிக்கவும்.',
+	'ajaxpoll-no-vote' => 'தயவுசெய்து கீழே வாக்களிக்கவும்.',
+	'ajaxpoll-submitting' => 'தயவுசெய்து காத்திருக்கவும், உங்கள் வாக்கு சமர்ப்பிக்கப்படுகிறது.',
+	'ajaxpoll-vote-permission' => 'உங்களுக்கு வாக்களிக்கும் உரிமை இல்லை.',
 );
 
 /** Tagalog (Tagalog)
