@@ -701,6 +701,7 @@ $messages['sv'] = array(
 
 /** Tamil (தமிழ்)
  * @author Karthi.dr
+ * @author மதனாஹரன்
  */
 $messages['ta'] = array(
 	'ajaxpoll-tracking-category' => 'வாக்கெடுப்புடன் கூடிய பக்கங்கள்',
@@ -708,6 +709,7 @@ $messages['ta'] = array(
 	'ajaxpoll-vote-add' => 'உங்கள் வாக்கு சேர்த்துக் கொள்ளப்பட்டது.',
 	'ajaxpoll-vote-error' => 'உங்கள் வாக்கைச் செயற்படுத்துவதில் ஒரு சிக்கல் ஏற்பட்டது.
 அருள்கூர்ந்து மீண்டும் முயற்சிக்கவும்.',
+	'ajaxpoll-percent-votes' => 'எல்லா வாக்குகளினதும் $1%',
 	'ajaxpoll-no-vote' => 'தயவுசெய்து கீழே வாக்களிக்கவும்.',
 	'ajaxpoll-submitting' => 'தயவுசெய்து காத்திருக்கவும், உங்கள் வாக்கு சமர்ப்பிக்கப்படுகிறது.',
 	'ajaxpoll-vote-permission' => 'உங்களுக்கு வாக்களிக்கும் உரிமை இல்லை.',
