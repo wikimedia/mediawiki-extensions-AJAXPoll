@@ -279,6 +279,13 @@ $messages['fr'] = array(
 	'right-ajaxpoll-vote' => 'Peut voter dans des sondages basés sur AJAX',
 );
 
+/** Franco-Provençal (arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'ajaxpoll-tracking-category' => 'Pâges avouéc un sondâjo',
+);
+
 /** Galician (galego)
  * @author Toliño
  */
@@ -697,6 +704,14 @@ $messages['sv'] = array(
 	'ajaxpoll-revoke-vote' => 'Jag vill återkalla min röst',
 	'ajaxpoll-vote-revoked' => 'Du har återkallat din röst.',
 	'right-ajaxpoll-vote' => 'Kan rösta i AJAX-baserade omröstningar',
+);
+
+/** Swahili (Kiswahili)
+ * @author Kwisha
+ */
+$messages['sw'] = array(
+	'ajaxpoll-no-vote' => 'Tafadhali piga kura hapa chini.',
+	'ajaxpoll-submitting' => 'Tafadhali ngoja, inawasilisha kura yako.',
 );
 
 /** Tamil (தமிழ்)
