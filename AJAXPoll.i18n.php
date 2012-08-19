@@ -433,11 +433,14 @@ $messages['ja'] = array(
 	'ajaxpoll-vote-update' => '投票を更新しました。',
 	'ajaxpoll-vote-add' => '投票を追加しました。',
 	'ajaxpoll-vote-error' => '投票の処理中に問題が発生しました。再投票してください。',
-	'ajaxpoll-percent-votes' => '全体の$1%',
-	'ajaxpoll-your-vote' => '$2について、$1に投票しています。以下の回答をクリックすると、投票を変更できます。',
+	'ajaxpoll-percent-votes' => '全体の $1%',
+	'ajaxpoll-your-vote' => '$2について「$1」に投票済みです。以下の回答をクリックすると、投票を変更できます。',
 	'ajaxpoll-no-vote' => '投票してください。',
 	'ajaxpoll-info' => '$2 に投票所が作成されて以来、{{PLURAL:$1|$1 票}}の投票がありました。',
-	'ajaxpoll-submitting' => '投票を処理しています。少しお待ちください。',
+	'ajaxpoll-submitting' => '投票を送信しています。お待ちください。',
+	'ajaxpoll-vote-permission' => 'あなたには投票権がありません。',
+	'ajaxpoll-revoke-vote' => '自分の投票を取り消したい',
+	'ajaxpoll-vote-revoked' => '投票を取り消しました。',
 	'right-ajaxpoll-vote' => 'Ajax ベースの投票所で投票',
 );
 
