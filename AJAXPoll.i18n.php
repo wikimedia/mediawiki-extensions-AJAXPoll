@@ -606,6 +606,7 @@ $messages['pl'] = array(
  */
 $messages['pms'] = array(
 	'ajaxpoll-desc' => "A përmët j'anterogassion basà su AJAX con tichëtta <tt>&lt;poll&gt;</tt>",
+	'ajaxpoll-tracking-category' => 'Pagine con un sondagi',
 	'ajaxpoll-vote-update' => "Tò vot a l'é stàit modificà.",
 	'ajaxpoll-vote-add' => "Tò vot a l'é stàit giontà.",
 	'ajaxpoll-vote-error' => "A l'é staje un problema an tratand sò vot, për piasì ch'a preuva torna.",
@@ -614,6 +615,10 @@ $messages['pms'] = array(
 	'ajaxpoll-no-vote' => 'Për piasì, voté sì-sota.',
 	'ajaxpoll-info' => "A {{PLURAL:$1|l'é staje un vot|son staje $1 vot}} da quand ël sondagi a l'é stàit creà su $2.",
 	'ajaxpoll-submitting' => "Për piasì ch'a speta, sò vot a l'é an camin ch'a riva.",
+	'ajaxpoll-vote-permission' => 'It ses pa titolà për voté.',
+	'ajaxpoll-revoke-vote' => 'I veuj revoché mè vot',
+	'ajaxpoll-vote-revoked' => "It l'has revocà da bin tò vot.",
+	'right-ajaxpoll-vote' => 'It peule voté an sondagi basà dzora a AJAX',
 );
 
 /** Portuguese (português)
