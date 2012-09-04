@@ -168,6 +168,13 @@ $messages['de-formal'] = array(
 	'ajaxpoll-vote-revoked' => 'Sie haben Ihre Stimme erfolgreich widerrufen.',
 );
 
+/** Zazaki (Zazaki)
+ * @author Erdemaslancan
+ */
+$messages['diq'] = array(
+	'ajaxpoll-no-vote' => 'Reya xo bıni de bıde.',
+);
+
 /** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
@@ -618,7 +625,7 @@ $messages['pms'] = array(
 	'ajaxpoll-vote-permission' => 'It ses pa titolà për voté.',
 	'ajaxpoll-revoke-vote' => 'I veuj revoché mè vot',
 	'ajaxpoll-vote-revoked' => "It l'has revocà da bin tò vot.",
-	'right-ajaxpoll-vote' => 'It peule voté an sondagi basà dzora a AJAX',
+	'right-ajaxpoll-vote' => 'A peul voté ant ij sondagi basà dzora a AJAX',
 );
 
 /** Portuguese (português)
