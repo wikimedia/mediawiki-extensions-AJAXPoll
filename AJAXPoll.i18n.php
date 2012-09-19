@@ -479,6 +479,26 @@ $messages['ko'] = array(
 	'right-ajaxpoll-vote' => 'AJAX 기반 설문 조사에 투표할 수 있음',
 );
 
+/** Colognian (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'ajaxpoll-desc' => 'Deiht dä Befähl <code lang="en">&lt;poll&gt;</code> en et Wiki, öm Ömfroore maache ze künne, di op <i lang="en">AJAX</i> boue.',
+	'ajaxpoll-tracking-category' => 'Sigge med ener Ömfrooch',
+	'ajaxpoll-vote-update' => 'Ding Schtemm es äänjepaß.',
+	'ajaxpoll-vote-add' => 'Ding Schtemm es jezallt.',
+	'ajaxpoll-vote-error' => 'Doh hät jät nit jeflupp mem Beärbeide vun Dinge Schtemm. Bes esu jood_un versöhg_et norr_ens.',
+	'ajaxpoll-percent-votes' => '$1% vun all Schtemme',
+	'ajaxpoll-your-vote' => 'Do häs aam $2 ald för „$1“ jeschtemmp. Do kanns Ding Scheimme ändere. Doför moß De onge op en Antwoot klecke.',
+	'ajaxpoll-no-vote' => 'Onge kanns De afschtemme.',
+	'ajaxpoll-info' => 'Et {{PLURAL:$1|wood ein Schtemm|woodte $1 Schtemme|wood kein Schtemm}} afjejovve zigg aam $2 di Ömfrooch aanjelaat wood.',
+	'ajaxpoll-submitting' => 'Ene kleine Momang, Ding Schtemm weed enjedraare.',
+	'ajaxpoll-vote-permission' => 'Do be nit schtemmberääschtesch.',
+	'ajaxpoll-revoke-vote' => 'Esch well ming Schtemm zerökträcke',
+	'ajaxpoll-vote-revoked' => 'Deng Schtemm es zerökjetroke.',
+	'right-ajaxpoll-vote' => 'Darf en Afschtemmonge metmaache, di op <i lang="en">AJAX</i> boue',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
