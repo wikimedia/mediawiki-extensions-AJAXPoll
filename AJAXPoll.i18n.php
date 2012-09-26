@@ -721,6 +721,15 @@ $messages['sr-ec'] = array(
 	'ajaxpoll-submitting' => 'Чекајте, шаљемо ваш глас.',
 );
 
+/** Serbian (Latin script) (srpski (latinica)‎) */
+$messages['sr-el'] = array(
+	'ajaxpoll-vote-update' => 'aš glas je bio uračunat.',
+	'ajaxpoll-vote-add' => 'Vaš gals je dodan',
+	'ajaxpoll-percent-votes' => '$1% od svih glasova',
+	'ajaxpoll-no-vote' => 'Molimo glasajte ispod.',
+	'ajaxpoll-submitting' => 'Čekajte, šaljemo vaš glas.',
+);
+
 /** Swedish (svenska)
  * @author WikiPhoenix
  */
@@ -811,11 +820,12 @@ $messages['zh'] = array(
 	'ajaxpoll-vote-update' => '你的投票已更新',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Simon Shek
  * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
+	'ajaxpoll-percent-votes' => '所有选票的$1%',
 	'ajaxpoll-your-vote' => '您在$2已经投票给“$1”，您可以点击下面的答案更改您的投票。',
 	'ajaxpoll-no-vote' => '请在下面投票。',
 	'ajaxpoll-submitting' => '请稍候，正在提交您的投票。',
@@ -825,15 +835,17 @@ $messages['zh-hans'] = array(
 	'right-ajaxpoll-vote' => '可在基于AJAX的投票区投票',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Simon Shek
  */
 $messages['zh-hant'] = array(
 	'ajaxpoll-percent-votes' => '所有選票的$1%',
+	'ajaxpoll-your-vote' => '您在$2已經投票給“$1”，您可以點擊下面的答案更改您的投票。',
 	'ajaxpoll-no-vote' => '請在下面投票。',
 	'ajaxpoll-submitting' => '請稍候，正提交您的投票.',
 	'ajaxpoll-vote-permission' => '您無權投票。',
 	'ajaxpoll-revoke-vote' => '我想撤銷我的投票',
 	'ajaxpoll-vote-revoked' => '您已成功撤銷您的投票。',
+	'right-ajaxpoll-vote' => '可在基於AJAX的投票區投票',
 );
 
