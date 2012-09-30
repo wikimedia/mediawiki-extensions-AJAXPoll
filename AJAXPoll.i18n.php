@@ -172,6 +172,7 @@ $messages['de-formal'] = array(
  * @author Erdemaslancan
  */
 $messages['diq'] = array(
+	'ajaxpoll-percent-votes' => '$1% rey heme',
 	'ajaxpoll-no-vote' => 'Reya xo bıni de bıde.',
 );
 
