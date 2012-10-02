@@ -84,7 +84,7 @@ $messages['ast'] = array(
 	'right-ajaxpoll-vote' => "Pue votar nes encuestes basaes n'AJAX",
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Jim-by
  * @author Wizardist
  */
@@ -153,7 +153,7 @@ $messages['de'] = array(
 	'right-ajaxpoll-vote' => 'An AJAX-gestützen Umfragen teilnehmen',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** German (formal address) (Deutsch (Sie-Form)‎)
  * @author Geitost
  * @author Kghbln
  */
@@ -571,7 +571,7 @@ $messages['ms'] = array(
 	'right-ajaxpoll-vote' => 'Boleh mengundi dalam tinjauan berasaskan AJAX',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
@@ -710,7 +710,7 @@ $messages['si'] = array(
 	'ajaxpoll-no-vote' => 'කරුණාකර පහතින් මනාපය දෙන්න.',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Sasa Stefanovic
  * @author Verlor
  */
