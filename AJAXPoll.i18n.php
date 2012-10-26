@@ -795,6 +795,13 @@ $messages['tl'] = array(
 	'right-ajaxpoll-vote' => 'Makakaboto sa mga halalang nakabatay sa AJAX',
 );
 
+/** Turkish (Türkçe)
+ * @author Hedda Gabler
+ */
+$messages['tr'] = array(
+	'ajaxpoll-vote-add' => 'Oyunuz eklendi.',
+);
+
 /** Ukrainian (українська)
  * @author A1
  */
@@ -849,4 +856,3 @@ $messages['zh-hant'] = array(
 	'ajaxpoll-vote-revoked' => '您已成功撤銷您的投票。',
 	'right-ajaxpoll-vote' => '可在基於AJAX的投票區投票',
 );
-
