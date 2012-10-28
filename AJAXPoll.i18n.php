@@ -60,7 +60,7 @@ $messages['af'] = array(
 $messages['ar'] = array(
 	'ajaxpoll-vote-update' => 'تم تحديث صوتك.',
 	'ajaxpoll-vote-add' => 'تم إضافة تصويتك',
-	'ajaxpoll-info' => 'هذه كانت $1 تصويتا منذ بداية التصويت في $2.',
+	'ajaxpoll-info' => 'هذه كانت $1 تصويتا منذ بداية التصويت في $2.', # Fuzzy
 	'ajaxpoll-submitting' => 'من فضلك انتظر، يرسل صوتك.',
 );
 
@@ -206,7 +206,7 @@ $messages['el'] = array(
 	'ajaxpoll-percent-votes' => '$1% επί των συνολικών ψήφων',
 	'ajaxpoll-your-vote' => 'Έχετε ήδη ψηφίσει το $1 στο $2, μπορείτε να αλλάξετε τη ψήφο σας πατώντας μια απάντηση παρακάτω.',
 	'ajaxpoll-no-vote' => 'Παρακαλώ ψηφίστε παρακάτω.',
-	'ajaxpoll-info' => 'Υπάρχουν $1 ψήφοι από τότε που δημιουργήθηκε η ψηφοφορία στις $2.',
+	'ajaxpoll-info' => 'Υπάρχουν $1 ψήφοι από τότε που δημιουργήθηκε η ψηφοφορία στις $2.', # Fuzzy
 	'ajaxpoll-submitting' => 'Παρακαλώ περιμένετε,η ψήφο σας υποβάλλεται.',
 );
 
@@ -581,7 +581,7 @@ $messages['nb'] = array(
 	'ajaxpoll-percent-votes' => '$1% av alle stemmer',
 	'ajaxpoll-your-vote' => 'Du har allerede stemt på «$1» den $2, du kan endre din stemme ved å klikke på et svar nedenfor.',
 	'ajaxpoll-no-vote' => 'Vennligst stem nedenfor.',
-	'ajaxpoll-info' => 'Det var $1 stemmer siden spørreundersøkelsen ble opprettet den $2.',
+	'ajaxpoll-info' => 'Det var $1 stemmer siden spørreundersøkelsen ble opprettet den $2.', # Fuzzy
 	'ajaxpoll-submitting' => 'Vennligst vent, sender inn stemmen din.',
 );
 
@@ -722,7 +722,8 @@ $messages['sr-ec'] = array(
 	'ajaxpoll-submitting' => 'Чекајте, шаљемо ваш глас.',
 );
 
-/** Serbian (Latin script) (srpski (latinica)‎) */
+/** Serbian (Latin script) (srpski (latinica)‎)
+ */
 $messages['sr-el'] = array(
 	'ajaxpoll-vote-update' => 'aš glas je bio uračunat.',
 	'ajaxpoll-vote-add' => 'Vaš gals je dodan',
