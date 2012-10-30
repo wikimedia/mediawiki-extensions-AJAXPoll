@@ -458,6 +458,9 @@ $messages['ja'] = array(
 $messages['ka'] = array(
 	'ajaxpoll-vote-update' => 'თქვენი ხმა განახლდა.',
 	'ajaxpoll-vote-add' => 'თქვენი ხმა დაემატა.',
+	'ajaxpoll-percent-votes' => 'ყველა ხმის $1%',
+	'ajaxpoll-no-vote' => 'გთხოვთ, ხმა მისცეთ ქვევით.',
+	'ajaxpoll-submitting' => 'გთხოვთ, მოიცადეთ თქვენი ხმა მუშავდება.',
 );
 
 /** Korean (한국어)
