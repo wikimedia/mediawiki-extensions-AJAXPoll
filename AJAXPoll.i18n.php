@@ -837,6 +837,9 @@ $messages['zh'] = array(
  * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
+	'ajaxpoll-vote-update' => '已更新您的投票。',
+	'ajaxpoll-vote-add' => '已添加您的投票。',
+	'ajaxpoll-vote-error' => '处理您的投票出现问题，请再试一次。',
 	'ajaxpoll-percent-votes' => '所有选票的$1%',
 	'ajaxpoll-your-vote' => '您在$2已经投票给“$1”，您可以点击下面的答案更改您的投票。',
 	'ajaxpoll-no-vote' => '请在下面投票。',
