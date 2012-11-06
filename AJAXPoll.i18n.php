@@ -267,6 +267,7 @@ $messages['fi'] = array(
 );
 
 /** French (français)
+ * @author Crochet.david
  * @author Gomoko
  * @author Tim 'Avatar' Bartel
  */
@@ -277,9 +278,9 @@ $messages['fr'] = array(
 	'ajaxpoll-vote-add' => 'Ta voix était compté.',
 	'ajaxpoll-vote-error' => "Il y avait une problème avec le traitement de ta voix. Essaie-cela s'il te plaît encore une fois.",
 	'ajaxpoll-percent-votes' => '$1% de tous voix.',
-	'ajaxpoll-your-vote' => "Tu a déjà voté pour $1 (à $2). Tu peux changer ta voix, si tu cliques à l'une des réponses en bas.",
+	'ajaxpoll-your-vote' => 'Tu a déjà voté pour $1 (à $2). Tu peux changer ta voix, si tu cliques à l’une des réponses en bas.',
 	'ajaxpoll-no-vote' => 'Vote en bas.',
-	'ajaxpoll-info' => "Il y avait {{PLURAL:$1|une voix|$1 voix}}, depuis l'élaboration du sondage au $2.",
+	'ajaxpoll-info' => 'Il y avait {{PLURAL:$1|une voix|$1 voix}}, depuis l’élaboration du sondage au $2.',
 	'ajaxpoll-submitting' => 'Attends une moment, ta voix est traité...',
 	'ajaxpoll-vote-permission' => 'Vous ne pouvez pas voter.',
 	'ajaxpoll-revoke-vote' => 'Je veux annuler mon vote',
