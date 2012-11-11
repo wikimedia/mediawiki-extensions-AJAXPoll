@@ -611,6 +611,22 @@ $messages['nl'] = array(
 	'right-ajaxpoll-vote' => 'Kan in AJAX-gebaseerde peilingen stemmen',
 );
 
+/** Oriya (ଓଡ଼ିଆ)
+ * @author ଆଶୁତୋଷ କର
+ */
+$messages['or'] = array(
+	'ajaxpoll-tracking-category' => 'ମତଦାନ ଯୁକ୍ତ ପ୍ରୁଷ୍ଠା।',
+	'ajaxpoll-vote-update' => 'ଆପଣଙ୍କ ମତ ଅପଡେଟ କରାଯାଇଛି।',
+	'ajaxpoll-vote-add' => 'ଆପଣଙ୍କ ମତଟି ଯୋଡାଗଲା।',
+	'ajaxpoll-percent-votes' => 'ସବୁ ଭୋଟର $1%',
+	'ajaxpoll-no-vote' => 'ତଳେ ମତଦାନ କରନ୍ତୁ।',
+	'ajaxpoll-submitting' => 'ମତ ଦେବାପାଇଁ ଦୟାକରି ଅପେକ୍ଷା କରନ୍ତୁ।',
+	'ajaxpoll-vote-permission' => 'ଆପଣ ମତ ଦେବାପାଇଁ ହକଦାର ନୁହନ୍ତି।',
+	'ajaxpoll-revoke-vote' => 'ମୁଁ ମୋ ମତ ଫେରାଇନେବାକୁ ଚାହୁଁଛି।',
+	'ajaxpoll-vote-revoked' => 'ଆପଣ ମତ ଫେରାଇନେଲେ।',
+	'right-ajaxpoll-vote' => 'ଆଜାକ୍ସ ଆଧାରିତ ମତଦାନରେ ମତ ଦେଇପାରିବେ',
+);
+
 /** Polish (polski)
  * @author BeginaFelicysym
  * @author Dariusz Siedlecki
