@@ -84,6 +84,13 @@ $messages['ast'] = array(
 	'right-ajaxpoll-vote' => "Pue votar nes encuestes basaes n'AJAX",
 );
 
+/** تورکجه (تورکجه)
+ * @author Amir a57
+ */
+$messages['azb'] = array(
+	'ajaxpoll-vote-add' => 'اویونوز علاوه اولوندو.',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Jim-by
  * @author Wizardist
