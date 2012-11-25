@@ -832,9 +832,11 @@ $messages['tr'] = array(
 
 /** Ukrainian (українська)
  * @author A1
+ * @author Base
  */
 $messages['uk'] = array(
 	'ajaxpoll-desc' => 'Дозволяє голосування на основі AJAX з міткою <tt>&lt;poll&gt;</tt>',
+	'ajaxpoll-tracking-category' => 'Сторінки з опитуваннями',
 	'ajaxpoll-vote-update' => 'Ваш голос був поновлений.',
 	'ajaxpoll-vote-add' => 'Ваш голос був доданий.',
 	'ajaxpoll-vote-error' => 'Виникла проблема з обробкою вашого голосу, будь-ласка, спробуйте знову.',
@@ -842,6 +844,10 @@ $messages['uk'] = array(
 	'ajaxpoll-your-vote' => 'Ви вже проголосували за " $1 " на  $2 , ви можете змінити свій голос, натиснувши відповідь нижче.',
 	'ajaxpoll-no-vote' => 'Будь ласка, голосуйте нижче.',
 	'ajaxpoll-submitting' => 'Будь ласка, почекайте, ваш голос обробляється  ...',
+	'ajaxpoll-vote-permission' => 'Ви не можете голосувати',
+	'ajaxpoll-revoke-vote' => 'Я хочу скасувати свій голос',
+	'ajaxpoll-vote-revoked' => 'Ви успішно скасували свій голос',
+	'right-ajaxpoll-vote' => 'Можете голосувати в опитуваннях на основі AJAX',
 );
 
 /** Chinese (中文)
