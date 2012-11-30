@@ -419,6 +419,15 @@ $messages['id'] = array(
 	'ajaxpoll-vote-permission' => 'Anda tidak dapat memberikan suara.',
 );
 
+/** Icelandic (íslenska)
+ * @author S.Örvarr.S
+ */
+$messages['is'] = array(
+	'ajaxpoll-tracking-category' => 'Síður með skoðanakönnun',
+	'ajaxpoll-vote-update' => 'Atkvæði þitt hefur verið uppfært.',
+	'ajaxpoll-vote-add' => 'Atkvæði þínu hefur verið viðbætt.',
+);
+
 /** Italian (italiano)
  * @author Beta16
  */
