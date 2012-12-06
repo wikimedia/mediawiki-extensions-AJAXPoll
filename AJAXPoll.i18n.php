@@ -204,9 +204,11 @@ $messages['dsb'] = array(
 );
 
 /** Greek (Ελληνικά)
+ * @author Glavkos
  * @author Περίεργος
  */
 $messages['el'] = array(
+	'ajaxpoll-tracking-category' => 'Σελίδες με δημοσκόπηση',
 	'ajaxpoll-vote-update' => 'Η ψήφος σας έχει ενημερωθεί.',
 	'ajaxpoll-vote-add' => 'Η ψήφος σας προστέθηκε.',
 	'ajaxpoll-vote-error' => 'Παρουσιάστηκε πρόβλημα κατά την επεξεργασία της ψήφους σας, παρακαλώ ξαναπροσπαθήστε.',
@@ -215,6 +217,7 @@ $messages['el'] = array(
 	'ajaxpoll-no-vote' => 'Παρακαλώ ψηφίστε παρακάτω.',
 	'ajaxpoll-info' => 'Υπάρχουν $1 ψήφοι από τότε που δημιουργήθηκε η ψηφοφορία στις $2.', # Fuzzy
 	'ajaxpoll-submitting' => 'Παρακαλώ περιμένετε,η ψήφο σας υποβάλλεται.',
+	'ajaxpoll-revoke-vote' => 'Θέλω να ανακαλέσω την ψήφο μου',
 );
 
 /** Esperanto (Esperanto)
