@@ -137,6 +137,20 @@ $messages['br'] = array(
 	'ajaxpoll-revoke-vote' => "C'hoant am eus da zistreiñ war ar pezh am eus votet",
 );
 
+/** Catalan (català)
+ * @author Pitort
+ */
+$messages['ca'] = array(
+	'ajaxpoll-tracking-category' => 'Pàgines amb una enquesta',
+	'ajaxpoll-vote-update' => 'El vostre vot ha estat enregistrat.',
+	'ajaxpoll-vote-add' => 'El vostre vot ha estat afegit.',
+	'ajaxpoll-vote-error' => 'Hi ha hagut un problema en processar el vostre vot, si us plau torneu a provar una altra vegada.',
+	'ajaxpoll-percent-votes' => '$1% del total de vots',
+	'ajaxpoll-your-vote' => 'Vostè ja va votar per " $1 " el  $2, podeu canviar el vostre vot fent clic sobre una de les respostes que hi ha més avall.',
+	'ajaxpoll-no-vote' => 'Si us plau, voteu a sota.',
+	'ajaxpoll-info' => "Hi ha hagut {{PLURAL:$1|un vot|$1 vots}} des que l'enquesta va ser creada el $2.",
+);
+
 /** German (Deutsch)
  * @author Geitost
  * @author Kghbln
