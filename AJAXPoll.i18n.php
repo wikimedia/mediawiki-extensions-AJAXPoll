@@ -141,6 +141,7 @@ $messages['br'] = array(
  * @author Pitort
  */
 $messages['ca'] = array(
+	'ajaxpoll-desc' => "Permet les enquestes basades en AJAX amb l'etiqueta <tt>&lt;poll&gt;</tt>",
 	'ajaxpoll-tracking-category' => 'Pàgines amb una enquesta',
 	'ajaxpoll-vote-update' => 'El vostre vot ha estat enregistrat.',
 	'ajaxpoll-vote-add' => 'El vostre vot ha estat afegit.',
@@ -149,6 +150,11 @@ $messages['ca'] = array(
 	'ajaxpoll-your-vote' => 'Vostè ja va votar per " $1 " el  $2, podeu canviar el vostre vot fent clic sobre una de les respostes que hi ha més avall.',
 	'ajaxpoll-no-vote' => 'Si us plau, voteu a sota.',
 	'ajaxpoll-info' => "Hi ha hagut {{PLURAL:$1|un vot|$1 vots}} des que l'enquesta va ser creada el $2.",
+	'ajaxpoll-submitting' => 'Espereu si us plau, estem precessant el vostre vot.',
+	'ajaxpoll-vote-permission' => 'No teniu dret a vot.',
+	'ajaxpoll-revoke-vote' => 'Vull anul·lar el meu vot',
+	'ajaxpoll-vote-revoked' => 'Heu anul·lat el vostre vot',
+	'right-ajaxpoll-vote' => 'Podeu votar a les enquestes basades en AJAX',
 );
 
 /** German (Deutsch)
