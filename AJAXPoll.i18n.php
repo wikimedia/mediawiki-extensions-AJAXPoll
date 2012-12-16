@@ -31,9 +31,11 @@ $messages['en'] = array(
 );
 
 /** Message documentation (Message documentation)
+ * @author Shirayuki
  * @author Umherirrender
  */
 $messages['qqq'] = array(
+	'ajaxpoll-desc' => '{{desc|name=AJAX Poll|url=http://www.mediawiki.org/wiki/Extension:AJAX_Poll}}',
 	'ajaxpoll-tracking-category' => 'The name of a category for all pages which use the &lt;poll&gt; parser extension tag. The category is automatically added unless the feature is disabled.',
 	'ajaxpoll-percent-votes' => '$1 is the percentage number of the votes',
 	'ajaxpoll-your-vote' => '$1 is the answer name, $2 is the date when the answer was casted',
