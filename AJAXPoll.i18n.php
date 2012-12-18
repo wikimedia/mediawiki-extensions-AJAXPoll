@@ -498,8 +498,10 @@ $messages['ja'] = array(
  * @author David1010
  */
 $messages['ka'] = array(
+	'ajaxpoll-tracking-category' => 'გვერდები გამოკითხვებით',
 	'ajaxpoll-vote-update' => 'თქვენი ხმა განახლდა.',
 	'ajaxpoll-vote-add' => 'თქვენი ხმა დაემატა.',
+	'ajaxpoll-vote-error' => 'თქვენი ხმის დამუშავებისას მოხდა შეცდომა, გთხოვთ, კიდევ სცადეთ.',
 	'ajaxpoll-percent-votes' => 'ყველა ხმის $1%',
 	'ajaxpoll-no-vote' => 'გთხოვთ, ხმა მისცეთ ქვევით.',
 	'ajaxpoll-submitting' => 'გთხოვთ, მოიცადეთ თქვენი ხმა მუშავდება.',
