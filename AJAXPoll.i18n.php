@@ -159,6 +159,45 @@ $messages['ca'] = array(
 	'right-ajaxpoll-vote' => 'Podeu votar a les enquestes basades en AJAX',
 );
 
+/** Czech (česky)
+ * @author Paxt
+ */
+$messages['cs'] = array(
+	'ajaxpoll-tracking-category' => 'Stránky s dotazníkem',
+	'ajaxpoll-vote-update' => 'Váš hlas byl aktualizován.',
+	'ajaxpoll-vote-add' => 'Váš hlas byl přidán.',
+	'ajaxpoll-vote-error' => 'Došlo k potížím se zpracováním Vašeho hlasu, zkuste to prosím znovu.',
+	'ajaxpoll-percent-votes' => '$1% všech hlasů',
+	'ajaxpoll-your-vote' => 'Již jste hlasovali pro " $1 " na  $2 , svůj hlas můžete změnit klepnutím na  odpověď níže.',
+	'ajaxpoll-no-vote' => 'Prosím hlasujte níže.',
+	'ajaxpoll-info' => '{{PLURAL:$1|Odevzdán jeden hlas|Odevzdány $1 hlasy|Odevzdáno $1 hlasů}} od zahájení ankety dne $2.',
+	'ajaxpoll-submitting' => 'Prosím čekejte, Váš hlas se zpracovává...',
+	'ajaxpoll-vote-permission' => 'Nemáte oprávnění hlasovat.',
+	'ajaxpoll-revoke-vote' => 'Chci odvolat svůj hlas',
+	'ajaxpoll-vote-revoked' => 'Váš hlas byl úspěšně odvolán.',
+	'right-ajaxpoll-vote' => 'Může hlasovat v anketách založených na AJAXu',
+);
+
+/** Danish (dansk)
+ * @author Tjernobyl
+ */
+$messages['da'] = array(
+	'ajaxpoll-desc' => 'Giver mulighed for AJAX-baserede afstemninger med <tt>&lt;poll&gt;</tt> tag',
+	'ajaxpoll-tracking-category' => 'Sider med en afstemning',
+	'ajaxpoll-vote-update' => 'Din stemme er blevet opdateret.',
+	'ajaxpoll-vote-add' => 'Din stemme er blevet afgivet.',
+	'ajaxpoll-vote-error' => 'Der opstod et problem med behandlingen af din stemme, prøv igen.',
+	'ajaxpoll-percent-votes' => '$1% af alle stemmer',
+	'ajaxpoll-your-vote' => 'Du har allerede stemt på "$1" $2. Du kan ændre din stemme ved at klikke på et af de nedenstående svar.',
+	'ajaxpoll-no-vote' => 'Stem venligst nedenfor.',
+	'ajaxpoll-info' => 'Der var {{PLURAL:$1|en stemme|$1 stemmer}} siden afstemningen blev oprettet $2.',
+	'ajaxpoll-submitting' => 'Vent venligst, din stemme bliver afsendt.',
+	'ajaxpoll-vote-permission' => 'Du har ikke ret til at stemme.',
+	'ajaxpoll-revoke-vote' => 'Jeg vil gerne tilbagekalde min stemme',
+	'ajaxpoll-vote-revoked' => 'Du har nu tilbagekaldt din stemme.',
+	'right-ajaxpoll-vote' => 'Kan stemme i AJAX-baserede afstemninger',
+);
+
 /** German (Deutsch)
  * @author Geitost
  * @author Kghbln
@@ -227,6 +266,7 @@ $messages['dsb'] = array(
 
 /** Greek (Ελληνικά)
  * @author Glavkos
+ * @author ZaDiak
  * @author Περίεργος
  */
 $messages['el'] = array(
@@ -239,7 +279,9 @@ $messages['el'] = array(
 	'ajaxpoll-no-vote' => 'Παρακαλώ ψηφίστε παρακάτω.',
 	'ajaxpoll-info' => 'Υπάρχουν $1 ψήφοι από τότε που δημιουργήθηκε η ψηφοφορία στις $2.', # Fuzzy
 	'ajaxpoll-submitting' => 'Παρακαλώ περιμένετε,η ψήφο σας υποβάλλεται.',
+	'ajaxpoll-vote-permission' => 'Δεν έχετε δικαίωμα να ψηφίσετε.',
 	'ajaxpoll-revoke-vote' => 'Θέλω να ανακαλέσω την ψήφο μου',
+	'ajaxpoll-vote-revoked' => 'Αποσύρατε επιτυχώς την ψήφο σας.',
 );
 
 /** Esperanto (Esperanto)
@@ -281,6 +323,21 @@ $messages['es'] = array(
 	'ajaxpoll-revoke-vote' => 'Quiero revocar mi voto',
 	'ajaxpoll-vote-revoked' => 'Revocó su voto correctamente .',
 	'right-ajaxpoll-vote' => 'Puede votar en las encuestas basadas en AJAX',
+);
+
+/** Estonian (eesti)
+ * @author Avjoska
+ */
+$messages['et'] = array(
+	'ajaxpoll-vote-permission' => 'Sul ei ole õigust hääletada.',
+);
+
+/** Persian (فارسی)
+ * @author Mjbmr
+ */
+$messages['fa'] = array(
+	'ajaxpoll-vote-update' => 'رأی شما به روز شد.',
+	'ajaxpoll-vote-add' => 'رأی شما افزوده شد.',
 );
 
 /** Finnish (suomi)
@@ -439,8 +496,12 @@ $messages['ia'] = array(
 
 /** Indonesian (Bahasa Indonesia)
  * @author Anashir
+ * @author Farras
  */
 $messages['id'] = array(
+	'ajaxpoll-desc' => 'Memungkinkan jajak pendapat berbasis AJAX dengan tag <tt>&lt;poll&gt;</tt>',
+	'ajaxpoll-tracking-category' => 'Halaman dengan jajak pendapat',
+	'ajaxpoll-percent-votes' => '$1% dari semua suara',
 	'ajaxpoll-vote-permission' => 'Anda tidak dapat memberikan suara.',
 );
 
@@ -576,6 +637,15 @@ $messages['lt'] = array(
 	'ajaxpoll-vote-add' => 'Jūsų balsas buvo pridėtas.',
 	'ajaxpoll-percent-votes' => '$1% visų balsų',
 	'ajaxpoll-no-vote' => 'Prašome balsuoti žemiau.',
+	'ajaxpoll-submitting' => 'Prašome palaukti, siunčiame jūsų balsą.',
+);
+
+/** Latvian (latviešu)
+ * @author Papuass
+ */
+$messages['lv'] = array(
+	'ajaxpoll-vote-add' => 'Jūsu balss tika pievienota.',
+	'ajaxpoll-percent-votes' => '$1% no visām balsīm',
 );
 
 /** Macedonian (македонски)
@@ -616,6 +686,23 @@ $messages['ms'] = array(
 	'ajaxpoll-revoke-vote' => 'Saya ingin menarik balik undian saya',
 	'ajaxpoll-vote-revoked' => 'Anda berjaya menarik balik undian anda.',
 	'right-ajaxpoll-vote' => 'Boleh mengundi dalam tinjauan berasaskan AJAX',
+);
+
+/** Maltese (Malti)
+ * @author Chrisportelli
+ */
+$messages['mt'] = array(
+	'ajaxpoll-vote-update' => 'Il-vot tiegħek ġie aġġornat.',
+	'ajaxpoll-vote-add' => 'Il-vot tiegħek ġie miżjud.',
+	'ajaxpoll-vote-error' => "Kien hemm problema fl-ipproċessar tal-vot tiegħek, jekk jogħġbok erġa' pprova.",
+	'ajaxpoll-percent-votes' => '$1% tal-voti kollha',
+	'ajaxpoll-your-vote' => 'Inti diġà vvutajt għal "$1" nhar il-$2, tista\' tbiddel il-vot tiegħek billi tagħżel risposta hawn taħt.',
+	'ajaxpoll-no-vote' => 'Jekk jogħġbok ivvota hawn taħt.',
+	'ajaxpoll-info' => 'Kien hemm {{PLURAL:$1|vot wieħed|$1 voti}} minn mindu dan is-sondaġġ ġie maħluq nhar il-$2.',
+	'ajaxpoll-submitting' => 'Jekk jogħġbok stenna, il-vot tiegħek qiegħed jintbagħat.',
+	'ajaxpoll-vote-permission' => "M'għandekx id-dritt tal-vot.",
+	'ajaxpoll-revoke-vote' => 'Nixtieq nirrevoka l-vot tiegħi',
+	'ajaxpoll-vote-revoked' => "Irnexxielek tirrevoka b'suċċess il-vot tiegħek.",
 );
 
 /** Norwegian Bokmål (norsk (bokmål)‎)
@@ -740,6 +827,25 @@ $messages['pt-br'] = array(
 	'ajaxpoll-no-vote' => 'Por favor vote abaixo.',
 	'ajaxpoll-info' => '{{PLURAL:$1|Um voto|$1 votos}} desde a criação da votação em $2.',
 	'ajaxpoll-submitting' => 'Por favor aguarde, enviando sua opção.',
+);
+
+/** Romanian (română)
+ * @author Firilacroco
+ * @author Minisarm
+ * @author Stelistcristi
+ */
+$messages['ro'] = array(
+	'ajaxpoll-tracking-category' => 'Pagini cu chestionar',
+	'ajaxpoll-vote-update' => 'Votul dumneavoastră a fost actualizat.',
+	'ajaxpoll-vote-add' => 'Votul dumneavoastră a fost adăugat.',
+	'ajaxpoll-vote-error' => 'A apărut o problemă la procesarea votului dumneavoastră. Vă rugăm să încercați din nou.',
+	'ajaxpoll-percent-votes' => '$1% din toate voturile',
+	'ajaxpoll-no-vote' => 'Vă rugăm să votați mai jos.',
+	'ajaxpoll-submitting' => 'Vă rugăm să așteptați, votul dumneavoastră se trimite.',
+	'ajaxpoll-vote-permission' => 'Nu aveți drept de vot.',
+	'ajaxpoll-revoke-vote' => 'Vreau să anulez votul meu',
+	'ajaxpoll-vote-revoked' => 'V-ați anulat cu succes votul.',
+	'right-ajaxpoll-vote' => 'Puteți vota în chestionare bazate pe AJAX',
 );
 
 /** Russian (русский)
