@@ -343,8 +343,11 @@ $messages['fa'] = array(
 /** Finnish (suomi)
  * @author Jack Phoenix
  * @author Nike
+ * @author Stryn
  */
 $messages['fi'] = array(
+	'ajaxpoll-desc' => 'Mahdollistaa AJAX-pohjaiset gallupit <tt>&lt;poll&gt;</tt>-tagilla',
+	'ajaxpoll-tracking-category' => 'Sivut, joissa on kysely',
 	'ajaxpoll-vote-update' => 'Äänesi on päivitetty',
 	'ajaxpoll-vote-add' => 'Äänesi on lisätty.',
 	'ajaxpoll-vote-error' => 'Äänesi prosessoimisessa oli ongelma, yritä uudelleen.',
@@ -353,6 +356,10 @@ $messages['fi'] = array(
 	'ajaxpoll-no-vote' => 'Voit äänestää alempana.',
 	'ajaxpoll-info' => '{{PLURAL:$1|Yksi ääni|$1 ääntä}} on annettu siitä lähtien kun tämä äänestys tehtiin, $2.',
 	'ajaxpoll-submitting' => 'Odota hetki, äänesi lähetetään kirjattavaksi.',
+	'ajaxpoll-vote-permission' => 'Sinulla ei ole oikeutta äänestää.',
+	'ajaxpoll-revoke-vote' => 'Haluan peruuttaa ääneni',
+	'ajaxpoll-vote-revoked' => 'Peruutit onnistuneesti äänesi.',
+	'right-ajaxpoll-vote' => 'Voi äänestää AJAX-pohjaisissa kyselyissä',
 );
 
 /** French (français)
@@ -501,8 +508,18 @@ $messages['ia'] = array(
 $messages['id'] = array(
 	'ajaxpoll-desc' => 'Memungkinkan jajak pendapat berbasis AJAX dengan tag <tt>&lt;poll&gt;</tt>',
 	'ajaxpoll-tracking-category' => 'Halaman dengan jajak pendapat',
+	'ajaxpoll-vote-update' => 'Suara Anda telah diperbarui.',
+	'ajaxpoll-vote-add' => 'Suara Anda telah ditambahkan.',
+	'ajaxpoll-vote-error' => 'Ada masalah dengan pengolahan suara anda, silahkan coba lagi.',
 	'ajaxpoll-percent-votes' => '$1% dari semua suara',
+	'ajaxpoll-your-vote' => 'Anda sudah memberi suara untuk "$1" pada $2. Anda bisa mengubah suara Anda dengan mengklik jawaban di bawah.',
+	'ajaxpoll-no-vote' => 'Silakan beri suara di bawah.',
+	'ajaxpoll-info' => 'Ada {{PLURAL:$1|satu suara|$1 suara}} sejak jajak pendapat ini dibuat pada $2.',
+	'ajaxpoll-submitting' => 'Silakan tunggu. Sedang mengirimkan suara Anda.',
 	'ajaxpoll-vote-permission' => 'Anda tidak dapat memberikan suara.',
+	'ajaxpoll-revoke-vote' => 'Saya ingin membatalkan suara saya',
+	'ajaxpoll-vote-revoked' => 'Anda berhasil membatalkan suara Anda.',
+	'right-ajaxpoll-vote' => 'Dapat memberi suara di jajak pendapat berbasis AJAX',
 );
 
 /** Icelandic (íslenska)
@@ -646,6 +663,7 @@ $messages['lt'] = array(
 $messages['lv'] = array(
 	'ajaxpoll-vote-add' => 'Jūsu balss tika pievienota.',
 	'ajaxpoll-percent-votes' => '$1% no visām balsīm',
+	'ajaxpoll-vote-permission' => 'Jums nav tiesību balsot.',
 );
 
 /** Macedonian (македонски)
@@ -739,6 +757,15 @@ $messages['nl'] = array(
 	'ajaxpoll-revoke-vote' => 'Ik wil mijn stem intrekken',
 	'ajaxpoll-vote-revoked' => 'Uw stem is ingetrokken.',
 	'right-ajaxpoll-vote' => 'Kan in AJAX-gebaseerde peilingen stemmen',
+);
+
+/** Nederlands (informeel)‎ (Nederlands (informeel)‎)
+ * @author Siebrand
+ */
+$messages['nl-informal'] = array(
+	'ajaxpoll-your-vote' => 'Je hebt al voor "$1" gestemd op $2. Je kunt je stem wijzigen door hieronder op een antwoord te klikken.',
+	'ajaxpoll-vote-permission' => 'Je kunt niet stemmen.',
+	'ajaxpoll-vote-revoked' => 'Je stem is ingetrokken.',
 );
 
 /** Oriya (ଓଡ଼ିଆ)
@@ -848,6 +875,17 @@ $messages['ro'] = array(
 	'right-ajaxpoll-vote' => 'Puteți vota în chestionare bazate pe AJAX',
 );
 
+/** tarandíne (tarandíne)
+ * @author Reder
+ */
+$messages['roa-tara'] = array(
+	'ajaxpoll-tracking-category' => "Pàgene cu 'nu sondagge",
+	'ajaxpoll-percent-votes' => '$1% de totte le vote',
+	'ajaxpoll-no-vote' => "Pe' piacere, vote d'abbasce",
+	'ajaxpoll-vote-permission' => 'Tu non ge puè votà',
+	'ajaxpoll-vote-revoked' => "'U vote tue ha state revocate cu successe.",
+);
+
 /** Russian (русский)
  * @author DCamer
  * @author Lockal
@@ -943,6 +981,8 @@ $messages['ta'] = array(
 	'ajaxpoll-no-vote' => 'தயவுசெய்து கீழே வாக்களிக்கவும்.',
 	'ajaxpoll-submitting' => 'தயவுசெய்து காத்திருக்கவும், உங்கள் வாக்கு சமர்ப்பிக்கப்படுகிறது.',
 	'ajaxpoll-vote-permission' => 'உங்களுக்கு வாக்களிக்கும் உரிமை இல்லை.',
+	'ajaxpoll-revoke-vote' => 'நான் எனது வாக்கைத் திரும்பப் பெற விரும்புகிறேன்.',
+	'ajaxpoll-vote-revoked' => 'நீங்கள் உங்கள் வாக்கினை வெற்றிகரமாக திரும்பப் பெற்றுள்ளீர்கள்.',
 );
 
 /** Tagalog (Tagalog)
