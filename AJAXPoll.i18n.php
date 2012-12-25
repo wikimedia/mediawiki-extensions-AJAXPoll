@@ -93,6 +93,26 @@ $messages['azb'] = array(
 	'ajaxpoll-vote-add' => 'اویونوز علاوه اولوندو.',
 );
 
+/** Bashkir (башҡортса)
+ * @author Sagan
+ */
+$messages['ba'] = array(
+	'ajaxpoll-desc' => 'AJAX нигеҙендә <tt>&lt;poll&gt;</tt> тегы ярҙамы менән тауыш биреү мөмкинлеге бар',
+	'ajaxpoll-tracking-category' => 'Тауыш биреү бите',
+	'ajaxpoll-vote-update' => 'Һеҙҙең тауыш биреү яңыртылды',
+	'ajaxpoll-vote-add' => 'Һеҙҙең тауыш иҫәпкә алынды',
+	'ajaxpoll-vote-error' => 'Һеҙҙең тауышты иҫәпкә алғанда хата китте, зинһар өсөн ҡабатлап ҡарағыҙ.',
+	'ajaxpoll-percent-votes' => 'Бөтә тауыштың $1%',
+	'ajaxpoll-your-vote' => 'Һеҙ тауыш бирҙегеҙ «$1» $2. Түбәндәге яуаптарҙы һайлап, яңынан тауыш бирә алаһығыҙ.',
+	'ajaxpoll-no-vote' => 'Зинһар өсөн, түбәндә тауыш биреүҙә ҡатнашығыҙ.',
+	'ajaxpoll-info' => '$2 тауыш биреү башланғандан башлап {{PLURAL:$1|кеше тауыш бирҙе}}.',
+	'ajaxpoll-submitting' => 'Зинһар, һеҙҙең тауыш тураһында мәғлүмәт тапшырылғанын көтөгөз...',
+	'ajaxpoll-vote-permission' => 'Һеҙҙең тауыш биреү хоҡуғы юҡ.',
+	'ajaxpoll-revoke-vote' => 'Мин тауышымды кире алырға теләйем',
+	'ajaxpoll-vote-revoked' => 'Һеҙ тауышығыҙҙы кире алдығыҙ.',
+	'right-ajaxpoll-vote' => 'AJAX нигеҙендә һорау алыуҙа ҡатнаша алаһығыҙ.',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Jim-by
  * @author Wizardist
@@ -912,9 +932,15 @@ $messages['ru'] = array(
  * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
+	'ajaxpoll-tracking-category' => 'ඡන්ද විමසීමක් සහිත පිටු',
 	'ajaxpoll-vote-update' => 'ඔබේ මනාපය යාවත්කාලීන කරන ලදී.',
 	'ajaxpoll-vote-add' => 'ඔබේ මනාපය එක් කරන ලදී.',
+	'ajaxpoll-percent-votes' => 'සියලුම මනාපයන්ගෙන් $1% ක්',
 	'ajaxpoll-no-vote' => 'කරුණාකර පහතින් මනාපය දෙන්න.',
+	'ajaxpoll-submitting' => 'කරුණාකර රැදී සිටින්න, ඔබේ මනාපය යොමු කරමින්.',
+	'ajaxpoll-vote-permission' => 'ඔබ මනාප ලබා දීමට සුදුසුකම් ලබා නොමැත.',
+	'ajaxpoll-revoke-vote' => 'මට මගේ මනාපය අස් කර ගන්න අවශ්‍යයි',
+	'ajaxpoll-vote-revoked' => 'මට විසින් ඔබේ මනාපය සාර්ථකව අස් කර ගන්නා ලදී.',
 );
 
 /** Serbian (Cyrillic script) (српски (ћирилица)‎)
@@ -1010,6 +1036,24 @@ $messages['tl'] = array(
  */
 $messages['tr'] = array(
 	'ajaxpoll-vote-add' => 'Oyunuz eklendi.',
+);
+
+/** Uyghur (Arabic script) (ئۇيغۇرچە)
+ * @author Arlin
+ * @author Sahran
+ */
+$messages['ug-arab'] = array(
+	'ajaxpoll-tracking-category' => 'ئاۋاز بار بەتلەر',
+	'ajaxpoll-vote-update' => 'سىز بەرگەن ئاۋاز يېڭىلاندى.',
+	'ajaxpoll-vote-add' => 'سىز بەرگەن ئاۋاز قېتىلدى.',
+	'ajaxpoll-vote-error' => 'سىز بەرگەن ئاۋازنى بىرتەرەپ قىلىش جەريانىدا مەسىلە كۆرۈلدى، قايتا سىناڭ.',
+	'ajaxpoll-percent-votes' => 'بارلىق ئاۋازنىڭ $1%',
+	'ajaxpoll-no-vote' => 'ئاستىدا بىلەت تاشلاڭ.',
+	'ajaxpoll-submitting' => 'سەل كۈتۈڭ، تاشلىغان بىلىتىڭىزنى يوللاۋاتىدۇ.',
+	'ajaxpoll-vote-permission' => 'بىلەت تاشلاش ھوقۇقىڭىز يوق.',
+	'ajaxpoll-revoke-vote' => 'تاشلىغان بىلىتىمنى بىكار قىلىمەن',
+	'ajaxpoll-vote-revoked' => 'تاشلىغان بىلىتىڭىزنى مۇۋەپپەقىيەتلىك بىكار قىلدىڭىز.',
+	'right-ajaxpoll-vote' => 'AJAX ئاساسىدىكى بىلەت تاشلاش رايونىدا بىلەت تاشلىيالايسىز',
 );
 
 /** Ukrainian (українська)
