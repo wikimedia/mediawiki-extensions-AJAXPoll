@@ -349,6 +349,11 @@ $messages['es'] = array(
  * @author Avjoska
  */
 $messages['et'] = array(
+	'ajaxpoll-vote-update' => 'Sinu hääl on värskendatud.',
+	'ajaxpoll-vote-add' => 'Sinu hääl on lisatud.',
+	'ajaxpoll-percent-votes' => '$1% kõigist häältest',
+	'ajaxpoll-no-vote' => 'Palun hääleta allpool.',
+	'ajaxpoll-submitting' => 'Palun oota, sinu häält lisatakse.',
 	'ajaxpoll-vote-permission' => 'Sul ei ole õigust hääletada.',
 );
 
@@ -409,6 +414,7 @@ $messages['fr'] = array(
  */
 $messages['frp'] = array(
 	'ajaxpoll-tracking-category' => 'Pâges avouéc un sondâjo',
+	'ajaxpoll-percent-votes' => '$1 % de tôs los votos',
 );
 
 /** Galician (galego)
@@ -492,12 +498,19 @@ $messages['hsb'] = array(
 );
 
 /** Hungarian (magyar)
+ * @author Dj
  * @author Glanthor Reviol
  */
 $messages['hu'] = array(
+	'ajaxpoll-desc' => 'AJAX alapú közvélemény-kutatás <tt>&lt;poll&gt;</tt> cimkével',
+	'ajaxpoll-tracking-category' => 'Közvélemény-kutatást tartalmazó lapok',
 	'ajaxpoll-vote-update' => 'A szavazatod frissítve.',
 	'ajaxpoll-vote-add' => 'A szavazatod rögzítve.',
+	'ajaxpoll-vote-error' => 'Hiba történt a szavazás feldolgozása során, próbáld meg később.',
+	'ajaxpoll-percent-votes' => 'Az összes szavazat $1%-a',
+	'ajaxpoll-your-vote' => 'Már szavaztál a "$1"-re a $2-n, megváltoztathatod a szavazatodat az alábbi válaszra kattintva.',
 	'ajaxpoll-no-vote' => 'Kérlek szavazz alant.',
+	'ajaxpoll-info' => 'Összesen {{PLURAL:$1|egy|$1}} szavazat érkezett a $2 óta.',
 	'ajaxpoll-submitting' => 'Kérlek várj a szavazatod elküldésére.',
 );
 
@@ -681,6 +694,7 @@ $messages['lt'] = array(
  * @author Papuass
  */
 $messages['lv'] = array(
+	'ajaxpoll-vote-update' => 'Jūsu balss tika izmainīta.',
 	'ajaxpoll-vote-add' => 'Jūsu balss tika pievienota.',
 	'ajaxpoll-percent-votes' => '$1% no visām balsīm',
 	'ajaxpoll-vote-permission' => 'Jums nav tiesību balsot.',
@@ -896,6 +910,7 @@ $messages['ro'] = array(
 );
 
 /** tarandíne (tarandíne)
+ * @author Joetaras
  * @author Reder
  */
 $messages['roa-tara'] = array(
@@ -903,6 +918,7 @@ $messages['roa-tara'] = array(
 	'ajaxpoll-percent-votes' => '$1% de totte le vote',
 	'ajaxpoll-no-vote' => "Pe' piacere, vote d'abbasce",
 	'ajaxpoll-vote-permission' => 'Tu non ge puè votà',
+	'ajaxpoll-revoke-vote' => "Ije vogghie annullà 'u vote mije",
 	'ajaxpoll-vote-revoked' => "'U vote tue ha state revocate cu successe.",
 );
 
