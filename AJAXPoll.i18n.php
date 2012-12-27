@@ -512,6 +512,10 @@ $messages['hu'] = array(
 	'ajaxpoll-no-vote' => 'Kérlek szavazz alant.',
 	'ajaxpoll-info' => 'Összesen {{PLURAL:$1|egy|$1}} szavazat érkezett a $2 óta.',
 	'ajaxpoll-submitting' => 'Kérlek várj a szavazatod elküldésére.',
+	'ajaxpoll-vote-permission' => 'Nem vagy jogosult szavazni.',
+	'ajaxpoll-revoke-vote' => 'Vissza akarom vonni a szavazatomat',
+	'ajaxpoll-vote-revoked' => 'Sikeresen visszavontad a szavazatodat.',
+	'right-ajaxpoll-vote' => 'Szavazhat az AJAX alapú közvélemény-kutatásokban',
 );
 
 /** Interlingua (interlingua)
@@ -624,9 +628,9 @@ $messages['ka'] = array(
 $messages['ko'] = array(
 	'ajaxpoll-desc' => '<tt>&lt;poll&gt;</tt> 태그를 바탕으로 AJAX 기반 투표를 허용',
 	'ajaxpoll-tracking-category' => '설문 조사 문서',
-	'ajaxpoll-vote-update' => '투표가 업데이트되었습니다.',
-	'ajaxpoll-vote-add' => '투표가 더해졌습니다.',
-	'ajaxpoll-vote-error' => '토표를 처리하는 데 문제가 있습니다. 다시 시도하세요.',
+	'ajaxpoll-vote-update' => '투표를 업데이트했습니다.',
+	'ajaxpoll-vote-add' => '투표를 추가했습니다.',
+	'ajaxpoll-vote-error' => '투표를 처리하는 데 문제가 있습니다. 다시 시도하세요.',
 	'ajaxpoll-percent-votes' => '모든 투표 중 $1%',
 	'ajaxpoll-your-vote' => '이미 $2에 "$1"(을)를 투표했습니다. 아래의 답변을 클릭하여 투표를 바꿀 수 있습니다.',
 	'ajaxpoll-no-vote' => '아래에 투표하세요.',
@@ -915,8 +919,11 @@ $messages['ro'] = array(
  */
 $messages['roa-tara'] = array(
 	'ajaxpoll-tracking-category' => "Pàgene cu 'nu sondagge",
+	'ajaxpoll-vote-update' => "'U vote tune ha state aggiornate.",
+	'ajaxpoll-vote-add' => "'U vote tune ha state aggiunde.",
 	'ajaxpoll-percent-votes' => '$1% de totte le vote',
 	'ajaxpoll-no-vote' => "Pe' piacere, vote d'abbasce",
+	'ajaxpoll-submitting' => "Pe piacere aspitte, stoche a elabbore 'u vote tune.",
 	'ajaxpoll-vote-permission' => 'Tu non ge puè votà',
 	'ajaxpoll-revoke-vote' => "Ije vogghie annullà 'u vote mije",
 	'ajaxpoll-vote-revoked' => "'U vote tue ha state revocate cu successe.",
@@ -1003,10 +1010,18 @@ $messages['sv'] = array(
 
 /** Swahili (Kiswahili)
  * @author Kwisha
+ * @author Stephenwanjau
  */
 $messages['sw'] = array(
+	'ajaxpoll-vote-update' => 'Kura yako imesasishwa.',
+	'ajaxpoll-vote-add' => 'Kura yako imeongezwa.',
+	'ajaxpoll-vote-error' => 'Kulikuwa na hitilafu katika mchakato wa kura yako, tafadhali jaribu tena.',
+	'ajaxpoll-percent-votes' => 'Asilimia $1 ya kura zote',
 	'ajaxpoll-no-vote' => 'Tafadhali piga kura hapa chini.',
 	'ajaxpoll-submitting' => 'Tafadhali ngoja, inawasilisha kura yako.',
+	'ajaxpoll-vote-permission' => 'Hauna haki ya kupiga kura.',
+	'ajaxpoll-revoke-vote' => 'Nataka kubatilisha kura yangu',
+	'ajaxpoll-vote-revoked' => 'Umefanikiwa kubatilisha kura yako.',
 );
 
 /** Tamil (தமிழ்)
