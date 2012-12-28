@@ -86,11 +86,25 @@ $messages['ast'] = array(
 	'right-ajaxpoll-vote' => "Pue votar nes encuestes basaes n'AJAX",
 );
 
-/** تورکجه (تورکجه)
+/** South Azerbaijani (تورکجه)
  * @author Amir a57
+ * @author Mousa
  */
 $messages['azb'] = array(
+	'ajaxpoll-desc' => '<tt>&lt;poll&gt;</tt> اِتیکِتی یاردیمی ایله AJAX-ه دایانان سس-وئرمگه ایجازه وئرر',
+	'ajaxpoll-tracking-category' => 'سس وئرمه‌لری اولان صحیفه‌لر',
+	'ajaxpoll-vote-update' => 'سیزین سسینیز گونجل‌لنیبدیر.',
 	'ajaxpoll-vote-add' => 'اویونوز علاوه اولوندو.',
+	'ajaxpoll-vote-error' => 'سیزین سسینیزی اعمال ائتمک‌ده بیر موشکول قاباغا گلدی، لوطفاً یئنی‌دن چالیشین.',
+	'ajaxpoll-percent-votes' => 'بوتون سسلرین $1٪-ی',
+	'ajaxpoll-your-vote' => 'سیز قاباقجادان $2-ده «$1»-ه سس وئرمیسینیز، آشاغیدا بیر جاوابی تیکلاماقلا سسینیزی دَییشه بیلرسینیز.',
+	'ajaxpoll-no-vote' => 'لوطفاً آشاغیدا سس وئرین.',
+	'ajaxpoll-info' => 'سس وئرمه $2-ده یاراناندان بویانا {{PLURAL:$1|بیر|$1}} سس وار ایمیش.',
+	'ajaxpoll-submitting' => 'لوطفاً دؤزون، سیزین سسینیز گؤندریلیر.',
+	'ajaxpoll-vote-permission' => 'سیزین سس وئرمک حاقینیز یوخدور.',
+	'ajaxpoll-revoke-vote' => 'من سسیمی گئری آلماق ایستیرم',
+	'ajaxpoll-vote-revoked' => 'سیزین اوغورلا سسینیز گئری آلدینیز.',
+	'right-ajaxpoll-vote' => 'AJAX-ی دایانان سس وئرمه‌لرده سس وئره بیلر',
 );
 
 /** Bashkir (башҡортса)
@@ -964,6 +978,7 @@ $messages['si'] = array(
 	'ajaxpoll-vote-permission' => 'ඔබ මනාප ලබා දීමට සුදුසුකම් ලබා නොමැත.',
 	'ajaxpoll-revoke-vote' => 'මට මගේ මනාපය අස් කර ගන්න අවශ්‍යයි',
 	'ajaxpoll-vote-revoked' => 'මට විසින් ඔබේ මනාපය සාර්ථකව අස් කර ගන්නා ලදී.',
+	'right-ajaxpoll-vote' => 'AJAX-පාදක ඡන්ද විමසීම් හී මානාපය දිය හැක',
 );
 
 /** Serbian (Cyrillic script) (српски (ћирилица)‎)
