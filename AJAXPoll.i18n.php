@@ -58,11 +58,12 @@ $messages['af'] = array(
 
 /** Arabic (العربية)
  * @author OsamaK
+ * @author Zanatos
  */
 $messages['ar'] = array(
 	'ajaxpoll-vote-update' => 'تم تحديث صوتك.',
 	'ajaxpoll-vote-add' => 'تم إضافة تصويتك',
-	'ajaxpoll-info' => 'هذه كانت $1 تصويتا منذ بداية التصويت في $2.', # Fuzzy
+	'ajaxpoll-info' => 'هناك  {{PLURAL:$1| كان vote|were واحد  $1  الأصوات}} منذ إنشاء استطلاع الرأي في  $2 .',
 	'ajaxpoll-submitting' => 'من فضلك انتظر، يرسل صوتك.',
 );
 
@@ -491,6 +492,13 @@ $messages['he'] = array(
 	'right-ajaxpoll-vote' => 'להצביע בסקרים מבוססי AJAX.',
 );
 
+/** Hindi (हिन्दी)
+ * @author Ansumang
+ */
+$messages['hi'] = array(
+	'ajaxpoll-no-vote' => 'कृपया नीचे वोट दें।',
+);
+
 /** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
@@ -718,6 +726,26 @@ $messages['lv'] = array(
 	'ajaxpoll-vote-permission' => 'Jums nav tiesību balsot.',
 );
 
+/** Basa Banyumasan (Basa Banyumasan)
+ * @author StefanusRA
+ */
+$messages['map-bms'] = array(
+	'ajaxpoll-desc' => 'Ngolihna jajak pendapat sing basise-AJAX nganggo tag <tt>&lt;poll&gt;</tt>',
+	'ajaxpoll-tracking-category' => 'Kaca sing karo jajak pendapat',
+	'ajaxpoll-vote-update' => 'Swarane Rika wis dianyari.',
+	'ajaxpoll-vote-add' => 'Swarane Rika wis ditambahna.',
+	'ajaxpoll-vote-error' => 'Ana masalah dong lagi mroses swarane Rika, monggo jajal maning.',
+	'ajaxpoll-percent-votes' => '$1% sekang kabeh swara',
+	'ajaxpoll-your-vote' => 'Rika wis aweh swara nggo "$1" dong $2, Rika teyeng ngowaih swarane Rika yakuwe karo ngeklik jawaban nang ngisor kiye.',
+	'ajaxpoll-no-vote' => 'Monggo aweh swara nang ngisor kiye.',
+	'ajaxpoll-info' => 'Wis ana {{PLURAL:$1|siji swara|$1 swara}} wiwit jajak pendapat kiye digawe dong $2.',
+	'ajaxpoll-submitting' => 'Monggo dienteni, lagi ngirimna swarane Rika.',
+	'ajaxpoll-vote-permission' => 'Rika ora olih melu aweh swara.',
+	'ajaxpoll-revoke-vote' => 'Inyong arep mbatalna swarane inyong.',
+	'ajaxpoll-vote-revoked' => 'Rika wis sukses gole mbatalna swarane Rika.',
+	'right-ajaxpoll-vote' => 'Teyeng aweh swara nang jajak pendapat basis-AJAX',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
@@ -815,7 +843,11 @@ $messages['nl'] = array(
  * @author Siebrand
  */
 $messages['nl-informal'] = array(
+	'ajaxpoll-vote-update' => 'Je stem is bijgewerkt.',
+	'ajaxpoll-vote-add' => 'Je stem is toegevoegd.',
+	'ajaxpoll-vote-error' => 'Er is een probleem opgetreden tijdens het verwerken van je stem. Probeer het opnieuw.',
 	'ajaxpoll-your-vote' => 'Je hebt al voor "$1" gestemd op $2. Je kunt je stem wijzigen door hieronder op een antwoord te klikken.',
+	'ajaxpoll-submitting' => 'Even geduld alsjeblieft. Je stem wordt opgeslagen...',
 	'ajaxpoll-vote-permission' => 'Je kunt niet stemmen.',
 	'ajaxpoll-vote-revoked' => 'Je stem is ingetrokken.',
 );
@@ -941,6 +973,7 @@ $messages['roa-tara'] = array(
 	'ajaxpoll-vote-permission' => 'Tu non ge puè votà',
 	'ajaxpoll-revoke-vote' => "Ije vogghie annullà 'u vote mije",
 	'ajaxpoll-vote-revoked' => "'U vote tue ha state revocate cu successe.",
+	'right-ajaxpoll-vote' => 'Puè vutà le sondagge in AJAX',
 );
 
 /** Russian (русский)
