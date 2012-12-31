@@ -1015,6 +1015,7 @@ $messages['si'] = array(
 );
 
 /** Serbian (Cyrillic script) (српски (ћирилица)‎)
+ * @author Rancher
  * @author Sasa Stefanovic
  * @author Verlor
  */
@@ -1024,6 +1025,9 @@ $messages['sr-ec'] = array(
 	'ajaxpoll-percent-votes' => '$1% од свих гласова',
 	'ajaxpoll-no-vote' => 'Молимо гласајте испод.',
 	'ajaxpoll-submitting' => 'Чекајте, шаљемо ваш глас.',
+	'ajaxpoll-vote-permission' => 'Не можете да гласате.',
+	'ajaxpoll-revoke-vote' => 'Желим да повучем глас',
+	'ajaxpoll-vote-revoked' => 'Успешно сте повукли глас.',
 );
 
 /** Serbian (Latin script) (srpski (latinica)‎)
