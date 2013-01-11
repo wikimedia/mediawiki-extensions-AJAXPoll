@@ -1116,9 +1116,12 @@ $messages['tl'] = array(
 
 /** Turkish (Türkçe)
  * @author Hedda Gabler
+ * @author Incelemeelemani
  */
 $messages['tr'] = array(
+	'ajaxpoll-vote-update' => 'Oyunuz güncelleştirildi.',
 	'ajaxpoll-vote-add' => 'Oyunuz eklendi.',
+	'ajaxpoll-revoke-vote' => 'Ben oyumu geri almak istiyorum',
 );
 
 /** Uyghur (Arabic script) (ئۇيغۇرچە)
@@ -1198,6 +1201,9 @@ $messages['zh-hans'] = array(
  * @author Simon Shek
  */
 $messages['zh-hant'] = array(
+	'ajaxpoll-vote-update' => '已更新您的投票。',
+	'ajaxpoll-vote-add' => '已添加您的投票。',
+	'ajaxpoll-vote-error' => '處理您的投票發生問題，請再試一次。',
 	'ajaxpoll-percent-votes' => '所有選票的$1%',
 	'ajaxpoll-your-vote' => '您在$2已經投票給“$1”，您可以點擊下面的答案更改您的投票。',
 	'ajaxpoll-no-vote' => '請在下面投票。',
