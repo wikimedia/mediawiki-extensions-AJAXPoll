@@ -57,13 +57,14 @@ $messages['af'] = array(
 );
 
 /** Arabic (العربية)
+ * @author Mido
  * @author OsamaK
  * @author Zanatos
  */
 $messages['ar'] = array(
 	'ajaxpoll-vote-update' => 'تم تحديث صوتك.',
 	'ajaxpoll-vote-add' => 'تم إضافة تصويتك',
-	'ajaxpoll-info' => 'هناك  {{PLURAL:$1| كان vote|were واحد  $1  الأصوات}} منذ إنشاء استطلاع الرأي في  $2 .',
+	'ajaxpoll-info' => 'هناك {{PLURAL:$1||تصويتا واحدا|تصويتين|$1 تصويت|$1 تصويتا|$1 تصويت}} منذ بداية التصويت في $2.',
 	'ajaxpoll-submitting' => 'من فضلك انتظر، يرسل صوتك.',
 );
 
