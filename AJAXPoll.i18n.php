@@ -649,7 +649,7 @@ $messages['ka'] = array(
  * @author 아라
  */
 $messages['ko'] = array(
-	'ajaxpoll-desc' => '<tt>&lt;poll&gt;</tt> 태그를 바탕으로 AJAX 기반 투표를 허용',
+	'ajaxpoll-desc' => '<tt>&lt;poll&gt;</tt> 태그를 바탕으로 AJAX 기반 투표를 허용합니다',
 	'ajaxpoll-tracking-category' => '설문 조사 문서',
 	'ajaxpoll-vote-update' => '투표를 업데이트했습니다.',
 	'ajaxpoll-vote-add' => '투표를 추가했습니다.',
@@ -965,6 +965,7 @@ $messages['ro'] = array(
  * @author Reder
  */
 $messages['roa-tara'] = array(
+	'ajaxpoll-desc' => "Oermette sondagge basate sus a AJAX cu 'u tag <tt>&lt;poll&gt;</tt>",
 	'ajaxpoll-tracking-category' => "Pàgene cu 'nu sondagge",
 	'ajaxpoll-vote-update' => "'U vote tune ha state aggiornate.",
 	'ajaxpoll-vote-add' => "'U vote tune ha state aggiunde.",
