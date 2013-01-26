@@ -660,7 +660,7 @@ $messages['ko'] = array(
 	'ajaxpoll-info' => '$2에 설문 조사가 만들어진 뒤 {{PLURAL:$1|1표|$1표}}가 있습니다.',
 	'ajaxpoll-submitting' => '투표를 제출하는 동안 잠시 기다려주세요.',
 	'ajaxpoll-vote-permission' => '투표를 받을 수 없습니다.',
-	'ajaxpoll-revoke-vote' => '투표 취소를 함',
+	'ajaxpoll-revoke-vote' => '투표를 취소합니다',
 	'ajaxpoll-vote-revoked' => '성공적으로 투표를 취소했습니다.',
 	'right-ajaxpoll-vote' => 'AJAX 기반 설문 조사에 투표할 수 있음',
 );
