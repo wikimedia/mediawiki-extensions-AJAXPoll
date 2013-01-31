@@ -306,6 +306,7 @@ $messages['dsb'] = array(
  * @author Περίεργος
  */
 $messages['el'] = array(
+	'ajaxpoll-desc' => 'Επιτρέπει δημοσκοπήσεις βασισμένες στο AJAX με ετικέτα <tt>&lt;poll&gt;</tt>',
 	'ajaxpoll-tracking-category' => 'Σελίδες με δημοσκόπηση',
 	'ajaxpoll-vote-update' => 'Η ψήφος σας έχει ενημερωθεί.',
 	'ajaxpoll-vote-add' => 'Η ψήφος σας προστέθηκε.',
@@ -313,11 +314,12 @@ $messages['el'] = array(
 	'ajaxpoll-percent-votes' => '$1% επί των συνολικών ψήφων',
 	'ajaxpoll-your-vote' => 'Έχετε ήδη ψηφίσει το $1 στο $2, μπορείτε να αλλάξετε τη ψήφο σας πατώντας μια απάντηση παρακάτω.',
 	'ajaxpoll-no-vote' => 'Παρακαλώ ψηφίστε παρακάτω.',
-	'ajaxpoll-info' => 'Υπάρχουν $1 ψήφοι από τότε που δημιουργήθηκε η ψηφοφορία στις $2.', # Fuzzy
+	'ajaxpoll-info' => '{{PLURAL:$1|Υπήρχε μια ψήφος|υπήρχαν $1 ψήφοι}} από την ώρα που δημιουργήθηκε η δημοσκόπηση στο $2.',
 	'ajaxpoll-submitting' => 'Παρακαλώ περιμένετε,η ψήφο σας υποβάλλεται.',
 	'ajaxpoll-vote-permission' => 'Δεν έχετε δικαίωμα να ψηφίσετε.',
 	'ajaxpoll-revoke-vote' => 'Θέλω να ανακαλέσω την ψήφο μου',
 	'ajaxpoll-vote-revoked' => 'Αποσύρατε επιτυχώς την ψήφο σας.',
+	'right-ajaxpoll-vote' => 'Μπορεί να ψηφίσει σε δημοσκοπήσεις βασισμένες στο  AJAX',
 );
 
 /** Esperanto (Esperanto)
@@ -706,6 +708,7 @@ $messages['lb'] = array(
 );
 
 /** Lithuanian (lietuvių)
+ * @author Audriusa
  * @author Eitvys200
  */
 $messages['lt'] = array(
@@ -715,6 +718,8 @@ $messages['lt'] = array(
 	'ajaxpoll-percent-votes' => '$1% visų balsų',
 	'ajaxpoll-no-vote' => 'Prašome balsuoti žemiau.',
 	'ajaxpoll-submitting' => 'Prašome palaukti, siunčiame jūsų balsą.',
+	'ajaxpoll-revoke-vote' => 'Noriu atsiimti savo balsą',
+	'ajaxpoll-vote-revoked' => 'Jūs atsiėmėte savo balsą.',
 );
 
 /** Latvian (latviešu)
