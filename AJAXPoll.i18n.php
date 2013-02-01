@@ -718,6 +718,7 @@ $messages['lt'] = array(
 	'ajaxpoll-percent-votes' => '$1% visų balsų',
 	'ajaxpoll-no-vote' => 'Prašome balsuoti žemiau.',
 	'ajaxpoll-submitting' => 'Prašome palaukti, siunčiame jūsų balsą.',
+	'ajaxpoll-vote-permission' => 'Jūs neturite balsavimo teisės.',
 	'ajaxpoll-revoke-vote' => 'Noriu atsiimti savo balsą',
 	'ajaxpoll-vote-revoked' => 'Jūs atsiėmėte savo balsą.',
 );
