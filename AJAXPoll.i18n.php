@@ -655,7 +655,7 @@ $messages['ka'] = array(
  * @author 아라
  */
 $messages['ko'] = array(
-	'ajaxpoll-desc' => '<tt>&lt;poll&gt;</tt> 태그를 바탕으로 AJAX 기반 투표를 허용합니다',
+	'ajaxpoll-desc' => '<tt>&lt;poll&gt;</tt> 태그로 AJAX 기반 투표를 할 수 있습니다',
 	'ajaxpoll-tracking-category' => '설문 조사 문서',
 	'ajaxpoll-vote-update' => '투표를 업데이트했습니다.',
 	'ajaxpoll-vote-add' => '투표를 추가했습니다.',
