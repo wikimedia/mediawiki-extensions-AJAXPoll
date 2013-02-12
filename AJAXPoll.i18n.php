@@ -979,6 +979,7 @@ $messages['roa-tara'] = array(
 	'ajaxpoll-tracking-category' => "Pàgene cu 'nu sondagge",
 	'ajaxpoll-vote-update' => "'U vote tune ha state aggiornate.",
 	'ajaxpoll-vote-add' => "'U vote tune ha state aggiunde.",
+	'ajaxpoll-vote-error' => "Stave 'nu probbleme cu l'elabborazione d'u vote tune, pe piacere pruève arrète.",
 	'ajaxpoll-percent-votes' => '$1% de totte le vote',
 	'ajaxpoll-no-vote' => "Pe' piacere, vote d'abbasce",
 	'ajaxpoll-submitting' => "Pe piacere aspitte, stoche a elabbore 'u vote tune.",
