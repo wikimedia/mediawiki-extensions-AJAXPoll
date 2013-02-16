@@ -377,6 +377,7 @@ $messages['et'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Mehdi
  * @author Mjbmr
  * @author Reza1615
  */
@@ -384,6 +385,10 @@ $messages['fa'] = array(
 	'ajaxpoll-tracking-category' => 'صفحات با یک نظرسنجی',
 	'ajaxpoll-vote-update' => 'رأی شما به روز شد.',
 	'ajaxpoll-vote-add' => 'رأی شما افزوده شد.',
+	'ajaxpoll-percent-votes' => '$1%از کل آرا',
+	'ajaxpoll-no-vote' => 'لطفاً رای خود را در زیر ثبت کنید.',
+	'ajaxpoll-submitting' => 'لطفاً صبر کنید، درحال ثبت رای شما...',
+	'ajaxpoll-vote-permission' => 'شما دارای شرایط لازم برای رای‌دادن نمی‌باشید.',
 	'ajaxpoll-revoke-vote' => 'قصد دارم رأیم را واگردانی کنم',
 	'ajaxpoll-vote-revoked' => 'رأی شما با موفقیت واگردانی شد.',
 );
