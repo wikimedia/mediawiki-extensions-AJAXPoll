@@ -157,6 +157,13 @@ $messages['bg'] = array(
 	'ajaxpoll-percent-votes' => '$1% от всички гласове',
 );
 
+/** Bengali (বাংলা)
+ * @author Nirupam
+ */
+$messages['bn'] = array(
+	'ajaxpoll-tracking-category' => 'আমার নাম নিরুপম । আমি কলকাতাই থাকি । আমি পুনে তে পরাশুনা করি ।',
+);
+
 /** Breton (brezhoneg)
  * @author Fulup
  * @author Y-M D
