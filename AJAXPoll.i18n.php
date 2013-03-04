@@ -1230,12 +1230,15 @@ $messages['zh-hans'] = array(
  * @author Simon Shek
  */
 $messages['zh-hant'] = array(
+	'ajaxpoll-desc' => '使用<tt>&lt;poll&gt;</tt>添加基於AJAX的投票功能',
+	'ajaxpoll-tracking-category' => '有投票的頁面',
 	'ajaxpoll-vote-update' => '已更新您的投票。',
 	'ajaxpoll-vote-add' => '已添加您的投票。',
 	'ajaxpoll-vote-error' => '處理您的投票發生問題，請再試一次。',
 	'ajaxpoll-percent-votes' => '所有選票的$1%',
 	'ajaxpoll-your-vote' => '您在$2已經投票給“$1”，您可以點擊下面的答案更改您的投票。',
 	'ajaxpoll-no-vote' => '請在下面投票。',
+	'ajaxpoll-info' => '自$2建立以來共有{{PLURAL:$1|一人投票|$1人投票}}。',
 	'ajaxpoll-submitting' => '請稍候，正提交您的投票.',
 	'ajaxpoll-vote-permission' => '您無權投票。',
 	'ajaxpoll-revoke-vote' => '我想撤銷我的投票',
