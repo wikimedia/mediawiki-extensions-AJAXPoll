@@ -37,9 +37,14 @@ $messages['en'] = array(
 $messages['qqq'] = array(
 	'ajaxpoll-desc' => '{{desc|name=AJAX Poll|url=http://www.mediawiki.org/wiki/Extension:AJAX_Poll}}',
 	'ajaxpoll-tracking-category' => 'The name of a category for all pages which use the &lt;poll&gt; parser extension tag. The category is automatically added unless the feature is disabled.',
-	'ajaxpoll-percent-votes' => '$1 is the percentage number of the votes',
-	'ajaxpoll-your-vote' => '$1 is the answer name, $2 is the date when the answer was casted',
-	'ajaxpoll-info' => '$1 is the number of votes, $2 is when the poll was started',
+	'ajaxpoll-percent-votes' => 'Parameters:
+* $1 - the percentage number of the votes',
+	'ajaxpoll-your-vote' => 'Parameters:
+* $1 - the answer name
+* $2 - the time/date when the answer was posted',
+	'ajaxpoll-info' => 'Parameters:
+* $1 - the number of votes
+* $2 - the time and date when the poll was started',
 	'ajaxpoll-vote-permission' => 'Text for viewers who do not have the right to vote',
 	'ajaxpoll-revoke-vote' => 'Voters can revoke their vote and this is the message text to be clicked when a voter wants to revoke a previous vote. The text is only shown for persons who already voted, in an extra line below the block of answers.',
 	'ajaxpoll-vote-revoked' => 'System response that the vote was successfully revoked.',
