@@ -37,17 +37,51 @@ $messages['en'] = array(
 $messages['qqq'] = array(
 	'ajaxpoll-desc' => '{{desc|name=AJAX Poll|url=http://www.mediawiki.org/wiki/Extension:AJAX_Poll}}',
 	'ajaxpoll-tracking-category' => 'The name of a category for all pages which use the &lt;poll&gt; parser extension tag. The category is automatically added unless the feature is disabled.',
+	'ajaxpoll-vote-update' => 'System response that the vote was successfully updated.
+
+If error, the following message is used:
+* {{msg-mw|Ajaxpoll-vote-error}}',
+	'ajaxpoll-vote-add' => 'System response that the vote was successfully added.
+
+If error, the following message is used:
+* {{msg-mw|Ajaxpoll-vote-error}}',
+	'ajaxpoll-vote-error' => 'Used as error message.
+
+If successful, the following message are used:
+* {{msg-mw|Ajaxpoll-vote-update}}
+* {{msg-mw|Ajaxpoll-vote-add}}
+* {{msg-mw|Ajaxpoll-vote-revoked}}',
 	'ajaxpoll-percent-votes' => 'Parameters:
 * $1 - the percentage number of the votes',
 	'ajaxpoll-your-vote' => 'Parameters:
 * $1 - the answer name
 * $2 - the time/date when the answer was posted',
+	'ajaxpoll-no-vote' => 'Used if there are no votes.
+
+See also:
+* {{msg-mw|Ajaxpoll-revoke-vote}}',
 	'ajaxpoll-info' => 'Parameters:
 * $1 - the number of votes
 * $2 - the time and date when the poll was started',
-	'ajaxpoll-vote-permission' => 'Text for viewers who do not have the right to vote',
-	'ajaxpoll-revoke-vote' => 'Voters can revoke their vote and this is the message text to be clicked when a voter wants to revoke a previous vote. The text is only shown for persons who already voted, in an extra line below the block of answers.',
-	'ajaxpoll-vote-revoked' => 'System response that the vote was successfully revoked.',
+	'ajaxpoll-submitting' => 'Unused at this time.
+
+The identical message is hard-coded in JavaScript code (resources/ajaxpoll.js), and is not localized.',
+	'ajaxpoll-vote-permission' => 'Text for viewers who do not have the right to vote.
+
+See also:
+* {{msg-mw|Ajaxpoll-revoke-vote}}
+* {{msg-mw|Ajaxpoll-no-vote}}',
+	'ajaxpoll-revoke-vote' => 'Voters can revoke their vote and this is the message text to be clicked when a voter wants to revoke a previous vote.
+
+The text is only shown for persons who already voted, in an extra line below the block of answers.
+
+See also:
+* {{msg-mw|Ajaxpoll-no-vote}}
+* {{msg-mw|Ajaxpoll-vote-permission}}',
+	'ajaxpoll-vote-revoked' => 'System response that the vote was successfully revoked.
+
+If error, the following message is used:
+* {{msg-mw|Ajaxpoll-vote-error}}',
 	'right-ajaxpoll-vote' => '{{doc-right|ajaxpoll-vote}}',
 );
 
