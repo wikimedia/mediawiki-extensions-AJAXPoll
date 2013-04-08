@@ -898,7 +898,7 @@ $messages['nl'] = array(
 	'ajaxpoll-your-vote' => 'U hebt al voor "$1" gestemd op $2. U kunt uw stem wijzigen door hieronder op een antwoord te klikken.',
 	'ajaxpoll-no-vote' => 'Stem hieronder.',
 	'ajaxpoll-info' => 'Er {{PLURAL:$1|is één stem|zijn $1 stemmen}} uitgebracht sinds de peiling op $2 is aangemaakt.',
-	'ajaxpoll-submitting' => 'Even geduld alstublieft. Uw stem wordt opgeslagen...',
+	'ajaxpoll-submitting' => 'Een ogenblik geduld. Uw stem wordt opgeslagen...',
 	'ajaxpoll-vote-permission' => 'U kunt niet stemmen.',
 	'ajaxpoll-revoke-vote' => 'Ik wil mijn stem intrekken',
 	'ajaxpoll-vote-revoked' => 'Uw stem is ingetrokken.',
@@ -913,7 +913,7 @@ $messages['nl-informal'] = array(
 	'ajaxpoll-vote-add' => 'Je stem is toegevoegd.',
 	'ajaxpoll-vote-error' => 'Er is een probleem opgetreden tijdens het verwerken van je stem. Probeer het opnieuw.',
 	'ajaxpoll-your-vote' => 'Je hebt al voor "$1" gestemd op $2. Je kunt je stem wijzigen door hieronder op een antwoord te klikken.',
-	'ajaxpoll-submitting' => 'Even geduld alsjeblieft. Je stem wordt opgeslagen...',
+	'ajaxpoll-submitting' => 'Een ogenblik geduld. Je stem wordt opgeslagen...',
 	'ajaxpoll-vote-permission' => 'Je kunt niet stemmen.',
 	'ajaxpoll-vote-revoked' => 'Je stem is ingetrokken.',
 );
