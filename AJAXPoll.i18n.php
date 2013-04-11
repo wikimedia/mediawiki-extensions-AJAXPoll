@@ -242,9 +242,11 @@ $messages['ca'] = array(
 );
 
 /** Czech (česky)
+ * @author Mormegil
  * @author Paxt
  */
 $messages['cs'] = array(
+	'ajaxpoll-desc' => 'Umožňuje AJAXové průzkumy veřejného mínění pomocí značky <tt>&lt;poll&gt;</tt>',
 	'ajaxpoll-tracking-category' => 'Stránky s dotazníkem',
 	'ajaxpoll-vote-update' => 'Váš hlas byl aktualizován.',
 	'ajaxpoll-vote-add' => 'Váš hlas byl přidán.',
