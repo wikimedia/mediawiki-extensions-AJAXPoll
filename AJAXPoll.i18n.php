@@ -978,6 +978,13 @@ $messages['pms'] = array(
 	'right-ajaxpoll-vote' => 'A peul voté ant ij sondagi basà dzora a AJAX',
 );
 
+/** Pashto (پښتو)
+ * @author Ahmed-Najib-Biabani-Ibrahimkhel
+ */
+$messages['ps'] = array(
+	'ajaxpoll-percent-votes' => '$1% د ټولو رايو څخه',
+);
+
 /** Portuguese (português)
  * @author SandroHc
  */
