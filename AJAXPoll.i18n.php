@@ -168,6 +168,26 @@ $messages['ba'] = array(
 	'right-ajaxpoll-vote' => 'AJAX нигеҙендә һорау алыуҙа ҡатнаша алаһығыҙ.',
 );
 
+/** Bikol Central (Bikol Central)
+ * @author Geopoet
+ */
+$messages['bcl'] = array(
+	'ajaxpoll-desc' => 'Minatugot sa nakabaseng AJAX na mga pirilian na igwang <tt>&lt;poll&gt;</tt> na tatak',
+	'ajaxpoll-tracking-category' => 'Mga pahina na igwa nin sarong pirilian',
+	'ajaxpoll-vote-update' => 'An saimong boto pinagsumpayan.',
+	'ajaxpoll-vote-add' => 'An saimong boto pinagdugang.',
+	'ajaxpoll-vote-error' => 'Igwa nin sarong problem sa pagpoproseso kan saimong boto, tabi paki-otroha giraray.',
+	'ajaxpoll-percent-votes' => '$1% kan gabos na mga boto',
+	'ajaxpoll-your-vote' => 'Ika nakapagboto na para sa "$1" sa $2, ika mapuwedeng makapagliwat kan saimong boto sa paagi nin pag-klik nin sarong simbag sa ibaba.',
+	'ajaxpoll-no-vote' => 'Pakiboto sa ibaba.',
+	'ajaxpoll-info' => 'Mayroong {{PLURAL:$1|isang pagboto|$1 na mga pagboto}} magmula noong likhain ang halalan noong $2.',
+	'ajaxpoll-submitting' => 'Pakihalat, pinagsusumite pa an saimong boto.',
+	'ajaxpoll-vote-permission' => 'Ika dae tituladong magboto.',
+	'ajaxpoll-revoke-vote' => 'Ako gustong magbawi kan sakuyang boto.',
+	'ajaxpoll-vote-revoked' => 'Ika matrayumpong pinagbawi an saimong boto.',
+	'right-ajaxpoll-vote' => 'Makakaboto sa nakabaseng AJAX na mga pirilian',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Jim-by
  * @author Wizardist
