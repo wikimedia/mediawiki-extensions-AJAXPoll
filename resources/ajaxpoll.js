@@ -25,16 +25,17 @@ $(".ajaxpoll-answer-name label")
 			event.stopPropagation();
 			$this = $(this).parent().parent();
 			var poll = $this.attr( "poll" );
-			var answer = $this.attr("answer");
+			var answer = $this.attr( "answer" );
+			var token = $this.parent().find("input[name='ajaxPollToken']").val();
 			$this.find(".ajaxpoll-hover-vote").addClass("ajaxpoll-checkevent");
 			$this.find("input").prop("checked","checked");
 			$( "#ajaxpoll-ajax-"+poll )
 				.html("Please wait, submitting your vote.")
-				.css("display","block");
+				.css("display","inline-block");
 			if (useAjax){
 				sajax_do_call(
 					"AJAXPoll::submitVote",
-					[poll,answer],
+					[poll,answer,token],
 					$("#ajaxpoll-container-"+poll)[0]
 				)
 			} else {

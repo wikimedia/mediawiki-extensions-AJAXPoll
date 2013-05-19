@@ -26,6 +26,7 @@ $messages['en'] = array(
 	'ajaxpoll-vote-permission' => 'You are not entitled to vote.',
 	'ajaxpoll-revoke-vote' => 'I want to revoke my vote',
 	'ajaxpoll-vote-revoked' => 'You succesfully revoked your vote.',
+	'ajaxpoll-error-csrf-wrong-token' => 'A wrong token was received, and your vote is ignored.',
 
 	'right-ajaxpoll-vote' => 'Can vote in AJAX-based polls',
 );
@@ -83,6 +84,8 @@ See also:
 If error, the following message is used:
 * {{msg-mw|Ajaxpoll-vote-error}}',
 	'right-ajaxpoll-vote' => '{{doc-right|ajaxpoll-vote}}',
+
+	'ajaxpoll-error-csrf-wrong-token' => "An error message in case of a wrong received anti-CSRF token",
 );
 
 /** Afrikaans (Afrikaans)

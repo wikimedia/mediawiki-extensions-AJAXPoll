@@ -53,9 +53,13 @@ class AJAXPoll {
 		if ( !$wgUseAjax ) {
 			$responseId = "ajaxpoll-post-id";
 			$responseAnswer = "ajaxpoll-post-answer-$id";
-		
-			if ( isset( $_POST[$responseId] ) && isset( $_POST[$responseAnswer] ) && $_POST[$responseId] == $id ) {
-				AJAXPoll::submitVote( $id, intval( $_POST[$responseAnswer] ) );
+			$responseToken = "ajaxPollToken";
+
+			if ( isset( $_POST[$responseId] )
+				&& isset( $_POST[$responseAnswer] ) 
+				&& ( $_POST[$responseId] == $id )
+				&& isset( $_POST[$responseToken] ) ) {
+				AJAXPoll::submitVote( $id, intval( $_POST[$responseAnswer] ), $_POST[$responseToken] );
 			}
 		}
 		
@@ -148,8 +152,8 @@ class AJAXPoll {
 			During the last 48 hours, $tab2[0] votes have been given.";
 	}
 
-	public static function submitVote( $id, $answer ) {
-		global $wgUser,$wgOut;
+	public static function submitVote( $id, $answer, $token ) {
+		global $wgUser,$wgOut,$wgRequest;
 		// echo "id: $id ans $answer<br/>";
 
 		$dbw = wfGetDB( DB_MASTER );
@@ -160,6 +164,13 @@ class AJAXPoll {
 		} else {
 			$userName = $wgUser->getName();
 		}
+
+		if ( !$wgUser->matchEditToken( $token, $id ) ) {
+			$pollContainerText = 'ajaxpoll-error-csrf-wrong-token';
+			return AJAXPoll::buildHTML( $id, $userName, '', $pollContainerText );
+		}
+
+		$dbw = wfGetDB( DB_MASTER );
 
 		if ( !$wgUser->isAllowed( 'ajaxpoll-vote' ) || $wgUser->isAllowed( 'bot' ) ) {
 			return AJAXPoll::buildHTML( $id, $userName );
@@ -290,7 +301,7 @@ class AJAXPoll {
 
 		if ( is_object( $wgTitle ) ) {
 			if( !empty( $extra_from_ajax ) ) {
-				$attributes = ' style="display:block;"';
+				$attributes = ' style="display:inline-block;"';
 				$ajaxMessage = wfMessage( $extra_from_ajax )->escaped();
 			} else {
 				$attributes = ' style="display:none;"';
@@ -378,7 +389,8 @@ class AJAXPoll {
 
 			}
 
-			$ret .= '</form>';
+			$ret .= Html::Hidden( 'ajaxPollToken', $wgUser->getEditToken( $id ) ) .
+				Xml::closeElement( 'form' );
 
 			// Display information about the poll (creation date, amount of votes)
 			$pollSummary = wfMessage(
