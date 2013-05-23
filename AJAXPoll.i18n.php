@@ -96,6 +96,7 @@ $messages['af'] = array(
 );
 
 /** Arabic (العربية)
+ * @author Meno25
  * @author Mido
  * @author OsamaK
  * @author Zanatos
@@ -105,6 +106,8 @@ $messages['ar'] = array(
 	'ajaxpoll-vote-add' => 'تم إضافة تصويتك',
 	'ajaxpoll-info' => 'هناك {{PLURAL:$1||تصويتا واحدا|تصويتين|$1 تصويت|$1 تصويتا|$1 تصويت}} منذ بداية التصويت في $2.',
 	'ajaxpoll-submitting' => 'من فضلك انتظر، يرسل صوتك.',
+	'ajaxpoll-revoke-vote' => 'أريد سحب تصويتي',
+	'ajaxpoll-vote-revoked' => 'أنت سحبت صوتك بنجاح.',
 );
 
 /** Asturian (asturianu)
