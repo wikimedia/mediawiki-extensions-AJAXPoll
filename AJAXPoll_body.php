@@ -153,6 +153,7 @@ class AJAXPoll {
 		// echo "id: $id ans $answer<br/>";
 
 		$dbw = wfGetDB( DB_MASTER );
+		$dbw->begin( __METHOD__ );
 
 		if ( $wgUser->getName() == '' ) {
 			$userName = wfGetIP();
@@ -193,7 +194,7 @@ class AJAXPoll {
 					),
 					__METHOD__
 				);
-				$dbw->commit();
+				$dbw->commit( __METHOD__ );
 				$pollContainerText = ( $updateQuery ) ? 'ajaxpoll-vote-update' : 'ajaxpoll-vote-error';
 
 			} else {
@@ -209,7 +210,7 @@ class AJAXPoll {
 					),
 					__METHOD__
 				);
-				$dbw->commit();
+				$dbw->commit( __METHOD__ );
 				$pollContainerText = ( $insertQuery ) ? 'ajaxpoll-vote-add' : 'ajaxpoll-vote-error';
 
 			}
@@ -224,7 +225,7 @@ class AJAXPoll {
 				),
 				__METHOD__
 			);
-			$dbw->commit();
+			$dbw->commit( __METHOD__ );
 			$pollContainerText = ( $deleteQuery ) ? 'ajaxpoll-vote-revoked' : 'ajaxpoll-vote-error';
 
 		}
@@ -280,17 +281,17 @@ class AJAXPoll {
 		);
 
 		if ( $row = $dbr->fetchRow( $q ) ) {
-			$ourLastVoteDate = wfMsg(
+			$ourLastVoteDate = wfMessage(
 				'ajaxpoll-your-vote',
 				$lines[$row[0] - 1],
 				$wgLang->timeanddate( wfTimestamp( TS_MW, $row[1] ), true /* adjust? */ )
-			);
+			)->escaped();
 		}
 
 		if ( is_object( $wgTitle ) ) {
 			if( !empty( $extra_from_ajax ) ) {
 				$attributes = ' style="display:block;"';
-				$ajaxMessage = wfMsg( $extra_from_ajax );
+				$ajaxMessage = wfMessage( $extra_from_ajax )->escaped();
 			} else {
 				$attributes = ' style="display:none;"';
 				$ajaxMessage = '';
@@ -310,12 +311,12 @@ class AJAXPoll {
 				if ( isset( $row[0] ) ) {
 					$message = $ourLastVoteDate;
 					$canRevoke = true;
-					$lines[] = wfMsg( 'ajaxpoll-revoke-vote' );
+					$lines[] = wfMessage( 'ajaxpoll-revoke-vote' )->text();
 				} else {
-					$message = wfMsg( 'ajaxpoll-no-vote' );
+					$message = wfMessage( 'ajaxpoll-no-vote' )->text();
 				}
 			} else {
-				$message = wfMsg( 'ajaxpoll-vote-permission' );
+				$message = wfMessage( 'ajaxpoll-vote-permission' )->text();
 			}
 			
 			$ret .= '<div class="ajaxpoll-misc">' . $message . '
@@ -355,7 +356,7 @@ class AJAXPoll {
 					if ( $vote ) {
 						$ret .= "
 <div id='ajaxpoll-answer-$xid' class='ajaxpoll-answer' poll='$id' answer='$answer'><div class='ajaxpoll-answer-name'><label for='ajaxpoll-post-answer-$xid'><input type='radio' id='ajaxpoll-post-answer-$xid' name='ajaxpoll-post-answer-$id' value='" . $answer . "' " . ( $our ? 'checked=true ' : '' ) . "/>" . strip_tags( $lines[$i] ) .
-"</label></div><div class='ajaxpoll-answer-vote" . ( $our ? ' ajaxpoll-our-vote' : '' ) ."'><span title='" . wfMsg( 'ajaxpoll-percent-votes', sprintf( $percent ) ) . "'>" . ( ( isset( $poll_result ) && !empty( $poll_result[$i + 1] ) ) ? $poll_result[$i + 1] : 0 ) . "</span><div style='width: " . $percent . "%;" . ( $percent == 0 ? ' border:0;' : '' ) . "'></div></div>
+"</label></div><div class='ajaxpoll-answer-vote" . ( $our ? ' ajaxpoll-our-vote' : '' ) ."'><span title='" . wfMessage( 'ajaxpoll-percent-votes', sprintf( $percent ) )->escaped() . "'>" . ( ( isset( $poll_result ) && !empty( $poll_result[$i + 1] ) ) ? $poll_result[$i + 1] : 0 ) . "</span><div style='width: " . $percent . "%;" . ( $percent == 0 ? ' border:0;' : '' ) . "'></div></div>
 </div>
 ";
 					} else {
@@ -369,8 +370,8 @@ class AJAXPoll {
 				} else {
 
 					$ret .= "
-<div id='ajaxpoll-answer-" . $xid . "' class='ajaxpoll-answer' poll='$id' answer='$answer'><div class='ajaxpoll-answer-name'><label for='ajaxpoll-post-answer-" . $xid . "' onclick='$(\"#ajaxpoll-ajax-" . $xid . "\").html(\"" . wfMsg( 'ajaxpoll-vote-permission' ) . "\").css(\"display\",\"block\");'><input disabled='disabled' type='radio' id='ajaxpoll-post-answer-" . $xid . "' name='ajaxpoll-post-answer-" . $id . "' value='" . $answer . "'/>" . strip_tags( $lines[$i] ) .
-"</label></div><div class='ajaxpoll-answer-vote" . ( $our ? ' ajaxpoll-our-vote' : '' ) ."'><span title='" . wfMsg( 'ajaxpoll-percent-votes', sprintf( $percent ) ) . "'>" . ( ( isset( $poll_result ) && !empty( $poll_result[$i + 1] ) ) ? $poll_result[$i + 1] : 0 ) . "</span><div style='width: " . $percent . "%;" . ( $percent == 0 ? ' border:0;' : '' ) . "'></div></div>
+<div id='ajaxpoll-answer-" . $xid . "' class='ajaxpoll-answer' poll='$id' answer='$answer'><div class='ajaxpoll-answer-name'><label for='ajaxpoll-post-answer-" . $xid . "' onclick='$(\"#ajaxpoll-ajax-" . $xid . "\").html(\"" . wfMessage( 'ajaxpoll-vote-permission' )->text() . "\").css(\"display\",\"block\");'><input disabled='disabled' type='radio' id='ajaxpoll-post-answer-" . $xid . "' name='ajaxpoll-post-answer-" . $id . "' value='" . $answer . "'/>" . strip_tags( $lines[$i] ) .
+"</label></div><div class='ajaxpoll-answer-vote" . ( $our ? ' ajaxpoll-our-vote' : '' ) ."'><span title='" . wfMessage( 'ajaxpoll-percent-votes', sprintf( $percent ) )->text() . "'>" . ( ( isset( $poll_result ) && !empty( $poll_result[$i + 1] ) ) ? $poll_result[$i + 1] : 0 ) . "</span><div style='width: " . $percent . "%;" . ( $percent == 0 ? ' border:0;' : '' ) . "'></div></div>
 </div>
 ";
 				}
@@ -380,12 +381,11 @@ class AJAXPoll {
 			$ret .= '</form>';
 
 			// Display information about the poll (creation date, amount of votes)
-			$pollSummary = wfMsgExt(
+			$pollSummary = wfMessage(
 				'ajaxpoll-info',
-				'parsemag', // parse PLURAL
 				$amountOfVotes, // amount of votes
 				$wgLang->timeanddate( wfTimestamp( TS_MW, $start_date ), true /* adjust? */ )
-			);
+			)->text();
 
 			$ret .= '<div id="ajaxpoll-info-' . $id . '" class="ajaxpoll-info">' . $pollSummary . '<div class="ajaxpoll-id-info">poll-id ' . $id . '</div></div></div>';
 		} else {
