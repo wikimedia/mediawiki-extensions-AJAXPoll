@@ -31,7 +31,7 @@ if( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'AJAX Poll',
-	'version' => '1.80 20130526',
+	'version' => '1.81 20130526',
 	'author' => array( 'Dariusz Siedlecki', 'Jack Phoenix', 'Thomas Gries' ),
 	'descriptionmsg' => 'ajaxpoll-desc',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:AJAX_Poll',
@@ -63,10 +63,30 @@ $wgResourceModules['ext.ajaxpoll'] = $myResourceTemplate + array(
 
 # new user rights
 $wgAvailableRights[] = 'ajaxpoll-vote';
+$wgAvailableRights[] = 'ajaxpoll-viewresults';
+$wgAvailableRights[] = 'ajaxpoll-viewresults-before-vote';
 
-# default: everyone can vote
-$wgGroupPermissions['*']['ajaxpoll-vote'] = true;
-# if you want to allow only users to vote, use the following code lines
-# in your LocalSettings.php after calling the AJAXPoll extension:
-# $wgGroupPermissions['*']['ajaxpoll-vote'] = false;
-# $wgGroupPermissions['user']['ajaxpoll-vote'] = true;
+# The 'ajaxpoll-view-results-before-vote' group permission allows the specified
+# group members to view poll results even without having voted
+# but only if the high-level group permission 'ajaxpoll-vote' allows to view
+# results in general.
+#
+# This 'ajaxpoll-view-results-before-vote' can be overwritten with the specific
+# per-poll setting "show-results-before-voting" which takes precedence over the
+# group permission.
+#
+# permission 'ajaxpoll-view-results' >>
+# >> per-poll setting "show-results-before-voting" (if present)
+# >> permission 'ajaxpoll-view-results-before-vote'
+#
+
+# anons
+# default: anons cannot vote and will never see results
+$wgGroupPermissions['*']['ajaxpoll-vote'] = false;
+$wgGroupPermissions['*']['ajaxpoll-view-results'] = false;
+$wgGroupPermissions['*']['ajaxpoll-view-results-before-vote'] = false;
+
+# users
+# default: users can vote and can see poll results - when they have voted
+$wgGroupPermissions['user']['ajaxpoll-vote'] = true;
+$wgGroupPermissions['user']['ajaxpoll-view-results'] = true;

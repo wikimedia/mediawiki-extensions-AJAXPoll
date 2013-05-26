@@ -29,7 +29,7 @@ class AJAXPoll {
 	}
 
 	# The callback function for converting the input text to HTML output
-	static function AJAXPollRender( $input, $params = array(), Parser $parser ) {
+	static function AJAXPollRender( $input, $args = array(), Parser $parser ) {
 		global $wgUser, $wgOut, $wgTitle, $wgScriptPath, $wgUseAjax;
 
 		$parser->disableCache();
@@ -59,7 +59,7 @@ class AJAXPoll {
 				&& isset( $_POST[$responseAnswer] ) 
 				&& ( $_POST[$responseId] == $id )
 				&& isset( $_POST[$responseToken] ) ) {
-				AJAXPoll::submitVote( $id, intval( $_POST[$responseAnswer] ), $_POST[$responseToken] );
+				self::submitVote( $id, intval( $_POST[$responseAnswer] ), $_POST[$responseToken] );
 			}
 		}
 		
@@ -77,26 +77,50 @@ class AJAXPoll {
 			__METHOD__
 		);
 
+		$showResultsBeforeVoting = null;
+		if ( array_key_exists( 'show-results-before-voting', $args ) ) {
+			if ( strval( $args['show-results-before-voting'] ) !== '0' ) {
+				$showResultsBeforeVoting = '1';
+			} else {
+				$showResultsBeforeVoting = '0';
+			}
+		}
+
 		if( empty( $row->count ) ) {
 			$dbw->insert(
 				'ajaxpoll_info',
 				array(
 					'poll_id' => $id,
+					'poll_show_results_before_voting' => $showResultsBeforeVoting,
 					'poll_txt' => $input,
 					'poll_date' => wfTimestampNow(),
 				),
 				__METHOD__
 			);
+		} else {
+			$dbw->update(
+				'ajaxpoll_info',
+				array(
+					'poll_show_results_before_voting' => $showResultsBeforeVoting,
+				),
+				array(
+					'poll_id' => $id,
+				),
+				__METHOD__
+			);
 		}
+
 		$dbw->commit( __METHOD__ );
 
 		switch( $lines[0] ) {
 			case 'STATS':
-				$retVal = AJAXPoll::buildStats( $id, $userName );
+				$retVal = self::buildStats( $id, $userName );
 				break;
 			default:
 				$retVal = '
-<div id="ajaxpoll-container-' . $id . '">' . AJAXPoll::buildHTML( $id, $userName, $lines ) . '</div>';
+<div id="ajaxpoll-container-' . $id . '">' .
+self::buildHTML( $id, $userName, $lines ) .
+'</div>';
 				break;
 		}
 		return $retVal;
@@ -105,6 +129,7 @@ class AJAXPoll {
 	private static function buildStats( $id, $userName ) {
 
 		$dbr = wfGetDB( DB_SLAVE );
+		$dbr->begin( __METHOD__ );
 
 		$res = $dbr->select(
 			'ajaxpoll_vote',
@@ -147,14 +172,15 @@ class AJAXPoll {
 		);
 		$tab2 = $dbr->fetchRow( $res );
 
+		$dbr->commit( __METHOD__ );
+
 		return "There are $tab[1] polls and $tab[0] votes given by $tab[2] different people.<br />
-			The last vote has been given $clockago ago.<br/>
-			During the last 48 hours, $tab2[0] votes have been given.";
+The last vote has been given $clockago ago.<br/>
+During the last 48 hours, $tab2[0] votes have been given.";
 	}
 
 	public static function submitVote( $id, $answer, $token ) {
 		global $wgUser,$wgOut,$wgRequest;
-		// echo "id: $id ans $answer<br/>";
 
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->begin( __METHOD__ );
@@ -167,13 +193,11 @@ class AJAXPoll {
 
 		if ( !$wgUser->matchEditToken( $token, $id ) ) {
 			$pollContainerText = 'ajaxpoll-error-csrf-wrong-token';
-			return AJAXPoll::buildHTML( $id, $userName, '', $pollContainerText );
+			return self::buildHTML( $id, $userName, '', $pollContainerText );
 		}
 
-		$dbw = wfGetDB( DB_MASTER );
-
 		if ( !$wgUser->isAllowed( 'ajaxpoll-vote' ) || $wgUser->isAllowed( 'bot' ) ) {
-			return AJAXPoll::buildHTML( $id, $userName );
+			return self::buildHTML( $id, $userName );
 		}
 
 		if ( $answer != 0 ) {
@@ -241,7 +265,7 @@ class AJAXPoll {
 
 		}
 
-		return AJAXPoll::buildHTML( $id, $userName, '', $pollContainerText );
+		return self::buildHTML( $id, $userName, '', $pollContainerText );
 
 	}
 
@@ -252,7 +276,7 @@ class AJAXPoll {
 
 		$q = $dbr->select(
 			'ajaxpoll_info',
-			array( 'poll_txt', 'poll_date' ),
+			array( 'poll_txt', 'poll_date', 'poll_show_results_before_voting' ),
 			array( 'poll_id' => $id ),
 			__METHOD__
 		);
@@ -260,6 +284,12 @@ class AJAXPoll {
 
 		if ( empty( $lines ) ) {
 			$lines = explode( "\n", trim( $row['poll_txt'] ) );
+		}
+
+		if ( $row['poll_show_results_before_voting'] !== null ) {
+			$showResultsBeforeVoting = ( $row['poll_show_results_before_voting'] === '1' );
+		} else {
+			$showResultsBeforeVoting = $wgUser->isAllowed( 'ajaxpoll-view-results-before-vote' );
 		}
 
 		$start_date = $row['poll_date'];
@@ -281,6 +311,8 @@ class AJAXPoll {
 		$amountOfVotes = array_sum( $poll_result );
 
 		// Did we vote?
+		$userVoted = false;
+
 		$q = $dbr->select(
 			'ajaxpoll_vote',
 			array( 'poll_answer', 'poll_date' ),
@@ -297,6 +329,7 @@ class AJAXPoll {
 				$lines[$row[0] - 1],
 				$wgLang->timeanddate( wfTimestamp( TS_MW, $row[1] ), true /* adjust? */ )
 			)->escaped();
+			$userVoted = true;
 		}
 
 		if ( is_object( $wgTitle ) ) {
@@ -324,14 +357,33 @@ class AJAXPoll {
 					$canRevoke = true;
 					$lines[] = wfMessage( 'ajaxpoll-revoke-vote' )->text();
 				} else {
-					$message = wfMessage( 'ajaxpoll-no-vote' )->text();
+					if ( $showResultsBeforeVoting ) {
+						$message = wfMessage( 'ajaxpoll-no-vote' )->text();
+					} else {
+						$message = wfMessage( 'ajaxpoll-no-vote-results-after-voting' )->text();
+					}
 				}
 			} else {
 				$message = wfMessage( 'ajaxpoll-vote-permission' )->text();
 			}
-			
-			$ret .= '<div class="ajaxpoll-misc">' . $message . '
-</div>';
+
+			if ( !$wgUser->isAllowed( 'ajaxpoll-view-results' ) ) {
+
+				$message .= "<br/>" . wfMessage( 'ajaxpoll-view-results-permission' )->text();
+
+			} elseif ( !$userVoted
+				&& !$wgUser->isAllowed( 'ajaxpoll-view-results-before-vote' )
+				&& !$showResultsBeforeVoting ) {
+
+					if ( $wgUser->isAllowed( 'ajaxpoll-vote' ) ) {
+						$message .= "<br/>" . wfMessage( 'ajaxpoll-view-results-before-vote-permission' )->text();
+					} else {
+						$message .= "<br/>" . wfMessage( 'ajaxpoll-view-results-permission' )->text();
+					}
+
+			}
+
+			$ret .= '<div class="ajaxpoll-misc">' . $message . '</div>';
 
 			$ret .= '<form method="post" action="' . $wgTitle->getLocalURL() .
 				'" id="ajaxpoll-answer-id-' . $id . '"><input type="hidden" name="ajaxpoll-post-id" value="' . $id . '" />';
@@ -359,6 +411,16 @@ class AJAXPoll {
 				// just use sajax library function here for that AJAX-y feel.
 				// If not, we'll have to submit the form old-school way...
 
+				if ( $wgUser->isAllowed( 'ajaxpoll-view-results' )
+					&& ( $showResultsBeforeVoting || ( !$showResultsBeforeVoting && $userVoted ) ) ) {
+					$resultBar = "<div class='ajaxpoll-answer-vote" . ( $our ? ' ajaxpoll-our-vote' : '' ) ."'>
+<span title='" . wfMessage( 'ajaxpoll-percent-votes', sprintf( $percent ) )->escaped() . "'>" . ( ( isset( $poll_result ) && !empty( $poll_result[$i + 1] ) ) ? $poll_result[$i + 1] : 0 ) . "</span>
+<div style='width: " . $percent . "%;" . ( $percent == 0 ? ' border:0;' : '' ) . "'></div>
+</div>";
+				} else {
+					$resultBar = '';
+				}
+
 				if ( $wgUser->isAllowed( 'ajaxpoll-vote' ) ) {
 
 					// HTML output has to be on one line thanks to a MediaWiki bug
@@ -367,8 +429,7 @@ class AJAXPoll {
 					if ( $vote ) {
 						$ret .= "
 <div id='ajaxpoll-answer-$xid' class='ajaxpoll-answer' poll='$id' answer='$answer'><div class='ajaxpoll-answer-name'><label for='ajaxpoll-post-answer-$xid'><input type='radio' id='ajaxpoll-post-answer-$xid' name='ajaxpoll-post-answer-$id' value='" . $answer . "' " . ( $our ? 'checked=true ' : '' ) . "/>" . strip_tags( $lines[$i] ) .
-"</label></div><div class='ajaxpoll-answer-vote" . ( $our ? ' ajaxpoll-our-vote' : '' ) ."'><span title='" . wfMessage( 'ajaxpoll-percent-votes', sprintf( $percent ) )->escaped() . "'>" . ( ( isset( $poll_result ) && !empty( $poll_result[$i + 1] ) ) ? $poll_result[$i + 1] : 0 ) . "</span><div style='width: " . $percent . "%;" . ( $percent == 0 ? ' border:0;' : '' ) . "'></div></div>
-</div>
+"</label></div>{$resultBar}</div>
 ";
 					} else {
 						$ret .= "
@@ -382,8 +443,7 @@ class AJAXPoll {
 
 					$ret .= "
 <div id='ajaxpoll-answer-" . $xid . "' class='ajaxpoll-answer' poll='$id' answer='$answer'><div class='ajaxpoll-answer-name'><label for='ajaxpoll-post-answer-" . $xid . "' onclick='$(\"#ajaxpoll-ajax-" . $xid . "\").html(\"" . wfMessage( 'ajaxpoll-vote-permission' )->text() . "\").css(\"display\",\"block\");'><input disabled='disabled' type='radio' id='ajaxpoll-post-answer-" . $xid . "' name='ajaxpoll-post-answer-" . $id . "' value='" . $answer . "'/>" . strip_tags( $lines[$i] ) .
-"</label></div><div class='ajaxpoll-answer-vote" . ( $our ? ' ajaxpoll-our-vote' : '' ) ."'><span title='" . wfMessage( 'ajaxpoll-percent-votes', sprintf( $percent ) )->text() . "'>" . ( ( isset( $poll_result ) && !empty( $poll_result[$i + 1] ) ) ? $poll_result[$i + 1] : 0 ) . "</span><div style='width: " . $percent . "%;" . ( $percent == 0 ? ' border:0;' : '' ) . "'></div></div>
-</div>
+"</label></div>{$resultBar}</div>
 ";
 				}
 
@@ -414,34 +474,52 @@ class AJAXPoll {
 			// >= 1.17 support
 			$db = $updater->getDB();
 
+			$patchPath = dirname( __FILE__ ) . '/patches/';
+
 			if ( $db->tableExists( 'poll_info' ) ) {
+
 				# poll_info.poll_title field was dropped in AJAXPoll version 1.72
 				$updater->dropExtensionField( 
 					'poll_info',
 					'poll_title',
-					dirname( __FILE__ ) . '/patches/drop-field--poll_info-poll_title.sql' 
+					$patchPath . 'drop-field--poll_info-poll_title.sql'
 				);
 				$updater->addExtensionTable(
 					'ajaxpoll_info',
-					dirname( __FILE__ ) . '/patches/rename-table--poll_info.sql' 
+					$patchPath . 'rename-table--poll_info.sql'
 				);
+
 			} else {
+
 				$updater->addExtensionTable(
 					'ajaxpoll_info',
-					dirname( __FILE__ ) . '/patches/create-table--ajaxpoll_info.sql' 
+					$patchPath . 'create-table--ajaxpoll_info.sql'
+				);
+
+			}
+
+			if ( $db->tableExists( 'ajaxpoll_info' ) ) {
+				$updater->addExtensionField(
+					'ajaxpoll_info',
+					'poll_show_results_before_voting',
+					$patchPath . 'add-field--ajaxpoll_info-poll_show_results_before_voting.sql'
 				);
 			}
 
 			if ( $db->tableExists( 'poll_vote' ) ) {
+
 				$updater->addExtensionTable(
-					'ajaxpoll_vote',
-					dirname( __FILE__ ) . '/patches/rename-table--poll_vote.sql' 
+					'poll_vote',
+					$patchPath . 'rename-table--poll_vote.sql'
 				);
+
 			} else {
+
 				$updater->addExtensionTable(
 					'ajaxpoll_vote',
-					dirname( __FILE__ ) . '/patches/create-table--ajaxpoll_vote.sql' 
+					$patchPath . 'create-table--ajaxpoll_vote.sql'
 				);
+
 			}
 
 		}

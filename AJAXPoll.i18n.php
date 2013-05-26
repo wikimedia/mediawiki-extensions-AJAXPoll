@@ -19,11 +19,14 @@ $messages['en'] = array(
 	'ajaxpoll-vote-add' => 'Your vote has been added.',
 	'ajaxpoll-vote-error' => 'There was a problem with processing your vote, please try again.',
 	'ajaxpoll-percent-votes' => '$1% of all votes',
-	'ajaxpoll-your-vote' => 'You already voted for "$1" on $2, you can change your vote by clicking an answer below.',
-	'ajaxpoll-no-vote' => 'Please vote below.', // http://trac.wikia-code.com/changeset/867
+	'ajaxpoll-your-vote' => 'You voted for "$1" on $2. You can change your vote by clicking a different answer below.',
+	'ajaxpoll-no-vote' => 'Please vote below.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Please vote below. Results will be shown when you have voted.',
 	'ajaxpoll-info' => 'There {{PLURAL:$1|was one vote|were $1 votes}} since the poll was created on $2.',
 	'ajaxpoll-submitting' => 'Please wait, submitting your vote.',
 	'ajaxpoll-vote-permission' => 'You are not entitled to vote.',
+	'ajaxpoll-view-results-permission' => 'You are not entitled to view results of this poll.',
+	'ajaxpoll-view-results-before-vote-permission' => 'You are not entitled to view results of this poll before you have voted.',
 	'ajaxpoll-revoke-vote' => 'I want to revoke my vote',
 	'ajaxpoll-vote-revoked' => 'You succesfully revoked your vote.',
 	'ajaxpoll-error-csrf-wrong-token' => 'A wrong token was received, and your vote is ignored.',
@@ -37,6 +40,7 @@ $messages['en'] = array(
  */
 $messages['qqq'] = array(
 	'ajaxpoll-desc' => '{{desc|name=AJAX Poll|url=http://www.mediawiki.org/wiki/Extension:AJAX_Poll}}',
+	'ajaxpoll-no-vote-results-after-voting' => 'Invitation to vote and indication that results will be shown after voting.',
 	'ajaxpoll-tracking-category' => 'The name of a category for all pages which use the &lt;poll&gt; parser extension tag. The category is automatically added unless the feature is disabled.',
 	'ajaxpoll-vote-update' => 'System response that the vote was successfully updated.
 
