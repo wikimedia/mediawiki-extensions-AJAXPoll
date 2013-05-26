@@ -36,9 +36,9 @@ class AJAXPoll {
 		$parser->addTrackingCategory( 'ajaxpoll-tracking-category' );
 
 		if ( $wgUser->getName() == '' ) {
-			$user = wfGetIP();
+			$userName = wfGetIP();
 		} else {
-			$user = $wgUser->getName();
+			$userName = $wgUser->getName();
 		}
 
 		// ID of the poll
@@ -88,17 +88,17 @@ class AJAXPoll {
 
 		switch( $lines[0] ) {
 			case 'STATS':
-				$retVal = AJAXPoll::buildStats( $id, $user );
+				$retVal = AJAXPoll::buildStats( $id, $userName );
 				break;
 			default:
 				$retVal = '
-<div id="ajaxpoll-container-' . $id . '">' . AJAXPoll::buildHTML( $id, $user, $lines ) . '</div>';
+<div id="ajaxpoll-container-' . $id . '">' . AJAXPoll::buildHTML( $id, $userName, $lines ) . '</div>';
 				break;
 		}
 		return $retVal;
 	}
 
-	private static function buildStats( $id, $user ) {
+	private static function buildStats( $id, $userName ) {
 
 		$dbr = wfGetDB( DB_SLAVE );
 
@@ -155,13 +155,13 @@ class AJAXPoll {
 		$dbw = wfGetDB( DB_MASTER );
 
 		if ( $wgUser->getName() == '' ) {
-			$user = wfGetIP();
+			$userName = wfGetIP();
 		} else {
-			$user = $wgUser->getName();
+			$userName = $wgUser->getName();
 		}
 
 		if ( !$wgUser->isAllowed( 'ajaxpoll-vote' ) || $wgUser->isAllowed( 'bot' ) ) {
-			return AJAXPoll::buildHTML( $id, $user );
+			return AJAXPoll::buildHTML( $id, $userName );
 		}
 
 		if ( $answer != 0 ) {
@@ -173,7 +173,7 @@ class AJAXPoll {
 				'COUNT(*) AS count',
 				array(
 					'poll_id' => $id,
-					'poll_user' => $user
+					'poll_user' => $userName
 				),
 				__METHOD__
 			);
@@ -189,7 +189,7 @@ class AJAXPoll {
 					),
 					array(
 						'poll_id' => $id,
-						'poll_user' => $user,
+						'poll_user' => $userName,
 					),
 					__METHOD__
 				);
@@ -202,7 +202,7 @@ class AJAXPoll {
 					'ajaxpoll_vote',
 					array(
 						'poll_id' => $id,
-						'poll_user' => $user,
+						'poll_user' => $userName,
 						'poll_ip' => wfGetIP(),
 						'poll_answer' => $answer,
 						'poll_date' => wfTimestampNow()
@@ -220,7 +220,7 @@ class AJAXPoll {
 				'ajaxpoll_vote',
 				array(
 					'poll_id' => $id,
-					'poll_user' => $user,
+					'poll_user' => $userName,
 				),
 				__METHOD__
 			);
@@ -229,11 +229,11 @@ class AJAXPoll {
 
 		}
 
-		return AJAXPoll::buildHTML( $id, $user, '', $pollContainerText );
+		return AJAXPoll::buildHTML( $id, $userName, '', $pollContainerText );
 
 	}
 
-	private static function buildHTML( $id, $user, $lines = '', $extra_from_ajax = '' ) {
+	private static function buildHTML( $id, $userName, $lines = '', $extra_from_ajax = '' ) {
 		global $wgTitle, $wgUser, $wgLang, $wgUseAjax;
 
 		$dbr = wfGetDB( DB_SLAVE );
@@ -274,7 +274,7 @@ class AJAXPoll {
 			array( 'poll_answer', 'poll_date' ),
 			array(
 				'poll_id' => $id,
-				'poll_user' => $user
+				'poll_user' => $userName
 			),
 			__METHOD__
 		);
