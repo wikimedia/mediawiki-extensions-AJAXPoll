@@ -40,7 +40,6 @@ $messages['en'] = array(
  */
 $messages['qqq'] = array(
 	'ajaxpoll-desc' => '{{desc|name=AJAX Poll|url=http://www.mediawiki.org/wiki/Extension:AJAX_Poll}}',
-	'ajaxpoll-no-vote-results-after-voting' => 'Invitation to vote and indication that results will be shown after voting.',
 	'ajaxpoll-tracking-category' => 'The name of a category for all pages which use the &lt;poll&gt; parser extension tag. The category is automatically added unless the feature is disabled.',
 	'ajaxpoll-vote-update' => 'System response that the vote was successfully updated.
 
@@ -65,6 +64,7 @@ If successful, the following message are used:
 
 See also:
 * {{msg-mw|Ajaxpoll-revoke-vote}}',
+	'ajaxpoll-no-vote-results-after-voting' => 'Invitation to vote and indication that results will be shown after voting.',
 	'ajaxpoll-info' => 'Parameters:
 * $1 - the number of votes
 * $2 - the time and date when the poll was started',
@@ -87,9 +87,8 @@ See also:
 
 If error, the following message is used:
 * {{msg-mw|Ajaxpoll-vote-error}}',
+	'ajaxpoll-error-csrf-wrong-token' => 'An error message in case of a wrong received anti-CSRF token',
 	'right-ajaxpoll-vote' => '{{doc-right|ajaxpoll-vote}}',
-
-	'ajaxpoll-error-csrf-wrong-token' => "An error message in case of a wrong received anti-CSRF token",
 );
 
 /** Afrikaans (Afrikaans)
@@ -134,6 +133,7 @@ $messages['ast'] = array(
 	'ajaxpoll-vote-permission' => 'Nun tienes drechu al votu.',
 	'ajaxpoll-revoke-vote' => 'Quiero anular el mio votu',
 	'ajaxpoll-vote-revoked' => 'Anulasti el to votu correutamente.',
+	'ajaxpoll-error-csrf-wrong-token' => "Recibióse un pase equivocáu, y nun se cuenta'l so votu.",
 	'right-ajaxpoll-vote' => "Pue votar nes encuestes basaes n'AJAX",
 );
 
@@ -315,6 +315,7 @@ $messages['da'] = array(
 /** German (Deutsch)
  * @author Geitost
  * @author Kghbln
+ * @author Metalhead64
  * @author Tim 'Avatar' Bartel
  * @author Wikinaut
  */
@@ -332,6 +333,7 @@ $messages['de'] = array(
 	'ajaxpoll-vote-permission' => 'Du bist nicht stimmberechtigt.',
 	'ajaxpoll-revoke-vote' => 'Ich möchte meine Stimme widerrufen',
 	'ajaxpoll-vote-revoked' => 'Du hast deine Stimme erfolgreich widerrufen.',
+	'ajaxpoll-error-csrf-wrong-token' => 'Es wurde ein falscher Token empfangen. Deine Stimme wird ignoriert.',
 	'right-ajaxpoll-vote' => 'An AJAX-gestützen Umfragen teilnehmen',
 );
 
@@ -648,6 +650,7 @@ $messages['ia'] = array(
 	'ajaxpoll-vote-permission' => 'Tu non pote votar.',
 	'ajaxpoll-revoke-vote' => 'Io vole revocar mi voto',
 	'ajaxpoll-vote-revoked' => 'Tu ha revocate tu voto con successo.',
+	'ajaxpoll-error-csrf-wrong-token' => 'Un indicio incorrecte ha essite recipite, e tu voto es ignorate.',
 	'right-ajaxpoll-vote' => 'Pote votar in sondages a base de AJAX',
 );
 
@@ -698,10 +701,12 @@ $messages['it'] = array(
 	'ajaxpoll-vote-permission' => 'Non hai diritto di voto.',
 	'ajaxpoll-revoke-vote' => 'Voglio revocare il mio voto',
 	'ajaxpoll-vote-revoked' => 'Hai revocato con successo il tuo voto.',
+	'ajaxpoll-error-csrf-wrong-token' => "E' stato ricevuto un token errato, e il tuo voto verrà ignorato.",
 	'right-ajaxpoll-vote' => 'Vota nei sondaggi tramite AJAX',
 );
 
 /** Japanese (日本語)
+ * @author Fryed-peach
  * @author Shirayuki
  * @author Shun Fukuzawa
  */
@@ -719,6 +724,7 @@ $messages['ja'] = array(
 	'ajaxpoll-vote-permission' => 'あなたには投票権がありません。',
 	'ajaxpoll-revoke-vote' => '自分の投票を取り消したい',
 	'ajaxpoll-vote-revoked' => '投票を取り消しました。',
+	'ajaxpoll-error-csrf-wrong-token' => '誤ったトークンを受信したため、あなたの投票は無視されます。',
 	'right-ajaxpoll-vote' => 'Ajax ベースの投票所で投票',
 );
 
@@ -795,6 +801,7 @@ $messages['lb'] = array(
 	'ajaxpoll-vote-permission' => 'Dir sidd net berechtegt fir ofzestëmmen.',
 	'ajaxpoll-revoke-vote' => 'Ech wëll meng Stëmm zréckzéien',
 	'ajaxpoll-vote-revoked' => 'Dir hutt Är Stëmm zréckgezunn.',
+	'ajaxpoll-error-csrf-wrong-token' => 'E falschen Token koum un an Är Stëmm gouf ignoréiert.',
 	'right-ajaxpoll-vote' => 'Däerf bäi AJAX-baséierten Ëmfroe matmaachen',
 );
 
@@ -861,6 +868,7 @@ $messages['mk'] = array(
 	'ajaxpoll-vote-permission' => 'Не можете да гласате.',
 	'ajaxpoll-revoke-vote' => 'Сакам да го повлечам гласот',
 	'ajaxpoll-vote-revoked' => 'Успешно го повлековте гласот.',
+	'ajaxpoll-error-csrf-wrong-token' => 'Добив погрешен жетон. Вашиот глас е занемарен.',
 	'right-ajaxpoll-vote' => 'Може да гласа на анкети на основа на AJAX.',
 );
 
@@ -934,6 +942,7 @@ $messages['nl'] = array(
 	'ajaxpoll-vote-permission' => 'U kunt niet stemmen.',
 	'ajaxpoll-revoke-vote' => 'Ik wil mijn stem intrekken',
 	'ajaxpoll-vote-revoked' => 'Uw stem is ingetrokken.',
+	'ajaxpoll-error-csrf-wrong-token' => 'Er is een ongeldig token ontvangen en uw stem wordt genegeerd.',
 	'right-ajaxpoll-vote' => 'Kan in AJAX-gebaseerde peilingen stemmen',
 );
 
@@ -1323,5 +1332,6 @@ $messages['zh-hant'] = array(
 	'ajaxpoll-vote-permission' => '您無權投票。',
 	'ajaxpoll-revoke-vote' => '我想撤銷我的投票',
 	'ajaxpoll-vote-revoked' => '您已成功撤銷您的投票。',
+	'ajaxpoll-error-csrf-wrong-token' => '收到錯誤的令牌，你的投票會被忽略。',
 	'right-ajaxpoll-vote' => '可在基於AJAX的投票區投票',
 );
