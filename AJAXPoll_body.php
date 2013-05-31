@@ -402,7 +402,8 @@ During the last 48 hours, $tab2[0] votes have been given.";
 				if ( $amountOfVotes == 0 ) {
 					$percent = 0;
 				} else {
-					$percent = $wgLang->formatNum( round( ( isset( $poll_result[$i + 1] ) ? $poll_result[$i + 1] : 0 ) * 100 / $amountOfVotes, 2 ) );
+					$percent = round( ( isset( $poll_result[$i + 1] ) ? $poll_result[$i + 1] : 0 ) * 100 / $amountOfVotes, 2 );
+					$percentLocalized = $wgLang->formatNum( $percent );
 				}
 
 				$our = ( isset( $row[0] ) && ( $row[0] - 1 == $i ) );
@@ -414,8 +415,8 @@ During the last 48 hours, $tab2[0] votes have been given.";
 				if ( $wgUser->isAllowed( 'ajaxpoll-view-results' )
 					&& ( $showResultsBeforeVoting || ( !$showResultsBeforeVoting && $userVoted ) ) ) {
 					$resultBar = "<div class='ajaxpoll-answer-vote" . ( $our ? ' ajaxpoll-our-vote' : '' ) ."'>
-<span title='" . wfMessage( 'ajaxpoll-percent-votes', sprintf( $percent ) )->escaped() . "'>" . ( ( isset( $poll_result ) && !empty( $poll_result[$i + 1] ) ) ? $poll_result[$i + 1] : 0 ) . "</span>
-<div style='width: " . $percent . "%;" . ( $percent == 0 ? ' border:0;' : '' ) . "'></div>
+<span title='" . wfMessage( 'ajaxpoll-percent-votes', sprintf( $percentLocalized ) )->escaped() . "'>" . ( ( isset( $poll_result ) && !empty( $poll_result[$i + 1] ) ) ? $poll_result[$i + 1] : 0 ) . "</span>
+<div style='width:" . $percent . "%;" . ( $percent == 0 ? ' border:0;' : '' ) . "'></div>
 </div>";
 				} else {
 					$resultBar = '';
