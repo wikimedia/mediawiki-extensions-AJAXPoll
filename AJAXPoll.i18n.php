@@ -1015,7 +1015,7 @@ $messages['nl-informal'] = array(
 	'ajaxpoll-vote-revoked' => 'Je stem is ingetrokken.',
 );
 
-/** Oriya (ଓଡ଼ିଆ)
+/** Oriya (ଓଡ଼ିଆ)
  * @author ଆଶୁତୋଷ କର
  */
 $messages['or'] = array(
