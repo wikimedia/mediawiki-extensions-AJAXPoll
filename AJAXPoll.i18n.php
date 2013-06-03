@@ -128,9 +128,12 @@ $messages['ast'] = array(
 	'ajaxpoll-percent-votes' => '$1% de tolos votos',
 	'ajaxpoll-your-vote' => 'Ya votasti por "$1" el $2, pues camudar el to votu calcando nuna de les rempuestes d\'abaxo.',
 	'ajaxpoll-no-vote' => 'Por favor, vota abaxo.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Por favor, vote más abaxo. Los resultaos apaecerán cuando vote.',
 	'ajaxpoll-info' => 'Hebo {{PLURAL:$1|un votu|$1 votos}} dende que se creó la encuesta el $2.',
 	'ajaxpoll-submitting' => "Aguarda, por favor, ta unviandose'l to votu.",
 	'ajaxpoll-vote-permission' => 'Nun tienes drechu al votu.',
+	'ajaxpoll-view-results-permission' => "Nun tien permisu pa ver los resultaos d'esta encuesta.",
+	'ajaxpoll-view-results-before-vote-permission' => "Nun tien permisu pa ver los resultaos d'esta encuesta antes de votar.",
 	'ajaxpoll-revoke-vote' => 'Quiero anular el mio votu',
 	'ajaxpoll-vote-revoked' => 'Anulasti el to votu correutamente.',
 	'ajaxpoll-error-csrf-wrong-token' => "Recibióse un pase equivocáu, y nun se cuenta'l so votu.",
@@ -493,6 +496,7 @@ $messages['fi'] = array(
 	'ajaxpoll-info' => '{{PLURAL:$1|Yksi ääni|$1 ääntä}} on annettu siitä lähtien kun tämä äänestys tehtiin, $2.',
 	'ajaxpoll-submitting' => 'Odota hetki, äänesi lähetetään kirjattavaksi.',
 	'ajaxpoll-vote-permission' => 'Sinulla ei ole oikeutta äänestää.',
+	'ajaxpoll-view-results-before-vote-permission' => 'Et voi katsella kyselyn tuloksia ennen kuin olet äänestänyt.',
 	'ajaxpoll-revoke-vote' => 'Haluan peruuttaa ääneni',
 	'ajaxpoll-vote-revoked' => 'Peruutit onnistuneesti äänesi.',
 	'right-ajaxpoll-vote' => 'Voi äänestää AJAX-pohjaisissa kyselyissä',
@@ -501,22 +505,27 @@ $messages['fi'] = array(
 /** French (français)
  * @author Crochet.david
  * @author Gomoko
+ * @author Sherbrooke
  * @author Tim 'Avatar' Bartel
  */
 $messages['fr'] = array(
 	'ajaxpoll-desc' => 'Autorise les interrogations basées sur AJAX avec <tt>&lt;poll&gt;</tt> tag',
 	'ajaxpoll-tracking-category' => 'Pages avec un sondage',
-	'ajaxpoll-vote-update' => 'Ta voix est actualisé.',
-	'ajaxpoll-vote-add' => 'Ta voix était compté.',
-	'ajaxpoll-vote-error' => "Il y avait une problème avec le traitement de ta voix. Essaie-cela s'il te plaît encore une fois.",
-	'ajaxpoll-percent-votes' => '$1% de tous voix.',
-	'ajaxpoll-your-vote' => 'Tu a déjà voté pour $1 (à $2). Tu peux changer ta voix, si tu cliques à l’une des réponses en bas.',
-	'ajaxpoll-no-vote' => 'Vote en bas.',
-	'ajaxpoll-info' => 'Il y avait {{PLURAL:$1|une voix|$1 voix}}, depuis l’élaboration du sondage au $2.',
-	'ajaxpoll-submitting' => 'Attends une moment, ta voix est traité...',
+	'ajaxpoll-vote-update' => 'Votre vote a été mis à jour.',
+	'ajaxpoll-vote-add' => 'Votre vote a été compté.',
+	'ajaxpoll-vote-error' => "Il y avait une problème avec le traitement de votre vote. Essayez encore, s'il vous plaît.",
+	'ajaxpoll-percent-votes' => '$1% de tous les votes',
+	'ajaxpoll-your-vote' => 'Vous avez voté pour « $1 » sur $2. Vous pouvez changer de vote si vous cliquez sur l’un des choix plus bas.',
+	'ajaxpoll-no-vote' => 'Merci de voter ci-dessous.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Vous pouvez voter ci-dessous. Les résultats seront affichés lorsque vous aurez voté.',
+	'ajaxpoll-info' => 'Il y avait {{PLURAL:$1|un vote|$1 votes}} depuis l’élaboration du sondage au $2.',
+	'ajaxpoll-submitting' => "Veuillez patienter pendant l'envoi de votre vote...",
 	'ajaxpoll-vote-permission' => 'Vous ne pouvez pas voter.',
+	'ajaxpoll-view-results-permission' => "Vous n'êtes pas autorisé à voir les résultats de ce sondage.",
+	'ajaxpoll-view-results-before-vote-permission' => "Vous n'êtes pas autorisé à voir les résultats de ce sondage avant d'avoir voté.",
 	'ajaxpoll-revoke-vote' => 'Je veux annuler mon vote',
 	'ajaxpoll-vote-revoked' => 'Vous avez annulé votre vote.',
+	'ajaxpoll-error-csrf-wrong-token' => 'Un jeton incorrect a été reçu, et votre vote est ignoré.',
 	'right-ajaxpoll-vote' => 'Peut voter dans des sondages basés sur AJAX',
 );
 
@@ -540,11 +549,15 @@ $messages['gl'] = array(
 	'ajaxpoll-percent-votes' => '$1% do total dos votos',
 	'ajaxpoll-your-vote' => 'Xa votou por "$1" o $2. Pode cambiar o seu voto premendo nunha resposta das que aparecen a continuación.',
 	'ajaxpoll-no-vote' => 'Por favor, vote a continuación.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Por favor, vote a continuación. Os resultados aparecerán cando vote.',
 	'ajaxpoll-info' => '{{PLURAL:$1|Recibiuse un voto|Recibíronse $1 votos}} desde que a enquisa foi creada o $2.',
 	'ajaxpoll-submitting' => 'Por favor, agarde durante o envío do seu voto.',
 	'ajaxpoll-vote-permission' => 'Non pode votar.',
+	'ajaxpoll-view-results-permission' => 'Non ten os permisos necesarios para ver os resultados desta enquisa.',
+	'ajaxpoll-view-results-before-vote-permission' => 'Non ten os permisos necesarios para ver os resultados desta enquisa antes de votar.',
 	'ajaxpoll-revoke-vote' => 'Quero anular o meu voto',
 	'ajaxpoll-vote-revoked' => 'Anulou o voto correctamente.',
+	'ajaxpoll-error-csrf-wrong-token' => 'Recibiuse un pase incorrecto e ignorouse o seu voto.',
 	'right-ajaxpoll-vote' => 'Pode votar nas enquisas baseadas en AJAX',
 );
 
@@ -566,6 +579,13 @@ $messages['gsw'] = array(
 	'ajaxpoll-revoke-vote' => 'Ich wett myy Stimm widerruefe',
 	'ajaxpoll-vote-revoked' => 'Du hesch Dyy Stimm erfolgryych widerruefe.',
 	'right-ajaxpoll-vote' => 'Cha bi AJAX-gstitze Umfroge abstimme',
+);
+
+/** Gujarati (ગુજરાતી)
+ * @author Ashok modhvadia
+ */
+$messages['gu'] = array(
+	'ajaxpoll-view-results-before-vote-permission' => 'તમે મતદાન ન કરો ત્યાં સુધી આ સર્વેક્ષણનું પરિણામ જોવા માટે હકદાર નથી.',
 );
 
 /** Hebrew (עברית)
@@ -736,6 +756,7 @@ $messages['ja'] = array(
 	'ajaxpoll-submitting' => '投票を送信しています。お待ちください。',
 	'ajaxpoll-vote-permission' => 'あなたには投票権がありません。',
 	'ajaxpoll-view-results-permission' => 'あなたには、この投票所の結果を閲覧する権限がありません。',
+	'ajaxpoll-view-results-before-vote-permission' => '投票を終えるまで、あなたはこの投票の結果を見ることができません。',
 	'ajaxpoll-revoke-vote' => '自分の投票を取り消したい',
 	'ajaxpoll-vote-revoked' => '投票を取り消しました。',
 	'ajaxpoll-error-csrf-wrong-token' => '誤ったトークンを受信したため、あなたの投票は無視されます。',
@@ -880,9 +901,12 @@ $messages['mk'] = array(
 	'ajaxpoll-percent-votes' => '$1% од вкупниот број на гласови',
 	'ajaxpoll-your-vote' => 'Веќе имате гласано за „$1“ на $2; можете да го промените гласот со кликнување на еден од одговорите подолу.',
 	'ajaxpoll-no-vote' => 'Гласајте подолу.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Дајте го вашиот глас подолу. Исходот ќе се прикаже откако ќе гласате.',
 	'ajaxpoll-info' => 'Откако е создадена анкетата ($2) {{PLURAL:$1|даден еден глас|дадени се $1 гласа}}.',
 	'ajaxpoll-submitting' => 'Почекајте, го заведувам вашиот глас.',
 	'ajaxpoll-vote-permission' => 'Не можете да гласате.',
+	'ajaxpoll-view-results-permission' => 'Немате право да го гледате исходот од анкетава.',
+	'ajaxpoll-view-results-before-vote-permission' => 'Немате право да го гледате исходот од анкетава пред да гласате.',
 	'ajaxpoll-revoke-vote' => 'Сакам да го повлечам гласот',
 	'ajaxpoll-vote-revoked' => 'Успешно го повлековте гласот.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Добив погрешен жетон. Вашиот глас е занемарен.',
@@ -930,18 +954,26 @@ $messages['mt'] = array(
 	'ajaxpoll-vote-revoked' => "Irnexxielek tirrevoka b'suċċess il-vot tiegħek.",
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Nghtwlkr
+ * @author Simen47
  */
 $messages['nb'] = array(
+	'ajaxpoll-tracking-category' => 'Sider med en avstemning',
 	'ajaxpoll-vote-update' => 'Din stemme har blitt oppdatert.',
 	'ajaxpoll-vote-add' => 'Din stemme har blitt lagt til.',
 	'ajaxpoll-vote-error' => 'Det oppstod et problem med behandlingen av din stemme, vennligst prøv igjen.',
 	'ajaxpoll-percent-votes' => '$1% av alle stemmer',
 	'ajaxpoll-your-vote' => 'Du har allerede stemt på «$1» den $2, du kan endre din stemme ved å klikke på et svar nedenfor.',
 	'ajaxpoll-no-vote' => 'Vennligst stem nedenfor.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Vennligst stem under. Resultatene vil bli vist når du har stemt.',
 	'ajaxpoll-info' => 'Det var $1 stemmer siden spørreundersøkelsen ble opprettet den $2.', # Fuzzy
 	'ajaxpoll-submitting' => 'Vennligst vent, sender inn stemmen din.',
+	'ajaxpoll-vote-permission' => 'Du har ikke rettigheter til å stemme.',
+	'ajaxpoll-view-results-permission' => 'Du har ikke rettigheter til å vise resultatene til denne avstemningen.',
+	'ajaxpoll-view-results-before-vote-permission' => 'Du har ikke rettigheter til å vise resultatene av denne avstemningen før du har stemt.',
+	'ajaxpoll-revoke-vote' => 'Jeg vil trekke tilbake stemmen min',
+	'ajaxpoll-vote-revoked' => 'Du klarte vellykket å trekke tilbake stemmen din.',
 );
 
 /** Dutch (Nederlands)
@@ -1001,22 +1033,27 @@ $messages['or'] = array(
 
 /** Polish (polski)
  * @author BeginaFelicysym
+ * @author Chrumps
  * @author Dariusz Siedlecki
  */
 $messages['pl'] = array(
 	'ajaxpoll-desc' => 'Umożliwia wstawienie opartych na technologii AJAX ankiet przy pomocy znacznika <tt>&lt;poll&gt;</tt>',
-	'ajaxpoll-tracking-category' => 'Strony z sondażami',
+	'ajaxpoll-tracking-category' => 'Strony z głosowaniami',
 	'ajaxpoll-vote-update' => 'Twój głos został zmieniony.',
 	'ajaxpoll-vote-add' => 'Twój głos został dodany.',
 	'ajaxpoll-vote-error' => 'Wystąpił błąd w czasie dodawania głosu, proszę spróbować później.',
 	'ajaxpoll-percent-votes' => '$1% wszystkich głosów',
-	'ajaxpoll-your-vote' => 'Zagłosowałeś juz na "$1" $2, możesz zaktualizować swój głos klikając na odpowiedź poniżej.',
-	'ajaxpoll-no-vote' => 'Podaj swój głos poniżej.',
-	'ajaxpoll-info' => 'Oddano już {{PLURAL:$1|jeden głos|$1 głosy|$1 głosów}} od założenia ankiety dnia $2.',
+	'ajaxpoll-your-vote' => 'Zagłosowałeś już na "$1" $2, możesz zmienić swój głos klikając na inną odpowiedź poniżej.',
+	'ajaxpoll-no-vote' => 'Zagłosuj poniżej.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Zagłosuj poniżej. Wyniki zobaczysz po oddaniu głosu.',
+	'ajaxpoll-info' => 'Oddano już {{PLURAL:$1|jeden głos|$1 głosy|$1 głosów}} od utworzenia głosowania $2.',
 	'ajaxpoll-submitting' => 'Proszę czekać, trwa dodawanie głosu.',
 	'ajaxpoll-vote-permission' => 'Nie masz uprawnień do głosowania.',
+	'ajaxpoll-view-results-permission' => 'Nie masz uprawnień, aby zobaczyć wyniki tego głosowania.',
+	'ajaxpoll-view-results-before-vote-permission' => 'Nie masz uprawnień, aby zobaczyć wyniki tego głosowania zanim nie zagłosujesz.',
 	'ajaxpoll-revoke-vote' => 'Chcę wycofać swój głos',
 	'ajaxpoll-vote-revoked' => 'Pomyślnie wycofano twój głos',
+	'ajaxpoll-error-csrf-wrong-token' => 'Odebrano błędny token, a Twój głos został zignorowany.',
 	'right-ajaxpoll-vote' => 'Można głosować w sondażach opartych na technologii AJAX',
 );
 
@@ -1355,9 +1392,12 @@ $messages['zh-hant'] = array(
 	'ajaxpoll-percent-votes' => '所有選票的$1%',
 	'ajaxpoll-your-vote' => '您在$2已經投票給“$1”，您可以點擊下面的答案更改您的投票。',
 	'ajaxpoll-no-vote' => '請在下面投票。',
+	'ajaxpoll-no-vote-results-after-voting' => '請在下面投票。當你投票後，結果將會顯示。',
 	'ajaxpoll-info' => '自$2建立以來共有{{PLURAL:$1|一人投票|$1人投票}}。',
 	'ajaxpoll-submitting' => '請稍候，正提交您的投票.',
 	'ajaxpoll-vote-permission' => '您無權投票。',
+	'ajaxpoll-view-results-permission' => '你無權查看此投票的結果。',
+	'ajaxpoll-view-results-before-vote-permission' => '你無權在你未投票前查看此投票的結果。',
 	'ajaxpoll-revoke-vote' => '我想撤銷我的投票',
 	'ajaxpoll-vote-revoked' => '您已成功撤銷您的投票。',
 	'ajaxpoll-error-csrf-wrong-token' => '收到錯誤的令牌，你的投票會被忽略。',
