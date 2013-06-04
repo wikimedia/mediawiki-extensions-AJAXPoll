@@ -5,12 +5,28 @@
  * Licensed under the GFDL.
  *
  * <poll>
- * [Option]
  * Question
  * Answer 1
  * Answer 2
  * Answer ...
  * Answer n
+ * </poll>
+ *
+ * to allow the viewing of the poll results even without having voted
+ * <poll show-results-before-voting>
+ * Question
+ * Answer 1
+ * Answer 2
+ * Answer ...
+ * Answer n
+ * </poll>
+ *
+ * If the first line after <poll> is "STATS",
+ * then some statistics about the wiki and its polls will be displayed.
+ * These statistics are not localizable and this whole feature will probably be
+ * removed (or at least refactored, but probably removed) in the future.
+ * <poll>
+ * STATS
  * </poll>
  *
  * @file
@@ -19,7 +35,7 @@
  * @author Jack Phoenix <jack@countervandalism.net>
  * @author Thomas Gries
  * @maintainer Thomas Gries
- * @version 1.80
+ * @version 1.84
  * @link http://www.mediawiki.org/wiki/Extension:AJAX_Poll Documentation
  */
 
@@ -31,7 +47,7 @@ if( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'AJAX Poll',
-	'version' => '1.83 20130605',
+	'version' => '1.84 20130605',
 	'author' => array( 'Dariusz Siedlecki', 'Jack Phoenix', 'Thomas Gries' ),
 	'descriptionmsg' => 'ajaxpoll-desc',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:AJAX_Poll',
