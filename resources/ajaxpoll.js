@@ -30,7 +30,7 @@ $(".ajaxpoll-answer-name label")
 			$this.find(".ajaxpoll-hover-vote").addClass("ajaxpoll-checkevent");
 			$this.find("input").prop("checked","checked");
 			$( "#ajaxpoll-ajax-"+poll )
-				.html("Please wait, submitting your vote.")
+				.text( mw.message( 'ajaxpoll-submitting' ) )
 				.css("display","inline-block");
 			if (useAjax){
 				sajax_do_call(

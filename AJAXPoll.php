@@ -31,7 +31,7 @@ if( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'AJAX Poll',
-	'version' => '1.82 20130531',
+	'version' => '1.83 20130605',
 	'author' => array( 'Dariusz Siedlecki', 'Jack Phoenix', 'Thomas Gries' ),
 	'descriptionmsg' => 'ajaxpoll-desc',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:AJAX_Poll',
@@ -58,6 +58,9 @@ $wgResourceModules['ext.ajaxpoll'] = $myResourceTemplate + array(
 		'ajaxpoll.css',
 	),
 	'dependencies' => array(
+	),
+	'messages' => array(
+		'ajaxpoll-submitting',
 	)
 );
 
