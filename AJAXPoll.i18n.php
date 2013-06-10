@@ -432,6 +432,7 @@ $messages['eo'] = array(
 /** Spanish (español)
  * @author Armando-Martin
  * @author Bola
+ * @author Miguel2706
  */
 $messages['es'] = array(
 	'ajaxpoll-desc' => 'Permite encuestas basadas en AJAX con etiqueta <tt>&lt;poll&gt;</tt>',
@@ -442,9 +443,12 @@ $messages['es'] = array(
 	'ajaxpoll-percent-votes' => '$1% de todos los votos',
 	'ajaxpoll-your-vote' => 'Ya votaste por "$1" el $2, puedes cambiar tu voto haciendo clic en una respuesta debajo.',
 	'ajaxpoll-no-vote' => 'Por favor, vota debajo.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Por favor, vote a continuación. Los resultados serán mostrados cuando usted haya votado.',
 	'ajaxpoll-info' => 'Ha habido {{PLURAL:$1|un voto|$1 votos}} desde que la encuesta fue creada el $2.',
 	'ajaxpoll-submitting' => 'Por favor espera, estamos comprobando tu voto, ten paciencia.',
 	'ajaxpoll-vote-permission' => 'No puede votar.',
+	'ajaxpoll-view-results-permission' => 'Usted no tiene derecho a ver los resultados de esta encuesta.',
+	'ajaxpoll-view-results-before-vote-permission' => 'Usted no tiene derecho a ver los resultados de esta encuesta antes de haber votado.',
 	'ajaxpoll-revoke-vote' => 'Quiero revocar mi voto',
 	'ajaxpoll-vote-revoked' => 'Revocó su voto correctamente .',
 	'right-ajaxpoll-vote' => 'Puede votar en las encuestas basadas en AJAX',
@@ -955,6 +959,7 @@ $messages['mt'] = array(
 );
 
 /** Norwegian Bokmål (norsk bokmål)
+ * @author Danmichaelo
  * @author Nghtwlkr
  * @author Simen47
  */
@@ -970,10 +975,10 @@ $messages['nb'] = array(
 	'ajaxpoll-info' => 'Det var $1 stemmer siden spørreundersøkelsen ble opprettet den $2.', # Fuzzy
 	'ajaxpoll-submitting' => 'Vennligst vent, sender inn stemmen din.',
 	'ajaxpoll-vote-permission' => 'Du har ikke rettigheter til å stemme.',
-	'ajaxpoll-view-results-permission' => 'Du har ikke rettigheter til å vise resultatene til denne avstemningen.',
+	'ajaxpoll-view-results-permission' => 'Du har ikke rettigheter til å vise resultatene i denne avstemningen.',
 	'ajaxpoll-view-results-before-vote-permission' => 'Du har ikke rettigheter til å vise resultatene av denne avstemningen før du har stemt.',
 	'ajaxpoll-revoke-vote' => 'Jeg vil trekke tilbake stemmen min',
-	'ajaxpoll-vote-revoked' => 'Du klarte vellykket å trekke tilbake stemmen din.',
+	'ajaxpoll-vote-revoked' => 'Du har trukket tilbake stemmen din.',
 );
 
 /** Dutch (Nederlands)
@@ -1161,6 +1166,7 @@ $messages['roa-tara'] = array(
 
 /** Russian (русский)
  * @author DCamer
+ * @author Iluvatar
  * @author Lockal
  * @author Александр Сигачёв
  */
@@ -1173,11 +1179,15 @@ $messages['ru'] = array(
 	'ajaxpoll-percent-votes' => '$1% от всех голосов',
 	'ajaxpoll-your-vote' => 'Вы уже проголосовали «$1» $2. Вы можете изменить свой выбор, нажав на один из представленных ниже ответов.',
 	'ajaxpoll-no-vote' => 'Пожалуйста, проголосуйте ниже.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Проголосуйте, пожалуйста, ниже. Результаты будут показаны после того, как вы проголосуете.',
 	'ajaxpoll-info' => 'С момента создания голосования $2 {{PLURAL:$1|поступил $1 голос|поступило $1 голоса|поступило $1 голосов}}.',
 	'ajaxpoll-submitting' => 'Пожалуйста, подождите, ваш голос обрабатывается.',
 	'ajaxpoll-vote-permission' => 'Вы не можете голосовать.',
+	'ajaxpoll-view-results-permission' => 'Вы не можете просматривать результаты этого опроса.',
+	'ajaxpoll-view-results-before-vote-permission' => 'Вы не можете просмотреть результаты опроса до тех пор, пока не проголосуете.',
 	'ajaxpoll-revoke-vote' => 'Я хочу отменить свой голос',
 	'ajaxpoll-vote-revoked' => 'Вы успешно отменили свой голос.',
+	'ajaxpoll-error-csrf-wrong-token' => 'Был получен неверный токен, ваш голос не учитывается.',
 	'right-ajaxpoll-vote' => 'Может голосовать в опросах на основе AJAX',
 );
 
