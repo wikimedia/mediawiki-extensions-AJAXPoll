@@ -433,6 +433,7 @@ $messages['eo'] = array(
  * @author Armando-Martin
  * @author Bola
  * @author Miguel2706
+ * @author VegaDark
  */
 $messages['es'] = array(
 	'ajaxpoll-desc' => 'Permite encuestas basadas en AJAX con etiqueta <tt>&lt;poll&gt;</tt>',
@@ -451,6 +452,7 @@ $messages['es'] = array(
 	'ajaxpoll-view-results-before-vote-permission' => 'Usted no tiene derecho a ver los resultados de esta encuesta antes de haber votado.',
 	'ajaxpoll-revoke-vote' => 'Quiero revocar mi voto',
 	'ajaxpoll-vote-revoked' => 'Revocó su voto correctamente .',
+	'ajaxpoll-error-csrf-wrong-token' => 'Se recibió un token erróneo, y tu voto es ignorado.',
 	'right-ajaxpoll-vote' => 'Puede votar en las encuestas basadas en AJAX',
 );
 
