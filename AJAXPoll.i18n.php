@@ -732,6 +732,7 @@ $messages['it'] = array(
 	'ajaxpoll-percent-votes' => '$1% di tutti i voti',
 	'ajaxpoll-your-vote' => 'Hai già votato per "$1" su $2, è possibile cambiare il tuo voto cliccando una risposta qui sotto.',
 	'ajaxpoll-no-vote' => 'Si prega di votare sotto.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Vota qui sotto. I risultati ti verranno mostrati una volta che avrai votato.',
 	'ajaxpoll-info' => "{{PLURAL:$1|C'è stato un voto|Ci sono stati $1 voti}} dal quando il sondaggio è stato creato il $2.",
 	'ajaxpoll-submitting' => 'Attendere prego, stiamo elaborando il tuo voto.',
 	'ajaxpoll-vote-permission' => 'Non hai diritto di voto.',
