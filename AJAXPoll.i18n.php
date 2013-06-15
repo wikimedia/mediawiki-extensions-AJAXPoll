@@ -1237,6 +1237,7 @@ $messages['sr-el'] = array(
 );
 
 /** Swedish (svenska)
+ * @author Jopparn
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
@@ -1251,6 +1252,8 @@ $messages['sv'] = array(
 	'ajaxpoll-info' => 'Det var {{PLURAL:$1|en röst|$1 röster}} sedan omröstningen skapades den $2.',
 	'ajaxpoll-submitting' => 'Var god vänta, skickar in din röst.',
 	'ajaxpoll-vote-permission' => 'Du är inte berättigad att rösta.',
+	'ajaxpoll-view-results-permission' => 'Du har inte rätt att se resultat från denna enkät.',
+	'ajaxpoll-view-results-before-vote-permission' => 'Du har inte rätt att se resultat från denna enkät innan du har röstat.',
 	'ajaxpoll-revoke-vote' => 'Jag vill återkalla min röst',
 	'ajaxpoll-vote-revoked' => 'Du har återkallat din röst.',
 	'right-ajaxpoll-vote' => 'Kan rösta i AJAX-baserade omröstningar',
