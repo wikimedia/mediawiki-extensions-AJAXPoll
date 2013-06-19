@@ -718,6 +718,15 @@ $messages['is'] = array(
 	'ajaxpoll-tracking-category' => 'Síður með skoðanakönnun',
 	'ajaxpoll-vote-update' => 'Atkvæði þitt hefur verið uppfært.',
 	'ajaxpoll-vote-add' => 'Atkvæði þínu hefur verið viðbætt.',
+	'ajaxpoll-percent-votes' => '$1% allra atkvæða',
+	'ajaxpoll-your-vote' => 'Þú kaust „$1“ þann $2. Þú getur breytt atkvæði þínu með því að smella á annað svar fyrir neðan.',
+	'ajaxpoll-no-vote' => 'Gerðu svo vel og kjóstu fyrir neðan.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Gerðu svo vel og kjóstu fyrir neðan. Niðurstöðurnar verða sýndar þegar þú hefur kosið.',
+	'ajaxpoll-vote-permission' => 'Þú hefur ekki rétt til þess að kjósa.',
+	'ajaxpoll-view-results-permission' => 'Þú hefur ekki rétt til þess að sjá niðurstöður þessarar skoðanakönnunar.',
+	'ajaxpoll-view-results-before-vote-permission' => 'Þú hefur ekki rétt til þess að sjá niðurstöður þessarar skoðanakönnunar áður en þú hefur kosið.',
+	'ajaxpoll-revoke-vote' => 'Ég vil endurkalla atkvæði mitt.',
+	'ajaxpoll-vote-revoked' => 'Þér tókst að endurkalla atkvæðið þitt.',
 );
 
 /** Italian (italiano)
@@ -1375,6 +1384,7 @@ $messages['zh'] = array(
 );
 
 /** Simplified Chinese (中文（简体）‎)
+ * @author Qiyue2001
  * @author Simon Shek
  * @author Yfdyh000
  * @author Zoglun
@@ -1391,6 +1401,7 @@ $messages['zh-hans'] = array(
 	'ajaxpoll-info' => '自$2创建以来共有{{PLURAL:$1|一人投票| $1 人投票}}。',
 	'ajaxpoll-submitting' => '请稍候，正在提交您的投票。',
 	'ajaxpoll-vote-permission' => '您没有投票权。',
+	'ajaxpoll-view-results-before-vote-permission' => '您在投票前无权查看投票结果。',
 	'ajaxpoll-revoke-vote' => '我想撤销我的投票',
 	'ajaxpoll-vote-revoked' => '您已成功撤销您的投票。',
 	'right-ajaxpoll-vote' => '可在基于AJAX的投票区投票',
