@@ -214,11 +214,15 @@ $messages['be-tarask'] = array(
 	'ajaxpoll-percent-votes' => '$1% ад усіх галасоў',
 	'ajaxpoll-your-vote' => 'Вы ўжо прагаласавалі за варыянт «$1» $2, Вы можаце зьмяніць свой выбар, націснуўжы адзін з пададзеных ніжэй адказаў.',
 	'ajaxpoll-no-vote' => 'Калі ласка, прагаласуйце ніжэй.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Прагаласуйце, калі ласка, ніжэй. Вынікі зьявяцца, як прагаласуеце.',
 	'ajaxpoll-info' => 'З моманту стварэньня галасаваньня $2 {{PLURAL:$1|пададзены $1 голас|пададзеныя $1 галасы|пададзена $1 галасоў}}.',
 	'ajaxpoll-submitting' => 'Калі ласкай, чакайце, ваш голас дадаецца.',
 	'ajaxpoll-vote-permission' => 'Вы ня можаце галасаваць.',
+	'ajaxpoll-view-results-permission' => 'Вы ня можаце праглядаць вынікі гэтага апытаньня.',
+	'ajaxpoll-view-results-before-vote-permission' => 'Вы ня можаце праглядаць вынікі гэтага апытаньня, пакуль не прагаласуеце.',
 	'ajaxpoll-revoke-vote' => 'Я хачу адклікаць мой голас',
 	'ajaxpoll-vote-revoked' => 'Вы пасьпяхова адклікалі ваш голас.',
+	'ajaxpoll-error-csrf-wrong-token' => 'Атрыманы няслушны токен, ваш голас ня ўлічаны.',
 	'right-ajaxpoll-vote' => 'магчымасьць галасаваць у AJAX-апытаньнях',
 );
 
@@ -1258,6 +1262,7 @@ $messages['sv'] = array(
 	'ajaxpoll-percent-votes' => '$1% av alla röster',
 	'ajaxpoll-your-vote' => 'Du har redan röstat på "$1" den $2, du kan ändra din röst genom att klicka på ett svar nedan.',
 	'ajaxpoll-no-vote' => 'Var god rösta nedan.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Rösta nedan. Resultaten kommer att visas när du har röstat.',
 	'ajaxpoll-info' => 'Det var {{PLURAL:$1|en röst|$1 röster}} sedan omröstningen skapades den $2.',
 	'ajaxpoll-submitting' => 'Var god vänta, skickar in din röst.',
 	'ajaxpoll-vote-permission' => 'Du är inte berättigad att rösta.',
@@ -1387,6 +1392,7 @@ $messages['zh'] = array(
  * @author Qiyue2001
  * @author Simon Shek
  * @author Yfdyh000
+ * @author Zhangjintao
  * @author Zoglun
  */
 $messages['zh-hans'] = array(
@@ -1398,12 +1404,15 @@ $messages['zh-hans'] = array(
 	'ajaxpoll-percent-votes' => '所有选票的$1%',
 	'ajaxpoll-your-vote' => '您在$2已经投票给“$1”，您可以点击下面的答案更改您的投票。',
 	'ajaxpoll-no-vote' => '请在下面投票。',
+	'ajaxpoll-no-vote-results-after-voting' => '请在下面投票。当你投票后，结果将会显示。',
 	'ajaxpoll-info' => '自$2创建以来共有{{PLURAL:$1|一人投票| $1 人投票}}。',
 	'ajaxpoll-submitting' => '请稍候，正在提交您的投票。',
 	'ajaxpoll-vote-permission' => '您没有投票权。',
+	'ajaxpoll-view-results-permission' => '你没有权限查看这个投票的结果',
 	'ajaxpoll-view-results-before-vote-permission' => '您在投票前无权查看投票结果。',
 	'ajaxpoll-revoke-vote' => '我想撤销我的投票',
 	'ajaxpoll-vote-revoked' => '您已成功撤销您的投票。',
+	'ajaxpoll-error-csrf-wrong-token' => '你输入了错误的标记，你的投票将无效',
 	'right-ajaxpoll-vote' => '可在基于AJAX的投票区投票',
 );
 
