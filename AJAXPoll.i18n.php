@@ -1107,6 +1107,7 @@ $messages['ps'] = array(
 );
 
 /** Portuguese (português)
+ * @author Malafaya
  * @author SandroHc
  */
 $messages['pt'] = array(
@@ -1118,8 +1119,16 @@ $messages['pt'] = array(
 	'ajaxpoll-percent-votes' => '$1% de todos os votos',
 	'ajaxpoll-your-vote' => 'Você já votou em "$1" em $2, você pode alterar o voto ao clicar numa opção abaixo.',
 	'ajaxpoll-no-vote' => 'Por favor, vote abaixo.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Por favor, vote abaixo. Os resultados serão mostrados quando tiver votado.',
 	'ajaxpoll-info' => '{{PLURAL:$1|Um voto|$1 votos}} desde a criação da votação em $2.',
 	'ajaxpoll-submitting' => 'Por favor aguarde, enviando o seu voto.',
+	'ajaxpoll-vote-permission' => 'Não se encontra habilitado a votar.',
+	'ajaxpoll-view-results-permission' => 'Não se encontra habilitado a ver os resultados deste inquérito.',
+	'ajaxpoll-view-results-before-vote-permission' => 'Não se encontra habilitado a ver os resultados deste inquérito antes de votar.',
+	'ajaxpoll-revoke-vote' => 'Quero revogar o meu voto',
+	'ajaxpoll-vote-revoked' => 'Revogou o seu voto com sucesso.',
+	'ajaxpoll-error-csrf-wrong-token' => 'Um token errado foi recebido, e o seu voto foi ignorado.',
+	'right-ajaxpoll-vote' => 'Pode votar em inquéritos baseados em AJAX',
 );
 
 /** Brazilian Portuguese (português do Brasil)
