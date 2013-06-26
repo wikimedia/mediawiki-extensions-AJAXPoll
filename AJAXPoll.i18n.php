@@ -28,7 +28,7 @@ $messages['en'] = array(
 	'ajaxpoll-view-results-permission' => 'You are not entitled to view results of this poll.',
 	'ajaxpoll-view-results-before-vote-permission' => 'You are not entitled to view results of this poll before you have voted.',
 	'ajaxpoll-revoke-vote' => 'I want to revoke my vote',
-	'ajaxpoll-vote-revoked' => 'You succesfully revoked your vote.',
+	'ajaxpoll-vote-revoked' => 'Your vote has been revoked.',
 	'ajaxpoll-error-csrf-wrong-token' => 'A wrong token was received, and your vote is ignored.',
 
 	'right-ajaxpoll-vote' => 'Can vote in AJAX-based polls',
