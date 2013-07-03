@@ -866,6 +866,7 @@ $messages['lb'] = array(
 /** Lithuanian (lietuvių)
  * @author Audriusa
  * @author Eitvys200
+ * @author Mantak111
  */
 $messages['lt'] = array(
 	'ajaxpoll-tracking-category' => 'Puslapiai su apklausa',
@@ -873,6 +874,7 @@ $messages['lt'] = array(
 	'ajaxpoll-vote-add' => 'Jūsų balsas buvo pridėtas.',
 	'ajaxpoll-percent-votes' => '$1% visų balsų',
 	'ajaxpoll-no-vote' => 'Prašome balsuoti žemiau.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Prašome balsuoti žemiau. Rezultatai bus rodomi, kai jus balsuosite.',
 	'ajaxpoll-submitting' => 'Prašome palaukti, siunčiame jūsų balsą.',
 	'ajaxpoll-vote-permission' => 'Jūs neturite balsavimo teisės.',
 	'ajaxpoll-revoke-vote' => 'Noriu atsiimti savo balsą',
@@ -1034,6 +1036,15 @@ $messages['nl-informal'] = array(
 	'ajaxpoll-submitting' => 'Een ogenblik geduld. Je stem wordt opgeslagen...',
 	'ajaxpoll-vote-permission' => 'Je kunt niet stemmen.',
 	'ajaxpoll-vote-revoked' => 'Je stem is ingetrokken.',
+);
+
+/** Occitan (occitan)
+ * @author Cedric31
+ */
+$messages['oc'] = array(
+	'ajaxpoll-tracking-category' => 'Paginas amb un sondatge',
+	'ajaxpoll-vote-update' => 'Vòstre vòte es estat mes a jorn.',
+	'ajaxpoll-vote-add' => 'Vòstre vòte es estat comptat.',
 );
 
 /** Oriya (ଓଡ଼ିଆ)
