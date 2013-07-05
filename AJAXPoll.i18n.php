@@ -879,6 +879,7 @@ $messages['lt'] = array(
 	'ajaxpoll-vote-permission' => 'Jūs neturite balsavimo teisės.',
 	'ajaxpoll-revoke-vote' => 'Noriu atsiimti savo balsą',
 	'ajaxpoll-vote-revoked' => 'Jūs atsiėmėte savo balsą.',
+	'right-ajaxpoll-vote' => 'Gali balsuoti AJAX apklausuose',
 );
 
 /** Latvian (latviešu)
