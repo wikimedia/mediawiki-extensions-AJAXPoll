@@ -878,7 +878,7 @@ $messages['lt'] = array(
 	'ajaxpoll-submitting' => 'Prašome palaukti, siunčiame jūsų balsą.',
 	'ajaxpoll-vote-permission' => 'Jūs neturite balsavimo teisės.',
 	'ajaxpoll-revoke-vote' => 'Noriu atsiimti savo balsą',
-	'ajaxpoll-vote-revoked' => 'Jūs atsiėmėte savo balsą.',
+	'ajaxpoll-vote-revoked' => 'Jūs atsiėmėte savo balsą.', # Fuzzy
 	'right-ajaxpoll-vote' => 'Gali balsuoti AJAX apklausuose',
 );
 
