@@ -342,7 +342,7 @@ $messages['de'] = array(
 	'ajaxpoll-view-results-permission' => 'Du bist nicht berechtigt, die Ergebnisse dieser Abstimmung anzusehen.',
 	'ajaxpoll-view-results-before-vote-permission' => 'Du bist nicht berechtigt, die Ergebnisse dieser Abstimmung anzusehen, bevor du abgestimmt hast.',
 	'ajaxpoll-revoke-vote' => 'Ich möchte meine Stimme widerrufen',
-	'ajaxpoll-vote-revoked' => 'Du hast deine Stimme erfolgreich widerrufen.',
+	'ajaxpoll-vote-revoked' => 'Deine Stimme wurde widerrufen.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Es wurde ein falscher Token empfangen. Deine Stimme wird ignoriert.',
 	'right-ajaxpoll-vote' => 'An AJAX-gestützen Umfragen teilnehmen',
 );
@@ -534,7 +534,7 @@ $messages['fr'] = array(
 	'ajaxpoll-view-results-permission' => "Vous n'êtes pas autorisé à voir les résultats de ce sondage.",
 	'ajaxpoll-view-results-before-vote-permission' => "Vous n'êtes pas autorisé à voir les résultats de ce sondage avant d'avoir voté.",
 	'ajaxpoll-revoke-vote' => 'Je veux annuler mon vote',
-	'ajaxpoll-vote-revoked' => 'Vous avez annulé votre vote.',
+	'ajaxpoll-vote-revoked' => 'Votre vote a été révoqué.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Un jeton incorrect a été reçu, et votre vote est ignoré.',
 	'right-ajaxpoll-vote' => 'Peut voter dans des sondages basés sur AJAX',
 );
@@ -931,7 +931,7 @@ $messages['mk'] = array(
 	'ajaxpoll-view-results-permission' => 'Немате право да го гледате исходот од анкетава.',
 	'ajaxpoll-view-results-before-vote-permission' => 'Немате право да го гледате исходот од анкетава пред да гласате.',
 	'ajaxpoll-revoke-vote' => 'Сакам да го повлечам гласот',
-	'ajaxpoll-vote-revoked' => 'Успешно го повлековте гласот.',
+	'ajaxpoll-vote-revoked' => 'Вашиот глас е повлечен.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Добив погрешен жетон. Вашиот глас е занемарен.',
 	'right-ajaxpoll-vote' => 'Може да гласа на анкети на основа на AJAX.',
 );
@@ -1412,6 +1412,7 @@ $messages['zh'] = array(
 /** Simplified Chinese (中文（简体）‎)
  * @author Qiyue2001
  * @author Simon Shek
+ * @author StephDC
  * @author Yfdyh000
  * @author Zhangjintao
  * @author Zoglun
@@ -1432,7 +1433,7 @@ $messages['zh-hans'] = array(
 	'ajaxpoll-view-results-permission' => '你没有权限查看这个投票的结果',
 	'ajaxpoll-view-results-before-vote-permission' => '您在投票前无权查看投票结果。',
 	'ajaxpoll-revoke-vote' => '我想撤销我的投票',
-	'ajaxpoll-vote-revoked' => '您已成功撤销您的投票。',
+	'ajaxpoll-vote-revoked' => '您已撤销您的投票。',
 	'ajaxpoll-error-csrf-wrong-token' => '你输入了错误的标记，你的投票将无效',
 	'right-ajaxpoll-vote' => '可在基于AJAX的投票区投票',
 );
