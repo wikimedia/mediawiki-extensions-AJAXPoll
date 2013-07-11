@@ -566,7 +566,7 @@ $messages['gl'] = array(
 	'ajaxpoll-view-results-permission' => 'Non ten os permisos necesarios para ver os resultados desta enquisa.',
 	'ajaxpoll-view-results-before-vote-permission' => 'Non ten os permisos necesarios para ver os resultados desta enquisa antes de votar.',
 	'ajaxpoll-revoke-vote' => 'Quero anular o meu voto',
-	'ajaxpoll-vote-revoked' => 'Anulou o voto correctamente.',
+	'ajaxpoll-vote-revoked' => 'Anulouse o seu voto.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Recibiuse un pase incorrecto e ignorouse o seu voto.',
 	'right-ajaxpoll-vote' => 'Pode votar nas enquisas baseadas en AJAX',
 );
@@ -1085,7 +1085,7 @@ $messages['pl'] = array(
 	'ajaxpoll-view-results-permission' => 'Nie masz uprawnień, aby zobaczyć wyniki tego głosowania.',
 	'ajaxpoll-view-results-before-vote-permission' => 'Nie masz uprawnień, aby zobaczyć wyniki tego głosowania zanim nie zagłosujesz.',
 	'ajaxpoll-revoke-vote' => 'Chcę wycofać swój głos',
-	'ajaxpoll-vote-revoked' => 'Pomyślnie wycofano twój głos',
+	'ajaxpoll-vote-revoked' => 'Twój głos został odwołany.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Odebrano błędny token, a Twój głos został zignorowany.',
 	'right-ajaxpoll-vote' => 'Można głosować w sondażach opartych na technologii AJAX',
 );
