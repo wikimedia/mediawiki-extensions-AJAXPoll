@@ -436,6 +436,7 @@ $messages['eo'] = array(
 /** Spanish (español)
  * @author Armando-Martin
  * @author Bola
+ * @author Luis Felipe Schenone
  * @author Miguel2706
  * @author VegaDark
  */
@@ -455,7 +456,7 @@ $messages['es'] = array(
 	'ajaxpoll-view-results-permission' => 'Usted no tiene derecho a ver los resultados de esta encuesta.',
 	'ajaxpoll-view-results-before-vote-permission' => 'Usted no tiene derecho a ver los resultados de esta encuesta antes de haber votado.',
 	'ajaxpoll-revoke-vote' => 'Quiero revocar mi voto',
-	'ajaxpoll-vote-revoked' => 'Revocó su voto correctamente .',
+	'ajaxpoll-vote-revoked' => 'Tu voto ha sido revocado.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Se recibió un token erróneo, y tu voto es ignorado.',
 	'right-ajaxpoll-vote' => 'Puede votar en las encuestas basadas en AJAX',
 );
@@ -1196,7 +1197,7 @@ $messages['roa-tara'] = array(
 	'ajaxpoll-view-results-permission' => "Non ge puè 'ndrucà le resultate de stu sondagge.",
 	'ajaxpoll-view-results-before-vote-permission' => "Non ge puè 'ndrucà le resultate de stu sondagge apprime ca è vutate.",
 	'ajaxpoll-revoke-vote' => "Ije vogghie annullà 'u vote mije",
-	'ajaxpoll-vote-revoked' => "'U vote tue ha state revocate cu successe.",
+	'ajaxpoll-vote-revoked' => "'U vote tune ha state revocate.",
 	'ajaxpoll-error-csrf-wrong-token' => "'Nu gettone sbagliate ha state ricevute, e 'u vote tune ha state cacate.",
 	'right-ajaxpoll-vote' => 'Puè vutà le sondagge in AJAX',
 );
