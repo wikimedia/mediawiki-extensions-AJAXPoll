@@ -477,6 +477,7 @@ $messages['et'] = array(
  * @author Mehdi
  * @author Mjbmr
  * @author Reza1615
+ * @author Taha
  */
 $messages['fa'] = array(
 	'ajaxpoll-tracking-category' => 'صفحات با یک نظرسنجی',
@@ -486,8 +487,9 @@ $messages['fa'] = array(
 	'ajaxpoll-no-vote' => 'لطفاً رای خود را در زیر ثبت کنید.',
 	'ajaxpoll-submitting' => 'لطفاً صبر کنید، درحال ثبت رای شما...',
 	'ajaxpoll-vote-permission' => 'شما دارای شرایط لازم برای رای‌دادن نمی‌باشید.',
+	'ajaxpoll-view-results-permission' => 'شما حقّ مشاهدهٔ نتایج این رای‌گیری را ندارید.',
 	'ajaxpoll-revoke-vote' => 'قصد دارم رأیم را واگردانی کنم',
-	'ajaxpoll-vote-revoked' => 'رأی شما با موفقیت واگردانی شد.',
+	'ajaxpoll-vote-revoked' => 'رأی شما با موفقیت واگردانی شد.', # Fuzzy
 );
 
 /** Finnish (suomi)
@@ -619,7 +621,7 @@ $messages['he'] = array(
 	'ajaxpoll-view-results-permission' => 'אינך רשאי לצפות בתוצאות סקר זה.',
 	'ajaxpoll-view-results-before-vote-permission' => 'אינך רשאי לצפות בתוצאות הסקר לפני הצבעה',
 	'ajaxpoll-revoke-vote' => 'אני רוצה לבטל את הקול שלי',
-	'ajaxpoll-vote-revoked' => 'פסלת את הקול שלך.',
+	'ajaxpoll-vote-revoked' => 'קולך נפסל.',
 	'right-ajaxpoll-vote' => 'להצביע בסקרים מבוססי AJAX.',
 );
 
