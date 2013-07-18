@@ -474,6 +474,7 @@ $messages['et'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Alireza
  * @author Mehdi
  * @author Mjbmr
  * @author Reza1615
@@ -483,13 +484,14 @@ $messages['fa'] = array(
 	'ajaxpoll-tracking-category' => 'صفحات با یک نظرسنجی',
 	'ajaxpoll-vote-update' => 'رأی شما به روز شد.',
 	'ajaxpoll-vote-add' => 'رأی شما افزوده شد.',
+	'ajaxpoll-vote-error' => 'در پردازش رأی شما مشکلی پیش آمده، لطفاً دوباره تلاش کنید.',
 	'ajaxpoll-percent-votes' => '$1%از کل آرا',
 	'ajaxpoll-no-vote' => 'لطفاً رای خود را در زیر ثبت کنید.',
 	'ajaxpoll-submitting' => 'لطفاً صبر کنید، درحال ثبت رای شما...',
 	'ajaxpoll-vote-permission' => 'شما دارای شرایط لازم برای رای‌دادن نمی‌باشید.',
 	'ajaxpoll-view-results-permission' => 'شما حقّ مشاهدهٔ نتایج این رای‌گیری را ندارید.',
 	'ajaxpoll-revoke-vote' => 'قصد دارم رأیم را واگردانی کنم',
-	'ajaxpoll-vote-revoked' => 'رأی شما با موفقیت واگردانی شد.', # Fuzzy
+	'ajaxpoll-vote-revoked' => 'رأی شما با موفقیت واگردانی شد.',
 );
 
 /** Finnish (suomi)
@@ -1384,6 +1386,7 @@ $messages['ug-arab'] = array(
 /** Ukrainian (українська)
  * @author A1
  * @author Base
+ * @author Ата
  */
 $messages['uk'] = array(
 	'ajaxpoll-desc' => 'Дозволяє голосування на основі AJAX з міткою <tt>&lt;poll&gt;</tt>',
@@ -1394,11 +1397,15 @@ $messages['uk'] = array(
 	'ajaxpoll-percent-votes' => '$1% усіх голосів',
 	'ajaxpoll-your-vote' => 'Ви вже проголосували за " $1 " на  $2 , ви можете змінити свій голос, натиснувши відповідь нижче.',
 	'ajaxpoll-no-vote' => 'Будь ласка, голосуйте нижче.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Будь ласка, проголосуйте нижче. Результати будуть показані після того, як ви проголосуєте.',
 	'ajaxpoll-info' => 'З моменту створення голосування $2 {{PLURAL:$1|надійшов $1 голос|надійшло $1 голоси|надійшло $1 голосів}}.',
 	'ajaxpoll-submitting' => 'Будь ласка, почекайте, ваш голос обробляється  ...',
 	'ajaxpoll-vote-permission' => 'Ви не можете голосувати',
+	'ajaxpoll-view-results-permission' => 'Ви не можете переглядати результати цього опитування.',
+	'ajaxpoll-view-results-before-vote-permission' => 'Ви не можете переглядати результати цього опитування, поки не проголосуєте.',
 	'ajaxpoll-revoke-vote' => 'Я хочу скасувати свій голос',
-	'ajaxpoll-vote-revoked' => 'Ви успішно скасували свій голос',
+	'ajaxpoll-vote-revoked' => 'Ваш голос скасовано.',
+	'ajaxpoll-error-csrf-wrong-token' => 'Отримано неправильний маркер, Ваш голос не враховано.',
 	'right-ajaxpoll-vote' => 'Можете голосувати в опитуваннях на основі AJAX',
 );
 
