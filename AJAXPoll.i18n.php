@@ -1211,6 +1211,7 @@ $messages['roa-tara'] = array(
 /** Russian (русский)
  * @author DCamer
  * @author Iluvatar
+ * @author KPu3uC B Poccuu
  * @author Lockal
  * @author Александр Сигачёв
  */
@@ -1230,7 +1231,7 @@ $messages['ru'] = array(
 	'ajaxpoll-view-results-permission' => 'Вы не можете просматривать результаты этого опроса.',
 	'ajaxpoll-view-results-before-vote-permission' => 'Вы не можете просмотреть результаты опроса до тех пор, пока не проголосуете.',
 	'ajaxpoll-revoke-vote' => 'Я хочу отменить свой голос',
-	'ajaxpoll-vote-revoked' => 'Вы успешно отменили свой голос.',
+	'ajaxpoll-vote-revoked' => 'Ваш голос был отозван.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Был получен неверный токен, ваш голос не учитывается.',
 	'right-ajaxpoll-vote' => 'Может голосовать в опросах на основе AJAX',
 );
