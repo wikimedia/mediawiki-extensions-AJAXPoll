@@ -694,7 +694,7 @@ $messages['ia'] = array(
 	'ajaxpoll-view-results-permission' => 'Tu non es autorisate a vider le resultatos de iste sondage.',
 	'ajaxpoll-view-results-before-vote-permission' => 'Tu non es autorisate a vider le resultatos de iste sondage ante de haber votate.',
 	'ajaxpoll-revoke-vote' => 'Io vole revocar mi voto',
-	'ajaxpoll-vote-revoked' => 'Tu ha revocate tu voto con successo.',
+	'ajaxpoll-vote-revoked' => 'Tu voto ha essite revocate.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Un indicio incorrecte ha essite recipite, e tu voto es ignorate.',
 	'right-ajaxpoll-vote' => 'Pote votar in sondages a base de AJAX',
 );
