@@ -939,7 +939,7 @@ $messages['mk'] = array(
 	'ajaxpoll-view-results-before-vote-permission' => 'Немате право да го гледате исходот од анкетава пред да гласате.',
 	'ajaxpoll-revoke-vote' => 'Сакам да го повлечам гласот',
 	'ajaxpoll-vote-revoked' => 'Вашиот глас е повлечен.',
-	'ajaxpoll-error-csrf-wrong-token' => 'Добив погрешен жетон. Вашиот глас е занемарен.',
+	'ajaxpoll-error-csrf-wrong-token' => 'Добив погрешна шифра. Вашиот глас е занемарен.',
 	'right-ajaxpoll-vote' => 'Може да гласа на анкети на основа на AJAX.',
 );
 
