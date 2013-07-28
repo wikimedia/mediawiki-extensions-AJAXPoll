@@ -497,6 +497,7 @@ $messages['fa'] = array(
 /** Finnish (suomi)
  * @author Jack Phoenix
  * @author Nike
+ * @author Snidata
  * @author Stryn
  */
 $messages['fi'] = array(
@@ -508,12 +509,15 @@ $messages['fi'] = array(
 	'ajaxpoll-percent-votes' => '$1 % kaikista äänistä',
 	'ajaxpoll-your-vote' => 'Äänestit jo vaihtoehtoa ”$1” $2, voit muuttaa ääntäsi napsauttamalla vastausta alempana',
 	'ajaxpoll-no-vote' => 'Voit äänestää alempana.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Äänestä alapuolelta ole hyvä. Tulokset näytetään kun olet äänestänyt.',
 	'ajaxpoll-info' => '{{PLURAL:$1|Yksi ääni|$1 ääntä}} on annettu siitä lähtien kun tämä äänestys tehtiin, $2.',
 	'ajaxpoll-submitting' => 'Odota hetki, äänesi lähetetään kirjattavaksi.',
 	'ajaxpoll-vote-permission' => 'Sinulla ei ole oikeutta äänestää.',
+	'ajaxpoll-view-results-permission' => 'Sinulla ei ole oikeutta tarkastella kyselyn tuloksia.',
 	'ajaxpoll-view-results-before-vote-permission' => 'Et voi katsella kyselyn tuloksia ennen kuin olet äänestänyt.',
 	'ajaxpoll-revoke-vote' => 'Haluan peruuttaa ääneni',
-	'ajaxpoll-vote-revoked' => 'Peruutit onnistuneesti äänesi.',
+	'ajaxpoll-vote-revoked' => 'Peruutit onnistuneesti äänesi.', # Fuzzy
+	'ajaxpoll-error-csrf-wrong-token' => 'Saatu tunniste oli virheellinen ja äänesi hylättiin.',
 	'right-ajaxpoll-vote' => 'Voi äänestää AJAX-pohjaisissa kyselyissä',
 );
 
@@ -632,6 +636,14 @@ $messages['he'] = array(
  */
 $messages['hi'] = array(
 	'ajaxpoll-no-vote' => 'कृपया नीचे वोट दें।',
+);
+
+/** Croatian (hrvatski)
+ * @author Roberta F.
+ */
+$messages['hr'] = array(
+	'ajaxpoll-revoke-vote' => 'Želim poništiti svoj glas',
+	'ajaxpoll-vote-revoked' => 'Vaš je glas poništen.',
 );
 
 /** Upper Sorbian (hornjoserbsce)
@@ -941,6 +953,28 @@ $messages['mk'] = array(
 	'ajaxpoll-vote-revoked' => 'Вашиот глас е повлечен.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Добив погрешна шифра. Вашиот глас е занемарен.',
 	'right-ajaxpoll-vote' => 'Може да гласа на анкети на основа на AJAX.',
+);
+
+/** Marathi (मराठी)
+ * @author V.narsikar
+ */
+$messages['mr'] = array(
+	'ajaxpoll-tracking-category' => 'मतदानासहित असलेली पाने',
+	'ajaxpoll-vote-update' => 'आपले मत अद्यतन करण्यात आलेले आहे.',
+	'ajaxpoll-vote-add' => 'आपले मत जोडल्या गेले आहे.',
+	'ajaxpoll-vote-error' => 'आपले मतावर प्रक्रिया करण्यात अडचण आली आहे, कृपया पुन्हा प्रयत्न करा.',
+	'ajaxpoll-percent-votes' => 'सर्व मतांच्या $1%',
+	'ajaxpoll-your-vote' => '$2 वर "$1"साठी आपण मत नोंदविले.आपण आपले मतदान, खालील दुसरे कारण निवडून, बदलू शकता.',
+	'ajaxpoll-no-vote' => 'कृपया खाली मतदान करा.',
+	'ajaxpoll-no-vote-results-after-voting' => 'कृपया खाली मतदान करा.आपण मत दिल्यावर निकाल दाखविल्या जातील.',
+	'ajaxpoll-info' => '$2 वर मतदान सुरू केल्यापासून {{PLURAL:$1|एक मत होते|$1 मते होती}}',
+	'ajaxpoll-submitting' => 'कृपया थांबा. आपले मत सादर करीत आहे.',
+	'ajaxpoll-vote-permission' => 'आपण मतदानास अपात्र आहात.',
+	'ajaxpoll-view-results-permission' => 'या मतदानाचे निकाल पाहण्यास आपण अपात्र आहात.',
+	'ajaxpoll-view-results-before-vote-permission' => 'आपण मतदान केल्याशिवाय या मतदानाचे निकाल पाहण्यास आपण अपात्र आहात.',
+	'ajaxpoll-revoke-vote' => 'मला माझे मतदान रद्द करावयाचे आहे.',
+	'ajaxpoll-vote-revoked' => 'आपले मतदान रद्द करण्यात आले आहे.',
+	'ajaxpoll-error-csrf-wrong-token' => 'चुकिचे टोकन मिळाल्यामुळे आपले मत दुर्लक्षित केल्या गेले आहे.',
 );
 
 /** Malay (Bahasa Melayu)
