@@ -29,7 +29,7 @@ class AJAXPoll {
 	}
 
 	# The callback function for converting the input text to HTML output
-	static function AJAXPollRender( $input, $args = array(), Parser $parser ) {
+	static function AJAXPollRender( $input, $args = array(), Parser $parser, $frame ) {
 		global $wgUser, $wgOut, $wgTitle, $wgScriptPath, $wgUseAjax;
 
 		$parser->disableCache();
@@ -42,11 +42,15 @@ class AJAXPoll {
 		}
 
 		// ID of the poll
-		$id = strtoupper( md5( $input ) );
+		if ( isset( $args["id"] ) ) {
+			$id = $args["id"];
+		} else {
+			$id = strtoupper( md5( $input ) );
+		}
 
-		$par = new Parser();
-		$input = $par->parse( $input, $wgTitle, $wgOut->parserOptions() );
-		$input = trim( strip_tags( $input->getText() ) );
+		// get the input
+		$input = $parser->recursiveTagParse( $input, $frame );
+		$input = trim( strip_tags( $input ) );
 		$lines = explode( "\n", trim( $input ) );
 
 		// compatibility for non-ajax requests - just in case
