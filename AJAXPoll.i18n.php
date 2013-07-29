@@ -1446,6 +1446,13 @@ $messages['uk'] = array(
 	'right-ajaxpoll-vote' => 'Можете голосувати в опитуваннях на основі AJAX',
 );
 
+/** Vietnamese (Tiếng Việt)
+ * @author Baonguyen21022003
+ */
+$messages['vi'] = array(
+	'ajaxpoll-your-vote' => 'Bạn đã bỏ phiếu cho " $1 " trên  $2 . Bạn có thể thay đổi phiếu bầu của bạn bằng cách nhấp vào một câu trả lời khác nhau dưới đây.',
+);
+
 /** Chinese (中文)
  * @author 許瑜真 (Yuchen Hsu/KaurJmeb)
  */
