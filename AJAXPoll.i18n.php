@@ -1448,9 +1448,10 @@ $messages['uk'] = array(
 
 /** Vietnamese (Tiếng Việt)
  * @author Baonguyen21022003
+ * @author Minh Nguyen
  */
 $messages['vi'] = array(
-	'ajaxpoll-your-vote' => 'Bạn đã bỏ phiếu cho " $1 " trên  $2 . Bạn có thể thay đổi phiếu bầu của bạn bằng cách nhấp vào một câu trả lời khác nhau dưới đây.',
+	'ajaxpoll-your-vote' => 'Bạn đã bỏ phiếu cho “$1” vào $2. Để thay đổi phiếu bầu của bạn, nhập một câu trả lời khác dưới đây.',
 );
 
 /** Chinese (中文)
