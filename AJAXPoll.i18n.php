@@ -193,11 +193,15 @@ $messages['bcl'] = array(
 	'ajaxpoll-percent-votes' => '$1% kan gabos na mga boto',
 	'ajaxpoll-your-vote' => 'Ika nakapagboto na para sa "$1" nin $2, ika mapuwedeng makapagliwat kan saimong boto sa paagi nin pag-klik kan sarong simbag sa ibaba.',
 	'ajaxpoll-no-vote' => 'Pakiboto tabi sa ibaba.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Tabi magboto sa ibaba. An mga resulta ipapahiling kunsoarin na ika nakapagboto na.',
 	'ajaxpoll-info' => 'Igwa nin {{PLURAL:$1|sarong boto|mga $1 boto}} magpoon na an pirilian pinagmukna kan $2.',
 	'ajaxpoll-submitting' => 'Pakihalat, pinagsusumite pa an saimong boto.',
 	'ajaxpoll-vote-permission' => 'Ika dae puwedeng makapagboto.',
+	'ajaxpoll-view-results-permission' => 'Ika dae tituladong magtanaw kan mga resulta kaining pirilian.',
+	'ajaxpoll-view-results-before-vote-permission' => 'Ika dae titutladong magtanaw kan mga resulta kaining pirilian bago pa man na ika nakapagboto na.',
 	'ajaxpoll-revoke-vote' => 'Gusto kong bawion an sakuyang boto',
-	'ajaxpoll-vote-revoked' => 'Ika matrayumpong pinagbawi an saimong boto.',
+	'ajaxpoll-vote-revoked' => 'An saimong boto pinagbawi tabi.',
+	'ajaxpoll-error-csrf-wrong-token' => 'Sarong sala na paduos na naresibe, asin an saimong boto pinagbalewala.',
 	'right-ajaxpoll-vote' => 'Makakaboto sa mga nakabaseng pirilian kan Ajax',
 );
 
