@@ -979,6 +979,7 @@ $messages['mr'] = array(
 	'ajaxpoll-revoke-vote' => 'मला माझे मतदान रद्द करावयाचे आहे.',
 	'ajaxpoll-vote-revoked' => 'आपले मतदान रद्द करण्यात आले आहे.',
 	'ajaxpoll-error-csrf-wrong-token' => 'चुकिचे टोकन मिळाल्यामुळे आपले मत दुर्लक्षित केल्या गेले आहे.',
+	'right-ajaxpoll-vote' => 'AJAX-आधारीत निवडणुकांमध्ये मतदान करू शकता',
 );
 
 /** Malay (Bahasa Melayu)
