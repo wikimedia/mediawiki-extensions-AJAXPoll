@@ -499,6 +499,7 @@ $messages['fa'] = array(
 );
 
 /** Finnish (suomi)
+ * @author Harriv
  * @author Jack Phoenix
  * @author Nike
  * @author Snidata
@@ -520,7 +521,7 @@ $messages['fi'] = array(
 	'ajaxpoll-view-results-permission' => 'Sinulla ei ole oikeutta tarkastella kyselyn tuloksia.',
 	'ajaxpoll-view-results-before-vote-permission' => 'Et voi katsella kyselyn tuloksia ennen kuin olet äänestänyt.',
 	'ajaxpoll-revoke-vote' => 'Haluan peruuttaa ääneni',
-	'ajaxpoll-vote-revoked' => 'Peruutit onnistuneesti äänesi.', # Fuzzy
+	'ajaxpoll-vote-revoked' => 'Äänesi on peruttu.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Saatu tunniste oli virheellinen ja äänesi hylättiin.',
 	'right-ajaxpoll-vote' => 'Voi äänestää AJAX-pohjaisissa kyselyissä',
 );
@@ -718,6 +719,7 @@ $messages['ia'] = array(
 /** Indonesian (Bahasa Indonesia)
  * @author Anashir
  * @author Farras
+ * @author Rv77ax
  */
 $messages['id'] = array(
 	'ajaxpoll-desc' => 'Memungkinkan jajak pendapat berbasis AJAX dengan tag <tt>&lt;poll&gt;</tt>',
@@ -728,11 +730,15 @@ $messages['id'] = array(
 	'ajaxpoll-percent-votes' => '$1% dari semua suara',
 	'ajaxpoll-your-vote' => 'Anda sudah memberi suara untuk "$1" pada $2. Anda bisa mengubah suara Anda dengan mengklik jawaban di bawah.',
 	'ajaxpoll-no-vote' => 'Silakan beri suara di bawah.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Silakan berikan suara. Hasil akan ditampilkan setelah Anda memberikan suara.',
 	'ajaxpoll-info' => 'Ada {{PLURAL:$1|satu suara|$1 suara}} sejak jajak pendapat ini dibuat pada $2.',
 	'ajaxpoll-submitting' => 'Silakan tunggu. Sedang mengirimkan suara Anda.',
 	'ajaxpoll-vote-permission' => 'Anda tidak dapat memberikan suara.',
+	'ajaxpoll-view-results-permission' => 'Anda tidak berhak untuk melihat hasil jajak pendapat ini.',
+	'ajaxpoll-view-results-before-vote-permission' => 'Anda tidak berhak untuk melihat hasil jajak pendapat ini sebelum Anda memberikan suara.',
 	'ajaxpoll-revoke-vote' => 'Saya ingin membatalkan suara saya',
-	'ajaxpoll-vote-revoked' => 'Anda berhasil membatalkan suara Anda.',
+	'ajaxpoll-vote-revoked' => 'Pungutan suara anda telah dibatalkan.',
+	'ajaxpoll-error-csrf-wrong-token' => 'Sebuah token yang salah telah diterima, dan suara Anda diabaikan.',
 	'right-ajaxpoll-vote' => 'Dapat memberi suara di jajak pendapat berbasis AJAX',
 );
 
