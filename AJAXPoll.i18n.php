@@ -264,6 +264,7 @@ $messages['br'] = array(
 
 /** Catalan (català)
  * @author Pitort
+ * @author Qllach
  */
 $messages['ca'] = array(
 	'ajaxpoll-desc' => "Permet les enquestes basades en AJAX amb l'etiqueta <tt>&lt;poll&gt;</tt>",
@@ -278,7 +279,7 @@ $messages['ca'] = array(
 	'ajaxpoll-submitting' => 'Espereu si us plau, estem precessant el vostre vot.',
 	'ajaxpoll-vote-permission' => 'No teniu dret a vot.',
 	'ajaxpoll-revoke-vote' => 'Vull anul·lar el meu vot',
-	'ajaxpoll-vote-revoked' => 'Heu anul·lat el vostre vot',
+	'ajaxpoll-vote-revoked' => 'El vostre vot ha estat anul·lat.',
 	'right-ajaxpoll-vote' => 'Podeu votar a les enquestes basades en AJAX',
 );
 
