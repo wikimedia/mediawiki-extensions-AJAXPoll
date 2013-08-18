@@ -225,7 +225,7 @@ $messages['be-tarask'] = array(
 	'ajaxpoll-view-results-permission' => 'Вы ня можаце праглядаць вынікі гэтага апытаньня.',
 	'ajaxpoll-view-results-before-vote-permission' => 'Вы ня можаце праглядаць вынікі гэтага апытаньня, пакуль не прагаласуеце.',
 	'ajaxpoll-revoke-vote' => 'Я хачу адклікаць мой голас',
-	'ajaxpoll-vote-revoked' => 'Вы пасьпяхова адклікалі ваш голас.',
+	'ajaxpoll-vote-revoked' => 'Ваш голас быў адкліканы.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Атрыманы няслушны токен, ваш голас ня ўлічаны.',
 	'right-ajaxpoll-vote' => 'магчымасьць галасаваць у AJAX-апытаньнях',
 );
@@ -888,7 +888,7 @@ $messages['lb'] = array(
 	'ajaxpoll-view-results-permission' => "Dir sidd net berechtegt fir d'Resultater vun dëser Ofstëmmung ze kucken.",
 	'ajaxpoll-view-results-before-vote-permission' => "Dir sidd net berechtegt fir d'Resultater vun dëser Ofstëmmung ze kucken ier Dir ofgestëmmt hutt.",
 	'ajaxpoll-revoke-vote' => 'Ech wëll meng Stëmm zréckzéien',
-	'ajaxpoll-vote-revoked' => 'Dir hutt Är Stëmm zréckgezunn.',
+	'ajaxpoll-vote-revoked' => 'Är Stëmm gouf zréckgeruff.',
 	'ajaxpoll-error-csrf-wrong-token' => 'E falschen Token koum un an Är Stëmm gouf ignoréiert.',
 	'right-ajaxpoll-vote' => 'Däerf bäi AJAX-baséierten Ëmfroe matmaachen',
 );
