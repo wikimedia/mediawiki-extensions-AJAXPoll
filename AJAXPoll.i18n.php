@@ -135,7 +135,7 @@ $messages['ast'] = array(
 	'ajaxpoll-view-results-permission' => "Nun tien permisu pa ver los resultaos d'esta encuesta.",
 	'ajaxpoll-view-results-before-vote-permission' => "Nun tien permisu pa ver los resultaos d'esta encuesta antes de votar.",
 	'ajaxpoll-revoke-vote' => 'Quiero anular el mio votu',
-	'ajaxpoll-vote-revoked' => 'Anulasti el to votu correutamente.',
+	'ajaxpoll-vote-revoked' => "El to votu s'anuló.",
 	'ajaxpoll-error-csrf-wrong-token' => "Recibióse un pase equivocáu, y nun se cuenta'l so votu.",
 	'right-ajaxpoll-vote' => "Pue votar nes encuestes basaes n'AJAX",
 );
