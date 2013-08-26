@@ -245,6 +245,7 @@ $messages['bn'] = array(
 );
 
 /** Breton (brezhoneg)
+ * @author Fohanno
  * @author Fulup
  * @author Y-M D
  */
@@ -259,6 +260,8 @@ $messages['br'] = array(
 	'ajaxpoll-info' => "{{PLURAL:$1|vot|$1 vot}} zo bet abaoe ma'z eo bet krouet ar sontadeg war $2.",
 	'ajaxpoll-submitting' => "Mar plij gortozit, emeur oc'h ober war-dro ho vot.",
 	'ajaxpoll-vote-permission' => "Ne c'hellit ket votiñ.",
+	'ajaxpoll-view-results-permission' => "N'oc'h ket aotreet da welet disoc'hoù ar sontadeg-mañ.",
+	'ajaxpoll-view-results-before-vote-permission' => "N'oc'h ket aotreet da welet disoc'hoù ar sontadeg-mañ a-raok bezañ votet.",
 	'ajaxpoll-revoke-vote' => "C'hoant am eus da zistreiñ war ar pezh am eus votet",
 );
 
@@ -1099,6 +1102,7 @@ $messages['oc'] = array(
 	'ajaxpoll-tracking-category' => 'Paginas amb un sondatge',
 	'ajaxpoll-vote-update' => 'Vòstre vòte es estat mes a jorn.',
 	'ajaxpoll-vote-add' => 'Vòstre vòte es estat comptat.',
+	'ajaxpoll-percent-votes' => '$1% de totes los vòtes',
 );
 
 /** Oriya (ଓଡ଼ିଆ)
