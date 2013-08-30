@@ -257,12 +257,15 @@ $messages['br'] = array(
 	'ajaxpoll-percent-votes' => '$1% eus hollad ar mouezhioù',
 	'ajaxpoll-your-vote' => 'Votet ho peus dija evit "$1" d\'an $2, tu \'zo deoc\'h kemmañ ho vot en ur klikañ war unan eus ar respontoù da heul.',
 	'ajaxpoll-no-vote' => 'Mar plij votit amañ dindan.',
+	'ajaxpoll-no-vote-results-after-voting' => "Votit amañ dindan, mar plij. Diskouezet e vo an disoc'hoù pa p'ho votet.",
 	'ajaxpoll-info' => "{{PLURAL:$1|vot|$1 vot}} zo bet abaoe ma'z eo bet krouet ar sontadeg war $2.",
 	'ajaxpoll-submitting' => "Mar plij gortozit, emeur oc'h ober war-dro ho vot.",
 	'ajaxpoll-vote-permission' => "Ne c'hellit ket votiñ.",
 	'ajaxpoll-view-results-permission' => "N'oc'h ket aotreet da welet disoc'hoù ar sontadeg-mañ.",
 	'ajaxpoll-view-results-before-vote-permission' => "N'oc'h ket aotreet da welet disoc'hoù ar sontadeg-mañ a-raok bezañ votet.",
 	'ajaxpoll-revoke-vote' => "C'hoant am eus da zistreiñ war ar pezh am eus votet",
+	'ajaxpoll-vote-revoked' => 'Tennet eo bet ho vot.',
+	'right-ajaxpoll-vote' => "A c'hall votiñ er sontadegoù diazezet war AJAX",
 );
 
 /** Catalan (català)
@@ -528,6 +531,30 @@ $messages['fi'] = array(
 	'ajaxpoll-vote-revoked' => 'Äänesi on peruttu.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Saatu tunniste oli virheellinen ja äänesi hylättiin.',
 	'right-ajaxpoll-vote' => 'Voi äänestää AJAX-pohjaisissa kyselyissä',
+);
+
+/** Faroese (føroyskt)
+ * @author EileenSanda
+ */
+$messages['fo'] = array(
+	'ajaxpoll-desc' => 'Loyv AJAX-grundaðum atkvøðugreiðslum við <tt>&lt;poll&gt;</tt> lyklaorði',
+	'ajaxpoll-tracking-category' => 'Síður við atkvøðugreiðslu',
+	'ajaxpoll-vote-update' => 'Tín atkvøða er blivin dagførd.',
+	'ajaxpoll-vote-add' => 'Tú hevur nú atkvøtt.',
+	'ajaxpoll-vote-error' => 'Tað var ein trupulleiki við viðgerðini av tínari atkvøðu, vinarliga royn aftur.',
+	'ajaxpoll-percent-votes' => '$1% av øllum atkvøðum',
+	'ajaxpoll-your-vote' => 'Tú atkvøddi fyri "$1" hin $2. Tú kanst broyta tína atkvøðu við at klikkja á eitt annað svar niðanfyri.',
+	'ajaxpoll-no-vote' => 'Vinarliga atkvøð niðanfyri.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Vinarliga atkvøð niðanfyri. Úrslitini verða víst, tá tú hevur atkvøtt.',
+	'ajaxpoll-info' => 'Tað {{PLURAL:$1|var ein atøða|vóru $1 atkvøður}} síðan atkvøðugreiðslan varð upprættað hin $2.',
+	'ajaxpoll-submitting' => 'Vinarliga bíða, meðan tín atkvøða verður send inn.',
+	'ajaxpoll-vote-permission' => 'Tú hevur ikki atkvøðurætt.',
+	'ajaxpoll-view-results-permission' => 'Tú hevur ikki rætt til at síggja úrslitini av hesi atkvøðugreiðsluni.',
+	'ajaxpoll-view-results-before-vote-permission' => 'Tú hevur ikki loyvi til at síggja úrslitini av hesi atkvøðugreiðslu, fyrr enn tú hevur atkvøtt.',
+	'ajaxpoll-revoke-vote' => 'Eg ynski at taka mína atkvøðu aftur',
+	'ajaxpoll-vote-revoked' => 'Tín atkvøða er tikin aftur.',
+	'ajaxpoll-error-csrf-wrong-token' => 'Eitt skeivt tekn varð móttikið, og tín atkvøða er ikki skrásett.',
+	'right-ajaxpoll-vote' => 'Kann atkvøða í atkvøðugreiðslum, sum byggja á AJAX',
 );
 
 /** French (français)
@@ -1103,6 +1130,12 @@ $messages['oc'] = array(
 	'ajaxpoll-vote-update' => 'Vòstre vòte es estat mes a jorn.',
 	'ajaxpoll-vote-add' => 'Vòstre vòte es estat comptat.',
 	'ajaxpoll-percent-votes' => '$1% de totes los vòtes',
+	'ajaxpoll-no-vote' => 'Mercé de votar çaijós.',
+	'ajaxpoll-submitting' => 'Pacientatz pendent lo mandadís de vòstre vòte...',
+	'ajaxpoll-vote-permission' => 'Podètz pas votar.',
+	'ajaxpoll-revoke-vote' => 'Vòli anullar mon vòte',
+	'ajaxpoll-vote-revoked' => 'Vòstre vòte es estat revocat.',
+	'right-ajaxpoll-vote' => 'Pòt votar dins de sondatges basats sus AJAX',
 );
 
 /** Oriya (ଓଡ଼ିଆ)
