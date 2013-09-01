@@ -874,8 +874,10 @@ $messages['ko'] = array(
 	'ajaxpoll-submitting' => '투표를 제출하는 동안 잠시 기다려주세요.',
 	'ajaxpoll-vote-permission' => '투표를 받을 수 없습니다.',
 	'ajaxpoll-view-results-permission' => '당신은 이 투표의 결과를 볼 자격이 없습니다.',
+	'ajaxpoll-view-results-before-vote-permission' => '투표하기 전까지는 이 투표의 결과를 볼 권한이 없습니다.',
 	'ajaxpoll-revoke-vote' => '투표를 취소합니다',
 	'ajaxpoll-vote-revoked' => '성공적으로 투표를 취소했습니다.',
+	'ajaxpoll-error-csrf-wrong-token' => '잘못된 토큰이 전달되어, 투표가 무시되었습니다.',
 	'right-ajaxpoll-vote' => 'AJAX 기반 설문 조사에 투표할 수 있음',
 );
 
@@ -1235,8 +1237,10 @@ $messages['pt'] = array(
 
 /** Brazilian Portuguese (português do Brasil)
  * @author Daemorris
+ * @author Fúlvio
  */
 $messages['pt-br'] = array(
+	'ajaxpoll-desc' => 'Permite enquetes baseadas em AJAX usando a etiqueta <tt>&lt;poll&gt;</tt>',
 	'ajaxpoll-vote-update' => 'Seu voto foi atualizado.',
 	'ajaxpoll-vote-add' => 'Seu voto foi adicionado.',
 	'ajaxpoll-vote-error' => 'Houve um problema com o processamento de seu voto, por favor tente novamente.',
