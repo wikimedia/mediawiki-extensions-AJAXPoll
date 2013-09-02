@@ -265,6 +265,7 @@ $messages['br'] = array(
 	'ajaxpoll-view-results-before-vote-permission' => "N'oc'h ket aotreet da welet disoc'hoù ar sontadeg-mañ a-raok bezañ votet.",
 	'ajaxpoll-revoke-vote' => "C'hoant am eus da zistreiñ war ar pezh am eus votet",
 	'ajaxpoll-vote-revoked' => 'Tennet eo bet ho vot.',
+	'ajaxpoll-error-csrf-wrong-token' => 'Resevet ez eus bet ur jedouer fall ha dianavezet eo bet ho vot.',
 	'right-ajaxpoll-vote' => "A c'hall votiñ er sontadegoù diazezet war AJAX",
 );
 
