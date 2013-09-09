@@ -1558,6 +1558,7 @@ $messages['zh-hans'] = array(
 );
 
 /** Traditional Chinese (中文（繁體）‎)
+ * @author Justincheng12345
  * @author Simon Shek
  */
 $messages['zh-hant'] = array(
@@ -1576,7 +1577,7 @@ $messages['zh-hant'] = array(
 	'ajaxpoll-view-results-permission' => '你無權查看此投票的結果。',
 	'ajaxpoll-view-results-before-vote-permission' => '你無權在你未投票前查看此投票的結果。',
 	'ajaxpoll-revoke-vote' => '我想撤銷我的投票',
-	'ajaxpoll-vote-revoked' => '您已成功撤銷您的投票。',
+	'ajaxpoll-vote-revoked' => '您的投票已撤銷。',
 	'ajaxpoll-error-csrf-wrong-token' => '收到錯誤的令牌，你的投票會被忽略。',
 	'right-ajaxpoll-vote' => '可在基於AJAX的投票區投票',
 );
