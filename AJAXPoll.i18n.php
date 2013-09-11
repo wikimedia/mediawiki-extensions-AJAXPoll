@@ -1220,6 +1220,7 @@ $messages['ps'] = array(
 );
 
 /** Portuguese (português)
+ * @author Cainamarques
  * @author Malafaya
  * @author SandroHc
  */
@@ -1236,28 +1237,38 @@ $messages['pt'] = array(
 	'ajaxpoll-info' => '{{PLURAL:$1|Um voto|$1 votos}} desde a criação da votação em $2.',
 	'ajaxpoll-submitting' => 'Por favor aguarde, enviando o seu voto.',
 	'ajaxpoll-vote-permission' => 'Não se encontra habilitado a votar.',
-	'ajaxpoll-view-results-permission' => 'Não se encontra habilitado a ver os resultados deste inquérito.',
-	'ajaxpoll-view-results-before-vote-permission' => 'Não se encontra habilitado a ver os resultados deste inquérito antes de votar.',
+	'ajaxpoll-view-results-permission' => 'Não se encontra habilitado a ver os resultados desta votação.',
+	'ajaxpoll-view-results-before-vote-permission' => 'Não se encontra habilitado a ver os resultados desta votação antes de votar.',
 	'ajaxpoll-revoke-vote' => 'Quero revogar o meu voto',
-	'ajaxpoll-vote-revoked' => 'Revogou o seu voto com sucesso.',
+	'ajaxpoll-vote-revoked' => 'Seu voto foi revogado.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Um token errado foi recebido, e o seu voto foi ignorado.',
-	'right-ajaxpoll-vote' => 'Pode votar em inquéritos baseados em AJAX',
+	'right-ajaxpoll-vote' => 'Pode votar em votações baseadas em AJAX',
 );
 
 /** Brazilian Portuguese (português do Brasil)
+ * @author Cainamarques
  * @author Daemorris
  * @author Fúlvio
  */
 $messages['pt-br'] = array(
-	'ajaxpoll-desc' => 'Permite enquetes baseadas em AJAX usando a etiqueta <tt>&lt;poll&gt;</tt>',
+	'ajaxpoll-desc' => 'Permite votações baseadas em AJAX usando a etiqueta <tt>&lt;poll&gt;</tt>',
+	'ajaxpoll-tracking-category' => 'Páginas com votação',
 	'ajaxpoll-vote-update' => 'Seu voto foi atualizado.',
 	'ajaxpoll-vote-add' => 'Seu voto foi adicionado.',
 	'ajaxpoll-vote-error' => 'Houve um problema com o processamento de seu voto, por favor tente novamente.',
 	'ajaxpoll-percent-votes' => '$1% de todos votos',
-	'ajaxpoll-your-vote' => 'Vocâ já votou para "$1" em $2, você pode alterar seu voto clicando em uma opção abaixo.',
+	'ajaxpoll-your-vote' => 'Você já votou para "$1" em $2, você pode alterar seu voto escolhendo outra opção abaixo.',
 	'ajaxpoll-no-vote' => 'Por favor vote abaixo.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Por favor vote abaixo. Os resultados serão mostrados quando tiver votado.',
 	'ajaxpoll-info' => '{{PLURAL:$1|Um voto|$1 votos}} desde a criação da votação em $2.',
-	'ajaxpoll-submitting' => 'Por favor aguarde, enviando sua opção.',
+	'ajaxpoll-submitting' => 'Por favor aguarde, enviando seu voto.',
+	'ajaxpoll-vote-permission' => 'Você não está habilitado a votar.',
+	'ajaxpoll-view-results-permission' => 'Você não está habilitado a ver os resultados desta votação.',
+	'ajaxpoll-view-results-before-vote-permission' => 'Você não está habilitado a ver os resultados desta votação antes de ter votado.',
+	'ajaxpoll-revoke-vote' => 'Quero revogar o meu voto',
+	'ajaxpoll-vote-revoked' => 'Seu voto foi revogado.',
+	'ajaxpoll-error-csrf-wrong-token' => "Um ''token'' errado foi recebido e o seu voto foi ignorado.",
+	'right-ajaxpoll-vote' => 'Pode votar em votações baseadas em AJAX',
 );
 
 /** Romanian (română)
