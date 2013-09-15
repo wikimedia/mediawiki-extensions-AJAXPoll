@@ -40,7 +40,9 @@ $messages['en'] = array(
  */
 $messages['qqq'] = array(
 	'ajaxpoll-desc' => '{{desc|name=AJAX Poll|url=http://www.mediawiki.org/wiki/Extension:AJAX_Poll}}',
-	'ajaxpoll-tracking-category' => 'The name of a category for all pages which use the &lt;poll&gt; parser extension tag. The category is automatically added unless the feature is disabled.',
+	'ajaxpoll-tracking-category' => 'The name of a category for all pages which use the <code><nowiki><poll></nowiki></code> parser extension tag.
+
+The category is automatically added unless the feature is disabled.',
 	'ajaxpoll-vote-update' => 'System response that the vote was successfully updated.
 
 If error, the following message is used:
@@ -102,6 +104,7 @@ $messages['af'] = array(
 );
 
 /** Arabic (العربية)
+ * @author Asaifm
  * @author Meno25
  * @author Mido
  * @author OsamaK
@@ -110,10 +113,13 @@ $messages['af'] = array(
 $messages['ar'] = array(
 	'ajaxpoll-vote-update' => 'تم تحديث صوتك.',
 	'ajaxpoll-vote-add' => 'تم إضافة تصويتك',
+	'ajaxpoll-percent-votes' => '$1% من جميع الأصوات',
+	'ajaxpoll-no-vote' => 'الرجاء التصويت أدناه.',
 	'ajaxpoll-info' => 'هناك {{PLURAL:$1||تصويتا واحدا|تصويتين|$1 تصويت|$1 تصويتا|$1 تصويت}} منذ بداية التصويت في $2.',
 	'ajaxpoll-submitting' => 'من فضلك انتظر، يرسل صوتك.',
+	'ajaxpoll-vote-permission' => 'ليس لك حق التصويت.',
 	'ajaxpoll-revoke-vote' => 'أريد سحب تصويتي',
-	'ajaxpoll-vote-revoked' => 'أنت سحبت صوتك بنجاح.',
+	'ajaxpoll-vote-revoked' => 'تم إلغاء تصويتك بنجاح.',
 );
 
 /** Asturian (asturianu)
