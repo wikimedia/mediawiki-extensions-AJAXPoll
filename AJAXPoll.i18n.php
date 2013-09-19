@@ -1030,6 +1030,7 @@ $messages['mr'] = array(
 
 /** Malay (Bahasa Melayu)
  * @author Anakmalaysia
+ * @author Tedbundyjr
  */
 $messages['ms'] = array(
 	'ajaxpoll-desc' => 'Membolehkan tinjauan berasaskan AJAX dengan teg <tt>&lt;poll&gt;</tt>',
@@ -1047,7 +1048,7 @@ $messages['ms'] = array(
 	'ajaxpoll-view-results-permission' => 'Anda tidak diberi izin untuk melihat hasil pengundian tinjauan pada ini.',
 	'ajaxpoll-view-results-before-vote-permission' => 'Anda tidak diberi izin untuk melihat hasil pengundian tinjauan pada ini sebelum anda mengundi.',
 	'ajaxpoll-revoke-vote' => 'Saya ingin menarik balik undian saya',
-	'ajaxpoll-vote-revoked' => 'Anda berjaya menarik balik undian anda.',
+	'ajaxpoll-vote-revoked' => 'Undi anda telah dibatalkan.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Token yang salah diterima, maka undian anda terpaksa diketepikan.',
 	'right-ajaxpoll-vote' => 'Boleh mengundi dalam tinjauan berasaskan AJAX',
 );
