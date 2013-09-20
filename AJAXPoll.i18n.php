@@ -1293,7 +1293,7 @@ $messages['ro'] = array(
 	'ajaxpoll-submitting' => 'Vă rugăm să așteptați, votul dumneavoastră se trimite.',
 	'ajaxpoll-vote-permission' => 'Nu aveți drept de vot.',
 	'ajaxpoll-revoke-vote' => 'Vreau să anulez votul meu',
-	'ajaxpoll-vote-revoked' => 'V-ați anulat cu succes votul.',
+	'ajaxpoll-vote-revoked' => 'Votul dumneavoastră a fost anulat.',
 	'right-ajaxpoll-vote' => 'Puteți vota în chestionare bazate pe AJAX',
 );
 
