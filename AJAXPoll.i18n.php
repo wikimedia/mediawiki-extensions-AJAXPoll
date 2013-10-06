@@ -861,7 +861,7 @@ $messages['ka'] = array(
 	'ajaxpoll-submitting' => 'გთხოვთ, მოიცადეთ თქვენი ხმა მუშავდება.',
 	'ajaxpoll-vote-permission' => 'თქვენ არ შეგიძლიათ ხმის მიცემა.',
 	'ajaxpoll-revoke-vote' => 'მე მინდა ჩემი ხმის გაუქმება',
-	'ajaxpoll-vote-revoked' => 'თქვენ წარმატებით გააუქმეთ თქვენი ხმა.',
+	'ajaxpoll-vote-revoked' => 'თქვენი ხმა გაუქმებულია.',
 );
 
 /** Korean (한국어)
