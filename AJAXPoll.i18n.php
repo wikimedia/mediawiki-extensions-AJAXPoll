@@ -163,7 +163,7 @@ $messages['azb'] = array(
 	'ajaxpoll-submitting' => 'لوطفاً دؤزون، سیزین سسینیز گؤندریلیر.',
 	'ajaxpoll-vote-permission' => 'سیزین سس وئرمک حاقینیز یوخدور.',
 	'ajaxpoll-revoke-vote' => 'من سسیمی گئری آلماق ایستیرم',
-	'ajaxpoll-vote-revoked' => 'سیزین اوغورلا سسینیز گئری آلدینیز.',
+	'ajaxpoll-vote-revoked' => 'سیزین اوغورلا سسینیز گئری آلدینیز.', # Fuzzy
 	'right-ajaxpoll-vote' => 'AJAX-ی دایانان سس وئرمه‌لرده سس وئره بیلر',
 );
 
@@ -183,7 +183,7 @@ $messages['ba'] = array(
 	'ajaxpoll-submitting' => 'Зинһар, һеҙҙең тауыш тураһында мәғлүмәт тапшырылғанын көтөгөз...',
 	'ajaxpoll-vote-permission' => 'Һеҙҙең тауыш биреү хоҡуғы юҡ.',
 	'ajaxpoll-revoke-vote' => 'Мин тауышымды кире алырға теләйем',
-	'ajaxpoll-vote-revoked' => 'Һеҙ тауышығыҙҙы кире алдығыҙ.',
+	'ajaxpoll-vote-revoked' => 'Һеҙ тауышығыҙҙы кире алдығыҙ.', # Fuzzy
 	'right-ajaxpoll-vote' => 'AJAX нигеҙендә һорау алыуҙа ҡатнаша алаһығыҙ.',
 );
 
@@ -333,7 +333,7 @@ $messages['da'] = array(
 	'ajaxpoll-submitting' => 'Vent venligst, din stemme bliver afsendt.',
 	'ajaxpoll-vote-permission' => 'Du har ikke ret til at stemme.',
 	'ajaxpoll-revoke-vote' => 'Jeg vil gerne tilbagekalde min stemme',
-	'ajaxpoll-vote-revoked' => 'Du har nu tilbagekaldt din stemme.',
+	'ajaxpoll-vote-revoked' => 'Du har nu tilbagekaldt din stemme.', # Fuzzy
 	'right-ajaxpoll-vote' => 'Kan stemme i AJAX-baserede afstemninger',
 );
 
@@ -377,7 +377,7 @@ $messages['de-formal'] = array(
 	'ajaxpoll-no-vote' => 'Bitte stimmen Sie unten ab.',
 	'ajaxpoll-submitting' => 'Bitte warten Sie kurz. Ihre Stimme wird verarbeitet.',
 	'ajaxpoll-vote-permission' => 'Sie sind nicht stimmberechtigt.',
-	'ajaxpoll-vote-revoked' => 'Sie haben Ihre Stimme erfolgreich widerrufen.',
+	'ajaxpoll-vote-revoked' => 'Sie haben Ihre Stimme erfolgreich widerrufen.', # Fuzzy
 );
 
 /** Zazaki (Zazaki)
@@ -404,7 +404,7 @@ $messages['dsb'] = array(
 	'ajaxpoll-submitting' => 'Pšosym cakaj, twój głos se pśeźěłujo.',
 	'ajaxpoll-vote-permission' => 'Njamóžoš wótgłosowaś.',
 	'ajaxpoll-revoke-vote' => 'Cu swój głos anulěrowaś',
-	'ajaxpoll-vote-revoked' => 'Sy swój głos wuspěšnje anulěrował.',
+	'ajaxpoll-vote-revoked' => 'Sy swój głos wuspěšnje anulěrował.', # Fuzzy
 	'right-ajaxpoll-vote' => 'Na wótgłosowanjach bazěrowanych na AJAX se wobźěliś',
 );
 
@@ -427,7 +427,7 @@ $messages['el'] = array(
 	'ajaxpoll-submitting' => 'Παρακαλώ περιμένετε,η ψήφο σας υποβάλλεται.',
 	'ajaxpoll-vote-permission' => 'Δεν έχετε δικαίωμα να ψηφίσετε.',
 	'ajaxpoll-revoke-vote' => 'Θέλω να ανακαλέσω την ψήφο μου',
-	'ajaxpoll-vote-revoked' => 'Αποσύρατε επιτυχώς την ψήφο σας.',
+	'ajaxpoll-vote-revoked' => 'Αποσύρατε επιτυχώς την ψήφο σας.', # Fuzzy
 	'right-ajaxpoll-vote' => 'Μπορεί να ψηφίσει σε δημοσκοπήσεις βασισμένες σε AJAX',
 );
 
@@ -447,7 +447,7 @@ $messages['eo'] = array(
 	'ajaxpoll-submitting' => 'Bonvolu atendi dum traktado de via baloto.',
 	'ajaxpoll-vote-permission' => 'Vi ne rajtas baloti.',
 	'ajaxpoll-revoke-vote' => 'Mi volas nuligi mian baloton.',
-	'ajaxpoll-vote-revoked' => 'Vi sukcese nuligis vian baloton.',
+	'ajaxpoll-vote-revoked' => 'Vi sukcese nuligis vian baloton.', # Fuzzy
 	'right-ajaxpoll-vote' => 'Povas baloti en enketoj bazitaj sur AJAX',
 );
 
@@ -639,7 +639,7 @@ $messages['gsw'] = array(
 	'ajaxpoll-submitting' => 'Bitte warte e Wyyli. Am Ibermittle vu Dyyre Stimm ...',
 	'ajaxpoll-vote-permission' => 'Du bisch nit stimmbrächtigt.',
 	'ajaxpoll-revoke-vote' => 'Ich wett myy Stimm widerruefe',
-	'ajaxpoll-vote-revoked' => 'Du hesch Dyy Stimm erfolgryych widerruefe.',
+	'ajaxpoll-vote-revoked' => 'Du hesch Dyy Stimm erfolgryych widerruefe.', # Fuzzy
 	'right-ajaxpoll-vote' => 'Cha bi AJAX-gstitze Umfroge abstimme',
 );
 
@@ -705,7 +705,7 @@ $messages['hsb'] = array(
 	'ajaxpoll-submitting' => 'Prošu čakaj, twój hłós so předźěłuje.',
 	'ajaxpoll-vote-permission' => 'Njemóžeš wothłosować.',
 	'ajaxpoll-revoke-vote' => 'Chcu swój hłós anulować',
-	'ajaxpoll-vote-revoked' => 'Sy swój hłós wuspěšnje anulował.',
+	'ajaxpoll-vote-revoked' => 'Sy swój hłós wuspěšnje anulował.', # Fuzzy
 	'right-ajaxpoll-vote' => 'Na wothłosowanjach bazowanych na AJAX so wobdźělić',
 );
 
@@ -726,7 +726,7 @@ $messages['hu'] = array(
 	'ajaxpoll-submitting' => 'Kérlek várj a szavazatod elküldésére.',
 	'ajaxpoll-vote-permission' => 'Nem vagy jogosult szavazni.',
 	'ajaxpoll-revoke-vote' => 'Vissza akarom vonni a szavazatomat',
-	'ajaxpoll-vote-revoked' => 'Sikeresen visszavontad a szavazatodat.',
+	'ajaxpoll-vote-revoked' => 'Sikeresen visszavontad a szavazatodat.', # Fuzzy
 	'right-ajaxpoll-vote' => 'Szavazhat az AJAX alapú közvélemény-kutatásokban',
 );
 
@@ -795,7 +795,7 @@ $messages['is'] = array(
 	'ajaxpoll-view-results-permission' => 'Þú hefur ekki rétt til þess að sjá niðurstöður þessarar skoðanakönnunar.',
 	'ajaxpoll-view-results-before-vote-permission' => 'Þú hefur ekki rétt til þess að sjá niðurstöður þessarar skoðanakönnunar áður en þú hefur kosið.',
 	'ajaxpoll-revoke-vote' => 'Ég vil endurkalla atkvæði mitt.',
-	'ajaxpoll-vote-revoked' => 'Þér tókst að endurkalla atkvæðið þitt.',
+	'ajaxpoll-vote-revoked' => 'Þér tókst að endurkalla atkvæðið þitt.', # Fuzzy
 );
 
 /** Italian (italiano)
@@ -904,7 +904,7 @@ $messages['ksh'] = array(
 	'ajaxpoll-submitting' => 'Ene kleine Momang, Ding Schtemm weed enjedraare.',
 	'ajaxpoll-vote-permission' => 'Do be nit schtemmberääschtesch.',
 	'ajaxpoll-revoke-vote' => 'Esch well ming Schtemm zerökträcke',
-	'ajaxpoll-vote-revoked' => 'Deng Schtemm es zerökjetroke.',
+	'ajaxpoll-vote-revoked' => 'Deng Schtemm es zerökjetroke.', # Fuzzy
 	'right-ajaxpoll-vote' => 'Darf en Afschtemmonge metmaache, di op <i lang="en">AJAX</i> boue',
 );
 
@@ -977,7 +977,7 @@ $messages['map-bms'] = array(
 	'ajaxpoll-submitting' => 'Monggo dienteni, lagi ngirimna swarane Rika.',
 	'ajaxpoll-vote-permission' => 'Rika ora olih melu aweh swara.',
 	'ajaxpoll-revoke-vote' => 'Inyong arep mbatalna swarane inyong.',
-	'ajaxpoll-vote-revoked' => 'Rika wis sukses gole mbatalna swarane Rika.',
+	'ajaxpoll-vote-revoked' => 'Rika wis sukses gole mbatalna swarane Rika.', # Fuzzy
 	'right-ajaxpoll-vote' => 'Teyeng aweh swara nang jajak pendapat basis-AJAX',
 );
 
@@ -1067,7 +1067,7 @@ $messages['mt'] = array(
 	'ajaxpoll-submitting' => 'Jekk jogħġbok stenna, il-vot tiegħek qiegħed jintbagħat.',
 	'ajaxpoll-vote-permission' => "M'għandekx id-dritt tal-vot.",
 	'ajaxpoll-revoke-vote' => 'Nixtieq nirrevoka l-vot tiegħi',
-	'ajaxpoll-vote-revoked' => "Irnexxielek tirrevoka b'suċċess il-vot tiegħek.",
+	'ajaxpoll-vote-revoked' => "Irnexxielek tirrevoka b'suċċess il-vot tiegħek.", # Fuzzy
 );
 
 /** Norwegian Bokmål (norsk bokmål)
@@ -1090,7 +1090,7 @@ $messages['nb'] = array(
 	'ajaxpoll-view-results-permission' => 'Du har ikke rettigheter til å vise resultatene i denne avstemningen.',
 	'ajaxpoll-view-results-before-vote-permission' => 'Du har ikke rettigheter til å vise resultatene av denne avstemningen før du har stemt.',
 	'ajaxpoll-revoke-vote' => 'Jeg vil trekke tilbake stemmen min',
-	'ajaxpoll-vote-revoked' => 'Du har trukket tilbake stemmen din.',
+	'ajaxpoll-vote-revoked' => 'Du har trukket tilbake stemmen din.', # Fuzzy
 );
 
 /** Dutch (Nederlands)
@@ -1129,7 +1129,7 @@ $messages['nl-informal'] = array(
 	'ajaxpoll-your-vote' => 'Je hebt al voor "$1" gestemd op $2. Je kunt je stem wijzigen door hieronder op een antwoord te klikken.',
 	'ajaxpoll-submitting' => 'Een ogenblik geduld. Je stem wordt opgeslagen...',
 	'ajaxpoll-vote-permission' => 'Je kunt niet stemmen.',
-	'ajaxpoll-vote-revoked' => 'Je stem is ingetrokken.',
+	'ajaxpoll-vote-revoked' => 'Je stem is ingetrokken.', # Fuzzy
 );
 
 /** Occitan (occitan)
@@ -1168,7 +1168,7 @@ $messages['or'] = array(
 	'ajaxpoll-submitting' => 'ମତ ଦେବାପାଇଁ ଦୟାକରି ଅପେକ୍ଷା କରନ୍ତୁ।',
 	'ajaxpoll-vote-permission' => 'ଆପଣ ମତ ଦେବାପାଇଁ ହକଦାର ନୁହନ୍ତି।',
 	'ajaxpoll-revoke-vote' => 'ମୁଁ ମୋ ମତ ଫେରାଇନେବାକୁ ଚାହୁଁଛି।',
-	'ajaxpoll-vote-revoked' => 'ଆପଣ ମତ ଫେରାଇନେଲେ।',
+	'ajaxpoll-vote-revoked' => 'ଆପଣ ମତ ଫେରାଇନେଲେ।', # Fuzzy
 	'right-ajaxpoll-vote' => 'ଆଜାକ୍ସ ଆଧାରିତ ମତଦାନରେ ମତ ଦେଇପାରିବେ',
 );
 
@@ -1215,7 +1215,7 @@ $messages['pms'] = array(
 	'ajaxpoll-submitting' => "Për piasì ch'a speta, sò vot a l'é an camin ch'a riva.",
 	'ajaxpoll-vote-permission' => 'It ses pa titolà për voté.',
 	'ajaxpoll-revoke-vote' => 'I veuj revoché mè vot',
-	'ajaxpoll-vote-revoked' => "It l'has revocà da bin tò vot.",
+	'ajaxpoll-vote-revoked' => "It l'has revocà da bin tò vot.", # Fuzzy
 	'right-ajaxpoll-vote' => 'A peul voté ant ij sondagi basà dzora a AJAX',
 );
 
@@ -1362,7 +1362,7 @@ $messages['si'] = array(
 	'ajaxpoll-submitting' => 'කරුණාකර රැදී සිටින්න, ඔබේ මනාපය යොමු කරමින්.',
 	'ajaxpoll-vote-permission' => 'ඔබ මනාප ලබා දීමට සුදුසුකම් ලබා නොමැත.',
 	'ajaxpoll-revoke-vote' => 'මට මගේ මනාපය අස් කර ගන්න අවශ්‍යයි',
-	'ajaxpoll-vote-revoked' => 'මට විසින් ඔබේ මනාපය සාර්ථකව අස් කර ගන්නා ලදී.',
+	'ajaxpoll-vote-revoked' => 'මට විසින් ඔබේ මනාපය සාර්ථකව අස් කර ගන්නා ලදී.', # Fuzzy
 	'right-ajaxpoll-vote' => 'AJAX-පාදක ඡන්ද විමසීම් හී මානාපය දිය හැක',
 );
 
@@ -1432,7 +1432,7 @@ $messages['sw'] = array(
 	'ajaxpoll-submitting' => 'Tafadhali ngoja, inawasilisha kura yako.',
 	'ajaxpoll-vote-permission' => 'Hauna haki ya kupiga kura.',
 	'ajaxpoll-revoke-vote' => 'Nataka kubatilisha kura yangu',
-	'ajaxpoll-vote-revoked' => 'Umefanikiwa kubatilisha kura yako.',
+	'ajaxpoll-vote-revoked' => 'Umefanikiwa kubatilisha kura yako.', # Fuzzy
 );
 
 /** Tamil (தமிழ்)
@@ -1450,7 +1450,7 @@ $messages['ta'] = array(
 	'ajaxpoll-submitting' => 'தயவுசெய்து காத்திருக்கவும், உங்கள் வாக்கு சமர்ப்பிக்கப்படுகிறது.',
 	'ajaxpoll-vote-permission' => 'உங்களுக்கு வாக்களிக்கும் உரிமை இல்லை.',
 	'ajaxpoll-revoke-vote' => 'நான் எனது வாக்கைத் திரும்பப் பெற விரும்புகிறேன்.',
-	'ajaxpoll-vote-revoked' => 'நீங்கள் உங்கள் வாக்கினை வெற்றிகரமாக திரும்பப் பெற்றுள்ளீர்கள்.',
+	'ajaxpoll-vote-revoked' => 'நீங்கள் உங்கள் வாக்கினை வெற்றிகரமாக திரும்பப் பெற்றுள்ளீர்கள்.', # Fuzzy
 );
 
 /** Tagalog (Tagalog)
@@ -1469,7 +1469,7 @@ $messages['tl'] = array(
 	'ajaxpoll-submitting' => 'Pakihintay, ipinapasa ang boto mo.',
 	'ajaxpoll-vote-permission' => 'Hindi ka nabigyan ng karapatan upang makaboto.',
 	'ajaxpoll-revoke-vote' => 'Nais kong pawalan ng bisa ang boto ko',
-	'ajaxpoll-vote-revoked' => 'Matagumpay mong napawalangbisa ang boto mo.',
+	'ajaxpoll-vote-revoked' => 'Matagumpay mong napawalangbisa ang boto mo.', # Fuzzy
 	'right-ajaxpoll-vote' => 'Makakaboto sa mga halalang nakabatay sa AJAX',
 );
 
@@ -1497,7 +1497,7 @@ $messages['ug-arab'] = array(
 	'ajaxpoll-submitting' => 'سەل كۈتۈڭ، تاشلىغان بىلىتىڭىزنى يوللاۋاتىدۇ.',
 	'ajaxpoll-vote-permission' => 'بىلەت تاشلاش ھوقۇقىڭىز يوق.',
 	'ajaxpoll-revoke-vote' => 'تاشلىغان بىلىتىمنى بىكار قىلىمەن',
-	'ajaxpoll-vote-revoked' => 'تاشلىغان بىلىتىڭىزنى مۇۋەپپەقىيەتلىك بىكار قىلدىڭىز.',
+	'ajaxpoll-vote-revoked' => 'تاشلىغان بىلىتىڭىزنى مۇۋەپپەقىيەتلىك بىكار قىلدىڭىز.', # Fuzzy
 	'right-ajaxpoll-vote' => 'AJAX ئاساسىدىكى بىلەت تاشلاش رايونىدا بىلەت تاشلىيالايسىز',
 );
 
