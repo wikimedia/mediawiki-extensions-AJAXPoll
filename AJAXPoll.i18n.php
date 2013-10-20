@@ -513,6 +513,7 @@ $messages['fa'] = array(
 );
 
 /** Finnish (suomi)
+ * @author Crt
  * @author Harriv
  * @author Jack Phoenix
  * @author Nike
@@ -528,7 +529,7 @@ $messages['fi'] = array(
 	'ajaxpoll-percent-votes' => '$1 % kaikista äänistä',
 	'ajaxpoll-your-vote' => 'Äänestit jo vaihtoehtoa ”$1” $2, voit muuttaa ääntäsi napsauttamalla vastausta alempana',
 	'ajaxpoll-no-vote' => 'Voit äänestää alempana.',
-	'ajaxpoll-no-vote-results-after-voting' => 'Äänestä alapuolelta ole hyvä. Tulokset näytetään kun olet äänestänyt.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Voit äänestää alla. Tulokset näytetään, kun olet äänestänyt.',
 	'ajaxpoll-info' => '{{PLURAL:$1|Yksi ääni|$1 ääntä}} on annettu siitä lähtien kun tämä äänestys tehtiin, $2.',
 	'ajaxpoll-submitting' => 'Odota hetki, äänesi lähetetään kirjattavaksi.',
 	'ajaxpoll-vote-permission' => 'Sinulla ei ole oikeutta äänestää.',
@@ -536,7 +537,7 @@ $messages['fi'] = array(
 	'ajaxpoll-view-results-before-vote-permission' => 'Et voi katsella kyselyn tuloksia ennen kuin olet äänestänyt.',
 	'ajaxpoll-revoke-vote' => 'Haluan peruuttaa ääneni',
 	'ajaxpoll-vote-revoked' => 'Äänesi on peruttu.',
-	'ajaxpoll-error-csrf-wrong-token' => 'Saatu tunniste oli virheellinen ja äänesi hylättiin.',
+	'ajaxpoll-error-csrf-wrong-token' => 'Saatu avain oli virheellinen ja äänesi hylättiin.',
 	'right-ajaxpoll-vote' => 'Voi äänestää AJAX-pohjaisissa kyselyissä',
 );
 
