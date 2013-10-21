@@ -168,6 +168,7 @@ $messages['azb'] = array(
 );
 
 /** Bashkir (башҡортса)
+ * @author Alfiya55
  * @author Sagan
  */
 $messages['ba'] = array(
@@ -179,11 +180,16 @@ $messages['ba'] = array(
 	'ajaxpoll-percent-votes' => 'Бөтә тауыштың $1%',
 	'ajaxpoll-your-vote' => 'Һеҙ тауыш бирҙегеҙ «$1» $2. Түбәндәге яуаптарҙы һайлап, яңынан тауыш бирә алаһығыҙ.',
 	'ajaxpoll-no-vote' => 'Зинһар өсөн, түбәндә тауыш биреүҙә ҡатнашығыҙ.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Зинһар, түбәндә тауыш бирегеҙ.
+Һөҙөмтәләр һеҙ тауыш биргәс күрһәтелер.',
 	'ajaxpoll-info' => '$2 тауыш биреү башланғандан башлап {{PLURAL:$1|кеше тауыш бирҙе}}.',
 	'ajaxpoll-submitting' => 'Зинһар, һеҙҙең тауыш тураһында мәғлүмәт тапшырылғанын көтөгөз...',
 	'ajaxpoll-vote-permission' => 'Һеҙҙең тауыш биреү хоҡуғы юҡ.',
+	'ajaxpoll-view-results-permission' => 'Һеҙ был һорауламаның һөҙөмтәләрен ҡарай алмайһығыҙ.',
+	'ajaxpoll-view-results-before-vote-permission' => 'Һеҙ был һорауламаның һөҙөмтәләрен тауыш бирмәйенсә ҡарай алмайһығыҙ.',
 	'ajaxpoll-revoke-vote' => 'Мин тауышымды кире алырға теләйем',
-	'ajaxpoll-vote-revoked' => 'Һеҙ тауышығыҙҙы кире алдығыҙ.', # Fuzzy
+	'ajaxpoll-vote-revoked' => 'Һеҙ тауышығыҙҙы кире алдығыҙ.',
+	'ajaxpoll-error-csrf-wrong-token' => 'Хаталы токен алынды, һеҙҙең тауыш иҫәпләнмәй.',
 	'right-ajaxpoll-vote' => 'AJAX нигеҙендә һорау алыуҙа ҡатнаша алаһығыҙ.',
 );
 
