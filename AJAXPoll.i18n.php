@@ -324,6 +324,7 @@ $messages['cs'] = array(
 );
 
 /** Danish (dansk)
+ * @author Overlaet
  * @author Tjernobyl
  */
 $messages['da'] = array(
@@ -335,11 +336,14 @@ $messages['da'] = array(
 	'ajaxpoll-percent-votes' => '$1% af alle stemmer',
 	'ajaxpoll-your-vote' => 'Du har allerede stemt på "$1" $2. Du kan ændre din stemme ved at klikke på et af de nedenstående svar.',
 	'ajaxpoll-no-vote' => 'Stem venligst nedenfor.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Stem venligst nedenfor. Resultaterne vil blive vist, når du har stemt.',
 	'ajaxpoll-info' => 'Der var {{PLURAL:$1|en stemme|$1 stemmer}} siden afstemningen blev oprettet $2.',
 	'ajaxpoll-submitting' => 'Vent venligst, din stemme bliver afsendt.',
 	'ajaxpoll-vote-permission' => 'Du har ikke ret til at stemme.',
+	'ajaxpoll-view-results-permission' => 'Du er ikke berettiget til at få vist resultaterne af denne undersøgelse.',
+	'ajaxpoll-view-results-before-vote-permission' => 'Du er ikke berettiget til at få vist resultaterne af denne undersøgelse, før du har stemt.',
 	'ajaxpoll-revoke-vote' => 'Jeg vil gerne tilbagekalde min stemme',
-	'ajaxpoll-vote-revoked' => 'Du har nu tilbagekaldt din stemme.', # Fuzzy
+	'ajaxpoll-vote-revoked' => 'Din stemme er blevet tilbagekaldt.',
 	'right-ajaxpoll-vote' => 'Kan stemme i AJAX-baserede afstemninger',
 );
 
