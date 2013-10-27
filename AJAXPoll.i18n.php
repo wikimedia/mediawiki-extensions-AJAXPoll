@@ -303,6 +303,7 @@ $messages['ca'] = array(
 );
 
 /** Czech (česky)
+ * @author Michaelbrabec
  * @author Mormegil
  * @author Paxt
  */
@@ -315,6 +316,7 @@ $messages['cs'] = array(
 	'ajaxpoll-percent-votes' => '$1% všech hlasů',
 	'ajaxpoll-your-vote' => 'Již jste hlasovali pro " $1 " na  $2 , svůj hlas můžete změnit klepnutím na  odpověď níže.',
 	'ajaxpoll-no-vote' => 'Prosím hlasujte níže.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Prosím hlasujte níže, výsledky budou zobrazeny poté.',
 	'ajaxpoll-info' => '{{PLURAL:$1|Odevzdán jeden hlas|Odevzdány $1 hlasy|Odevzdáno $1 hlasů}} od zahájení ankety dne $2.',
 	'ajaxpoll-submitting' => 'Prosím čekejte, Váš hlas se zpracovává...',
 	'ajaxpoll-vote-permission' => 'Nemáte oprávnění hlasovat.',
