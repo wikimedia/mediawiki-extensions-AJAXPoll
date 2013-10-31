@@ -466,6 +466,7 @@ $messages['eo'] = array(
 /** Spanish (español)
  * @author Armando-Martin
  * @author Bola
+ * @author Fitoschido
  * @author Luis Felipe Schenone
  * @author Miguel2706
  * @author VegaDark
@@ -479,7 +480,7 @@ $messages['es'] = array(
 	'ajaxpoll-percent-votes' => '$1% de todos los votos',
 	'ajaxpoll-your-vote' => 'Ya votaste por "$1" el $2, puedes cambiar tu voto haciendo clic en una respuesta debajo.',
 	'ajaxpoll-no-vote' => 'Por favor, vota debajo.',
-	'ajaxpoll-no-vote-results-after-voting' => 'Por favor, vote a continuación. Los resultados serán mostrados cuando usted haya votado.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Realice su votación a continuación. Se mostrarán los resultados después de que haya votado.',
 	'ajaxpoll-info' => 'Ha habido {{PLURAL:$1|un voto|$1 votos}} desde que la encuesta fue creada el $2.',
 	'ajaxpoll-submitting' => 'Por favor espera, estamos comprobando tu voto, ten paciencia.',
 	'ajaxpoll-vote-permission' => 'No puede votar.',
