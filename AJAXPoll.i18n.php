@@ -302,7 +302,7 @@ $messages['ca'] = array(
 	'right-ajaxpoll-vote' => 'Podeu votar a les enquestes basades en AJAX',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Michaelbrabec
  * @author Mormegil
  * @author Paxt
@@ -506,23 +506,31 @@ $messages['et'] = array(
 
 /** Persian (فارسی)
  * @author Alireza
+ * @author Ebraminio
  * @author Mehdi
  * @author Mjbmr
  * @author Reza1615
  * @author Taha
  */
 $messages['fa'] = array(
+	'ajaxpoll-desc' => 'رأی‌گیری‌های آی‌جکسی با تگ <tt>&lt;poll&gt;</tt> را اجازه می‌دهد.',
 	'ajaxpoll-tracking-category' => 'صفحات با یک نظرسنجی',
 	'ajaxpoll-vote-update' => 'رأی شما به روز شد.',
 	'ajaxpoll-vote-add' => 'رأی شما افزوده شد.',
 	'ajaxpoll-vote-error' => 'در پردازش رأی شما مشکلی پیش آمده، لطفاً دوباره تلاش کنید.',
 	'ajaxpoll-percent-votes' => '$1%از کل آرا',
+	'ajaxpoll-your-vote' => 'شما برای «$1» در $2 رأی داده‌اید. می‌توانید رأی خود را با کلیک بر پاسح متفاوت دیگری در زیر تغییر دهید.',
 	'ajaxpoll-no-vote' => 'لطفاً رای خود را در زیر ثبت کنید.',
+	'ajaxpoll-no-vote-results-after-voting' => 'لطفاً در پایین رأی دهید. نتایج وقتی نمایش داده خواهند شد که رأی داده باشید.',
+	'ajaxpoll-info' => 'از زمان ایجاد نظرسنجی در $2 {{PLURAL:$1|$1 رأی بوده‌است}}.',
 	'ajaxpoll-submitting' => 'لطفاً صبر کنید، درحال ثبت رای شما...',
 	'ajaxpoll-vote-permission' => 'شما دارای شرایط لازم برای رای‌دادن نمی‌باشید.',
 	'ajaxpoll-view-results-permission' => 'شما حقّ مشاهدهٔ نتایج این رای‌گیری را ندارید.',
+	'ajaxpoll-view-results-before-vote-permission' => 'شما مجاز به مشاهدهٔ نتایج این نظرسنجی قبل از اینکه رأی داده باشید نیستید.',
 	'ajaxpoll-revoke-vote' => 'قصد دارم رأیم را واگردانی کنم',
 	'ajaxpoll-vote-revoked' => 'رأی شما با موفقیت واگردانی شد.',
+	'ajaxpoll-error-csrf-wrong-token' => 'یک توکن اشتباه دریافت شد و رأی شما نادیده گرفته شد.',
+	'right-ajaxpoll-vote' => 'می‌تواند در نظرخواهی آی‌جکسی رأی دهد',
 );
 
 /** Finnish (suomi)
@@ -924,6 +932,7 @@ $messages['ksh'] = array(
 
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
+ * @author Soued031
  */
 $messages['lb'] = array(
 	'ajaxpoll-desc' => 'Erlaabt AJAX-baséiert Ëmfroe mam Tag <tt>&lt;poll&gt;</tt>',
@@ -934,7 +943,7 @@ $messages['lb'] = array(
 	'ajaxpoll-percent-votes' => '$1% vun alle Stëmmen',
 	'ajaxpoll-your-vote' => 'Dir hutt schonn den $2 fir "$1" gestëmmt, Dir kënnt Är Stëmm änneren an deem Dir op d\'Äntwert hei drënner klickt.',
 	'ajaxpoll-no-vote' => 'Stëmmt w.e.g hei drënner mat of.',
-	'ajaxpoll-no-vote-results-after-voting' => "Gitt Är Stëmm w.e.g. hei drënner of. D'Resultater gi gewisen esoubal wéi Dir ofgestëmmt hutt.",
+	'ajaxpoll-no-vote-results-after-voting' => "Gitt Är Stëmm w.e.g. hei drënner of. D'Resultater gi gewise soubal wéi Dir ofgestëmmt hutt.",
 	'ajaxpoll-info' => 'Zënter dem Ufank vun der Ëmfro den $2 {{PLURAL:$1 gouf eng Stëmm|goufe(n) $1 Stëmmen}} ofginn.',
 	'ajaxpoll-submitting' => 'Waart w.e.g., Är Stëmm gëtt verschafft.',
 	'ajaxpoll-vote-permission' => 'Dir sidd net berechtegt fir ofzestëmmen.',
@@ -943,7 +952,7 @@ $messages['lb'] = array(
 	'ajaxpoll-revoke-vote' => 'Ech wëll meng Stëmm zréckzéien',
 	'ajaxpoll-vote-revoked' => 'Är Stëmm gouf zréckgeruff.',
 	'ajaxpoll-error-csrf-wrong-token' => 'E falschen Token koum un an Är Stëmm gouf ignoréiert.',
-	'right-ajaxpoll-vote' => 'Däerf bäi AJAX-baséierten Ëmfroe matmaachen',
+	'right-ajaxpoll-vote' => 'Däerf bei AJAX-baséierten Ëmfroe matmaachen',
 );
 
 /** Lithuanian (lietuvių)
