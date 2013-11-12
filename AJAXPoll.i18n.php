@@ -1028,6 +1028,29 @@ $messages['mk'] = array(
 	'right-ajaxpoll-vote' => 'Може да гласа на анкети на основа на AJAX.',
 );
 
+/** Malayalam (മലയാളം)
+ * @author Praveenp
+ * @author Suresh.balasubra
+ */
+$messages['ml'] = array(
+	'ajaxpoll-tracking-category' => 'വോട്ടെടുപ്പ് ഉള്ള താളുകൾ',
+	'ajaxpoll-vote-update' => 'താങ്കളുടെ വോട്ട് രേഖപ്പെടുത്തിയിരിക്കുന്നു.',
+	'ajaxpoll-vote-add' => 'താങ്കളുടെ വോട്ട് ചേർത്തു.',
+	'ajaxpoll-vote-error' => 'താങ്കളുടെ വോട്ട് തയ്യാറാക്കുന്നതിനിടയിൽ ഒരു തകരാറ് സംഭവിച്ചിരിക്കുന്നു, ദയവായി വീണ്ടും ശ്രമിക്കുക.',
+	'ajaxpoll-percent-votes' => 'ആകെ വോട്ടുകളുടെ $1%',
+	'ajaxpoll-no-vote' => 'താഴെ വോട്ട് ചെയ്യുക',
+	'ajaxpoll-no-vote-results-after-voting' => 'താഴെ വോട്ട് ചെയ്യുക. വോട്ട് ചെയ്ത ശേഷം തിരഞ്ഞെടുപ്പ്‌ ഫലങ്ങൾ കാണാവുന്നതാണ്.',
+	'ajaxpoll-info' => '$2ൽ തിരഞ്ഞെടുപ്പ് ആരംഭിച്ച ശേഷം {{PLURAL:$1|ഒരു വോട്ട്|$1 വോട്ടുകൾ}} രേഖപ്പെടുത്തി.',
+	'ajaxpoll-submitting' => 'ദയവായി കാത്തിരിക്കുക, താങ്കളുടെ വോട്ട് സമർപ്പിക്കുന്നു.',
+	'ajaxpoll-vote-permission' => 'താങ്കൾക്ക് വോട്ട് ചെയ്യാനുള്ള അനുമതിയില്ല.',
+	'ajaxpoll-view-results-permission' => 'താങ്കൾക്ക് തിരഞ്ഞെടുപ്പ്‌ ഫലങ്ങൾ കാണാനുള്ള അനുമതിയില്ല.',
+	'ajaxpoll-view-results-before-vote-permission' => 'വോട്ട് ചെയ്യുന്നതിന് മുൻപ് തിരഞ്ഞെടുപ്പ്‌ ഫലങ്ങൾ കാണുവാൻ താങ്കൾക്ക് അനുമതിയില്ല.',
+	'ajaxpoll-revoke-vote' => 'എന്റെ വോട്ട് തിരിച്ചെടുക്കാൻ ആഗ്രഹിക്കുന്നു.',
+	'ajaxpoll-vote-revoked' => 'താങ്കളുടെ വോട്ട് തിരിച്ചെടുത്തിരിക്കുന്നു.',
+	'ajaxpoll-error-csrf-wrong-token' => 'തെറ്റായ ചീട്ട് കിട്ടിയതിനാൽ താങ്കളുടെ വോട്ട് അവഗണിക്കപ്പെട്ടിരിക്കുന്നു.',
+	'right-ajaxpoll-vote' => 'അജാക്സ് അധിഷ്‌ഠിതമായ തിരഞ്ഞെടുപ്പിൽ വോട്ട് ചെയ്യാം.',
+);
+
 /** Marathi (मराठी)
  * @author V.narsikar
  */
