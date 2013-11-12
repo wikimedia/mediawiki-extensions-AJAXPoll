@@ -31,7 +31,15 @@ $messages['en'] = array(
 	'ajaxpoll-vote-revoked' => 'Your vote has been revoked.',
 	'ajaxpoll-error-csrf-wrong-token' => 'A wrong token was received, and your vote is ignored.',
 
+	# Rights
 	'right-ajaxpoll-vote' => 'Can vote in AJAX-based polls',
+	'right-ajaxpoll-view-results' => 'Can view results in AJAX-based polls',
+	'right-ajaxpoll-view-results-before-vote' => 'Can view results in AJAX-based polls before having voted',
+
+	# Associated actions - in the sentence "You do not have permission to X"
+	'action-ajaxpoll-vote' => 'vote in AJAX-based polls.',
+	'action-ajaxpoll-view-results' => 'view results in AJAX-based polls',
+	'action-ajaxpoll-view-results-before-vote' => 'view results in AJAX-based polls before having voted',
 );
 
 /** Message documentation (Message documentation)
@@ -90,7 +98,13 @@ See also:
 If error, the following message is used:
 * {{msg-mw|Ajaxpoll-vote-error}}',
 	'ajaxpoll-error-csrf-wrong-token' => 'An error message in case of a wrong received anti-CSRF token',
+
 	'right-ajaxpoll-vote' => '{{doc-right|ajaxpoll-vote}}',
+	'right-ajaxpoll-view-results' => '{{doc-right|ajaxpoll-view-results}}',
+	'right-ajaxpoll-vote' => '{{doc-right|ajaxpoll-view-results-before-vote}}',
+	'action-ajaxpoll-vote' => '{{doc-action|ajaxpoll-vote}}',
+	'action-ajaxpoll-view-results' => '{{doc-action|ajaxpoll-view-results}}',
+	'action-ajaxpoll-view-results-before-vote' => '{{doc-action|ajaxpoll-view-results-before-vote}}',
 );
 
 /** Afrikaans (Afrikaans)

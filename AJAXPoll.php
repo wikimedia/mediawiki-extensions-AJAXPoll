@@ -47,7 +47,7 @@ if( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'AJAX Poll',
-	'version' => '1.86 20131009',
+	'version' => '1.87 20131112',
 	'author' => array( 'Dariusz Siedlecki', 'Jack Phoenix', 'Thomas Gries' ),
 	'descriptionmsg' => 'ajaxpoll-desc',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:AJAX_Poll',
@@ -82,8 +82,8 @@ $wgResourceModules['ext.ajaxpoll'] = $myResourceTemplate + array(
 
 # new user rights
 $wgAvailableRights[] = 'ajaxpoll-vote';
-$wgAvailableRights[] = 'ajaxpoll-viewresults';
-$wgAvailableRights[] = 'ajaxpoll-viewresults-before-vote';
+$wgAvailableRights[] = 'ajaxpoll-view-results';
+$wgAvailableRights[] = 'ajaxpoll-view-results-before-vote';
 
 # The 'ajaxpoll-view-results-before-vote' group permission allows the specified
 # group members to view poll results even without having voted
