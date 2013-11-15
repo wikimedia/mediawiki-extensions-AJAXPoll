@@ -43,6 +43,7 @@ $messages['en'] = array(
 );
 
 /** Message documentation (Message documentation)
+ * @author Okras
  * @author Shirayuki
  * @author Umherirrender
  */
@@ -98,10 +99,9 @@ See also:
 If error, the following message is used:
 * {{msg-mw|Ajaxpoll-vote-error}}',
 	'ajaxpoll-error-csrf-wrong-token' => 'An error message in case of a wrong received anti-CSRF token',
-
-	'right-ajaxpoll-vote' => '{{doc-right|ajaxpoll-vote}}',
-	'right-ajaxpoll-view-results' => '{{doc-right|ajaxpoll-view-results}}',
 	'right-ajaxpoll-vote' => '{{doc-right|ajaxpoll-view-results-before-vote}}',
+	'right-ajaxpoll-view-results' => '{{doc-right|ajaxpoll-view-results}}',
+	'right-ajaxpoll-view-results-before-vote' => '{{doc-right|ajaxpoll-view-results-before-vote}}',
 	'action-ajaxpoll-vote' => '{{doc-action|ajaxpoll-vote}}',
 	'action-ajaxpoll-view-results' => '{{doc-action|ajaxpoll-view-results}}',
 	'action-ajaxpoll-view-results-before-vote' => '{{doc-action|ajaxpoll-view-results-before-vote}}',
@@ -229,6 +229,11 @@ $messages['bcl'] = array(
 	'ajaxpoll-vote-revoked' => 'An saimong boto pinagbawi tabi.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Sarong sala na paduos na naresibe, asin an saimong boto pinagbalewala.',
 	'right-ajaxpoll-vote' => 'Makakaboto sa mga nakabaseng pirilian kan Ajax',
+	'right-ajaxpoll-view-results' => 'Makakahiling sa mga result na yaon nakabase sa AJAX na mga prilian',
+	'right-ajaxpoll-view-results-before-vote' => 'Makakatanaw nin mga resulta sa mga pirilian na nakabase sa AJAX bago makapagboto',
+	'action-ajaxpoll-vote' => 'magboto sa nakabaseng mga pirilian sa AJAX.',
+	'action-ajaxpoll-view-results' => 'tanawon an mga resulta sa pirilian na nakabase sa AJAX',
+	'action-ajaxpoll-view-results-before-vote' => 'tanawon an mga result sa pirilian na nakabase sa AJAX bago makapagboto',
 );
 
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
@@ -317,6 +322,7 @@ $messages['ca'] = array(
 );
 
 /** Czech (čeština)
+ * @author Chmee2
  * @author Michaelbrabec
  * @author Mormegil
  * @author Paxt
@@ -334,8 +340,10 @@ $messages['cs'] = array(
 	'ajaxpoll-info' => '{{PLURAL:$1|Odevzdán jeden hlas|Odevzdány $1 hlasy|Odevzdáno $1 hlasů}} od zahájení ankety dne $2.',
 	'ajaxpoll-submitting' => 'Prosím čekejte, Váš hlas se zpracovává...',
 	'ajaxpoll-vote-permission' => 'Nemáte oprávnění hlasovat.',
+	'ajaxpoll-view-results-before-vote-permission' => 'Nejste oprávněn prohlížet výsledky tohoto průzkumu před vašim hlasováním.',
 	'ajaxpoll-revoke-vote' => 'Chci odvolat svůj hlas',
 	'ajaxpoll-vote-revoked' => 'Váš hlas byl úspěšně odvolán.',
+	'ajaxpoll-error-csrf-wrong-token' => 'Byl přijat chybný token a váš hlas je ignorován.',
 	'right-ajaxpoll-vote' => 'Může hlasovat v anketách založených na AJAXu',
 );
 
@@ -389,6 +397,11 @@ $messages['de'] = array(
 	'ajaxpoll-vote-revoked' => 'Deine Stimme wurde widerrufen.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Es wurde ein falscher Token empfangen. Deine Stimme wird ignoriert.',
 	'right-ajaxpoll-vote' => 'An AJAX-gestützen Umfragen teilnehmen',
+	'right-ajaxpoll-view-results' => 'Ergebnisse von AJAX-basierten Umfragen ansehen',
+	'right-ajaxpoll-view-results-before-vote' => 'Ergebnisse von AJAX-basierten Umfragen vor der Abstimmung ansehen',
+	'action-ajaxpoll-vote' => 'bei AJAX-basierten Umfragen abzustimmen',
+	'action-ajaxpoll-view-results' => 'Ergebnisse von AJAX-basierten Umfragen anzusehen',
+	'action-ajaxpoll-view-results-before-vote' => 'Ergebnisse von AJAX-basierten Umfragen anzusehen, bevor du abgestimmt hast',
 );
 
 /** German (formal address) (Deutsch (Sie-Form)‎)
@@ -625,6 +638,11 @@ $messages['fr'] = array(
 	'ajaxpoll-vote-revoked' => 'Votre vote a été révoqué.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Un jeton incorrect a été reçu, et votre vote est ignoré.',
 	'right-ajaxpoll-vote' => 'Peut voter dans des sondages basés sur AJAX',
+	'right-ajaxpoll-view-results' => 'Peut voir les résultats des sondages basés sur AJAX',
+	'right-ajaxpoll-view-results-before-vote' => 'Peut voir les résultats des sondages basés sur AJAX avant d’avoir voté',
+	'action-ajaxpoll-vote' => 'voter dans les sondages basés sur AJAX.',
+	'action-ajaxpoll-view-results' => 'voir les résultats des sondages basés sur AJAX',
+	'action-ajaxpoll-view-results-before-vote' => 'voir les résultats des sondages basés sur AJAX avant d’avoir voté',
 );
 
 /** Franco-Provençal (arpetan)
@@ -882,6 +900,11 @@ $messages['ja'] = array(
 	'ajaxpoll-vote-revoked' => '投票を取り消しました。',
 	'ajaxpoll-error-csrf-wrong-token' => '誤ったトークンを受信したため、あなたの投票は無視されます。',
 	'right-ajaxpoll-vote' => 'Ajax ベースの投票所で投票',
+	'right-ajaxpoll-view-results' => 'Ajax ベースの投票所で結果を閲覧',
+	'right-ajaxpoll-view-results-before-vote' => 'Ajax ベースの投票所で投票前に結果を閲覧',
+	'action-ajaxpoll-vote' => 'Ajax ベースの投票所での投票',
+	'action-ajaxpoll-view-results' => 'Ajax ベースの投票所で結果の閲覧',
+	'action-ajaxpoll-view-results-before-vote' => 'Ajax ベースの投票所で投票前に結果を閲覧',
 );
 
 /** Georgian (ქართული)
@@ -1040,6 +1063,11 @@ $messages['mk'] = array(
 	'ajaxpoll-vote-revoked' => 'Вашиот глас е повлечен.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Добив погрешна шифра. Вашиот глас е занемарен.',
 	'right-ajaxpoll-vote' => 'Може да гласа на анкети на основа на AJAX.',
+	'right-ajaxpoll-view-results' => 'Може да гледа резултати од анкети со AJAX',
+	'right-ajaxpoll-view-results-before-vote' => 'Може да гледа резултати од анкети со AJAX без да има гласано',
+	'action-ajaxpoll-vote' => 'гласање во анкети со AJAX.',
+	'action-ajaxpoll-view-results' => 'преглед на резултати од анкети со AJAX',
+	'action-ajaxpoll-view-results-before-vote' => 'преглед на резултати од анкети со AJAX без да имате гласано',
 );
 
 /** Malayalam (മലയാളം)
@@ -1387,6 +1415,7 @@ $messages['roa-tara'] = array(
  * @author Iluvatar
  * @author KPu3uC B Poccuu
  * @author Lockal
+ * @author Okras
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
@@ -1408,6 +1437,11 @@ $messages['ru'] = array(
 	'ajaxpoll-vote-revoked' => 'Ваш голос был отозван.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Был получен неверный токен, ваш голос не учитывается.',
 	'right-ajaxpoll-vote' => 'Может голосовать в опросах на основе AJAX',
+	'right-ajaxpoll-view-results' => 'Можно посмотреть результаты опросов на основе AJAX',
+	'right-ajaxpoll-view-results-before-vote' => 'Можно посмотреть результаты опросов на основе AJAX перед голосованием',
+	'action-ajaxpoll-vote' => 'голосование в опросах на основе AJAX.',
+	'action-ajaxpoll-view-results' => 'просмотр результатов опросов на основе AJAX',
+	'action-ajaxpoll-view-results-before-vote' => 'просмотр результатов опросов на основе AJAX перед голосованием',
 );
 
 /** Sinhala (සිංහල)
@@ -1563,6 +1597,7 @@ $messages['ug-arab'] = array(
 
 /** Ukrainian (українська)
  * @author A1
+ * @author Andriykopanytsia
  * @author Base
  * @author Ата
  */
@@ -1585,6 +1620,11 @@ $messages['uk'] = array(
 	'ajaxpoll-vote-revoked' => 'Ваш голос скасовано.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Отримано неправильний маркер, Ваш голос не враховано.',
 	'right-ajaxpoll-vote' => 'Можете голосувати в опитуваннях на основі AJAX',
+	'right-ajaxpoll-view-results' => 'Можна переглянути результати в AJAX основі опитувань',
+	'right-ajaxpoll-view-results-before-vote' => 'Можна переглянути результати в AJAX основі опитувань до того, як проголосували',
+	'action-ajaxpoll-vote' => 'голосувати в опитуваннях на основі AJAX.',
+	'action-ajaxpoll-view-results' => 'подивитися результати опитувань на основі AJAX',
+	'action-ajaxpoll-view-results-before-vote' => 'перегляд результатів опитувань на основі AJAX перед голосуванням',
 );
 
 /** Vietnamese (Tiếng Việt)
