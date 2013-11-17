@@ -924,6 +924,7 @@ $messages['ka'] = array(
 );
 
 /** Korean (한국어)
+ * @author Hym411
  * @author 아라
  */
 $messages['ko'] = array(
@@ -945,6 +946,7 @@ $messages['ko'] = array(
 	'ajaxpoll-vote-revoked' => '성공적으로 투표를 취소했습니다.',
 	'ajaxpoll-error-csrf-wrong-token' => '잘못된 토큰이 전달되어, 투표가 무시되었습니다.',
 	'right-ajaxpoll-vote' => 'AJAX 기반 설문 조사에 투표할 수 있음',
+	'right-ajaxpoll-view-results' => 'AJAX 기반의 투표 결과를 볼 수 있습니다',
 );
 
 /** Colognian (Ripoarisch)
@@ -1091,6 +1093,11 @@ $messages['ml'] = array(
 	'ajaxpoll-vote-revoked' => 'താങ്കളുടെ വോട്ട് തിരിച്ചെടുത്തിരിക്കുന്നു.',
 	'ajaxpoll-error-csrf-wrong-token' => 'തെറ്റായ ചീട്ട് കിട്ടിയതിനാൽ താങ്കളുടെ വോട്ട് അവഗണിക്കപ്പെട്ടിരിക്കുന്നു.',
 	'right-ajaxpoll-vote' => 'അജാക്സ് അധിഷ്‌ഠിതമായ തിരഞ്ഞെടുപ്പിൽ വോട്ട് ചെയ്യാം.',
+	'right-ajaxpoll-view-results' => 'അജാക്സ് അധിഷ്ഠിതമായ തിരഞ്ഞെടുപ്പുകളുടെ ഫലം കാണാം',
+	'right-ajaxpoll-view-results-before-vote' => 'വോട്ട് ചെയ്യുന്നതിന് മുൻപ് അജാക്സ് അധിഷ്ഠിതമായ തിരഞ്ഞെടുപ്പുകളുടെ ഫലം കാണാം',
+	'action-ajaxpoll-vote' => 'അജാക്സ് അധിഷ്ഠിതമായ തിരഞ്ഞെടുപ്പുകളിൽ വോട്ട് ചെയ്യുക.',
+	'action-ajaxpoll-view-results' => 'അജാക്സ് അധിഷ്ഠിതമായ തിരഞ്ഞെടുപ്പുകളുടെ ഫലം കാണുക',
+	'action-ajaxpoll-view-results-before-vote' => 'വോട്ട് ചെയ്യുന്നതിന് മുൻപ് അജാക്സ് അധിഷ്ഠിതമായ തിരഞ്ഞെടുപ്പുകളുടെ ഫലം കാണുക',
 );
 
 /** Marathi (मराठी)
@@ -1183,6 +1190,7 @@ $messages['nb'] = array(
 
 /** Dutch (Nederlands)
  * @author AvatarTeam
+ * @author Breghtje
  * @author SPQRobin
  * @author Siebrand
  */
@@ -1205,6 +1213,11 @@ $messages['nl'] = array(
 	'ajaxpoll-vote-revoked' => 'Uw stem is ingetrokken.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Er is een ongeldig token ontvangen en uw stem wordt genegeerd.',
 	'right-ajaxpoll-vote' => 'Kan in AJAX-gebaseerde peilingen stemmen',
+	'right-ajaxpoll-view-results' => 'Kan de resultaten weergeven in een AJAX-gebaseerde peilingen',
+	'right-ajaxpoll-view-results-before-vote' => 'Resultaten kunnen in de AJAX-gebaseerde peilingen bekeken worden voordat u hebben gestemd',
+	'action-ajaxpoll-vote' => 'Stem in een AJAX-gebaseerde peilingen.',
+	'action-ajaxpoll-view-results' => 'Bekijk resultaten in AJAX-gebaseerde peilingen',
+	'action-ajaxpoll-view-results-before-vote' => 'Resultaten kunnen in de AJAX-gebaseerde peilingen bekeken worden voordat u hebben gestemd',
 );
 
 /** Nederlands (informeel)‎ (Nederlands (informeel)‎)
