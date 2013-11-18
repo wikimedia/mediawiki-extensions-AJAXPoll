@@ -37,7 +37,7 @@ $messages['en'] = array(
 	'right-ajaxpoll-view-results-before-vote' => 'Can view results in AJAX-based polls before having voted',
 
 	# Associated actions - in the sentence "You do not have permission to X"
-	'action-ajaxpoll-vote' => 'vote in AJAX-based polls.',
+	'action-ajaxpoll-vote' => 'vote in AJAX-based polls',
 	'action-ajaxpoll-view-results' => 'view results in AJAX-based polls',
 	'action-ajaxpoll-view-results-before-vote' => 'view results in AJAX-based polls before having voted',
 );
