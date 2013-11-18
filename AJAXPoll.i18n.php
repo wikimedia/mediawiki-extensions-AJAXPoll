@@ -158,6 +158,11 @@ $messages['ast'] = array(
 	'ajaxpoll-vote-revoked' => "El to votu s'anuló.",
 	'ajaxpoll-error-csrf-wrong-token' => "Recibióse un pase equivocáu, y nun se cuenta'l so votu.",
 	'right-ajaxpoll-vote' => "Pue votar nes encuestes basaes n'AJAX",
+	'right-ajaxpoll-view-results' => "Pue ver los resultaos de les encuestes basaes n'AJAX",
+	'right-ajaxpoll-view-results-before-vote' => "Pue ver los resultaos de les encuestes basaes n'AJAX enantes de votar",
+	'action-ajaxpoll-vote' => "votar nes encuestes basaes n'AJAX.",
+	'action-ajaxpoll-view-results' => "ver los resultaos de les encuestes basaes n'AJAX",
+	'action-ajaxpoll-view-results-before-vote' => "ver los resultaos de les encuestes basaes n'AJAX enantes de votar",
 );
 
 /** South Azerbaijani (تورکجه)
@@ -616,6 +621,7 @@ $messages['fo'] = array(
 /** French (français)
  * @author Crochet.david
  * @author Gomoko
+ * @author McDutchie
  * @author Sherbrooke
  * @author Tim 'Avatar' Bartel
  */
@@ -640,7 +646,7 @@ $messages['fr'] = array(
 	'right-ajaxpoll-vote' => 'Peut voter dans des sondages basés sur AJAX',
 	'right-ajaxpoll-view-results' => 'Peut voir les résultats des sondages basés sur AJAX',
 	'right-ajaxpoll-view-results-before-vote' => 'Peut voir les résultats des sondages basés sur AJAX avant d’avoir voté',
-	'action-ajaxpoll-vote' => 'voter dans les sondages basés sur AJAX.',
+	'action-ajaxpoll-vote' => 'voter dans les sondages basés sur AJAX',
 	'action-ajaxpoll-view-results' => 'voir les résultats des sondages basés sur AJAX',
 	'action-ajaxpoll-view-results-before-vote' => 'voir les résultats des sondages basés sur AJAX avant d’avoir voté',
 );
@@ -725,7 +731,13 @@ $messages['he'] = array(
 	'ajaxpoll-view-results-before-vote-permission' => 'אינך רשאי לצפות בתוצאות הסקר לפני הצבעה',
 	'ajaxpoll-revoke-vote' => 'אני רוצה לבטל את הקול שלי',
 	'ajaxpoll-vote-revoked' => 'קולך נפסל.',
-	'right-ajaxpoll-vote' => 'להצביע בסקרים מבוססי AJAX.',
+	'ajaxpoll-error-csrf-wrong-token' => 'התקבל אסימון לא מכון וההצבעה שלך לא נספרה.',
+	'right-ajaxpoll-vote' => 'הצבעה בסקרים מבוססי AJAX.',
+	'right-ajaxpoll-view-results' => 'צפייה בסקרים מבוססי AJAX',
+	'right-ajaxpoll-view-results-before-vote' => 'הצגת תוצאות של סקרים מבוססי AJAX לפני הצבעה',
+	'action-ajaxpoll-vote' => 'להצביע בסקרים מבוססי AJAX',
+	'action-ajaxpoll-view-results' => 'לצפות בסקרים מבוסס AJAX',
+	'action-ajaxpoll-view-results-before-vote' => 'לצפות בסקרים מבוסס AJAX לפני ההצבעה',
 );
 
 /** Hindi (हिन्दी)
@@ -806,6 +818,11 @@ $messages['ia'] = array(
 	'ajaxpoll-vote-revoked' => 'Tu voto ha essite revocate.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Un indicio incorrecte ha essite recipite, e tu voto es ignorate.',
 	'right-ajaxpoll-vote' => 'Pote votar in sondages a base de AJAX',
+	'right-ajaxpoll-view-results' => 'Pote vider resultatos in sondages basate sur AJAX',
+	'right-ajaxpoll-view-results-before-vote' => 'Pote vider resultatos in sondages basate sur AJAX ante de haber votate',
+	'action-ajaxpoll-vote' => 'votar in sondages basate sur AJAX',
+	'action-ajaxpoll-view-results' => 'vider resultatos in sondages basate sur AJAX',
+	'action-ajaxpoll-view-results-before-vote' => 'vider resultatos in sondages basate sur AJAX ante de haber votate',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -1089,7 +1106,7 @@ $messages['ml'] = array(
 	'ajaxpoll-vote-permission' => 'താങ്കൾക്ക് വോട്ട് ചെയ്യാനുള്ള അനുമതിയില്ല.',
 	'ajaxpoll-view-results-permission' => 'താങ്കൾക്ക് തിരഞ്ഞെടുപ്പ്‌ ഫലങ്ങൾ കാണാനുള്ള അനുമതിയില്ല.',
 	'ajaxpoll-view-results-before-vote-permission' => 'വോട്ട് ചെയ്യുന്നതിന് മുൻപ് തിരഞ്ഞെടുപ്പ്‌ ഫലങ്ങൾ കാണുവാൻ താങ്കൾക്ക് അനുമതിയില്ല.',
-	'ajaxpoll-revoke-vote' => 'എന്റെ വോട്ട് തിരിച്ചെടുക്കാൻ ആഗ്രഹിക്കുന്നു.',
+	'ajaxpoll-revoke-vote' => 'എന്റെ വോട്ട് തിരിച്ചെടുക്കാൻ ആഗ്രഹിക്കുന്നു',
 	'ajaxpoll-vote-revoked' => 'താങ്കളുടെ വോട്ട് തിരിച്ചെടുത്തിരിക്കുന്നു.',
 	'ajaxpoll-error-csrf-wrong-token' => 'തെറ്റായ ചീട്ട് കിട്ടിയതിനാൽ താങ്കളുടെ വോട്ട് അവഗണിക്കപ്പെട്ടിരിക്കുന്നു.',
 	'right-ajaxpoll-vote' => 'അജാക്സ് അധിഷ്‌ഠിതമായ തിരഞ്ഞെടുപ്പിൽ വോട്ട് ചെയ്യാം.',
@@ -1191,6 +1208,7 @@ $messages['nb'] = array(
 /** Dutch (Nederlands)
  * @author AvatarTeam
  * @author Breghtje
+ * @author McDutchie
  * @author SPQRobin
  * @author Siebrand
  */
@@ -1213,11 +1231,11 @@ $messages['nl'] = array(
 	'ajaxpoll-vote-revoked' => 'Uw stem is ingetrokken.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Er is een ongeldig token ontvangen en uw stem wordt genegeerd.',
 	'right-ajaxpoll-vote' => 'Kan in AJAX-gebaseerde peilingen stemmen',
-	'right-ajaxpoll-view-results' => 'Kan de resultaten weergeven in een AJAX-gebaseerde peilingen',
+	'right-ajaxpoll-view-results' => 'Kan de resultaten weergeven in AJAX-gebaseerde peilingen',
 	'right-ajaxpoll-view-results-before-vote' => 'Resultaten kunnen in de AJAX-gebaseerde peilingen bekeken worden voordat u hebben gestemd',
-	'action-ajaxpoll-vote' => 'Stem in een AJAX-gebaseerde peilingen.',
-	'action-ajaxpoll-view-results' => 'Bekijk resultaten in AJAX-gebaseerde peilingen',
-	'action-ajaxpoll-view-results-before-vote' => 'Resultaten kunnen in de AJAX-gebaseerde peilingen bekeken worden voordat u hebben gestemd',
+	'action-ajaxpoll-vote' => 'in AJAX-gebaseerde peilingen te stemmen',
+	'action-ajaxpoll-view-results' => 'resultaten in AJAX-gebaseerde peilingen weer te geven',
+	'action-ajaxpoll-view-results-before-vote' => 'resultaten in AJAX-gebaseerde peilingen weer te geven voordat u heeft gestemd',
 );
 
 /** Nederlands (informeel)‎ (Nederlands (informeel)‎)
