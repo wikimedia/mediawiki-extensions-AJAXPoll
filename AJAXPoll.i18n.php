@@ -214,6 +214,7 @@ $messages['ba'] = array(
 
 /** Bikol Central (Bikol Central)
  * @author Geopoet
+ * @author McDutchie
  */
 $messages['bcl'] = array(
 	'ajaxpoll-desc' => 'Minatugot sa nakabaseng pirilian kan AJAX na igwang <tt>&lt;poll&gt;</tt> na tatak',
@@ -236,7 +237,7 @@ $messages['bcl'] = array(
 	'right-ajaxpoll-vote' => 'Makakaboto sa mga nakabaseng pirilian kan Ajax',
 	'right-ajaxpoll-view-results' => 'Makakahiling sa mga result na yaon nakabase sa AJAX na mga prilian',
 	'right-ajaxpoll-view-results-before-vote' => 'Makakatanaw nin mga resulta sa mga pirilian na nakabase sa AJAX bago makapagboto',
-	'action-ajaxpoll-vote' => 'magboto sa nakabaseng mga pirilian sa AJAX.',
+	'action-ajaxpoll-vote' => 'magboto sa nakabaseng mga pirilian sa AJAX', # Fuzzy
 	'action-ajaxpoll-view-results' => 'tanawon an mga resulta sa pirilian na nakabase sa AJAX',
 	'action-ajaxpoll-view-results-before-vote' => 'tanawon an mga result sa pirilian na nakabase sa AJAX bago makapagboto',
 );
@@ -1009,6 +1010,9 @@ $messages['lb'] = array(
 	'ajaxpoll-vote-revoked' => 'Är Stëmm gouf zréckgeruff.',
 	'ajaxpoll-error-csrf-wrong-token' => 'E falschen Token koum un an Är Stëmm gouf ignoréiert.',
 	'right-ajaxpoll-vote' => 'Däerf bei AJAX-baséierten Ëmfroe matmaachen',
+	'right-ajaxpoll-view-results' => 'Däerf Resultater vun AJAX-baséierten Ëmfroe kucken',
+	'right-ajaxpoll-view-results-before-vote' => 'däerf Resultater vun AJAX-baséierten Ëmfroe virum Ofstëmme kucken',
+	'action-ajaxpoll-vote' => 'bäi AJAX-baséierten Ëmfroe matmaachen',
 );
 
 /** Lithuanian (lietuvių)
@@ -1062,6 +1066,7 @@ $messages['map-bms'] = array(
 
 /** Macedonian (македонски)
  * @author Bjankuloski06
+ * @author McDutchie
  */
 $messages['mk'] = array(
 	'ajaxpoll-desc' => 'Овозможува анкети на основа на AJAX со ознаката <tt>&lt;poll&gt;</tt>',
@@ -1084,7 +1089,7 @@ $messages['mk'] = array(
 	'right-ajaxpoll-vote' => 'Може да гласа на анкети на основа на AJAX.',
 	'right-ajaxpoll-view-results' => 'Може да гледа резултати од анкети со AJAX',
 	'right-ajaxpoll-view-results-before-vote' => 'Може да гледа резултати од анкети со AJAX без да има гласано',
-	'action-ajaxpoll-vote' => 'гласање во анкети со AJAX.',
+	'action-ajaxpoll-vote' => 'гласање во анкети со AJAX', # Fuzzy
 	'action-ajaxpoll-view-results' => 'преглед на резултати од анкети со AJAX',
 	'action-ajaxpoll-view-results-before-vote' => 'преглед на резултати од анкети со AJAX без да имате гласано',
 );
@@ -1470,7 +1475,7 @@ $messages['ru'] = array(
 	'right-ajaxpoll-vote' => 'Может голосовать в опросах на основе AJAX',
 	'right-ajaxpoll-view-results' => 'Можно посмотреть результаты опросов на основе AJAX',
 	'right-ajaxpoll-view-results-before-vote' => 'Можно посмотреть результаты опросов на основе AJAX перед голосованием',
-	'action-ajaxpoll-vote' => 'голосование в опросах на основе AJAX.',
+	'action-ajaxpoll-vote' => 'голосование в опросах на основе AJAX',
 	'action-ajaxpoll-view-results' => 'просмотр результатов опросов на основе AJAX',
 	'action-ajaxpoll-view-results-before-vote' => 'просмотр результатов опросов на основе AJAX перед голосованием',
 );
@@ -1653,7 +1658,7 @@ $messages['uk'] = array(
 	'right-ajaxpoll-vote' => 'Можете голосувати в опитуваннях на основі AJAX',
 	'right-ajaxpoll-view-results' => 'Можна переглянути результати в AJAX основі опитувань',
 	'right-ajaxpoll-view-results-before-vote' => 'Можна переглянути результати в AJAX основі опитувань до того, як проголосували',
-	'action-ajaxpoll-vote' => 'голосувати в опитуваннях на основі AJAX.',
+	'action-ajaxpoll-vote' => 'голосувати в опитуваннях на основі AJAX',
 	'action-ajaxpoll-view-results' => 'подивитися результати опитувань на основі AJAX',
 	'action-ajaxpoll-view-results-before-vote' => 'перегляд результатів опитувань на основі AJAX перед голосуванням',
 );
