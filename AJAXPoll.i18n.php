@@ -500,6 +500,7 @@ $messages['eo'] = array(
  * @author Armando-Martin
  * @author Bola
  * @author Fitoschido
+ * @author Ihojose
  * @author Luis Felipe Schenone
  * @author Miguel2706
  * @author VegaDark
@@ -523,6 +524,11 @@ $messages['es'] = array(
 	'ajaxpoll-vote-revoked' => 'Tu voto ha sido revocado.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Se recibió un token erróneo, y tu voto es ignorado.',
 	'right-ajaxpoll-vote' => 'Puede votar en las encuestas basadas en AJAX',
+	'right-ajaxpoll-view-results' => 'Se pueden ver los resultados de las encuentas basadas en AJAX',
+	'right-ajaxpoll-view-results-before-vote' => 'Se pueden ver los resultados de las encuentas basadas en AJAX antes de haber votado',
+	'action-ajaxpoll-vote' => 'Puede votar en las encuestas basadas en AJAX',
+	'action-ajaxpoll-view-results' => 'Ver resultados de las encuentas basadas en AJAX',
+	'action-ajaxpoll-view-results-before-vote' => 'Ver los resultados de las encuentas basadas en AJAX antes de haber votado',
 );
 
 /** Estonian (eesti)
