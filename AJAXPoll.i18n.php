@@ -1095,7 +1095,7 @@ $messages['mk'] = array(
 	'right-ajaxpoll-vote' => 'Може да гласа на анкети на основа на AJAX.',
 	'right-ajaxpoll-view-results' => 'Може да гледа резултати од анкети со AJAX',
 	'right-ajaxpoll-view-results-before-vote' => 'Може да гледа резултати од анкети со AJAX без да има гласано',
-	'action-ajaxpoll-vote' => 'гласање во анкети со AJAX', # Fuzzy
+	'action-ajaxpoll-vote' => 'гласање во анкети со AJAX',
 	'action-ajaxpoll-view-results' => 'преглед на резултати од анкети со AJAX',
 	'action-ajaxpoll-view-results-before-vote' => 'преглед на резултати од анкети со AJAX без да имате гласано',
 );
