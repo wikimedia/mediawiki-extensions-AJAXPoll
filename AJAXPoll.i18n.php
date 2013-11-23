@@ -125,6 +125,7 @@ $messages['af'] = array(
  * @author Zanatos
  */
 $messages['ar'] = array(
+	'ajaxpoll-tracking-category' => 'الصفحات مع استطلاع رأي',
 	'ajaxpoll-vote-update' => 'تم تحديث صوتك.',
 	'ajaxpoll-vote-add' => 'تم إضافة تصويتك',
 	'ajaxpoll-percent-votes' => '$1% من جميع الأصوات',
