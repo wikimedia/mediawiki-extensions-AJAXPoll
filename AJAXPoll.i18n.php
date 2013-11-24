@@ -138,6 +138,7 @@ $messages['ar'] = array(
 );
 
 /** Asturian (asturianu)
+ * @author McDutchie
  * @author Xuacu
  */
 $messages['ast'] = array(
@@ -161,7 +162,7 @@ $messages['ast'] = array(
 	'right-ajaxpoll-vote' => "Pue votar nes encuestes basaes n'AJAX",
 	'right-ajaxpoll-view-results' => "Pue ver los resultaos de les encuestes basaes n'AJAX",
 	'right-ajaxpoll-view-results-before-vote' => "Pue ver los resultaos de les encuestes basaes n'AJAX enantes de votar",
-	'action-ajaxpoll-vote' => "votar nes encuestes basaes n'AJAX.",
+	'action-ajaxpoll-vote' => "votar nes encuestes basaes n'AJAX",
 	'action-ajaxpoll-view-results' => "ver los resultaos de les encuestes basaes n'AJAX",
 	'action-ajaxpoll-view-results-before-vote' => "ver los resultaos de les encuestes basaes n'AJAX enantes de votar",
 );
@@ -1691,6 +1692,7 @@ $messages['zh'] = array(
 );
 
 /** Simplified Chinese (中文（简体）‎)
+ * @author Liuxinyu970226
  * @author Qiyue2001
  * @author Simon Shek
  * @author StephDC
@@ -1717,6 +1719,9 @@ $messages['zh-hans'] = array(
 	'ajaxpoll-vote-revoked' => '您已撤销您的投票。',
 	'ajaxpoll-error-csrf-wrong-token' => '你输入了错误的标记，你的投票将无效',
 	'right-ajaxpoll-vote' => '可在基于AJAX的投票区投票',
+	'action-ajaxpoll-vote' => '在基于AJAX的投票页面中投票',
+	'action-ajaxpoll-view-results' => '在基于AJAX的投票页面查看结果',
+	'action-ajaxpoll-view-results-before-vote' => '在基于AJAX的投票页面投票之前预览结果',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
