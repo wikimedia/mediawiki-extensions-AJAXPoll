@@ -1693,6 +1693,7 @@ $messages['zh'] = array(
 
 /** Simplified Chinese (中文（简体）‎)
  * @author Liuxinyu970226
+ * @author Mys 721tx
  * @author Qiyue2001
  * @author Simon Shek
  * @author StephDC
@@ -1719,6 +1720,8 @@ $messages['zh-hans'] = array(
 	'ajaxpoll-vote-revoked' => '您已撤销您的投票。',
 	'ajaxpoll-error-csrf-wrong-token' => '你输入了错误的标记，你的投票将无效',
 	'right-ajaxpoll-vote' => '可在基于AJAX的投票区投票',
+	'right-ajaxpoll-view-results' => '可查看基于AJAX的调查结果',
+	'right-ajaxpoll-view-results-before-vote' => '可在投票前查看基于AJAX的调查结果',
 	'action-ajaxpoll-vote' => '在基于AJAX的投票页面中投票',
 	'action-ajaxpoll-view-results' => '在基于AJAX的投票页面查看结果',
 	'action-ajaxpoll-view-results-before-vote' => '在基于AJAX的投票页面投票之前预览结果',
