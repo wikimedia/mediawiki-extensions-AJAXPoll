@@ -309,14 +309,15 @@ $messages['br'] = array(
 );
 
 /** Catalan (català)
+ * @author Papapep
  * @author Pitort
  * @author Qllach
  */
 $messages['ca'] = array(
 	'ajaxpoll-desc' => "Permet les enquestes basades en AJAX amb l'etiqueta <tt>&lt;poll&gt;</tt>",
 	'ajaxpoll-tracking-category' => 'Pàgines amb una enquesta',
-	'ajaxpoll-vote-update' => 'El vostre vot ha estat enregistrat.',
-	'ajaxpoll-vote-add' => 'El vostre vot ha estat afegit.',
+	'ajaxpoll-vote-update' => "S'ha enregistrat el vostre vot.",
+	'ajaxpoll-vote-add' => "S'ha afegit el vostre vot.",
 	'ajaxpoll-vote-error' => 'Hi ha hagut un problema en processar el vostre vot, si us plau torneu a provar una altra vegada.',
 	'ajaxpoll-percent-votes' => '$1% del total de vots',
 	'ajaxpoll-your-vote' => 'Vostè ja va votar per " $1 " el  $2, podeu canviar el vostre vot fent clic sobre una de les respostes que hi ha més avall.',
@@ -325,7 +326,7 @@ $messages['ca'] = array(
 	'ajaxpoll-submitting' => 'Espereu si us plau, estem precessant el vostre vot.',
 	'ajaxpoll-vote-permission' => 'No teniu dret a vot.',
 	'ajaxpoll-revoke-vote' => 'Vull anul·lar el meu vot',
-	'ajaxpoll-vote-revoked' => 'El vostre vot ha estat anul·lat.',
+	'ajaxpoll-vote-revoked' => "S'ha anul·lat el vostre vot.",
 	'right-ajaxpoll-vote' => 'Podeu votar a les enquestes basades en AJAX',
 );
 
