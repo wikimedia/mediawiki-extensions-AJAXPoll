@@ -452,7 +452,7 @@ $messages['dsb'] = array(
 	'ajaxpoll-submitting' => 'Pšosym cakaj, twój głos se pśeźěłujo.',
 	'ajaxpoll-vote-permission' => 'Njamóžoš wótgłosowaś.',
 	'ajaxpoll-revoke-vote' => 'Cu swój głos anulěrowaś',
-	'ajaxpoll-vote-revoked' => 'Sy swój głos wuspěšnje anulěrował.', # Fuzzy
+	'ajaxpoll-vote-revoked' => 'Twój głos jo se anulěrował.',
 	'right-ajaxpoll-vote' => 'Na wótgłosowanjach bazěrowanych na AJAX se wobźěliś',
 );
 
@@ -781,7 +781,7 @@ $messages['hsb'] = array(
 	'ajaxpoll-submitting' => 'Prošu čakaj, twój hłós so předźěłuje.',
 	'ajaxpoll-vote-permission' => 'Njemóžeš wothłosować.',
 	'ajaxpoll-revoke-vote' => 'Chcu swój hłós anulować',
-	'ajaxpoll-vote-revoked' => 'Sy swój hłós wuspěšnje anulował.', # Fuzzy
+	'ajaxpoll-vote-revoked' => 'Twój hłós je so anulował.',
 	'right-ajaxpoll-vote' => 'Na wothłosowanjach bazowanych na AJAX so wobdźělić',
 );
 
@@ -1246,7 +1246,7 @@ $messages['nl'] = array(
 	'ajaxpoll-error-csrf-wrong-token' => 'Er is een ongeldig token ontvangen en uw stem wordt genegeerd.',
 	'right-ajaxpoll-vote' => 'Kan in AJAX-gebaseerde peilingen stemmen',
 	'right-ajaxpoll-view-results' => 'Kan de resultaten weergeven in AJAX-gebaseerde peilingen',
-	'right-ajaxpoll-view-results-before-vote' => 'Resultaten kunnen in de AJAX-gebaseerde peilingen bekeken worden voordat u hebben gestemd',
+	'right-ajaxpoll-view-results-before-vote' => 'Kan resultaten bekijken in AJAX-gebaseerde peilingen alvorens gestemd te hebben',
 	'action-ajaxpoll-vote' => 'in AJAX-gebaseerde peilingen te stemmen',
 	'action-ajaxpoll-view-results' => 'resultaten in AJAX-gebaseerde peilingen weer te geven',
 	'action-ajaxpoll-view-results-before-vote' => 'resultaten in AJAX-gebaseerde peilingen weer te geven voordat u heeft gestemd',
