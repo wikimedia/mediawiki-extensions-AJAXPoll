@@ -899,8 +899,13 @@ $messages['it'] = array(
 	'ajaxpoll-view-results-before-vote-permission' => 'Non sei autorizzato a visualizzare i risultati di questo sondaggio prima di aver votato.',
 	'ajaxpoll-revoke-vote' => 'Voglio revocare il mio voto',
 	'ajaxpoll-vote-revoked' => 'Hai revocato con successo il tuo voto.',
-	'ajaxpoll-error-csrf-wrong-token' => "E' stato ricevuto un token errato, e il tuo voto verrà ignorato.",
+	'ajaxpoll-error-csrf-wrong-token' => 'È stato ricevuto un token errato, e il tuo voto verrà ignorato.',
 	'right-ajaxpoll-vote' => 'Vota nei sondaggi tramite AJAX',
+	'right-ajaxpoll-view-results' => 'Può vedere i risultati nei sondaggi tramite AJAX',
+	'right-ajaxpoll-view-results-before-vote' => 'Può vedere i risultati nei sondaggi tramite AJAX prima di aver votato',
+	'action-ajaxpoll-vote' => 'votare nei sondaggi tramite AJAX',
+	'action-ajaxpoll-view-results' => 'vedere i risultati nei sondaggi tramite AJAX',
+	'action-ajaxpoll-view-results-before-vote' => 'vedere i risultati nei sondaggi tramite AJAX prima di aver votato',
 );
 
 /** Japanese (日本語)
