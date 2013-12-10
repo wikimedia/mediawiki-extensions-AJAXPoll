@@ -1540,6 +1540,7 @@ $messages['sr-el'] = array(
 /** Swedish (svenska)
  * @author Jopparn
  * @author Liftarn
+ * @author Tobulos1
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
@@ -1561,6 +1562,8 @@ $messages['sv'] = array(
 	'ajaxpoll-vote-revoked' => 'Din röst har återkallats.',
 	'ajaxpoll-error-csrf-wrong-token' => 'En felaktig token mottogs och din röst ignoreras.',
 	'right-ajaxpoll-vote' => 'Kan rösta i AJAX-baserade omröstningar',
+	'action-ajaxpoll-view-results' => 'visa resultat i AJAX-baserade enkäter',
+	'action-ajaxpoll-view-results-before-vote' => 'visa resultat i AJAX-baserade enkäter innan de har röstat',
 );
 
 /** Swahili (Kiswahili)
