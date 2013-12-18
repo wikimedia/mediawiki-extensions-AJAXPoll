@@ -1027,6 +1027,8 @@ $messages['lb'] = array(
 	'right-ajaxpoll-view-results' => 'Däerf Resultater vun AJAX-baséierten Ëmfroe kucken',
 	'right-ajaxpoll-view-results-before-vote' => 'däerf Resultater vun AJAX-baséierten Ëmfroe virum Ofstëmme kucken',
 	'action-ajaxpoll-vote' => 'bäi AJAX-baséierten Ëmfroe matmaachen',
+	'action-ajaxpoll-view-results' => 'Resultater vun AJAX-baséierten Ëmfroe kucken',
+	'action-ajaxpoll-view-results-before-vote' => 'Resultater vun AJAX-baséierten Ëmfroe virum Ofstëmme kucken',
 );
 
 /** Lithuanian (lietuvių)
