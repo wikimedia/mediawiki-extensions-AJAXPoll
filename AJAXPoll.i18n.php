@@ -957,6 +957,7 @@ $messages['ka'] = array(
 
 /** Korean (한국어)
  * @author Hym411
+ * @author Yjs5497
  * @author 아라
  */
 $messages['ko'] = array(
@@ -979,6 +980,10 @@ $messages['ko'] = array(
 	'ajaxpoll-error-csrf-wrong-token' => '잘못된 토큰이 전달되어, 투표가 무시되었습니다.',
 	'right-ajaxpoll-vote' => 'AJAX 기반 설문 조사에 투표할 수 있음',
 	'right-ajaxpoll-view-results' => 'AJAX 기반의 투표 결과를 볼 수 있습니다',
+	'right-ajaxpoll-view-results-before-vote' => '투표하기 전 AJAX기반 설문조사 결과를 볼 수 있습니다',
+	'action-ajaxpoll-vote' => 'AJAX기반 조사에 투표하기',
+	'action-ajaxpoll-view-results' => 'AJAX기반 조사 결과 보기',
+	'action-ajaxpoll-view-results-before-vote' => '투표하기 전 AJAX 기반 투표 결과 보기',
 );
 
 /** Colognian (Ripoarisch)
@@ -1336,6 +1341,11 @@ $messages['pl'] = array(
 	'ajaxpoll-vote-revoked' => 'Twój głos został odwołany.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Odebrano błędny token, a Twój głos został zignorowany.',
 	'right-ajaxpoll-vote' => 'Można głosować w sondażach opartych na technologii AJAX',
+	'right-ajaxpoll-view-results' => 'Można przejrzeć wyniki ankiet opartych na AJAX',
+	'right-ajaxpoll-view-results-before-vote' => 'Można przejrzeć wyniki ankiet opartych na AJAX przed głosowaniem',
+	'action-ajaxpoll-vote' => 'głosowanie w ankietach opartych na AJAX',
+	'action-ajaxpoll-view-results' => 'zobacz wyniki ankiety opartej na AJAX',
+	'action-ajaxpoll-view-results-before-vote' => 'przeglądanie wyników ankiet opartych na AJAX przed głosowaniem',
 );
 
 /** Piedmontese (Piemontèis)
@@ -1363,6 +1373,7 @@ $messages['pms'] = array(
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
+	'ajaxpoll-vote-add' => 'ستاسې رايه ورگډه شوه.',
 	'ajaxpoll-percent-votes' => '$1% د ټولو رايو څخه',
 );
 
