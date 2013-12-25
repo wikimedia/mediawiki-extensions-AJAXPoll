@@ -548,6 +548,7 @@ $messages['et'] = array(
 
 /** Persian (فارسی)
  * @author Alireza
+ * @author Armin1392
  * @author Ebraminio
  * @author Mehdi
  * @author Mjbmr
@@ -573,6 +574,11 @@ $messages['fa'] = array(
 	'ajaxpoll-vote-revoked' => 'رأی شما با موفقیت واگردانی شد.',
 	'ajaxpoll-error-csrf-wrong-token' => 'یک توکن اشتباه دریافت شد و رأی شما نادیده گرفته شد.',
 	'right-ajaxpoll-vote' => 'می‌تواند در نظرخواهی آی‌جکسی رأی دهد',
+	'right-ajaxpoll-view-results' => 'نتایج نظرسنجی‌های مبتنی ای‌جکس را می‌توان مشاهده کرد',
+	'right-ajaxpoll-view-results-before-vote' => 'نتایج نظرسنجی‌های مبتنی ای‌جکس را می‌توان پیش از داشتن رأی مشاهده کرد',
+	'action-ajaxpoll-vote' => 'رأی دادن به نظرسنجی‌های مبتنی ای‌جکس',
+	'action-ajaxpoll-view-results' => 'مشاهدهٔ نتایج نظرسنجی‌های مبتنی ای‌‌جکس',
+	'action-ajaxpoll-view-results-before-vote' => 'مشاهدهٔ نتایج نظرسنجی‌های مبتنی ای‌‌جکس پیش از داشتن رأی',
 );
 
 /** Finnish (suomi)
@@ -670,6 +676,7 @@ $messages['frp'] = array(
 );
 
 /** Galician (galego)
+ * @author Elisardojm
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -691,6 +698,11 @@ $messages['gl'] = array(
 	'ajaxpoll-vote-revoked' => 'Anulouse o seu voto.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Recibiuse un pase incorrecto e ignorouse o seu voto.',
 	'right-ajaxpoll-vote' => 'Pode votar nas enquisas baseadas en AJAX',
+	'right-ajaxpoll-view-results' => 'Poden verse os resultados das enquisas baseadas en AJAX',
+	'right-ajaxpoll-view-results-before-vote' => 'Poden verse os resultados das enquisas baseadas en AJAX antes de votar.',
+	'action-ajaxpoll-vote' => 'Vote nas enquisas baseadas en AJAX',
+	'action-ajaxpoll-view-results' => 'Visualizar os resultados das enquisas baseadas en AJAX',
+	'action-ajaxpoll-view-results-before-vote' => 'Visualizar os resultados das enquisas baseadas en AJAX antes de votar.',
 );
 
 /** Swiss German (Alemannisch)
@@ -777,12 +789,21 @@ $messages['hsb'] = array(
 	'ajaxpoll-percent-votes' => '$1 % wšěch hłosow',
 	'ajaxpoll-your-vote' => 'Sy hižo $2 za "$1" wothłosował, móžeš swój hłós změnić, kliknjo deleka na wotmołwu.',
 	'ajaxpoll-no-vote' => 'Prošu wothłosuj deleka.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Prošu wothłosuj deleka. Wuslědki so pokazaja, hdyž sy wothłosował.',
 	'ajaxpoll-info' => '{{PLURAL:$1|Je so jedyn hłós wotedał|Stej so $1 hłosaj wotedałoj|Su so $1 hłosy wotedali|Je so $1 hłosow wotedało}}, wot toho časa, zo wothłosowanje je so $2 wutworiło.',
 	'ajaxpoll-submitting' => 'Prošu čakaj, twój hłós so předźěłuje.',
 	'ajaxpoll-vote-permission' => 'Njemóžeš wothłosować.',
+	'ajaxpoll-view-results-permission' => 'Njejsy prawo, sej wuslědki tutoho wothłosowanja wobhladać.',
+	'ajaxpoll-view-results-before-vote-permission' => 'Njejsy prawo, sej wuslědki tutoho wothłosowanja wobhladać, doniž njejsy wothłosował.',
 	'ajaxpoll-revoke-vote' => 'Chcu swój hłós anulować',
 	'ajaxpoll-vote-revoked' => 'Twój hłós je so anulował.',
+	'ajaxpoll-error-csrf-wrong-token' => 'Wopačny token je so přijał, a twój hłós je so ignorował.',
 	'right-ajaxpoll-vote' => 'Na wothłosowanjach bazowanych na AJAX so wobdźělić',
+	'right-ajaxpoll-view-results' => 'Wuslědki we wothłosowanjach na zakładźe AJAX sej wobhladać',
+	'right-ajaxpoll-view-results-before-vote' => 'Wuslědki we wothłosowanjach na zakładźe AJAX sej wobhladać prjedy hač sy wothłosował',
+	'action-ajaxpoll-vote' => 'we wothłosowanjach na zakładźe AJAX wothłosować',
+	'action-ajaxpoll-view-results' => 'Wuslědki we wothłosowanjach na zakładźe AJAX sej wobhladać',
+	'action-ajaxpoll-view-results-before-vote' => 'Wuslědki we wothłosowanjach na zakładźe AJAX sej wobhladać prjedy hač sy wothłosował',
 );
 
 /** Hungarian (magyar)
