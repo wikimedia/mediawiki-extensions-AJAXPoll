@@ -978,6 +978,7 @@ $messages['ka'] = array(
 
 /** Korean (한국어)
  * @author Hym411
+ * @author Priviet
  * @author Yjs5497
  * @author 아라
  */
@@ -990,7 +991,7 @@ $messages['ko'] = array(
 	'ajaxpoll-percent-votes' => '모든 투표 중 $1%',
 	'ajaxpoll-your-vote' => '이미 $2에 "$1"(을)를 투표했습니다. 아래의 답변을 클릭하여 투표를 바꿀 수 있습니다.',
 	'ajaxpoll-no-vote' => '아래에 투표하세요.',
-	'ajaxpoll-no-vote-results-after-voting' => '아래에서 투표하세요. 투표를 하면 결과가 보여집니다.',
+	'ajaxpoll-no-vote-results-after-voting' => '아래에서 투표하세요. 투표를 하면 결과가 보입니다.',
 	'ajaxpoll-info' => '$2에 설문 조사가 만들어진 뒤 {{PLURAL:$1|1표|$1표}}가 있습니다.',
 	'ajaxpoll-submitting' => '투표를 제출하는 동안 잠시 기다려주세요.',
 	'ajaxpoll-vote-permission' => '투표를 받을 수 없습니다.',
