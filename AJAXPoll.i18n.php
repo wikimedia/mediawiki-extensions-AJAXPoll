@@ -1231,6 +1231,7 @@ $messages['mt'] = array(
 );
 
 /** Norwegian Bokmål (norsk bokmål)
+ * @author Cocu
  * @author Danmichaelo
  * @author Nghtwlkr
  * @author Simen47
@@ -1244,13 +1245,20 @@ $messages['nb'] = array(
 	'ajaxpoll-your-vote' => 'Du har allerede stemt på «$1» den $2, du kan endre din stemme ved å klikke på et svar nedenfor.',
 	'ajaxpoll-no-vote' => 'Vennligst stem nedenfor.',
 	'ajaxpoll-no-vote-results-after-voting' => 'Vennligst stem under. Resultatene vil bli vist når du har stemt.',
-	'ajaxpoll-info' => 'Det var $1 stemmer siden spørreundersøkelsen ble opprettet den $2.', # Fuzzy
+	'ajaxpoll-info' => 'Det var {{PLURAL:$1|en stemme|$1 stemmer}} siden spørreundersøkelsen ble opprettet den $2.',
 	'ajaxpoll-submitting' => 'Vennligst vent, sender inn stemmen din.',
 	'ajaxpoll-vote-permission' => 'Du har ikke rettigheter til å stemme.',
 	'ajaxpoll-view-results-permission' => 'Du har ikke rettigheter til å vise resultatene i denne avstemningen.',
 	'ajaxpoll-view-results-before-vote-permission' => 'Du har ikke rettigheter til å vise resultatene av denne avstemningen før du har stemt.',
 	'ajaxpoll-revoke-vote' => 'Jeg vil trekke tilbake stemmen min',
 	'ajaxpoll-vote-revoked' => 'Du har trukket tilbake stemmen din.', # Fuzzy
+	'ajaxpoll-error-csrf-wrong-token' => 'En feilaktig token ble mottatt, og din stemme er ignorert.',
+	'right-ajaxpoll-vote' => 'Kan stemme i AJAX-baserte avstemninger',
+	'right-ajaxpoll-view-results' => 'Kan se resultater i AJAX-baserte avstemninger',
+	'right-ajaxpoll-view-results-before-vote' => 'Kan se resultater i AJAX-baserte avstemninger før stemme er avgitt',
+	'action-ajaxpoll-vote' => 'stem i AJAX-baserte avstemninger',
+	'action-ajaxpoll-view-results' => 'se resultater i AJAX-baserte avstemninger',
+	'action-ajaxpoll-view-results-before-vote' => 'se resultater i AJAX-baserte avstemninger før avstemming',
 );
 
 /** Dutch (Nederlands)
