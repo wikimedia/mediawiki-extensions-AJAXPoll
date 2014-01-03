@@ -203,7 +203,7 @@ $messages['ba'] = array(
 	'ajaxpoll-no-vote' => 'Зинһар өсөн, түбәндә тауыш биреүҙә ҡатнашығыҙ.',
 	'ajaxpoll-no-vote-results-after-voting' => 'Зинһар, түбәндә тауыш бирегеҙ.
 Һөҙөмтәләр һеҙ тауыш биргәс күрһәтелер.',
-	'ajaxpoll-info' => '$2 тауыш биреү башланғандан башлап {{PLURAL:$1|кеше тауыш бирҙе}}.',
+	'ajaxpoll-info' => '$2 тауыш биреү башланғандан башлап {{PLURAL:$1|кеше тауыш бирҙе}}.', # Fuzzy
 	'ajaxpoll-submitting' => 'Зинһар, һеҙҙең тауыш тураһында мәғлүмәт тапшырылғанын көтөгөз...',
 	'ajaxpoll-vote-permission' => 'Һеҙҙең тауыш биреү хоҡуғы юҡ.',
 	'ajaxpoll-view-results-permission' => 'Һеҙ был һорауламаның һөҙөмтәләрен ҡарай алмайһығыҙ.',
@@ -1521,7 +1521,7 @@ $messages['ru'] = array(
 	'ajaxpoll-your-vote' => 'Вы уже проголосовали «$1» $2. Вы можете изменить свой выбор, нажав на один из представленных ниже ответов.',
 	'ajaxpoll-no-vote' => 'Пожалуйста, проголосуйте ниже.',
 	'ajaxpoll-no-vote-results-after-voting' => 'Проголосуйте, пожалуйста, ниже. Результаты будут показаны после того, как вы проголосуете.',
-	'ajaxpoll-info' => 'С момента создания голосования $2 {{PLURAL:$1|поступил $1 голос|поступило $1 голоса|поступило $1 голосов}}.',
+	'ajaxpoll-info' => 'С момента создания голосования $2 {{PLURAL:$1|поступил $1 голос|поступило $1 голосов|поступило $1 голоса}}.', # Fuzzy
 	'ajaxpoll-submitting' => 'Пожалуйста, подождите, ваш голос обрабатывается.',
 	'ajaxpoll-vote-permission' => 'Вы не можете голосовать.',
 	'ajaxpoll-view-results-permission' => 'Вы не можете просматривать результаты этого опроса.',
@@ -1728,6 +1728,8 @@ $messages['uk'] = array(
  * @author Minh Nguyen
  */
 $messages['vi'] = array(
+	'ajaxpoll-tracking-category' => 'Trang có thăm dò ý kiến',
+	'ajaxpoll-percent-votes' => '$1% trên tổng số phiếu',
 	'ajaxpoll-your-vote' => 'Bạn đã bỏ phiếu cho “$1” vào $2. Để thay đổi phiếu bầu của bạn, nhập một câu trả lời khác dưới đây.',
 );
 
