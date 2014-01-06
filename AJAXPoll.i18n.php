@@ -481,6 +481,7 @@ $messages['el'] = array(
 
 /** Esperanto (Esperanto)
  * @author ArnoLagrange
+ * @author KuboF
  */
 $messages['eo'] = array(
 	'ajaxpoll-desc' => 'Ebligas enketojn bazitajn sur AJAX per markilo <tt>&lt;poll&gt;</tt>',
@@ -495,13 +496,14 @@ $messages['eo'] = array(
 	'ajaxpoll-submitting' => 'Bonvolu atendi dum traktado de via baloto.',
 	'ajaxpoll-vote-permission' => 'Vi ne rajtas baloti.',
 	'ajaxpoll-revoke-vote' => 'Mi volas nuligi mian baloton.',
-	'ajaxpoll-vote-revoked' => 'Vi sukcese nuligis vian baloton.', # Fuzzy
+	'ajaxpoll-vote-revoked' => 'Via voĉdono estis nuligita.',
 	'right-ajaxpoll-vote' => 'Povas baloti en enketoj bazitaj sur AJAX',
 );
 
 /** Spanish (español)
  * @author Armando-Martin
  * @author Bola
+ * @author Ciencia Al Poder
  * @author Fitoschido
  * @author Ihojose
  * @author Luis Felipe Schenone
@@ -517,20 +519,20 @@ $messages['es'] = array(
 	'ajaxpoll-percent-votes' => '$1% de todos los votos',
 	'ajaxpoll-your-vote' => 'Ya votaste por "$1" el $2, puedes cambiar tu voto haciendo clic en una respuesta debajo.',
 	'ajaxpoll-no-vote' => 'Realiza tu voto a continuación.',
-	'ajaxpoll-no-vote-results-after-voting' => 'Realice su votación a continuación. Se mostrarán los resultados después de que haya votado.',
-	'ajaxpoll-info' => 'Ha habido {{PLURAL:$1|un voto|$1 votos}} desde que la encuesta fue creada el $2.',
-	'ajaxpoll-submitting' => 'Por favor espera, estamos comprobando tu voto, ten paciencia.',
-	'ajaxpoll-vote-permission' => 'No puede votar.',
-	'ajaxpoll-view-results-permission' => 'Usted no tiene derecho a ver los resultados de esta encuesta.',
-	'ajaxpoll-view-results-before-vote-permission' => 'Usted no tiene derecho a ver los resultados de esta encuesta antes de haber votado.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Realice tu voto a continuación. Se mostrarán los resultados después de que hayas votado.',
+	'ajaxpoll-info' => '{{PLURAL:$1|Ha habido un voto|Han habido $1 votos}} desde que la encuesta fue creada el $2.',
+	'ajaxpoll-submitting' => 'Espera un momento, por favor, estamos comprobando tu voto.',
+	'ajaxpoll-vote-permission' => 'No tienes derecho a votar.',
+	'ajaxpoll-view-results-permission' => 'No tienes derecho a ver los resultados de esta encuesta.',
+	'ajaxpoll-view-results-before-vote-permission' => 'No tienes derecho a ver los resultados de esta encuesta antes de haber votado.',
 	'ajaxpoll-revoke-vote' => 'Quiero revocar mi voto',
 	'ajaxpoll-vote-revoked' => 'Tu voto ha sido revocado.',
-	'ajaxpoll-error-csrf-wrong-token' => 'Se recibió un token erróneo, y tu voto es ignorado.',
+	'ajaxpoll-error-csrf-wrong-token' => 'Se recibió un token erróneo, y tu voto ha sido ignorado.',
 	'right-ajaxpoll-vote' => 'Puede votar en las encuestas basadas en AJAX',
-	'right-ajaxpoll-view-results' => 'Se pueden ver los resultados de las encuentas basadas en AJAX',
-	'right-ajaxpoll-view-results-before-vote' => 'Se pueden ver los resultados de las encuentas basadas en AJAX antes de haber votado',
+	'right-ajaxpoll-view-results' => 'Puede ver los resultados de las encuentas basadas en AJAX',
+	'right-ajaxpoll-view-results-before-vote' => 'Puede ver los resultados de las encuestas basadas en AJAX antes de haber votado',
 	'action-ajaxpoll-vote' => 'Puede votar en las encuestas basadas en AJAX',
-	'action-ajaxpoll-view-results' => 'Ver resultados de las encuentas basadas en AJAX',
+	'action-ajaxpoll-view-results' => 'Ver los resultados de las encuentas basadas en AJAX',
 	'action-ajaxpoll-view-results-before-vote' => 'Ver los resultados de las encuentas basadas en AJAX antes de haber votado',
 );
 
