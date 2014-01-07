@@ -1509,6 +1509,7 @@ $messages['roa-tara'] = array(
  * @author DCamer
  * @author Iluvatar
  * @author KPu3uC B Poccuu
+ * @author Kaganer
  * @author Lockal
  * @author Okras
  * @author Александр Сигачёв
@@ -1523,7 +1524,7 @@ $messages['ru'] = array(
 	'ajaxpoll-your-vote' => 'Вы уже проголосовали «$1» $2. Вы можете изменить свой выбор, нажав на один из представленных ниже ответов.',
 	'ajaxpoll-no-vote' => 'Пожалуйста, проголосуйте ниже.',
 	'ajaxpoll-no-vote-results-after-voting' => 'Проголосуйте, пожалуйста, ниже. Результаты будут показаны после того, как вы проголосуете.',
-	'ajaxpoll-info' => 'С момента создания голосования $2 {{PLURAL:$1|поступил $1 голос|поступило $1 голосов|поступило $1 голоса}}.', # Fuzzy
+	'ajaxpoll-info' => 'С момента создания голосования $2 {{PLURAL:$1|поступил $1 голос|поступило $1 голосов|поступили $1 голоса}}.',
 	'ajaxpoll-submitting' => 'Пожалуйста, подождите, ваш голос обрабатывается.',
 	'ajaxpoll-vote-permission' => 'Вы не можете голосовать.',
 	'ajaxpoll-view-results-permission' => 'Вы не можете просматривать результаты этого опроса.',
