@@ -306,6 +306,9 @@ $messages['br'] = array(
 	'ajaxpoll-vote-revoked' => 'Tennet eo bet ho vot.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Resevet ez eus bet ur jedouer fall ha dianavezet eo bet ho vot.',
 	'right-ajaxpoll-vote' => "A c'hall votiñ er sontadegoù diazezet war AJAX",
+	'action-ajaxpoll-vote' => 'votiñ er sontadegoù diazezet war AJAX',
+	'action-ajaxpoll-view-results' => "gwelet disoc'hoù ar sontadegoù diazezet war AJAX",
+	'action-ajaxpoll-view-results-before-vote' => "gwelet disoc'hoù ar sontadegoù diazezet war AJAX a-raok bezañ votet",
 );
 
 /** Catalan (català)
@@ -700,11 +703,11 @@ $messages['gl'] = array(
 	'ajaxpoll-vote-revoked' => 'Anulouse o seu voto.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Recibiuse un pase incorrecto e ignorouse o seu voto.',
 	'right-ajaxpoll-vote' => 'Pode votar nas enquisas baseadas en AJAX',
-	'right-ajaxpoll-view-results' => 'Poden verse os resultados das enquisas baseadas en AJAX',
-	'right-ajaxpoll-view-results-before-vote' => 'Poden verse os resultados das enquisas baseadas en AJAX antes de votar.',
-	'action-ajaxpoll-vote' => 'Vote nas enquisas baseadas en AJAX',
-	'action-ajaxpoll-view-results' => 'Visualizar os resultados das enquisas baseadas en AJAX',
-	'action-ajaxpoll-view-results-before-vote' => 'Visualizar os resultados das enquisas baseadas en AJAX antes de votar.',
+	'right-ajaxpoll-view-results' => 'Pode ver os resultados das enquisas baseadas en AJAX',
+	'right-ajaxpoll-view-results-before-vote' => 'Pode ver os resultados das enquisas baseadas en AJAX antes de votar',
+	'action-ajaxpoll-vote' => 'votar nas enquisas baseadas en AJAX',
+	'action-ajaxpoll-view-results' => 'ver os resultados das enquisas baseadas en AJAX',
+	'action-ajaxpoll-view-results-before-vote' => 'ver os resultados das enquisas baseadas en AJAX antes de votar',
 );
 
 /** Swiss German (Alemannisch)
