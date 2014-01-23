@@ -1732,11 +1732,19 @@ $messages['uk'] = array(
 /** Vietnamese (Tiếng Việt)
  * @author Baonguyen21022003
  * @author Minh Nguyen
+ * @author Withoutaname
  */
 $messages['vi'] = array(
 	'ajaxpoll-tracking-category' => 'Trang có thăm dò ý kiến',
 	'ajaxpoll-percent-votes' => '$1% trên tổng số phiếu',
 	'ajaxpoll-your-vote' => 'Bạn đã bỏ phiếu cho “$1” vào $2. Để thay đổi phiếu bầu của bạn, nhập một câu trả lời khác dưới đây.',
+	'ajaxpoll-no-vote' => 'Xin hãy bỏ phiếu dưới đây.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Xin vui lòng bình chọn dưới đây. Kết quả sẽ được hiển thị khi nào bạn bỏ phiếu rồi.',
+	'ajaxpoll-info' => 'Có {{PLURAL:$1|$1}} phiếu từ khi bầu cử đã đườc tạo ra trên', # Fuzzy
+	'ajaxpoll-submitting' => 'Xin chờ, đang đệ trình phiếu của bạn.',
+	'ajaxpoll-vote-permission' => 'Bạn không có quyền bỏ phiếu.',
+	'ajaxpoll-view-results-permission' => 'Bạn không có quyền xem kết quả của bầu cử này.',
+	'ajaxpoll-view-results-before-vote-permission' => 'Bạn không có quyền xem kết quả của bầu cử này trước khi bạn đã bỏ phiếu.',
 );
 
 /** Chinese (中文)
