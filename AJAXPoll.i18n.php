@@ -1506,6 +1506,7 @@ $messages['roa-tara'] = array(
 	'ajaxpoll-vote-revoked' => "'U vote tune ha state revocate.",
 	'ajaxpoll-error-csrf-wrong-token' => "'Nu gettone sbagliate ha state ricevute, e 'u vote tune ha state cacate.",
 	'right-ajaxpoll-vote' => 'Puè vutà le sondagge in AJAX',
+	'right-ajaxpoll-view-results' => "Puè 'ndrucà le resultate de le sondagge fatte cu AJAX",
 );
 
 /** Russian (русский)
