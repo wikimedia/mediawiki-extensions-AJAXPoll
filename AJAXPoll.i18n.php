@@ -1741,11 +1741,11 @@ $messages['vi'] = array(
 	'ajaxpoll-your-vote' => 'Bạn đã bỏ phiếu cho “$1” vào $2. Để thay đổi phiếu bầu của bạn, nhập một câu trả lời khác dưới đây.',
 	'ajaxpoll-no-vote' => 'Xin hãy bỏ phiếu dưới đây.',
 	'ajaxpoll-no-vote-results-after-voting' => 'Xin vui lòng bình chọn dưới đây. Kết quả sẽ được hiển thị khi nào bạn bỏ phiếu rồi.',
-	'ajaxpoll-info' => 'Có {{PLURAL:$1|$1}} phiếu từ khi bầu cử đã đườc tạo ra trên', # Fuzzy
+	'ajaxpoll-info' => 'Có $1 phiếu từ khi biểu quyết đã được tạo ra vào $2.',
 	'ajaxpoll-submitting' => 'Xin chờ, đang đệ trình phiếu của bạn.',
 	'ajaxpoll-vote-permission' => 'Bạn không có quyền bỏ phiếu.',
-	'ajaxpoll-view-results-permission' => 'Bạn không có quyền xem kết quả của bầu cử này.',
-	'ajaxpoll-view-results-before-vote-permission' => 'Bạn không có quyền xem kết quả của bầu cử này trước khi bạn đã bỏ phiếu.',
+	'ajaxpoll-view-results-permission' => 'Bạn không có quyền xem kết quả của biểu quyết này.',
+	'ajaxpoll-view-results-before-vote-permission' => 'Bạn không có quyền xem kết quả của biểu quyết này trước khi bạn đã bỏ phiếu.',
 );
 
 /** Chinese (中文)
