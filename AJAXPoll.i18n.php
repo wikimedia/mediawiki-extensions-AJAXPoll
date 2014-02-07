@@ -551,6 +551,13 @@ $messages['et'] = array(
 	'ajaxpoll-vote-permission' => 'Sul ei ole õigust hääletada.',
 );
 
+/** Basque (euskara)
+ * @author Subi
+ */
+$messages['eu'] = array(
+	'ajaxpoll-percent-votes' => 'Boto guztien %$1a',
+);
+
 /** Persian (فارسی)
  * @author Alireza
  * @author Armin1392
