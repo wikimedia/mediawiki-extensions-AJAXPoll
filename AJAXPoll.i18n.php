@@ -289,6 +289,7 @@ $messages['bn'] = array(
  * @author Y-M D
  */
 $messages['br'] = array(
+	'ajaxpoll-desc' => 'Aotren ar goulennoù diazezet war AJAX gant <tt>&lt;poll&gt;</tt> tag',
 	'ajaxpoll-tracking-category' => 'Pajennoù enno ur sontadeg',
 	'ajaxpoll-vote-update' => 'Hizivaet eo bet ho vot.',
 	'ajaxpoll-vote-add' => 'Ouzhpennet eo bet ho vot.',
