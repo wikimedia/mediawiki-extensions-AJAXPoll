@@ -1033,12 +1033,20 @@ $messages['ksh'] = array(
 	'ajaxpoll-percent-votes' => '$1% vun all Schtemme',
 	'ajaxpoll-your-vote' => 'Do häs aam $2 ald för „$1“ jeschtemmp. Do kanns Ding Scheimme ändere. Doför moß De onge op en Antwoot klecke.',
 	'ajaxpoll-no-vote' => 'Onge kanns De afschtemme.',
+	'ajaxpoll-no-vote-results-after-voting' => 'donn onge afschtemme. Wad eruß kohm kriß De aanjezeisch, wann De afjeschtemmp häs.',
 	'ajaxpoll-info' => 'Et {{PLURAL:$1|wood ein Schtemm|woodte $1 Schtemme|wood kein Schtemm}} afjejovve zigg aam $2 di Ömfrooch aanjelaat wood.',
 	'ajaxpoll-submitting' => 'Ene kleine Momang, Ding Schtemm weed enjedraare.',
 	'ajaxpoll-vote-permission' => 'Do be nit schtemmberääschtesch.',
+	'ajaxpoll-view-results-permission' => 'Do häs nid et Rääsch, ze beloore, wat erus jekumme es.',
+	'ajaxpoll-view-results-before-vote-permission' => 'Do häs nid et Rääsch, ze beloore, wat erus jekumme es, ih dat de sällver affjeschtemmp häs.',
 	'ajaxpoll-revoke-vote' => 'Esch well ming Schtemm zerökträcke',
-	'ajaxpoll-vote-revoked' => 'Deng Schtemm es zerökjetroke.', # Fuzzy
+	'ajaxpoll-vote-revoked' => 'Deng Schtemm es zerökjetroke.',
+	'ajaxpoll-error-csrf-wrong-token' => 'Mer hatte e problehm med ener verkehte Könnong, dröm weed dat jäz nit jezallt.',
 	'right-ajaxpoll-vote' => 'Darf en Afschtemmonge metmaache, di op <i lang="en">AJAX</i> boue',
+	'right-ajaxpoll-view-results' => 'Darv en Afschtemmonge, di op <i lang="en">AJAX</i> boue, beloore wad erus kohm.',
+	'right-ajaxpoll-view-results-before-vote' => 'Darv en Afschtemmonge, di op <i lang="en">AJAX</i> boue, beloore, wad erus kohm, der ohne sellver afjeschtemmp ze han.',
+	'action-ajaxpoll-vote' => 'bei Afschtemmonge, di op <i lang="en">AJAX</i> boue, metmaache',
+	'action-ajaxpoll-view-results' => 'bei Afschtemmonge, di op <i lang="en">AJAX</i> boue, beloore wad erus kohm',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
