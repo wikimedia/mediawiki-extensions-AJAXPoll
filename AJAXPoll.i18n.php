@@ -1430,28 +1430,34 @@ $messages['ps'] = array(
 
 /** Portuguese (português)
  * @author Cainamarques
+ * @author Hamilton Abreu
  * @author Malafaya
  * @author SandroHc
  */
 $messages['pt'] = array(
-	'ajaxpoll-desc' => 'Permite votações baseadas em AJAX com a etiqueta <tt>&lt;poll&gt;</tt>',
+	'ajaxpoll-desc' => "Permite realizar votações baseadas em AJAX usando a ''tag'' <tt>&lt;poll&gt;</tt>",
 	'ajaxpoll-tracking-category' => 'Páginas com votação',
 	'ajaxpoll-vote-update' => 'O seu voto foi atualizado.',
 	'ajaxpoll-vote-add' => 'O seu voto foi adicionado.',
-	'ajaxpoll-vote-error' => 'Ocorreu um erro ao processar o seu voto, por favor tente novamente.',
-	'ajaxpoll-percent-votes' => '$1% de todos os votos',
-	'ajaxpoll-your-vote' => 'Você já votou em "$1" em $2, você pode alterar o voto ao clicar numa opção abaixo.',
-	'ajaxpoll-no-vote' => 'Por favor, vote abaixo.',
-	'ajaxpoll-no-vote-results-after-voting' => 'Por favor, vote abaixo. Os resultados serão mostrados quando tiver votado.',
+	'ajaxpoll-vote-error' => 'Ocorreu um erro ao processar o seu voto. Tente novamente, por favor.',
+	'ajaxpoll-percent-votes' => '$1% do total de votos',
+	'ajaxpoll-your-vote' => 'Já votou em "$1" a $2. Pode alterar o seu voto se escolher outra resposta abaixo.',
+	'ajaxpoll-no-vote' => 'Vote abaixo, por favor.',
+	'ajaxpoll-no-vote-results-after-voting' => 'Vote abaixo, por favor. Os resultados serão mostrados depois de votar.',
 	'ajaxpoll-info' => '{{PLURAL:$1|Um voto|$1 votos}} desde a criação da votação em $2.',
-	'ajaxpoll-submitting' => 'Por favor aguarde, enviando o seu voto.',
-	'ajaxpoll-vote-permission' => 'Não se encontra habilitado a votar.',
-	'ajaxpoll-view-results-permission' => 'Não se encontra habilitado a ver os resultados desta votação.',
-	'ajaxpoll-view-results-before-vote-permission' => 'Não se encontra habilitado a ver os resultados desta votação antes de votar.',
+	'ajaxpoll-submitting' => 'Aguarde, por favor. A enviar o seu voto.',
+	'ajaxpoll-vote-permission' => 'Não tem o direito de votar.',
+	'ajaxpoll-view-results-permission' => 'Não pode ver os resultados desta votação.',
+	'ajaxpoll-view-results-before-vote-permission' => 'Não pode ver os resultados desta votação antes de votar.',
 	'ajaxpoll-revoke-vote' => 'Quero revogar o meu voto',
-	'ajaxpoll-vote-revoked' => 'Seu voto foi revogado.',
-	'ajaxpoll-error-csrf-wrong-token' => 'Um token errado foi recebido, e o seu voto foi ignorado.',
+	'ajaxpoll-vote-revoked' => 'O seu voto foi revogado.',
+	'ajaxpoll-error-csrf-wrong-token' => 'Foi recebida uma chave errada e o seu voto foi ignorado.',
 	'right-ajaxpoll-vote' => 'Pode votar em votações baseadas em AJAX',
+	'right-ajaxpoll-view-results' => 'Pode ver os resultados das votações baseadas em AJAX',
+	'right-ajaxpoll-view-results-before-vote' => 'Pode ver os resultados das votações baseadas em AJAX antes de votar',
+	'action-ajaxpoll-vote' => 'votar nas votações baseadas em AJAX',
+	'action-ajaxpoll-view-results' => 'ver os resultados das votações baseadas em AJAX',
+	'action-ajaxpoll-view-results-before-vote' => 'ver os resultados das votações baseadas em AJAX antes de votar',
 );
 
 /** Brazilian Portuguese (português do Brasil)
