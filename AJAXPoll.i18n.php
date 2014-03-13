@@ -1703,8 +1703,10 @@ $messages['ta'] = array(
 
 /** Telugu (తెలుగు)
  * @author Chaduvari
+ * @author Ravichandra
  */
 $messages['te'] = array(
+	'ajaxpoll-desc' => 'అజాక్స్ ఆధారిత పోల్స్ <tt>&lt;poll&gt;</tt> ట్యాగుతో అనుమతించు',
 	'ajaxpoll-tracking-category' => 'పోల్ కలిగిన పేజీలు',
 	'ajaxpoll-vote-update' => 'మీ వోటును తాజాకరించాం.',
 	'ajaxpoll-vote-add' => 'మీ వోటును చేర్చాం.',
