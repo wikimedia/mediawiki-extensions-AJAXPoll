@@ -1461,6 +1461,7 @@ $messages['pt'] = array(
 );
 
 /** Brazilian Portuguese (português do Brasil)
+ * @author Amgauna
  * @author Anaclaudiaml
  * @author Cainamarques
  * @author Daemorris
@@ -1485,11 +1486,11 @@ $messages['pt-br'] = array(
 	'ajaxpoll-vote-revoked' => 'Seu voto foi revogado.',
 	'ajaxpoll-error-csrf-wrong-token' => "Um ''token'' errado foi recebido e o seu voto foi ignorado.",
 	'right-ajaxpoll-vote' => 'Pode votar em votações baseadas em AJAX',
-	'right-ajaxpoll-view-results' => 'Pode ver resultados das pesquisas baseadas em AJAX',
-	'right-ajaxpoll-view-results-before-vote' => 'Pode ver resultados de pesquisas baseadas em AJAX antes de ter votado',
-	'action-ajaxpoll-vote' => 'Votar em pesquisas baseadas em AJAX',
-	'action-ajaxpoll-view-results' => 'Ver resultados de pequisas baseadas em AJAX',
-	'action-ajaxpoll-view-results-before-vote' => 'Ver resultados das pesquisas baseadas em AJAX antes de ter votado',
+	'right-ajaxpoll-view-results' => 'Pode-se vêr resultados das pesquisas baseadas em AJAX',
+	'right-ajaxpoll-view-results-before-vote' => 'Pode-se vêr resultados de pesquisas baseadas em AJAX antes de ter votado',
+	'action-ajaxpoll-vote' => 'Vote em pesquisas baseadas em AJAX',
+	'action-ajaxpoll-view-results' => 'Veja os resultados de pequisas baseadas em AJAX',
+	'action-ajaxpoll-view-results-before-vote' => 'Veja os resultados das pesquisas baseadas em AJAX antes de ter votado',
 );
 
 /** Romanian (română)
