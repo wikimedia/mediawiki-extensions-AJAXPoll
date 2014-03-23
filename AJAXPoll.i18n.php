@@ -1350,6 +1350,11 @@ $messages['oc'] = array(
 	'ajaxpoll-vote-revoked' => 'Vòstre vòte es estat revocat.',
 	'ajaxpoll-error-csrf-wrong-token' => 'Un geton incorrècte es estat recebut, e vòstre vòte es ignorat.',
 	'right-ajaxpoll-vote' => 'Pòt votar dins de sondatges basats sus AJAX',
+	'right-ajaxpoll-view-results' => 'Pòt veire los resultats dels sondatges basats sus AJAX',
+	'right-ajaxpoll-view-results-before-vote' => 'Pòt veire los resultats dels sondatges basats sus AJAX abans d’aver votat',
+	'action-ajaxpoll-vote' => 'votar dins los sondatges basats sus AJAX',
+	'action-ajaxpoll-view-results' => 'veire los resultats dels sondatges basats sus AJAX',
+	'action-ajaxpoll-view-results-before-vote' => 'veire los resultats dels sondatges basats sus AJAX abans d’aver votat',
 );
 
 /** Oriya (ଓଡ଼ିଆ)
