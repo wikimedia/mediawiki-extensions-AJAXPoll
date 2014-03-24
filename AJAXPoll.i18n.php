@@ -1769,10 +1769,12 @@ $messages['tl'] = array(
 /** Turkish (Türkçe)
  * @author Hedda Gabler
  * @author Incelemeelemani
+ * @author SiLveRLeaD
  */
 $messages['tr'] = array(
 	'ajaxpoll-vote-update' => 'Oyunuz güncelleştirildi.',
 	'ajaxpoll-vote-add' => 'Oyunuz eklendi.',
+	'ajaxpoll-vote-permission' => 'Oy hakkına sahip değilsiniz.',
 	'ajaxpoll-revoke-vote' => 'Ben oyumu geri almak istiyorum',
 );
 
