@@ -35,7 +35,6 @@
  * @author Jack Phoenix <jack@countervandalism.net>
  * @author Thomas Gries
  * @maintainer Thomas Gries
- * @version 1.85
  * @link http://www.mediawiki.org/wiki/Extension:AJAX_Poll Documentation
  */
 
@@ -47,7 +46,7 @@ if( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'AJAX Poll',
-	'version' => '1.87 20131112',
+	'version' => '1.88.0 20140330',
 	'author' => array( 'Dariusz Siedlecki', 'Jack Phoenix', 'Thomas Gries' ),
 	'descriptionmsg' => 'ajaxpoll-desc',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:AJAX_Poll',
@@ -55,6 +54,7 @@ $wgExtensionCredits['parserhook'][] = array(
 
 // Internationalization + AJAX function
 $dir = dirname( __FILE__ );
+$wgMessagesDirs['AJAXPoll'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['AJAXPoll'] = $dir . '/AJAXPoll.i18n.php';
 $wgAutoloadClasses['AJAXPoll'] = $dir . '/AJAXPoll_body.php';
 $wgAjaxExportList[] = 'AJAXPoll::submitVote';

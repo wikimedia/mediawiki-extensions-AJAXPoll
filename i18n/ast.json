@@ -1,0 +1,31 @@
+{
+    "@metadata": {
+        "authors": [
+            "McDutchie",
+            "Xuacu"
+        ]
+    },
+    "ajaxpoll-desc": "Permite les encuestes basaes n'AJAX con <tt>&lt;poll&gt;</tt>",
+    "ajaxpoll-tracking-category": "Páxines con una encuesta",
+    "ajaxpoll-vote-update": "El to votu s'anovó.",
+    "ajaxpoll-vote-add": "Amestóse'l to votu.",
+    "ajaxpoll-vote-error": "Hebo un problema al procesar el to votu; tentalo otra vuelta, por favor.",
+    "ajaxpoll-percent-votes": "$1% de tolos votos",
+    "ajaxpoll-your-vote": "Ya votasti por \"$1\" el $2, pues camudar el to votu calcando nuna de les rempuestes d'abaxo.",
+    "ajaxpoll-no-vote": "Por favor, vota abaxo.",
+    "ajaxpoll-no-vote-results-after-voting": "Por favor, vote más abaxo. Los resultaos apaecerán cuando vote.",
+    "ajaxpoll-info": "Hebo {{PLURAL:$1|un votu|$1 votos}} dende que se creó la encuesta el $2.",
+    "ajaxpoll-submitting": "Aguarda, por favor, ta unviandose'l to votu.",
+    "ajaxpoll-vote-permission": "Nun tienes drechu al votu.",
+    "ajaxpoll-view-results-permission": "Nun tien permisu pa ver los resultaos d'esta encuesta.",
+    "ajaxpoll-view-results-before-vote-permission": "Nun tien permisu pa ver los resultaos d'esta encuesta antes de votar.",
+    "ajaxpoll-revoke-vote": "Quiero anular el mio votu",
+    "ajaxpoll-vote-revoked": "El to votu s'anuló.",
+    "ajaxpoll-error-csrf-wrong-token": "Recibióse un pase equivocáu, y nun se cuenta'l so votu.",
+    "right-ajaxpoll-vote": "Pue votar nes encuestes basaes n'AJAX",
+    "right-ajaxpoll-view-results": "Pue ver los resultaos de les encuestes basaes n'AJAX",
+    "right-ajaxpoll-view-results-before-vote": "Pue ver los resultaos de les encuestes basaes n'AJAX enantes de votar",
+    "action-ajaxpoll-vote": "votar nes encuestes basaes n'AJAX",
+    "action-ajaxpoll-view-results": "ver los resultaos de les encuestes basaes n'AJAX",
+    "action-ajaxpoll-view-results-before-vote": "ver los resultaos de les encuestes basaes n'AJAX enantes de votar"
+}

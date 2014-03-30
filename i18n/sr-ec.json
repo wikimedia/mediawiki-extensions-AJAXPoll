@@ -1,0 +1,18 @@
+{
+    "@metadata": {
+        "authors": [
+            "Milicevic01",
+            "Rancher",
+            "Sasa Stefanovic",
+            "Verlor"
+        ]
+    },
+    "ajaxpoll-vote-update": "аш глас је био урачунат.",
+    "ajaxpoll-vote-add": "Ваш галс је додан",
+    "ajaxpoll-percent-votes": "$1% од свих гласова",
+    "ajaxpoll-no-vote": "Молимо гласајте испод.",
+    "ajaxpoll-submitting": "Чекајте, шаљемо ваш глас.",
+    "ajaxpoll-vote-permission": "Не можете да гласате.",
+    "ajaxpoll-revoke-vote": "Желим да повучем глас",
+    "ajaxpoll-vote-revoked": "Ваш глас је поништен."
+}

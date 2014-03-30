@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": []
+    },
+    "ajaxpoll-vote-update": "aš glas je bio uračunat.",
+    "ajaxpoll-vote-add": "Vaš gals je dodan",
+    "ajaxpoll-percent-votes": "$1% od svih glasova",
+    "ajaxpoll-no-vote": "Molimo glasajte ispod.",
+    "ajaxpoll-submitting": "Čekajte, šaljemo vaš glas."
+}

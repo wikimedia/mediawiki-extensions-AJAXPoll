@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Hedda Gabler",
+            "Incelemeelemani",
+            "SiLveRLeaD"
+        ]
+    },
+    "ajaxpoll-vote-update": "Oyunuz güncelleştirildi.",
+    "ajaxpoll-vote-add": "Oyunuz eklendi.",
+    "ajaxpoll-vote-permission": "Oy hakkına sahip değilsiniz.",
+    "ajaxpoll-revoke-vote": "Ben oyumu geri almak istiyorum"
+}
