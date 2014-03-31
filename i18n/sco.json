@@ -17,14 +17,14 @@
     "ajaxpoll-submitting": "Please wait, haunin in yer vote.",
     "ajaxpoll-vote-permission": "Ye'r na permitit tae vote.",
     "ajaxpoll-view-results-permission": "Ye'r naw permittit tae see the ootcomes o this poll.",
-    "ajaxpoll-view-results-before-vote-permission": "Ye'r no permited tae view results o this poll afore ye'v voted.",
+    "ajaxpoll-view-results-before-vote-permission": "Ye'r na permitit tae see the ootcomes o this poll afore ye'v voted.",
     "ajaxpoll-revoke-vote": "I wish tae revoke ma vote",
     "ajaxpoll-vote-revoked": "Yer vote haes been revoked.",
     "ajaxpoll-error-csrf-wrong-token": "Ae wrang token wis receeved, n yer vote is ignored.",
     "right-ajaxpoll-vote": "Can vote in AJAX-based polls",
-    "right-ajaxpoll-view-results": "Can view results in AJAX-based polls",
-    "right-ajaxpoll-view-results-before-vote": "Can view results in AJAX-based polls afore votein",
+    "right-ajaxpoll-view-results": "Can see the ootcomes in the AJAX-based polls",
+    "right-ajaxpoll-view-results-before-vote": "Can see the ootcomes in the AJAX-based polls afore votein",
     "action-ajaxpoll-vote": "vote in AJAX-based polls",
-    "action-ajaxpoll-view-results": "view results in AJAX-based polls",
-    "action-ajaxpoll-view-results-before-vote": "view results in AJAX-based polls afore votein"
+    "action-ajaxpoll-view-results": "see the ootcomes in the AJAX-based polls",
+    "action-ajaxpoll-view-results-before-vote": "see the ootcomes in the AJAX-based polls afore votein"
 }
