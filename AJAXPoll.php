@@ -109,3 +109,6 @@ $wgGroupPermissions['*']['ajaxpoll-view-results-before-vote'] = false;
 # default: users can vote and can see poll results - when they have voted
 $wgGroupPermissions['user']['ajaxpoll-vote'] = true;
 $wgGroupPermissions['user']['ajaxpoll-view-results'] = true;
+
+# tracking category for Special:TrackingCategories
+$wgTrackingCategories[] = 'ajaxpoll-tracking-category';

@@ -8,6 +8,7 @@
     },
     "ajaxpoll-desc": "{{desc|name=AJAX Poll|url=http://www.mediawiki.org/wiki/Extension:AJAX_Poll}}",
     "ajaxpoll-tracking-category": "The name of a category for all pages which use the <code><nowiki><poll></nowiki></code> parser extension tag.\n\nThe category is automatically added unless the feature is disabled.",
+    "ajaxpoll-tracking-category-desc": "Description on [[Special:TrackingCategories]] for the {{msg-mw|ajaxpoll-tracking-category}} tracking category.",
     "ajaxpoll-vote-update": "System response that the vote was successfully updated.\n\nIf error, the following message is used:\n* {{msg-mw|Ajaxpoll-vote-error}}",
     "ajaxpoll-vote-add": "System response that the vote was successfully added.\n\nIf error, the following message is used:\n* {{msg-mw|Ajaxpoll-vote-error}}",
     "ajaxpoll-vote-error": "Used as error message.\n\nIf successful, the following message are used:\n* {{msg-mw|Ajaxpoll-vote-update}}\n* {{msg-mw|Ajaxpoll-vote-add}}\n* {{msg-mw|Ajaxpoll-vote-revoked}}",

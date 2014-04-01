@@ -5,8 +5,9 @@
             "Thomas Gries"
         ]
     },
-    "ajaxpoll-desc": "Allows AJAX-based polls with <tt>&lt;poll&gt;</tt> tag",
+    "ajaxpoll-desc": "Allows AJAX-based polls with <code>&lt;poll&gt;</code> tag",
     "ajaxpoll-tracking-category": "Pages with a poll",
+    "ajaxpoll-tracking-category-desc": "The page has a <code>&lt;poll&gt;</code>.",
     "ajaxpoll-vote-update": "Your vote has been updated.",
     "ajaxpoll-vote-add": "Your vote has been added.",
     "ajaxpoll-vote-error": "There was a problem with processing your vote, please try again.",
