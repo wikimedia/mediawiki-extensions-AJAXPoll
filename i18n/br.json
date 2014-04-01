@@ -6,7 +6,7 @@
             "Y-M D"
         ]
     },
-    "ajaxpoll-desc": "Aotren ar goulennoù diazezet war AJAX gant <tt>&lt;poll&gt;</tt> tag",
+    "ajaxpoll-desc": "Aotren ar goulennoù diazezet war AJAX gant <code>&lt;poll&gt;</code> tag",
     "ajaxpoll-tracking-category": "Pajennoù enno ur sontadeg",
     "ajaxpoll-vote-update": "Hizivaet eo bet ho vot.",
     "ajaxpoll-vote-add": "Ouzhpennet eo bet ho vot.",

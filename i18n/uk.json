@@ -7,7 +7,7 @@
             "Ата"
         ]
     },
-    "ajaxpoll-desc": "Дозволяє голосування на основі AJAX з міткою <tt>&lt;poll&gt;</tt>",
+    "ajaxpoll-desc": "Дозволяє голосування на основі AJAX з міткою <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "Сторінки з опитуваннями",
     "ajaxpoll-vote-update": "Ваш голос був поновлений.",
     "ajaxpoll-vote-add": "Ваш голос був доданий.",

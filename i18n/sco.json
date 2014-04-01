@@ -4,7 +4,7 @@
             "John Reid"
         ]
     },
-    "ajaxpoll-desc": "Permits AJAX-based polls wi <tt>&lt;poll&gt;</tt> tag",
+    "ajaxpoll-desc": "Permits AJAX-based polls wi <code>&lt;poll&gt;</code> tag",
     "ajaxpoll-tracking-category": "Pages wi ae poll",
     "ajaxpoll-vote-update": "Yer vote haes been updated.",
     "ajaxpoll-vote-add": "Yer vote haes been eikit.",

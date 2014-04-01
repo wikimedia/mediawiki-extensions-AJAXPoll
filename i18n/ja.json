@@ -6,7 +6,7 @@
             "Shun Fukuzawa"
         ]
     },
-    "ajaxpoll-desc": "<tt>&lt;poll&gt;</tt> タグで Ajax ベースの投票所を使用できるようにする",
+    "ajaxpoll-desc": "<code>&lt;poll&gt;</code> タグで Ajax ベースの投票所を使用できるようにする",
     "ajaxpoll-tracking-category": "投票所があるページ",
     "ajaxpoll-vote-update": "投票を更新しました。",
     "ajaxpoll-vote-add": "投票を追加しました。",

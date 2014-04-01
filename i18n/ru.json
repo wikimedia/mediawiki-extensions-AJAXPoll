@@ -10,8 +10,9 @@
             "Александр Сигачёв"
         ]
     },
-    "ajaxpoll-desc": "Позволяет проводить голосования на основе AJAX с помощью тега <tt>&lt;poll&gt;</tt>",
+    "ajaxpoll-desc": "Позволяет проводить голосования на основе AJAX с помощью тега <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "Страницы с опросами",
+    "ajaxpoll-tracking-category-desc": "На странице есть <code>&lt;опрос&gt;</code>.",
     "ajaxpoll-vote-update": "Ваш голос обновлён.",
     "ajaxpoll-vote-add": "Ваш голос добавлен.",
     "ajaxpoll-vote-error": "Возникла проблема с обработкой вашего голоса, пожалуйста, попробуйте ещё раз.",

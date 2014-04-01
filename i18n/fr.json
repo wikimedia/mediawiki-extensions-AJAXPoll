@@ -8,8 +8,9 @@
             "Tim 'Avatar' Bartel"
         ]
     },
-    "ajaxpoll-desc": "Autorise les interrogations basées sur AJAX avec <tt>&lt;poll&gt;</tt> tag",
+    "ajaxpoll-desc": "Autorise les interrogations basées sur AJAX avec <code>&lt;poll&gt;</code> tag",
     "ajaxpoll-tracking-category": "Pages avec un sondage",
+    "ajaxpoll-tracking-category-desc": "Cette page a un <code>&lt;poll&gt;</code>.",
     "ajaxpoll-vote-update": "Votre vote a été mis à jour.",
     "ajaxpoll-vote-add": "Votre vote a été compté.",
     "ajaxpoll-vote-error": "Il y avait une problème avec le traitement de votre vote. Essayez encore, s'il vous plaît.",

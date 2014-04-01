@@ -5,7 +5,7 @@
             "Sagan"
         ]
     },
-    "ajaxpoll-desc": "AJAX нигеҙендә <tt>&lt;poll&gt;</tt> тегы ярҙамы менән тауыш биреү мөмкинлеге бар",
+    "ajaxpoll-desc": "AJAX нигеҙендә <code>&lt;poll&gt;</code> тегы ярҙамы менән тауыш биреү мөмкинлеге бар",
     "ajaxpoll-tracking-category": "Тауыш биреү бите",
     "ajaxpoll-vote-update": "Һеҙҙең тауыш биреү яңыртылды",
     "ajaxpoll-vote-add": "Һеҙҙең тауыш иҫәпкә алынды",

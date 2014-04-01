@@ -5,7 +5,7 @@
             "KuboF"
         ]
     },
-    "ajaxpoll-desc": "Ebligas enketojn bazitajn sur AJAX per markilo <tt>&lt;poll&gt;</tt>",
+    "ajaxpoll-desc": "Ebligas enketojn bazitajn sur AJAX per markilo <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "Paĝoj kun enketo",
     "ajaxpoll-vote-update": "Via baloto estis ĝisdatigita",
     "ajaxpoll-vote-add": "Via baloto estis aldonita",

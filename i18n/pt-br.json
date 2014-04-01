@@ -8,7 +8,7 @@
             "Fúlvio"
         ]
     },
-    "ajaxpoll-desc": "Permite votações baseadas em AJAX usando a etiqueta <tt>&lt;poll&gt;</tt>",
+    "ajaxpoll-desc": "Permite votações baseadas em AJAX usando a etiqueta <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "Páginas com votação",
     "ajaxpoll-vote-update": "Seu voto foi atualizado.",
     "ajaxpoll-vote-add": "Seu voto foi adicionado.",

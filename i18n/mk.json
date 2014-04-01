@@ -5,8 +5,9 @@
             "McDutchie"
         ]
     },
-    "ajaxpoll-desc": "Овозможува анкети на основа на AJAX со ознаката <tt>&lt;poll&gt;</tt>",
+    "ajaxpoll-desc": "Овозможува анкети на основа на AJAX со ознаката <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "Страници со анкета",
+    "ajaxpoll-tracking-category-desc": "Страницата има <code>&lt;poll&gt;</code>.",
     "ajaxpoll-vote-update": "Вашиот глас е подновен.",
     "ajaxpoll-vote-add": "Вашиот глас е додаден.",
     "ajaxpoll-vote-error": "Се појави проблем при обработката на вашиот глас. Обидете се повторно.",

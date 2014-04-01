@@ -5,7 +5,7 @@
             "אור שפירא"
         ]
     },
-    "ajaxpoll-desc": "אפשרות להוסיף הצבעות בטכנולוגיית AJAX באמצעות התג <tt>&lt;poll&gt;</tt>",
+    "ajaxpoll-desc": "אפשרות להוסיף הצבעות בטכנולוגיית AJAX באמצעות התג <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "דפים עם סקר",
     "ajaxpoll-vote-update": "הקול שלך עודכן.",
     "ajaxpoll-vote-add": "הקול שלך נוסף.",

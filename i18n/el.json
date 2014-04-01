@@ -7,7 +7,7 @@
             "Περίεργος"
         ]
     },
-    "ajaxpoll-desc": "Επιτρέπει δημοσκοπήσεις βασισμένες σε AJAX με ετικέτα <tt>&lt;poll&gt;</tt>",
+    "ajaxpoll-desc": "Επιτρέπει δημοσκοπήσεις βασισμένες σε AJAX με ετικέτα <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "Σελίδες με δημοσκόπηση",
     "ajaxpoll-vote-update": "Η ψήφος σας έχει ενημερωθεί.",
     "ajaxpoll-vote-add": "Η ψήφος σας προστέθηκε.",

@@ -4,7 +4,7 @@
             "Cedric31"
         ]
     },
-    "ajaxpoll-desc": "Autoriza las interrogacions basadas sus AJAX amb <tt>&lt;poll&gt;</tt> tag",
+    "ajaxpoll-desc": "Autoriza las interrogacions basadas sus AJAX amb <code>&lt;poll&gt;</code> tag",
     "ajaxpoll-tracking-category": "Paginas amb un sondatge",
     "ajaxpoll-vote-update": "Vòstre vòte es estat mes a jorn.",
     "ajaxpoll-vote-add": "Vòstre vòte es estat comptat.",

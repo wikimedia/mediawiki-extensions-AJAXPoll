@@ -5,7 +5,7 @@
             "Wizardist"
         ]
     },
-    "ajaxpoll-desc": "Дазваляе AJAX-апытаньні, якія можна дадаць тэгам <tt>&lt;poll&gt;</tt>",
+    "ajaxpoll-desc": "Дазваляе AJAX-апытаньні, якія можна дадаць тэгам <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "Старонкі з апытаньнямі",
     "ajaxpoll-vote-update": "Ваш голас быў абноўлены.",
     "ajaxpoll-vote-add": "Ваш голас быў даданы.",

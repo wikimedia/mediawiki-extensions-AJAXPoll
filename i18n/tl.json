@@ -4,7 +4,7 @@
             "AnakngAraw"
         ]
     },
-    "ajaxpoll-desc": "Nagpapahintulot ng mga paghalal na nakabatay sa AJAX na may tatak na <tt>&lt;poll&gt;</tt>",
+    "ajaxpoll-desc": "Nagpapahintulot ng mga paghalal na nakabatay sa AJAX na may tatak na <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "Mga pahinang may botohan",
     "ajaxpoll-vote-update": "Naisapanahon na ang boto mo.",
     "ajaxpoll-vote-add": "Naidagdag na ang boto mo.",

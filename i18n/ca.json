@@ -6,7 +6,7 @@
             "Qllach"
         ]
     },
-    "ajaxpoll-desc": "Permet les enquestes basades en AJAX amb l'etiqueta <tt>&lt;poll&gt;</tt>",
+    "ajaxpoll-desc": "Permet les enquestes basades en AJAX amb l'etiqueta <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "Pàgines amb una enquesta",
     "ajaxpoll-vote-update": "S'ha enregistrat el vostre vot.",
     "ajaxpoll-vote-add": "S'ha afegit el vostre vot.",

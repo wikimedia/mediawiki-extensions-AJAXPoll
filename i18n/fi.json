@@ -9,7 +9,7 @@
             "Stryn"
         ]
     },
-    "ajaxpoll-desc": "Mahdollistaa AJAX-pohjaiset gallupit <tt>&lt;poll&gt;</tt>-tagilla",
+    "ajaxpoll-desc": "Mahdollistaa AJAX-pohjaiset gallupit <code>&lt;poll&gt;</code>-tagilla",
     "ajaxpoll-tracking-category": "Sivut, joissa on kysely",
     "ajaxpoll-vote-update": "Äänesi on päivitetty",
     "ajaxpoll-vote-add": "Äänesi on lisätty.",

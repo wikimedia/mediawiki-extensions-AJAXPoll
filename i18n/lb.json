@@ -5,7 +5,7 @@
             "Soued031"
         ]
     },
-    "ajaxpoll-desc": "Erlaabt AJAX-baséiert Ëmfroe mam Tag <tt>&lt;poll&gt;</tt>",
+    "ajaxpoll-desc": "Erlaabt AJAX-baséiert Ëmfroe mam Tag <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "Säite mat enger Ëmfro",
     "ajaxpoll-vote-update": "Är Stëmm gouf aktualiséiert.",
     "ajaxpoll-vote-add": "Är Stëmm gouf derbäigesat.",

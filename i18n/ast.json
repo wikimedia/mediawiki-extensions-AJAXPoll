@@ -5,7 +5,7 @@
             "Xuacu"
         ]
     },
-    "ajaxpoll-desc": "Permite les encuestes basaes n'AJAX con <tt>&lt;poll&gt;</tt>",
+    "ajaxpoll-desc": "Permite les encuestes basaes n'AJAX con <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "Páxines con una encuesta",
     "ajaxpoll-vote-update": "El to votu s'anovó.",
     "ajaxpoll-vote-add": "Amestóse'l to votu.",

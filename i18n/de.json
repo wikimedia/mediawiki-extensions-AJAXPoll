@@ -10,6 +10,7 @@
     },
     "ajaxpoll-desc": "Ergänzt das Tag <code>&lt;poll&gt;</code> zum Erstellen AJAX-gestützter Umfragen",
     "ajaxpoll-tracking-category": "Seiten mit einer Umfrage",
+    "ajaxpoll-tracking-category-desc": "Die Seite hat ein <code>&lt;poll&gt;</code>.",
     "ajaxpoll-vote-update": "Deine Stimme wurde aktualisiert.",
     "ajaxpoll-vote-add": "Deine Stimme wurde gezählt.",
     "ajaxpoll-vote-error": "Es gab ein Problem beim Verarbeiten deiner Stimme. Probiere es bitte noch einmal.",

@@ -4,8 +4,9 @@
             "Beta16"
         ]
     },
-    "ajaxpoll-desc": "Permette sondaggi tramite AJAX con il tag <tt>&lt;poll&gt;</tt>",
+    "ajaxpoll-desc": "Permette sondaggi tramite AJAX con il tag <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "Pagine con un sondaggio",
+    "ajaxpoll-tracking-category-desc": "La pagina ha un <code>&lt;poll&gt;</code>.",
     "ajaxpoll-vote-update": "Il tuo voto è stato aggiornato.",
     "ajaxpoll-vote-add": "Il tuo voto è stato aggiunto.",
     "ajaxpoll-vote-error": "C'è stato un problema con l'elaborazione del tuo voto, si prega di riprovare.",

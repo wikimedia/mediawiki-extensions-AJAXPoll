@@ -5,7 +5,7 @@
             "Reder"
         ]
     },
-    "ajaxpoll-desc": "Oermette sondagge basate sus a AJAX cu 'u tag <tt>&lt;poll&gt;</tt>",
+    "ajaxpoll-desc": "Oermette sondagge basate sus a AJAX cu 'u tag <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "Pàgene cu 'nu sondagge",
     "ajaxpoll-vote-update": "'U vote tune ha state aggiornate.",
     "ajaxpoll-vote-add": "'U vote tune ha state aggiunde.",

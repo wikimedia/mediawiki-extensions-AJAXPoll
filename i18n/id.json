@@ -6,7 +6,7 @@
             "Rv77ax"
         ]
     },
-    "ajaxpoll-desc": "Memungkinkan jajak pendapat berbasis AJAX dengan tag <tt>&lt;poll&gt;</tt>",
+    "ajaxpoll-desc": "Memungkinkan jajak pendapat berbasis AJAX dengan tag <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "Halaman dengan jajak pendapat",
     "ajaxpoll-vote-update": "Suara Anda telah diperbarui.",
     "ajaxpoll-vote-add": "Suara Anda telah ditambahkan.",

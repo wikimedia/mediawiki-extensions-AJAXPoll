@@ -4,7 +4,7 @@
             "Michawiki"
         ]
     },
-    "ajaxpoll-desc": "Přidawa tafličku <tt>&lt;poll&gt;</tt> za wotghosowanja na zakładźe AJAX",
+    "ajaxpoll-desc": "Přidawa tafličku <code>&lt;poll&gt;</code> za wotghosowanja na zakładźe AJAX",
     "ajaxpoll-tracking-category": "Strony z wothłosowanjom",
     "ajaxpoll-vote-update": "Twoje wothłosowanje je so zaktualizowało.",
     "ajaxpoll-vote-add": "Twoje wothłosowanje je so přidało.",

@@ -5,7 +5,7 @@
             "Toliño"
         ]
     },
-    "ajaxpoll-desc": "Permite as enquisas baseadas en AJAX mediante a etiqueta <tt>&lt;poll&gt;</tt>",
+    "ajaxpoll-desc": "Permite as enquisas baseadas en AJAX mediante a etiqueta <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "Páxinas cunha enquisa",
     "ajaxpoll-vote-update": "Actualizouse o seu voto.",
     "ajaxpoll-vote-add": "Engadiuse o seu voto.",

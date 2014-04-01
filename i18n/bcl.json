@@ -5,7 +5,7 @@
             "McDutchie"
         ]
     },
-    "ajaxpoll-desc": "Minatugot sa nakabaseng pirilian kan AJAX na igwang <tt>&lt;poll&gt;</tt> na tatak",
+    "ajaxpoll-desc": "Minatugot sa nakabaseng pirilian kan AJAX na igwang <code>&lt;poll&gt;</code> na tatak",
     "ajaxpoll-tracking-category": "Mga pahina na igwang pirilian",
     "ajaxpoll-vote-update": "An saimong boto pinagsumpayan.",
     "ajaxpoll-vote-add": "An saimong boto pinagdugang.",

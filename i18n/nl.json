@@ -8,7 +8,7 @@
             "Siebrand"
         ]
     },
-    "ajaxpoll-desc": "Maakt AJAX-gebaseerde polls mogelijk met de tag <tt>&lt;poll&gt;</tt>",
+    "ajaxpoll-desc": "Maakt AJAX-gebaseerde polls mogelijk met de tag <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "Pagina's met een peiling",
     "ajaxpoll-vote-update": "Uw stem is bijgewerkt.",
     "ajaxpoll-vote-add": "Uw stem is toegevoegd.",

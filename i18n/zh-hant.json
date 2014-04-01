@@ -5,7 +5,7 @@
             "Simon Shek"
         ]
     },
-    "ajaxpoll-desc": "使用<tt>&lt;poll&gt;</tt>添加基於AJAX的投票功能",
+    "ajaxpoll-desc": "使用<code>&lt;poll&gt;</code>添加基於AJAX的投票功能",
     "ajaxpoll-tracking-category": "有投票的頁面",
     "ajaxpoll-vote-update": "已更新您的投票。",
     "ajaxpoll-vote-add": "已添加您的投票。",

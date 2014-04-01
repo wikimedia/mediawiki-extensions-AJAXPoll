@@ -4,7 +4,7 @@
             "EileenSanda"
         ]
     },
-    "ajaxpoll-desc": "Loyv AJAX-grundaðum atkvøðugreiðslum við <tt>&lt;poll&gt;</tt> lyklaorði",
+    "ajaxpoll-desc": "Loyv AJAX-grundaðum atkvøðugreiðslum við <code>&lt;poll&gt;</code> lyklaorði",
     "ajaxpoll-tracking-category": "Síður við atkvøðugreiðslu",
     "ajaxpoll-vote-update": "Tín atkvøða er blivin dagførd.",
     "ajaxpoll-vote-add": "Tú hevur nú atkvøtt.",

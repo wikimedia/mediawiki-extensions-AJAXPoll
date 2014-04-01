@@ -5,7 +5,7 @@
             "Ravichandra"
         ]
     },
-    "ajaxpoll-desc": "అజాక్స్ ఆధారిత పోల్స్ <tt>&lt;poll&gt;</tt> ట్యాగుతో అనుమతించు",
+    "ajaxpoll-desc": "అజాక్స్ ఆధారిత పోల్స్ <code>&lt;poll&gt;</code> ట్యాగుతో అనుమతించు",
     "ajaxpoll-tracking-category": "పోల్ కలిగిన పేజీలు",
     "ajaxpoll-vote-update": "మీ వోటును తాజాకరించాం.",
     "ajaxpoll-vote-add": "మీ వోటును చేర్చాం.",

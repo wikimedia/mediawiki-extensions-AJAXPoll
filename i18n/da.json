@@ -5,7 +5,7 @@
             "Tjernobyl"
         ]
     },
-    "ajaxpoll-desc": "Giver mulighed for AJAX-baserede afstemninger med <tt>&lt;poll&gt;</tt> tag",
+    "ajaxpoll-desc": "Giver mulighed for AJAX-baserede afstemninger med <code>&lt;poll&gt;</code> tag",
     "ajaxpoll-tracking-category": "Sider med en afstemning",
     "ajaxpoll-vote-update": "Din stemme er blevet opdateret.",
     "ajaxpoll-vote-add": "Din stemme er blevet afgivet.",

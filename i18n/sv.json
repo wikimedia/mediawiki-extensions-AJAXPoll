@@ -7,7 +7,7 @@
             "WikiPhoenix"
         ]
     },
-    "ajaxpoll-desc": "Gör AJAX-baserade omröstningar med <tt>&lt;poll&gt;</tt>-tagg",
+    "ajaxpoll-desc": "Gör AJAX-baserade omröstningar med <code>&lt;poll&gt;</code>-tagg",
     "ajaxpoll-tracking-category": "Sidor med en omröstning",
     "ajaxpoll-vote-update": "Din röst har uppdaterats.",
     "ajaxpoll-vote-add": "Din röst har lagts till.",

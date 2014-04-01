@@ -5,7 +5,7 @@
             "Tedbundyjr"
         ]
     },
-    "ajaxpoll-desc": "Membolehkan tinjauan berasaskan AJAX dengan teg <tt>&lt;poll&gt;</tt>",
+    "ajaxpoll-desc": "Membolehkan tinjauan berasaskan AJAX dengan teg <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "Halaman dengan tinjauan",
     "ajaxpoll-vote-update": "Undian anda telah dikemaskinikan.",
     "ajaxpoll-vote-add": "Undian anda telah ditambahkan.",

@@ -11,7 +11,7 @@
             "Zoglun"
         ]
     },
-    "ajaxpoll-desc": "使用<tt>&lt;poll&gt;</tt> 标签（tag）添加基于AJAX的投票功能。",
+    "ajaxpoll-desc": "使用<code>&lt;poll&gt;</code> 标签（tag）添加基于AJAX的投票功能。",
     "ajaxpoll-tracking-category": "有投票的页面",
     "ajaxpoll-vote-update": "已更新您的投票。",
     "ajaxpoll-vote-add": "已计入您的投票。",

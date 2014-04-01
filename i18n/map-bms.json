@@ -4,7 +4,7 @@
             "StefanusRA"
         ]
     },
-    "ajaxpoll-desc": "Ngolihna jajak pendapat sing basise-AJAX nganggo tag <tt>&lt;poll&gt;</tt>",
+    "ajaxpoll-desc": "Ngolihna jajak pendapat sing basise-AJAX nganggo tag <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "Kaca sing karo jajak pendapat",
     "ajaxpoll-vote-update": "Swarane Rika wis dianyari.",
     "ajaxpoll-vote-add": "Swarane Rika wis ditambahna.",

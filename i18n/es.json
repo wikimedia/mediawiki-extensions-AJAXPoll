@@ -11,7 +11,7 @@
             "VegaDark"
         ]
     },
-    "ajaxpoll-desc": "Permite encuestas basadas en AJAX con etiqueta <tt>&lt;poll&gt;</tt>",
+    "ajaxpoll-desc": "Permite encuestas basadas en AJAX con etiqueta <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "Páginas con una encuesta",
     "ajaxpoll-vote-update": "Tu voto ha sido actualizado.",
     "ajaxpoll-vote-add": "Tu voto ha sido añadido.",

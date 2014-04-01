@@ -7,7 +7,7 @@
             "SandroHc"
         ]
     },
-    "ajaxpoll-desc": "Permite realizar votações baseadas em AJAX usando a ''tag'' <tt>&lt;poll&gt;</tt>",
+    "ajaxpoll-desc": "Permite realizar votações baseadas em AJAX usando a ''tag'' <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "Páginas com votação",
     "ajaxpoll-vote-update": "O seu voto foi atualizado.",
     "ajaxpoll-vote-add": "O seu voto foi adicionado.",

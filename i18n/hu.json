@@ -5,7 +5,7 @@
             "Glanthor Reviol"
         ]
     },
-    "ajaxpoll-desc": "AJAX alapú közvélemény-kutatás <tt>&lt;poll&gt;</tt> cimkével",
+    "ajaxpoll-desc": "AJAX alapú közvélemény-kutatás <code>&lt;poll&gt;</code> cimkével",
     "ajaxpoll-tracking-category": "Közvélemény-kutatást tartalmazó lapok",
     "ajaxpoll-vote-update": "A szavazatod frissítve.",
     "ajaxpoll-vote-add": "A szavazatod rögzítve.",

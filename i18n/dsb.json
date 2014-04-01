@@ -4,7 +4,7 @@
             "Michawiki"
         ]
     },
-    "ajaxpoll-desc": "Pśidawa toflicku <tt>&lt;poll&gt;</tt> za wótgłosowanja na zakłaźe AJAX",
+    "ajaxpoll-desc": "Pśidawa toflicku <code>&lt;poll&gt;</code> za wótgłosowanja na zakłaźe AJAX",
     "ajaxpoll-tracking-category": "Boki z wótgłosowanim",
     "ajaxpoll-vote-update": "Twójo wótgłosowanje jo se zaktualizěrowało.",
     "ajaxpoll-vote-add": "Twójo wótgłosowanje jo se pśidało.",
