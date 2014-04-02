@@ -6,6 +6,7 @@
     },
     "ajaxpoll-desc": "Permits AJAX-based polls wi <code>&lt;poll&gt;</code> tag",
     "ajaxpoll-tracking-category": "Pages wi ae poll",
+    "ajaxpoll-tracking-category-desc": "This page haes ae <code>&lt;poll&gt;</code>.",
     "ajaxpoll-vote-update": "Yer vote haes been updated.",
     "ajaxpoll-vote-add": "Yer vote haes been eikit.",
     "ajaxpoll-vote-error": "Thaur wis ae problem wi processing yer vote, please try again.",

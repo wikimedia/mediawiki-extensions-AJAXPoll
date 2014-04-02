@@ -8,6 +8,7 @@
     },
     "ajaxpoll-desc": "Umożliwia wstawienie opartych na technologii AJAX ankiet przy pomocy znacznika <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "Strony z głosowaniami",
+    "ajaxpoll-tracking-category-desc": "Na stronie znajduje się <code>&lt;poll&gt;</code>.",
     "ajaxpoll-vote-update": "Twój głos został zmieniony.",
     "ajaxpoll-vote-add": "Twój głos został dodany.",
     "ajaxpoll-vote-error": "Wystąpił błąd w czasie dodawania głosu, proszę spróbować później.",
