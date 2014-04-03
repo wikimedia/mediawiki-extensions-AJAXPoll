@@ -7,6 +7,7 @@
             "Verlor"
         ]
     },
+    "ajaxpoll-tracking-category-desc": "Страница има <code>&lt;poll&gt;</code>.",
     "ajaxpoll-vote-update": "аш глас је био урачунат.",
     "ajaxpoll-vote-add": "Ваш галс је додан",
     "ajaxpoll-percent-votes": "$1% од свих гласова",
