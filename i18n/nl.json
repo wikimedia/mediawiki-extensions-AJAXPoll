@@ -5,11 +5,13 @@
             "Breghtje",
             "McDutchie",
             "SPQRobin",
-            "Siebrand"
+            "Siebrand",
+            "Southparkfan"
         ]
     },
     "ajaxpoll-desc": "Maakt AJAX-gebaseerde polls mogelijk met de tag <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "Pagina's met een peiling",
+    "ajaxpoll-tracking-category-desc": "De pagina heeft een <code>&lt;peiling&gt;</code>.",
     "ajaxpoll-vote-update": "Uw stem is bijgewerkt.",
     "ajaxpoll-vote-add": "Uw stem is toegevoegd.",
     "ajaxpoll-vote-error": "Er is een probleem opgetreden tijdens het verwerken van uw stem. Probeer het opnieuw.",

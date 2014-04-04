@@ -7,6 +7,7 @@
     },
     "ajaxpoll-desc": "Permite as enquisas baseadas en AJAX mediante a etiqueta <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "Páxinas cunha enquisa",
+    "ajaxpoll-tracking-category-desc": "A páxina ten unha enquisa (<code>&lt;poll&gt;</code>).",
     "ajaxpoll-vote-update": "Actualizouse o seu voto.",
     "ajaxpoll-vote-add": "Engadiuse o seu voto.",
     "ajaxpoll-vote-error": "Houbo algún problema co procesamento do seu voto. Por favor, inténteo de novo.",
