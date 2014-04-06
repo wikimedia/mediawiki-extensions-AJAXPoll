@@ -7,6 +7,7 @@
     },
     "ajaxpoll-desc": "Erlaabt AJAX-baséiert Ëmfroe mam Tag <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "Säite mat enger Ëmfro",
+    "ajaxpoll-tracking-category-desc": "D'Säit huet eng <code>&lt;poll&gt;</code>.",
     "ajaxpoll-vote-update": "Är Stëmm gouf aktualiséiert.",
     "ajaxpoll-vote-add": "Är Stëmm gouf derbäigesat.",
     "ajaxpoll-vote-error": "Et gouf e Problem beim Verschaffe vun Ärer Stëmm, probéiert et w.e.g. nach eng kéier.",
