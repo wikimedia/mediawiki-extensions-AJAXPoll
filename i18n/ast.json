@@ -7,6 +7,7 @@
     },
     "ajaxpoll-desc": "Permite les encuestes basaes n'AJAX con <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "Páxines con una encuesta",
+    "ajaxpoll-tracking-category-desc": "La páxina tien una (<code>&lt;encuesta&gt;</code>).",
     "ajaxpoll-vote-update": "El to votu s'anovó.",
     "ajaxpoll-vote-add": "Amestóse'l to votu.",
     "ajaxpoll-vote-error": "Hebo un problema al procesar el to votu; tentalo otra vuelta, por favor.",
