@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "Paul Beppler"
+        ]
+    },
+    "ajaxpoll-percent-votes": "$1 % von alle Stimme",
+    "ajaxpoll-vote-permission": "Du bist net stimmberechticht.",
+    "ajaxpoll-view-results-permission": "Du bist net berechticht, die Ergebnisse von der Abstimmung oonzusiehn."
+}
