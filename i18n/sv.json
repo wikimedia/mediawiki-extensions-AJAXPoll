@@ -4,11 +4,13 @@
             "Jopparn",
             "Liftarn",
             "Tobulos1",
-            "WikiPhoenix"
+            "WikiPhoenix",
+            "Lokal Profil"
         ]
     },
     "ajaxpoll-desc": "Gör AJAX-baserade omröstningar med <code>&lt;poll&gt;</code>-tagg",
     "ajaxpoll-tracking-category": "Sidor med en omröstning",
+    "ajaxpoll-tracking-category-desc": "Sidan har en <code>&lt;poll&gt;</code>.",
     "ajaxpoll-vote-update": "Din röst har uppdaterats.",
     "ajaxpoll-vote-add": "Din röst har lagts till.",
     "ajaxpoll-vote-error": "Det uppstod ett problem med bearbetningen av din röst, var god försök igen.",
