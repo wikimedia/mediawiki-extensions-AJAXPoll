@@ -9,6 +9,7 @@
     },
     "ajaxpoll-desc": "Дозволяє голосування на основі AJAX з міткою <code>&lt;poll&gt;</code>",
     "ajaxpoll-tracking-category": "Сторінки з опитуваннями",
+    "ajaxpoll-tracking-category-desc": "На сторінці є <code>&lt;опитування&gt;</code>.",
     "ajaxpoll-vote-update": "Ваш голос був поновлений.",
     "ajaxpoll-vote-add": "Ваш голос був доданий.",
     "ajaxpoll-vote-error": "Виникла проблема з обробкою вашого голосу, будь-ласка, спробуйте знову.",
