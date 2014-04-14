@@ -6,6 +6,7 @@
     },
     "ajaxpoll-desc": "Autoriza las interrogacions basadas sus AJAX amb <code>&lt;poll&gt;</code> tag",
     "ajaxpoll-tracking-category": "Paginas amb un sondatge",
+    "ajaxpoll-tracking-category-desc": "Aquesta pagina a un <code>&lt;poll&gt;</code>.",
     "ajaxpoll-vote-update": "Vòstre vòte es estat mes a jorn.",
     "ajaxpoll-vote-add": "Vòstre vòte es estat comptat.",
     "ajaxpoll-vote-error": "Una error s'es producha amb lo tractament de vòstre vòte, ensajatz tornarmai.",
