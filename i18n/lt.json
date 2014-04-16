@@ -1,20 +1,20 @@
 {
-    "@metadata": {
-        "authors": [
-            "Audriusa",
-            "Eitvys200",
-            "Mantak111"
-        ]
-    },
-    "ajaxpoll-tracking-category": "Puslapiai su apklausa",
-    "ajaxpoll-vote-update": "Jūsų balsas buvo atnaujintas.",
-    "ajaxpoll-vote-add": "Jūsų balsas buvo pridėtas.",
-    "ajaxpoll-percent-votes": "$1% visų balsų",
-    "ajaxpoll-no-vote": "Prašome balsuoti žemiau.",
-    "ajaxpoll-no-vote-results-after-voting": "Prašome balsuoti žemiau. Rezultatai bus rodomi, kai jus balsuosite.",
-    "ajaxpoll-submitting": "Prašome palaukti, siunčiame jūsų balsą.",
-    "ajaxpoll-vote-permission": "Jūs neturite balsavimo teisės.",
-    "ajaxpoll-revoke-vote": "Noriu atsiimti savo balsą",
-    "ajaxpoll-vote-revoked": "Jūs atsiėmėte savo balsą.",
-    "right-ajaxpoll-vote": "Gali balsuoti AJAX apklausuose"
+	"@metadata": {
+		"authors": [
+			"Audriusa",
+			"Eitvys200",
+			"Mantak111"
+		]
+	},
+	"ajaxpoll-tracking-category": "Puslapiai su apklausa",
+	"ajaxpoll-vote-update": "Jūsų balsas buvo atnaujintas.",
+	"ajaxpoll-vote-add": "Jūsų balsas buvo pridėtas.",
+	"ajaxpoll-percent-votes": "$1% visų balsų",
+	"ajaxpoll-no-vote": "Prašome balsuoti žemiau.",
+	"ajaxpoll-no-vote-results-after-voting": "Prašome balsuoti žemiau. Rezultatai bus rodomi, kai jus balsuosite.",
+	"ajaxpoll-submitting": "Prašome palaukti, siunčiame jūsų balsą.",
+	"ajaxpoll-vote-permission": "Jūs neturite balsavimo teisės.",
+	"ajaxpoll-revoke-vote": "Noriu atsiimti savo balsą",
+	"ajaxpoll-vote-revoked": "Jūs atsiėmėte savo balsą.",
+	"right-ajaxpoll-vote": "Gali balsuoti AJAX apklausuose"
 }

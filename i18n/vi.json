@@ -1,19 +1,19 @@
 {
-    "@metadata": {
-        "authors": [
-            "Baonguyen21022003",
-            "Minh Nguyen",
-            "Withoutaname"
-        ]
-    },
-    "ajaxpoll-tracking-category": "Trang có thăm dò ý kiến",
-    "ajaxpoll-percent-votes": "$1% trên tổng số phiếu",
-    "ajaxpoll-your-vote": "Bạn đã bỏ phiếu cho “$1” vào $2. Để thay đổi phiếu bầu của bạn, nhập một câu trả lời khác dưới đây.",
-    "ajaxpoll-no-vote": "Xin hãy bỏ phiếu dưới đây.",
-    "ajaxpoll-no-vote-results-after-voting": "Xin vui lòng bình chọn dưới đây. Kết quả sẽ được hiển thị khi nào bạn bỏ phiếu rồi.",
-    "ajaxpoll-info": "Có $1 phiếu từ khi biểu quyết đã được tạo ra vào $2.",
-    "ajaxpoll-submitting": "Xin chờ, đang đệ trình phiếu của bạn.",
-    "ajaxpoll-vote-permission": "Bạn không có quyền bỏ phiếu.",
-    "ajaxpoll-view-results-permission": "Bạn không có quyền xem kết quả của biểu quyết này.",
-    "ajaxpoll-view-results-before-vote-permission": "Bạn không có quyền xem kết quả của biểu quyết này trước khi bạn đã bỏ phiếu."
+	"@metadata": {
+		"authors": [
+			"Baonguyen21022003",
+			"Minh Nguyen",
+			"Withoutaname"
+		]
+	},
+	"ajaxpoll-tracking-category": "Trang có thăm dò ý kiến",
+	"ajaxpoll-percent-votes": "$1% trên tổng số phiếu",
+	"ajaxpoll-your-vote": "Bạn đã bỏ phiếu cho “$1” vào $2. Để thay đổi phiếu bầu của bạn, nhập một câu trả lời khác dưới đây.",
+	"ajaxpoll-no-vote": "Xin hãy bỏ phiếu dưới đây.",
+	"ajaxpoll-no-vote-results-after-voting": "Xin vui lòng bình chọn dưới đây. Kết quả sẽ được hiển thị khi nào bạn bỏ phiếu rồi.",
+	"ajaxpoll-info": "Có $1 phiếu từ khi biểu quyết đã được tạo ra vào $2.",
+	"ajaxpoll-submitting": "Xin chờ, đang đệ trình phiếu của bạn.",
+	"ajaxpoll-vote-permission": "Bạn không có quyền bỏ phiếu.",
+	"ajaxpoll-view-results-permission": "Bạn không có quyền xem kết quả của biểu quyết này.",
+	"ajaxpoll-view-results-before-vote-permission": "Bạn không có quyền xem kết quả của biểu quyết này trước khi bạn đã bỏ phiếu."
 }

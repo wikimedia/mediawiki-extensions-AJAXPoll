@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Subi"
-        ]
-    },
-    "ajaxpoll-percent-votes": "Boto guztien %$1a"
+	"@metadata": {
+		"authors": [
+			"Subi"
+		]
+	},
+	"ajaxpoll-percent-votes": "Boto guztien %$1a"
 }

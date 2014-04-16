@@ -1,18 +1,18 @@
 {
-    "@metadata": {
-        "authors": [
-            "Chrisportelli"
-        ]
-    },
-    "ajaxpoll-vote-update": "Il-vot tiegħek ġie aġġornat.",
-    "ajaxpoll-vote-add": "Il-vot tiegħek ġie miżjud.",
-    "ajaxpoll-vote-error": "Kien hemm problema fl-ipproċessar tal-vot tiegħek, jekk jogħġbok erġa' pprova.",
-    "ajaxpoll-percent-votes": "$1% tal-voti kollha",
-    "ajaxpoll-your-vote": "Inti diġà vvutajt għal \"$1\" nhar il-$2, tista' tbiddel il-vot tiegħek billi tagħżel risposta hawn taħt.",
-    "ajaxpoll-no-vote": "Jekk jogħġbok ivvota hawn taħt.",
-    "ajaxpoll-info": "Kien hemm {{PLURAL:$1|vot wieħed|$1 voti}} minn mindu dan is-sondaġġ ġie maħluq nhar il-$2.",
-    "ajaxpoll-submitting": "Jekk jogħġbok stenna, il-vot tiegħek qiegħed jintbagħat.",
-    "ajaxpoll-vote-permission": "M'għandekx id-dritt tal-vot.",
-    "ajaxpoll-revoke-vote": "Nixtieq nirrevoka l-vot tiegħi",
-    "ajaxpoll-vote-revoked": "Irnexxielek tirrevoka b'suċċess il-vot tiegħek."
+	"@metadata": {
+		"authors": [
+			"Chrisportelli"
+		]
+	},
+	"ajaxpoll-vote-update": "Il-vot tiegħek ġie aġġornat.",
+	"ajaxpoll-vote-add": "Il-vot tiegħek ġie miżjud.",
+	"ajaxpoll-vote-error": "Kien hemm problema fl-ipproċessar tal-vot tiegħek, jekk jogħġbok erġa' pprova.",
+	"ajaxpoll-percent-votes": "$1% tal-voti kollha",
+	"ajaxpoll-your-vote": "Inti diġà vvutajt għal \"$1\" nhar il-$2, tista' tbiddel il-vot tiegħek billi tagħżel risposta hawn taħt.",
+	"ajaxpoll-no-vote": "Jekk jogħġbok ivvota hawn taħt.",
+	"ajaxpoll-info": "Kien hemm {{PLURAL:$1|vot wieħed|$1 voti}} minn mindu dan is-sondaġġ ġie maħluq nhar il-$2.",
+	"ajaxpoll-submitting": "Jekk jogħġbok stenna, il-vot tiegħek qiegħed jintbagħat.",
+	"ajaxpoll-vote-permission": "M'għandekx id-dritt tal-vot.",
+	"ajaxpoll-revoke-vote": "Nixtieq nirrevoka l-vot tiegħi",
+	"ajaxpoll-vote-revoked": "Irnexxielek tirrevoka b'suċċess il-vot tiegħek."
 }

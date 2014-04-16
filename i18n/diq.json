@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Erdemaslancan"
-        ]
-    },
-    "ajaxpoll-percent-votes": "$1% rey heme",
-    "ajaxpoll-no-vote": "Reya xo bıni de bıde."
+	"@metadata": {
+		"authors": [
+			"Erdemaslancan"
+		]
+	},
+	"ajaxpoll-percent-votes": "$1% rey heme",
+	"ajaxpoll-no-vote": "Reya xo bıni de bıde."
 }

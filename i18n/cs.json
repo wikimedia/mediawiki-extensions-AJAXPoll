@@ -1,27 +1,27 @@
 {
-    "@metadata": {
-        "authors": [
-            "Chmee2",
-            "Michaelbrabec",
-            "Mormegil",
-            "Paxt"
-        ]
-    },
-    "ajaxpoll-desc": "Umožňuje AJAXové průzkumy veřejného mínění pomocí značky <code>&lt;poll&gt;</code>",
-    "ajaxpoll-tracking-category": "Stránky s dotazníkem",
-    "ajaxpoll-vote-update": "Váš hlas byl aktualizován.",
-    "ajaxpoll-vote-add": "Váš hlas byl přidán.",
-    "ajaxpoll-vote-error": "Došlo k potížím se zpracováním Vašeho hlasu, zkuste to prosím znovu.",
-    "ajaxpoll-percent-votes": "$1% všech hlasů",
-    "ajaxpoll-your-vote": "Již jste hlasovali pro \" $1 \" na  $2 , svůj hlas můžete změnit klepnutím na  odpověď níže.",
-    "ajaxpoll-no-vote": "Prosím hlasujte níže.",
-    "ajaxpoll-no-vote-results-after-voting": "Prosím hlasujte níže, výsledky budou zobrazeny poté.",
-    "ajaxpoll-info": "{{PLURAL:$1|Odevzdán jeden hlas|Odevzdány $1 hlasy|Odevzdáno $1 hlasů}} od zahájení ankety dne $2.",
-    "ajaxpoll-submitting": "Prosím čekejte, Váš hlas se zpracovává...",
-    "ajaxpoll-vote-permission": "Nemáte oprávnění hlasovat.",
-    "ajaxpoll-view-results-before-vote-permission": "Nejste oprávněn prohlížet výsledky tohoto průzkumu před vašim hlasováním.",
-    "ajaxpoll-revoke-vote": "Chci odvolat svůj hlas",
-    "ajaxpoll-vote-revoked": "Váš hlas byl úspěšně odvolán.",
-    "ajaxpoll-error-csrf-wrong-token": "Byl přijat chybný token a váš hlas je ignorován.",
-    "right-ajaxpoll-vote": "Může hlasovat v anketách založených na AJAXu"
+	"@metadata": {
+		"authors": [
+			"Chmee2",
+			"Michaelbrabec",
+			"Mormegil",
+			"Paxt"
+		]
+	},
+	"ajaxpoll-desc": "Umožňuje AJAXové průzkumy veřejného mínění pomocí značky <code>&lt;poll&gt;</code>",
+	"ajaxpoll-tracking-category": "Stránky s dotazníkem",
+	"ajaxpoll-vote-update": "Váš hlas byl aktualizován.",
+	"ajaxpoll-vote-add": "Váš hlas byl přidán.",
+	"ajaxpoll-vote-error": "Došlo k potížím se zpracováním Vašeho hlasu, zkuste to prosím znovu.",
+	"ajaxpoll-percent-votes": "$1% všech hlasů",
+	"ajaxpoll-your-vote": "Již jste hlasovali pro \" $1 \" na  $2 , svůj hlas můžete změnit klepnutím na  odpověď níže.",
+	"ajaxpoll-no-vote": "Prosím hlasujte níže.",
+	"ajaxpoll-no-vote-results-after-voting": "Prosím hlasujte níže, výsledky budou zobrazeny poté.",
+	"ajaxpoll-info": "{{PLURAL:$1|Odevzdán jeden hlas|Odevzdány $1 hlasy|Odevzdáno $1 hlasů}} od zahájení ankety dne $2.",
+	"ajaxpoll-submitting": "Prosím čekejte, Váš hlas se zpracovává...",
+	"ajaxpoll-vote-permission": "Nemáte oprávnění hlasovat.",
+	"ajaxpoll-view-results-before-vote-permission": "Nejste oprávněn prohlížet výsledky tohoto průzkumu před vašim hlasováním.",
+	"ajaxpoll-revoke-vote": "Chci odvolat svůj hlas",
+	"ajaxpoll-vote-revoked": "Váš hlas byl úspěšně odvolán.",
+	"ajaxpoll-error-csrf-wrong-token": "Byl přijat chybný token a váš hlas je ignorován.",
+	"right-ajaxpoll-vote": "Může hlasovat v anketách založených na AJAXu"
 }
