@@ -4,10 +4,13 @@
 			"Cocu",
 			"Danmichaelo",
 			"Nghtwlkr",
-			"Simen47"
+			"Simen47",
+			"Jeblad"
 		]
 	},
+	"ajaxpoll-desc": "Tillater AJAX-baserte avstemminger med <code>&lt;poll&gt;</code> tagg",
 	"ajaxpoll-tracking-category": "Sider med en avstemning",
+	"ajaxpoll-tracking-category-desc": "Siden har en <code>&lt;poll&gt;</code>.",
 	"ajaxpoll-vote-update": "Din stemme har blitt oppdatert.",
 	"ajaxpoll-vote-add": "Din stemme har blitt lagt til.",
 	"ajaxpoll-vote-error": "Det oppstod et problem med behandlingen av din stemme, vennligst prøv igjen.",
@@ -21,7 +24,7 @@
 	"ajaxpoll-view-results-permission": "Du har ikke rettigheter til å vise resultatene i denne avstemningen.",
 	"ajaxpoll-view-results-before-vote-permission": "Du har ikke rettigheter til å vise resultatene av denne avstemningen før du har stemt.",
 	"ajaxpoll-revoke-vote": "Jeg vil trekke tilbake stemmen min",
-	"ajaxpoll-vote-revoked": "Du har trukket tilbake stemmen din.",
+	"ajaxpoll-vote-revoked": "Din stemme har blitt tilbakekalt.",
 	"ajaxpoll-error-csrf-wrong-token": "En feilaktig token ble mottatt, og din stemme er ignorert.",
 	"right-ajaxpoll-vote": "Kan stemme i AJAX-baserte avstemninger",
 	"right-ajaxpoll-view-results": "Kan se resultater i AJAX-baserte avstemninger",
