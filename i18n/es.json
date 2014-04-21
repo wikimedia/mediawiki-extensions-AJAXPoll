@@ -13,6 +13,7 @@
 	},
 	"ajaxpoll-desc": "Permite encuestas basadas en AJAX con etiqueta <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Páginas con una encuesta",
+	"ajaxpoll-tracking-category-desc": "La página tiene un <code>&lt;poll&gt;</code>.",
 	"ajaxpoll-vote-update": "Tu voto ha sido actualizado.",
 	"ajaxpoll-vote-add": "Tu voto ha sido añadido.",
 	"ajaxpoll-vote-error": "Ha habido un problema cuando comprobábamos tu voto, por favor, inténtalo de nuevo.",
