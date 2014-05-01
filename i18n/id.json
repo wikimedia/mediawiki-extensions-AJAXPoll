@@ -3,11 +3,13 @@
 		"authors": [
 			"Anashir",
 			"Farras",
-			"Rv77ax"
+			"Rv77ax",
+			"Kenrick95"
 		]
 	},
 	"ajaxpoll-desc": "Memungkinkan jajak pendapat berbasis AJAX dengan tag <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Halaman dengan jajak pendapat",
+	"ajaxpoll-tracking-category-desc": "Halaman ini memiliki <code>&lt;pemungutan suara&gt;</code>.",
 	"ajaxpoll-vote-update": "Suara Anda telah diperbarui.",
 	"ajaxpoll-vote-add": "Suara Anda telah ditambahkan.",
 	"ajaxpoll-vote-error": "Ada masalah dengan pengolahan suara anda, silahkan coba lagi.",
