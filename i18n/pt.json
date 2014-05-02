@@ -4,11 +4,13 @@
 			"Cainamarques",
 			"Hamilton Abreu",
 			"Malafaya",
-			"SandroHc"
+			"SandroHc",
+			"Fúlvio"
 		]
 	},
 	"ajaxpoll-desc": "Permite realizar votações baseadas em AJAX usando a ''tag'' <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Páginas com votação",
+	"ajaxpoll-tracking-category-desc": "A página possui um <code>&lt;poll&gt;</code>",
 	"ajaxpoll-vote-update": "O seu voto foi atualizado.",
 	"ajaxpoll-vote-add": "O seu voto foi adicionado.",
 	"ajaxpoll-vote-error": "Ocorreu um erro ao processar o seu voto. Tente novamente, por favor.",
