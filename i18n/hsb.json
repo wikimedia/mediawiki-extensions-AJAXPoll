@@ -6,6 +6,7 @@
 	},
 	"ajaxpoll-desc": "Přidawa tafličku <code>&lt;poll&gt;</code> za wotghosowanja na zakładźe AJAX",
 	"ajaxpoll-tracking-category": "Strony z wothłosowanjom",
+	"ajaxpoll-tracking-category-desc": "Tuta strona ma <code>&lt;poll&gt;</code>.",
 	"ajaxpoll-vote-update": "Twoje wothłosowanje je so zaktualizowało.",
 	"ajaxpoll-vote-add": "Twoje wothłosowanje je so přidało.",
 	"ajaxpoll-vote-error": "Je problem při předźěłowanju twojeho hłosa był, prošu spytaj hišće raz.",
