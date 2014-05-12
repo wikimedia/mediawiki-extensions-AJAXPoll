@@ -2,11 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Amire80",
-			"אור שפירא"
+			"אור שפירא",
+			"Matanya"
 		]
 	},
 	"ajaxpoll-desc": "אפשרות להוסיף הצבעות בטכנולוגיית AJAX באמצעות התג <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "דפים עם סקר",
+	"ajaxpoll-tracking-category-desc": "לדף יש <code>&lt;poll&gt;</code> .",
 	"ajaxpoll-vote-update": "הקול שלך עודכן.",
 	"ajaxpoll-vote-add": "הקול שלך נוסף.",
 	"ajaxpoll-vote-error": "הייתה בעיה בעיבוד הקול שלך, נא לנסות שוב.",
