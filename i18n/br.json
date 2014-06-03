@@ -8,6 +8,7 @@
 	},
 	"ajaxpoll-desc": "Aotren ar goulennoù diazezet war AJAX gant <code>&lt;poll&gt;</code> tag",
 	"ajaxpoll-tracking-category": "Pajennoù enno ur sontadeg",
+	"ajaxpoll-tracking-category-desc": "Ar bajenn he deus un <code>&lt;poll&gt;</code>.",
 	"ajaxpoll-vote-update": "Hizivaet eo bet ho vot.",
 	"ajaxpoll-vote-add": "Ouzhpennet eo bet ho vot.",
 	"ajaxpoll-vote-error": "Ur gudenn a zo bet pa vezer oc'h ober war-dro ho vot. Mar plij klaskit adarre.",
