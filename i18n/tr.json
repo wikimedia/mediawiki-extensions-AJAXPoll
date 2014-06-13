@@ -3,11 +3,15 @@
 		"authors": [
 			"Hedda Gabler",
 			"Incelemeelemani",
-			"SiLveRLeaD"
+			"SiLveRLeaD",
+			"Stultiwikia"
 		]
 	},
+	"ajaxpoll-tracking-category": "Ankteli sayfalar",
 	"ajaxpoll-vote-update": "Oyunuz güncelleştirildi.",
 	"ajaxpoll-vote-add": "Oyunuz eklendi.",
+	"ajaxpoll-vote-error": "Oyunuz işleme alınırken bir sorun oluştu, lütfen tekrar deneyiniz.",
+	"ajaxpoll-no-vote": "Lütfen aşağıdan oy kullanın.",
 	"ajaxpoll-vote-permission": "Oy hakkına sahip değilsiniz.",
 	"ajaxpoll-revoke-vote": "Ben oyumu geri almak istiyorum"
 }
