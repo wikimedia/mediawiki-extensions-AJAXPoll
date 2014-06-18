@@ -4,7 +4,8 @@
 			"Hedda Gabler",
 			"Incelemeelemani",
 			"SiLveRLeaD",
-			"Stultiwikia"
+			"Stultiwikia",
+			"Sayginer"
 		]
 	},
 	"ajaxpoll-tracking-category": "Ankteli sayfalar",
@@ -12,6 +13,7 @@
 	"ajaxpoll-vote-add": "Oyunuz eklendi.",
 	"ajaxpoll-vote-error": "Oyunuz işleme alınırken bir sorun oluştu, lütfen tekrar deneyiniz.",
 	"ajaxpoll-no-vote": "Lütfen aşağıdan oy kullanın.",
+	"ajaxpoll-submitting": "Lütfen bekleyin, oyunuz kaydediliyor.",
 	"ajaxpoll-vote-permission": "Oy hakkına sahip değilsiniz.",
 	"ajaxpoll-revoke-vote": "Ben oyumu geri almak istiyorum"
 }
