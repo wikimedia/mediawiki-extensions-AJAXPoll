@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Botuzhaleny-sodamo"
+		]
+	},
+	"ajaxpoll-vote-add": "Вайгелеть ловозь.",
+	"ajaxpoll-no-vote": "Максыка ало вайгелеть.",
+	"ajaxpoll-revoke-vote": "Ули мелем саемс вайгелем мекев",
+	"ajaxpoll-vote-revoked": "Вайгелеть нарадазь."
+}
