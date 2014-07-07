@@ -6,6 +6,7 @@
 	},
 	"ajaxpoll-desc": "Permitte sondages a base de AJAX con le etiquetta <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Paginas con sondage",
+	"ajaxpoll-tracking-category-desc": "Le pagina ha un <code>&lt;poll&gt;</code>.",
 	"ajaxpoll-vote-update": "Tu voto ha essite actualisate.",
 	"ajaxpoll-vote-add": "Tu voto ha essite addite.",
 	"ajaxpoll-vote-error": "Un problema occurreva durante le tractamento de tu voto. Per favor reproba.",
