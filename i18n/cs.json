@@ -4,7 +4,8 @@
 			"Chmee2",
 			"Michaelbrabec",
 			"Mormegil",
-			"Paxt"
+			"Paxt",
+			"Matěj Suchánek"
 		]
 	},
 	"ajaxpoll-desc": "Umožňuje AJAXové průzkumy veřejného mínění pomocí značky <code>&lt;poll&gt;</code>",
@@ -19,7 +20,7 @@
 	"ajaxpoll-info": "{{PLURAL:$1|Odevzdán jeden hlas|Odevzdány $1 hlasy|Odevzdáno $1 hlasů}} od zahájení ankety dne $2.",
 	"ajaxpoll-submitting": "Prosím čekejte, Váš hlas se zpracovává...",
 	"ajaxpoll-vote-permission": "Nemáte oprávnění hlasovat.",
-	"ajaxpoll-view-results-before-vote-permission": "Nejste oprávněn prohlížet výsledky tohoto průzkumu před vašim hlasováním.",
+	"ajaxpoll-view-results-before-vote-permission": "Nejste oprávněn prohlížet výsledky tohoto průzkumu před svým hlasováním.",
 	"ajaxpoll-revoke-vote": "Chci odvolat svůj hlas",
 	"ajaxpoll-vote-revoked": "Váš hlas byl úspěšně odvolán.",
 	"ajaxpoll-error-csrf-wrong-token": "Byl přijat chybný token a váš hlas je ignorován.",
