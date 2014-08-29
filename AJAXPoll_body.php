@@ -30,13 +30,13 @@ class AJAXPoll {
 
 	# The callback function for converting the input text to HTML output
 	static function AJAXPollRender( $input, $args = array(), Parser $parser, $frame ) {
-		global $wgUser, $wgScriptPath, $wgUseAjax;
+		global $wgUser, $wgRequest, $wgUseAjax;
 
 		$parser->disableCache();
 		$parser->addTrackingCategory( 'ajaxpoll-tracking-category' );
 
 		if ( $wgUser->getName() == '' ) {
-			$userName = wfGetIP();
+			$userName = $wgRequest->getIP();
 		} else {
 			$userName = $wgUser->getName();
 		}
@@ -186,13 +186,13 @@ During the last 48 hours, $tab2[0] votes have been given.";
 	}
 
 	public static function submitVote( $id, $answer, $token ) {
-		global $wgUser;
+		global $wgUser, $wgRequest;
 
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->begin( __METHOD__ );
 
 		if ( $wgUser->getName() == '' ) {
-			$userName = wfGetIP();
+			$userName = $wgRequest->getIP();
 		} else {
 			$userName = $wgUser->getName();
 		}
@@ -245,7 +245,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 					array(
 						'poll_id' => $id,
 						'poll_user' => $userName,
-						'poll_ip' => wfGetIP(),
+						'poll_ip' => $wgRequest->getIP(),
 						'poll_answer' => $answer,
 						'poll_date' => wfTimestampNow()
 					),
