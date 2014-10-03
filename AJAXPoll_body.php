@@ -22,9 +22,7 @@ class AJAXPoll {
 	* @return Boolean: true
 	*/
 	static function onParserInit( $parser ) {
-		global $wgOut;
 		$parser->setHook( 'poll', array( __CLASS__, 'AJAXPollRender' ) );
-		$wgOut->addModules( 'ext.ajaxpoll' );
 		return true;
 	}
 
@@ -34,6 +32,7 @@ class AJAXPoll {
 
 		$parser->disableCache();
 		$parser->addTrackingCategory( 'ajaxpoll-tracking-category' );
+		$parser->getOutput()->addModules( 'ext.ajaxpoll' );
 
 		if ( $wgUser->getName() == '' ) {
 			$userName = $wgRequest->getIP();
