@@ -1,6 +1,6 @@
 var ajaxpollTmp;
 
-$(".ajaxpoll-answer-vote").live("mouseover",
+$(".ajaxpoll-answer-vote").on("mouseover",
 	function(){
 		var sp=$(this).find("span");
 		ajaxpollTmp=sp.html();
@@ -9,7 +9,7 @@ $(".ajaxpoll-answer-vote").live("mouseover",
 	}
 );
 
-$(".ajaxpoll-answer-vote").live("mouseout",
+$(".ajaxpoll-answer-vote").on("mouseout",
 	function(){
 		var sp=$(this).find("span");
 		sp.attr("title",sp.text());
@@ -19,7 +19,7 @@ $(".ajaxpoll-answer-vote").live("mouseout",
 
 /* attach click handler */
 $(".ajaxpoll-answer-name label")
-	.live("click",
+	.on("click",
 		function(event){
 			event.preventDefault();
 			event.stopPropagation();
@@ -44,23 +44,23 @@ $(".ajaxpoll-answer-name label")
 		}
 	)
 
-$(".ajaxpoll-answer-name:not(.ajaxpoll-answer-name-revoke) label").live("mouseover",
+$(".ajaxpoll-answer-name:not(.ajaxpoll-answer-name-revoke) label").on("mouseover",
 	function(){
 		$(this).addClass("ajaxpoll-hover-vote");
 	}
 );
-$(".ajaxpoll-answer-name:not(.ajaxpoll-answer-name-revoke) label").live("mouseout",
+$(".ajaxpoll-answer-name:not(.ajaxpoll-answer-name-revoke) label").on("mouseout",
 	function(){
 		$(this).removeClass("ajaxpoll-hover-vote");
 	}
 );
 
-$(".ajaxpoll-answer-name-revoke label").live("mouseover", 
+$(".ajaxpoll-answer-name-revoke label").on("mouseover",
 	function(){
 		$(this).addClass("ajaxpoll-hover-revoke");
 	}
 );
-$(".ajaxpoll-answer-name-revoke label").live("mouseout", 
+$(".ajaxpoll-answer-name-revoke label").on("mouseout",
 	function(){
 		$(this).removeClass("ajaxpoll-hover-revoke");
 	}
