@@ -1,8 +1,13 @@
 {
-	"@metadata": [],
-	"ajaxpoll-vote-update": "aš glas je bio uračunat.",
-	"ajaxpoll-vote-add": "Vaš gals je dodan",
+	"@metadata": {
+		"authors": [
+			"Milicevic01"
+		]
+	},
+	"ajaxpoll-vote-update": "Vaš glas je ažuriran.",
+	"ajaxpoll-vote-add": "Vaš glas je dodan",
 	"ajaxpoll-percent-votes": "$1% od svih glasova",
 	"ajaxpoll-no-vote": "Molimo glasajte ispod.",
-	"ajaxpoll-submitting": "Čekajte, šaljemo vaš glas."
+	"ajaxpoll-submitting": "Čekajte, šaljemo vaš glas.",
+	"ajaxpoll-vote-revoked": "Vaš glas je poništen."
 }

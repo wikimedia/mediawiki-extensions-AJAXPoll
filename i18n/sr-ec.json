@@ -4,12 +4,14 @@
 			"Milicevic01",
 			"Rancher",
 			"Sasa Stefanovic",
-			"Verlor"
+			"Verlor",
+			"Lakisan97"
 		]
 	},
 	"ajaxpoll-tracking-category-desc": "Страница има <code>&lt;poll&gt;</code>.",
-	"ajaxpoll-vote-update": "аш глас је био урачунат.",
-	"ajaxpoll-vote-add": "Ваш галс је додан",
+	"ajaxpoll-vote-update": "Ваш глас је ажуриран.",
+	"ajaxpoll-vote-add": "Ваш глас је додан.",
+	"ajaxpoll-vote-error": "Дошло је до грешке при бележењу вашег гласа. Покушајте поново.",
 	"ajaxpoll-percent-votes": "$1% од свих гласова",
 	"ajaxpoll-no-vote": "Молимо гласајте испод.",
 	"ajaxpoll-submitting": "Чекајте, шаљемо ваш глас.",
