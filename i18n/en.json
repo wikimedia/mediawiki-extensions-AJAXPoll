@@ -12,7 +12,7 @@
     "ajaxpoll-vote-add": "Your vote has been added.",
     "ajaxpoll-vote-error": "There was a problem with processing your vote, please try again.",
     "ajaxpoll-percent-votes": "$1% of all votes",
-    "ajaxpoll-your-vote": "You voted for \"$1\" on $2. You can change your vote by clicking a different answer below.",
+    "ajaxpoll-your-vote": "You voted for \"$1\" on $3 at $4. You can change your vote by clicking a different answer below.",
     "ajaxpoll-no-vote": "Please vote below.",
     "ajaxpoll-no-vote-results-after-voting": "Please vote below. Results will be shown when you have voted.",
     "ajaxpoll-info": "There {{PLURAL:$1|was one vote|were $1 votes}} since the poll was created on $2.",
