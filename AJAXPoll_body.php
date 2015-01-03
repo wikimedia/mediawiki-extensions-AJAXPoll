@@ -333,10 +333,13 @@ During the last 48 hours, $tab2[0] votes have been given.";
 		);
 
 		if ( $row = $dbr->fetchRow( $q ) ) {
+			$ts = wfTimestamp( TS_MW, $row[1] );
 			$ourLastVoteDate = wfMessage(
 				'ajaxpoll-your-vote',
 				$lines[$row[0] - 1],
-				$wgLang->timeanddate( wfTimestamp( TS_MW, $row[1] ), true /* adjust? */ )
+				$wgLang->timeanddate( $ts, true /* adjust? */ ),
+				$wgLang->date( $ts, true /* adjust? */ ),
+				$wgLang->time( $ts, true /* adjust? */ )
 			)->escaped();
 			$userVoted = true;
 		}

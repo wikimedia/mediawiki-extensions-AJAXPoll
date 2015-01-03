@@ -13,7 +13,7 @@
 	"ajaxpoll-vote-add": "System response that the vote was successfully added.\n\nIf error, the following message is used:\n* {{msg-mw|Ajaxpoll-vote-error}}",
 	"ajaxpoll-vote-error": "Used as error message.\n\nIf successful, the following message are used:\n* {{msg-mw|Ajaxpoll-vote-update}}\n* {{msg-mw|Ajaxpoll-vote-add}}\n* {{msg-mw|Ajaxpoll-vote-revoked}}",
 	"ajaxpoll-percent-votes": "Parameters:\n* $1 - the percentage number of the votes",
-	"ajaxpoll-your-vote": "Parameters:\n* $1 - the answer name\n* $2 - the time/date when the answer was posted",
+	"ajaxpoll-your-vote": "Parameters:\n* $1 - the answer name\n* $2 - unused\n* $3 - date\n* $4 - time",
 	"ajaxpoll-no-vote": "Used if there are no votes.\n\nSee also:\n* {{msg-mw|Ajaxpoll-revoke-vote}}",
 	"ajaxpoll-no-vote-results-after-voting": "Invitation to vote and indication that results will be shown after voting.",
 	"ajaxpoll-info": "Parameters:\n* $1 - the number of votes\n* $2 - the time and date when the poll was started",
