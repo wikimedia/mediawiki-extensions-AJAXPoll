@@ -5,7 +5,8 @@
 			"Hamilton Abreu",
 			"Malafaya",
 			"SandroHc",
-			"Fúlvio"
+			"Fúlvio",
+			"Vitorvicentevalente"
 		]
 	},
 	"ajaxpoll-desc": "Permite realizar votações baseadas em AJAX usando a ''tag'' <code>&lt;poll&gt;</code>",
@@ -15,7 +16,7 @@
 	"ajaxpoll-vote-add": "O seu voto foi adicionado.",
 	"ajaxpoll-vote-error": "Ocorreu um erro ao processar o seu voto. Tente novamente, por favor.",
 	"ajaxpoll-percent-votes": "$1% do total de votos",
-	"ajaxpoll-your-vote": "Já votou em \"$1\" a $2. Pode alterar o seu voto se escolher outra resposta abaixo.",
+	"ajaxpoll-your-vote": "Já votou em \"$1\" a $3 à(s) $4. Pode alterar o seu voto se escolher outra resposta abaixo.",
 	"ajaxpoll-no-vote": "Vote abaixo, por favor.",
 	"ajaxpoll-no-vote-results-after-voting": "Vote abaixo, por favor. Os resultados serão mostrados depois de votar.",
 	"ajaxpoll-info": "{{PLURAL:$1|Um voto|$1 votos}} desde a criação da votação em $2.",
