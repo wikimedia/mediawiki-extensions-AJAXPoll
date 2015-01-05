@@ -15,7 +15,7 @@
 	"ajaxpoll-vote-add": "Din röst har lagts till.",
 	"ajaxpoll-vote-error": "Det uppstod ett problem med bearbetningen av din röst, var god försök igen.",
 	"ajaxpoll-percent-votes": "$1% av alla röster",
-	"ajaxpoll-your-vote": "Du har redan röstat på \"$1\" den $2, du kan ändra din röst genom att klicka på ett svar nedan.",
+	"ajaxpoll-your-vote": "Du röstade på \"$1\" den $3 kl $4. Du kan ändra din röst genom att klicka på ett annat svar nedan.",
 	"ajaxpoll-no-vote": "Var god rösta nedan.",
 	"ajaxpoll-no-vote-results-after-voting": "Rösta nedan. Resultaten kommer att visas när du har röstat.",
 	"ajaxpoll-info": "Det var {{PLURAL:$1|en röst|$1 röster}} sedan omröstningen skapades den $2.",

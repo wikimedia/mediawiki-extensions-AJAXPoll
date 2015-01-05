@@ -15,7 +15,7 @@
 	"ajaxpoll-vote-add": "Votre vote a été compté.",
 	"ajaxpoll-vote-error": "Il y avait une problème avec le traitement de votre vote. Essayez encore, s'il vous plaît.",
 	"ajaxpoll-percent-votes": "$1% de tous les votes",
-	"ajaxpoll-your-vote": "Vous avez voté pour « $1 » sur $2. Vous pouvez changer de vote si vous cliquez sur l’un des choix plus bas.",
+	"ajaxpoll-your-vote": "Vous avez voté pour « $1 » le $3 à $4. Vous pouvez changer de vote si vous cliquez sur l’un des choix ci-dessous.",
 	"ajaxpoll-no-vote": "Merci de voter ci-dessous.",
 	"ajaxpoll-no-vote-results-after-voting": "Vous pouvez voter ci-dessous. Les résultats seront affichés lorsque vous aurez voté.",
 	"ajaxpoll-info": "Il y avait {{PLURAL:$1|un vote|$1 votes}} depuis l’élaboration du sondage au $2.",

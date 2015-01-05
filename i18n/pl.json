@@ -13,7 +13,7 @@
 	"ajaxpoll-vote-add": "Twój głos został dodany.",
 	"ajaxpoll-vote-error": "Wystąpił błąd w czasie dodawania głosu, proszę spróbować później.",
 	"ajaxpoll-percent-votes": "$1% wszystkich głosów",
-	"ajaxpoll-your-vote": "Zagłosowałeś już na \"$1\" $2, możesz zmienić swój głos klikając na inną odpowiedź poniżej.",
+	"ajaxpoll-your-vote": "Zagłosowałeś już na „$1” $3 o $4. Możesz zmienić swój głos klikając na inną odpowiedź poniżej.",
 	"ajaxpoll-no-vote": "Zagłosuj poniżej.",
 	"ajaxpoll-no-vote-results-after-voting": "Zagłosuj poniżej. Wyniki zobaczysz po oddaniu głosu.",
 	"ajaxpoll-info": "Oddano już {{PLURAL:$1|jeden głos|$1 głosy|$1 głosów}} od utworzenia głosowania $2.",
