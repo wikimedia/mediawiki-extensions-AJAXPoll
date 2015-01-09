@@ -11,7 +11,7 @@
 	"ajaxpoll-vote-add": "'U vote tune ha state aggiunde.",
 	"ajaxpoll-vote-error": "Stave 'nu probbleme cu l'elabborazione d'u vote tune, pe piacere pruève arrète.",
 	"ajaxpoll-percent-votes": "$1% de totte le vote",
-	"ajaxpoll-your-vote": "Tu è ggià vutate pe \"$1\" 'u $2, tu puè cangià 'u vote tune cazzanne 'a resposte aqquà sotte.",
+	"ajaxpoll-your-vote": "Tu è ggià vutate pe \"$1\" 'u $3 a le $4. Tu puè cangià 'u vote tune cazzanne 'a resposte aqquà sotte.",
 	"ajaxpoll-no-vote": "Pe' piacere, vote d'abbasce",
 	"ajaxpoll-no-vote-results-after-voting": "Pe piacere vote aqquà sotte. Le resultate avènene fatte vedè quanne tu è vutate.",
 	"ajaxpoll-info": "{{PLURAL:$1|Stè 'nu vote|Stonne $1 vote}} da quanne 'u sondagge ha state ccrejate 'u $2.",
