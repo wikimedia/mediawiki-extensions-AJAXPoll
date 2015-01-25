@@ -11,7 +11,7 @@
 	"ajaxpoll-vote-add": "Vòstre vòte es estat comptat.",
 	"ajaxpoll-vote-error": "Una error s'es producha amb lo tractament de vòstre vòte, ensajatz tornarmai.",
 	"ajaxpoll-percent-votes": "$1% de totes los vòtes",
-	"ajaxpoll-your-vote": "Avètz votat per « $1 » sus $2. Podètz cambiar de vòte se clicatz sus una de las causidas mai bas.",
+	"ajaxpoll-your-vote": "Avètz votat per « $1 » lo $3 a $4.\nPodètz cambiar de vòte en clicant sus una de las causidas çaijós.",
 	"ajaxpoll-no-vote": "Mercé de votar çaijós.",
 	"ajaxpoll-no-vote-results-after-voting": "Podètz votar çaijós. Los resultats seràn afichats quand auretz votat.",
 	"ajaxpoll-info": "I aviá {{PLURAL:$1|un vòte|$1 vòtes}} dempuèi l’elaboracion del sondatge al $2.",

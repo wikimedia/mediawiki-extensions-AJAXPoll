@@ -12,7 +12,7 @@
 	"ajaxpoll-vote-add": "Är Stëmm gouf derbäigesat.",
 	"ajaxpoll-vote-error": "Et gouf e Problem beim Verschaffe vun Ärer Stëmm, probéiert et w.e.g. nach eng kéier.",
 	"ajaxpoll-percent-votes": "$1% vun alle Stëmmen",
-	"ajaxpoll-your-vote": "Dir hutt den $$ ëm $4 fir \"$1\" gestëmmt. Dir kënnt Är Stëmm änneren andeem Dir op eng aner Äntwert hei drënner klickt.",
+	"ajaxpoll-your-vote": "Dir hutt den $3 ëm $4 fir \"$1\" gestëmmt. Dir kënnt Är Stëmm änneren andeem Dir op eng aner Äntwert hei drënner klickt.",
 	"ajaxpoll-no-vote": "Stëmmt w.e.g hei drënner mat of.",
 	"ajaxpoll-no-vote-results-after-voting": "Gitt Är Stëmm w.e.g. hei drënner of. D'Resultater gi gewise soubal wéi Dir ofgestëmmt hutt.",
 	"ajaxpoll-info": "Zënter dem Ufank vun der Ëmfro den $2 {{PLURAL:$1 gouf eng Stëmm|goufe(n) $1 Stëmmen}} ofginn.",
