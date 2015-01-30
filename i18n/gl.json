@@ -12,7 +12,7 @@
 	"ajaxpoll-vote-add": "Engadiuse o seu voto.",
 	"ajaxpoll-vote-error": "Houbo algún problema co procesamento do seu voto. Por favor, inténteo de novo.",
 	"ajaxpoll-percent-votes": "$1% do total dos votos",
-	"ajaxpoll-your-vote": "Xa votou por \"$1\" en $3 ás $2. Pode cambiar o seu voto premendo nunha resposta diferente das que aparecen a continuación.",
+	"ajaxpoll-your-vote": "Votou por \"$1\" en $3 ás $4. Pode cambiar o seu voto premendo nunha resposta diferente das que aparecen a continuación.",
 	"ajaxpoll-no-vote": "Por favor, vote a continuación.",
 	"ajaxpoll-no-vote-results-after-voting": "Por favor, vote a continuación. Os resultados aparecerán cando vote.",
 	"ajaxpoll-info": "{{PLURAL:$1|Recibiuse un voto|Recibíronse $1 votos}} desde que a enquisa foi creada o $2.",
