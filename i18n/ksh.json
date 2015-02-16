@@ -10,7 +10,7 @@
 	"ajaxpoll-vote-add": "Ding Schtemm es jezallt.",
 	"ajaxpoll-vote-error": "Doh hät jät nit jeflupp mem Beärbeide vun Dinge Schtemm. Bes esu jood_un versöhg_et norr_ens.",
 	"ajaxpoll-percent-votes": "$1% vun all Schtemme",
-	"ajaxpoll-your-vote": "Do häs aam $2 ald för „$1“ jeschtemmp. Do kanns Deng Schtemm ändere. Doför moß De onge obb en Antwoot kleke.",
+	"ajaxpoll-your-vote": "Do häs aam $3 öm $3 Uhr ald för „$1“ jeschtemmp. Do kanns Deng Schtemm ändere. Doför moß De onge obb en Antwoot kleke.",
 	"ajaxpoll-no-vote": "Onge kanns De afschtemme.",
 	"ajaxpoll-no-vote-results-after-voting": "Donn onge afschtemme. Wad eruß kohm, kreß De aanjezeisch, wann De afjeschtemmp häs.",
 	"ajaxpoll-info": "Et {{PLURAL:$1|wood ein Schtemm|woodte $1 Schtemme|wood kein Schtemm}} afjejovve zigg aam $2 di Ömfrooch aanjelaat wood.",
