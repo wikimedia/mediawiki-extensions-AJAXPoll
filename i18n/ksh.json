@@ -6,11 +6,12 @@
 	},
 	"ajaxpoll-desc": "Deiht dä Befähl <code lang=\"en\">&lt;poll&gt;</code> en et Wiki, öm Ömfroore maache ze künne, di op <i lang=\"en\">AJAX</i> boue.",
 	"ajaxpoll-tracking-category": "Sigge med ener Ömfrooch",
+	"ajaxpoll-tracking-category-desc": "en dä Sigg es ene <code lang=\"en\" xml:lang=\"en\" dir=\"ltr\">&lt;poll&gt;</code> Befähl.",
 	"ajaxpoll-vote-update": "Ding Schtemm es aanjepaß.",
 	"ajaxpoll-vote-add": "Ding Schtemm es jezallt.",
 	"ajaxpoll-vote-error": "Doh hät jät nit jeflupp mem Beärbeide vun Dinge Schtemm. Bes esu jood_un versöhg_et norr_ens.",
 	"ajaxpoll-percent-votes": "$1% vun all Schtemme",
-	"ajaxpoll-your-vote": "Do häs aam $3 öm $3 Uhr ald för „$1“ jeschtemmp. Do kanns Deng Schtemm ändere. Doför moß De onge obb en Antwoot kleke.",
+	"ajaxpoll-your-vote": "Do häs aam $3 öm $4 Uhr ald för „$1“ jeschtemmp. Do kanns Deng Schtemm ändere. Doför moß De onge obb en Antwoot kleke.",
 	"ajaxpoll-no-vote": "Onge kanns De afschtemme.",
 	"ajaxpoll-no-vote-results-after-voting": "Donn onge afschtemme. Wad eruß kohm, kreß De aanjezeisch, wann De afjeschtemmp häs.",
 	"ajaxpoll-info": "Et {{PLURAL:$1|wood ein Schtemm|woodte $1 Schtemme|wood kein Schtemm}} afjejovve zigg aam $2 di Ömfrooch aanjelaat wood.",
@@ -25,5 +26,6 @@
 	"right-ajaxpoll-view-results": "Darv en Afschtemmonge, di op <i lang=\"en\">AJAX</i> boue, beloore wad erus kohm.",
 	"right-ajaxpoll-view-results-before-vote": "Darv en Afschtemmonge, di op <i lang=\"en\">AJAX</i> boue, belohre, wad erus kohm, der ohne sellver afjeschtemmp ze han.",
 	"action-ajaxpoll-vote": "bei Afschtemmonge, di op <i lang=\"en\">AJAX</i> boue, metmaache",
-	"action-ajaxpoll-view-results": "bei Afschtemmonge, di op <i lang=\"en\">AJAX</i> boue, beloore wad erus kohm"
+	"action-ajaxpoll-view-results": "bei Afschtemmonge, di op <i lang=\"en\">AJAX</i> boue, beloore wad erus kohm",
+	"action-ajaxpoll-view-results-before-vote": "bei Afschtemmonge, di op <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"Asynchronous JavaScript and XML\">AJAX</i> boue, belohre, wad erus kohm, der ohne sellver afjeschtemmp ze han"
 }
