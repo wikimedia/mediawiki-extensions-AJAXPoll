@@ -12,7 +12,7 @@
 	"ajaxpoll-vote-add": "Amestóse'l to votu.",
 	"ajaxpoll-vote-error": "Hebo un problema al procesar el to votu; tentalo otra vuelta, por favor.",
 	"ajaxpoll-percent-votes": "$1% de tolos votos",
-	"ajaxpoll-your-vote": "Ya votasti por \"$1\" el $2, pues camudar el to votu calcando nuna de les rempuestes d'abaxo.",
+	"ajaxpoll-your-vote": "Ya votasti por «$1» el $3 a les $4. Pues cambiar el votu faciendo clic nuna rempuesta distinta más abaxo.",
 	"ajaxpoll-no-vote": "Por favor, vota abaxo.",
 	"ajaxpoll-no-vote-results-after-voting": "Por favor, vote más abaxo. Los resultaos apaecerán cuando vote.",
 	"ajaxpoll-info": "Hebo {{PLURAL:$1|un votu|$1 votos}} dende que se creó la encuesta el $2.",
