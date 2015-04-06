@@ -4,7 +4,9 @@
 			"A1",
 			"Andriykopanytsia",
 			"Base",
-			"Ата"
+			"Ата",
+			"Ahonc",
+			"Piramidion"
 		]
 	},
 	"ajaxpoll-desc": "Дозволяє голосування на основі AJAX з міткою <code>&lt;poll&gt;</code>",
@@ -25,8 +27,8 @@
 	"ajaxpoll-revoke-vote": "Я хочу скасувати свій голос",
 	"ajaxpoll-vote-revoked": "Ваш голос скасовано.",
 	"ajaxpoll-error-csrf-wrong-token": "Отримано неправильний маркер, Ваш голос не враховано.",
-	"right-ajaxpoll-vote": "Можете голосувати в опитуваннях на основі AJAX",
-	"right-ajaxpoll-view-results": "Можна переглянути результати в AJAX основі опитувань",
+	"right-ajaxpoll-vote": "можливість голосування в опитуваннях на основі AJAX",
+	"right-ajaxpoll-view-results": "можливість перегляду результатів опитувань на основі AJAX",
 	"right-ajaxpoll-view-results-before-vote": "Можна переглянути результати в AJAX основі опитувань до того, як проголосували",
 	"action-ajaxpoll-vote": "голосувати в опитуваннях на основі AJAX",
 	"action-ajaxpoll-view-results": "подивитися результати опитувань на основі AJAX",
