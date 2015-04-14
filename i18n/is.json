@@ -2,14 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"S.Örvarr.S",
-			"Snævar"
+			"Snævar",
+			"Sveinn í Felli"
 		]
 	},
 	"ajaxpoll-tracking-category": "Síður með skoðanakönnun",
 	"ajaxpoll-vote-update": "Atkvæði þitt hefur verið uppfært.",
 	"ajaxpoll-vote-add": "Atkvæði þínu hefur verið viðbætt.",
 	"ajaxpoll-percent-votes": "$1% allra atkvæða",
-	"ajaxpoll-your-vote": "Þú kaust „$1“ þann $2. Þú getur breytt atkvæði þínu með því að smella á annað svar fyrir neðan.",
+	"ajaxpoll-your-vote": "Þú kaust „$1“ þann $3 klukkan $4. Þú getur breytt atkvæði þínu með því að smella á annað svar fyrir neðan.",
 	"ajaxpoll-no-vote": "Gerðu svo vel og kjóstu fyrir neðan.",
 	"ajaxpoll-no-vote-results-after-voting": "Gerðu svo vel og kjóstu fyrir neðan. Niðurstöðurnar verða sýndar þegar þú hefur kosið.",
 	"ajaxpoll-vote-permission": "Þú hefur ekki rétt til þess að kjósa.",
