@@ -3,7 +3,8 @@
 		"authors": [
 			"Fryed-peach",
 			"Shirayuki",
-			"Shun Fukuzawa"
+			"Shun Fukuzawa",
+			"Sujiniku"
 		]
 	},
 	"ajaxpoll-desc": "<code>&lt;poll&gt;</code> タグで Ajax ベースの投票所を使用できるようにする",
@@ -12,7 +13,7 @@
 	"ajaxpoll-vote-add": "投票を追加しました。",
 	"ajaxpoll-vote-error": "投票の処理中に問題が発生しました。再投票してください。",
 	"ajaxpoll-percent-votes": "全体の $1%",
-	"ajaxpoll-your-vote": "$2について「$1」に投票済みです。以下で別の回答をクリックすると投票を変更できます。",
+	"ajaxpoll-your-vote": "$4での$3について「$1」に投票済みです。以下で別の回答をクリックすると投票を変更できます。",
 	"ajaxpoll-no-vote": "投票してください。",
 	"ajaxpoll-no-vote-results-after-voting": "以下で投票してください。投票すると、投票結果が表示されます。",
 	"ajaxpoll-info": "$2 に投票所が作成されて以来、{{PLURAL:$1|$1 票}}の投票がありました。",
