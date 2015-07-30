@@ -24,5 +24,9 @@
 	"ajaxpoll-vote-revoked": "'U vote tune ha state revocate.",
 	"ajaxpoll-error-csrf-wrong-token": "'Nu gettone sbagliate ha state ricevute, e 'u vote tune ha state cacate.",
 	"right-ajaxpoll-vote": "Puè vutà le sondagge in AJAX",
-	"right-ajaxpoll-view-results": "Puè 'ndrucà le resultate de le sondagge fatte cu AJAX"
+	"right-ajaxpoll-view-results": "Puè 'ndrucà le resultate de le sondagge fatte cu AJAX",
+	"right-ajaxpoll-view-results-before-vote": "Puè 'ndrucà le resultate de le sondagge basate sus a AJAX apprime de vutà",
+	"action-ajaxpoll-vote": "vuète le sondagge in AJAX",
+	"action-ajaxpoll-view-results": "'ndruche le resultate de le sondagge in AJAX",
+	"action-ajaxpoll-view-results-before-vote": "'ndruche le resultate de le sondagge basate sus a AJAX apprime de vutà"
 }
