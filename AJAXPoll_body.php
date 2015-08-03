@@ -457,7 +457,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 				}
 
 				// If AJAX is enabled, as it is by default in modern MWs, we can
-				// just use sajax library function here for that AJAX-y feel.
+				// just use action=ajax function here for that AJAX-y feel.
 				// If not, we'll have to submit the form old-school way...
 
 				$border = ( $percent == 0 ) ? ' border:0;' : '';
