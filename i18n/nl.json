@@ -17,7 +17,7 @@
 	"ajaxpoll-vote-add": "Uw stem is toegevoegd.",
 	"ajaxpoll-vote-error": "Er is een probleem opgetreden tijdens het verwerken van uw stem. Probeer het opnieuw.",
 	"ajaxpoll-percent-votes": "$1% van alle stemmen",
-	"ajaxpoll-your-vote": "U heeft gestemd voor \"$1\" op $3 om $4. U kunt uw stem door hieronder te klikken veranderen.",
+	"ajaxpoll-your-vote": "U heeft op $3 om $4 voor \"$1\" gestemd. U kunt uw stem wijzigen door hieronder op een ander antwoord te klikken.",
 	"ajaxpoll-no-vote": "Stem hieronder.",
 	"ajaxpoll-no-vote-results-after-voting": "Stem hieronder. De resultaten worden weergegeven nadat u hebt gestemd.",
 	"ajaxpoll-info": "Er {{PLURAL:$1|is één stem|zijn $1 stemmen}} uitgebracht sinds de peiling op $2 is aangemaakt.",
