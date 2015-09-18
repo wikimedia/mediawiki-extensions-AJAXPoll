@@ -18,7 +18,7 @@
 	"ajaxpoll-tracking-category-desc": "La página tiene un <code>&lt;poll&gt;</code>.",
 	"ajaxpoll-vote-update": "Tu voto ha sido actualizado.",
 	"ajaxpoll-vote-add": "Tu voto ha sido añadido.",
-	"ajaxpoll-vote-error": "Ha habido un problema cuando comprobábamos tu voto, por favor, inténtalo de nuevo.",
+	"ajaxpoll-vote-error": "Hubo un problema al procesar tu voto. Inténtalo de nuevo.",
 	"ajaxpoll-percent-votes": "$1 % de todos los votos",
 	"ajaxpoll-your-vote": "Ya votaste por \"$1\" el $3 a las $4. Puedes cambiar tu voto haciendo clic en una respuesta diferente debajo.",
 	"ajaxpoll-no-vote": "Realiza tu voto a continuación.",
@@ -34,7 +34,7 @@
 	"right-ajaxpoll-vote": "Puede votar en las encuestas basadas en AJAX",
 	"right-ajaxpoll-view-results": "Puede ver los resultados de las encuentas basadas en AJAX",
 	"right-ajaxpoll-view-results-before-vote": "Puede ver los resultados de las encuestas basadas en AJAX antes de haber votado",
-	"action-ajaxpoll-vote": "Puede votar en las encuestas basadas en AJAX",
-	"action-ajaxpoll-view-results": "Ver los resultados de las encuentas basadas en AJAX",
-	"action-ajaxpoll-view-results-before-vote": "Ver los resultados de las encuentas basadas en AJAX antes de haber votado"
+	"action-ajaxpoll-vote": "votar en las encuestas basadas en AJAX",
+	"action-ajaxpoll-view-results": "ver los resultados de las encuentas basadas en AJAX",
+	"action-ajaxpoll-view-results-before-vote": "ver los resultados de las encuentas basadas en AJAX antes de haber votado"
 }
