@@ -27,12 +27,12 @@ var setupEventHandlers = function () {
 		token = choice.parent().find( 'input[name="ajaxPollToken"]' ).val();
 		choice.find( '.ajaxpoll-hover-vote' ).addClass( 'ajaxpoll-checkevent' );
 		choice.find( 'input' ).prop( 'checked', 'checked' );
-		$( '#ajaxpoll-ajax-' + poll ).text(mw.message( 'ajaxpoll-submitting' ).text() ).css( 'display', 'inline-block' );
+		$( '#ajaxpoll-ajax-' + poll ).text( mw.message( 'ajaxpoll-submitting' ).text() ).css( 'display', 'inline-block' );
 		if ( useAjax ) {
 			$.get( mw.util.wikiScript(), {
 				action: 'ajax',
 				rs: 'AJAXPoll::submitVote',
-				rsargs: [ poll, answer, token ]
+				rsargs: [poll, answer, token]
 			}, function ( newHTML ) {
 				$( '#ajaxpoll-container-' + poll ).html( newHTML );
 				setupEventHandlers();
@@ -42,10 +42,10 @@ var setupEventHandlers = function () {
 		}
 	} );
 
-	$( '.ajaxpoll-answer-name:not(.ajaxpoll-answer-name-revoke) label').on( 'mouseover', function () {
+	$( '.ajaxpoll-answer-name:not(.ajaxpoll-answer-name-revoke) label' ).on( 'mouseover', function () {
 		$( this ).addClass( 'ajaxpoll-hover-vote' );
 	} );
-	$( '.ajaxpoll-answer-name:not(.ajaxpoll-answer-name-revoke) label').on( 'mouseout', function () {
+	$( '.ajaxpoll-answer-name:not(.ajaxpoll-answer-name-revoke) label' ).on( 'mouseout', function () {
 		$( this ).removeClass( 'ajaxpoll-hover-vote' );
 	} );
 

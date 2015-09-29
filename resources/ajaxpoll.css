@@ -10,14 +10,14 @@
 	width: 400px;
 	border: 1px dashed #999;
 	background: #FAFAFA;
-	padding: 10px 20px 10px 10px
+	padding: 10px 20px 10px 10px;
 }
 
 .ajaxpoll .ajaxpoll-question {
 	font-weight: bold;
 }
 
-.ajaxpoll .ajaxpoll-answer-name,.ajaxpoll-answer-name-revoke {
+.ajaxpoll .ajaxpoll-answer-name, .ajaxpoll-answer-name-revoke {
 	margin-top: 5px;
 	padding-left: 0px;
 	font-size: 0.9em;
@@ -68,9 +68,10 @@
 .ajaxpoll label {
 	cursor: pointer;
 }
+
 .ajaxpoll input {
 	cursor: pointer;
-	vertical-align: middle; 
+	vertical-align: middle;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
