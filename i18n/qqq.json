@@ -24,7 +24,7 @@
 	"ajaxpoll-revoke-vote": "Voters can revoke their vote and this is the message text to be clicked when a voter wants to revoke a previous vote.\n\nThe text is only shown for persons who already voted, in an extra line below the block of answers.\n\nSee also:\n* {{msg-mw|Ajaxpoll-no-vote}}\n* {{msg-mw|Ajaxpoll-vote-permission}}",
 	"ajaxpoll-vote-revoked": "System response that the vote was successfully revoked.\n\nIf error, the following message is used:\n* {{msg-mw|Ajaxpoll-vote-error}}",
 	"ajaxpoll-error-csrf-wrong-token": "An error message in case of a wrong received anti-CSRF token",
-	"right-ajaxpoll-vote": "{{doc-right|ajaxpoll-view-results-before-vote}}",
+	"right-ajaxpoll-vote": "{{doc-right|ajaxpoll-vote}}",
 	"right-ajaxpoll-view-results": "{{doc-right|ajaxpoll-view-results}}",
 	"right-ajaxpoll-view-results-before-vote": "{{doc-right|ajaxpoll-view-results-before-vote}}",
 	"action-ajaxpoll-vote": "{{doc-action|ajaxpoll-vote}}",
