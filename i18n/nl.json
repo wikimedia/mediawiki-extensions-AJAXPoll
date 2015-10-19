@@ -10,7 +10,7 @@
 			"Esketti"
 		]
 	},
-	"ajaxpoll-desc": "Maakt AJAX-gebaseerde polls mogelijk met de tag <code>&lt;poll&gt;</code>",
+	"ajaxpoll-desc": "Maakt AJAX-gebaseerde polls mogelijk met het label <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Pagina's met een peiling",
 	"ajaxpoll-tracking-category-desc": "De pagina heeft een <code>&lt;peiling&gt;</code>.",
 	"ajaxpoll-vote-update": "Uw stem is bijgewerkt.",
