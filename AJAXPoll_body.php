@@ -304,7 +304,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 
 		$q = $dbr->select(
 			'ajaxpoll_vote',
-			array( 'poll_answer', 'COUNT(*)' ),
+			array( 'poll_answer', 'count' => 'COUNT(*)' ),
 			array( 'poll_id' => $id ),
 			__METHOD__,
 			array( 'GROUP BY' => 'poll_answer' )
@@ -312,8 +312,8 @@ During the last 48 hours, $tab2[0] votes have been given.";
 
 		$poll_result = array();
 
-		while ( $row = $q->fetchRow() ) {
-			$poll_result[$row[0]] = $row[1];
+		foreach ( $q as $row ) {
+			$poll_result[$row->poll_answer] = $row->count;
 		}
 
 		$amountOfVotes = array_sum( $poll_result );
@@ -331,7 +331,8 @@ During the last 48 hours, $tab2[0] votes have been given.";
 			__METHOD__
 		);
 
-		if ( $row = $dbr->fetchRow( $q ) ) {
+		$row = $dbr->fetchRow( $q );
+		if ( $row ) {
 			$ts = wfTimestamp( TS_MW, $row[1] );
 			$ourLastVoteDate = wfMessage(
 				'ajaxpoll-your-vote',
@@ -590,7 +591,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 			// >= 1.17 support
 			$db = $updater->getDB();
 
-			$patchPath = dirname( __FILE__ ) . '/patches/';
+			$patchPath = __DIR__ . '/patches/';
 
 			if ( $db->tableExists( 'poll_info' ) ) {
 
