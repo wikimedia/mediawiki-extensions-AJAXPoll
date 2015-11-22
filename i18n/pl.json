@@ -3,7 +3,8 @@
 		"authors": [
 			"BeginaFelicysym",
 			"Chrumps",
-			"Dariusz Siedlecki"
+			"Dariusz Siedlecki",
+			"Saper"
 		]
 	},
 	"ajaxpoll-desc": "Umożliwia wstawienie opartych na technologii AJAX ankiet przy pomocy znacznika <code>&lt;poll&gt;</code>",
@@ -20,7 +21,7 @@
 	"ajaxpoll-submitting": "Proszę czekać, trwa dodawanie głosu.",
 	"ajaxpoll-vote-permission": "Nie masz uprawnień do głosowania.",
 	"ajaxpoll-view-results-permission": "Nie masz uprawnień, aby zobaczyć wyniki tego głosowania.",
-	"ajaxpoll-view-results-before-vote-permission": "Nie masz uprawnień, aby zobaczyć wyniki tego głosowania zanim nie zagłosujesz.",
+	"ajaxpoll-view-results-before-vote-permission": "Musisz najpierw zagłosować aby zobaczyć wyniki.",
 	"ajaxpoll-revoke-vote": "Chcę wycofać swój głos",
 	"ajaxpoll-vote-revoked": "Twój głos został odwołany.",
 	"ajaxpoll-error-csrf-wrong-token": "Odebrano błędny token, a Twój głos został zignorowany.",
