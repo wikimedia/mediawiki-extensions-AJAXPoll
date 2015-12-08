@@ -69,7 +69,7 @@ class AJAXPoll {
 		}
 
 		$dbw = wfGetDB( DB_MASTER );
-		$dbw->begin( __METHOD__ );
+		$dbw->startAtomic( __METHOD__ );
 
 		/**
 		 * Register poll in the database
@@ -115,7 +115,7 @@ class AJAXPoll {
 			);
 		}
 
-		$dbw->commit( __METHOD__ );
+		$dbw->endAtomic( __METHOD__ );
 
 		switch ( $lines[0] ) {
 			case 'STATS':
@@ -190,9 +190,6 @@ During the last 48 hours, $tab2[0] votes have been given.";
 	public static function submitVote( $id, $answer, $token ) {
 		global $wgUser, $wgRequest;
 
-		$dbw = wfGetDB( DB_MASTER );
-		$dbw->begin( __METHOD__ );
-
 		if ( $wgUser->getName() == '' ) {
 			$userName = $wgRequest->getIP();
 		} else {
@@ -208,6 +205,9 @@ During the last 48 hours, $tab2[0] votes have been given.";
 		if ( !$wgUser->isAllowed( 'ajaxpoll-vote' ) || $wgUser->isAllowed( 'bot' ) ) {
 			return self::buildHTML( $id, $userName );
 		}
+
+		$dbw = wfGetDB( DB_MASTER );
+		$dbw->startAtomic( __METHOD__ );
 
 		if ( $answer != 0 ) {
 
@@ -238,7 +238,6 @@ During the last 48 hours, $tab2[0] votes have been given.";
 					),
 					__METHOD__
 				);
-				$dbw->commit( __METHOD__ );
 				$pollContainerText = ( $updateQuery ) ? 'ajaxpoll-vote-update' : 'ajaxpoll-vote-error';
 			} else {
 
@@ -253,7 +252,6 @@ During the last 48 hours, $tab2[0] votes have been given.";
 					),
 					__METHOD__
 				);
-				$dbw->commit( __METHOD__ );
 				$pollContainerText = ( $insertQuery ) ? 'ajaxpoll-vote-add' : 'ajaxpoll-vote-error';
 			}
 		} else { // revoking a vote
@@ -266,9 +264,10 @@ During the last 48 hours, $tab2[0] votes have been given.";
 				),
 				__METHOD__
 			);
-			$dbw->commit( __METHOD__ );
 			$pollContainerText = ( $deleteQuery ) ? 'ajaxpoll-vote-revoked' : 'ajaxpoll-vote-error';
 		}
+
+		$dbw->endAtomic( __METHOD__ );
 
 		return self::buildHTML( $id, $userName, '', $pollContainerText );
 	}
