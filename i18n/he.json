@@ -3,7 +3,8 @@
 		"authors": [
 			"Amire80",
 			"אור שפירא",
-			"Matanya"
+			"Matanya",
+			"MojoMann"
 		]
 	},
 	"ajaxpoll-desc": "אפשרות להוסיף הצבעות בטכנולוגיית AJAX באמצעות התג <code>&lt;poll&gt;</code>",
@@ -13,7 +14,7 @@
 	"ajaxpoll-vote-add": "הקול שלך נוסף.",
 	"ajaxpoll-vote-error": "הייתה בעיה בעיבוד הקול שלך, נא לנסות שוב.",
 	"ajaxpoll-percent-votes": "$1% מכל הקולות.",
-	"ajaxpoll-your-vote": "כבר הצבעת בעד \"$1\" ב{{GRAMMAR:תחילית|$2}}, אפשר לשנות את קולך באמצעות לחיצה על תשובה להלן.",
+	"ajaxpoll-your-vote": "הצבעת עבור \"$1\" בתאריך $3 שב-$4. ניתן לשנות את ההצבעה שלך ע\"י הקלקה על תשובה שונה.",
 	"ajaxpoll-no-vote": "נא להצביע להלן.",
 	"ajaxpoll-no-vote-results-after-voting": "נא להצביע למטה. התוצאות יוצגו אחרי הצבעתך.",
 	"ajaxpoll-info": "{{PLURAL:$1|נקלט קול אחד|נקלטו $1 קולות}} מאז שההצבעה נוצרה ב־$2.",
