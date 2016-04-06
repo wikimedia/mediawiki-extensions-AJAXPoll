@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Dj",
-			"Glanthor Reviol"
+			"Glanthor Reviol",
+			"Wolf Rex"
 		]
 	},
 	"ajaxpoll-desc": "AJAX alapú közvélemény-kutatás <code>&lt;poll&gt;</code> cimkével",
@@ -16,6 +17,7 @@
 	"ajaxpoll-info": "Összesen {{PLURAL:$1|egy|$1}} szavazat érkezett a $2 óta.",
 	"ajaxpoll-submitting": "Kérlek várj a szavazatod elküldésére.",
 	"ajaxpoll-vote-permission": "Nem vagy jogosult szavazni.",
+	"ajaxpoll-view-results-before-vote-permission": "Amíg nem szavaztál, nem láthatod az eredményeket.",
 	"ajaxpoll-revoke-vote": "Vissza akarom vonni a szavazatomat",
 	"ajaxpoll-vote-revoked": "Sikeresen visszavontad a szavazatodat.",
 	"right-ajaxpoll-vote": "Szavazhat az AJAX alapú közvélemény-kutatásokban"
