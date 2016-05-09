@@ -22,13 +22,13 @@ class AJAXPoll {
 	 * @return bool true
 	 */
 	static function onParserInit( $parser ) {
-		$parser->setHook( 'poll', array( __CLASS__, 'AJAXPollRender' ) );
+		$parser->setHook( 'poll', [ __CLASS__, 'AJAXPollRender' ] );
 
 		return true;
 	}
 
 	# The callback function for converting the input text to HTML output
-	static function AJAXPollRender( $input, $args = array(), Parser $parser, $frame ) {
+	static function AJAXPollRender( $input, $args = [], Parser $parser, $frame ) {
 		global $wgUser, $wgRequest, $wgUseAjax;
 
 		$parser->disableCache();
@@ -76,9 +76,9 @@ class AJAXPoll {
 		 */
 
 		$row = $dbw->selectRow(
-			array( 'ajaxpoll_info' ),
-			array( 'COUNT(poll_id) AS count' ),
-			array( 'poll_id' => $id ),
+			[ 'ajaxpoll_info' ],
+			[ 'COUNT(poll_id) AS count' ],
+			[ 'poll_id' => $id ],
 			__METHOD__
 		);
 
@@ -94,23 +94,23 @@ class AJAXPoll {
 		if ( empty( $row->count ) ) {
 			$dbw->insert(
 				'ajaxpoll_info',
-				array(
+				[
 					'poll_id' => $id,
 					'poll_show_results_before_voting' => $showResultsBeforeVoting,
 					'poll_txt' => $input,
 					'poll_date' => wfTimestampNow(),
-				),
+				],
 				__METHOD__
 			);
 		} else {
 			$dbw->update(
 				'ajaxpoll_info',
-				array(
+				[
 					'poll_show_results_before_voting' => $showResultsBeforeVoting,
-				),
-				array(
+				],
+				[
 					'poll_id' => $id,
-				),
+				],
 				__METHOD__
 			);
 		}
@@ -123,9 +123,9 @@ class AJAXPoll {
 				break;
 			default:
 				$ret = Html::rawElement( 'div',
-					array(
+					[
 						'id' => 'ajaxpoll-container-' . $id
-					),
+					],
 					self::buildHTML( $id, $userName, $lines )
 				);
 				break;
@@ -141,13 +141,13 @@ class AJAXPoll {
 
 		$res = $dbr->select(
 			'ajaxpoll_vote',
-			array(
+			[
 				'COUNT(*)',
 				'COUNT(DISTINCT poll_id)',
 				'COUNT(DISTINCT poll_user)',
 				'TIMEDIFF(NOW(), MAX(poll_date))'
-			),
-			array(),
+			],
+			[],
 			__METHOD__
 		);
 		$tab = $dbr->fetchRow( $res );
@@ -175,7 +175,7 @@ class AJAXPoll {
 		$res = $dbr->select(
 			'ajaxpoll_vote',
 			'COUNT(*)',
-			array( 'DATE_SUB(CURDATE(), INTERVAL 2 DAY) <= poll_date' ),
+			[ 'DATE_SUB(CURDATE(), INTERVAL 2 DAY) <= poll_date' ],
 			__METHOD__
 		);
 		$tab2 = $dbr->fetchRow( $res );
@@ -216,10 +216,10 @@ During the last 48 hours, $tab2[0] votes have been given.";
 			$q = $dbw->select(
 				'ajaxpoll_vote',
 				'COUNT(*) AS count',
-				array(
+				[
 					'poll_id' => $id,
 					'poll_user' => $userName
-				),
+				],
 				__METHOD__
 			);
 			$row = $dbw->fetchRow( $q );
@@ -228,14 +228,14 @@ During the last 48 hours, $tab2[0] votes have been given.";
 
 				$updateQuery = $dbw->update(
 					'ajaxpoll_vote',
-					array(
+					[
 						'poll_answer' => $answer,
 						'poll_date' => wfTimestampNow()
-					),
-					array(
+					],
+					[
 						'poll_id' => $id,
 						'poll_user' => $userName,
-					),
+					],
 					__METHOD__
 				);
 				$pollContainerText = ( $updateQuery ) ? 'ajaxpoll-vote-update' : 'ajaxpoll-vote-error';
@@ -243,13 +243,13 @@ During the last 48 hours, $tab2[0] votes have been given.";
 
 				$insertQuery = $dbw->insert(
 					'ajaxpoll_vote',
-					array(
+					[
 						'poll_id' => $id,
 						'poll_user' => $userName,
 						'poll_ip' => $wgRequest->getIP(),
 						'poll_answer' => $answer,
 						'poll_date' => wfTimestampNow()
-					),
+					],
 					__METHOD__
 				);
 				$pollContainerText = ( $insertQuery ) ? 'ajaxpoll-vote-add' : 'ajaxpoll-vote-error';
@@ -258,10 +258,10 @@ During the last 48 hours, $tab2[0] votes have been given.";
 
 			$deleteQuery = $dbw->delete(
 				'ajaxpoll_vote',
-				array(
+				[
 					'poll_id' => $id,
 					'poll_user' => $userName,
-				),
+				],
 				__METHOD__
 			);
 			$pollContainerText = ( $deleteQuery ) ? 'ajaxpoll-vote-revoked' : 'ajaxpoll-vote-error';
@@ -283,8 +283,8 @@ During the last 48 hours, $tab2[0] votes have been given.";
 
 		$q = $dbr->select(
 			'ajaxpoll_info',
-			array( 'poll_txt', 'poll_date', 'poll_show_results_before_voting' ),
-			array( 'poll_id' => $id ),
+			[ 'poll_txt', 'poll_date', 'poll_show_results_before_voting' ],
+			[ 'poll_id' => $id ],
 			__METHOD__
 		);
 		$row = $dbr->fetchRow( $q );
@@ -303,13 +303,13 @@ During the last 48 hours, $tab2[0] votes have been given.";
 
 		$q = $dbr->select(
 			'ajaxpoll_vote',
-			array( 'poll_answer', 'count' => 'COUNT(*)' ),
-			array( 'poll_id' => $id ),
+			[ 'poll_answer', 'count' => 'COUNT(*)' ],
+			[ 'poll_id' => $id ],
 			__METHOD__,
-			array( 'GROUP BY' => 'poll_answer' )
+			[ 'GROUP BY' => 'poll_answer' ]
 		);
 
-		$poll_result = array();
+		$poll_result = [];
 
 		foreach ( $q as $row ) {
 			$poll_result[$row->poll_answer] = $row->count;
@@ -322,11 +322,11 @@ During the last 48 hours, $tab2[0] votes have been given.";
 
 		$q = $dbr->select(
 			'ajaxpoll_vote',
-			array( 'poll_answer', 'poll_date' ),
-			array(
+			[ 'poll_answer', 'poll_date' ],
+			[
 				'poll_id' => $id,
 				'poll_user' => $userName
-			),
+			],
 			__METHOD__
 		);
 
@@ -354,28 +354,28 @@ During the last 48 hours, $tab2[0] votes have been given.";
 			}
 
 			$ret = Html::element( 'script',
-				array(),
+				[],
 				'var useAjax=' . ( !empty( $wgUseAjax ) ? "true" : "false" ) . ';'
 			);
 
 			$ret .= Html::openElement( 'div',
-				array(
+				[
 					'id' => 'ajaxpoll-id-' . $id,
 					'class' => 'ajaxpoll'
-				)
+				]
 			);
 
 			$ret .= Html::element( 'div',
-				array(
+				[
 					'id' => 'ajaxpoll-ajax-' . $id,
 					'class' => 'ajaxpoll-ajax',
 					'style' => $style
-				),
+				],
 				$ajaxMessage
 			);
 
 			$ret .= Html::rawElement( 'div',
-				array( 'class' => 'ajaxpoll-question' ),
+				[ 'class' => 'ajaxpoll-question' ],
 				self::escapeContent( $lines[0] )
 			);
 
@@ -415,22 +415,22 @@ During the last 48 hours, $tab2[0] votes have been given.";
 			}
 
 			$ret .= Html::rawElement( 'div',
-				array( 'class' => 'ajaxpoll-misc' ),
+				[ 'class' => 'ajaxpoll-misc' ],
 				$message
 			);
 
 			$ret .= Html::rawElement( 'form',
-				array(
+				[
 					'method' => 'post',
 					'action' => $wgTitle->getLocalURL(),
 					'id' => 'ajaxpoll-answer-id-' . $id
-				),
+				],
 				Html::element( 'input',
-					array(
+					[
 						'type' => 'hidden',
 						'name' => 'ajaxpoll-post-id',
 						'value' => $id
-					)
+					]
 				)
 			);
 
@@ -468,19 +468,19 @@ During the last 48 hours, $tab2[0] votes have been given.";
 				) {
 
 					$resultBar = Html::rawElement( 'div',
-						array(
+						[
 							'class' => 'ajaxpoll-answer-vote' . ( $isOurVote ? ' ajaxpoll-our-vote' : '' )
-						),
+						],
 						Html::rawElement( 'span',
-							array(
+							[
 								'title' => wfMessage( 'ajaxpoll-percent-votes' )->numParams( $percent )->escaped()
-							),
+							],
 							self::escapeContent( $pollResult )
 						) .
 						Html::element( 'div',
-							array(
+							[
 								'style' => 'width:' . $percent . '%;' . $border
-							)
+							]
 						)
 					);
 				}
@@ -488,26 +488,26 @@ During the last 48 hours, $tab2[0] votes have been given.";
 				if ( $wgUser->isAllowed( 'ajaxpoll-vote' ) ) {
 
 					$ret .= Html::rawElement( 'div',
-						array(
+						[
 							'id' => 'ajaxpoll-answer-' . $xid,
 							'class' => 'ajaxpoll-answer',
 							'poll' => $id,
 							'answer' => $answer,
-						),
+						],
 						Html::rawElement( 'div',
-							array(
+							[
 								'class' => 'ajaxpoll-answer-name' . ( $vote ? ' ajaxpoll-answer-name-revoke' : '' )
-							),
+							],
 							Html::rawElement( 'label',
-								array( 'for' => 'ajaxpoll-post-answer-' . $xid ),
+								[ 'for' => 'ajaxpoll-post-answer-' . $xid ],
 								Html::element( 'input',
-									array(
+									[
 										'type' => 'radio',
 										'id' => 'ajaxpoll-post-answer-' . $xid,
 										'name' => 'ajaxpoll-post-answer-' . $id,
 										'value' => $answer,
 										'checked' => $isOurVote ? "true" : false,
-									)
+									]
 								) .
 								self::escapeContent( $lines[$i] )
 							)
@@ -517,31 +517,31 @@ During the last 48 hours, $tab2[0] votes have been given.";
 				} else {
 
 					$ret .= Html::rawElement( 'div',
-						array(
+						[
 							'id' => 'ajaxpoll-answer-' . $xid,
 							'class' => 'ajaxpoll-answer',
 							'poll' => $id,
 							'answer' => $answer
-						),
+						],
 						Html::rawElement( 'div',
-							array(
+							[
 								'class' => 'ajaxpoll-answer-name'
-							),
+							],
 							Html::rawElement( 'label',
-								array(
+								[
 									'for' => 'ajaxpoll-post-answer-' . $xid,
 									'onclick' => '$("#ajaxpoll-ajax-"' . $xid . '").html("' .
 										wfMessage( 'ajaxpoll-vote-permission' )->text() .
 										'").css("display","block");'
-								),
+								],
 								Html::element( 'input',
-									array(
+									[
 										'disabled' => 'disabled',
 										'type' => 'radio',
 										'id' => 'ajaxpoll-post-answer-' . $xid,
 										'name' => 'ajaxpoll-post-answer-' . $id,
 										'value' => $answer
-									)
+									]
 								) .
 								self::escapeContent( $lines[$i] )
 							)
@@ -563,13 +563,13 @@ During the last 48 hours, $tab2[0] votes have been given.";
 			)->text();
 
 			$ret .= Html::rawElement( 'div',
-				array(
+				[
 					'id' => 'ajaxpoll-info-' . $id,
 					'class' => 'ajaxpoll-info'
-				),
+				],
 				self::escapeContent( $pollSummary ) .
 				Html::element( 'div',
-					array( 'class' => 'ajaxpoll-id-info' ),
+					[ 'class' => 'ajaxpoll-id-info' ],
 					'poll-id ' . $id
 				)
 			);

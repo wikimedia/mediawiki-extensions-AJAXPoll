@@ -43,14 +43,14 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 }
 
 // Extension credits that will show up on Special:Version
-$wgExtensionCredits['parserhook'][] = array(
+$wgExtensionCredits['parserhook'][] = [
 	'path' => __FILE__,
 	'name' => 'AJAX Poll',
 	'version' => '1.89.0 20150928',
-	'author' => array( 'Dariusz Siedlecki', 'Jack Phoenix', 'Thomas Gries' ),
+	'author' => [ 'Dariusz Siedlecki', 'Jack Phoenix', 'Thomas Gries' ],
 	'descriptionmsg' => 'ajaxpoll-desc',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:AJAX_Poll',
-);
+];
 
 // Internationalization + AJAX function
 $wgMessagesDirs['AJAXPoll'] = __DIR__ . '/i18n';
@@ -59,23 +59,23 @@ $wgAjaxExportList[] = 'AJAXPoll::submitVote';
 $wgHooks['ParserFirstCallInit'][] = 'AJAXPoll::onParserInit';
 $wgHooks['LoadExtensionSchemaUpdates'][] = 'AJAXPoll::onLoadExtensionSchemaUpdates';
 
-$myResourceTemplate = array(
+$myResourceTemplate = [
 	'localBasePath' => __DIR__ . '/resources',
 	'remoteExtPath' => 'AJAXPoll/resources',
 	'group' => 'ext.ajaxpoll',
-);
-$wgResourceModules['ext.ajaxpoll'] = $myResourceTemplate + array(
-		'scripts' => array(
+];
+$wgResourceModules['ext.ajaxpoll'] = $myResourceTemplate + [
+		'scripts' => [
 			'ajaxpoll.js',
-		),
-		'styles' => array(
+		],
+		'styles' => [
 			'ajaxpoll.css',
-		),
-		'dependencies' => array(),
-		'messages' => array(
+		],
+		'dependencies' => [],
+		'messages' => [
 			'ajaxpoll-submitting',
-		)
-	);
+		]
+	];
 
 # new user rights
 $wgAvailableRights[] = 'ajaxpoll-vote';
