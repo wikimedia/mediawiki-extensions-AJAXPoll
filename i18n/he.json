@@ -4,7 +4,8 @@
 			"Amire80",
 			"אור שפירא",
 			"Matanya",
-			"MojoMann"
+			"MojoMann",
+			"Guycn2"
 		]
 	},
 	"ajaxpoll-desc": "אפשרות להוסיף הצבעות בטכנולוגיית AJAX באמצעות התג <code>&lt;poll&gt;</code>",
@@ -25,9 +26,9 @@
 	"ajaxpoll-revoke-vote": "אני רוצה לבטל את הקול שלי",
 	"ajaxpoll-vote-revoked": "קולך נפסל.",
 	"ajaxpoll-error-csrf-wrong-token": "התקבל אסימון לא מכון וההצבעה שלך לא נספרה.",
-	"right-ajaxpoll-vote": "הצבעה בסקרים מבוססי AJAX.",
-	"right-ajaxpoll-view-results": "צפייה בסקרים מבוססי AJAX",
-	"right-ajaxpoll-view-results-before-vote": "הצגת תוצאות של סקרים מבוססי AJAX לפני הצבעה",
+	"right-ajaxpoll-vote": "הצבעה בסקרים מבוססי AJAX",
+	"right-ajaxpoll-view-results": "צפייה בתוצאות של סקרים מבוססי AJAX",
+	"right-ajaxpoll-view-results-before-vote": "צפייה בתוצאות של סקרים מבוססי AJAX לפני הצבעה",
 	"action-ajaxpoll-vote": "להצביע בסקרים מבוססי AJAX",
 	"action-ajaxpoll-view-results": "לצפות בסקרים מבוסס AJAX",
 	"action-ajaxpoll-view-results-before-vote": "לצפות בסקרים מבוסס AJAX לפני ההצבעה"
