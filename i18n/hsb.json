@@ -11,7 +11,7 @@
 	"ajaxpoll-vote-add": "Twoje wothłosowanje je so přidało.",
 	"ajaxpoll-vote-error": "Je problem při předźěłowanju twojeho hłosa był, prošu spytaj hišće raz.",
 	"ajaxpoll-percent-votes": "$1 % wšěch hłosow",
-	"ajaxpoll-your-vote": "Sy hižo $2 za \"$1\" wothłosował, móžeš swój hłós změnić, kliknjo deleka na wotmołwu.",
+	"ajaxpoll-your-vote": "Sy $3 $4 za \"$1\" wothłosował. Móžeš swój hłós změnić, kliknjo deleka na druhu wotmołwu.",
 	"ajaxpoll-no-vote": "Prošu wothłosuj deleka.",
 	"ajaxpoll-no-vote-results-after-voting": "Prošu wothłosuj deleka. Wuslědki so pokazaja, hdyž sy wothłosował.",
 	"ajaxpoll-info": "{{PLURAL:$1|Je so jedyn hłós wotedał|Stej so $1 hłosaj wotedałoj|Su so $1 hłosy wotedali|Je so $1 hłosow wotedało}}, wot toho časa, zo wothłosowanje je so $2 wutworiło.",
