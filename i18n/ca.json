@@ -25,5 +25,10 @@
 	"ajaxpoll-revoke-vote": "Vull anul·lar el meu vot",
 	"ajaxpoll-vote-revoked": "S'ha anul·lat el vostre vot.",
 	"ajaxpoll-error-csrf-wrong-token": "S'ha rebut un token incorrecte, i el seu vot s'ha ignorat.",
-	"right-ajaxpoll-vote": "Podeu votar a les enquestes basades en AJAX"
+	"right-ajaxpoll-vote": "Podeu votar a les enquestes basades en AJAX",
+	"right-ajaxpoll-view-results": "Podeu veure els resultats de les enquestes basades en AJAX",
+	"right-ajaxpoll-view-results-before-vote": "Podeu veure els resultats de les enquestes basades en AJAX abans d'haver votat",
+	"action-ajaxpoll-vote": "votar en les enquestes basades en AJAX",
+	"action-ajaxpoll-view-results": "veure els resultats en les enquestes basades en AJAX",
+	"action-ajaxpoll-view-results-before-vote": "veure els resultats de les enquestes basades en AJAX abans d'haver votat"
 }
