@@ -20,7 +20,7 @@
 	"ajaxpoll-percent-votes": "所有选票的$1%",
 	"ajaxpoll-your-vote": "您于$3 $4给“$1”投了票。您可以点击下面的不同答案更改您的投票。",
 	"ajaxpoll-no-vote": "请在下面投票。",
-	"ajaxpoll-no-vote-results-after-voting": "请在下面投票。当你投票后，结果将会显示。",
+	"ajaxpoll-no-vote-results-after-voting": "请在下面投票。当您投票后，结果将会显示。",
 	"ajaxpoll-info": "自$2创建以来共有{{PLURAL:$1|一人投票| $1 人投票}}。",
 	"ajaxpoll-submitting": "请稍候，正在提交您的投票。",
 	"ajaxpoll-vote-permission": "您没有投票权。",
