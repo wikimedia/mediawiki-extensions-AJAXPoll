@@ -24,7 +24,7 @@
 	"ajaxpoll-info": "自$2创建以来共有{{PLURAL:$1|一人投票| $1 人投票}}。",
 	"ajaxpoll-submitting": "请稍候，正在提交您的投票。",
 	"ajaxpoll-vote-permission": "您没有投票权。",
-	"ajaxpoll-view-results-permission": "你没有权限查看这个投票的结果",
+	"ajaxpoll-view-results-permission": "您没有权限查看这个投票的结果。",
 	"ajaxpoll-view-results-before-vote-permission": "您在投票前无权查看投票结果。",
 	"ajaxpoll-revoke-vote": "我想撤销我的投票",
 	"ajaxpoll-vote-revoked": "您已撤销您的投票。",
