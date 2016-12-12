@@ -6,16 +6,18 @@
 			"Cainamarques",
 			"Daemorris",
 			"Fúlvio",
-			"Tuliouel"
+			"Tuliouel",
+			"!Silent"
 		]
 	},
 	"ajaxpoll-desc": "Permite votações baseadas em AJAX usando a etiqueta <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Páginas com votação",
+	"ajaxpoll-tracking-category-desc": "A página possui um <code>&lt;poll&gt;</code>",
 	"ajaxpoll-vote-update": "Seu voto foi atualizado.",
 	"ajaxpoll-vote-add": "Seu voto foi adicionado.",
 	"ajaxpoll-vote-error": "Houve um problema com o processamento de seu voto, por favor tente novamente.",
 	"ajaxpoll-percent-votes": "$1% de todos votos",
-	"ajaxpoll-your-vote": "Você já votou para \"$1\" em $2, você pode alterar seu voto escolhendo outra opção abaixo.",
+	"ajaxpoll-your-vote": "Você votou para \"$1\" em $3 à(s) $4. Pode alterar o seu voto caso escolha outra resposta abaixo.",
 	"ajaxpoll-no-vote": "Por favor vote abaixo.",
 	"ajaxpoll-no-vote-results-after-voting": "Por favor vote abaixo. Os resultados serão mostrados quando tiver votado.",
 	"ajaxpoll-info": "{{PLURAL:$1|Um voto|$1 votos}} desde a criação da votação em $2.",
