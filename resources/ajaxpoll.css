@@ -9,7 +9,7 @@
 .ajaxpoll {
 	width: 400px;
 	border: 1px dashed #999;
-	background: #FAFAFA;
+	background: #fafafa;
 	padding: 10px 20px 10px 10px;
 }
 
@@ -24,15 +24,15 @@
 }
 
 .ajaxpoll .ajaxpoll-hover-vote {
-	background: #00FFFF;
+	background: #00f;
 }
 
 .ajaxpoll .ajaxpoll-hover-revoke {
-	background: #FFD700;
+	background: #ffd700;
 }
 
 .ajaxpoll .ajaxpoll-answer-vote {
-	border: 1px solid #CCC;
+	border: 1px solid #ccc;
 	width: 100%;
 	margin-left: 0px;
 	height: 12px;
@@ -41,8 +41,8 @@
 }
 
 .ajaxpoll .ajaxpoll-answer-vote div {
-	border-right: 1px solid #CCC;
-	background: #E5E5E5;
+	border-right: 1px solid #ccc;
+	background: #e5e5e5;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -72,13 +72,13 @@
 .ajaxpoll input {
 	cursor: pointer;
 	vertical-align: middle;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0;
 }
 
 .ajaxpoll .ajaxpoll-checkevent {
-	background: #00FF00;
+	background: #0f0;
 }
 
 .ajaxpoll .ajaxpoll-misc {
@@ -87,10 +87,9 @@
 }
 
 .ajaxpoll .ajaxpoll-ajax {
-	background: #FFFFCF;
+	background: #ffffcf;
 	padding: 1px 4px;
 	border-radius: 0.5em;
-	-moz-border-radius: 0.5em;
 	display: none;
 }
 
@@ -100,7 +99,7 @@
 }
 
 .ajaxpoll .ajaxpoll-id-info {
-	color: #FAFAFA;
+	color: #fafafa;
 	font-size: 100%;
 	float: right;
 }
