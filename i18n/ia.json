@@ -11,7 +11,7 @@
 	"ajaxpoll-vote-add": "Tu voto ha essite addite.",
 	"ajaxpoll-vote-error": "Un problema occurreva durante le tractamento de tu voto. Per favor reproba.",
 	"ajaxpoll-percent-votes": "$1% de tote le votos",
-	"ajaxpoll-your-vote": "Tu ha ja votate pro \"$1\" in $2. Tu pote cambiar tu voto per cliccar super un responsa hic infra.",
+	"ajaxpoll-your-vote": "Tu ha jam votate pro \"$1\" le $3 a $4. Tu pote cambiar tu voto per cliccar sur un altere responsa hic infra.",
 	"ajaxpoll-no-vote": "Vota hic infra, per favor.",
 	"ajaxpoll-no-vote-results-after-voting": "Vota hic infra, per favor. Le resultatos essera monstrate quando tu ha votate.",
 	"ajaxpoll-info": "Il habeva $1 {{PLURAL:$1|voto|votos}} post le creation del sondage al $2.",
