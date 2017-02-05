@@ -60,12 +60,12 @@
 			"AJAXPoll::onLoadExtensionSchemaUpdates"
 		]
 	},
+	"TrackingCategories": [
+		"ajaxpoll-tracking-category"
+	],
 	"config": {
 		"AjaxExportList": [
 			"AJAXPoll::submitVote"
-		],
-		"TrackingCategories": [
-			"ajaxpoll-tracking-category"
 		]
 	},
 	"manifest_version": 1
