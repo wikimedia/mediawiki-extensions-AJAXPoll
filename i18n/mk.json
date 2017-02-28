@@ -24,9 +24,9 @@
 	"ajaxpoll-vote-revoked": "Вашиот глас е повлечен.",
 	"ajaxpoll-error-csrf-wrong-token": "Добив погрешна шифра. Вашиот глас е занемарен.",
 	"right-ajaxpoll-vote": "Може да гласа на анкети на основа на AJAX.",
-	"right-ajaxpoll-view-results": "Може да гледа резултати од анкети со AJAX",
-	"right-ajaxpoll-view-results-before-vote": "Може да гледа резултати од анкети со AJAX без да има гласано",
+	"right-ajaxpoll-view-results": "Може да гледа исходи од анкети со AJAX",
+	"right-ajaxpoll-view-results-before-vote": "Може да гледа исходи од анкети со AJAX без да има гласано",
 	"action-ajaxpoll-vote": "гласање во анкети со AJAX",
-	"action-ajaxpoll-view-results": "преглед на резултати од анкети со AJAX",
-	"action-ajaxpoll-view-results-before-vote": "преглед на резултати од анкети со AJAX без да имате гласано"
+	"action-ajaxpoll-view-results": "преглед на исход од анкети со AJAX",
+	"action-ajaxpoll-view-results-before-vote": "преглед на исходи од анкети со AJAX пред да се гласа"
 }
