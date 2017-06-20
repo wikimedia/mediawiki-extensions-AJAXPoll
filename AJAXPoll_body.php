@@ -135,7 +135,6 @@ class AJAXPoll {
 	}
 
 	private static function buildStats( $id, $userName ) {
-
 		$dbr = wfGetDB( DB_SLAVE );
 		$dbr->begin( __METHOD__ );
 
@@ -210,7 +209,6 @@ During the last 48 hours, $tab2[0] votes have been given.";
 		$dbw->startAtomic( __METHOD__ );
 
 		if ( $answer != 0 ) {
-
 			$answer = ++$answer;
 
 			$q = $dbw->select(
@@ -225,7 +223,6 @@ During the last 48 hours, $tab2[0] votes have been given.";
 			$row = $dbw->fetchRow( $q );
 
 			if ( $row['count'] > 0 ) {
-
 				$updateQuery = $dbw->update(
 					'ajaxpoll_vote',
 					[
@@ -344,7 +341,6 @@ During the last 48 hours, $tab2[0] votes have been given.";
 		}
 
 		if ( is_object( $wgTitle ) ) {
-
 			if ( !empty( $extra_from_ajax ) ) {
 				$style = 'display:inline-block';
 				$ajaxMessage = wfMessage( $extra_from_ajax )->escaped();
@@ -401,7 +397,6 @@ During the last 48 hours, $tab2[0] votes have been given.";
 			}
 
 			if ( !$wgUser->isAllowed( 'ajaxpoll-view-results' ) ) {
-
 				$message .= "<br/>" . wfMessage( 'ajaxpoll-view-results-permission' )->text();
 			} elseif ( !$userVoted
 				&& !$wgUser->isAllowed( 'ajaxpoll-view-results-before-vote' )
@@ -466,7 +461,6 @@ During the last 48 hours, $tab2[0] votes have been given.";
 					&& ( $showResultsBeforeVoting || ( !$showResultsBeforeVoting && $userVoted ) )
 					&& $vote
 				) {
-
 					$resultBar = Html::rawElement( 'div',
 						[
 							'class' => 'ajaxpoll-answer-vote' . ( $isOurVote ? ' ajaxpoll-our-vote' : '' )
@@ -486,7 +480,6 @@ During the last 48 hours, $tab2[0] votes have been given.";
 				}
 
 				if ( $wgUser->isAllowed( 'ajaxpoll-vote' ) ) {
-
 					$ret .= Html::rawElement( 'div',
 						[
 							'id' => 'ajaxpoll-answer-' . $xid,
@@ -593,7 +586,6 @@ During the last 48 hours, $tab2[0] votes have been given.";
 			$patchPath = __DIR__ . '/patches/';
 
 			if ( $db->tableExists( 'poll_info' ) ) {
-
 				# poll_info.poll_title field was dropped in AJAXPoll version 1.72
 				$updater->dropExtensionField(
 					'poll_info',
@@ -621,7 +613,6 @@ During the last 48 hours, $tab2[0] votes have been given.";
 			}
 
 			if ( $db->tableExists( 'poll_vote' ) ) {
-
 				$updater->addExtensionTable(
 					'poll_vote',
 					$patchPath . 'rename-table--poll_vote.sql'
