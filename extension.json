@@ -31,16 +31,16 @@
 		]
 	},
 	"AutoloadClasses": {
-		"AJAXPoll": "AJAXPoll_body.php"
+		"AJAXPoll": "includes/AJAXPoll.class.php"
 	},
 	"ResourceModules": {
 		"ext.ajaxpoll": {
 			"group": "ext.ajaxpoll",
 			"scripts": [
-				"ajaxpoll.js"
+				"js/ajaxpoll.js"
 			],
 			"styles": [
-				"ajaxpoll.css"
+				"css/ajaxpoll.css"
 			],
 			"dependencies": [],
 			"messages": [

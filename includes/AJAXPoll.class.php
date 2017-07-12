@@ -583,7 +583,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 			// >= 1.17 support
 			$db = $updater->getDB();
 
-			$patchPath = __DIR__ . '/patches/';
+			$patchPath = __DIR__ . '/../sql/';
 
 			if ( $db->tableExists( 'poll_info' ) ) {
 				# poll_info.poll_title field was dropped in AJAXPoll version 1.72
