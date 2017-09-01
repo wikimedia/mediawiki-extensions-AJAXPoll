@@ -18,7 +18,7 @@ class AJAXPoll {
 	/**
 	 * Register <poll> tag with the parser
 	 *
-	 * @param $parser Parser (not necessarily $wgParser)
+	 * @param parser Parser (not necessarily $wgParser
 	 * @return bool true
 	 */
 	static function onParserInit( $parser ) {
