@@ -135,7 +135,7 @@ class AJAXPoll {
 	}
 
 	private static function buildStats( $id, $userName ) {
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		$dbr->begin( __METHOD__ );
 
 		$res = $dbr->select(
@@ -276,7 +276,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 	private static function buildHTML( $id, $userName, $lines = '', $extra_from_ajax = '' ) {
 		global $wgTitle, $wgUser, $wgLang, $wgUseAjax;
 
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 
 		$q = $dbr->select(
 			'ajaxpoll_info',
