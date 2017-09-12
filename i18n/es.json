@@ -12,7 +12,8 @@
 			"Amitie 10g",
 			"Macofe",
 			"Sophivorus",
-			"PoLuX124"
+			"PoLuX124",
+			"Dgstranz"
 		]
 	},
 	"ajaxpoll-desc": "Permite encuestas basadas en AJAX con etiqueta <code>&lt;poll&gt;</code>",
@@ -25,7 +26,7 @@
 	"ajaxpoll-your-vote": "Ya votaste por «$1» el $3 a las $4. Para cambiar tu voto, pulsa en una respuesta diferente debajo.",
 	"ajaxpoll-no-vote": "Realiza tu voto a continuación.",
 	"ajaxpoll-no-vote-results-after-voting": "Realice tu voto a continuación. Se mostrarán los resultados después de que hayas votado.",
-	"ajaxpoll-info": "{{PLURAL:$1|Ha habido un voto|Ha habido $1 votos}} desde que la encuesta fue creada el $2.",
+	"ajaxpoll-info": "Ha habido {{PLURAL:$1|un voto|$1 votos}} desde que la encuesta fue creada el $2.",
 	"ajaxpoll-submitting": "Espera un momento, se está enviando el voto.",
 	"ajaxpoll-vote-permission": "No tienes derecho a votar.",
 	"ajaxpoll-view-results-permission": "No tienes derecho a ver los resultados de esta encuesta.",
