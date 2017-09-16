@@ -201,7 +201,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 			return self::buildHTML( $id, $userName, '', $pollContainerText );
 		}
 
-		if ( !$wgUser->isAllowed( 'ajaxpoll-vote' ) || $wgUser->isAllowed( 'bot' ) ) {
+		if ( !$wgUser->isAllowed( 'ajaxpoll-vote' ) || $wgUser->isBot() ) {
 			return self::buildHTML( $id, $userName );
 		}
 
