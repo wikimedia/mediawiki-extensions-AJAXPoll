@@ -8,6 +8,7 @@
 	},
 	"ajaxpoll-desc": "Дазваляе AJAX-апытаньні, якія можна дадаць тэгам <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Старонкі з апытаньнямі",
+	"ajaxpoll-tracking-category-desc": "На старонцы ёсьць <code>&lt;poll&gt;</code>.",
 	"ajaxpoll-vote-update": "Ваш голас быў абноўлены.",
 	"ajaxpoll-vote-add": "Ваш голас быў даданы.",
 	"ajaxpoll-vote-error": "Адбылася памылка падчас захаваньня Вашага голасу, калі ласка, паспрабуйце яшчэ.",
