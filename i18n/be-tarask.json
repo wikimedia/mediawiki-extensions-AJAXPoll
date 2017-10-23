@@ -26,5 +26,6 @@
 	"ajaxpoll-error-csrf-wrong-token": "Атрыманы няслушны токен, ваш голас ня ўлічаны.",
 	"right-ajaxpoll-vote": "магчымасьць галасаваць у AJAX-апытаньнях",
 	"right-ajaxpoll-view-results": "Можа праглядаць вынікі AJAX-апытаньняў",
-	"right-ajaxpoll-view-results-before-vote": "Можа праглядаць вынікі AJAX-апытаньняў да галасаваньня"
+	"right-ajaxpoll-view-results-before-vote": "Можа праглядаць вынікі AJAX-апытаньняў да галасаваньня",
+	"action-ajaxpoll-vote": "ўдзел у AJAX-галасаваньнях"
 }
