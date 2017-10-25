@@ -28,5 +28,6 @@
 	"right-ajaxpoll-view-results": "Можа праглядаць вынікі AJAX-апытаньняў",
 	"right-ajaxpoll-view-results-before-vote": "Можа праглядаць вынікі AJAX-апытаньняў да галасаваньня",
 	"action-ajaxpoll-vote": "ўдзел у AJAX-галасаваньнях",
-	"action-ajaxpoll-view-results": "прагляд вынікаў AJAX-апытаньняў"
+	"action-ajaxpoll-view-results": "прагляд вынікаў AJAX-апытаньняў",
+	"action-ajaxpoll-view-results-before-vote": "прагляд вынікаў AJAX-аптыаньняў да вашага галасаваньня"
 }
