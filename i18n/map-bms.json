@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"StefanusRA"
+			"StefanusRA",
+			"Empu"
 		]
 	},
 	"ajaxpoll-desc": "Ngolihna jajak pendapat sing basise-AJAX nganggo tag <code>&lt;poll&gt;</code>",
@@ -15,7 +16,7 @@
 	"ajaxpoll-info": "Wis ana {{PLURAL:$1|siji swara|$1 swara}} wiwit jajak pendapat kiye digawe dong $2.",
 	"ajaxpoll-submitting": "Monggo dienteni, lagi ngirimna swarane Rika.",
 	"ajaxpoll-vote-permission": "Rika ora olih melu aweh swara.",
-	"ajaxpoll-revoke-vote": "Inyong arep mbatalna swarane inyong.",
+	"ajaxpoll-revoke-vote": "Inyong arep mbatalna swarané inyong.",
 	"ajaxpoll-vote-revoked": "Rika wis sukses gole mbatalna swarane Rika.",
 	"right-ajaxpoll-vote": "Teyeng aweh swara nang jajak pendapat basis-AJAX"
 }
