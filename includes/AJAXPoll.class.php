@@ -8,7 +8,7 @@
  * @file
  * @ingroup Extensions
  * @author Dariusz Siedlecki <datrio@gmail.com>
- * @author Jack Phoenix <jack@countervandalism.net>
+ * @author Jack Phoenix
  * @author Thomas Gries
  * @maintainer Thomas Gries
  * @link http://www.mediawiki.org/wiki/Extension:AJAX_Poll Documentation
