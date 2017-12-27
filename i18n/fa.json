@@ -9,10 +9,11 @@
 			"Reza1615",
 			"Taha",
 			"Rtemis",
-			"Signal89"
+			"Signal89",
+			"Huji"
 		]
 	},
-	"ajaxpoll-desc": "رأی‌گیری‌های آی‌جکسی با تگ <code>&lt;poll&gt;</code> را اجازه می‌دهد.",
+	"ajaxpoll-desc": "رأی‌گیری‌های ای‌جکسی با برچسب <code>&lt;poll&gt;</code> را اجازه می‌دهد.",
 	"ajaxpoll-tracking-category": "صفحات با یک نظرسنجی",
 	"ajaxpoll-tracking-category-desc": "این صفحه کد <code>&lt;poll&gt;</code> دارد.",
 	"ajaxpoll-vote-update": "رأی شما به روز شد.",
