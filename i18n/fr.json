@@ -7,15 +7,16 @@
 			"Sherbrooke",
 			"Tim 'Avatar' Bartel",
 			"0x010C",
-			"Wladek92"
+			"Wladek92",
+			"Kenjiraw"
 		]
 	},
-	"ajaxpoll-desc": "Autorise les interrogations basées sur AJAX avec la balise <code>&lt;poll&gt;</code>",
+	"ajaxpoll-desc": "Autorise les questionnaires AJAX avec la balise <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Pages avec un sondage",
 	"ajaxpoll-tracking-category-desc": "Cette page a un <code>&lt;poll&gt;</code>.",
 	"ajaxpoll-vote-update": "Votre vote a été mis à jour.",
 	"ajaxpoll-vote-add": "Votre vote a été compté.",
-	"ajaxpoll-vote-error": "Il y avait un problème avec le traitement de votre vote. Essayez encore, s'il vous plaît.",
+	"ajaxpoll-vote-error": "Il y avait un problème avec le traitement de votre vote. Essayez à nouveau.",
 	"ajaxpoll-percent-votes": "$1% de tous les votes",
 	"ajaxpoll-your-vote": "Vous avez voté pour « $1 » le $3 à $4. Vous pouvez modifier votre choix en cliquant sur une autre réponse ci-dessous.",
 	"ajaxpoll-no-vote": "Merci de voter ci-dessous.",
