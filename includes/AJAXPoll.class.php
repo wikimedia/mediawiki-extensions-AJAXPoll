@@ -18,7 +18,7 @@ class AJAXPoll {
 	/**
 	 * Register <poll> tag with the parser
 	 *
-	 * @param parser Parser (not necessarily $wgParser
+	 * @param Parser $parser A parser instance, not necessarily $wgParser
 	 * @return bool true
 	 */
 	static function onParserInit( $parser ) {
@@ -27,7 +27,14 @@ class AJAXPoll {
 		return true;
 	}
 
-	# The callback function for converting the input text to HTML output
+	/**
+	 * The callback function for converting the input text to HTML output
+	 * @param string $input
+	 * @param array $args
+	 * @param Parser $parser
+	 * @param PPFrame $frame
+	 * @return string
+	 */
 	static function AJAXPollRender( $input, $args = [], Parser $parser, $frame ) {
 		global $wgUser, $wgRequest, $wgUseAjax;
 
