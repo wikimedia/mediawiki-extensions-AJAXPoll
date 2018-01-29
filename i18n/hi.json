@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Ansumang",
-			"Jayprakash12345"
+			"Jayprakash12345",
+			"Innocentbunny"
 		]
 	},
 	"ajaxpoll-desc": "<code>&lt;चुनाव&gt;</code> टैग के साथ AJAX आधारित चुनाव के लिए अनुमति है",
@@ -15,6 +16,7 @@
 	"ajaxpoll-your-vote": "आपने \"$1\" के लिए $3 पर $4 पर मतदान किया।",
 	"ajaxpoll-no-vote": "कृपया नीचे वोट दें।",
 	"ajaxpoll-no-vote-results-after-voting": "नीचे मतदान करें। परिणाम जब आप वोट देंगे तब दिखाया जाएगा।",
+	"ajaxpoll-info": "जबसे $2 पर निर्वाचन बनाया गया, तबसे {{PLURAL:$1|\"एक\" मत आया है।|\"$1\" मत आए हैं।}}",
 	"ajaxpoll-submitting": "कृपया प्रतीक्षा करें, अपका वोट जमा हो रहा है।",
 	"ajaxpoll-vote-permission": "आप मतदान करने के हकदार नहीं हैं।",
 	"ajaxpoll-view-results-permission": "आप इस पोल के परिणाम को देखने के हकदार नहीं हैं।",
