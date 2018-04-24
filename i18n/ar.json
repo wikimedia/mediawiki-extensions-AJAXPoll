@@ -9,9 +9,12 @@
 			"ديفيد"
 		]
 	},
+	"ajaxpoll-desc": "يسمح بالاستطلاعات المستندة إلى AJAX بالوسم <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "الصفحات مع استطلاع رأي",
+	"ajaxpoll-tracking-category-desc": "تحتوي الصفحة على <code>&lt;poll&gt;</code>.",
 	"ajaxpoll-vote-update": "تم تحديث صوتك.",
 	"ajaxpoll-vote-add": "تم إضافة تصويتك",
+	"ajaxpoll-vote-error": "حدثت مشكلة في معالجة تصويتك; تُرجَى المحاولة مرة أخرى.",
 	"ajaxpoll-percent-votes": "$1% من جميع الأصوات",
 	"ajaxpoll-your-vote": "لقد صوتت ل\"$1\" بشأن $3 في $4. يمكنك تعديل صوتك عن طريق الضغط على إجابة مختلفة من تلك المتوفرة أدناه.",
 	"ajaxpoll-no-vote": "الرجاء التصويت أدناه.",
@@ -22,5 +25,12 @@
 	"ajaxpoll-view-results-permission": "ليس لديك الصلاحيات اللازمة لعرض نتائج هذا الاستطلاع.",
 	"ajaxpoll-view-results-before-vote-permission": "لا يحق لك عرض نتائج هذا الاستطلاع قبل التصويت.",
 	"ajaxpoll-revoke-vote": "أريد سحب تصويتي",
-	"ajaxpoll-vote-revoked": "تم إلغاء تصويتك بنجاح."
+	"ajaxpoll-vote-revoked": "تم إلغاء تصويتك بنجاح.",
+	"ajaxpoll-error-csrf-wrong-token": "تم تلقي رمز مميز خاطئ، وتم تجاهل صوتك.",
+	"right-ajaxpoll-vote": "التصويت في الاستطلاعات المستندة إلى AJAX",
+	"right-ajaxpoll-view-results": "عرض النتائج في الاستطلاعات المستندة إلى AJAX",
+	"right-ajaxpoll-view-results-before-vote": "عرض النتائج في الاستطلاعات المستندة إلى AJAX قبل التصويت",
+	"action-ajaxpoll-vote": "التصويت في الاستطلاعات المستندة إلى AJAX",
+	"action-ajaxpoll-view-results": "عرض النتائج في الاستطلاعات المستندة إلى AJAX",
+	"action-ajaxpoll-view-results-before-vote": "عرض النتائج في الاستطلاعات المستندة إلى AJAX قبل التصويت"
 }
