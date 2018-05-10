@@ -15,6 +15,11 @@
  */
 class AJAXPoll {
 
+	public static function onRegistration() {
+		global $wgAjaxExportList;
+		$wgAjaxExportList[] = 'AJAXPoll::submitVote';
+	}
+
 	/**
 	 * Register <poll> tag with the parser
 	 *
