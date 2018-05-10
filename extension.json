@@ -63,9 +63,10 @@
 	"TrackingCategories": [
 		"ajaxpoll-tracking-category"
 	],
-	"AjaxExportList": [
-		"AJAXPoll::submitVote"
-	],
-	"config": {},
+	"config": {
+		"AjaxExportList": [
+			"AJAXPoll::submitVote"
+		]
+	},
 	"manifest_version": 1
 }
