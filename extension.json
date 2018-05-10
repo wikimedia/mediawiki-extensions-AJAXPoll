@@ -9,6 +9,7 @@
 	"url": "https://www.mediawiki.org/wiki/Extension:AJAX_Poll",
 	"descriptionmsg": "ajaxpoll-desc",
 	"type": "parserhook",
+	"callback": "AJAXPoll::onRegistration",
 	"GroupPermissions": {
 		"*": {
 			"ajaxpoll-vote": false,
@@ -63,10 +64,6 @@
 	"TrackingCategories": [
 		"ajaxpoll-tracking-category"
 	],
-	"config": {
-		"AjaxExportList": [
-			"AJAXPoll::submitVote"
-		]
-	},
+	"config": {},
 	"manifest_version": 1
 }
