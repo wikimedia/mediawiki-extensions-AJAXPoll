@@ -25,7 +25,7 @@
 	"ajaxpoll-view-results-before-vote-permission": "No es poden veure els resultats de l'enquesta abans d'haver votat.",
 	"ajaxpoll-revoke-vote": "Vull anul·lar el meu vot",
 	"ajaxpoll-vote-revoked": "S'ha anul·lat el vostre vot.",
-	"ajaxpoll-error-csrf-wrong-token": "S'ha rebut un token incorrecte, i el seu vot s'ha ignorat.",
+	"ajaxpoll-error-csrf-wrong-token": "S’ha rebut un testimoni incorrecte, i el vostre vot s’ha ignorat.",
 	"right-ajaxpoll-vote": "Podeu votar a les enquestes basades en AJAX",
 	"right-ajaxpoll-view-results": "Podeu veure els resultats de les enquestes basades en AJAX",
 	"right-ajaxpoll-view-results-before-vote": "Podeu veure els resultats de les enquestes basades en AJAX abans d'haver votat",
