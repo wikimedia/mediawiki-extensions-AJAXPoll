@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Robby",
-			"Soued031"
+			"Soued031",
+			"Matěj Suchánek"
 		]
 	},
 	"ajaxpoll-desc": "Erlaabt AJAX-baséiert Ëmfroe mam Tag <code>&lt;poll&gt;</code>",
@@ -15,7 +16,7 @@
 	"ajaxpoll-your-vote": "Dir hutt den $3 ëm $4 fir \"$1\" gestëmmt. Dir kënnt Är Stëmm änneren andeem Dir op eng aner Äntwert hei drënner klickt.",
 	"ajaxpoll-no-vote": "Stëmmt w.e.g hei drënner mat of.",
 	"ajaxpoll-no-vote-results-after-voting": "Gitt Är Stëmm w.e.g. hei drënner of. D'Resultater gi gewise soubal wéi Dir ofgestëmmt hutt.",
-	"ajaxpoll-info": "Zënter dem Ufank vun der Ëmfro den $2 {{PLURAL:$1 gouf eng Stëmm|goufe(n) $1 Stëmmen}} ofginn.",
+	"ajaxpoll-info": "Zënter dem Ufank vun der Ëmfro den $2 {{PLURAL:$1|gouf eng Stëmm|goufe(n) $1 Stëmmen}} ofginn.",
 	"ajaxpoll-submitting": "Waart w.e.g., Är Stëmm gëtt verschafft.",
 	"ajaxpoll-vote-permission": "Dir sidd net berechtegt fir ofzestëmmen.",
 	"ajaxpoll-view-results-permission": "Dir sidd net berechtegt fir d'Resultater vun dëser Ofstëmmung ze kucken.",
