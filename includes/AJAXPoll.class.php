@@ -135,7 +135,6 @@ class AJAXPoll {
 
 	private static function buildStats( $id, $userName ) {
 		$dbr = wfGetDB( DB_REPLICA );
-		$dbr->begin( __METHOD__ );
 
 		$res = $dbr->select(
 			'ajaxpoll_vote',
@@ -177,8 +176,6 @@ class AJAXPoll {
 			__METHOD__
 		);
 		$tab2 = $dbr->fetchRow( $res );
-
-		$dbr->commit( __METHOD__ );
 
 		return "There are $tab[1] polls and $tab[0] votes given by $tab[2] different people.<br />
 The last vote has been given $clockago ago.<br/>
