@@ -11,37 +11,30 @@
  * @author Jack Phoenix
  * @author Thomas Gries
  * @maintainer Thomas Gries
- * @link http://www.mediawiki.org/wiki/Extension:AJAX_Poll Documentation
+ * @link https://www.mediawiki.org/wiki/Extension:AJAX_Poll Documentation
  */
 class AJAXPoll {
-
-	public static function onRegistration() {
-		global $wgAjaxExportList;
-		$wgAjaxExportList[] = 'AJAXPoll::submitVote';
-	}
 
 	/**
 	 * Register <poll> tag with the parser
 	 *
 	 * @param Parser $parser A parser instance, not necessarily $wgParser
-	 * @return bool true
 	 */
-	static function onParserInit( $parser ) {
-		$parser->setHook( 'poll', [ __CLASS__, 'AJAXPollRender' ] );
-
-		return true;
+	public static function onParserFirstCallInit( $parser ) {
+		$parser->setHook( 'poll', [ __CLASS__, 'render' ] );
 	}
 
 	/**
 	 * The callback function for converting the input text to HTML output
+	 *
 	 * @param string $input
 	 * @param array $args
 	 * @param Parser $parser
 	 * @param PPFrame $frame
 	 * @return string
 	 */
-	static function AJAXPollRender( $input, $args = [], Parser $parser, $frame ) {
-		global $wgUser, $wgRequest, $wgUseAjax;
+	public static function render( $input, $args = [], Parser $parser, $frame ) {
+		global $wgUser, $wgRequest;
 
 		$parser->getOutput()->updateCacheExpiry( 0 );
 		$parser->addTrackingCategory( 'ajaxpoll-tracking-category' );
@@ -54,8 +47,8 @@ class AJAXPoll {
 		}
 
 		// ID of the poll
-		if ( isset( $args["id"] ) ) {
-			$id = $args["id"];
+		if ( isset( $args['id'] ) ) {
+			$id = $args['id'];
 		} else {
 			$id = strtoupper( md5( $input ) );
 		}
@@ -64,21 +57,6 @@ class AJAXPoll {
 		$input = $parser->recursiveTagParse( $input, $frame );
 		$input = trim( strip_tags( $input ) );
 		$lines = explode( "\n", trim( $input ) );
-
-		// compatibility for non-ajax requests - just in case
-		if ( !$wgUseAjax ) {
-			$responseId = "ajaxpoll-post-id";
-			$responseAnswer = "ajaxpoll-post-answer-$id";
-			$responseToken = "ajaxPollToken";
-
-			if ( isset( $_POST[$responseId] )
-				&& isset( $_POST[$responseAnswer] )
-				&& ( $_POST[$responseId] == $id )
-				&& isset( $_POST[$responseToken] )
-			) {
-				self::submitVote( $id, intval( $_POST[$responseAnswer] ), $_POST[$responseToken] );
-			}
-		}
 
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->startAtomic( __METHOD__ );
@@ -112,7 +90,16 @@ class AJAXPoll {
 					'poll_txt' => $input,
 					'poll_date' => wfTimestampNow(),
 				],
-				__METHOD__
+				__METHOD__,
+				// @todo FIXME: This is a crappy hack to fix obviously incorrect and nonsensical
+				// "Error: 1062 Duplicate entry '<whatever>' for key 'PRIMARY' (localhost)"
+				// error messages, one of which I saw when literally making the very first poll
+				// on a wiki, so it goes w/o saying that there can't (or at least shouldn't) be
+				// any other entries in AJAXPoll's DB tables at that time.
+				// All the DB queries in this method should be refactored and ideally instead
+				// of insert()/update() this'd use upsert().
+				// @see https://phabricator.wikimedia.org/T163625
+				[ 'IGNORE' ]
 			);
 		} else {
 			$dbw->update(
@@ -198,19 +185,13 @@ The last vote has been given $clockago ago.<br/>
 During the last 48 hours, $tab2[0] votes have been given.";
 	}
 
-	public static function submitVote( $id, $answer, $token ) {
+	public static function submitVote( $id, $answer ) {
 		global $wgUser, $wgRequest;
 
 		if ( $wgUser->getName() == '' ) {
 			$userName = $wgRequest->getIP();
 		} else {
 			$userName = $wgUser->getName();
-		}
-
-		if ( !$wgUser->matchEditToken( $token, $id ) ) {
-			$pollContainerText = 'ajaxpoll-error-csrf-wrong-token';
-
-			return self::buildHTML( $id, $userName, '', $pollContainerText );
 		}
 
 		if ( !$wgUser->isAllowed( 'ajaxpoll-vote' ) || $wgUser->isBot() ) {
@@ -235,45 +216,12 @@ During the last 48 hours, $tab2[0] votes have been given.";
 			$row = $dbw->fetchRow( $q );
 
 			if ( $row['count'] > 0 ) {
-				$updateQuery = $dbw->update(
-					'ajaxpoll_vote',
-					[
-						'poll_answer' => $answer,
-						'poll_date' => wfTimestampNow()
-					],
-					[
-						'poll_id' => $id,
-						'poll_user' => $userName,
-					],
-					__METHOD__
-				);
-				$pollContainerText = ( $updateQuery ) ? 'ajaxpoll-vote-update' : 'ajaxpoll-vote-error';
+				$pollContainerText = self::updateVote( $dbw, $id, $userName, $answer );
 			} else {
-
-				$insertQuery = $dbw->insert(
-					'ajaxpoll_vote',
-					[
-						'poll_id' => $id,
-						'poll_user' => $userName,
-						'poll_ip' => $wgRequest->getIP(),
-						'poll_answer' => $answer,
-						'poll_date' => wfTimestampNow()
-					],
-					__METHOD__
-				);
-				$pollContainerText = ( $insertQuery ) ? 'ajaxpoll-vote-add' : 'ajaxpoll-vote-error';
+				$pollContainerText = self::addVote( $dbw, $id, $userName, $answer );
 			}
 		} else { // revoking a vote
-
-			$deleteQuery = $dbw->delete(
-				'ajaxpoll_vote',
-				[
-					'poll_id' => $id,
-					'poll_user' => $userName,
-				],
-				__METHOD__
-			);
-			$pollContainerText = ( $deleteQuery ) ? 'ajaxpoll-vote-revoked' : 'ajaxpoll-vote-error';
+			$pollContainerText = self::revokeVote( $dbw, $id, $userName );
 		}
 
 		$dbw->endAtomic( __METHOD__ );
@@ -281,12 +229,83 @@ During the last 48 hours, $tab2[0] votes have been given.";
 		return self::buildHTML( $id, $userName, '', $pollContainerText );
 	}
 
+	/**
+	 * @todo FIXME: these three *vote() methods are kinda sucky.
+	 * Ideally they'd return a Status or somesuch and wouldn't take a $dbw param
+	 * but the param is right now needed since all methods of this class are static...
+	 *
+	 * I am not amused by having to do all sorts of weird magic to get around jenkins
+	 * being stupid.
+	 *
+	 * @param Database $dbw Write connection to a database
+	 * @param string $id Poll ID
+	 * @param string $userName User name or IP address of the person voting
+	 * @param int $answer Answer option #
+	 * @return string Name of an i18n msg to show to the user
+	 */
+	public static function addVote( $dbw, $id, $userName, $answer ) {
+		global $wgRequest;
+		$insertQuery = $dbw->insert(
+			'ajaxpoll_vote',
+			[
+				'poll_id' => $id,
+				'poll_user' => $userName,
+				'poll_ip' => $wgRequest->getIP(),
+				'poll_answer' => $answer,
+				'poll_date' => wfTimestampNow()
+			],
+			__METHOD__
+		);
+		return ( $insertQuery ) ? 'ajaxpoll-vote-add' : 'ajaxpoll-vote-error';
+	}
+
+	/**
+	 * @param Database $dbw Write connection to a database
+	 * @param string $id Poll ID
+	 * @param string $userName User name or IP address of the person voting
+	 * @return string Name of an i18n msg to show to the user
+	 */
+	public static function revokeVote( $dbw, $id, $userName ) {
+		$deleteQuery = $dbw->delete(
+			'ajaxpoll_vote',
+			[
+				'poll_id' => $id,
+				'poll_user' => $userName,
+			],
+			__METHOD__
+		);
+		return ( $deleteQuery ) ? 'ajaxpoll-vote-revoked' : 'ajaxpoll-vote-error';
+	}
+
+	/**
+	 * @param Database $dbw Write connection to a database
+	 * @param string $id Poll ID
+	 * @param string $userName User name or IP address of the person voting
+	 * @param int $answer Answer option #
+	 * @return string Name of an i18n msg to show to the user
+	 */
+	public static function updateVote( $dbw, $id, $userName, $answer ) {
+		$updateQuery = $dbw->update(
+			'ajaxpoll_vote',
+			[
+				'poll_answer' => $answer,
+				'poll_date' => wfTimestampNow()
+			],
+			[
+				'poll_id' => $id,
+				'poll_user' => $userName,
+			],
+			__METHOD__
+		);
+		return ( $updateQuery ) ? 'ajaxpoll-vote-update' : 'ajaxpoll-vote-error';
+	}
+
 	private static function escapeContent( $string ) {
 		return htmlspecialchars( Sanitizer::decodeCharReferences( $string ), ENT_QUOTES );
 	}
 
 	private static function buildHTML( $id, $userName, $lines = '', $extra_from_ajax = '' ) {
-		global $wgTitle, $wgUser, $wgLang, $wgUseAjax;
+		global $wgTitle, $wgUser, $wgLang;
 
 		$dbr = wfGetDB( DB_REPLICA );
 
@@ -352,6 +371,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 			$userVoted = true;
 		}
 
+		$ret = '';
 		if ( is_object( $wgTitle ) ) {
 			if ( !empty( $extra_from_ajax ) ) {
 				$style = 'display:inline-block';
@@ -361,12 +381,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 				$ajaxMessage = '';
 			}
 
-			$ret = Html::element( 'script',
-				[],
-				'var useAjax=' . ( !empty( $wgUseAjax ) ? "true" : "false" ) . ';'
-			);
-
-			$ret .= Html::openElement( 'div',
+			$ret = Html::openElement( 'div',
 				[
 					'id' => 'ajaxpoll-id-' . $id,
 					'class' => 'ajaxpoll'
@@ -409,15 +424,15 @@ During the last 48 hours, $tab2[0] votes have been given.";
 			}
 
 			if ( !$wgUser->isAllowed( 'ajaxpoll-view-results' ) ) {
-				$message .= "<br/>" . wfMessage( 'ajaxpoll-view-results-permission' )->text();
+				$message .= '<br/>' . wfMessage( 'ajaxpoll-view-results-permission' )->text();
 			} elseif ( !$userVoted
 				&& !$wgUser->isAllowed( 'ajaxpoll-view-results-before-vote' )
 				&& !$showResultsBeforeVoting
 			) {
 				if ( $wgUser->isAllowed( 'ajaxpoll-vote' ) ) {
-					$message .= "<br/>" . wfMessage( 'ajaxpoll-view-results-before-vote-permission' )->text();
+					$message .= '<br/>' . wfMessage( 'ajaxpoll-view-results-before-vote-permission' )->text();
 				} else {
-					$message .= "<br/>" . wfMessage( 'ajaxpoll-view-results-permission' )->text();
+					$message .= '<br/>' . wfMessage( 'ajaxpoll-view-results-permission' )->text();
 				}
 			}
 
@@ -450,7 +465,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 				// and becomes answer number 0
 
 				$answer = ( $vote ) ? $i : 0;
-				$xid = $id . "-" . $answer;
+				$xid = $id . '-' . $answer;
 
 				if ( ( $amountOfVotes !== 0 ) && ( isset( $poll_result[$i + 1] ) ) ) {
 					$pollResult = $poll_result[$i + 1];
@@ -460,18 +475,15 @@ During the last 48 hours, $tab2[0] votes have been given.";
 					$percent = 0;
 				}
 
-				// If AJAX is enabled, as it is by default in modern MWs, we can
-				// just use action=ajax function here for that AJAX-y feel.
-				// If not, we'll have to submit the form old-school way...
-
 				$border = ( $percent == 0 ) ? ' border:0;' : '';
 				$isOurVote = ( isset( $row[0] ) && ( $row[0] - 1 == $i ) );
 
 				$resultBar = '';
 
-				if ( $wgUser->isAllowed( 'ajaxpoll-view-results' )
-					&& ( $showResultsBeforeVoting || ( !$showResultsBeforeVoting && $userVoted ) )
-					&& $vote
+				if (
+					$wgUser->isAllowed( 'ajaxpoll-view-results' ) &&
+					( $showResultsBeforeVoting || ( !$showResultsBeforeVoting && $userVoted ) ) &&
+					$vote
 				) {
 					$resultBar = Html::rawElement( 'div',
 						[
@@ -511,7 +523,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 										'id' => 'ajaxpoll-post-answer-' . $xid,
 										'name' => 'ajaxpoll-post-answer-' . $id,
 										'value' => $answer,
-										'checked' => $isOurVote ? "true" : false,
+										'checked' => $isOurVote ? 'true' : false,
 									]
 								) .
 								self::escapeContent( $lines[$i] )
@@ -535,6 +547,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 							Html::rawElement( 'label',
 								[
 									'for' => 'ajaxpoll-post-answer-' . $xid,
+									// @todo FIXME: fugly inline JS
 									'onclick' => '$("#ajaxpoll-ajax-"' . $xid . '").html("' .
 										wfMessage( 'ajaxpoll-vote-permission' )->text() .
 										'").css("display","block");'
@@ -556,11 +569,9 @@ During the last 48 hours, $tab2[0] votes have been given.";
 				}
 			}
 
-			$ret .= Html::Hidden( 'ajaxPollToken', $wgUser->getEditToken( $id ) ) .
-				Xml::closeElement( 'form' );
+			$ret .= Xml::closeElement( 'form' );
 
 			// Display information about the poll (creation date, amount of votes)
-
 			$pollSummary = wfMessage(
 				'ajaxpoll-info',
 				$amountOfVotes, // amount of votes
@@ -573,6 +584,8 @@ During the last 48 hours, $tab2[0] votes have been given.";
 					'class' => 'ajaxpoll-info'
 				],
 				self::escapeContent( $pollSummary ) .
+				// @todo Just why are we exposing this in the UI, again?
+				// It's ugly and unnecessary even though technically hidden by CSS.
 				Html::element( 'div',
 					[ 'class' => 'ajaxpoll-id-info' ],
 					'poll-id ' . $id
@@ -581,63 +594,60 @@ During the last 48 hours, $tab2[0] votes have been given.";
 
 			$ret .= Html::closeElement( 'div' ) .
 				Html::element( 'br' );
-		} else {
-			$ret = '';
 		}
 
 		return $ret;
 	}
 
-	public static function onLoadExtensionSchemaUpdates( $updater = null ) {
-		if ( $updater === null ) {
-			// no < 1.17 support
+	/**
+	 * Adds the two new required database tables into the database when the
+	 * end-user (sysadmin) runs /maintenance/update.php
+	 * (the core database updater script) and performs other DB updates, such as
+	 * the renaming of tables, if upgrading from an older version of this extension.
+	 *
+	 * @param DatabaseUpdater $updater
+	 */
+	public static function onLoadExtensionSchemaUpdates( $updater ) {
+		$db = $updater->getDB();
+
+		$patchPath = __DIR__ . '/../sql/';
+
+		if ( $db->tableExists( 'poll_info' ) ) {
+			# poll_info.poll_title field was dropped in AJAXPoll version 1.72
+			$updater->dropExtensionField(
+				'poll_info',
+				'poll_title',
+				$patchPath . 'drop-field--poll_info-poll_title.sql'
+			);
+			$updater->addExtensionTable(
+				'ajaxpoll_info',
+				$patchPath . 'rename-table--poll_info.sql'
+			);
 		} else {
-			// >= 1.17 support
-			$db = $updater->getDB();
-
-			$patchPath = __DIR__ . '/../sql/';
-
-			if ( $db->tableExists( 'poll_info' ) ) {
-				# poll_info.poll_title field was dropped in AJAXPoll version 1.72
-				$updater->dropExtensionField(
-					'poll_info',
-					'poll_title',
-					$patchPath . 'drop-field--poll_info-poll_title.sql'
-				);
-				$updater->addExtensionTable(
-					'ajaxpoll_info',
-					$patchPath . 'rename-table--poll_info.sql'
-				);
-			} else {
-
-				$updater->addExtensionTable(
-					'ajaxpoll_info',
-					$patchPath . 'create-table--ajaxpoll_info.sql'
-				);
-			}
-
-			if ( $db->tableExists( 'ajaxpoll_info' ) ) {
-				$updater->addExtensionField(
-					'ajaxpoll_info',
-					'poll_show_results_before_voting',
-					$patchPath . 'add-field--ajaxpoll_info-poll_show_results_before_voting.sql'
-				);
-			}
-
-			if ( $db->tableExists( 'poll_vote' ) ) {
-				$updater->addExtensionTable(
-					'poll_vote',
-					$patchPath . 'rename-table--poll_vote.sql'
-				);
-			} else {
-
-				$updater->addExtensionTable(
-					'ajaxpoll_vote',
-					$patchPath . 'create-table--ajaxpoll_vote.sql'
-				);
-			}
+			$updater->addExtensionTable(
+				'ajaxpoll_info',
+				$patchPath . 'create-table--ajaxpoll_info.sql'
+			);
 		}
 
-		return true;
+		if ( $db->tableExists( 'ajaxpoll_info' ) ) {
+			$updater->addExtensionField(
+				'ajaxpoll_info',
+				'poll_show_results_before_voting',
+				$patchPath . 'add-field--ajaxpoll_info-poll_show_results_before_voting.sql'
+			);
+		}
+
+		if ( $db->tableExists( 'poll_vote' ) ) {
+			$updater->addExtensionTable(
+				'poll_vote',
+				$patchPath . 'rename-table--poll_vote.sql'
+			);
+		} else {
+			$updater->addExtensionTable(
+				'ajaxpoll_vote',
+				$patchPath . 'create-table--ajaxpoll_vote.sql'
+			);
+		}
 	}
 }

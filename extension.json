@@ -1,6 +1,6 @@
 {
 	"name": "AJAX Poll",
-	"version": "1.9.0",
+	"version": "2.0",
 	"author": [
 		"Dariusz Siedlecki",
 		"Jack Phoenix",
@@ -9,7 +9,9 @@
 	"url": "https://www.mediawiki.org/wiki/Extension:AJAX_Poll",
 	"descriptionmsg": "ajaxpoll-desc",
 	"type": "parserhook",
-	"callback": "AJAXPoll::onRegistration",
+	"requires": {
+		"MediaWiki": ">= 1.30.0"
+	},
 	"GroupPermissions": {
 		"*": {
 			"ajaxpoll-vote": false,
@@ -31,8 +33,12 @@
 			"i18n"
 		]
 	},
+	"APIModules": {
+		"pollsubmitvote": "ApiAJAXPollSubmitVote"
+	},
 	"AutoloadClasses": {
-		"AJAXPoll": "includes/AJAXPoll.class.php"
+		"AJAXPoll": "includes/AJAXPoll.class.php",
+		"ApiAJAXPollSubmitVote": "includes/api/ApiAJAXPollSubmitVote.php"
 	},
 	"ResourceModules": {
 		"ext.ajaxpoll": {
@@ -43,7 +49,9 @@
 			"styles": [
 				"css/ajaxpoll.css"
 			],
-			"dependencies": [],
+			"dependencies": [
+				"mediawiki.api"
+			],
 			"messages": [
 				"ajaxpoll-submitting"
 			]
@@ -54,16 +62,11 @@
 		"remoteExtPath": "AJAXPoll/resources"
 	},
 	"Hooks": {
-		"ParserFirstCallInit": [
-			"AJAXPoll::onParserInit"
-		],
-		"LoadExtensionSchemaUpdates": [
-			"AJAXPoll::onLoadExtensionSchemaUpdates"
-		]
+		"ParserFirstCallInit": "AJAXPoll::onParserFirstCallInit",
+		"LoadExtensionSchemaUpdates": "AJAXPoll::onLoadExtensionSchemaUpdates"
 	},
 	"TrackingCategories": [
 		"ajaxpoll-tracking-category"
 	],
-	"config": {},
 	"manifest_version": 1
 }
