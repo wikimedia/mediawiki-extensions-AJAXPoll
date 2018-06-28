@@ -25,7 +25,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "Anda tidak berhak untuk melihat hasil jajak pendapat ini sebelum Anda memberikan suara.",
 	"ajaxpoll-revoke-vote": "Saya ingin membatalkan suara saya",
 	"ajaxpoll-vote-revoked": "Pungutan suara anda telah dibatalkan.",
-	"ajaxpoll-error-csrf-wrong-token": "Sebuah token yang salah telah diterima, dan suara Anda diabaikan.",
 	"right-ajaxpoll-vote": "Dapat memberi suara di jajak pendapat berbasis AJAX",
 	"right-ajaxpoll-view-results": "Dapat melihat hasil dalam jajak pendapat berbasis AJAX",
 	"right-ajaxpoll-view-results-before-vote": "Dapat melihat hasil dalam jajak pendapat berbasis AJAX sebelum ikut memilih",

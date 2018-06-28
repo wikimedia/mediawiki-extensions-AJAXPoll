@@ -25,7 +25,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "Nejste oprávněn prohlížet výsledky tohoto průzkumu před svým hlasováním.",
 	"ajaxpoll-revoke-vote": "Chci odvolat svůj hlas",
 	"ajaxpoll-vote-revoked": "Váš hlas byl úspěšně odvolán.",
-	"ajaxpoll-error-csrf-wrong-token": "Byl přijat chybný token a váš hlas je ignorován.",
 	"right-ajaxpoll-vote": "Může hlasovat v anketách založených na AJAXu",
 	"right-ajaxpoll-view-results": "Má oprávnění procházet výsledky průzkumů veřejného mínění v AJAXu.",
 	"right-ajaxpoll-view-results-before-vote": "Má oprávnění procházet výsledky průzkumů veřejného mínění v AJAXu před hlasováním.",

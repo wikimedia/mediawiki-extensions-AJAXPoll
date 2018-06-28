@@ -8,6 +8,10 @@
 			"Wikinaut"
 		]
 	},
+	"apihelp-pollsubmitvote-description": "AJAXPoll-API-Modul",
+	"apihelp-pollsubmitvote-summary": "AJAXPoll-API-Modul",
+	"apihelp-pollsubmitvote-param-answer": "Numerische Antwortoption-Kennung. 0 verwenden zur Streichung einer früheren Stimme.",
+	"apihelp-pollsubmitvote-example-1": "Übermittelt die dritte (3) Antwort an die Abstimmung, die die Kennung 832A5FA2C2583A5732B90CEFF658FE25 hat.",
 	"ajaxpoll-desc": "Ergänzt das Tag <code>&lt;poll&gt;</code> zum Erstellen AJAX-gestützter Umfragen",
 	"ajaxpoll-tracking-category": "Seiten mit einer Umfrage",
 	"ajaxpoll-tracking-category-desc": "Die Seite hat ein <code>&lt;poll&gt;</code>.",
@@ -25,7 +29,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "Du bist nicht berechtigt, die Ergebnisse dieser Abstimmung anzusehen, bevor du abgestimmt hast.",
 	"ajaxpoll-revoke-vote": "Ich möchte meine Stimme widerrufen",
 	"ajaxpoll-vote-revoked": "Deine Stimme wurde widerrufen.",
-	"ajaxpoll-error-csrf-wrong-token": "Es wurde ein falscher Token empfangen. Deine Stimme wird ignoriert.",
 	"right-ajaxpoll-vote": "An AJAX-gestützen Umfragen teilnehmen",
 	"right-ajaxpoll-view-results": "Ergebnisse von AJAX-basierten Umfragen ansehen",
 	"right-ajaxpoll-view-results-before-vote": "Ergebnisse von AJAX-basierten Umfragen vor der Abstimmung ansehen",

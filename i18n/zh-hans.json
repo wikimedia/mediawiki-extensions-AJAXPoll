@@ -28,7 +28,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "您在投票前无权查看投票结果。",
 	"ajaxpoll-revoke-vote": "我想撤销我的投票",
 	"ajaxpoll-vote-revoked": "您已撤销您的投票。",
-	"ajaxpoll-error-csrf-wrong-token": "您输入了错误的标记，您的投票将无效。",
 	"right-ajaxpoll-vote": "可在基于AJAX的投票区投票",
 	"right-ajaxpoll-view-results": "可查看基于AJAX的调查结果",
 	"right-ajaxpoll-view-results-before-vote": "可在投票前查看基于AJAX的调查结果",

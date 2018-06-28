@@ -21,7 +21,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "Ye'r na permitit tae see the ootcomes o this poll afore ye'v voted.",
 	"ajaxpoll-revoke-vote": "I wish tae revoke ma vote",
 	"ajaxpoll-vote-revoked": "Yer vote haes been revoked.",
-	"ajaxpoll-error-csrf-wrong-token": "Ae wrang token wis receeved, n yer vote is ignored.",
 	"right-ajaxpoll-vote": "Can vote in AJAX-based polls",
 	"right-ajaxpoll-view-results": "Can see the ootcomes in the AJAX-based polls",
 	"right-ajaxpoll-view-results-before-vote": "Can see the ootcomes in the AJAX-based polls afore votein",

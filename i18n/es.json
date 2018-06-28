@@ -34,7 +34,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "No tienes derecho a ver los resultados de esta encuesta antes de haber votado.",
 	"ajaxpoll-revoke-vote": "Quiero revocar mi voto",
 	"ajaxpoll-vote-revoked": "Tu voto ha sido revocado.",
-	"ajaxpoll-error-csrf-wrong-token": "Se recibió un token erróneo, y tu voto ha sido ignorado.",
 	"right-ajaxpoll-vote": "Puede votar en las encuestas basadas en AJAX",
 	"right-ajaxpoll-view-results": "Puede ver los resultados de las encuentas basadas en AJAX",
 	"right-ajaxpoll-view-results-before-vote": "Puede ver los resultados de las encuestas basadas en AJAX antes de haber votado",

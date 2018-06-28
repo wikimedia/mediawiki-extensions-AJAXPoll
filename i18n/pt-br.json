@@ -27,7 +27,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "Você não está habilitado a ver os resultados desta votação antes de ter votado.",
 	"ajaxpoll-revoke-vote": "Quero revogar o meu voto",
 	"ajaxpoll-vote-revoked": "Seu voto foi revogado.",
-	"ajaxpoll-error-csrf-wrong-token": "Um ''token'' errado foi recebido e o seu voto foi ignorado.",
 	"right-ajaxpoll-vote": "Pode votar em votações baseadas em AJAX",
 	"right-ajaxpoll-view-results": "Pode ver resultados de pesquisas baseadas em AJAX",
 	"right-ajaxpoll-view-results-before-vote": "Pode ver resultados de pesquisas baseadas em AJAX antes de ter votado",

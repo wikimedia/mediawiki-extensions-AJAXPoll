@@ -25,7 +25,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "Du har inte rätt att se resultat från denna enkät innan du har röstat.",
 	"ajaxpoll-revoke-vote": "Jag vill återkalla min röst",
 	"ajaxpoll-vote-revoked": "Din röst har återkallats.",
-	"ajaxpoll-error-csrf-wrong-token": "En felaktig token mottogs och din röst ignoreras.",
 	"right-ajaxpoll-vote": "Kan rösta i AJAX-baserade omröstningar",
 	"right-ajaxpoll-view-results": "Kan visa resultaten i AJAX-baserade omröstningar",
 	"right-ajaxpoll-view-results-before-vote": "Kan visa resultaten i AJAX-baserade omröstningar innan de har röstat",

@@ -23,7 +23,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "Dir sidd net berechtegt fir d'Resultater vun dëser Ofstëmmung ze kucken ier Dir ofgestëmmt hutt.",
 	"ajaxpoll-revoke-vote": "Ech wëll meng Stëmm zréckzéien",
 	"ajaxpoll-vote-revoked": "Är Stëmm gouf zréckgeruff.",
-	"ajaxpoll-error-csrf-wrong-token": "E falschen Token koum un an Är Stëmm gouf ignoréiert.",
 	"right-ajaxpoll-vote": "Däerf bei AJAX-baséierten Ëmfroe matmaachen",
 	"right-ajaxpoll-view-results": "Däerf Resultater vun AJAX-baséierten Ëmfroe kucken",
 	"right-ajaxpoll-view-results-before-vote": "däerf Resultater vun AJAX-baséierten Ëmfroe virum Ofstëmme kucken",

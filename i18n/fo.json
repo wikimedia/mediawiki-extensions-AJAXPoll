@@ -20,6 +20,5 @@
 	"ajaxpoll-view-results-before-vote-permission": "Tú hevur ikki loyvi til at síggja úrslitini av hesi atkvøðugreiðslu, fyrr enn tú hevur atkvøtt.",
 	"ajaxpoll-revoke-vote": "Eg ynski at taka mína atkvøðu aftur",
 	"ajaxpoll-vote-revoked": "Tín atkvøða er tikin aftur.",
-	"ajaxpoll-error-csrf-wrong-token": "Eitt skeivt tekn varð móttikið, og tín atkvøða er ikki skrásett.",
 	"right-ajaxpoll-vote": "Kann atkvøða í atkvøðugreiðslum, sum byggja á AJAX"
 }

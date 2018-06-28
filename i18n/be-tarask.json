@@ -23,7 +23,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "Вы ня можаце праглядаць вынікі гэтага апытаньня, пакуль не прагаласуеце.",
 	"ajaxpoll-revoke-vote": "Я хачу адклікаць мой голас",
 	"ajaxpoll-vote-revoked": "Ваш голас быў адкліканы.",
-	"ajaxpoll-error-csrf-wrong-token": "Атрыманы няслушны токен, ваш голас ня ўлічаны.",
 	"right-ajaxpoll-vote": "магчымасьць галасаваць у AJAX-апытаньнях",
 	"right-ajaxpoll-view-results": "Можа праглядаць вынікі AJAX-апытаньняў",
 	"right-ajaxpoll-view-results-before-vote": "Можа праглядаць вынікі AJAX-апытаньняў да галасаваньня",

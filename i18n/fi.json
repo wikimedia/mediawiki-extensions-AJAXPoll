@@ -27,7 +27,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "Et voi katsella kyselyn tuloksia ennen kuin olet äänestänyt.",
 	"ajaxpoll-revoke-vote": "Haluan peruuttaa ääneni",
 	"ajaxpoll-vote-revoked": "Äänesi on peruttu.",
-	"ajaxpoll-error-csrf-wrong-token": "Saatu avain oli virheellinen ja äänesi hylättiin.",
 	"right-ajaxpoll-vote": "Voi äänestää AJAX-pohjaisissa kyselyissä",
 	"right-ajaxpoll-view-results": "Voi katsoa AJAX-pohjaisten kyselyiden tuloksia",
 	"right-ajaxpoll-view-results-before-vote": "Voi katsoa AJAX-pohjaisten kyselyiden tuloksia ennen äänestämistä",

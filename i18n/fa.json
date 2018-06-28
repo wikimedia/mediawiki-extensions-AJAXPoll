@@ -30,7 +30,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "شما مجاز به مشاهدهٔ نتایج این نظرسنجی قبل از اینکه رأی داده باشید نیستید.",
 	"ajaxpoll-revoke-vote": "قصد دارم رأیم را واگردانی کنم",
 	"ajaxpoll-vote-revoked": "رأی شما با موفقیت واگردانی شد.",
-	"ajaxpoll-error-csrf-wrong-token": "یک توکن اشتباه دریافت شد و رأی شما نادیده گرفته شد.",
 	"right-ajaxpoll-vote": "می‌تواند در نظرخواهی آی‌جکسی رأی دهد",
 	"right-ajaxpoll-view-results": "نتایج نظرسنجی‌های مبتنی ای‌جکس را می‌توان مشاهده کرد",
 	"right-ajaxpoll-view-results-before-vote": "نتایج نظرسنجی‌های مبتنی ای‌جکس را می‌توان پیش از داشتن رأی مشاهده کرد",

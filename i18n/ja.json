@@ -23,7 +23,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "投票を終えるまで、あなたはこの投票の結果を見ることができません。",
 	"ajaxpoll-revoke-vote": "自分の投票を取り消したい",
 	"ajaxpoll-vote-revoked": "投票を取り消しました。",
-	"ajaxpoll-error-csrf-wrong-token": "誤ったトークンを受信したため、あなたの投票は無視されます。",
 	"right-ajaxpoll-vote": "Ajax ベースの投票所で投票",
 	"right-ajaxpoll-view-results": "Ajax ベースの投票所で結果を閲覧",
 	"right-ajaxpoll-view-results-before-vote": "Ajax ベースの投票所で投票前に結果を閲覧",

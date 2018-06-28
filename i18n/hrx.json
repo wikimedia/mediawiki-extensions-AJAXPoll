@@ -15,7 +15,6 @@
 	"ajaxpoll-view-results-permission": "Du bist net berechticht, die Ergebnisse von der Abstimmung oonzusiehn.",
 	"ajaxpoll-revoke-vote": "Ich möcht mein Stimm widerrufe",
 	"ajaxpoll-vote-revoked": "Dein Stimm woard widergeruf.",
-	"ajaxpoll-error-csrf-wrong-token": "Do woard en falscher Token empfang. Dein Stimm weard ignoriert.",
 	"right-ajaxpoll-vote": "An AJAX-gestütze Umfroch teilnehme",
 	"right-ajaxpoll-view-results": "Ergebnisse von AJAX-basierte Umfroche oonsiehn",
 	"right-ajaxpoll-view-results-before-vote": "Ergebnisse von AJAX-basierte Umfroche voar der Abstimmung oonsiehn",

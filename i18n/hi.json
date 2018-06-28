@@ -23,7 +23,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "आप इस पोल के परिणाम को अपने मतदान से पहले देखने के लिए हकदार नहीं हैं।",
 	"ajaxpoll-revoke-vote": "मैं अपने वोट रद्द करना चाहते हु",
 	"ajaxpoll-vote-revoked": "आपका वोट रद्द कर दिया गया।",
-	"ajaxpoll-error-csrf-wrong-token": "गलत टोकन प्राप्त हुआ और आपके वोट को नजरअंदाज कर दिया गया है।",
 	"right-ajaxpoll-vote": "क्या AJAX आधारित चुनाव में मतदान कर सकते हैं",
 	"right-ajaxpoll-view-results": "क्या AJAX आधारित चुनाव में परिणाम देख सकते हैं",
 	"right-ajaxpoll-view-results-before-vote": "मतदान होने से पहले क्या AJAX आधारित चुनाव में परिणाम देख सकते हैं",

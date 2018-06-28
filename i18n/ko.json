@@ -27,7 +27,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "투표하기 전까지는 이 투표의 결과를 볼 권한이 없습니다.",
 	"ajaxpoll-revoke-vote": "투표를 취소합니다",
 	"ajaxpoll-vote-revoked": "성공적으로 투표를 취소했습니다.",
-	"ajaxpoll-error-csrf-wrong-token": "잘못된 토큰이 전달되어, 투표가 무시되었습니다.",
 	"right-ajaxpoll-vote": "AJAX 기반 설문 조사에 투표할 수 있음",
 	"right-ajaxpoll-view-results": "AJAX 기반의 투표 결과를 볼 수 있습니다",
 	"right-ajaxpoll-view-results-before-vote": "투표하기 전 AJAX기반 설문조사 결과를 볼 수 있습니다",

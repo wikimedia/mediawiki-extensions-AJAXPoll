@@ -21,7 +21,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "వోటు వెయ్యక ముందు, ఈ పోల్ ఫలితాలు చూసే అనుమతి మీకు లేదు.",
 	"ajaxpoll-revoke-vote": "నా వోటును వెనక్కి తీసుకోవాలనుకుంటున్నాను",
 	"ajaxpoll-vote-revoked": "మీవోటును వెనక్కి తీసుకున్నారు.",
-	"ajaxpoll-error-csrf-wrong-token": "తప్పు టోకెన్ వచ్చింది, మీ వోటును గణించలేదు.",
 	"right-ajaxpoll-vote": "AJAX-ఆధారిత పోల్‍లలో వోటు వెయ్యవచ్చు",
 	"right-ajaxpoll-view-results": "AJAX-ఆధారిత పోల్‍లలో ఫలితాలు చూడవచ్చు",
 	"right-ajaxpoll-view-results-before-vote": "AJAX-ఆధారిత పోల్‍లలో వోటు వెయ్యకముందే ఫలితాలు చూడవచ్చు",

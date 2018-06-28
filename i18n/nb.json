@@ -26,7 +26,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "Du har ikke rettigheter til å vise resultatene av denne avstemningen før du har stemt.",
 	"ajaxpoll-revoke-vote": "Jeg vil trekke tilbake stemmen min",
 	"ajaxpoll-vote-revoked": "Din stemme har blitt tilbakekalt.",
-	"ajaxpoll-error-csrf-wrong-token": "En feilaktig token ble mottatt, og din stemme er ignorert.",
 	"right-ajaxpoll-vote": "Kan stemme i AJAX-baserte avstemninger",
 	"right-ajaxpoll-view-results": "Kan se resultater i AJAX-baserte avstemninger",
 	"right-ajaxpoll-view-results-before-vote": "Kan se resultater i AJAX-baserte avstemninger før stemme er avgitt",

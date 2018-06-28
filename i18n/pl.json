@@ -24,7 +24,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "Aby zobaczyć wyniki, musisz najpierw zagłosować.",
 	"ajaxpoll-revoke-vote": "Chcę wycofać swój głos",
 	"ajaxpoll-vote-revoked": "Twój głos został odwołany.",
-	"ajaxpoll-error-csrf-wrong-token": "Odebrano błędny token, a Twój głos został zignorowany.",
 	"right-ajaxpoll-vote": "Można głosować w sondażach opartych na technologii AJAX",
 	"right-ajaxpoll-view-results": "Można przejrzeć wyniki ankiet opartych na AJAX",
 	"right-ajaxpoll-view-results-before-vote": "Można przejrzeć wyniki ankiet opartych na AJAX przed głosowaniem",

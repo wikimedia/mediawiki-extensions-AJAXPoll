@@ -23,7 +23,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "Jūs neturi teisės peržiūrėti šios apklausos rezultatus prieš atiduodant savo balsą.",
 	"ajaxpoll-revoke-vote": "Noriu atsiimti savo balsą",
 	"ajaxpoll-vote-revoked": "Jūsų balsas buvo atsiimtas.",
-	"ajaxpoll-error-csrf-wrong-token": "Buvo gautas neteisingas žetonas ir jūsų balsas yra ignoruojamas.",
 	"right-ajaxpoll-vote": "Gali balsuoti AJAX apklausuose",
 	"right-ajaxpoll-view-results": "Gali peržiūrėti AJAX pagrįstų apklausų rezultatus",
 	"right-ajaxpoll-view-results-before-vote": "Gali peržiūrėti AJAX pagrįstų apklausų rezultatus prieš balsuojant",

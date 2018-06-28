@@ -21,6 +21,5 @@
 	"ajaxpoll-view-results-before-vote-permission": "Anda tidak diberi izin untuk melihat hasil pengundian tinjauan pada ini sebelum anda mengundi.",
 	"ajaxpoll-revoke-vote": "Saya ingin menarik balik undian saya",
 	"ajaxpoll-vote-revoked": "Undi anda telah dibatalkan.",
-	"ajaxpoll-error-csrf-wrong-token": "Token yang salah diterima, maka undian anda terpaksa diketepikan.",
 	"right-ajaxpoll-vote": "Boleh mengundi dalam tinjauan berasaskan AJAX"
 }

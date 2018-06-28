@@ -21,7 +21,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "Do häs nidd et Rääsch, ze belohre, wat erus jekumme es, ih dat De sällver affjeschtemmp häs.",
 	"ajaxpoll-revoke-vote": "Esch well ming Schtemm zerökträcke",
 	"ajaxpoll-vote-revoked": "Deng Schtemm es zerökjetroke.",
-	"ajaxpoll-error-csrf-wrong-token": "Mer hatte e Problehm med ener verkehte Kännong, dröm weed dat jäz nit jezallt.",
 	"right-ajaxpoll-vote": "Darf en Afschtemmonge metmaache, di op <i lang=\"en\">AJAX</i> boue",
 	"right-ajaxpoll-view-results": "Darv en Afschtemmonge, di op <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"Asynchronous JavaScript and XML\">AJAX</i> boue, belohre wadd erus kohm.",
 	"right-ajaxpoll-view-results-before-vote": "Darv en Afschtemmonge, di op <i lang=\"en\">AJAX</i> boue, belohre, wad erus kohm, der ohne sellver afjeschtemmp ze han.",

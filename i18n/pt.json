@@ -9,6 +9,11 @@
 			"Vitorvicentevalente"
 		]
 	},
+	"apihelp-pollsubmitvote-description": "Módulo API do AJAXPoll",
+	"apihelp-pollsubmitvote-summary": "Módulo API do AJAXPoll",
+	"apihelp-pollsubmitvote-param-poll": "Identificador do inquérito, como 832A5FA2C2583A5732B90CEFF658FE25; os identificadores são formados criando um resumo criptográfico da entrada (pergunta + opções de resposta, isto é, o texto entre os elementos <code>&lt;poll&gt;...&lt;/poll&gt;</code>) com o algoritmo criptográfico MD5 e convertendo o resultado para MAIÚSCULAS com a função <code>strtoupper</code> do PHP",
+	"apihelp-pollsubmitvote-param-answer": "Identificador numérico da opção de resposta; use 0 para revogar um voto anterior",
+	"apihelp-pollsubmitvote-example-1": "Dar a terceira (3) resposta ao inquérito que tem o identificador 832A5FA2C2583A5732B90CEFF658FE25",
 	"ajaxpoll-desc": "Permite realizar votações baseadas em AJAX usando a ''tag'' <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Páginas com votação",
 	"ajaxpoll-tracking-category-desc": "A página tem um <code>&lt;poll&gt;</code>",
@@ -26,7 +31,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "Não pode ver os resultados desta votação antes de votar.",
 	"ajaxpoll-revoke-vote": "Quero revogar o meu voto",
 	"ajaxpoll-vote-revoked": "O seu voto foi revogado.",
-	"ajaxpoll-error-csrf-wrong-token": "Foi recebida uma chave errada e o seu voto foi ignorado.",
 	"right-ajaxpoll-vote": "Pode votar em votações baseadas em AJAX",
 	"right-ajaxpoll-view-results": "Pode ver os resultados das votações baseadas em AJAX",
 	"right-ajaxpoll-view-results-before-vote": "Pode ver os resultados das votações baseadas em AJAX antes de votar",

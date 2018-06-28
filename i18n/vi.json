@@ -24,7 +24,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "Bạn không có quyền xem kết quả của biểu quyết này trước khi bạn đã bỏ phiếu.",
 	"ajaxpoll-revoke-vote": "Tôi muốn hủy bỏ lựa chọn của tôi",
 	"ajaxpoll-vote-revoked": "Bình chọn của bạn đã bị hủy bỏ.",
-	"ajaxpoll-error-csrf-wrong-token": "Nhận được một mã thông báo sai, và bình chọn của bạn đã bị bỏ qua.",
 	"right-ajaxpoll-vote": "Có thể bình chọn trong cuộc thăm dò dựa trên AJAX",
 	"right-ajaxpoll-view-results": "Có thể xem kết quả bình chọn trong thăm dò dựa trên AJAX",
 	"right-ajaxpoll-view-results-before-vote": "Có thể xem kết quả bình chọn trong các cuộc thăm dò dựa trên AJAX trước khi đưa ra bình chọn",

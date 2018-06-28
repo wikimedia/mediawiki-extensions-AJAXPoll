@@ -21,7 +21,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "Sètz pas autorizat a veire los resultats d'aqueste sondatge abans d'aver votat.",
 	"ajaxpoll-revoke-vote": "Vòli anullar mon vòte",
 	"ajaxpoll-vote-revoked": "Vòstre vòte es estat revocat.",
-	"ajaxpoll-error-csrf-wrong-token": "Un geton incorrècte es estat recebut, e vòstre vòte es ignorat.",
 	"right-ajaxpoll-vote": "Pòt votar dins de sondatges basats sus AJAX",
 	"right-ajaxpoll-view-results": "Pòt veire los resultats dels sondatges basats sus AJAX",
 	"right-ajaxpoll-view-results-before-vote": "Pòt veire los resultats dels sondatges basats sus AJAX abans d’aver votat",

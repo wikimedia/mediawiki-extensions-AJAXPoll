@@ -28,7 +28,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "U mag de resultaten van deze peiling niet bekijken voordat u hebt gestemd.",
 	"ajaxpoll-revoke-vote": "Ik wil mijn stem intrekken",
 	"ajaxpoll-vote-revoked": "Uw stem is ingetrokken.",
-	"ajaxpoll-error-csrf-wrong-token": "Er is een ongeldig token ontvangen en uw stem wordt genegeerd.",
 	"right-ajaxpoll-vote": "Kan in AJAX-gebaseerde peilingen stemmen",
 	"right-ajaxpoll-view-results": "Kan de resultaten weergeven in AJAX-gebaseerde peilingen",
 	"right-ajaxpoll-view-results-before-vote": "Kan resultaten bekijken in AJAX-gebaseerde peilingen alvorens gestemd te hebben",

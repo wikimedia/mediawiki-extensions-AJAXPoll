@@ -26,7 +26,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "لا يحق لك عرض نتائج هذا الاستطلاع قبل التصويت.",
 	"ajaxpoll-revoke-vote": "أريد سحب تصويتي",
 	"ajaxpoll-vote-revoked": "تم إلغاء تصويتك بنجاح.",
-	"ajaxpoll-error-csrf-wrong-token": "تم تلقي رمز مميز خاطئ، وتم تجاهل صوتك.",
 	"right-ajaxpoll-vote": "التصويت في الاستطلاعات المستندة إلى AJAX",
 	"right-ajaxpoll-view-results": "عرض النتائج في الاستطلاعات المستندة إلى AJAX",
 	"right-ajaxpoll-view-results-before-vote": "عرض النتائج في الاستطلاعات المستندة إلى AJAX قبل التصويت",

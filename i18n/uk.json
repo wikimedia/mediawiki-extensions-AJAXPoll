@@ -26,7 +26,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "Ви не можете переглядати результати цього опитування, поки не проголосуєте.",
 	"ajaxpoll-revoke-vote": "Я хочу скасувати свій голос",
 	"ajaxpoll-vote-revoked": "Ваш голос скасовано.",
-	"ajaxpoll-error-csrf-wrong-token": "Отримано неправильний маркер, Ваш голос не враховано.",
 	"right-ajaxpoll-vote": "можливість голосування в опитуваннях на основі AJAX",
 	"right-ajaxpoll-view-results": "можливість перегляду результатів опитувань на основі AJAX",
 	"right-ajaxpoll-view-results-before-vote": "Можна переглянути результати в AJAX основі опитувань до того, як проголосували",

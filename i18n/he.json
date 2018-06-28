@@ -25,7 +25,6 @@
 	"ajaxpoll-view-results-before-vote-permission": "אינך רשאי לצפות בתוצאות הסקר לפני הצבעה",
 	"ajaxpoll-revoke-vote": "אני רוצה לבטל את הקול שלי",
 	"ajaxpoll-vote-revoked": "קולך נפסל.",
-	"ajaxpoll-error-csrf-wrong-token": "התקבל אסימון לא מכון וההצבעה שלך לא נספרה.",
 	"right-ajaxpoll-vote": "הצבעה בסקרים מבוססי AJAX",
 	"right-ajaxpoll-view-results": "צפייה בתוצאות של סקרים מבוססי AJAX",
 	"right-ajaxpoll-view-results-before-vote": "צפייה בתוצאות של סקרים מבוססי AJAX לפני הצבעה",
