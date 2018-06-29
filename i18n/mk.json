@@ -5,6 +5,11 @@
 			"McDutchie"
 		]
 	},
+	"apihelp-pollsubmitvote-description": "Приложнички модиул за Анкета со AJAX",
+	"apihelp-pollsubmitvote-summary": "модиул за Анкета со AJAX",
+	"apihelp-pollsubmitvote-param-poll": "Назнака на анкетата, како 832A5FA2C2583A5732B90CEFF658FE25; назнаките се образуваат со тарабење на вносот (прашање + можни одговори, т.е. текстот помеѓу ознаките <code>&lt;poll&gt;...&lt;/poll&gt;</code>) со тарабен алгоритам MD5 и претворање на исходот во ГОЛЕМИ БУКВИ со функцијата <code>strtoupper</code> на PHP",
+	"apihelp-pollsubmitvote-param-answer": "Назнака на бројчениот одговор; 0 за да отповикате претходно даден глас",
+	"apihelp-pollsubmitvote-example-1": "Поднеси го третиот (3) одговор во анкетата што ја има назнаката 832A5FA2C2583A5732B90CEFF658FE25",
 	"ajaxpoll-desc": "Овозможува анкети на основа на AJAX со ознаката <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Страници со анкета",
 	"ajaxpoll-tracking-category-desc": "Страницата има <code>&lt;poll&gt;</code>.",
