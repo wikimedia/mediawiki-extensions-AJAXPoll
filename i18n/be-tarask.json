@@ -6,6 +6,7 @@
 			"Red Winged Duck"
 		]
 	},
+	"apihelp-pollsubmitvote-description": "AJAXPoll API-модуль",
 	"ajaxpoll-desc": "Дазваляе AJAX-апытаньні, якія можна дадаць тэгам <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Старонкі з апытаньнямі",
 	"ajaxpoll-tracking-category-desc": "На старонцы ёсьць <code>&lt;poll&gt;</code>.",

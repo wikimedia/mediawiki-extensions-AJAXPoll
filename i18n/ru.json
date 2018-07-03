@@ -7,9 +7,12 @@
 			"Kaganer",
 			"Lockal",
 			"Okras",
-			"Александр Сигачёв"
+			"Александр Сигачёв",
+			"Vlad5250"
 		]
 	},
+	"apihelp-pollsubmitvote-description": "Модуль AJAXPoll API",
+	"apihelp-pollsubmitvote-summary": "Модуль AJAXPoll API",
 	"ajaxpoll-desc": "Позволяет проводить голосования на основе AJAX с помощью тега <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Страницы с опросами",
 	"ajaxpoll-tracking-category-desc": "На странице есть <code>&lt;опрос&gt;</code>.",
