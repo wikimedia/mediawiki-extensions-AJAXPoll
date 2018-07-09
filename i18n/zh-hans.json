@@ -11,6 +11,11 @@
 			"Zoglun"
 		]
 	},
+	"apihelp-pollsubmitvote-description": "AJAXPoll API模块",
+	"apihelp-pollsubmitvote-summary": "AJAXPoll API模块",
+	"apihelp-pollsubmitvote-param-poll": "调查ID，例如832A5FA2C2583A5732B90CEFF658FE25；ID由输入内容（问题+回答选项，也就是在<code>&lt;poll&gt;...&lt;/poll&gt;</code>标签之间的文本）按MD5哈希算法格式化，并通过PHP的<code>strtoupper</code>函数转化结果为全大写",
+	"apihelp-pollsubmitvote-param-answer": "数字回答选项标识符；使用0以撤回此前投出的票",
+	"apihelp-pollsubmitvote-example-1": "提交第三个（3）答案至ID为832A5FA2C2583A5732B90CEFF658FE25的调查",
 	"ajaxpoll-desc": "使用<code>&lt;poll&gt;</code> 标签（tag）添加基于AJAX的投票功能。",
 	"ajaxpoll-tracking-category": "有投票的页面",
 	"ajaxpoll-tracking-category-desc": "页面有<code>&lt;poll&gt;</code>",
