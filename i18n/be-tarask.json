@@ -8,6 +8,7 @@
 	},
 	"apihelp-pollsubmitvote-description": "AJAXPoll API-модуль",
 	"apihelp-pollsubmitvote-summary": "API-модуль AJAXPoll",
+	"apihelp-pollsubmitvote-param-answer": "Лікавы ідэнтыфікатар вэрсіі адказу; ужывайце 0, каб адклікаць раней пададзены голас",
 	"ajaxpoll-desc": "Дазваляе AJAX-апытаньні, якія можна дадаць тэгам <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Старонкі з апытаньнямі",
 	"ajaxpoll-tracking-category-desc": "На старонцы ёсьць <code>&lt;poll&gt;</code>.",
