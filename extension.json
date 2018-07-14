@@ -1,6 +1,6 @@
 {
 	"name": "AJAX Poll",
-	"version": "2.0",
+	"version": "2.1",
 	"author": [
 		"Dariusz Siedlecki",
 		"Jack Phoenix",
@@ -54,6 +54,10 @@
 			],
 			"messages": [
 				"ajaxpoll-submitting"
+			],
+			"targets": [
+				"desktop",
+				"mobile"
 			]
 		}
 	},
