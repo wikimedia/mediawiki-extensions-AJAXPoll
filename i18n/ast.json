@@ -22,7 +22,7 @@
 	"ajaxpoll-view-results-before-vote-permission": "Nun tien permisu pa ver los resultaos d'esta encuesta antes de votar.",
 	"ajaxpoll-revoke-vote": "Quiero anular el mio votu",
 	"ajaxpoll-vote-revoked": "El to votu s'anuló.",
-	"right-ajaxpoll-vote": "Pue votar nes encuestes basaes n'AJAX",
+	"right-ajaxpoll-vote": "Puede votar nes encuestes basaes n'AJAX",
 	"right-ajaxpoll-view-results": "Pue ver los resultaos de les encuestes basaes n'AJAX",
 	"right-ajaxpoll-view-results-before-vote": "Pue ver los resultaos de les encuestes basaes n'AJAX enantes de votar",
 	"action-ajaxpoll-vote": "votar nes encuestes basaes n'AJAX",
