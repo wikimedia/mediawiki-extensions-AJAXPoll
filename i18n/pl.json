@@ -4,10 +4,12 @@
 			"BeginaFelicysym",
 			"Chrumps",
 			"Dariusz Siedlecki",
-			"Saper"
+			"Saper",
+			"Railfail536"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "Moduł API AJAXPoll",
+	"apihelp-pollsubmitvote-summary": "Moduł API AJAXPoll",
 	"ajaxpoll-desc": "Umożliwia wstawienie opartych na technologii AJAX ankiet przy pomocy znacznika <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Strony z głosowaniami",
 	"ajaxpoll-tracking-category-desc": "Na stronie znajduje się <code>&lt;poll&gt;</code>.",
