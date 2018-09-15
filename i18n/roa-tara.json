@@ -5,7 +5,9 @@
 			"Reder"
 		]
 	},
-	"ajaxpoll-desc": "Oermette sondagge basate sus a AJAX cu 'u tag <code>&lt;poll&gt;</code>",
+	"apihelp-pollsubmitvote-description": "Module API de AJAXPoll",
+	"apihelp-pollsubmitvote-summary": "Module API de AJAXPoll",
+	"ajaxpoll-desc": "Permette sondagge basate sus a AJAX cu 'u tag <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Pàgene cu 'nu sondagge",
 	"ajaxpoll-tracking-category-desc": "'A pàgene tène 'nu <code>&lt;poll&gt;</code>.",
 	"ajaxpoll-vote-update": "'U vote tune ha state aggiornate.",

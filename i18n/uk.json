@@ -6,7 +6,8 @@
 			"Base",
 			"Ата",
 			"Ahonc",
-			"Piramidion"
+			"Piramidion",
+			"Vlad5250"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "API-модуль AJAXPoll",
@@ -33,7 +34,7 @@
 	"ajaxpoll-vote-revoked": "Ваш голос скасовано.",
 	"right-ajaxpoll-vote": "можливість голосування в опитуваннях на основі AJAX",
 	"right-ajaxpoll-view-results": "можливість перегляду результатів опитувань на основі AJAX",
-	"right-ajaxpoll-view-results-before-vote": "Можна переглянути результати в AJAX основі опитувань до того, як проголосували",
+	"right-ajaxpoll-view-results-before-vote": "можливість перегляду результатів опитувань на основі AJAX до того, як проголосували",
 	"action-ajaxpoll-vote": "голосувати в опитуваннях на основі AJAX",
 	"action-ajaxpoll-view-results": "подивитися результати опитувань на основі AJAX",
 	"action-ajaxpoll-view-results-before-vote": "перегляд результатів опитувань на основі AJAX перед голосуванням"
