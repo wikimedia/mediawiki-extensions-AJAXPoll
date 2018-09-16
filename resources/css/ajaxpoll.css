@@ -17,9 +17,10 @@
 	font-weight: bold;
 }
 
-.ajaxpoll .ajaxpoll-answer-name, .ajaxpoll-answer-name-revoke {
+.ajaxpoll .ajaxpoll-answer-name,
+.ajaxpoll-answer-name-revoke {
 	margin-top: 5px;
-	padding-left: 0px;
+	padding-left: 0;
 	font-size: 0.9em;
 }
 
@@ -34,7 +35,7 @@
 .ajaxpoll .ajaxpoll-answer-vote {
 	border: 1px solid #ccc;
 	width: 100%;
-	margin-left: 0px;
+	margin-left: 0;
 	height: 12px;
 	font-size: 10px;
 	position: relative;
