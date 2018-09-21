@@ -7,6 +7,8 @@
 	},
 	"apihelp-pollsubmitvote-description": "Module API de AJAXPoll",
 	"apihelp-pollsubmitvote-summary": "Module API de AJAXPoll",
+	"apihelp-pollsubmitvote-param-answer": "Opzione ca controlle le resposte numereche; ause 0 pe luà 'nu vote d'apprime",
+	"apihelp-pollsubmitvote-example-1": "Conferme 'a terze (3) resposte d'u sondagge ca téne cumme ID 832A5FA2C2583A5732B90CEFF658FE25",
 	"ajaxpoll-desc": "Permette sondagge basate sus a AJAX cu 'u tag <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Pàgene cu 'nu sondagge",
 	"ajaxpoll-tracking-category-desc": "'A pàgene tène 'nu <code>&lt;poll&gt;</code>.",
