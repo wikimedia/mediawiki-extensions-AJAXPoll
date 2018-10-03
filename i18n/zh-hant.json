@@ -11,7 +11,7 @@
 	"apihelp-pollsubmitvote-description": "AJAXPoll API 模組",
 	"apihelp-pollsubmitvote-summary": "AJAXPoll API 模組",
 	"apihelp-pollsubmitvote-param-poll": "投票 ID，例如像是 832A5FA2C2583A5732B90CEFF658FE25。ID 的格式是將輸入內容（問題 + 答案選項，例如：介於 <code>&lt;poll&gt;...&lt;/poll&gt;</code> 標籤的文字）以 MD5 雜湊演算法處理後，以 PHP 的\n<code>strtoupper</code> 函式來轉換成大寫",
-	"apihelp-pollsubmitvote-param-answer": "數字形式答案選項識別，使用 0 來撤銷之前的投票",
+	"apihelp-pollsubmitvote-param-answer": "數值答案選項識別元，使用 0 來撤銷之前的投票",
 	"apihelp-pollsubmitvote-example-1": "對 ID 為 832A5FA2C2583A5732B90CEFF658FE25 的投票提交第三項（3）答案",
 	"ajaxpoll-desc": "使用<code>&lt;poll&gt;</code>添加基於AJAX的投票功能",
 	"ajaxpoll-tracking-category": "有投票的頁面",
