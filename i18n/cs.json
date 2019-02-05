@@ -6,9 +6,12 @@
 			"Mormegil",
 			"Paxt",
 			"Matěj Suchánek",
-			"Cvanca"
+			"Cvanca",
+			"Patriccck"
 		]
 	},
+	"apihelp-pollsubmitvote-description": "Modul AJAXPoll API",
+	"apihelp-pollsubmitvote-summary": "Modul AJAXPoll API",
 	"ajaxpoll-desc": "Umožňuje AJAXové průzkumy veřejného mínění pomocí značky <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Stránky s dotazníkem",
 	"ajaxpoll-vote-update": "Váš hlas byl aktualizován.",
