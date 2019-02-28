@@ -5,9 +5,12 @@
 			"Liftarn",
 			"Tobulos1",
 			"WikiPhoenix",
-			"Lokal Profil"
+			"Lokal Profil",
+			"Sturban"
 		]
 	},
+	"apihelp-pollsubmitvote-description": "AJAXPoll API-modul",
+	"apihelp-pollsubmitvote-summary": "AJAXPoll API-modul",
 	"ajaxpoll-desc": "Gör AJAX-baserade omröstningar med <code>&lt;poll&gt;</code>-tagg",
 	"ajaxpoll-tracking-category": "Sidor med en omröstning",
 	"ajaxpoll-tracking-category-desc": "Sidan har en <code>&lt;poll&gt;</code>.",
