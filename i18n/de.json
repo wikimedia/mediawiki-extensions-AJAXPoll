@@ -5,11 +5,13 @@
 			"Kghbln",
 			"Metalhead64",
 			"Tim 'Avatar' Bartel",
-			"Wikinaut"
+			"Wikinaut",
+			"Hwboehm"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "AJAXPoll-API-Modul",
 	"apihelp-pollsubmitvote-summary": "AJAXPoll-API-Modul",
+	"apihelp-pollsubmitvote-param-poll": "Poll-ID, wie z.B. 832A5FA2C2583A5732B90CEFF658FE25; IDs werden gebildet, indem die Eingabe (Frage + Antwortoptionen, d.h. der Text zwischen <code>&lt;poll&gt;...&lt;/poll&gt;</code> Tags) mit dem MD5-Hashing-Algorithmus gehasht wird und das Ergebnis in UPPERCASE mit der PHP Funktion <code>strtoupper</code> umgewandelt wird.",
 	"apihelp-pollsubmitvote-param-answer": "Numerische Antwortoption-Kennung. 0 verwenden zur Streichung einer früheren Stimme.",
 	"apihelp-pollsubmitvote-example-1": "Übermittelt die dritte (3) Antwort an die Abstimmung, die die Kennung 832A5FA2C2583A5732B90CEFF658FE25 hat.",
 	"ajaxpoll-desc": "Ergänzt das Tag <code>&lt;poll&gt;</code> zum Erstellen AJAX-gestützter Umfragen",
