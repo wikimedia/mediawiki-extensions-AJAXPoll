@@ -9,6 +9,7 @@
 	"url": "https://www.mediawiki.org/wiki/Extension:AJAX_Poll",
 	"descriptionmsg": "ajaxpoll-desc",
 	"type": "parserhook",
+	"license-name": "GFDL-1.2",
 	"requires": {
 		"MediaWiki": ">= 1.30.0"
 	},
