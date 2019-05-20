@@ -14,10 +14,12 @@
 			"Sophivorus",
 			"PoLuX124",
 			"Dgstranz",
-			"Edslov"
+			"Edslov",
+			"Ryo567"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "Módulo de la AIP de AJAXPoll",
+	"apihelp-pollsubmitvote-summary": "Módulo API AJAXPoll",
 	"ajaxpoll-desc": "Permite encuestas basadas en AJAX con etiqueta <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Páginas con una encuesta",
 	"ajaxpoll-tracking-category-desc": "La página tiene un <code>&lt;poll&gt;</code>.",
