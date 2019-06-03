@@ -2,11 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"ArnoLagrange",
-			"KuboF"
+			"KuboF",
+			"Mirin"
 		]
 	},
+	"apihelp-pollsubmitvote-description": "API-modulo AJAXPoll",
+	"apihelp-pollsubmitvote-summary": "API-modulo AJAXPoll",
 	"ajaxpoll-desc": "Ebligas enketojn bazitajn sur AJAX per markilo <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Paĝoj kun enketo",
+	"ajaxpoll-tracking-category-desc": "Ĉi tiu paĝo enhavas <code>&lt;poll&gt;</code>.",
 	"ajaxpoll-vote-update": "Via baloto estis ĝisdatigita",
 	"ajaxpoll-vote-add": "Via baloto estis aldonita",
 	"ajaxpoll-vote-error": "Estiĝis problemo kun pritrakto de via baloto, bonvolu reprovi.",
