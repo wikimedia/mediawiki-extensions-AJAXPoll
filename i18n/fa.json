@@ -10,13 +10,14 @@
 			"Taha",
 			"Rtemis",
 			"Signal89",
-			"Huji"
+			"Huji",
+			"FarsiNevis"
 		]
 	},
 	"ajaxpoll-desc": "رأی‌گیری‌های ای‌جکسی با برچسب <code>&lt;poll&gt;</code> را اجازه می‌دهد.",
 	"ajaxpoll-tracking-category": "صفحات با یک نظرسنجی",
 	"ajaxpoll-tracking-category-desc": "این صفحه کد <code>&lt;poll&gt;</code> دارد.",
-	"ajaxpoll-vote-update": "رأی شما به روز شد.",
+	"ajaxpoll-vote-update": "رأی شما روزآمد شد.",
 	"ajaxpoll-vote-add": "رأی شما افزوده شد.",
 	"ajaxpoll-vote-error": "در پردازش رأی شما مشکلی پیش آمده، لطفاً دوباره تلاش کنید.",
 	"ajaxpoll-percent-votes": "$1%از کل آرا",
