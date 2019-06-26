@@ -234,7 +234,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 	 * I am not amused by having to do all sorts of weird magic to get around jenkins
 	 * being stupid.
 	 *
-	 * @param Database $dbw Write connection to a database
+	 * @param IDatabase $dbw Write connection to a database
 	 * @param string $id Poll ID
 	 * @param string $userName User name or IP address of the person voting
 	 * @param int $answer Answer option #
@@ -257,7 +257,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 	}
 
 	/**
-	 * @param Database $dbw Write connection to a database
+	 * @param IDatabase $dbw Write connection to a database
 	 * @param string $id Poll ID
 	 * @param string $userName User name or IP address of the person voting
 	 * @return string Name of an i18n msg to show to the user
@@ -275,7 +275,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 	}
 
 	/**
-	 * @param Database $dbw Write connection to a database
+	 * @param IDatabase $dbw Write connection to a database
 	 * @param string $id Poll ID
 	 * @param string $userName User name or IP address of the person voting
 	 * @param int $answer Answer option #
