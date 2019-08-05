@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Geopoet",
-			"McDutchie"
+			"McDutchie",
+			"Brazal.dang"
 		]
 	},
 	"ajaxpoll-desc": "Minatugot sa nakabaseng pirilian kan AJAX na igwang <code>&lt;poll&gt;</code> na tatak",
