@@ -12,7 +12,7 @@
 	"ajaxpoll-vote-add": "An saimong boto pinagdugang.",
 	"ajaxpoll-vote-error": "Igwa nin sarong problem sa pagpoproseso kan saimong boto, tabi paki-otroha giraray.",
 	"ajaxpoll-percent-votes": "$1% kan gabos na mga boto",
-	"ajaxpoll-your-vote": "Ika nakapagboto na para sa \"$1\" nin $2, ika mapuwedeng makapagliwat kan saimong boto sa paagi nin pag-klik kan sarong simbag sa ibaba.",
+	"ajaxpoll-your-vote": "Ika nakapagboto na para sa \"$1\" nin $3 sa $4. Ika mapuwedeng makapagliwat kan saimong boto sa paagi nin pag-klik kan sarong simbag sa ibaba.",
 	"ajaxpoll-no-vote": "Pakiboto tabi sa ibaba.",
 	"ajaxpoll-no-vote-results-after-voting": "Tabi magboto sa ibaba. An mga resulta ipapahiling kunsoarin na ika nakapagboto na.",
 	"ajaxpoll-info": "Igwa nin {{PLURAL:$1|sarong boto|mga $1 boto}} magpoon na an pirilian pinagmukna kan $2.",
