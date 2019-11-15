@@ -20,11 +20,11 @@
 	"ajaxpoll-vote-update": "Din stemme har blitt oppdatert.",
 	"ajaxpoll-vote-add": "Din stemme har blitt lagt til.",
 	"ajaxpoll-vote-error": "Det oppstod et problem med behandlingen av din stemme, vennligst prøv igjen.",
-	"ajaxpoll-percent-votes": "$1% av alle stemmer",
+	"ajaxpoll-percent-votes": "$1&nbsp;% av alle stemmer",
 	"ajaxpoll-your-vote": "Du stemte for «$1» $3 kl. $4. Du kan endre stemmen din ved å klikke på et annet svar nedenfor.",
 	"ajaxpoll-no-vote": "Vennligst stem nedenfor.",
 	"ajaxpoll-no-vote-results-after-voting": "Vennligst stem under. Resultatene vil bli vist når du har stemt.",
-	"ajaxpoll-info": "Det var {{PLURAL:$1|en stemme|$1 stemmer}} siden spørreundersøkelsen ble opprettet den $2.",
+	"ajaxpoll-info": "Det har kommet inn {{PLURAL:$1|én stemme|$1 stemmer}} siden spørreundersøkelsen ble opprettet den $2.",
 	"ajaxpoll-submitting": "Vennligst vent, sender inn stemmen din.",
 	"ajaxpoll-vote-permission": "Du har ikke rettigheter til å stemme.",
 	"ajaxpoll-view-results-permission": "Du har ikke rettigheter til å vise resultatene i denne avstemningen.",
@@ -34,7 +34,7 @@
 	"right-ajaxpoll-vote": "Kan stemme i AJAX-baserte avstemninger",
 	"right-ajaxpoll-view-results": "Kan se resultater i AJAX-baserte avstemninger",
 	"right-ajaxpoll-view-results-before-vote": "Kan se resultater i AJAX-baserte avstemninger før stemme er avgitt",
-	"action-ajaxpoll-vote": "stem i AJAX-baserte avstemninger",
+	"action-ajaxpoll-vote": "stemme i AJAX-baserte avstemninger",
 	"action-ajaxpoll-view-results": "se resultater i AJAX-baserte avstemninger",
 	"action-ajaxpoll-view-results-before-vote": "se resultater i AJAX-baserte avstemninger før avstemming"
 }
