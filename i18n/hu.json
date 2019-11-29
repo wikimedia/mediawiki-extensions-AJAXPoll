@@ -12,7 +12,7 @@
 	"ajaxpoll-vote-add": "A szavazatod rögzítve.",
 	"ajaxpoll-vote-error": "Hiba történt a szavazás feldolgozása során, próbáld meg később.",
 	"ajaxpoll-percent-votes": "Az összes szavazat $1%-a",
-	"ajaxpoll-your-vote": "Már szavaztál a \"$1\"-re a $2-n, megváltoztathatod a szavazatodat az alábbi válaszra kattintva.",
+	"ajaxpoll-your-vote": "Már szavaztál a \"$1\"-re ekkor: $4 $3 Megváltoztathatod a szavazatodat egy másik válaszra kattintva.",
 	"ajaxpoll-no-vote": "Kérlek szavazz alant.",
 	"ajaxpoll-no-vote-results-after-voting": "Alább szavazhatsz. Az eredményeket szavazatod leadása után láthatod.",
 	"ajaxpoll-info": "Összesen {{PLURAL:$1|egy|$1}} szavazat érkezett a $2 óta.",
