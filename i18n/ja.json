@@ -4,9 +4,12 @@
 			"Fryed-peach",
 			"Shirayuki",
 			"Shun Fukuzawa",
-			"Sujiniku"
+			"Sujiniku",
+			"Aefgh39622"
 		]
 	},
+	"apihelp-pollsubmitvote-description": "AJAXPoll APIモジュール",
+	"apihelp-pollsubmitvote-summary": "AJAXPoll APIモジュール",
 	"ajaxpoll-desc": "<code>&lt;poll&gt;</code> タグで Ajax ベースの投票所を使用できるようにする",
 	"ajaxpoll-tracking-category": "投票所があるページ",
 	"ajaxpoll-vote-update": "投票を更新しました。",
