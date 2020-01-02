@@ -118,7 +118,7 @@ class AJAXPoll {
 
 		switch ( $lines[0] ) {
 			case 'STATS':
-				$ret = self::buildStats( $id, $userName );
+				$ret = self::buildStats();
 				break;
 			default:
 				$ret = Html::rawElement( 'div',
@@ -133,7 +133,7 @@ class AJAXPoll {
 		return $ret;
 	}
 
-	private static function buildStats( $id, $userName ) {
+	private static function buildStats() {
 		$dbr = wfGetDB( DB_REPLICA );
 
 		$res = $dbr->select(
