@@ -29,7 +29,7 @@ var setupEventHandlers = function () {
 		choice.find( 'input' ).prop( 'checked', 'checked' );
 		$( '#ajaxpoll-ajax-' + poll ).text( mw.message( 'ajaxpoll-submitting' ).text() ).css( 'display', 'inline-block' );
 
-		( new mw.Api() ).postWithToken( 'edit', {
+		( new mw.Api() ).postWithToken( 'csrf', {
 			action: 'pollsubmitvote',
 			format: 'json',
 			poll: poll,
