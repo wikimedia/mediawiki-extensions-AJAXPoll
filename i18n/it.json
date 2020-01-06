@@ -2,9 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
-			"Gianfranco"
+			"Gianfranco",
+			"Dansita"
 		]
 	},
+	"apihelp-pollsubmitvote-description": "Modulo dell'API di AJAXPoll",
+	"apihelp-pollsubmitvote-summary": "Modulo API AJAXPoll",
 	"ajaxpoll-desc": "Permette sondaggi tramite AJAX con il tag <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Pagine con un sondaggio",
 	"ajaxpoll-tracking-category-desc": "La pagina ha un <code>&lt;poll&gt;</code>.",
