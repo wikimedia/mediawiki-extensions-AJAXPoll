@@ -1,6 +1,6 @@
 {
 	"name": "AJAX Poll",
-	"version": "2.1",
+	"version": "2.2",
 	"author": [
 		"Dariusz Siedlecki",
 		"Jack Phoenix",
@@ -11,7 +11,7 @@
 	"type": "parserhook",
 	"license-name": "GFDL-1.2",
 	"requires": {
-		"MediaWiki": ">= 1.30.0"
+		"MediaWiki": ">= 1.34.0"
 	},
 	"GroupPermissions": {
 		"*": {
@@ -39,7 +39,8 @@
 	},
 	"AutoloadClasses": {
 		"AJAXPoll": "includes/AJAXPoll.class.php",
-		"ApiAJAXPollSubmitVote": "includes/api/ApiAJAXPollSubmitVote.php"
+		"ApiAJAXPollSubmitVote": "includes/api/ApiAJAXPollSubmitVote.php",
+		"MigrateOldAJAXPollUserColumnsToActor": "maintenance/migrateOldAJAXPollUserColumnsToActor.php"
 	},
 	"ResourceModules": {
 		"ext.ajaxpoll": {
