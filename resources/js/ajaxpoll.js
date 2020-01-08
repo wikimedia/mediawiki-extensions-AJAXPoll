@@ -1,5 +1,4 @@
 /* eslint-disable no-implicit-globals, one-var */
-/* global $, mw */
 
 var ajaxpollTmp;
 
