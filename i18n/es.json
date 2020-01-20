@@ -15,11 +15,15 @@
 			"PoLuX124",
 			"Dgstranz",
 			"Edslov",
-			"Ryo567"
+			"Ryo567",
+			"Agusbou2015"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "Módulo de la AIP de AJAXPoll",
 	"apihelp-pollsubmitvote-summary": "Módulo API AJAXPoll",
+	"apihelp-pollsubmitvote-param-poll": "Identificador de la encuesta, como 832A5FA2C2583A5732B90CEFF658FE25; los identificadores se forman haciendo hashing de la entrada (opciones de pregunta + respuesta, es decir, el texto entre las etiquetas <code>&lt;poll&gt;...&lt;/poll&gt;</code>) con el algoritmo hashing MD5 y convirtiendo el resultado a MAYÚSCULAS con la función <code>strtoupper</code> de PHP",
+	"apihelp-pollsubmitvote-param-answer": "Identificador de opción de respuesta numérica; usa 0 para revocar un voto previamente emitido",
+	"apihelp-pollsubmitvote-example-1": "Envía la tercera (3) respuesta a la encuesta que tiene el ID 832A5FA2C2583A5732B90CEFF658FE25",
 	"ajaxpoll-desc": "Permite encuestas basadas en AJAX con etiqueta <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Páginas con una encuesta",
 	"ajaxpoll-tracking-category-desc": "La página tiene un <code>&lt;poll&gt;</code>.",
