@@ -34,17 +34,11 @@ class AJAXPoll {
 	 * @return string
 	 */
 	public static function render( $input, $args = [], Parser $parser, $frame ) {
-		global $wgUser, $wgRequest;
+		global $wgUser;
 
 		$parser->getOutput()->updateCacheExpiry( 0 );
 		$parser->addTrackingCategory( 'ajaxpoll-tracking-category' );
 		$parser->getOutput()->addModules( 'ext.ajaxpoll' );
-
-		if ( $wgUser->getName() == '' ) {
-			$userName = $wgRequest->getIP();
-		} else {
-			$userName = $wgUser->getName();
-		}
 
 		// ID of the poll
 		if ( isset( $args['id'] ) ) {
@@ -125,7 +119,7 @@ class AJAXPoll {
 					[
 						'id' => 'ajaxpoll-container-' . $id
 					],
-					self::buildHTML( $id, $userName, $lines )
+					self::buildHTML( $id, $wgUser, $lines )
 				);
 				break;
 		}
@@ -141,7 +135,7 @@ class AJAXPoll {
 			[
 				'COUNT(*)',
 				'COUNT(DISTINCT poll_id)',
-				'COUNT(DISTINCT poll_user)',
+				'COUNT(DISTINCT poll_actor)',
 				'TIMEDIFF(NOW(), MAX(poll_date))'
 			],
 			[],
@@ -183,17 +177,12 @@ During the last 48 hours, $tab2[0] votes have been given.";
 	}
 
 	public static function submitVote( $id, $answer ) {
-		global $wgUser, $wgRequest;
-
-		if ( $wgUser->getName() == '' ) {
-			$userName = $wgRequest->getIP();
-		} else {
-			$userName = $wgUser->getName();
-		}
+		global $wgUser;
 
 		if ( !$wgUser->isAllowed( 'ajaxpoll-vote' ) || $wgUser->isBot() ) {
-			return self::buildHTML( $id, $userName );
+			return self::buildHTML( $id, $wgUser );
 		}
+		$user = $wgUser;
 
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->startAtomic( __METHOD__ );
@@ -206,24 +195,24 @@ During the last 48 hours, $tab2[0] votes have been given.";
 				'COUNT(*) AS count',
 				[
 					'poll_id' => $id,
-					'poll_user' => $userName
+					'poll_actor' => $user->getActorId()
 				],
 				__METHOD__
 			);
 			$row = $dbw->fetchRow( $q );
 
 			if ( $row['count'] > 0 ) {
-				$pollContainerText = self::updateVote( $dbw, $id, $userName, $answer );
+				$pollContainerText = self::updateVote( $dbw, $id, $user, $answer );
 			} else {
-				$pollContainerText = self::addVote( $dbw, $id, $userName, $answer );
+				$pollContainerText = self::addVote( $dbw, $id, $user, $answer );
 			}
 		} else { // revoking a vote
-			$pollContainerText = self::revokeVote( $dbw, $id, $userName );
+			$pollContainerText = self::revokeVote( $dbw, $id, $user );
 		}
 
 		$dbw->endAtomic( __METHOD__ );
 
-		return self::buildHTML( $id, $userName, '', $pollContainerText );
+		return self::buildHTML( $id, $user, '', $pollContainerText );
 	}
 
 	/**
@@ -236,17 +225,17 @@ During the last 48 hours, $tab2[0] votes have been given.";
 	 *
 	 * @param IDatabase $dbw Write connection to a database
 	 * @param string $id Poll ID
-	 * @param string $userName User name or IP address of the person voting
+	 * @param User $user User (object) who is voting
 	 * @param int $answer Answer option #
 	 * @return string Name of an i18n msg to show to the user
 	 */
-	public static function addVote( $dbw, $id, $userName, $answer ) {
+	public static function addVote( $dbw, $id, $user, $answer ) {
 		global $wgRequest;
 		$insertQuery = $dbw->insert(
 			'ajaxpoll_vote',
 			[
 				'poll_id' => $id,
-				'poll_user' => $userName,
+				'poll_actor' => $user->getActorId(),
 				'poll_ip' => $wgRequest->getIP(),
 				'poll_answer' => $answer,
 				'poll_date' => wfTimestampNow()
@@ -259,15 +248,15 @@ During the last 48 hours, $tab2[0] votes have been given.";
 	/**
 	 * @param IDatabase $dbw Write connection to a database
 	 * @param string $id Poll ID
-	 * @param string $userName User name or IP address of the person voting
+	 * @param User $user User (object) who is voting
 	 * @return string Name of an i18n msg to show to the user
 	 */
-	public static function revokeVote( $dbw, $id, $userName ) {
+	public static function revokeVote( $dbw, $id, $user ) {
 		$deleteQuery = $dbw->delete(
 			'ajaxpoll_vote',
 			[
 				'poll_id' => $id,
-				'poll_user' => $userName,
+				'poll_actor' => $user->getActorId()
 			],
 			__METHOD__
 		);
@@ -277,11 +266,11 @@ During the last 48 hours, $tab2[0] votes have been given.";
 	/**
 	 * @param IDatabase $dbw Write connection to a database
 	 * @param string $id Poll ID
-	 * @param string $userName User name or IP address of the person voting
+	 * @param User $user User (object) who is voting
 	 * @param int $answer Answer option #
 	 * @return string Name of an i18n msg to show to the user
 	 */
-	public static function updateVote( $dbw, $id, $userName, $answer ) {
+	public static function updateVote( $dbw, $id, $user, $answer ) {
 		$updateQuery = $dbw->update(
 			'ajaxpoll_vote',
 			[
@@ -290,7 +279,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 			],
 			[
 				'poll_id' => $id,
-				'poll_user' => $userName,
+				'poll_actor' => $user->getActorId()
 			],
 			__METHOD__
 		);
@@ -301,7 +290,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 		return htmlspecialchars( Sanitizer::decodeCharReferences( $string ), ENT_QUOTES );
 	}
 
-	private static function buildHTML( $id, $userName, $lines = '', $extra_from_ajax = '' ) {
+	private static function buildHTML( $id, $user, $lines = '', $extra_from_ajax = '' ) {
 		global $wgTitle, $wgUser, $wgLang;
 
 		$dbr = wfGetDB( DB_REPLICA );
@@ -350,7 +339,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 			[ 'poll_answer', 'poll_date' ],
 			[
 				'poll_id' => $id,
-				'poll_user' => $userName
+				'poll_actor' => $user->getActorId()
 			],
 			__METHOD__
 		);
@@ -646,5 +635,30 @@ During the last 48 hours, $tab2[0] votes have been given.";
 				$patchPath . 'create-table--ajaxpoll_vote.sql'
 			);
 		}
+
+		// Actor support
+
+		// 1) add new actor column
+		// @codingStandardsIgnoreLine
+		$updater->addExtensionField( 'ajaxpoll_vote', 'poll_actor', $patchPath . 'add-field-ajaxpoll_vote-poll_actor.sql' );
+
+		// 2) do magic
+		// This includes, but is not limited to, changing the PRIMARY KEY,
+		// adding a new, UNIQUE INDEX on a new AUTO_INCREMENT field (which the
+		// script also creates) and, of course, finally the new column is populated
+		// with data.
+		// PITFALL WARNING! Do NOT change this to $updater->runMaintenance,
+		// THEY ARE NOT THE SAME THING and this MUST be using addExtensionUpdate
+		// instead for the code to work as desired!
+		// HT Skizzerz
+		$updater->addExtensionUpdate( [
+			'runMaintenance',
+			'MigrateOldAJAXPollUserColumnsToActor',
+			'../maintenance/migrateOldAJAXPollUserColumnsToActor.php'
+		] );
+
+		// 3) drop the now unused column
+		// @codingStandardsIgnoreLine
+		$updater->dropExtensionField( 'ajaxpoll_vote', 'poll_user', $patchPath . 'drop-field-poll_user-ajaxpoll_vote.sql' );
 	}
 }
