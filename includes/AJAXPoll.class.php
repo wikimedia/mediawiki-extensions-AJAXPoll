@@ -597,6 +597,9 @@ During the last 48 hours, $tab2[0] votes have been given.";
 		$db = $updater->getDB();
 
 		$patchPath = __DIR__ . '/../sql/';
+		if ( $db->getType() == 'postgres' ) {
+			$patchPath .= 'postgres/';
+		}
 
 		if ( $db->tableExists( 'poll_info' ) ) {
 			# poll_info.poll_title field was dropped in AJAXPoll version 1.72
