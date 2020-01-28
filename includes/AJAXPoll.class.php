@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * AJAX Poll class
  * Created by Dariusz Siedlecki, based on the work by Eric David.
@@ -75,37 +77,40 @@ class AJAXPoll {
 			}
 		}
 
-		if ( empty( $row->count ) ) {
-			$dbw->insert(
-				'ajaxpoll_info',
-				[
-					'poll_id' => $id,
-					'poll_show_results_before_voting' => $showResultsBeforeVoting,
-					'poll_txt' => $input,
-					'poll_date' => wfTimestampNow(),
-				],
-				__METHOD__,
-				// @todo FIXME: This is a crappy hack to fix obviously incorrect and nonsensical
-				// "Error: 1062 Duplicate entry '<whatever>' for key 'PRIMARY' (localhost)"
-				// error messages, one of which I saw when literally making the very first poll
-				// on a wiki, so it goes w/o saying that there can't (or at least shouldn't) be
-				// any other entries in AJAXPoll's DB tables at that time.
-				// All the DB queries in this method should be refactored and ideally instead
-				// of insert()/update() this'd use upsert().
-				// @see https://phabricator.wikimedia.org/T163625
-				[ 'IGNORE' ]
-			);
-		} else {
-			$dbw->update(
-				'ajaxpoll_info',
-				[
-					'poll_show_results_before_voting' => $showResultsBeforeVoting,
-				],
-				[
-					'poll_id' => $id,
-				],
-				__METHOD__
-			);
+		$readonly = MediaWikiServices::getInstance()->getReadOnlyMode()->getReason();
+		if ( !$readonly ) {
+			if ( empty( $row->count ) ) {
+				$dbw->insert(
+					'ajaxpoll_info',
+					[
+						'poll_id' => $id,
+						'poll_show_results_before_voting' => $showResultsBeforeVoting,
+						'poll_txt' => $input,
+						'poll_date' => wfTimestampNow(),
+					],
+					__METHOD__,
+					// @todo FIXME: This is a crappy hack to fix obviously incorrect and nonsensical
+					// "Error: 1062 Duplicate entry '<whatever>' for key 'PRIMARY' (localhost)"
+					// error messages, one of which I saw when literally making the very first poll
+					// on a wiki, so it goes w/o saying that there can't (or at least shouldn't) be
+					// any other entries in AJAXPoll's DB tables at that time.
+					// All the DB queries in this method should be refactored and ideally instead
+					// of insert()/update() this'd use upsert().
+					// @see https://phabricator.wikimedia.org/T163625
+					[ 'IGNORE' ]
+				);
+			} else {
+				$dbw->update(
+					'ajaxpoll_info',
+					[
+						'poll_show_results_before_voting' => $showResultsBeforeVoting,
+					],
+					[
+						'poll_id' => $id,
+					],
+					__METHOD__
+				);
+			}
 		}
 
 		$dbw->endAtomic( __METHOD__ );
@@ -119,7 +124,7 @@ class AJAXPoll {
 					[
 						'id' => 'ajaxpoll-container-' . $id
 					],
-					self::buildHTML( $id, $wgUser, $lines )
+					self::buildHTML( $id, $wgUser, $readonly, $lines )
 				);
 				break;
 		}
@@ -179,10 +184,16 @@ During the last 48 hours, $tab2[0] votes have been given.";
 	public static function submitVote( $id, $answer ) {
 		global $wgUser;
 
+		$readonly = MediaWikiServices::getInstance()->getReadOnlyMode()->getReason();
+
 		if ( !$wgUser->isAllowed( 'ajaxpoll-vote' ) || $wgUser->isBot() ) {
-			return self::buildHTML( $id, $wgUser );
+			return self::buildHTML( $id, $wgUser, $readonly );
 		}
 		$user = $wgUser;
+
+		if ( $readonly ) {
+			return self::buildHTML( $id, $user, $readonly, '' );
+		}
 
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->startAtomic( __METHOD__ );
@@ -212,7 +223,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 
 		$dbw->endAtomic( __METHOD__ );
 
-		return self::buildHTML( $id, $user, '', $pollContainerText );
+		return self::buildHTML( $id, $user, false, '', $pollContainerText );
 	}
 
 	/**
@@ -290,7 +301,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 		return htmlspecialchars( Sanitizer::decodeCharReferences( $string ), ENT_QUOTES );
 	}
 
-	private static function buildHTML( $id, $user, $lines = '', $extra_from_ajax = '' ) {
+	private static function buildHTML( $id, $user, $readonly, $lines = '', $extra_from_ajax = '' ) {
 		global $wgTitle, $wgUser, $wgLang;
 
 		$dbr = wfGetDB( DB_REPLICA );
@@ -489,7 +500,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 					);
 				}
 
-				if ( $wgUser->isAllowed( 'ajaxpoll-vote' ) ) {
+				if ( !$readonly && $wgUser->isAllowed( 'ajaxpoll-vote' ) ) {
 					$ret .= Html::rawElement( 'div',
 						[
 							'id' => 'ajaxpoll-answer-' . $xid,
@@ -519,6 +530,12 @@ During the last 48 hours, $tab2[0] votes have been given.";
 					);
 				} else {
 
+					if ( !$wgUser->isAllowed( 'ajaxpoll-vote' ) ) {
+						$disabledReason = wfMessage( 'ajaxpoll-vote-permission' )->escaped();
+					} else {
+						$disabledReason = wfMessage( 'ajaxpoll-readonly', $readonly )->escaped();
+					}
+
 					$ret .= Html::rawElement( 'div',
 						[
 							'id' => 'ajaxpoll-answer-' . $xid,
@@ -533,10 +550,8 @@ During the last 48 hours, $tab2[0] votes have been given.";
 							Html::rawElement( 'label',
 								[
 									'for' => 'ajaxpoll-post-answer-' . $xid,
-									// @todo FIXME: fugly inline JS
-									'onclick' => '$("#ajaxpoll-ajax-"' . $xid . '").html("' .
-										wfMessage( 'ajaxpoll-vote-permission' )->text() .
-										'").css("display","block");'
+									'id' => 'ajaxpoll-label-disabled',
+									'title' => $disabledReason
 								],
 								Html::element( 'input',
 									[
@@ -549,7 +564,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 								) .
 								self::escapeContent( $lines[$i] )
 							)
-						),
+						) .
 						$resultBar
 					);
 				}

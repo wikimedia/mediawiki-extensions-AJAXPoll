@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Dariusz Siedlecki",
+			"Ostrzyciel",
 			"Thomas Gries"
 		]
 	},
@@ -23,6 +24,7 @@
 	"ajaxpoll-info": "There {{PLURAL:$1|was one vote|were $1 votes}} since the poll was created on $2.",
 	"ajaxpoll-submitting": "Please wait, submitting your vote.",
 	"ajaxpoll-vote-permission": "You are not entitled to vote.",
+	"ajaxpoll-readonly": "This poll cannot be voted on, the database is locked for the following reason: $1.",
 	"ajaxpoll-view-results-permission": "You are not entitled to view results of this poll.",
 	"ajaxpoll-view-results-before-vote-permission": "You are not entitled to view results of this poll before you have voted.",
 	"ajaxpoll-revoke-vote": "I want to revoke my vote",

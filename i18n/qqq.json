@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Okras",
+			"Ostrzyciel",
 			"Shirayuki",
 			"Umherirrender"
 		]
@@ -24,6 +25,7 @@
 	"ajaxpoll-info": "Parameters:\n* $1 - the number of votes\n* $2 - the time and date when the poll was started",
 	"ajaxpoll-submitting": "Unused at this time.\n\nThe identical message is hard-coded in JavaScript code (resources/ajaxpoll.js), and is not localized.",
 	"ajaxpoll-vote-permission": "Text for viewers who do not have the right to vote.\n\nSee also:\n* {{msg-mw|Ajaxpoll-revoke-vote}}\n* {{msg-mw|Ajaxpoll-no-vote}}",
+	"ajaxpoll-readonly": "Text for when the database is in readonly mode and the poll cannot be voted on.\n\nParameters:\n* $1 - the reason for which the database was locked\n\nSee also:\n* {{msg-mw|Ajaxpoll-vote-permission}}\n* {{msg-mw|Readonlywarning}}",
 	"ajaxpoll-view-results-permission": "Used if the user is not allowed to view.\n\nSee also:\n* {{msg-mw|Ajaxpoll-view-results-before-vote-permission}}",
 	"ajaxpoll-view-results-before-vote-permission": "Used if the user is allowed to vote but the user has not voted.\n\nSee also:\n* {{msg-mw|Ajaxpoll-view-results-permission}}",
 	"ajaxpoll-revoke-vote": "Voters can revoke their vote and this is the message text to be clicked when a voter wants to revoke a previous vote.\n\nThe text is only shown for persons who already voted, in an extra line below the block of answers.\n\nSee also:\n* {{msg-mw|Ajaxpoll-no-vote}}\n* {{msg-mw|Ajaxpoll-vote-permission}}",

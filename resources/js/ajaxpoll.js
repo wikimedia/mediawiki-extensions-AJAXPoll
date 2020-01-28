@@ -23,6 +23,12 @@ var setupEventHandlers = function () {
 		event.preventDefault();
 		event.stopPropagation();
 		poll = choice.attr( 'poll' );
+
+		if ( $( this ).attr( 'id' ) === 'ajaxpoll-label-disabled' ) {
+			$( '#ajaxpoll-ajax-' + poll ).text( $( this ).attr( 'title' ) ).css( 'display', 'inline-block' );
+			return;
+		}
+
 		answer = choice.attr( 'answer' );
 		choice.find( '.ajaxpoll-hover-vote' ).addClass( 'ajaxpoll-checkevent' );
 		choice.find( 'input' ).prop( 'checked', 'checked' );
