@@ -27,6 +27,7 @@
 	"ajaxpoll-info": "Det var {{PLURAL:$1|en röst|$1 röster}} sedan omröstningen skapades den $2.",
 	"ajaxpoll-submitting": "Var god vänta, skickar in din röst.",
 	"ajaxpoll-vote-permission": "Du är inte berättigad att rösta.",
+	"ajaxpoll-readonly": "Denna omröstning kan inte röstas, databasen är låst av följande anledning: $1.",
 	"ajaxpoll-view-results-permission": "Du har inte rätt att se resultat från denna enkät.",
 	"ajaxpoll-view-results-before-vote-permission": "Du har inte rätt att se resultat från denna enkät innan du har röstat.",
 	"ajaxpoll-revoke-vote": "Jag vill återkalla min röst",

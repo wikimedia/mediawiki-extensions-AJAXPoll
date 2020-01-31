@@ -31,6 +31,7 @@
 	"ajaxpoll-info": "Il y avait {{PLURAL:$1|un vote|$1 votes}} depuis l’élaboration du sondage au $2.",
 	"ajaxpoll-submitting": "Veuillez patienter, envoi de votre vote.",
 	"ajaxpoll-vote-permission": "Vous n’êtes pas autorisé à voter.",
+	"ajaxpoll-readonly": "Ce sondage ne peut pas recevoir de réponse, la base de données est verrouillée pour la raison suivante : $1.",
 	"ajaxpoll-view-results-permission": "Vous n’êtes pas autorisé à voir les résultats de ce sondage.",
 	"ajaxpoll-view-results-before-vote-permission": "Vous n’êtes pas autorisé à voir les résultats de ce sondage avant d’avoir vous-même voté.",
 	"ajaxpoll-revoke-vote": "Je veux annuler mon vote",

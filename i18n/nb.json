@@ -27,6 +27,7 @@
 	"ajaxpoll-info": "Det har kommet inn {{PLURAL:$1|én stemme|$1 stemmer}} siden spørreundersøkelsen ble opprettet den $2.",
 	"ajaxpoll-submitting": "Vennligst vent, sender inn stemmen din.",
 	"ajaxpoll-vote-permission": "Du har ikke rettigheter til å stemme.",
+	"ajaxpoll-readonly": "Denne avstemningen kan ikke stemmes i fordi databasen er låst av følgende årsak: $1.",
 	"ajaxpoll-view-results-permission": "Du har ikke rettigheter til å vise resultatene i denne avstemningen.",
 	"ajaxpoll-view-results-before-vote-permission": "Du har ikke rettigheter til å vise resultatene av denne avstemningen før du har stemt.",
 	"ajaxpoll-revoke-vote": "Jeg vil trekke tilbake stemmen min",

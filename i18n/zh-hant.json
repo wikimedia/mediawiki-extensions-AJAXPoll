@@ -27,6 +27,7 @@
 	"ajaxpoll-info": "自$2建立以來共有{{PLURAL:$1|一人投票|$1人投票}}。",
 	"ajaxpoll-submitting": "請稍候，正提交您的投票.",
 	"ajaxpoll-vote-permission": "您無權投票。",
+	"ajaxpoll-readonly": "無法對此投票，資料庫出於以下原因被鎖定：$1。",
 	"ajaxpoll-view-results-permission": "你無權檢視此投票的結果。",
 	"ajaxpoll-view-results-before-vote-permission": "你無權在你未投票前查看此投票的結果。",
 	"ajaxpoll-revoke-vote": "我想撤銷我的投票",
