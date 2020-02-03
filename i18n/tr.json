@@ -27,6 +27,7 @@
 	"ajaxpoll-info": "Anket $2 oluşturulduğundan beri {{PLURAL:$1|bir oy aldı|$1 oy aldı}}.",
 	"ajaxpoll-submitting": "Lütfen bekleyin, oyunuz kaydediliyor.",
 	"ajaxpoll-vote-permission": "Oy hakkına sahip değilsiniz.",
+	"ajaxpoll-readonly": "Bu anket oylanamaz, veritabanı şu nedenle kilitlenir: $1.",
 	"ajaxpoll-view-results-permission": "Bu anketin sonuçlarını görüntüleme hakkınız yok.",
 	"ajaxpoll-view-results-before-vote-permission": "Siz oylamadan önce bu anketin sonuçlarını görme hakkınız yok.",
 	"ajaxpoll-revoke-vote": "Oyumu iptal etmek istiyorum",

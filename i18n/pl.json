@@ -6,11 +6,15 @@
 			"Dariusz Siedlecki",
 			"Saper",
 			"Railfail536",
-			"Rail"
+			"Rail",
+			"Ostrzyciel"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "Moduł API AJAXPoll",
 	"apihelp-pollsubmitvote-summary": "Moduł API AJAXPoll",
+	"apihelp-pollsubmitvote-param-poll": "ID ankiety, na przykład 832A5FA2C2583A5732B90CEFF658FE25; Identyfikatory ankiet są tworzone przez haszowanie tekstu ankiety (pytanie oraz lista odpowiedzi, czyli tekst między tagami <code>&lt;poll&gt;...&lt;/poll&gt;</code>) przy użyciu algorytmu MD5. Wyjście funkcji haszującej jest następnie KAPITALIZOWANE przy użyciu funkcji <code>strtoupper</code> w PHP.",
+	"apihelp-pollsubmitvote-param-answer": "Numer odpowiedzi w ankiecie; użyj numeru, 0 by cofnąć oddany uprzednio głos",
+	"apihelp-pollsubmitvote-example-1": "Prześlij trzecią (3) odpowiedź na ankietę o ID 832A5FA2C2583A5732B90CEFF658FE25",
 	"ajaxpoll-desc": "Umożliwia wstawienie opartych na technologii AJAX ankiet przy pomocy znacznika <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Strony z głosowaniami",
 	"ajaxpoll-tracking-category-desc": "Na stronie znajduje się <code>&lt;poll&gt;</code>.",
@@ -24,6 +28,7 @@
 	"ajaxpoll-info": "Oddano już {{PLURAL:$1|jeden głos|$1 głosy|$1 głosów}} od utworzenia głosowania $2.",
 	"ajaxpoll-submitting": "Proszę czekać, trwa dodawanie głosu.",
 	"ajaxpoll-vote-permission": "Nie masz uprawnień do głosowania.",
+	"ajaxpoll-readonly": "Nie możesz zagłosować w tej ankiecie, baza danych została zablokowana z następującego powodu: $1.",
 	"ajaxpoll-view-results-permission": "Nie masz uprawnień, aby zobaczyć wyniki tego głosowania.",
 	"ajaxpoll-view-results-before-vote-permission": "Aby zobaczyć wyniki, musisz najpierw zagłosować.",
 	"ajaxpoll-revoke-vote": "Chcę wycofać swój głos",
