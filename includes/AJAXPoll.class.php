@@ -86,7 +86,7 @@ class AJAXPoll {
 						'poll_id' => $id,
 						'poll_show_results_before_voting' => $showResultsBeforeVoting,
 						'poll_txt' => $input,
-						'poll_date' => wfTimestampNow(),
+						'poll_date' => $dbw->timestamp( wfTimestampNow() ),
 					],
 					__METHOD__,
 					// @todo FIXME: This is a crappy hack to fix obviously incorrect and nonsensical
@@ -249,7 +249,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 				'poll_actor' => $user->getActorId(),
 				'poll_ip' => $wgRequest->getIP(),
 				'poll_answer' => $answer,
-				'poll_date' => wfTimestampNow()
+				'poll_date' => $dbw->timestamp( wfTimestampNow() )
 			],
 			__METHOD__
 		);
@@ -286,7 +286,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 			'ajaxpoll_vote',
 			[
 				'poll_answer' => $answer,
-				'poll_date' => wfTimestampNow()
+				'poll_date' => $dbw->timestamp( wfTimestampNow() )
 			],
 			[
 				'poll_id' => $id,
