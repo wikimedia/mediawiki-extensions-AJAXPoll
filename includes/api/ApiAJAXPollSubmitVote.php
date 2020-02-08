@@ -34,7 +34,7 @@ class ApiAJAXPollSubmitVote extends ApiBase {
 
 		// This function checks if the user is allowed to vote etc.
 		// This old method -- which really, *really* needs refactoring even more -- just sucks.
-		$output = AJAXPoll::submitVote( $id, $answer );
+		$output = AJAXPoll::submitVote( $id, $answer, $this->getUser() );
 
 		// Top level
 		$this->getResult()->addValue( null, $this->getModuleName(), [ 'result' => $output ] );

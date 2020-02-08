@@ -36,8 +36,6 @@ class AJAXPoll {
 	 * @return string
 	 */
 	public static function render( $input, $args = [], Parser $parser, $frame ) {
-		global $wgUser;
-
 		$parser->getOutput()->updateCacheExpiry( 0 );
 		$parser->addTrackingCategory( 'ajaxpoll-tracking-category' );
 		$parser->getOutput()->addModules( 'ext.ajaxpoll' );
@@ -124,7 +122,7 @@ class AJAXPoll {
 					[
 						'id' => 'ajaxpoll-container-' . $id
 					],
-					self::buildHTML( $id, $wgUser, $readonly, $lines )
+					self::buildHTML( $id, $parser->getUser(), $readonly, $lines )
 				);
 				break;
 		}
@@ -181,15 +179,12 @@ The last vote has been given $clockago ago.<br/>
 During the last 48 hours, $tab2[0] votes have been given.";
 	}
 
-	public static function submitVote( $id, $answer ) {
-		global $wgUser;
-
+	public static function submitVote( $id, $answer, User $user ) {
 		$readonly = MediaWikiServices::getInstance()->getReadOnlyMode()->getReason();
 
-		if ( !$wgUser->isAllowed( 'ajaxpoll-vote' ) || $wgUser->isBot() ) {
-			return self::buildHTML( $id, $wgUser, $readonly );
+		if ( !$user->isAllowed( 'ajaxpoll-vote' ) || $user->isBot() ) {
+			return self::buildHTML( $id, $user, $readonly );
 		}
-		$user = $wgUser;
 
 		if ( $readonly ) {
 			return self::buildHTML( $id, $user, $readonly, '' );
@@ -302,7 +297,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 	}
 
 	private static function buildHTML( $id, $user, $readonly, $lines = '', $extra_from_ajax = '' ) {
-		global $wgTitle, $wgUser, $wgLang;
+		global $wgTitle, $wgLang;
 
 		$dbr = wfGetDB( DB_REPLICA );
 
@@ -321,7 +316,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 		if ( $row['poll_show_results_before_voting'] !== null ) {
 			$showResultsBeforeVoting = ( $row['poll_show_results_before_voting'] === '1' );
 		} else {
-			$showResultsBeforeVoting = $wgUser->isAllowed( 'ajaxpoll-view-results-before-vote' );
+			$showResultsBeforeVoting = $user->isAllowed( 'ajaxpoll-view-results-before-vote' );
 		}
 
 		$start_date = $row['poll_date'];
@@ -404,7 +399,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 
 			$canRevoke = false;
 
-			if ( $wgUser->isAllowed( 'ajaxpoll-vote' ) ) {
+			if ( $user->isAllowed( 'ajaxpoll-vote' ) ) {
 				if ( isset( $row[0] ) ) {
 					$message = $ourLastVoteDate;
 					$canRevoke = true;
@@ -420,13 +415,13 @@ During the last 48 hours, $tab2[0] votes have been given.";
 				$message = wfMessage( 'ajaxpoll-vote-permission' )->text();
 			}
 
-			if ( !$wgUser->isAllowed( 'ajaxpoll-view-results' ) ) {
+			if ( !$user->isAllowed( 'ajaxpoll-view-results' ) ) {
 				$message .= '<br/>' . wfMessage( 'ajaxpoll-view-results-permission' )->text();
 			} elseif ( !$userVoted
-				&& !$wgUser->isAllowed( 'ajaxpoll-view-results-before-vote' )
+				&& !$user->isAllowed( 'ajaxpoll-view-results-before-vote' )
 				&& !$showResultsBeforeVoting
 			) {
-				if ( $wgUser->isAllowed( 'ajaxpoll-vote' ) ) {
+				if ( $user->isAllowed( 'ajaxpoll-vote' ) ) {
 					$message .= '<br/>' . wfMessage( 'ajaxpoll-view-results-before-vote-permission' )->text();
 				} else {
 					$message .= '<br/>' . wfMessage( 'ajaxpoll-view-results-permission' )->text();
@@ -478,7 +473,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 				$resultBar = '';
 
 				if (
-					$wgUser->isAllowed( 'ajaxpoll-view-results' ) &&
+					$user->isAllowed( 'ajaxpoll-view-results' ) &&
 					( $showResultsBeforeVoting || ( !$showResultsBeforeVoting && $userVoted ) ) &&
 					$vote
 				) {
@@ -500,7 +495,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 					);
 				}
 
-				if ( !$readonly && $wgUser->isAllowed( 'ajaxpoll-vote' ) ) {
+				if ( !$readonly && $user->isAllowed( 'ajaxpoll-vote' ) ) {
 					$ret .= Html::rawElement( 'div',
 						[
 							'id' => 'ajaxpoll-answer-' . $xid,
@@ -529,8 +524,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 						$resultBar
 					);
 				} else {
-
-					if ( !$wgUser->isAllowed( 'ajaxpoll-vote' ) ) {
+					if ( !$user->isAllowed( 'ajaxpoll-vote' ) ) {
 						$disabledReason = wfMessage( 'ajaxpoll-vote-permission' )->escaped();
 					} else {
 						$disabledReason = wfMessage( 'ajaxpoll-readonly', $readonly )->escaped();
