@@ -9,7 +9,8 @@
 			"Stryn",
 			"01miki10",
 			"Pyscowicz",
-			"FinlandMan"
+			"FinlandMan",
+			"Pxos"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "AJAXPoll API-moduuli",
@@ -27,7 +28,7 @@
 	"ajaxpoll-info": "{{PLURAL:$1|Yksi ääni|$1 ääntä}} on annettu siitä lähtien kun tämä äänestys tehtiin, $2.",
 	"ajaxpoll-submitting": "Odota hetki, äänesi lähetetään kirjattavaksi.",
 	"ajaxpoll-vote-permission": "Sinulla ei ole oikeutta äänestää.",
-	"ajaxpoll-readonly": "Tämä äänestys ei hyväksy ääniä, koska tietokanta on lukittu seuraavasta syystä: $1",
+	"ajaxpoll-readonly": "Tähän äänestykseen ei voi osallistua, koska tietokanta on lukittu seuraavasta syystä: $1.",
 	"ajaxpoll-view-results-permission": "Sinulla ei ole oikeutta tarkastella kyselyn tuloksia.",
 	"ajaxpoll-view-results-before-vote-permission": "Et voi katsella kyselyn tuloksia ennen kuin olet äänestänyt.",
 	"ajaxpoll-revoke-vote": "Haluan peruuttaa ääneni",
