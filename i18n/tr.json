@@ -21,7 +21,7 @@
 	"ajaxpoll-vote-add": "Oyunuz eklendi.",
 	"ajaxpoll-vote-error": "Oyunuz işleme alınırken bir sorun oluştu, lütfen tekrar deneyiniz.",
 	"ajaxpoll-percent-votes": "Tüm oyların %$1",
-	"ajaxpoll-your-vote": "\"$1\" için $3 tarihinde $4 oy verdiniz. Aşağıda farklı bir cevabı tıklayarak oyunuzu değiştirebilirsiniz.",
+	"ajaxpoll-your-vote": "\"$1\" için $3 tarihinde $4 saatinde oy verdiniz. Aşağıda farklı bir cevabı tıklayarak oyunuzu değiştirebilirsiniz.",
 	"ajaxpoll-no-vote": "Lütfen aşağıdan oy kullanın.",
 	"ajaxpoll-no-vote-results-after-voting": "Lütfen aşağıda oyunuzu kullanın. Sonuçlar oy verdikten sonra görüntülenecektir.",
 	"ajaxpoll-info": "Anket $2 oluşturulduğundan beri {{PLURAL:$1|bir oy aldı|$1 oy aldı}}.",
