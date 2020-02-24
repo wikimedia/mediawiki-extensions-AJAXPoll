@@ -8,7 +8,8 @@
 			"StephDC",
 			"Yfdyh000",
 			"Zhangjintao",
-			"Zoglun"
+			"Zoglun",
+			"VulpesVulpes825"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "AJAXPoll API模块",
@@ -29,6 +30,7 @@
 	"ajaxpoll-info": "自$2创建以来共有{{PLURAL:$1|一人投票| $1 人投票}}。",
 	"ajaxpoll-submitting": "请稍候，正在提交您的投票。",
 	"ajaxpoll-vote-permission": "您没有投票权。",
+	"ajaxpoll-readonly": "无法对此投票，数据库由于以下原因被锁定：$1。",
 	"ajaxpoll-view-results-permission": "您没有权限查看这个投票的结果。",
 	"ajaxpoll-view-results-before-vote-permission": "您在投票前无权查看投票结果。",
 	"ajaxpoll-revoke-vote": "我想撤销我的投票",
