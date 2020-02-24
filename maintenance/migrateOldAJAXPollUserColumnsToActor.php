@@ -53,12 +53,52 @@ class MigrateOldAJAXPollUserColumnsToActor extends LoggedUpdateMaintenance {
 
 		$dbw->sourceFile( __DIR__ . '/../sql/drop-primary-key.sql' );
 		$dbw->sourceFile( __DIR__ . '/../sql/add-new-primary-key.sql' );
-		$dbw->sourceFile( __DIR__ . '/../sql/create-unique-index-poll_id_actor.sql' );
+
+		// Find missing anonymous actors and insert them to the actor table
+		// Do not attempt doing it with an insertSelect, it's apparently incompatible with postgres
+		$res = $dbw->select(
+			[
+				'ajaxpoll_vote',
+				'actor'
+			],
+			[ 'poll_ip' ],
+			[
+				'poll_ip = poll_user',
+				'actor_id IS NULL'
+			],
+			__METHOD__,
+			[ 'DISTINCT' ],
+			[
+				'actor' => [
+					'LEFT JOIN',
+					[ 'actor_name = poll_user' ]
+				]
+			]
+		);
+
+		$toInsert = [];
+
+		foreach ( $res as $row ) {
+			$toInsert[] = [ 'actor_name' => $row->poll_ip ];
+		}
+
+		if ( !empty( $toInsert ) ) {
+			$dbw->insert(
+				'actor',
+				$toInsert,
+				__METHOD__
+			);
+		}
+
+		// Find corresponding actors for votes
 		$dbw->query(
 			// @codingStandardsIgnoreLine
-			"UPDATE {$dbw->tableName( 'ajaxpoll_vote' )} SET poll_actor=(SELECT actor_id FROM {$dbw->tableName( 'actor' )} WHERE actor_name=poll_user AND actor_user IS NOT NULL)",
+			"UPDATE {$dbw->tableName( 'ajaxpoll_vote' )} SET poll_actor=(SELECT actor_id FROM {$dbw->tableName( 'actor' )} WHERE actor_name=poll_user)",
 			__METHOD__
 		);
+
+		// After the update we can create a unique key
+		$dbw->sourceFile( __DIR__ . '/../sql/create-unique-index-poll_id_actor.sql' );
 
 		return true;
 	}
