@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aefgh39622"
+		]
+	},
+	"ajaxpoll-tracking-category": "หน้าที่มีโพล",
+	"ajaxpoll-vote-update": "อัปเดตการลงคะแนนของคุณแล้ว",
+	"ajaxpoll-vote-add": "เพิ่มการลงคะแนนของคุณแล้ว",
+	"ajaxpoll-vote-error": "มีปัญหาในการประมวลผลการลงคะแนนของคุณ โปรดลองอีกครั้ง",
+	"ajaxpoll-percent-votes": "$1% ของการลงคะแนนทั้งหมด",
+	"ajaxpoll-no-vote": "โปรดลงคะแนนด้านล่าง",
+	"ajaxpoll-info": "มี {{PLURAL:$1|$1 การลงคะแนน}}ตั้งแต่โพลถูกสร้างเมื่อ $2",
+	"ajaxpoll-submitting": "โปรดรอสักครู่ กำลังส่งการลงคะแนนของคุณ",
+	"ajaxpoll-vote-permission": "คุณไม่มีสิทธิลงคะแนน",
+	"ajaxpoll-revoke-vote": "ฉันต้องการยกเลิกการลงคะแนนของฉัน",
+	"ajaxpoll-vote-revoked": "ยกเลิกการลงคะแนนของคุณแล้ว",
+	"right-ajaxpoll-vote": "สามารถลงคะแนนในโพลที่ใช้ AJAX ได้"
+}
