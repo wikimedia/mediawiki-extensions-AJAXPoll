@@ -12,6 +12,7 @@
 	"apihelp-pollsubmitvote-summary": "AJAXPoll APIモジュール",
 	"ajaxpoll-desc": "<code>&lt;poll&gt;</code> タグで Ajax ベースの投票所を使用できるようにする",
 	"ajaxpoll-tracking-category": "投票所があるページ",
+	"ajaxpoll-tracking-category-desc": "このページには<code>&lt;投票所&gt;</code>があります。",
 	"ajaxpoll-vote-update": "投票を更新しました。",
 	"ajaxpoll-vote-add": "投票を追加しました。",
 	"ajaxpoll-vote-error": "投票の処理中に問題が発生しました。再投票してください。",
