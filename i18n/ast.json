@@ -23,6 +23,7 @@
 	"ajaxpoll-info": "Hebo {{PLURAL:$1|un votu|$1 votos}} dende que se creó la encuesta el $2.",
 	"ajaxpoll-submitting": "Aguarda, por favor, ta unviandose'l to votu.",
 	"ajaxpoll-vote-permission": "Nun tienes drechu al votu.",
+	"ajaxpoll-readonly": "Nun pue votase nesta encuesta, la base de datos ta bloquiada pol siguiente motivu: $1.",
 	"ajaxpoll-view-results-permission": "Nun tien permisu pa ver los resultaos d'esta encuesta.",
 	"ajaxpoll-view-results-before-vote-permission": "Nun tien permisu pa ver los resultaos d'esta encuesta antes de votar.",
 	"ajaxpoll-revoke-vote": "Quiero anular el mio votu",
