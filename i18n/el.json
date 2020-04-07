@@ -2,10 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Glavkos",
+			"Nikosgranturismogt",
 			"Protnet",
 			"ZaDiak",
-			"Περίεργος",
-			"Nikosgranturismogt"
+			"Περίεργος"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "Δομοστοιχείο API AJAXPoll",

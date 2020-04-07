@@ -3,12 +3,12 @@
 		"authors": [
 			"AvatarTeam",
 			"Breghtje",
+			"Esketti",
+			"Mar(c)",
 			"McDutchie",
 			"SPQRobin",
 			"Siebrand",
-			"Southparkfan",
-			"Esketti",
-			"Mar(c)"
+			"Southparkfan"
 		]
 	},
 	"ajaxpoll-desc": "Maakt AJAX-gebaseerde polls mogelijk met het label <code>&lt;poll&gt;</code>",

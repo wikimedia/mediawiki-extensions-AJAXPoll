@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"StefanusRA",
-			"Empu"
+			"Empu",
+			"StefanusRA"
 		]
 	},
 	"ajaxpoll-desc": "Ngolihna jajak pendapat sing basise-AJAX nganggo tag <code>&lt;poll&gt;</code>",

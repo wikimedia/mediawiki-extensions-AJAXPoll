@@ -2,12 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"A1",
+			"Ahonc",
 			"Andriykopanytsia",
 			"Base",
-			"Ата",
-			"Ahonc",
 			"Piramidion",
-			"Vlad5250"
+			"Vlad5250",
+			"Ата"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "API-модуль AJAXPoll",

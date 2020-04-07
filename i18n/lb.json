@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Matěj Suchánek",
 			"Robby",
-			"Soued031",
-			"Matěj Suchánek"
+			"Soued031"
 		]
 	},
 	"ajaxpoll-desc": "Erlaabt AJAX-baséiert Ëmfroe mam Tag <code>&lt;poll&gt;</code>",

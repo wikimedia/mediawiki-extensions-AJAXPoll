@@ -3,10 +3,10 @@
 		"authors": [
 			"Cocu",
 			"Danmichaelo",
-			"Nghtwlkr",
-			"Simen47",
 			"Jeblad",
-			"Jon Harald Søby"
+			"Jon Harald Søby",
+			"Nghtwlkr",
+			"Simen47"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "API-modul for AJAXPoll",

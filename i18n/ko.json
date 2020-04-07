@@ -1,13 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Hwangjy9",
 			"Hym411",
 			"Priviet",
-			"Yjs5497",
-			"아라",
 			"Revi",
-			"Hwangjy9",
-			"Ykhwong"
+			"Yjs5497",
+			"Ykhwong",
+			"아라"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "AJAXPoll API 모듈",

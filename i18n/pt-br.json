@@ -1,14 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"!Silent",
 			"Amgauna",
 			"Anaclaudiaml",
 			"Cainamarques",
 			"Daemorris",
+			"Eduardo Addad de Oliveira",
 			"Fúlvio",
-			"Tuliouel",
-			"!Silent",
-			"Eduardo Addad de Oliveira"
+			"Tuliouel"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "Módulo API do AJAXPoll",

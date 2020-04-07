@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Aefgh39622",
 			"Fryed-peach",
 			"Shirayuki",
 			"Shun Fukuzawa",
-			"Sujiniku",
-			"Aefgh39622"
+			"Sujiniku"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "AJAXPoll APIモジュール",

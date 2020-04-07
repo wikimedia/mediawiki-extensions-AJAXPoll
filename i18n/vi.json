@@ -2,9 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Baonguyen21022003",
+			"Dinhxuanduyet",
 			"Minh Nguyen",
-			"Withoutaname",
-			"Dinhxuanduyet"
+			"Withoutaname"
 		]
 	},
 	"ajaxpoll-desc": "Cho phép các thăm dò dựa trên AJAX với thẻ <code>&lt;poll&gt;</code>",

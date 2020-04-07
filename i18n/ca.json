@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Fitoschido",
 			"Papapep",
-			"Pitort",
-			"Qllach",
 			"Pgellida",
-			"Fitoschido"
+			"Pitort",
+			"Qllach"
 		]
 	},
 	"ajaxpoll-desc": "Permet les enquestes basades en AJAX amb l'etiqueta <code>&lt;poll&gt;</code>",

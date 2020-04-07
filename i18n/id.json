@@ -2,10 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Anashir",
+			"Arifin.wijaya",
 			"Farras",
-			"Rv77ax",
 			"Kenrick95",
-			"Arifin.wijaya"
+			"Rv77ax"
 		]
 	},
 	"ajaxpoll-desc": "Memungkinkan jajak pendapat berbasis AJAX dengan tag <code>&lt;poll&gt;</code>",

@@ -1,16 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
+			"0x010C",
 			"Crochet.david",
 			"Gomoko",
+			"Kenjiraw",
 			"McDutchie",
 			"Sherbrooke",
-			"Tim 'Avatar' Bartel",
-			"0x010C",
-			"Wladek92",
-			"Kenjiraw",
 			"Thibaut120094",
-			"Verdy p"
+			"Tim 'Avatar' Bartel",
+			"Verdy p",
+			"Wladek92"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "Module d’API AJAXPoll",

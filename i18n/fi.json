@@ -1,16 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
+			"01miki10",
 			"Crt",
+			"FinlandMan",
 			"Harriv",
 			"Jack Phoenix",
 			"Nike",
-			"Snidata",
-			"Stryn",
-			"01miki10",
+			"Pxos",
 			"Pyscowicz",
-			"FinlandMan",
-			"Pxos"
+			"Snidata",
+			"Stryn"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "AJAXPoll API-moduuli",

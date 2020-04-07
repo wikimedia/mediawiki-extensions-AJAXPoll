@@ -1,22 +1,22 @@
 {
 	"@metadata": {
 		"authors": [
+			"Agusbou2015",
+			"Amitie 10g",
 			"Armando-Martin",
 			"Bola",
 			"Ciencia Al Poder",
+			"Dgstranz",
+			"Edslov",
 			"Fitoschido",
 			"Ihojose",
 			"Luis Felipe Schenone",
-			"Miguel2706",
-			"VegaDark",
-			"Amitie 10g",
 			"Macofe",
-			"Sophivorus",
+			"Miguel2706",
 			"PoLuX124",
-			"Dgstranz",
-			"Edslov",
 			"Ryo567",
-			"Agusbou2015"
+			"Sophivorus",
+			"VegaDark"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "Módulo de la AIP de AJAXPoll",

@@ -2,8 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
-			"Gianfranco",
-			"Dansita"
+			"Dansita",
+			"Gianfranco"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "Modulo dell'API di AJAXPoll",

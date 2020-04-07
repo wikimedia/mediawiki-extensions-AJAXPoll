@@ -1,12 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"BaRaN6161 TURK",
 			"Hedda Gabler",
 			"Incelemeelemani",
-			"SiLveRLeaD",
-			"Stultiwikia",
 			"Sayginer",
-			"BaRaN6161 TURK"
+			"SiLveRLeaD",
+			"Stultiwikia"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "AJAXPoll API modülü",
