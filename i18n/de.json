@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"FF11",
 			"Geitost",
 			"Hwboehm",
 			"Kghbln",
@@ -27,6 +28,7 @@
 	"ajaxpoll-info": "Es {{PLURAL:$1|wurde|wurden}} seit Erstellung der Umfrage am $2 {{PLURAL:$1|eine Stimme|$1 Stimmen}} abgegeben.",
 	"ajaxpoll-submitting": "Bitte warte kurz. Deine Stimme wird verarbeitet.",
 	"ajaxpoll-vote-permission": "Du bist nicht stimmberechtigt.",
+	"ajaxpoll-readonly": "Bei dieser Umfrage kann nicht abgestimmt werden, weil die Datenbank aus dem folgenden Grund gesperrt ist: $1.",
 	"ajaxpoll-view-results-permission": "Du bist nicht berechtigt, die Ergebnisse dieser Abstimmung anzusehen.",
 	"ajaxpoll-view-results-before-vote-permission": "Du bist nicht berechtigt, die Ergebnisse dieser Abstimmung anzusehen, bevor du abgestimmt hast.",
 	"ajaxpoll-revoke-vote": "Ich möchte meine Stimme widerrufen",
