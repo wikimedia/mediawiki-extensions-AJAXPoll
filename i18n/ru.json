@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Carn ru",
 			"DCamer",
 			"Iluvatar",
 			"KPu3uC B Poccuu",
@@ -29,6 +30,7 @@
 	"ajaxpoll-info": "С момента создания голосования $2 {{PLURAL:$1|поступил $1 голос|поступили $1 голоса|поступило $1 голосов}}.",
 	"ajaxpoll-submitting": "Пожалуйста, подождите, ваш голос обрабатывается.",
 	"ajaxpoll-vote-permission": "Вы не можете голосовать.",
+	"ajaxpoll-readonly": "В этом опросе нельзя проголосовать, база данных заблокирована по следующей причине: $1",
 	"ajaxpoll-view-results-permission": "Вы не можете просматривать результаты этого опроса.",
 	"ajaxpoll-view-results-before-vote-permission": "Вы не можете просмотреть результаты опроса до тех пор, пока не проголосуете.",
 	"ajaxpoll-revoke-vote": "Я хочу отменить свой голос",

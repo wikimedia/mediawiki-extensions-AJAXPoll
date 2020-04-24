@@ -4,9 +4,12 @@
 			"Baonguyen21022003",
 			"Dinhxuanduyet",
 			"Minh Nguyen",
+			"Phjtieudoc",
 			"Withoutaname"
 		]
 	},
+	"apihelp-pollsubmitvote-description": "Mô đun API AJAXPoll",
+	"apihelp-pollsubmitvote-summary": "Mô đun API AJAXPoll",
 	"ajaxpoll-desc": "Cho phép các thăm dò dựa trên AJAX với thẻ <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Trang có thăm dò ý kiến",
 	"ajaxpoll-tracking-category-desc": "Trang web có một <code>&lt;poll&gt;</code>.",
