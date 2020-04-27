@@ -5,6 +5,7 @@
 			"Guycn2",
 			"Matanya",
 			"MojoMann",
+			"Steeve815",
 			"אור שפירא"
 		]
 	},
@@ -26,6 +27,7 @@
 	"ajaxpoll-info": "{{PLURAL:$1|נקלט קול אחד|נקלטו $1 קולות}} מאז שההצבעה נוצרה ב־$2.",
 	"ajaxpoll-submitting": "נא להמתין הזמן שליחת הצבעתך.",
 	"ajaxpoll-vote-permission": "אין לך זכות הצבעה.",
+	"ajaxpoll-readonly": "לא ניתן להצביע בסקר הזה, בסיס הנתונים נעול מהסיבה הבאה: $1.",
 	"ajaxpoll-view-results-permission": "אינך רשאי לצפות בתוצאות סקר זה.",
 	"ajaxpoll-view-results-before-vote-permission": "אינך רשאי לצפות בתוצאות הסקר לפני הצבעה",
 	"ajaxpoll-revoke-vote": "אני רוצה לבטל את הקול שלי",
