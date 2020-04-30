@@ -23,6 +23,7 @@
 	"ajaxpoll-info": "{{PLURAL:$1|Stè 'nu vote|Stonne $1 vote}} da quanne 'u sondagge ha state ccrejate 'u $2.",
 	"ajaxpoll-submitting": "Pe piacere aspitte, stoche a elabbore 'u vote tune.",
 	"ajaxpoll-vote-permission": "Tu non ge puè votà",
+	"ajaxpoll-readonly": "Stu sondagge non ge pò essere vutate, 'u database jè bloccate pe stu mutive: $1.",
 	"ajaxpoll-view-results-permission": "Non ge puè 'ndrucà le resultate de stu sondagge.",
 	"ajaxpoll-view-results-before-vote-permission": "Non ge puè 'ndrucà le resultate de stu sondagge apprime ca è vutate.",
 	"ajaxpoll-revoke-vote": "Ije vogghie annullà 'u vote mije",
