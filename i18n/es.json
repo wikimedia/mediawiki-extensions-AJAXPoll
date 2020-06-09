@@ -37,6 +37,7 @@
 	"ajaxpoll-info": "Hubo {{PLURAL:$1|un voto|$1 votos}} desde que se creó la encuesta, el $2.",
 	"ajaxpoll-submitting": "Espera un momento, se está enviando el voto.",
 	"ajaxpoll-vote-permission": "No tienes derecho a votar.",
+	"ajaxpoll-readonly": "No se puede votar en esta encuesta, la base de datos está bloqueada por la siguiente razón: $1.",
 	"ajaxpoll-view-results-permission": "No tienes derecho a ver los resultados de esta encuesta.",
 	"ajaxpoll-view-results-before-vote-permission": "No tienes derecho a ver los resultados de esta encuesta antes de haber votado.",
 	"ajaxpoll-revoke-vote": "Quiero revocar mi voto",
