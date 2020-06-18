@@ -3,6 +3,7 @@
 		"authors": [
 			"Jim-by",
 			"Red Winged Duck",
+			"Renessaince",
 			"Wizardist"
 		]
 	},
@@ -24,6 +25,7 @@
 	"ajaxpoll-info": "З моманту стварэньня галасаваньня $2 {{PLURAL:$1|пададзены $1 голас|пададзеныя $1 галасы|пададзена $1 галасоў}}.",
 	"ajaxpoll-submitting": "Калі ласкай, чакайце, ваш голас дадаецца.",
 	"ajaxpoll-vote-permission": "Вы ня можаце галасаваць.",
+	"ajaxpoll-readonly": "У гэтым галасаваньні немагчыма прагаласаваць, база зьвестак заблякаваная з прычыны: $1.",
 	"ajaxpoll-view-results-permission": "Вы ня можаце праглядаць вынікі гэтага апытаньня.",
 	"ajaxpoll-view-results-before-vote-permission": "Вы ня можаце праглядаць вынікі гэтага апытаньня, пакуль не прагаласуеце.",
 	"ajaxpoll-revoke-vote": "Я хачу адклікаць мой голас",
