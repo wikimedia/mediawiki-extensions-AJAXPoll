@@ -38,7 +38,7 @@
 		"pollsubmitvote": "ApiAJAXPollSubmitVote"
 	},
 	"AutoloadClasses": {
-		"AJAXPoll": "includes/AJAXPoll.class.php",
+		"AJAXPoll": "includes/AJAXPoll.php",
 		"ApiAJAXPollSubmitVote": "includes/api/ApiAJAXPollSubmitVote.php",
 		"MigrateOldAJAXPollUserColumnsToActor": "maintenance/migrateOldAJAXPollUserColumnsToActor.php"
 	},
