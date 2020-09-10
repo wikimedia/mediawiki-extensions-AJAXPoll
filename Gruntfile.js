@@ -1,26 +1,19 @@
 /* eslint-env node */
 module.exports = function ( grunt ) {
-	grunt.loadNpmTasks( 'grunt-jsonlint' );
 	grunt.loadNpmTasks( 'grunt-banana-checker' );
 	grunt.loadNpmTasks( 'grunt-eslint' );
 	grunt.loadNpmTasks( 'grunt-stylelint' );
 	grunt.initConfig( {
-		jsonlint: {
-			all: [
-				'**/*.json',
-				'!node_modules/**',
-				'!vendor/**'
-			]
-		},
 		banana: {
 			all: 'i18n/'
 		},
 		eslint: {
 			options: {
+				extensions: [ '.js', '.json' ],
 				cache: true
 			},
 			all: [
-				'**/*.js',
+				'**/*.{js,json}',
 				'!node_modules/**',
 				'!vendor/**'
 			]
@@ -33,6 +26,6 @@ module.exports = function ( grunt ) {
 			]
 		}
 	} );
-	grunt.registerTask( 'test', [ 'jsonlint', 'banana', 'eslint', 'stylelint' ] );
+	grunt.registerTask( 'test', [ 'banana', 'eslint', 'stylelint' ] );
 	grunt.registerTask( 'default', 'test' );
 };
