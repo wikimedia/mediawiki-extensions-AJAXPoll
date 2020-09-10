@@ -179,6 +179,12 @@ The last vote has been given $clockago ago.<br/>
 During the last 48 hours, $tab2[0] votes have been given.";
 	}
 
+	/**
+	 * @param int $id
+	 * @param string $answer
+	 * @param User $user
+	 * @return bool
+	 */
 	public static function submitVote( $id, $answer, User $user ) {
 		$readonly = MediaWikiServices::getInstance()->getReadOnlyMode()->getReason();
 
