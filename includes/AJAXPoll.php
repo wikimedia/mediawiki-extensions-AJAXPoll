@@ -657,8 +657,11 @@ During the last 48 hours, $tab2[0] votes have been given.";
 		// Actor support
 
 		// 1) add new actor column
-		// @codingStandardsIgnoreLine
-		$updater->addExtensionField( 'ajaxpoll_vote', 'poll_actor', $patchPath . 'add-field-ajaxpoll_vote-poll_actor.sql' );
+		$updater->addExtensionField(
+			'ajaxpoll_vote',
+			'poll_actor',
+			$patchPath . 'add-field-ajaxpoll_vote-poll_actor.sql'
+		);
 
 		// 2) do magic
 		// This includes, but is not limited to, changing the PRIMARY KEY,
@@ -676,7 +679,10 @@ During the last 48 hours, $tab2[0] votes have been given.";
 		] );
 
 		// 3) drop the now unused column
-		// @codingStandardsIgnoreLine
-		$updater->dropExtensionField( 'ajaxpoll_vote', 'poll_user', $patchPath . 'drop-field-poll_user-ajaxpoll_vote.sql' );
+		$updater->dropExtensionField(
+			'ajaxpoll_vote',
+			'poll_user',
+			$patchPath . 'drop-field-poll_user-ajaxpoll_vote.sql'
+		);
 	}
 }

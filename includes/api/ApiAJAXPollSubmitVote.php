@@ -81,11 +81,8 @@ class ApiAJAXPollSubmitVote extends ApiBase {
 	 */
 	protected function getExamplesMessages() {
 		return [
-			// @codingStandardsIgnoreStart
-			// jerkins whines about lines exceeding 100 characters but it makes
-			// sense here, as any living, breathing human being can tell you
-			'action=pollsubmitvote&poll=832A5FA2C2583A5732B90CEFF658FE25&answer=3' => 'apihelp-pollsubmitvote-example-1',
-			// @codingStandardsIgnoreEnd
+			'action=pollsubmitvote&poll=832A5FA2C2583A5732B90CEFF658FE25&answer=3'
+				=> 'apihelp-pollsubmitvote-example-1',
 		];
 	}
 }

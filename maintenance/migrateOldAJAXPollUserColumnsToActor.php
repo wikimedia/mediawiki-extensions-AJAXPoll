@@ -17,8 +17,8 @@ require_once "$IP/maintenance/Maintenance.php";
 class MigrateOldAJAXPollUserColumnsToActor extends LoggedUpdateMaintenance {
 	public function __construct() {
 		parent::__construct();
-		// @codingStandardsIgnoreLine
-		$this->addDescription( 'Migrates data from old poll_user column in the ajaxpoll_vote table to the new actor column.' );
+		$this->addDescription( 'Migrates data from old poll_user column in the ajaxpoll_vote table ' .
+			'to the new actor column.' );
 	}
 
 	/**
@@ -92,8 +92,8 @@ class MigrateOldAJAXPollUserColumnsToActor extends LoggedUpdateMaintenance {
 
 		// Find corresponding actors for votes
 		$dbw->query(
-			// @codingStandardsIgnoreLine
-			"UPDATE {$dbw->tableName( 'ajaxpoll_vote' )} SET poll_actor=(SELECT actor_id FROM {$dbw->tableName( 'actor' )} WHERE actor_name=poll_user)",
+			"UPDATE {$dbw->tableName( 'ajaxpoll_vote' )} " .
+			"SET poll_actor=(SELECT actor_id FROM {$dbw->tableName( 'actor' )} WHERE actor_name=poll_user)",
 			__METHOD__
 		);
 
