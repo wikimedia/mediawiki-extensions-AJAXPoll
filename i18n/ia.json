@@ -4,6 +4,11 @@
 			"McDutchie"
 		]
 	},
+	"apihelp-pollsubmitvote-description": "Modulo API AJAXPoll",
+	"apihelp-pollsubmitvote-summary": "Modulo API AJAXPoll",
+	"apihelp-pollsubmitvote-param-poll": "ID del sondage, p.ex. 832A5FA2C2583A5732B90CEFF658FE25; le IDs se forma hachante le entrata (question + optiones de responsa, i.e. le texto inter le etiquettas <code>&lt;poll&gt;...&lt;/poll&gt;</code>) con un algorithmo de hachage MD5 e convertente le resultato in MAJUSCULAS con le function <code>strtoupper</code> de PHP.",
+	"apihelp-pollsubmitvote-param-answer": "Identificator numeric del option de responsa; usa 0 pro revocar un voto anterior",
+	"apihelp-pollsubmitvote-example-1": "Inviar le tertie (3) responsa al sondage que ha le ID 832A5FA2C2583A5732B90CEFF658FE25",
 	"ajaxpoll-desc": "Permitte sondages a base de AJAX con le etiquetta <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Paginas con sondage",
 	"ajaxpoll-tracking-category-desc": "Le pagina ha un <code>&lt;poll&gt;</code>.",
@@ -17,6 +22,7 @@
 	"ajaxpoll-info": "Il habeva $1 {{PLURAL:$1|voto|votos}} post le creation del sondage al $2.",
 	"ajaxpoll-submitting": "Un momento, tu voto es submittite.",
 	"ajaxpoll-vote-permission": "Tu non es autorisate a votar.",
+	"ajaxpoll-readonly": "Non es possibile votar in iste momento, perque le base de datos es blocate pro le sequente ration: $1.",
 	"ajaxpoll-view-results-permission": "Tu non es autorisate a vider le resultatos de iste sondage.",
 	"ajaxpoll-view-results-before-vote-permission": "Tu non es autorisate a vider le resultatos de iste sondage ante de haber votate.",
 	"ajaxpoll-revoke-vote": "Io vole revocar mi voto",
