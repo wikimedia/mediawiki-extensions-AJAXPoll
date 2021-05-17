@@ -7,6 +7,7 @@
 			"Esketti",
 			"Mar(c)",
 			"McDutchie",
+			"Nickthijssen1994",
 			"SPQRobin",
 			"Siebrand",
 			"Southparkfan"
@@ -25,7 +26,7 @@
 	"ajaxpoll-info": "Er {{PLURAL:$1|is één stem|zijn $1 stemmen}} uitgebracht sinds de peiling op $2 is aangemaakt.",
 	"ajaxpoll-submitting": "Een ogenblik geduld. Uw stem wordt opgeslagen...",
 	"ajaxpoll-vote-permission": "U kunt niet stemmen.",
-	"ajaxpoll-readonly": "Je kunt momenteel niet stemmen, want de database is geblokkeerd om deze reden: $1.",
+	"ajaxpoll-readonly": "Op deze peiling kan niet gestemd worden, de database is geblokkeerd om de volgende reden: $1.",
 	"ajaxpoll-view-results-permission": "U mag de resultaten van deze peiling niet bekijken.",
 	"ajaxpoll-view-results-before-vote-permission": "U mag de resultaten van deze peiling niet bekijken voordat u hebt gestemd.",
 	"ajaxpoll-revoke-vote": "Ik wil mijn stem intrekken",
