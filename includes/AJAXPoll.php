@@ -53,7 +53,6 @@ class AJAXPoll {
 		$lines = explode( "\n", trim( $input ) );
 
 		$dbw = wfGetDB( DB_MASTER );
-		$dbw->startAtomic( __METHOD__ );
 
 		/**
 		 * Register poll in the database
@@ -110,8 +109,6 @@ class AJAXPoll {
 				);
 			}
 		}
-
-		$dbw->endAtomic( __METHOD__ );
 
 		switch ( $lines[0] ) {
 			case 'STATS':
@@ -197,7 +194,6 @@ During the last 48 hours, $tab2[0] votes have been given.";
 		}
 
 		$dbw = wfGetDB( DB_MASTER );
-		$dbw->startAtomic( __METHOD__ );
 
 		if ( $answer != 0 ) {
 			$answer = ++$answer;
@@ -221,8 +217,6 @@ During the last 48 hours, $tab2[0] votes have been given.";
 		} else { // revoking a vote
 			$pollContainerText = self::revokeVote( $dbw, $id, $user );
 		}
-
-		$dbw->endAtomic( __METHOD__ );
 
 		return self::buildHTML( $id, $user, false, '', $pollContainerText );
 	}
