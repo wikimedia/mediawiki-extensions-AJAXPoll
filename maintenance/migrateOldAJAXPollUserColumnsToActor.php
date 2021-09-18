@@ -45,7 +45,7 @@ class MigrateOldAJAXPollUserColumnsToActor extends LoggedUpdateMaintenance {
 	 * @return bool True to log the update as done
 	 */
 	protected function doDBUpdates() {
-		$dbw = $this->getDB( DB_MASTER );
+		$dbw = $this->getDB( DB_PRIMARY );
 
 		if ( $dbw->fieldExists( 'ajaxpoll_vote', 'poll_vote_id', __METHOD__ ) ) {
 			return true;

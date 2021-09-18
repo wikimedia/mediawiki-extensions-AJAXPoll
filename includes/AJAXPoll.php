@@ -52,7 +52,7 @@ class AJAXPoll {
 		$input = trim( strip_tags( $input ) );
 		$lines = explode( "\n", trim( $input ) );
 
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 
 		/**
 		 * Register poll in the database
@@ -193,7 +193,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 			return self::buildHTML( $id, $user, $readonly, '' );
 		}
 
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 
 		if ( $answer != 0 ) {
 			$answer = ++$answer;
