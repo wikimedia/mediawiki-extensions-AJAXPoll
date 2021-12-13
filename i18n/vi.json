@@ -4,6 +4,7 @@
 			"Baonguyen21022003",
 			"Dinhxuanduyet",
 			"Minh Nguyen",
+			"Nghiemtrongdai VN",
 			"Phjtieudoc",
 			"Withoutaname"
 		]
@@ -17,7 +18,7 @@
 	"ajaxpoll-vote-add": "Bình chọn của bạn đã được thêm vào.",
 	"ajaxpoll-vote-error": "Có trục trặc trong quá trình bình chọn của bạn, xin vui lòng thử lại.",
 	"ajaxpoll-percent-votes": "$1% trên tổng số phiếu",
-	"ajaxpoll-your-vote": "Bạn đã bỏ phiếu cho “$1” vào $2. Để thay đổi bình chọn của bạn, hãy nhập một câu trả lời khác dưới đây.",
+	"ajaxpoll-your-vote": "Bạn đã bỏ phiếu cho “$1” vào $3 lúc $4. Để thay đổi bình chọn của bạn, hãy nhập một câu trả lời khác dưới đây.",
 	"ajaxpoll-no-vote": "Xin hãy bỏ phiếu dưới đây.",
 	"ajaxpoll-no-vote-results-after-voting": "Xin vui lòng bình chọn dưới đây. Kết quả sẽ được hiển thị khi nào bạn bỏ phiếu rồi.",
 	"ajaxpoll-info": "Có $1 phiếu từ khi biểu quyết đã được tạo ra vào $2.",
