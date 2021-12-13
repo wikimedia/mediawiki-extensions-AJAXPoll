@@ -8,9 +8,16 @@
 			"McDutchie",
 			"SPQRobin",
 			"Siebrand",
-			"Southparkfan"
+			"Southparkfan",
+			"Asarta",
+			"Nickthijssen1994"
 		]
 	},
+	"apihelp-pollsubmitvote-description": "AJAXPoll-API-module",
+	"apihelp-pollsubmitvote-summary": "AJAXPoll-API-module",
+	"apihelp-pollsubmitvote-param-poll": "De ID van de peiling, zoals 832A5FA2C2583A5732B90CEFF658FE25. Deze ID's worden gevormd door de invoer (vraag + antwoordopties, d.w.z. de tekst tussen de tags <code>&lt;poll&gt;...&lt;/poll&gt;</code>) te hashen met het MD5-hashalgoritme en het resultaat om te zetten in HOOFDLETTERS met de PHP-functie <code>strtoupper</code>.",
+	"apihelp-pollsubmitvote-param-answer": "Numerieke identificatiecode voor de antwoordoptie. Gebruik 0 om een eerder uitgebrachte stem te herroepen.",
+	"apihelp-pollsubmitvote-example-1": "Het antwoord nummer drie (3) indienen op de peiling met de ID 832A5FA2C2583A5732B90CEFF658FE25",
 	"ajaxpoll-desc": "Maakt AJAX-gebaseerde polls mogelijk met het label <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Pagina's met een peiling",
 	"ajaxpoll-tracking-category-desc": "De pagina heeft een <code>&lt;peiling&gt;</code>.",
@@ -24,6 +31,7 @@
 	"ajaxpoll-info": "Er {{PLURAL:$1|is één stem|zijn $1 stemmen}} uitgebracht sinds de peiling op $2 is aangemaakt.",
 	"ajaxpoll-submitting": "Een ogenblik geduld. Uw stem wordt opgeslagen...",
 	"ajaxpoll-vote-permission": "U kunt niet stemmen.",
+	"ajaxpoll-readonly": "Op deze peiling kan niet gestemd worden, de database is geblokkeerd om de volgende reden: $1.",
 	"ajaxpoll-view-results-permission": "U mag de resultaten van deze peiling niet bekijken.",
 	"ajaxpoll-view-results-before-vote-permission": "U mag de resultaten van deze peiling niet bekijken voordat u hebt gestemd.",
 	"ajaxpoll-revoke-vote": "Ik wil mijn stem intrekken",

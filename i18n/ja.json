@@ -5,11 +5,16 @@
 			"Fryed-peach",
 			"Shirayuki",
 			"Shun Fukuzawa",
-			"Sujiniku"
+			"Sujiniku",
+			"RYOUMA1117",
+			"Waki285"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "AJAXPoll APIモジュール",
 	"apihelp-pollsubmitvote-summary": "AJAXPoll APIモジュール",
+	"apihelp-pollsubmitvote-param-poll": "832A5FA2C2583A5732B90CEFF658FE25などの投票ID。IDは、入力(質問と回答のオプション、つまり<code>&lt;poll&gt;...&lt;/poll&gt;</code>タグ間のテキスト)をMD5ハッシュアルゴリズムでハッシュし、結果をPHPで大文字に変換することで形成されます。<code>strtoupper</code>関数",
+	"apihelp-pollsubmitvote-param-answer": "数値回答オプション識別子。以前に投じられた投票を取り消すには0を使用します",
+	"apihelp-pollsubmitvote-example-1": "ID： 832A5FA2C2583A5732B90CEFF658FE25 を持つ投票への3番目の回答を送信します。",
 	"ajaxpoll-desc": "<code>&lt;poll&gt;</code> タグで Ajax ベースの投票所を使用できるようにする",
 	"ajaxpoll-tracking-category": "投票所があるページ",
 	"ajaxpoll-tracking-category-desc": "このページには<code>&lt;投票所&gt;</code>があります。",
@@ -23,6 +28,7 @@
 	"ajaxpoll-info": "$2 に投票所が作成されて以来、{{PLURAL:$1|$1 票}}の投票がありました。",
 	"ajaxpoll-submitting": "投票を送信しています。お待ちください。",
 	"ajaxpoll-vote-permission": "あなたには投票権がありません。",
+	"ajaxpoll-readonly": "この投票には現在投票できません。データベースのエラーでロックされています。（エラー内容：$1）",
 	"ajaxpoll-view-results-permission": "あなたには、この投票所の結果を閲覧する権限がありません。",
 	"ajaxpoll-view-results-before-vote-permission": "投票を終えるまで、あなたはこの投票の結果を見ることができません。",
 	"ajaxpoll-revoke-vote": "自分の投票を取り消したい",
