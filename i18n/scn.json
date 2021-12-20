@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"apihelp-pollsubmitvote-description": "Mòdulu di l'API d'AJAXPoll",
+	"apihelp-pollsubmitvote-summary": "Mòdulu di l'API d'AJAXPoll"
+}
