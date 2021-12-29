@@ -5,9 +5,12 @@
 			"Arifin.wijaya",
 			"Farras",
 			"Kenrick95",
-			"Rv77ax"
+			"Rv77ax",
+			"Daud I.F. Argana"
 		]
 	},
+	"apihelp-pollsubmitvote-description": "Modul API AJAXPoll",
+	"apihelp-pollsubmitvote-summary": "Modul API AJAXPoll",
 	"ajaxpoll-desc": "Memungkinkan jajak pendapat berbasis AJAX dengan tag <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Halaman dengan jajak pendapat",
 	"ajaxpoll-tracking-category-desc": "Halaman ini memiliki <code>&lt;pemungutan suara&gt;</code>.",
@@ -15,7 +18,7 @@
 	"ajaxpoll-vote-add": "Suara Anda telah ditambahkan.",
 	"ajaxpoll-vote-error": "Ada masalah dengan pengolahan suara anda, silahkan coba lagi.",
 	"ajaxpoll-percent-votes": "$1% dari semua suara",
-	"ajaxpoll-your-vote": "Anda sudah memberi suara untuk \"$1\" pada $2. Anda bisa mengubah suara Anda dengan mengklik jawaban di bawah.",
+	"ajaxpoll-your-vote": "Anda sudah memberi suara untuk \"$1\" pada $3 pada $4. Anda bisa mengubah suara Anda dengan menekan jawaban yang berbeda di bawah.",
 	"ajaxpoll-no-vote": "Silakan beri suara di bawah.",
 	"ajaxpoll-no-vote-results-after-voting": "Silakan berikan suara. Hasil akan ditampilkan setelah Anda memberikan suara.",
 	"ajaxpoll-info": "Ada {{PLURAL:$1|satu suara|$1 suara}} sejak jajak pendapat ini dibuat pada $2.",
