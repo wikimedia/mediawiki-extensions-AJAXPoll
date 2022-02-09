@@ -137,20 +137,19 @@ class AJAXPoll {
 	private static function buildStats() {
 		$dbr = wfGetDB( DB_REPLICA );
 
-		$res = $dbr->select(
+		$tab = $dbr->selectRow(
 			'ajaxpoll_vote',
 			[
-				'COUNT(*)',
-				'COUNT(DISTINCT poll_id)',
-				'COUNT(DISTINCT poll_actor)',
-				'TIMEDIFF(NOW(), MAX(poll_date))'
+				'votes' => 'COUNT(*)',
+				'polls' => 'COUNT(DISTINCT poll_id)',
+				'actors' => 'COUNT(DISTINCT poll_actor)',
+				'timediff' => 'TIMEDIFF(NOW(), MAX(poll_date))'
 			],
 			[],
 			__METHOD__
 		);
-		$tab = $dbr->fetchRow( $res );
 
-		$clock = explode( ':', $tab[3] );
+		$clock = explode( ':', $tab->timediff );
 
 		if ( $clock[0] == '00' && $clock[1] == '00' ) {
 			$x = $clock[2];
@@ -170,17 +169,16 @@ class AJAXPoll {
 
 		$clockago = $x . ' ' . $y . ( $x > 1 ? 's' : '' );
 
-		$res = $dbr->select(
+		$tab2 = $dbr->selectRow(
 			'ajaxpoll_vote',
-			'COUNT(*)',
+			[ 'votes' => 'COUNT(*)' ],
 			[ 'DATE_SUB(CURDATE(), INTERVAL 2 DAY) <= poll_date' ],
 			__METHOD__
 		);
-		$tab2 = $dbr->fetchRow( $res );
 
-		return "There are $tab[1] polls and $tab[0] votes given by $tab[2] different people.<br />
+		return "There are {$tab->polls} polls and {$tab->votes} votes given by {$tab->actors} different people.<br />
 The last vote has been given $clockago ago.<br/>
-During the last 48 hours, $tab2[0] votes have been given.";
+During the last 48 hours, {$tab2->votes} votes have been given.";
 	}
 
 	/**
@@ -205,7 +203,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 		if ( $answer != 0 ) {
 			$answer = ++$answer;
 
-			$q = $dbw->select(
+			$row = $dbw->selectRow(
 				'ajaxpoll_vote',
 				'COUNT(*) AS count',
 				[
@@ -214,9 +212,8 @@ During the last 48 hours, $tab2[0] votes have been given.";
 				],
 				__METHOD__
 			);
-			$row = $dbw->fetchRow( $q );
 
-			if ( $row['count'] > 0 ) {
+			if ( $row->count > 0 ) {
 				$pollContainerText = self::updateVote( $dbw, $id, $user, $answer );
 			} else {
 				$pollContainerText = self::addVote( $dbw, $id, $user, $answer );
@@ -308,25 +305,24 @@ During the last 48 hours, $tab2[0] votes have been given.";
 
 		$dbr = wfGetDB( DB_REPLICA );
 
-		$q = $dbr->select(
+		$row = $dbr->selectRow(
 			'ajaxpoll_info',
 			[ 'poll_txt', 'poll_date', 'poll_show_results_before_voting' ],
 			[ 'poll_id' => $id ],
 			__METHOD__
 		);
-		$row = $dbr->fetchRow( $q );
 
 		if ( empty( $lines ) ) {
-			$lines = explode( "\n", trim( $row['poll_txt'] ) );
+			$lines = explode( "\n", trim( $row->poll_txt ) );
 		}
 
-		if ( $row['poll_show_results_before_voting'] !== null ) {
-			$showResultsBeforeVoting = ( $row['poll_show_results_before_voting'] === '1' );
+		if ( $row->poll_show_results_before_voting !== null ) {
+			$showResultsBeforeVoting = ( $row->poll_show_results_before_voting === '1' );
 		} else {
 			$showResultsBeforeVoting = $user->isAllowed( 'ajaxpoll-view-results-before-vote' );
 		}
 
-		$start_date = $row['poll_date'];
+		$start_date = $row->poll_date;
 
 		$q = $dbr->select(
 			'ajaxpoll_vote',
@@ -347,7 +343,7 @@ During the last 48 hours, $tab2[0] votes have been given.";
 		// Did we vote?
 		$userVoted = false;
 
-		$q = $dbr->select(
+		$row = $dbr->selectRow(
 			'ajaxpoll_vote',
 			[ 'poll_answer', 'poll_date' ],
 			[
@@ -357,12 +353,11 @@ During the last 48 hours, $tab2[0] votes have been given.";
 			__METHOD__
 		);
 
-		$row = $dbr->fetchRow( $q );
 		if ( $row ) {
-			$ts = wfTimestamp( TS_MW, $row[1] );
+			$ts = wfTimestamp( TS_MW, $row->poll_date );
 			$ourLastVoteDate = wfMessage(
 				'ajaxpoll-your-vote',
-				$lines[$row[0] - 1],
+				$lines[$row->poll_answer - 1],
 				$wgLang->timeanddate( $ts, true /* adjust? */ ),
 				$wgLang->date( $ts, true /* adjust? */ ),
 				$wgLang->time( $ts, true /* adjust? */ )
