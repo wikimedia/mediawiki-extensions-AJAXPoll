@@ -402,7 +402,7 @@ During the last 48 hours, {$tab2->votes} votes have been given.";
 			$canRevoke = false;
 
 			if ( $user->isAllowed( 'ajaxpoll-vote' ) ) {
-				if ( isset( $row[0] ) ) {
+				if ( isset( $row->poll_answer ) ) {
 					$message = $ourLastVoteDate;
 					$canRevoke = true;
 					$lines[] = wfMessage( 'ajaxpoll-revoke-vote' )->text();
@@ -470,7 +470,7 @@ During the last 48 hours, {$tab2->votes} votes have been given.";
 				}
 
 				$border = ( $percent == 0 ) ? ' border:0;' : '';
-				$isOurVote = ( isset( $row[0] ) && ( $row[0] - 1 == $i ) );
+				$isOurVote = ( isset( $row->poll_answer ) && ( $row->poll_answer - 1 == $i ) );
 
 				$resultBar = '';
 
