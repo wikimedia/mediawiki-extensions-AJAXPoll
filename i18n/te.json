@@ -6,6 +6,8 @@
 		]
 	},
 	"apihelp-pollsubmitvote-description": "AJAXPoll API module",
+	"apihelp-pollsubmitvote-summary": "AJAXPoll API మాడ్యూలు",
+	"apihelp-pollsubmitvote-param-poll": "832A5FA2C2583A5732B90CEFF658FE25 రూపంలో ఉండే పోల్ ఐడీ; ఇన్‌పుట్‌లను (ప్రశ్న + జవాబు వికల్పాలు, అంటే <code>&lt;poll&gt;...&lt;/poll&gt;</code> ట్యాగుల మధ్య ఉండే పాఠ్యాన్ని) MD5 హ్యాషింగు అల్గారిథమ్‌తో హ్యాష్ చేయగా వచ్చిన ఫలితాన్ని PHP లోని <code>strtoupper</code> ఫంక్షను ద్వారా అప్పర్‌కేసు లోకి మార్చి, ఇడీలను రూపొందిస్తారు",
 	"apihelp-pollsubmitvote-example-1": "832A5FA2C2583A5732B90CEFF658FE25 అనే ఐడీ ఉన్న మూడవ (3) సమాధానాన్ని పోల్‌కు పంపించు",
 	"ajaxpoll-desc": "అజాక్స్ ఆధారిత పోల్స్ <code>&lt;poll&gt;</code> ట్యాగుతో అనుమతించు",
 	"ajaxpoll-tracking-category": "పోల్ కలిగిన పేజీలు",
