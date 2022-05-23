@@ -35,7 +35,7 @@
 	"ajaxpoll-view-results-before-vote-permission": "Du bist nicht berechtigt, die Ergebnisse dieser Abstimmung anzusehen, bevor du abgestimmt hast.",
 	"ajaxpoll-revoke-vote": "Ich möchte meine Stimme widerrufen",
 	"ajaxpoll-vote-revoked": "Deine Stimme wurde widerrufen.",
-	"right-ajaxpoll-vote": "An AJAX-gestützen Umfragen teilnehmen",
+	"right-ajaxpoll-vote": "Abstimmen in AJAX-basierten Umfragen",
 	"right-ajaxpoll-view-results": "Ergebnisse von AJAX-basierten Umfragen ansehen",
 	"right-ajaxpoll-view-results-before-vote": "Ergebnisse von AJAX-basierten Umfragen vor der Abstimmung ansehen",
 	"action-ajaxpoll-vote": "bei AJAX-basierten Umfragen abzustimmen",

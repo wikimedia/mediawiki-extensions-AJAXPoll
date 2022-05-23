@@ -25,6 +25,7 @@
 	"ajaxpoll-info": "$2에 설문 조사가 만들어진 뒤 {{PLURAL:$1|1표|$1표}}가 있습니다.",
 	"ajaxpoll-submitting": "투표를 제출하는 동안 잠시 기다려주세요.",
 	"ajaxpoll-vote-permission": "투표를 받을 수 없습니다.",
+	"ajaxpoll-readonly": "이 투표에 투표할 수 없습니다. 다음의 이유로 데이터베이스가 잠겨 있습니다: $1.",
 	"ajaxpoll-view-results-permission": "당신은 이 투표의 결과를 볼 자격이 없습니다.",
 	"ajaxpoll-view-results-before-vote-permission": "투표하기 전까지는 이 투표의 결과를 볼 권한이 없습니다.",
 	"ajaxpoll-revoke-vote": "투표를 취소합니다",

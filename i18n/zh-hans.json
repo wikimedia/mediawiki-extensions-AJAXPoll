@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"GuoPC",
 			"Liuxinyu970226",
 			"Mys 721tx",
 			"Qiyue2001",
@@ -35,9 +36,9 @@
 	"ajaxpoll-view-results-before-vote-permission": "您在投票前无权查看投票结果。",
 	"ajaxpoll-revoke-vote": "我想撤销我的投票",
 	"ajaxpoll-vote-revoked": "您已撤销您的投票。",
-	"right-ajaxpoll-vote": "可在基于AJAX的投票区投票",
-	"right-ajaxpoll-view-results": "可查看基于AJAX的调查结果",
-	"right-ajaxpoll-view-results-before-vote": "可在投票前查看基于AJAX的调查结果",
+	"right-ajaxpoll-vote": "在基于AJAX的投票区投票",
+	"right-ajaxpoll-view-results": "查看基于AJAX的调查结果",
+	"right-ajaxpoll-view-results-before-vote": "在投票前查看基于AJAX的调查结果",
 	"action-ajaxpoll-vote": "在基于AJAX的投票页面中投票",
 	"action-ajaxpoll-view-results": "在基于AJAX的投票页面查看结果",
 	"action-ajaxpoll-view-results-before-vote": "在基于AJAX的投票页面投票之前预览结果"

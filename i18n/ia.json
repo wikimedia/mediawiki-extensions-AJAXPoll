@@ -27,9 +27,9 @@
 	"ajaxpoll-view-results-before-vote-permission": "Tu non es autorisate a vider le resultatos de iste sondage ante de haber votate.",
 	"ajaxpoll-revoke-vote": "Io vole revocar mi voto",
 	"ajaxpoll-vote-revoked": "Tu voto ha essite revocate.",
-	"right-ajaxpoll-vote": "Pote votar in sondages a base de AJAX",
-	"right-ajaxpoll-view-results": "Pote vider resultatos in sondages basate sur AJAX",
-	"right-ajaxpoll-view-results-before-vote": "Pote vider resultatos in sondages basate sur AJAX ante de haber votate",
+	"right-ajaxpoll-vote": "Votar in sondages basate sur AJAX",
+	"right-ajaxpoll-view-results": "Vider resultatos in sondages basate sur AJAX",
+	"right-ajaxpoll-view-results-before-vote": "Vider resultatos in sondages basate sur AJAX ante de haber votate",
 	"action-ajaxpoll-vote": "votar in sondages basate sur AJAX",
 	"action-ajaxpoll-view-results": "vider resultatos in sondages basate sur AJAX",
 	"action-ajaxpoll-view-results-before-vote": "vider resultatos in sondages basate sur AJAX ante de haber votate"

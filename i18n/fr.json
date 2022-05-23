@@ -36,9 +36,9 @@
 	"ajaxpoll-view-results-before-vote-permission": "Vous n’êtes pas autorisé à voir les résultats de ce sondage avant d’avoir vous-même voté.",
 	"ajaxpoll-revoke-vote": "Je veux annuler mon vote",
 	"ajaxpoll-vote-revoked": "Votre vote a été révoqué.",
-	"right-ajaxpoll-vote": "Peut voter dans des sondages basés sur AJAX",
-	"right-ajaxpoll-view-results": "Peut voir les résultats des sondages basés sur AJAX",
-	"right-ajaxpoll-view-results-before-vote": "Peut voir les résultats des sondages basés sur AJAX avant d’avoir voté",
+	"right-ajaxpoll-vote": "Voter dans des sondages basés sur AJAX",
+	"right-ajaxpoll-view-results": "Voir les résultats des sondages basés sur AJAX",
+	"right-ajaxpoll-view-results-before-vote": "Voir les résultats des sondages basés sur AJAX avant d’avoir voté",
 	"action-ajaxpoll-vote": "voter dans les sondages basés sur AJAX",
 	"action-ajaxpoll-view-results": "voir les résultats des sondages basés sur AJAX",
 	"action-ajaxpoll-view-results-before-vote": "voir les résultats des sondages basés sur AJAX avant d’avoir voté"
