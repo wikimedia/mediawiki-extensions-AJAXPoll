@@ -35,9 +35,9 @@
 	"ajaxpoll-view-results-before-vote-permission": "Вы не можете просмотреть результаты опроса до тех пор, пока не проголосуете.",
 	"ajaxpoll-revoke-vote": "Я хочу отменить свой голос",
 	"ajaxpoll-vote-revoked": "Ваш голос был отозван.",
-	"right-ajaxpoll-vote": "Может голосовать в опросах на основе AJAX",
-	"right-ajaxpoll-view-results": "Можно посмотреть результаты опросов на основе AJAX",
-	"right-ajaxpoll-view-results-before-vote": "Можно посмотреть результаты опросов на основе AJAX перед голосованием",
+	"right-ajaxpoll-vote": "Голосовать в опросах на основе AJAX",
+	"right-ajaxpoll-view-results": "Смотреть результаты опросов на основе AJAX",
+	"right-ajaxpoll-view-results-before-vote": "Смотреть результаты опросов на основе AJAX перед голосованием",
 	"action-ajaxpoll-vote": "голосование в опросах на основе AJAX",
 	"action-ajaxpoll-view-results": "просмотр результатов опросов на основе AJAX",
 	"action-ajaxpoll-view-results-before-vote": "просмотр результатов опросов на основе AJAX перед голосованием"
