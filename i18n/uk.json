@@ -35,9 +35,9 @@
 	"ajaxpoll-view-results-before-vote-permission": "Ви не можете переглядати результати цього опитування, поки не проголосуєте.",
 	"ajaxpoll-revoke-vote": "Я хочу скасувати свій голос",
 	"ajaxpoll-vote-revoked": "Ваш голос скасовано.",
-	"right-ajaxpoll-vote": "Можливість голосування в опитуваннях на основі AJAX",
-	"right-ajaxpoll-view-results": "Можливість перегляду результатів опитувань на основі AJAX",
-	"right-ajaxpoll-view-results-before-vote": "Можливість перегляду результатів опитувань на основі AJAX до того, як проголосували",
+	"right-ajaxpoll-vote": "Голосування в опитуваннях на основі AJAX",
+	"right-ajaxpoll-view-results": "Перегляд результатів опитувань на основі AJAX",
+	"right-ajaxpoll-view-results-before-vote": "Перегляд результатів опитувань на основі AJAX до того, як проголосували",
 	"action-ajaxpoll-vote": "голосування в опитуваннях на основі AJAX",
 	"action-ajaxpoll-view-results": "перегляд результатів опитувань на основі AJAX",
 	"action-ajaxpoll-view-results-before-vote": "перегляд результатів опитувань на основі AJAX перед голосуванням"
