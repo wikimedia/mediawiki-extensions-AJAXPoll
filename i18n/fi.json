@@ -33,9 +33,9 @@
 	"ajaxpoll-view-results-before-vote-permission": "Et voi katsella kyselyn tuloksia ennen kuin olet äänestänyt.",
 	"ajaxpoll-revoke-vote": "Haluan peruuttaa ääneni",
 	"ajaxpoll-vote-revoked": "Äänesi on peruttu.",
-	"right-ajaxpoll-vote": "Voi äänestää AJAX-pohjaisissa kyselyissä",
-	"right-ajaxpoll-view-results": "Voi katsoa AJAX-pohjaisten kyselyiden tuloksia",
-	"right-ajaxpoll-view-results-before-vote": "Voi katsoa AJAX-pohjaisten kyselyiden tuloksia ennen äänestämistä",
+	"right-ajaxpoll-vote": "Äänestää AJAX-pohjaisissa kyselyissä",
+	"right-ajaxpoll-view-results": "Tarkastella AJAX-pohjaisten kyselyiden tuloksia",
+	"right-ajaxpoll-view-results-before-vote": "Tarkastella AJAX-pohjaisten kyselyiden tuloksia ennen äänestämistä",
 	"action-ajaxpoll-vote": "äänestää AJAX-pohjaisissa kyselyissä",
 	"action-ajaxpoll-view-results": "katsoa AJAX-pohjaisten kyselyiden tuloksia",
 	"action-ajaxpoll-view-results-before-vote": "katsoa AJAX-pohjaisten kyselyiden tuloksia ennen äänestämistä"
