@@ -21,7 +21,7 @@
 	"ajaxpoll-vote-add": "Váš hlas byl přidán.",
 	"ajaxpoll-vote-error": "Došlo k potížím se zpracováním Vašeho hlasu, zkuste to prosím znovu.",
 	"ajaxpoll-percent-votes": "$1% všech hlasů",
-	"ajaxpoll-your-vote": "Již jste hlasovali pro „$1” na $3 v $4. Svůj hlas můžete změnit kliknutím na odpověď níže.",
+	"ajaxpoll-your-vote": "Již jste hlasovali pro „$1“ na $3 v $4. Svůj hlas můžete změnit kliknutím na odpověď níže.",
 	"ajaxpoll-no-vote": "Prosím hlasujte níže.",
 	"ajaxpoll-no-vote-results-after-voting": "Prosím hlasujte níže, výsledky budou zobrazeny poté.",
 	"ajaxpoll-info": "{{PLURAL:$1|Odevzdán jeden hlas|Odevzdány $1 hlasy|Odevzdáno $1 hlasů}} od zahájení ankety dne $2.",
