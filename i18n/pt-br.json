@@ -6,6 +6,7 @@
 			"Anaclaudiaml",
 			"Cainamarques",
 			"Daemorris",
+			"Duke of Wikipädia",
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
 			"Fúlvio",
@@ -36,8 +37,8 @@
 	"ajaxpoll-revoke-vote": "Quero revogar o meu voto",
 	"ajaxpoll-vote-revoked": "Seu voto foi revogado.",
 	"right-ajaxpoll-vote": "Pode votar em votações baseadas em AJAX",
-	"right-ajaxpoll-view-results": "Pode ver resultados de pesquisas baseadas em AJAX",
-	"right-ajaxpoll-view-results-before-vote": "Pode ver resultados de pesquisas baseadas em AJAX antes de ter votado",
+	"right-ajaxpoll-view-results": "Ver resultados de pesquisas baseadas em AJAX",
+	"right-ajaxpoll-view-results-before-vote": "Ver resultados de pesquisas baseadas em AJAX antes de ter votado",
 	"action-ajaxpoll-vote": "Votar em pesquisas baseadas em AJAX",
 	"action-ajaxpoll-view-results": "Ver resultados de pequisas baseadas em AJAX",
 	"action-ajaxpoll-view-results-before-vote": "Ver resultados das pesquisas baseadas em AJAX antes de ter votado"
