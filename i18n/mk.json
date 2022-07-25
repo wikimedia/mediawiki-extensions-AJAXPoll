@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Bjankuloski06",
-			"McDutchie"
+			"McDutchie",
+			"Vlad5250"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "Приложнички модиул за Анкета со AJAX",
@@ -28,9 +29,9 @@
 	"ajaxpoll-view-results-before-vote-permission": "Немате право да го гледате исходот од анкетава пред да гласате.",
 	"ajaxpoll-revoke-vote": "Сакам да го повлечам гласот",
 	"ajaxpoll-vote-revoked": "Вашиот глас е повлечен.",
-	"right-ajaxpoll-vote": "Може да гласа на анкети на основа на AJAX.",
-	"right-ajaxpoll-view-results": "Може да гледа исходи од анкети со AJAX",
-	"right-ajaxpoll-view-results-before-vote": "Може да гледа исходи од анкети со AJAX без да има гласано",
+	"right-ajaxpoll-vote": "Гласање во анкети на основа на AJAX",
+	"right-ajaxpoll-view-results": "Преглед на исходи од анкети со AJAX",
+	"right-ajaxpoll-view-results-before-vote": "Преглед на исходи од анкети со AJAX без да има гласано",
 	"action-ajaxpoll-vote": "гласање во анкети со AJAX",
 	"action-ajaxpoll-view-results": "преглед на исход од анкети со AJAX",
 	"action-ajaxpoll-view-results-before-vote": "преглед на исходи од анкети со AJAX пред да се гласа"
