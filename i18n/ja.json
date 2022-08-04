@@ -6,6 +6,7 @@
 			"RYOUMA1117",
 			"Shirayuki",
 			"Shun Fukuzawa",
+			"Sou0012",
 			"Sujiniku",
 			"Waki285"
 		]
@@ -33,9 +34,9 @@
 	"ajaxpoll-view-results-before-vote-permission": "投票を終えるまで、あなたはこの投票の結果を見ることができません。",
 	"ajaxpoll-revoke-vote": "自分の投票を取り消したい",
 	"ajaxpoll-vote-revoked": "投票を取り消しました。",
-	"right-ajaxpoll-vote": "Ajax ベースの投票所で投票",
-	"right-ajaxpoll-view-results": "Ajax ベースの投票所で結果を閲覧",
-	"right-ajaxpoll-view-results-before-vote": "Ajax ベースの投票所で投票前に結果を閲覧",
+	"right-ajaxpoll-vote": "AJAXベースの投票機能",
+	"right-ajaxpoll-view-results": "AJAXベースの投票結果を表示",
+	"right-ajaxpoll-view-results-before-vote": "AJAXベースの投票結果を投票前に閲覧",
 	"action-ajaxpoll-vote": "Ajax ベースの投票所での投票",
 	"action-ajaxpoll-view-results": "Ajax ベースの投票所で結果の閲覧",
 	"action-ajaxpoll-view-results-before-vote": "Ajax ベースの投票所で投票前に結果の閲覧"
