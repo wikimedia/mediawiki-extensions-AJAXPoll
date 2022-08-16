@@ -3,7 +3,8 @@
 		"authors": [
 			"Fohanno",
 			"Fulup",
-			"Y-M D"
+			"Y-M D",
+			"Huñvreüs"
 		]
 	},
 	"ajaxpoll-desc": "Aotren ar goulennoù diazezet war AJAX gant <code>&lt;poll&gt;</code> tag",
@@ -13,7 +14,7 @@
 	"ajaxpoll-vote-add": "Ouzhpennet eo bet ho vot.",
 	"ajaxpoll-vote-error": "Ur gudenn a zo bet pa vezer oc'h ober war-dro ho vot. Mar plij klaskit adarre.",
 	"ajaxpoll-percent-votes": "$1% eus hollad ar mouezhioù",
-	"ajaxpoll-your-vote": "Votet ho peus dija evit \"$1\" d'an $2, tu 'zo deoc'h kemmañ ho vot en ur klikañ war unan eus ar respontoù da heul.",
+	"ajaxpoll-your-vote": "Votet ho peus evit \"$1\" d'an $3 da $4. Gallout a rit kemmañ ho vot en ur glikañ war unan eus ar respontoù all a-is.",
 	"ajaxpoll-no-vote": "Mar plij votit amañ dindan.",
 	"ajaxpoll-no-vote-results-after-voting": "Votit amañ dindan, mar plij. Diskouezet e vo an disoc'hoù pa p'ho votet.",
 	"ajaxpoll-info": "{{PLURAL:$1|vot|$1 vot}} zo bet abaoe ma'z eo bet krouet ar sontadeg war $2.",
