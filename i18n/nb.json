@@ -32,9 +32,9 @@
 	"ajaxpoll-view-results-before-vote-permission": "Du har ikke rettigheter til å vise resultatene av denne avstemningen før du har stemt.",
 	"ajaxpoll-revoke-vote": "Jeg vil trekke tilbake stemmen min",
 	"ajaxpoll-vote-revoked": "Din stemme har blitt tilbakekalt.",
-	"right-ajaxpoll-vote": "Kan stemme i AJAX-baserte avstemninger",
-	"right-ajaxpoll-view-results": "Kan se resultater i AJAX-baserte avstemninger",
-	"right-ajaxpoll-view-results-before-vote": "Kan se resultater i AJAX-baserte avstemninger før stemme er avgitt",
+	"right-ajaxpoll-vote": "Stemme i AJAX-baserte avstemninger",
+	"right-ajaxpoll-view-results": "Se resultater i AJAX-baserte avstemninger",
+	"right-ajaxpoll-view-results-before-vote": "Se resultater i AJAX-baserte avstemninger før stemme er avgitt",
 	"action-ajaxpoll-vote": "stemme i AJAX-baserte avstemninger",
 	"action-ajaxpoll-view-results": "se resultater i AJAX-baserte avstemninger",
 	"action-ajaxpoll-view-results-before-vote": "se resultater i AJAX-baserte avstemninger før avstemming"
