@@ -5,6 +5,7 @@
 			"Kly",
 			"LNDDYL",
 			"Liuxinyu970226",
+			"Seikan Tunnel",
 			"Simon Shek",
 			"Winston Sung"
 		]
@@ -32,9 +33,9 @@
 	"ajaxpoll-view-results-before-vote-permission": "你無權在你未投票前查看此投票的結果。",
 	"ajaxpoll-revoke-vote": "我想撤銷我的投票",
 	"ajaxpoll-vote-revoked": "您的投票已撤銷。",
-	"right-ajaxpoll-vote": "可在基於AJAX的投票區投票",
-	"right-ajaxpoll-view-results": "可查閱基於AJAX投票之結果",
-	"right-ajaxpoll-view-results-before-vote": "可於投票前查閱基於AJAX投票之結果",
+	"right-ajaxpoll-vote": "在基於AJAX的投票區投票",
+	"right-ajaxpoll-view-results": "查閱基於AJAX投票之結果",
+	"right-ajaxpoll-view-results-before-vote": "投票前查閱基於AJAX投票之結果",
 	"action-ajaxpoll-vote": "於基於AJAX之投票",
 	"action-ajaxpoll-view-results": "查閱基於AJAX投票之結果",
 	"action-ajaxpoll-view-results-before-vote": "於投票前查閱基於AJAX投票之結果"
