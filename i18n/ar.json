@@ -7,7 +7,8 @@
 			"OsamaK",
 			"Zanatos",
 			"ديفيد",
-			"Michel Bakni"
+			"Michel Bakni",
+			"NEHAOUA"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "وحدة AJAXPoll API",
@@ -28,6 +29,7 @@
 	"ajaxpoll-info": "هناك {{PLURAL:$1||تصويتا واحدا|تصويتين|$1 تصويت|$1 تصويتا|$1 تصويت}} منذ بداية التصويت في $2.",
 	"ajaxpoll-submitting": "من فضلك انتظر، يرسل صوتك.",
 	"ajaxpoll-vote-permission": "ليس لك حق التصويت.",
+	"ajaxpoll-readonly": "لا يمكن التصويت على هذا الاستطلاع ، قاعدة البيانات مقفلة للسبب التالي: $1 .",
 	"ajaxpoll-view-results-permission": "ليس لديك الصلاحيات اللازمة لعرض نتائج هذا الاستطلاع.",
 	"ajaxpoll-view-results-before-vote-permission": "لا يحق لك عرض نتائج هذا الاستطلاع قبل التصويت.",
 	"ajaxpoll-revoke-vote": "أريد سحب تصويتي",
