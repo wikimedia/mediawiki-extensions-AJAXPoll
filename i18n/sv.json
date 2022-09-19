@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"JohanahoJ",
 			"Jopparn",
 			"Liftarn",
 			"Lokal Profil",
@@ -34,9 +35,9 @@
 	"ajaxpoll-view-results-before-vote-permission": "Du har inte rätt att se resultat från denna enkät innan du har röstat.",
 	"ajaxpoll-revoke-vote": "Jag vill återkalla min röst",
 	"ajaxpoll-vote-revoked": "Din röst har återkallats.",
-	"right-ajaxpoll-vote": "Kan rösta i AJAX-baserade omröstningar",
-	"right-ajaxpoll-view-results": "Kan visa resultaten i AJAX-baserade omröstningar",
-	"right-ajaxpoll-view-results-before-vote": "Kan visa resultaten i AJAX-baserade omröstningar innan de har röstat",
+	"right-ajaxpoll-vote": "Rösta i AJAX-baserade omröstningar",
+	"right-ajaxpoll-view-results": "Se resultat i AJAX-baserade omröstningar",
+	"right-ajaxpoll-view-results-before-vote": "Se resultat i AJAX-baserade omröstningar innan att ha röstat",
 	"action-ajaxpoll-vote": "rösta i AJAX-baserade omröstningar",
 	"action-ajaxpoll-view-results": "visa resultat i AJAX-baserade enkäter",
 	"action-ajaxpoll-view-results-before-vote": "visa resultat i AJAX-baserade enkäter innan de har röstat"
