@@ -4,6 +4,8 @@
 			"Vlad5250"
 		]
 	},
+	"apihelp-pollsubmitvote-description": "Анкета со AJAX Priložnički modiul",
+	"apihelp-pollsubmitvote-summary": "Анкета со AJAX modiul",
 	"ajaxpoll-desc": "Ankete temeljene na AJAX-u s oznakom <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Stranice s anketom",
 	"ajaxpoll-tracking-category-desc": "Stranica ima <code>&lt;poll&gt;</code>.",
@@ -15,7 +17,7 @@
 	"ajaxpoll-no-vote": "Molimo da glasate ispod.",
 	"ajaxpoll-no-vote-results-after-voting": "Molimo dajte Vaš glas ispod. Rezultat će biti prikazan nakon glasovanja.",
 	"ajaxpoll-info": "Otkad je napravljena anketa ($2) {{PLURAL:$1|dan jedan glas|dano je $1 glasa}}.",
-	"ajaxpoll-submitting": "Čekajte, zavodim vaš glas.",
+	"ajaxpoll-submitting": "Sačekajte, zavodim vaš glas.",
 	"ajaxpoll-vote-permission": "Ne možete da glasate.",
 	"ajaxpoll-view-results-permission": "Nemate pravo gleadti ishod od ove ankete.",
 	"ajaxpoll-view-results-before-vote-permission": "Nemate pravo gleadti ishod od ove ankete prije da glasate.",
