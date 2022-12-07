@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eleassar"
+			"Eleassar",
+			"Jack Phoenix"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "API-modul AjaxPoll",
@@ -11,7 +12,7 @@
 	"apihelp-pollsubmitvote-example-1": "Prenese tretji (3) odgovor na anketo z ID 832A5FA2C2583A5732B90CEFF658FE25",
 	"ajaxpoll-desc": "Omogoča AJAX-ankete z oznako <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Strani z anketo",
-	"ajaxpoll-tracking-category-desc": "Ta stran ima <code>&lt;anketo&gt;</code>.",
+	"ajaxpoll-tracking-category-desc": "Ta stran ima <code>&lt;poll&gt;</code>.",
 	"ajaxpoll-vote-update": "Vaš glas je posodobljen.",
 	"ajaxpoll-vote-add": "Vaš glas je dodan.",
 	"ajaxpoll-vote-error": "Pri obdelavi vašega glasu je prišlo do težave, poskusite znova.",
