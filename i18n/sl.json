@@ -23,7 +23,7 @@
 	"ajaxpoll-info": "Odkar je bila anketa $2 ustvarjena, {{PLURAL:$1|je bil oddan en glas|sta bila oddana 2 glasova|so bili oddani $1 glasovi|je bilo oddanih $1 glasov}}.",
 	"ajaxpoll-submitting": "Prosimo, počakajte, obdelujem vaš glas.",
 	"ajaxpoll-vote-permission": "Do glasovanja niste upravičeni.",
-	"ajaxpoll-readonly": "V tej anketi ni mogoče glasovati; zbirka podatkov je zaklenjena zaradi naslednjega razloga: $1.",
+	"ajaxpoll-readonly": "V tej anketi ni mogoče glasovati; podatkovna zbirka je zaklenjena iz naslednjega razloga: $1.",
 	"ajaxpoll-view-results-permission": "Nimate pravice do ogleda rezultatov te ankete.",
 	"ajaxpoll-view-results-before-vote-permission": "Nimate pravice do ogleda rezultatov te ankete, preden ste glasovali.",
 	"ajaxpoll-revoke-vote": "Želim preklicati svoj glas",
