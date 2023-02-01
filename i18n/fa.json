@@ -12,9 +12,13 @@
 			"Rtemis",
 			"Signal89",
 			"Taha",
-			"Beginneruser"
+			"Beginneruser",
+			"0PAWN0",
+			"Jeeputer"
 		]
 	},
+	"apihelp-pollsubmitvote-description": "پودمان AJAXPoll API",
+	"apihelp-pollsubmitvote-summary": "پودمان AJAXPoll API",
 	"ajaxpoll-desc": "رأی‌گیری‌های ای‌جکسی با برچسب <code>&lt;poll&gt;</code> را اجازه می‌دهد.",
 	"ajaxpoll-tracking-category": "صفحه‌هایی با یک نظرسنجی",
 	"ajaxpoll-tracking-category-desc": "این صفحه کد <code>&lt;poll&gt;</code> دارد.",
