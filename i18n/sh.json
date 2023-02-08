@@ -19,8 +19,9 @@
 	"ajaxpoll-info": "Otkad je napravljena anketa ($2) {{PLURAL:$1|dan jedan glas|dano je $1 glasa}}.",
 	"ajaxpoll-submitting": "Sačekajte, zavodim vaš glas.",
 	"ajaxpoll-vote-permission": "Ne možete da glasate.",
-	"ajaxpoll-view-results-permission": "Nemate pravo gleadti ishod od ove ankete.",
-	"ajaxpoll-view-results-before-vote-permission": "Nemate pravo gleadti ishod od ove ankete prije da glasate.",
+	"ajaxpoll-readonly": "U ovoj se anketi ne može glasovati. Baza podataka je zaključana iz sljedećeg razloga: $1.",
+	"ajaxpoll-view-results-permission": "Nemate pravo gledati rezultate ove ankete.",
+	"ajaxpoll-view-results-before-vote-permission": "Nemate pravo gledati rezultate ove ankete prije da glasate.",
 	"ajaxpoll-revoke-vote": "Želim poništiti glas",
 	"ajaxpoll-vote-revoked": "Vaš glas je poništen."
 }
