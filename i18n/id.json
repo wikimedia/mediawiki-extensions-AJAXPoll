@@ -7,11 +7,15 @@
 			"Farras",
 			"Kenrick95",
 			"Rv77ax",
-			"Rex"
+			"Rex",
+			"Agam Riyandana"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "Modul API AJAXPoll",
 	"apihelp-pollsubmitvote-summary": "Modul API AJAXPoll",
+	"apihelp-pollsubmitvote-param-poll": "ID Jajak Pendapat, seperti 832A5FA2C2583A5732B90CEFF658FE25; ID dibentuk dengan hashing input (opsi pertanyaan + jawaban, yaitu teks antara tag <code><poll>...</poll></code> ) dengan algoritma hashing MD5 dan mengonversi hasilnya menjadi UPPERCASE dengan fungsi <code>strtoupper</code> PHP",
+	"apihelp-pollsubmitvote-param-answer": "Pengidentifikasi opsi jawaban numerik; gunakan 0 untuk mencabut suara yang diberikan sebelumnya",
+	"apihelp-pollsubmitvote-example-1": "Kirimkan jawaban ketiga (3) ke polling yang memiliki ID 832A5FA2C2583A5732B90CEFF658FE25",
 	"ajaxpoll-desc": "Memungkinkan jajak pendapat berbasis AJAX dengan tag <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Halaman dengan jajak pendapat",
 	"ajaxpoll-tracking-category-desc": "Halaman ini memiliki <code>&lt;pemungutan suara&gt;</code>.",
@@ -25,6 +29,7 @@
 	"ajaxpoll-info": "Ada {{PLURAL:$1|satu suara|$1 suara}} sejak jajak pendapat ini dibuat pada $2.",
 	"ajaxpoll-submitting": "Silakan tunggu. Sedang mengirimkan suara Anda.",
 	"ajaxpoll-vote-permission": "Anda tidak dapat memberikan suara.",
+	"ajaxpoll-readonly": "Jajak pendapat ini tidak dapat dipilih, basis data dikunci karena alasan berikut: $1 .",
 	"ajaxpoll-view-results-permission": "Anda tidak berhak untuk melihat hasil jajak pendapat ini.",
 	"ajaxpoll-view-results-before-vote-permission": "Anda tidak berhak untuk melihat hasil jajak pendapat ini sebelum Anda memberikan suara.",
 	"ajaxpoll-revoke-vote": "Saya ingin membatalkan suara saya",
