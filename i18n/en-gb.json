@@ -1,14 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chase me ladies, I'm the Cavalry"
+			"Chase me ladies, I'm the Cavalry",
+			"Dreamy Jazz"
 		]
 	},
 	"ajaxpoll-submitting": "Please wait: submitting your vote.",
 	"ajaxpoll-view-results-permission": "You are not entitled to view the results of this poll.",
 	"ajaxpoll-view-results-before-vote-permission": "You are not entitled to view the results of this poll before you have voted.",
-	"right-ajaxpoll-vote": "User can vote in AJAX-based polls",
-	"right-ajaxpoll-view-results": "User can view results in AJAX-based polls",
-	"right-ajaxpoll-view-results-before-vote": "User can view results in AJAX-based polls before user has voted",
+	"right-ajaxpoll-vote": "Vote in AJAX-based polls",
+	"right-ajaxpoll-view-results": "View results in AJAX-based polls",
+	"right-ajaxpoll-view-results-before-vote": "View results in AJAX-based polls before having voted",
 	"action-ajaxpoll-view-results-before-vote": "view results in AJAX-based polls before you have voted"
 }
