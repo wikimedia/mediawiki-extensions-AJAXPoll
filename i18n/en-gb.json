@@ -8,8 +8,5 @@
 	"ajaxpoll-submitting": "Please wait: submitting your vote.",
 	"ajaxpoll-view-results-permission": "You are not entitled to view the results of this poll.",
 	"ajaxpoll-view-results-before-vote-permission": "You are not entitled to view the results of this poll before you have voted.",
-	"right-ajaxpoll-vote": "Vote in AJAX-based polls",
-	"right-ajaxpoll-view-results": "View results in AJAX-based polls",
-	"right-ajaxpoll-view-results-before-vote": "View results in AJAX-based polls before having voted",
 	"action-ajaxpoll-view-results-before-vote": "view results in AJAX-based polls before you have voted"
 }
