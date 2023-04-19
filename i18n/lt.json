@@ -7,6 +7,9 @@
 			"Nokeoo"
 		]
 	},
+	"apihelp-pollsubmitvote-description": "AJAXPoll API modulis",
+	"apihelp-pollsubmitvote-summary": "AJAXPoll API modulis",
+	"apihelp-pollsubmitvote-example-1": "Pateikti trečią (3) atsakymą į apklausą, kurios ID yra 832A5FA2C2583A5732B90CEFF658FE25",
 	"ajaxpoll-desc": "Leidžia AJAX pagrįstas apklausas su <code>&lt;poll&gt;</code> žyme",
 	"ajaxpoll-tracking-category": "Puslapiai su apklausa",
 	"ajaxpoll-tracking-category-desc": "Šis puslapis turi <code>&lt;poll&gt;</code>.",
@@ -20,13 +23,14 @@
 	"ajaxpoll-info": "Yra {{PLURAL:$1|vienas balsas|$1 balsų}} nuo apklausos sukūrimo $2.",
 	"ajaxpoll-submitting": "Prašome palaukti, siunčiame jūsų balsą.",
 	"ajaxpoll-vote-permission": "Jūs neturite balsavimo teisės.",
+	"ajaxpoll-readonly": "Šioje apklausoje balsuoti negalima, duomenų bazė užrakinta dėl šios priežasties: $1.",
 	"ajaxpoll-view-results-permission": "Jūs neturite teisės peržiūrėti šios apklausos rezultatus.",
 	"ajaxpoll-view-results-before-vote-permission": "Jūs neturi teisės peržiūrėti šios apklausos rezultatus prieš atiduodant savo balsą.",
 	"ajaxpoll-revoke-vote": "Noriu atsiimti savo balsą",
 	"ajaxpoll-vote-revoked": "Jūsų balsas buvo atsiimtas.",
-	"right-ajaxpoll-vote": "Gali balsuoti AJAX apklausuose",
-	"right-ajaxpoll-view-results": "Gali peržiūrėti AJAX pagrįstų apklausų rezultatus",
-	"right-ajaxpoll-view-results-before-vote": "Gali peržiūrėti AJAX pagrįstų apklausų rezultatus prieš balsuojant",
+	"right-ajaxpoll-vote": "Balsuoti AJAX apklausuose",
+	"right-ajaxpoll-view-results": "Peržiūrėti AJAX apklausų rezultatus",
+	"right-ajaxpoll-view-results-before-vote": "Peržiūrėti AJAX pagrįstų apklausų rezultatus prieš balsuojant",
 	"action-ajaxpoll-vote": "balsuoti AJAX pagrįstuose apklausuose",
 	"action-ajaxpoll-view-results": "žiūrėti AJAX pagrįstų apklausų rezultatus",
 	"action-ajaxpoll-view-results-before-vote": "žiūrėti AJAX pagrįstų apklausų rezultatus prieš balsuojant"
