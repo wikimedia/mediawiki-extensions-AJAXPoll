@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Narazeni"
+		]
+	},
+	"ajaxpoll-vote-update": "თქვან ხონარქ მიახალჷ.",
+	"ajaxpoll-vote-add": "თქვან ხონარქ ქეგიაძინჷ.",
+	"ajaxpoll-vote-error": "თქვან ხონარიშ დამუშებაშის ჩილათაქ მოხვადჷ, ქორთხინთ, ხოლო ქოცადით.",
+	"ajaxpoll-percent-votes": "არძა ხონარიშ $1%"
+}
