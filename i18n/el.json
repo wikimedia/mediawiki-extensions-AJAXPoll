@@ -6,7 +6,8 @@
 			"Nikosgranturismogt",
 			"Protnet",
 			"ZaDiak",
-			"Περίεργος"
+			"Περίεργος",
+			"Jimkats"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "Δομοστοιχείο API AJAXPoll",
@@ -24,5 +25,5 @@
 	"ajaxpoll-vote-permission": "Δεν έχετε δικαίωμα να ψηφίσετε.",
 	"ajaxpoll-revoke-vote": "Θέλω να ανακαλέσω την ψήφο μου",
 	"ajaxpoll-vote-revoked": "Η ψήφος σας έχει ανακληθεί.",
-	"right-ajaxpoll-vote": "Μπορεί να ψηφίσει σε δημοσκοπήσεις βασισμένες σε AJAX"
+	"right-ajaxpoll-vote": "Ψήφος σε δημοσκοπήσεις βασισμένες σε AJAX"
 }
