@@ -6,7 +6,6 @@
 			"Thomas Gries"
 		]
 	},
-	"apihelp-pollsubmitvote-description": "AJAXPoll API module",
 	"apihelp-pollsubmitvote-summary": "AJAXPoll API module",
 	"apihelp-pollsubmitvote-param-poll": "Poll ID, such as 832A5FA2C2583A5732B90CEFF658FE25; IDs are formed by hashing the input (question + answer options, i.e. the text between <code>&lt;poll&gt;...&lt;/poll&gt;</code> tags) with MD5 hashing algorithm and converting the result to UPPERCASE with PHP's <code>strtoupper</code> function",
 	"apihelp-pollsubmitvote-param-answer": "Numerical answer option identifier; use 0 to revoke a previously cast vote",

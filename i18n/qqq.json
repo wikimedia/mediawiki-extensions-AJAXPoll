@@ -7,7 +7,6 @@
 			"Umherirrender"
 		]
 	},
-	"apihelp-pollsubmitvote-description": "{{doc-apihelp-description|pollsubmitvote}}",
 	"apihelp-pollsubmitvote-summary": "{{doc-apihelp-summary|pollsubmitvote}}",
 	"apihelp-pollsubmitvote-param-poll": "{{doc-apihelp-param|pollsubmitvote|poll}}",
 	"apihelp-pollsubmitvote-param-answer": "{{doc-apihelp-param|pollsubmitvote|answer}}",
