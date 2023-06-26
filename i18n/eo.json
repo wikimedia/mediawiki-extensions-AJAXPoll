@@ -6,7 +6,6 @@
 			"Mirin"
 		]
 	},
-	"apihelp-pollsubmitvote-description": "API-modulo AJAXPoll",
 	"apihelp-pollsubmitvote-summary": "API-modulo AJAXPoll",
 	"ajaxpoll-desc": "Ebligas enketojn bazitajn sur AJAX per markilo <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Paĝoj kun enketo",

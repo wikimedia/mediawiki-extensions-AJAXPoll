@@ -13,7 +13,6 @@
 			"Tuliouel"
 		]
 	},
-	"apihelp-pollsubmitvote-description": "Módulo API do AJAXPoll",
 	"apihelp-pollsubmitvote-summary": "Módulo API do AJAXPoll",
 	"apihelp-pollsubmitvote-param-poll": "Identificador do inquérito, como 832A5FA2C2583A5732B90CEFF658FE25; os identificadores são formados criando um resumo criptográfico da entrada (pergunta + opções de resposta, isto é, o texto entre os elementos <code>&lt;poll&gt;...&lt;/poll&gt;</code>) com o algoritmo criptográfico MD5 e convertendo o resultado para MAIÚSCULAS com a função <code>strtoupper</code> do PHP",
 	"apihelp-pollsubmitvote-param-answer": "Identificador numérico da opção de resposta; use 0 para revogar um voto anterior",

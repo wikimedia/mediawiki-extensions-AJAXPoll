@@ -10,7 +10,6 @@
 			"Saper"
 		]
 	},
-	"apihelp-pollsubmitvote-description": "Moduł API AJAXPoll",
 	"apihelp-pollsubmitvote-summary": "Moduł API AJAXPoll",
 	"apihelp-pollsubmitvote-param-poll": "ID ankiety, na przykład 832A5FA2C2583A5732B90CEFF658FE25; Identyfikatory ankiet są tworzone przez haszowanie tekstu ankiety (pytanie oraz lista odpowiedzi, czyli tekst między tagami <code>&lt;poll&gt;...&lt;/poll&gt;</code>) przy użyciu algorytmu MD5. Wyjście funkcji haszującej jest następnie KAPITALIZOWANE przy użyciu funkcji <code>strtoupper</code> w PHP.",
 	"apihelp-pollsubmitvote-param-answer": "Numer odpowiedzi w ankiecie; użyj numeru, 0 by cofnąć oddany uprzednio głos",

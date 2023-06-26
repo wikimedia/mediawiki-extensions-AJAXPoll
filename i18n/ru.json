@@ -12,7 +12,6 @@
 			"Александр Сигачёв"
 		]
 	},
-	"apihelp-pollsubmitvote-description": "Модуль AJAXPoll API",
 	"apihelp-pollsubmitvote-summary": "Модуль AJAXPoll API",
 	"apihelp-pollsubmitvote-param-poll": "Идентификатор опроса, например 832A5FA2C2583A5732B90CEFF658FE25; идентификаторы образуются хешированием ввода (вопрос + возможные ответы, т.е. текст между тегами <code>&lt;poll&gt;...&lt;/poll&gt;</code>) с хеш-алгоритмом MD5 и преобразованием результатов в ЗАГЛАВНЫЕ БУКВЫ с PHP-функцией <code>strtoupper</code>",
 	"apihelp-pollsubmitvote-param-answer": "Идентификатор нумерованного ответа; используйте 0 для отклонения предварительно данного голоса",

@@ -7,7 +7,6 @@
 			"Wizardist"
 		]
 	},
-	"apihelp-pollsubmitvote-description": "AJAXPoll API-модуль",
 	"apihelp-pollsubmitvote-summary": "API-модуль AJAXPoll",
 	"apihelp-pollsubmitvote-param-poll": "Ідэнтыфікатар апытаньня, такі як 832A5FA2C2583A5732B90CEFF658FE25; ідэнтыфікатары фармуюцца хэшаваньнем уводу (пытаньне + парамэтры адказу, напрыклад, тэкст паміж тэгамі <code>&lt;poll&gt;...&lt;/poll&gt;</code>) з альгарытмам хэшаваньня MD5 і канвэртацыяй выніку ў ВЕРХНІ РЭГІСТАР з дапамогай функцыі PHP <code>strtoupper</code>",
 	"apihelp-pollsubmitvote-param-answer": "Лікавы ідэнтыфікатар вэрсіі адказу; ужывайце 0, каб адклікаць раней пададзены голас",

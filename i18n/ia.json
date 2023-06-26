@@ -4,7 +4,6 @@
 			"McDutchie"
 		]
 	},
-	"apihelp-pollsubmitvote-description": "Modulo API AJAXPoll",
 	"apihelp-pollsubmitvote-summary": "Modulo API AJAXPoll",
 	"apihelp-pollsubmitvote-param-poll": "ID del sondage, p.ex. 832A5FA2C2583A5732B90CEFF658FE25; le IDs se forma hachante le entrata (question + optiones de responsa, i.e. le texto inter le etiquettas <code>&lt;poll&gt;...&lt;/poll&gt;</code>) con un algorithmo de hachage MD5 e convertente le resultato in MAJUSCULAS con le function <code>strtoupper</code> de PHP.",
 	"apihelp-pollsubmitvote-param-answer": "Identificator numeric del option de responsa; usa 0 pro revocar un voto anterior",

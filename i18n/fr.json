@@ -13,7 +13,6 @@
 			"Wladek92"
 		]
 	},
-	"apihelp-pollsubmitvote-description": "Module d’API AJAXPoll",
 	"apihelp-pollsubmitvote-summary": "Module d’API AJAXPoll",
 	"apihelp-pollsubmitvote-param-poll": "L’ID du sondage, comme 832A5FA2C2583A5732B90CEFF658FE25 ; les IDs sont formés en hachant l’entrée (question + options de réponse, c.-à-d. le texte entre les balises <code>&lt;poll&gt;...&lt;/poll&gt;</code>) avec un algorithme de hachage MD5 et en convertissant le résultat en MAJUSCULES avec la fonction <code>strtoupper</code> de PHP.",
 	"apihelp-pollsubmitvote-param-answer": "Option de réponse numérique identifiée ; utiliser 0 pour révoquer un vote précédemment effectué.",

@@ -4,7 +4,6 @@
 			"Milicevic01"
 		]
 	},
-	"apihelp-pollsubmitvote-description": "AJAXPoll API modul",
 	"apihelp-pollsubmitvote-summary": "AJAXPoll API modul",
 	"ajaxpoll-tracking-category": "Stranice sa anketama",
 	"ajaxpoll-tracking-category-desc": "Stranica ima <code>&lt;poll&gt;</code>.",

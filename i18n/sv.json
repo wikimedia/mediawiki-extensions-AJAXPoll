@@ -12,7 +12,6 @@
 			"WikiPhoenix"
 		]
 	},
-	"apihelp-pollsubmitvote-description": "AJAXPoll API-modul",
 	"apihelp-pollsubmitvote-summary": "AJAXPoll API-modul",
 	"apihelp-pollsubmitvote-param-poll": "Omröstnings-ID, som 832A5FA2C2583A5732B90CEFF658FE25. IDs skapas genom att hasha inputen(frågan+svarsalternativ, alltså texten mellan <code>&lt;poll&gt;...&lt;/poll&gt;</code>-taggarna) med MD5-hashningsalgoritmen och konvertera resultatet till VERSALER med PHPs <code>strtoupper</code>-funktion",
 	"apihelp-pollsubmitvote-param-answer": "Numerisk svaralternativ-ID; användning 0 för att nollställa en tidigare avgiven röst",

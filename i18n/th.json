@@ -4,7 +4,6 @@
 			"Aefgh39622"
 		]
 	},
-	"apihelp-pollsubmitvote-description": "โมดูล API ของ AJAXPoll",
 	"apihelp-pollsubmitvote-summary": "โมดูล API ของ AJAXPoll",
 	"ajaxpoll-desc": "อนุญาตโพลที่ใช้ AJAX ที่มีป้ายกำกับ <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "หน้าที่มีโพล",

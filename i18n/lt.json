@@ -7,7 +7,6 @@
 			"Nokeoo"
 		]
 	},
-	"apihelp-pollsubmitvote-description": "AJAXPoll API modulis",
 	"apihelp-pollsubmitvote-summary": "AJAXPoll API modulis",
 	"apihelp-pollsubmitvote-example-1": "Pateikti trečią (3) atsakymą į apklausą, kurios ID yra 832A5FA2C2583A5732B90CEFF658FE25",
 	"ajaxpoll-desc": "Leidžia AJAX pagrįstas apklausas su <code>&lt;poll&gt;</code> žyme",

@@ -5,7 +5,6 @@
 			"Reder"
 		]
 	},
-	"apihelp-pollsubmitvote-description": "Module API de AJAXPoll",
 	"apihelp-pollsubmitvote-summary": "Module API de AJAXPoll",
 	"apihelp-pollsubmitvote-param-poll": "ID d'u sondagge, cumme a 832A5FA2C2583A5732B90CEFF658FE25; le ID avènene fatte ausanne l'hash d'u date mise (dumanne + opziune de resposte; i.e. 'u prosseme 'mbrà tag <code>&lt;poll&gt;...&lt;/poll&gt;</code> ) cu l'algoritme de hash MD5 e convertenne 'u resultate tutte MAIUSCOLE cu 'a funzione de PHP <code>strtoupper</code>",
 	"apihelp-pollsubmitvote-param-answer": "Opzione ca controlle le resposte numereche; ause 0 pe luà 'nu vote d'apprime",

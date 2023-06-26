@@ -11,7 +11,6 @@
 			"Rv77ax"
 		]
 	},
-	"apihelp-pollsubmitvote-description": "Modul API AJAXPoll",
 	"apihelp-pollsubmitvote-summary": "Modul API AJAXPoll",
 	"apihelp-pollsubmitvote-param-poll": "ID Jajak Pendapat, seperti 832A5FA2C2583A5732B90CEFF658FE25; ID dibentuk dengan hashing input (opsi pertanyaan + jawaban, yaitu teks antara tag <code><poll>...</poll></code> ) dengan algoritma hashing MD5 dan mengonversi hasilnya menjadi UPPERCASE dengan fungsi <code>strtoupper</code> PHP",
 	"apihelp-pollsubmitvote-param-answer": "Pengidentifikasi opsi jawaban numerik; gunakan 0 untuk mencabut suara yang diberikan sebelumnya",

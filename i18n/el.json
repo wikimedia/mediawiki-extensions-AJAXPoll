@@ -10,7 +10,6 @@
 			"Περίεργος"
 		]
 	},
-	"apihelp-pollsubmitvote-description": "Δομοστοιχείο API AJAXPoll",
 	"apihelp-pollsubmitvote-summary": "Δομοστοιχείο API AJAXPoll",
 	"ajaxpoll-desc": "Επιτρέπει δημοσκοπήσεις βασισμένες σε AJAX με ετικέτα <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Σελίδες με δημοσκόπηση",

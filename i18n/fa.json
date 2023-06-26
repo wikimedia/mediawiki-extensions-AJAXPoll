@@ -17,7 +17,6 @@
 			"Taha"
 		]
 	},
-	"apihelp-pollsubmitvote-description": "پودمان AJAXPoll API",
 	"apihelp-pollsubmitvote-summary": "پودمان AJAXPoll API",
 	"ajaxpoll-desc": "رأی‌گیری‌های ای‌جکسی با برچسب <code>&lt;poll&gt;</code> را اجازه می‌دهد.",
 	"ajaxpoll-tracking-category": "صفحه‌هایی با یک نظرسنجی",

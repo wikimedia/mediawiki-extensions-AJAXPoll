@@ -9,7 +9,6 @@
 			"Simen47"
 		]
 	},
-	"apihelp-pollsubmitvote-description": "API-modul for AJAXPoll",
 	"apihelp-pollsubmitvote-summary": "API-modul for AJAXPoll",
 	"apihelp-pollsubmitvote-param-poll": "Poll-ID, som 832A5FA2C2583A5732B90CEFF658FE25; ID-er dannes ved å hashe innputten (spørsmål + svaralternativer, altså teksten mellom <code>&lty;poll&gt;…&lt;/poll&gt;</code>-taggene) med MD5-algoritmen og så konvertere resultatet til STORE BOKSTAVER med PHPs <code>strtoupper</code>-funksjon",
 	"apihelp-pollsubmitvote-param-answer": "Numerisk svaralternativ-ID; bruk 0 for å nullstille en tidligere avgitt stemme",

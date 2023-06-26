@@ -4,7 +4,6 @@
 			"Vlad5250"
 		]
 	},
-	"apihelp-pollsubmitvote-description": "Анкета со AJAX Priložnički modiul",
 	"apihelp-pollsubmitvote-summary": "Анкета со AJAX modiul",
 	"ajaxpoll-desc": "Ankete temeljene na AJAX-u s oznakom <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Stranice s anketom",

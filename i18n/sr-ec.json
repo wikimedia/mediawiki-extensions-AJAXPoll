@@ -11,7 +11,6 @@
 			"Zoranzoki21"
 		]
 	},
-	"apihelp-pollsubmitvote-description": "AJAXPoll API модул",
 	"apihelp-pollsubmitvote-summary": "AJAXPoll API модул",
 	"ajaxpoll-tracking-category": "Странице са анкетама",
 	"ajaxpoll-tracking-category-desc": "Страница има <code>&lt;poll&gt;</code>.",

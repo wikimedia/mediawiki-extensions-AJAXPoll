@@ -13,7 +13,6 @@
 			"Stryn"
 		]
 	},
-	"apihelp-pollsubmitvote-description": "AJAXPoll API-moduuli",
 	"apihelp-pollsubmitvote-summary": "AJAXPoll API-moduuli",
 	"ajaxpoll-desc": "Mahdollistaa AJAX-pohjaiset gallupit <code>&lt;poll&gt;</code>-tagilla",
 	"ajaxpoll-tracking-category": "Sivut, joissa on kysely",

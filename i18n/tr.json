@@ -10,7 +10,6 @@
 			"ToprakM"
 		]
 	},
-	"apihelp-pollsubmitvote-description": "AJAXPoll API modülü",
 	"apihelp-pollsubmitvote-summary": "AJAXPoll API modülü",
 	"apihelp-pollsubmitvote-param-poll": "832A5FA2C2583A5732B90CEFF658FE25 gibi Anket Kimliği; ID'ler, MD5 karma algoritması ile girişe (soru + cevap seçenekleri, yani <code>&lt;poll&gt;...&lt;/poll&gt;</code> etiketleri) metin kodunu, MD5 karma algoritmasıyla ve sonucu PHP'nin <code>strtoupper</code> işlevi UPPERCASE'e dönüştürerek oluşturulur",
 	"apihelp-pollsubmitvote-param-answer": "Sayısal cevap seçeneği tanımlayıcısı; daha önce verilen oyları iptal etmek için 0 kullanın",

@@ -6,7 +6,6 @@
 			"Gianfranco"
 		]
 	},
-	"apihelp-pollsubmitvote-description": "Modulo dell'API di AJAXPoll",
 	"apihelp-pollsubmitvote-summary": "Modulo API AJAXPoll",
 	"ajaxpoll-desc": "Permette sondaggi tramite AJAX con il tag <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Pagine con un sondaggio",

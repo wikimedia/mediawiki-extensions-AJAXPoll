@@ -9,7 +9,6 @@
 			"אור שפירא"
 		]
 	},
-	"apihelp-pollsubmitvote-description": "מודול API של AJAXPoll",
 	"apihelp-pollsubmitvote-summary": "מודול API של AJAXPoll",
 	"apihelp-pollsubmitvote-param-poll": "מזהה ההצבעה, למשל 832A5FA2C2583A5732B90CEFF658FE25; המזהים נוצרים באמצעות גיבוב של הקלט (אפשרויות השאלה והתשובה, כלומר הטקסט שבין התגים <code>&lt;poll&gt;...&lt;/poll&gt;</code>) עם אלגוריתם גיבוב מסוג MD5 והמרת התוצאה לאותיות רישיות באמצעות הפונקציה <code>strtoupper</code> של PHP",
 	"apihelp-pollsubmitvote-param-answer": "המזהה המספרי של אפשרות התשובה; יש להשתמש ב־0 כדי לבטל הצבעה מוקדמת יותר",
