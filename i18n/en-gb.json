@@ -6,7 +6,6 @@
 			"Piano1forte2"
 		]
 	},
-	"ajaxpoll-your-vote": "You voted for '$1' on $3 at $4. You can change your vote by clicking a different answer below.",
 	"ajaxpoll-submitting": "Please wait: submitting your vote.",
 	"ajaxpoll-view-results-permission": "You are not entitled to view the results of this poll.",
 	"ajaxpoll-view-results-before-vote-permission": "You are not entitled to view the results of this poll before you have voted.",
