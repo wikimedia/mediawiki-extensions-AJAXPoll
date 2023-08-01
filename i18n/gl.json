@@ -22,9 +22,9 @@
 	"ajaxpoll-view-results-before-vote-permission": "Non ten os permisos necesarios para ver os resultados desta enquisa antes de votar.",
 	"ajaxpoll-revoke-vote": "Quero anular o meu voto",
 	"ajaxpoll-vote-revoked": "Anulouse o seu voto.",
-	"right-ajaxpoll-vote": "Pode votar nas enquisas baseadas en AJAX",
-	"right-ajaxpoll-view-results": "Pode ver os resultados das enquisas baseadas en AJAX",
-	"right-ajaxpoll-view-results-before-vote": "Pode ver os resultados das enquisas baseadas en AJAX antes de votar",
+	"right-ajaxpoll-vote": "Votar nas enquisas baseadas en AJAX",
+	"right-ajaxpoll-view-results": "Ver os resultados das enquisas baseadas en AJAX",
+	"right-ajaxpoll-view-results-before-vote": "Ver os resultados das enquisas baseadas en AJAX antes de votar",
 	"action-ajaxpoll-vote": "votar nas enquisas baseadas en AJAX",
 	"action-ajaxpoll-view-results": "ver os resultados das enquisas baseadas en AJAX",
 	"action-ajaxpoll-view-results-before-vote": "ver os resultados das enquisas baseadas en AJAX antes de votar"
