@@ -5,6 +5,10 @@
 			"Toliño"
 		]
 	},
+	"apihelp-pollsubmitvote-summary": "Módulo API de AJAXPoll",
+	"apihelp-pollsubmitvote-param-poll": "Identificador da enquisa, como 832A5FA2C2583A5732B90CEFF658FE25; os identificadores fórmanse co resumo criptográfico da entrada (opcións de pregunta + resposta, é dicir, o texto entre as etiquetas <code>&lt;poll&gt;...&lt;/poll&gt;</code>) mediante o algoritmo MD5 e convertendo o resultado a MAIÚSCULAS coa función <code>strtoupper</code> de PHP",
+	"apihelp-pollsubmitvote-param-answer": "Identificador de opción de resposta numérico; use 0 para revogar un voto emitido previamente",
+	"apihelp-pollsubmitvote-example-1": "Enviar a terceira (3) resposta á enquisa que ten o identificador 832A5FA2C2583A5732B90CEFF658FE25",
 	"ajaxpoll-desc": "Permite as enquisas baseadas en AJAX mediante a etiqueta <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Páxinas cunha enquisa",
 	"ajaxpoll-tracking-category-desc": "A páxina ten unha enquisa (<code>&lt;poll&gt;</code>).",
@@ -18,6 +22,7 @@
 	"ajaxpoll-info": "{{PLURAL:$1|Recibiuse un voto|Recibíronse $1 votos}} desde que a enquisa foi creada o $2.",
 	"ajaxpoll-submitting": "Por favor, agarde durante o envío do seu voto.",
 	"ajaxpoll-vote-permission": "Non pode votar.",
+	"ajaxpoll-readonly": "Non se pode votar nesta enquisa, porque a base de datos está bloqueada polo seguinte motivo: $1.",
 	"ajaxpoll-view-results-permission": "Non ten os permisos necesarios para ver os resultados desta enquisa.",
 	"ajaxpoll-view-results-before-vote-permission": "Non ten os permisos necesarios para ver os resultados desta enquisa antes de votar.",
 	"ajaxpoll-revoke-vote": "Quero anular o meu voto",
