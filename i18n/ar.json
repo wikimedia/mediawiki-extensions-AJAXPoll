@@ -8,12 +8,13 @@
 			"OsamaK",
 			"Zanatos",
 			"ديفيد",
-			"NEHAOUA"
+			"NEHAOUA",
+			"Amire80"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "وحدة AJAXPoll API",
 	"apihelp-pollsubmitvote-summary": "وحدة AJAXPoll API",
-	"apihelp-pollsubmitvote-param-poll": "معرف الاستطلاع، مثل 832A5FA2C2583A5732B90CEFF658FE25، يتم تكوين المعرفات بواسطة تجزئة  الإدخال (سؤال + خيارات الإجابة: أي النص بين وسوم <code>&lt;poll&gt;...&lt;/poll&gt;</code>) مع خوارزمية تجزئة MD5 وتحويل النتيجة إلى أحرف كبيرة باستخدام وظيفة PHP <code>strtoupper</code>",
+	"apihelp-pollsubmitvote-param-poll": "معرف الاستطلاع، مثل 832A5FA2C2583A5732B90CEFF658FE25، يتم تكوين المعرفات بواسطة تجزئة الإدخال (سؤال + خيارات الإجابة: أي النص بين وسوم <code>&lt;poll&gt;...&lt;/poll&gt;</code>) مع خوارزمية تجزئة MD5 وتحويل النتيجة إلى أحرف كبيرة باستخدام وظيفة PHP <code>strtoupper</code>",
 	"apihelp-pollsubmitvote-param-answer": "محدد خيار الإجابة العددي، استخدم 0 لإلغاء تصويت مسبق",
 	"apihelp-pollsubmitvote-example-1": "إرسال الرد الثالث (3) على الاستطلاع الذي يحتوي على المعرف 832A5FA2C2583A5732B90CEFF658FE25",
 	"ajaxpoll-desc": "يسمح بالاستطلاعات المستندة إلى AJAX بالوسم <code>&lt;poll&gt;</code>",
