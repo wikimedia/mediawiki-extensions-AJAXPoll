@@ -28,7 +28,7 @@ class ApiAJAXPollSubmitVote extends ApiBase {
 			!$id || $id === null ||
 			!$answer || $answer === null
 		) {
-			$this->dieUsageMsg( 'missingparam' );
+			$this->dieWithError( 'missingparam' );
 		}
 		*/
 
