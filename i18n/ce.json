@@ -10,5 +10,10 @@
 	"ajaxpoll-vote-update": "Хьан кхаж карлабаьккхина.",
 	"ajaxpoll-vote-add": "Хьан кхаж тӀетоьхна.",
 	"ajaxpoll-percent-votes": "$1% массо кхаьжнех",
-	"ajaxpoll-no-vote": "Дехар до, кхаж лахахь таса."
+	"ajaxpoll-no-vote": "Дехар до, кхаж лахахь таса.",
+	"ajaxpoll-revoke-vote": "Суна сайн кхаж билгалбан лаьа",
+	"ajaxpoll-vote-revoked": "Хьан кхаж йухабаьккхина.",
+	"action-ajaxpoll-vote": "хаттаршкахь кхажтасар AJAX бух тӀехь",
+	"action-ajaxpoll-view-results": "кхажтасаран хиламашка хьажа AJAX бух тӀехь",
+	"action-ajaxpoll-view-results-before-vote": "кхажтасаран хиламашка хьажа AJAX бух тӀехь, кхажтасале"
 }
