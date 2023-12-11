@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"John Reid",
-			"Jack Phoenix"
+			"Jack Phoenix",
+			"CiphriusKane"
 		]
 	},
 	"ajaxpoll-desc": "Allous AJAX-based polls wi <code>&lt;poll&gt;</code> tag",
@@ -15,7 +16,7 @@
 	"ajaxpoll-your-vote": "Ye voted fer \"$1\" oan $3 at $4. Ye can chynge yer vote bi clapin ae different answer ablow.",
 	"ajaxpoll-no-vote": "Please vote ablow.",
 	"ajaxpoll-no-vote-results-after-voting": "Please vote ablow. Results will be shawn whan ye'v voted.",
-	"ajaxpoll-info": "Thaur {{PLURAL:$1|wis yin vote|were $1 votes}} sin the poll wis cræftit oan $2.",
+	"ajaxpoll-info": "There {{PLURAL:$1|wis ane vote|war $1 votes}} sin the poll wis made on $2.",
 	"ajaxpoll-submitting": "Please wait, haunin in yer vote.",
 	"ajaxpoll-vote-permission": "Ye'r na permitit tae vote.",
 	"ajaxpoll-view-results-permission": "Ye'r naw permittit tae see the ootcomes o this poll.",
