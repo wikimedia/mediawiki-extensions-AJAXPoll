@@ -5,9 +5,14 @@
 			"Papapep",
 			"Pgellida",
 			"Pitort",
-			"Qllach"
+			"Qllach",
+			"SMP"
 		]
 	},
+	"apihelp-pollsubmitvote-summary": "Mòdul API de l'AJAXPoll",
+	"apihelp-pollsubmitvote-param-poll": "L'ID de l'enquesta, com ara 832A5FA2C2583A5732B90CEFF658FE25; els ID es formen aplicant un hash MD5 a l'entrada (pregunta + opcions de resposta, és a dir, el text entre les etiquetes <code>&lt;poll&gt;...&lt;/poll&gt;</code>) i convertint el resultat a majúscules amb la funció <code>strtoupper</code> de PHP",
+	"apihelp-pollsubmitvote-param-answer": "Identificador numèric de l'opció de resposta; utilitzeu 0 per a revocar un vot emès anteriorment",
+	"apihelp-pollsubmitvote-example-1": "Envieu la tercera (3) resposta a l'enquesta que té l'ID 832A5FA2C2583A5732B90CEFF658FE25",
 	"ajaxpoll-desc": "Permet les enquestes basades en AJAX amb l'etiqueta <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "Pàgines amb una enquesta",
 	"ajaxpoll-tracking-category-desc": "La pàgina té una <code>&lt;enquesta&gt;</code>.",
@@ -21,13 +26,14 @@
 	"ajaxpoll-info": "Hi ha hagut {{PLURAL:$1|un vot|$1 vots}} des que l'enquesta va ser creada el $2.",
 	"ajaxpoll-submitting": "Espereu si us plau, estem precessant el vostre vot.",
 	"ajaxpoll-vote-permission": "No teniu dret a vot.",
+	"ajaxpoll-readonly": "Aquesta enquesta no es pot votar, la base de dades està bloquejada pel motiu següent: $1.",
 	"ajaxpoll-view-results-permission": "Vostè no té dret a veure els resultats d'aquesta enquesta.",
 	"ajaxpoll-view-results-before-vote-permission": "No es poden veure els resultats de l'enquesta abans d'haver votat.",
 	"ajaxpoll-revoke-vote": "Vull anul·lar el meu vot",
 	"ajaxpoll-vote-revoked": "S'ha anul·lat el vostre vot.",
-	"right-ajaxpoll-vote": "Podeu votar a les enquestes basades en AJAX",
-	"right-ajaxpoll-view-results": "Podeu veure els resultats de les enquestes basades en AJAX",
-	"right-ajaxpoll-view-results-before-vote": "Podeu veure els resultats de les enquestes basades en AJAX abans d'haver votat",
+	"right-ajaxpoll-vote": "Votar a les enquestes basades en AJAX",
+	"right-ajaxpoll-view-results": "Veure els resultats de les enquestes basades en AJAX",
+	"right-ajaxpoll-view-results-before-vote": "Veure els resultats de les enquestes basades en AJAX abans d'haver votat",
 	"action-ajaxpoll-vote": "votar en les enquestes basades en AJAX",
 	"action-ajaxpoll-view-results": "veure els resultats en les enquestes basades en AJAX",
 	"action-ajaxpoll-view-results-before-vote": "veure els resultats de les enquestes basades en AJAX abans d'haver votat"
