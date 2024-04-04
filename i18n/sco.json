@@ -11,7 +11,7 @@
 	"ajaxpoll-tracking-category-desc": "This page haes ae <code>&lt;poll&gt;</code>.",
 	"ajaxpoll-vote-update": "Yer vote haes been updated.",
 	"ajaxpoll-vote-add": "Yer vote haes been eikit.",
-	"ajaxpoll-vote-error": "Thaur wis ae problem wi processing yer vote, please try again.",
+	"ajaxpoll-vote-error": "There wis ae problem wi processin yer vote, please try again.",
 	"ajaxpoll-percent-votes": "$1% o aw votes",
 	"ajaxpoll-your-vote": "Ye voted fer \"$1\" oan $3 at $4. Ye can chynge yer vote bi clapin ae different answer ablow.",
 	"ajaxpoll-no-vote": "Please vote ablow.",
