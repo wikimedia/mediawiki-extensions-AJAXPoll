@@ -4,5 +4,6 @@
 			"Joao Xavier"
 		]
 	},
+	"ajaxpoll-info": "La votado recevis {{PLURAL:$1|1 voto|$1 voti}} depos ke ol kreesis ye la $2.",
 	"ajaxpoll-readonly": "Ca inquesto ne povas recevar voti, pro ke la datumaro blokusesis pro la sequanta motivo: $1."
 }
