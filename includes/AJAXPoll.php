@@ -664,14 +664,9 @@ During the last 48 hours, {$tab2->votes} votes have been given.";
 		// adding a new, UNIQUE INDEX on a new AUTO_INCREMENT field (which the
 		// script also creates) and, of course, finally the new column is populated
 		// with data.
-		// PITFALL WARNING! Do NOT change this to $updater->runMaintenance,
-		// THEY ARE NOT THE SAME THING and this MUST be using addExtensionUpdate
-		// instead for the code to work as desired!
-		// HT Skizzerz
 		$updater->addExtensionUpdate( [
 			'runMaintenance',
 			'MigrateOldAJAXPollUserColumnsToActor',
-			'../maintenance/migrateOldAJAXPollUserColumnsToActor.php'
 		] );
 
 		// 3) drop the now unused column
