@@ -52,7 +52,7 @@ class AJAXPoll {
 		$input = trim( strip_tags( $input ) );
 		$lines = explode( "\n", trim( $input ) );
 
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 
 		/**
 		 * Register poll in the database
@@ -135,7 +135,7 @@ class AJAXPoll {
 	}
 
 	private static function buildStats() {
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 
 		$tab = $dbr->selectRow(
 			'ajaxpoll_vote',
@@ -198,7 +198,7 @@ During the last 48 hours, {$tab2->votes} votes have been given.";
 			return self::buildHTML( $id, $user, $readonly, '' );
 		}
 
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 
 		if ( $answer != 0 ) {
 			$answer = ++$answer;
@@ -303,7 +303,7 @@ During the last 48 hours, {$tab2->votes} votes have been given.";
 	private static function buildHTML( $id, $user, $readonly, $lines = '', $extra_from_ajax = '' ) {
 		global $wgTitle, $wgLang;
 
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 
 		$row = $dbr->selectRow(
 			'ajaxpoll_info',
