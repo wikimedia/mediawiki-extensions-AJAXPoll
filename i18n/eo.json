@@ -3,8 +3,7 @@
 		"authors": [
 			"ArnoLagrange",
 			"KuboF",
-			"Mirin",
-			"Amire80"
+			"Mirin"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "API-modulo AJAXPoll",
