@@ -6,7 +6,7 @@
 		]
 	},
 	"apihelp-pollsubmitvote-description": "API-modul AjaxPoll",
-	"apihelp-pollsubmitvote-summary": "API-modul AjaxPoll",
+	"apihelp-pollsubmitvote-summary": "Modul API-ja AjaxPoll",
 	"apihelp-pollsubmitvote-param-poll": "ID ankete, npr. 832A5FA2C2583A5732B90CEFF658FE25; ID-ji so oblikovani z zgoščevanjem vnosa (možnosti vprašanja + odgovora, tj. besedila med oznakama <code>&lt;poll&gt;...&lt;/poll&gt;</code>) z algoritmom zgoščevanja MD5 in pretvorbo rezultata v VELIKE ČRKE s PHP-jevo funkcijo <code>strtoupper</code>",
 	"apihelp-pollsubmitvote-param-answer": "Številski identifikator možnosti odgovora; uporabite 0 za preklic predhodno oddanega glasu",
 	"apihelp-pollsubmitvote-example-1": "Prenese tretji (3) odgovor na anketo z ID 832A5FA2C2583A5732B90CEFF658FE25",
