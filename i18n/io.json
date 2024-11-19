@@ -4,6 +4,7 @@
 			"Joao Xavier"
 		]
 	},
+	"ajaxpoll-tracking-category-desc": "Ca pagino kontenas <code>&lt;poll&gt;</code>.",
 	"ajaxpoll-info": "La votado recevis {{PLURAL:$1|1 voto|$1 voti}} depos ke ol kreesis ye la $2.",
 	"ajaxpoll-readonly": "Ca inquesto ne povas recevar voti, pro ke la datumaro blokusesis pro la sequanta motivo: $1."
 }
