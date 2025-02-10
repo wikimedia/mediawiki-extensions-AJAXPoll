@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"McDutchie",
-			"Xuacu"
+			"Xuacu",
+			"YoaR"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "Módulu de la API de AJAXPoll",
-	"apihelp-pollsubmitvote-summary": "Módulu de la API de AJAXPoll",
+	"apihelp-pollsubmitvote-summary": "Módulu de l'API de AJAXPoll",
 	"apihelp-pollsubmitvote-param-poll": "ID de la encuesta, como 832A5FA2C2583A5732B90CEFF658FE25; los ID fórmense col hash de la entrada (entruga + opciones de respuesta, i.e. el testu ente les etiquetes <code>&lt;poll&gt;...&lt;/poll&gt;</code>) col algoritmu de hash MD5 y convirtiendo'l resultáu a MAYÚSCULES cola función <code>strtoupper</code> de PHP",
 	"apihelp-pollsubmitvote-param-answer": "Númberu identificador d'opción de respuesta; usa 0 p'anular un votu emitíu anteriormente",
 	"apihelp-pollsubmitvote-example-1": "Unviar la tercer (3) respuesta a la encuesta que tien la ID 832A5FA2C2583A5732B90CEFF658FE25",
