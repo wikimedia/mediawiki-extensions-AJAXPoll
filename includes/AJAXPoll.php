@@ -371,7 +371,7 @@ During the last 48 hours, {$tab2->votes} votes have been given.";
 					$wgLang->timeanddate( $ts, true /* adjust? */ ),
 					$wgLang->date( $ts, true /* adjust? */ ),
 					$wgLang->time( $ts, true /* adjust? */ )
-				)->escaped();
+				)->text();
 				$userVoted = true;
 			}
 		}
@@ -411,39 +411,41 @@ During the last 48 hours, {$tab2->votes} votes have been given.";
 			// or has not voted, or is entitled to vote
 
 			$canRevoke = false;
+			$messages = [];
 
 			if ( $user->isAllowed( 'ajaxpoll-vote' ) ) {
 				if ( isset( $row->poll_answer ) ) {
-					$message = $ourLastVoteDate;
+					$messages[] = $ourLastVoteDate;
 					$canRevoke = true;
 					$lines[] = wfMessage( 'ajaxpoll-revoke-vote' )->text();
 				} else {
 					if ( $showResultsBeforeVoting ) {
-						$message = wfMessage( 'ajaxpoll-no-vote' )->text();
+						$messages[] = wfMessage( 'ajaxpoll-no-vote' )->text();
 					} else {
-						$message = wfMessage( 'ajaxpoll-no-vote-results-after-voting' )->text();
+						$messages[] = wfMessage( 'ajaxpoll-no-vote-results-after-voting' )->text();
 					}
 				}
 			} else {
-				$message = wfMessage( 'ajaxpoll-vote-permission' )->text();
+				$messages[] = wfMessage( 'ajaxpoll-vote-permission' )->text();
 			}
 
 			if ( !$user->isAllowed( 'ajaxpoll-view-results' ) ) {
-				$message .= '<br/>' . wfMessage( 'ajaxpoll-view-results-permission' )->text();
+				$messages[] = wfMessage( 'ajaxpoll-view-results-permission' )->text();
 			} elseif ( !$userVoted
 				&& !$user->isAllowed( 'ajaxpoll-view-results-before-vote' )
 				&& !$showResultsBeforeVoting
 			) {
 				if ( $user->isAllowed( 'ajaxpoll-vote' ) ) {
-					$message .= '<br/>' . wfMessage( 'ajaxpoll-view-results-before-vote-permission' )->text();
+					$messages[] = wfMessage( 'ajaxpoll-view-results-before-vote-permission' )->text();
 				} else {
-					$message .= '<br/>' . wfMessage( 'ajaxpoll-view-results-permission' )->text();
+					$messages[] = wfMessage( 'ajaxpoll-view-results-permission' )->text();
 				}
 			}
 
+			$escapedMessages = array_map( [ self::class, 'escapeContent' ], $messages );
 			$ret .= Html::rawElement( 'div',
 				[ 'class' => 'ajaxpoll-misc' ],
-				$message
+				implode( '<br/>', $escapedMessages )
 			);
 
 			$ret .= Html::rawElement( 'form',
