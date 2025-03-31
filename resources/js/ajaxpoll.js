@@ -1,5 +1,3 @@
-/* eslint-disable no-implicit-globals */
-
 var ajaxpollTmp;
 
 var setupEventHandlers = function () {
