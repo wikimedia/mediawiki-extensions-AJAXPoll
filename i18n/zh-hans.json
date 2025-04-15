@@ -10,7 +10,8 @@
 			"VulpesVulpes825",
 			"Yfdyh000",
 			"Zhangjintao",
-			"Zoglun"
+			"Zoglun",
+			"Zorua Fox"
 		]
 	},
 	"apihelp-pollsubmitvote-summary": "AJAXPoll API模块",
@@ -23,7 +24,7 @@
 	"ajaxpoll-vote-update": "已更新您的投票。",
 	"ajaxpoll-vote-add": "已计入您的投票。",
 	"ajaxpoll-vote-error": "处理您的投票出现问题，请再试一次。",
-	"ajaxpoll-percent-votes": "所有选票的$1%",
+	"ajaxpoll-percent-votes": "占所有选票的 $1% 。",
 	"ajaxpoll-your-vote": "您于$3 $4给“$1”投了票。您可以点击下面的不同答案更改您的投票。",
 	"ajaxpoll-no-vote": "请在下面投票。",
 	"ajaxpoll-no-vote-results-after-voting": "请在下面投票。当您投票后，结果将会显示。",
