@@ -118,13 +118,8 @@ class AJAXPoll {
 				$ret = self::buildStats();
 				break;
 			default:
-				if ( method_exists( $parser, 'getUserIdentity' ) ) {
-					// MW 1.36+
-					$user = MediaWikiServices::getInstance()
-						->getUserFactory()->newFromUserIdentity( $parser->getUserIdentity() );
-				} else {
-					$user = $parser->getUser();
-				}
+				$user = MediaWikiServices::getInstance()
+					->getUserFactory()->newFromUserIdentity( $parser->getUserIdentity() );
 				$ret = Html::rawElement( 'div',
 					[
 						'id' => 'ajaxpoll-container-' . $id
