@@ -3,7 +3,8 @@
 		"authors": [
 			"Ansumang",
 			"Innocentbunny",
-			"Jayprakash12345"
+			"Jayprakash12345",
+			"Saurmandal"
 		]
 	},
 	"ajaxpoll-desc": "<code>&lt;चुनाव&gt;</code> टैग के साथ AJAX आधारित चुनाव के लिए अनुमति है",
@@ -23,10 +24,10 @@
 	"ajaxpoll-view-results-before-vote-permission": "आप इस पोल के परिणाम को अपने मतदान से पहले देखने के लिए हकदार नहीं हैं।",
 	"ajaxpoll-revoke-vote": "मैं अपने वोट रद्द करना चाहते हु",
 	"ajaxpoll-vote-revoked": "आपका वोट रद्द कर दिया गया।",
-	"right-ajaxpoll-vote": "क्या AJAX आधारित चुनाव में मतदान कर सकते हैं",
-	"right-ajaxpoll-view-results": "क्या AJAX आधारित चुनाव में परिणाम देख सकते हैं",
-	"right-ajaxpoll-view-results-before-vote": "मतदान होने से पहले क्या AJAX आधारित चुनाव में परिणाम देख सकते हैं",
-	"action-ajaxpoll-vote": "AJAX आधारित चुनाव में मतदान",
-	"action-ajaxpoll-view-results": "AJAX आधारित चुनाव में परिणाम देखें",
-	"action-ajaxpoll-view-results-before-vote": "मतदान होने से पहले AJAX आधारित चुनाव में परिणाम देखें"
+	"right-ajaxpoll-vote": "AJAX-आधारित चुनाव में मतदान करना",
+	"right-ajaxpoll-view-results": "AJAX-आधारित चुनाव में परिणाम देखना",
+	"right-ajaxpoll-view-results-before-vote": "मतदान करने से पहले AJAX-आधारित चुनाव में परिणाम देखना",
+	"action-ajaxpoll-vote": "AJAX-आधारित चुनाव में मतदान करने",
+	"action-ajaxpoll-view-results": "AJAX-आधारित चुनाव में परिणाम देखने",
+	"action-ajaxpoll-view-results-before-vote": "मतदान करने से पहले AJAX-आधारित चुनाव में परिणाम देखने"
 }
