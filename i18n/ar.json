@@ -9,7 +9,7 @@
 			"Zanatos",
 			"ديفيد",
 			"NEHAOUA",
-			"Amire80"
+			"Mohammed Qays"
 		]
 	},
 	"apihelp-pollsubmitvote-description": "وحدة AJAXPoll API",
@@ -20,7 +20,7 @@
 	"ajaxpoll-desc": "يسمح بالاستطلاعات المستندة إلى AJAX بالوسم <code>&lt;poll&gt;</code>",
 	"ajaxpoll-tracking-category": "الصفحات مع استطلاع رأي",
 	"ajaxpoll-tracking-category-desc": "تحتوي الصفحة على <code>&lt;poll&gt;</code>.",
-	"ajaxpoll-vote-update": "تم تحديث صوتك.",
+	"ajaxpoll-vote-update": "حُدثَ تصوتك.",
 	"ajaxpoll-vote-add": "أُضيف تصويتك",
 	"ajaxpoll-vote-error": "حدثت مشكلة في معالجة تصويتك; تُرجَى المحاولة مرة أخرى.",
 	"ajaxpoll-percent-votes": "$1% من جميع الأصوات",
