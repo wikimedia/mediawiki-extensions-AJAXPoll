@@ -35,7 +35,7 @@ class MigrateOldAJAXPollUserColumnsToActor extends LoggedUpdateMaintenance {
 	 *
 	 * @return string
 	 */
-	protected function updateSkippedMessage() {
+	public function updateSkippedMessage() {
 		return 'ajaxpoll_vote has already been migrated to use the actor column.';
 	}
 
