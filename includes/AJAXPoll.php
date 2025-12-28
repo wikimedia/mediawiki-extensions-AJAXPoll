@@ -575,7 +575,7 @@ During the last 48 hours, {$tab2->votes} votes have been given.";
 				}
 			}
 
-			$ret .= Xml::closeElement( 'form' );
+			$ret .= Html::closeElement( 'form' );
 
 			// Display information about the poll (creation date, amount of votes)
 			$pollSummary = wfMessage(
