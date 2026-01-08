@@ -3,7 +3,8 @@
 		"authors": [
 			"Beta16",
 			"Dansita",
-			"Gianfranco"
+			"Gianfranco",
+			"Dream Indigo"
 		]
 	},
 	"apihelp-pollsubmitvote-summary": "Modulo API AJAXPoll",
@@ -21,8 +22,8 @@
 	"ajaxpoll-submitting": "Attendere prego, stiamo elaborando il tuo voto.",
 	"ajaxpoll-vote-permission": "Non hai diritto di voto.",
 	"ajaxpoll-readonly": "Non si può votare per questo sondaggio, il database è bloccato per la seguente ragione: $1.",
-	"ajaxpoll-view-results-permission": "Non sei autorizzato a visualizzare i risultati di questo sondaggio.",
-	"ajaxpoll-view-results-before-vote-permission": "Non sei autorizzato a visualizzare i risultati di questo sondaggio prima di aver votato.",
+	"ajaxpoll-view-results-permission": "Non hai l'autorizzazione di visualizzare i risultati di questo sondaggio.",
+	"ajaxpoll-view-results-before-vote-permission": "Non hai l'autorizzazione di visualizzare i risultati di questo sondaggio prima di aver votato.",
 	"ajaxpoll-revoke-vote": "Voglio revocare il mio voto",
 	"ajaxpoll-vote-revoked": "Hai revocato con successo il tuo voto.",
 	"right-ajaxpoll-vote": "Vota nei sondaggi tramite AJAX",
