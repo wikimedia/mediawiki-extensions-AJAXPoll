@@ -3,7 +3,8 @@
 		"authors": [
 			"Matěj Suchánek",
 			"Robby",
-			"Soued031"
+			"Soued031",
+			"Volvox"
 		]
 	},
 	"ajaxpoll-desc": "Erlaabt AJAX-baséiert Ëmfroe mam Tag <code>&lt;poll&gt;</code>",
@@ -11,7 +12,7 @@
 	"ajaxpoll-tracking-category-desc": "D'Säit huet eng <code>&lt;poll&gt;</code>.",
 	"ajaxpoll-vote-update": "Är Stëmm gouf aktualiséiert.",
 	"ajaxpoll-vote-add": "Är Stëmm gouf dobäigesat.",
-	"ajaxpoll-vote-error": "Et gouf e Probleem beim Verschaffe vun Ärer Stëmm, probéiert et wgl. nach eng kéier.",
+	"ajaxpoll-vote-error": "Et gouf e Problem beim Verschaffe vun Ärer Stëmm, probéiert wgl. nach eng Kéier.",
 	"ajaxpoll-percent-votes": "$1% vun alle Stëmmen",
 	"ajaxpoll-your-vote": "Dir hutt den $3 ëm $4 fir \"$1\" gestëmmt. Dir kënnt Är Stëmm änneren andeem Dir op eng aner Äntwert hei drënner klickt.",
 	"ajaxpoll-no-vote": "Stëmmt wgl. hei drënner mat of.",
