@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Aca",
 			"Winston Sung"
 		]
 	},
@@ -13,8 +14,8 @@
 	"ajaxpoll-vote-error": "Došlo je do greške pri beleženju vašeg glasa. Pokušajte ponovo.",
 	"ajaxpoll-percent-votes": "$1% od svih glasova",
 	"ajaxpoll-your-vote": "Već ste glasali za \"$1\" na $3 u $4; možete promijeniti glas klikom na jedan od dolje navedenih odgovora.",
-	"ajaxpoll-no-vote": "Molimo da glasate ispod.",
-	"ajaxpoll-no-vote-results-after-voting": "Molimo dajte Vaš glas ispod. Rezultat će biti prikazan nakon glasovanja.",
+	"ajaxpoll-no-vote": "Glasajte ispod.",
+	"ajaxpoll-no-vote-results-after-voting": "Dajte Vaš glas ispod. Rezultat će biti prikazan nakon glasanja.",
 	"ajaxpoll-info": "Otkad je napravljena anketa ($2) {{PLURAL:$1|dan jedan glas|dano je $1 glasa}}.",
 	"ajaxpoll-submitting": "Sačekajte, zavodim vaš glas.",
 	"ajaxpoll-vote-permission": "Ne možete da glasate.",
