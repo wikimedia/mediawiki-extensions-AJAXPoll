@@ -2,6 +2,7 @@
 
 use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Request\WebRequest;
 
 /**
  * AJAX Poll class
@@ -183,9 +184,10 @@ During the last 48 hours, {$tab2->votes} votes have been given.";
 	 * @param int $id
 	 * @param string $answer
 	 * @param User $user
+	 * @param WebRequest $request
 	 * @return bool
 	 */
-	public static function submitVote( $id, $answer, User $user ) {
+	public static function submitVote( $id, $answer, User $user, $request ) {
 		$services = MediaWikiServices::getInstance();
 		$readonly = $services->getReadOnlyMode()->getReason();
 
@@ -215,7 +217,7 @@ During the last 48 hours, {$tab2->votes} votes have been given.";
 			if ( $row->count > 0 ) {
 				$pollContainerText = self::updateVote( $dbw, $id, $user, $answer );
 			} else {
-				$pollContainerText = self::addVote( $dbw, $id, $user, $answer );
+				$pollContainerText = self::addVote( $dbw, $id, $user, $answer, $request );
 			}
 		} else { // revoking a vote
 			$pollContainerText = self::revokeVote( $dbw, $id, $user );
@@ -236,17 +238,17 @@ During the last 48 hours, {$tab2->votes} votes have been given.";
 	 * @param string $id Poll ID
 	 * @param User $user User (object) who is voting
 	 * @param int $answer Answer option #
+	 * @param WebRequest $request
 	 * @return string Name of an i18n msg to show to the user
 	 */
-	public static function addVote( $dbw, $id, $user, $answer ) {
-		global $wgRequest;
+	public static function addVote( $dbw, $id, $user, $answer, $request ) {
 		$insertQuery = $dbw->insert(
 			'ajaxpoll_vote',
 			[
 				'poll_id' => $id,
 				'poll_actor' => MediaWikiServices::getInstance()->getActorNormalization()
 					->acquireActorId( $user, $dbw ),
-				'poll_ip' => $wgRequest->getIP(),
+				'poll_ip' => $request->getIP(),
 				'poll_answer' => $answer,
 				'poll_date' => $dbw->timestamp( wfTimestampNow() )
 			],
