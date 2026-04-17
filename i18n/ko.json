@@ -5,6 +5,7 @@
 			"Hym411",
 			"Priviet",
 			"Revi",
+			"Tensama0415",
 			"Theshinster123",
 			"Yjs5497",
 			"Ykhwong",
@@ -12,6 +13,7 @@
 		]
 	},
 	"apihelp-pollsubmitvote-summary": "AJAXPoll API 모듈",
+	"apihelp-pollsubmitvote-example-1": "ID가 832A5FA2C2583A5732B90CEFF658FE25인 설문조사에 세 번째(3) 답변을 제출",
 	"ajaxpoll-desc": "<code>&lt;poll&gt;</code> 태그로 AJAX 기반 투표를 할 수 있습니다",
 	"ajaxpoll-tracking-category": "설문 조사 문서",
 	"ajaxpoll-tracking-category-desc": "이 문서에 <code>&lt;poll&gt;</code>이 있습니다.",
