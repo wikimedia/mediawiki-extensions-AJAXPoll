@@ -13,6 +13,8 @@
 		]
 	},
 	"apihelp-pollsubmitvote-summary": "AJAXPoll API 모듈",
+	"apihelp-pollsubmitvote-param-poll": "설문조사 ID(예: 832A5FA2C2583A5732B90CEFF658FE25)입니다. ID는 입력값(질문 + 답변 옵션, 즉 <code>&lt;poll&gt;...&lt;/poll&gt;</code> 태그 사이의 텍스트)을 MD5 해싱 알고리즘으로 해싱한 후 PHP의 <code>strtoupper</code> 함수를 사용, 결과를 대문자로 변환하여 생성됩니다.",
+	"apihelp-pollsubmitvote-param-answer": "숫자로 된 답변 옵션 식별자입니다. 이전에 투표한 내용을 취소하려면 0을 사용하세요",
 	"apihelp-pollsubmitvote-example-1": "ID가 832A5FA2C2583A5732B90CEFF658FE25인 설문조사에 세 번째(3) 답변을 제출",
 	"ajaxpoll-desc": "<code>&lt;poll&gt;</code> 태그로 AJAX 기반 투표를 할 수 있습니다",
 	"ajaxpoll-tracking-category": "설문 조사 문서",
