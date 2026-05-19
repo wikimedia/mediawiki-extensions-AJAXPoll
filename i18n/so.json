@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"apihelp-pollsubmitvote-summary": "Module API AJAXPoll",
+	"apihelp-pollsubmitvote-param-poll": "Aqoonsiga Ra'yi-ururinta, sida 832A5FA2C2583A5732B90CEFF658FE25; Aqoonsiyada (IDs) waxaa lagu sameeyaa in la surto (hash) xogta la geliyey (su'aasha + xulashooyinka jawaabta, kuwaas oo ah qoraalka u dhaxeeya sumadaha <code>&lt;poll&gt;...&lt;/poll&gt;</code>) iyadoo la isticmaalayo hab-algorithm-ka MD5 hashing, ka dibna natiijada loo beddelo FAR WAAWEYN iyadoo la adeegsanayo shaqada <code>strtoupper</code> ee PHP",
+	"apihelp-pollsubmitvote-param-answer": "Aqoonsiga nambarka ee xulashada jawaabta; isticmaal 0 si aad u laabato cod horey loo dhiibtay",
+	"apihelp-pollsubmitvote-example-1": "Gudbi jawaabta saddexaad (3) ee ra'yi-ururinta leh aqoonsiga 832A5FA2C2583A5732B90CEFF658FE25",
+	"ajaxpoll-desc": "Wuxuu oggolaanayaa ra'yi-ururinno ku salaysan AJAX iyadoo la adeegsanayo sumadda <code>&lt;poll&gt;</code>",
+	"ajaxpoll-tracking-category": "Bogag leh ra'yi-ururin",
+	"ajaxpoll-tracking-category-desc": "Bogu wuxuu leeyahay <code>&lt;poll&gt;</code>.",
+	"ajaxpoll-vote-update": "Codkaagii waa la cusboonaysiiyey.",
+	"ajaxpoll-vote-add": "Codkaagii waa lagu daray.",
+	"ajaxpoll-vote-error": "Waxaa jirtay dhibaato xog shaqaynta codkaaga ah, fadlan isku day markale.",
+	"ajaxpoll-percent-votes": "$1% ee dhammaan codadka",
+	"ajaxpoll-your-vote": "Waxaad u codaysay \"$1\" taariikhda $3 markay ahayd $4. Waxaad ku beddeli kartaa codkaaga adoo gujinaya jawaab ka duwan kuwa hoose.",
+	"ajaxpoll-no-vote": "Fadlan hoos ka codee.",
+	"ajaxpoll-no-vote-results-after-voting": "Fadlan hoos ka codee. Natiijooyinka waxaa la tusi doonaa marka aad codaysid ka dib.",
+	"ajaxpoll-info": "Waxaa jirey {{PLURAL:$1|hal cod|$1 codad ah}} tan iyo markii ra'yi-ururinta la abuuray $2.",
+	"ajaxpoll-submitting": "Fadlan sug, waxaa la gudbinayaa codkaaga.",
+	"ajaxpoll-vote-permission": "Xaq uma lihid inaad codeysid.",
+	"ajaxpoll-readonly": "Ra'yi ururintan lama codeyn karo, xogta kaydka waa la xiray sababta soo socota awgeed: $1.",
+	"ajaxpoll-view-results-permission": "Xaq uma lihid inaad aragto natiijooyinka ra'yi ururintan.",
+	"ajaxpoll-view-results-before-vote-permission": "Xaq uma lihid inaad aragto natiijooyinka ra'yi ururintan ka hor inta aadan codeyn.",
+	"ajaxpoll-revoke-vote": "Waxaan rabaa inaan ka laabto codkayga",
+	"ajaxpoll-vote-revoked": "Codkaagii waa laga laabtay.",
+	"right-ajaxpoll-vote": "U codee ra'yi ururinta ku salaysan AJAX",
+	"right-ajaxpoll-view-results": "Arag natiijooyinka ra'yi-ururinta ku salaysan AJAX",
+	"right-ajaxpoll-view-results-before-vote": "Arag natiijooyinka ra'yi ururinta ku salaysan AJAX ka hor inta aan la codeyn",
+	"action-ajaxpoll-vote": "U codee ra'yi ururinta ku salaysan AJAX",
+	"action-ajaxpoll-view-results": "Arag natiijooyinka ra'yi ururinta ku salaysan AJAX",
+	"action-ajaxpoll-view-results-before-vote": "Arag natiijooyinka ra'yi ururinta ku salaysan AJAX ka hor inta aan la codeyn"
+}
