@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"TomášPolonec",
-			"Vlad5250"
+			"Vlad5250",
+			"Wizzard"
 		]
 	},
 	"ajaxpoll-vote-update": "Váš hlas bol aktualizovaný.",
@@ -18,9 +19,9 @@
 	"ajaxpoll-view-results-before-vote-permission": "Nie ste oprávnený prezerať si výsledky prieskumu pred tým, ako odošlete svoj hlas.",
 	"ajaxpoll-revoke-vote": "Chcem odvolať svoj hlas",
 	"ajaxpoll-vote-revoked": "Váš hlas bol odvolaný.",
-	"right-ajaxpoll-vote": "Môže hlasovať v prieskumoch v AJAX-e.",
-	"right-ajaxpoll-view-results": "Môže prezerať výsledky prieskumov v AJAX-e.",
-	"right-ajaxpoll-view-results-before-vote": "Môže zobraziť výsledky prieskumu v AJAX-e pred odoslaním svojho hlasu",
+	"right-ajaxpoll-vote": "Hlasovanie v prieskumoch založených na AJAX-e",
+	"right-ajaxpoll-view-results": "Zobrazenie výsledkov prieskumov založených na AJAX-e",
+	"right-ajaxpoll-view-results-before-vote": "Zobrazenie výsledkov prieskumov založených na AJAX-e pred hlasovaním",
 	"action-ajaxpoll-vote": "hlasovať v prieskumoch v AJAX-e",
 	"action-ajaxpoll-view-results": "zobraziť výsledky prieskumov v AJAX-e",
 	"action-ajaxpoll-view-results-before-vote": "zobraziť výsledky prieskumov v AJAX-e pred odoslaním svojho hlasu"
