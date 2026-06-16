@@ -1,11 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
-	"ajaxpoll-tracking-category": "رای شمېر لرونکي مخونه",
-	"ajaxpoll-tracking-category-desc": "دا مخ د <code>&lt;poll&gt;</code> يو کوډ لري.",
+	"ajaxpoll-tracking-category": "اندغوښتنې لرونکي مخونه",
+	"ajaxpoll-tracking-category-desc": "دا مخ <code>&lt;poll&gt;</code> لري",
+	"ajaxpoll-vote-update": "ستاسې رايه هم‌مهاله شوه.",
 	"ajaxpoll-vote-add": "ستاسې رايه ورگډه شوه.",
+	"ajaxpoll-vote-error": "ستاسو د رايې د پروسس کولو کې يوه ستونزه وه مهرباني وکړئ بیا هڅه وکړئ.",
 	"ajaxpoll-percent-votes": "$1% د ټولو رايو څخه"
 }
