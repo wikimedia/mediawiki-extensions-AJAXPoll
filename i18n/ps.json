@@ -10,5 +10,7 @@
 	"ajaxpoll-vote-update": "ستاسې رايه هم‌مهاله شوه.",
 	"ajaxpoll-vote-add": "ستاسې رايه ورگډه شوه.",
 	"ajaxpoll-vote-error": "ستاسو د رايې د پروسس کولو کې يوه ستونزه وه مهرباني وکړئ بیا هڅه وکړئ.",
-	"ajaxpoll-percent-votes": "$1% د ټولو رايو څخه"
+	"ajaxpoll-percent-votes": "$1% د ټولو رايو څخه",
+	"ajaxpoll-revoke-vote": "خپله رايه بېرته اخيستل غواړم",
+	"ajaxpoll-vote-revoked": "ستاسې رايه بېرته واخيستل شوه."
 }
