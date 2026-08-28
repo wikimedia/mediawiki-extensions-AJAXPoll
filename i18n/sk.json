@@ -6,7 +6,16 @@
 			"Wizzard"
 		]
 	},
+	"apihelp-pollsubmitvote-summary": "Modul API rozšírenia AJAXPoll",
+	"apihelp-pollsubmitvote-param-poll": "ID ankety, napríklad 832A5FA2C2583A5732B90CEFF658FE25; ID vznikajú zahašovaním vstupu (otázka + možnosti odpovede, t. j. text medzi značkami <code>&lt;poll&gt;...&lt;/poll&gt;</code>) algoritmom MD5 a prevodom výsledku na VEĽKÉ PÍSMENÁ funkciou PHP <code>strtoupper</code>",
+	"apihelp-pollsubmitvote-param-answer": "Číselný identifikátor možnosti odpovede; hodnotou 0 zrušíte predtým odovzdaný hlas",
+	"apihelp-pollsubmitvote-example-1": "Odoslať tretiu (3) odpoveď v ankete s ID 832A5FA2C2583A5732B90CEFF658FE25",
+	"ajaxpoll-desc": "Umožňuje ankety založené na AJAXe pomocou značky <code>&lt;poll&gt;</code>",
+	"ajaxpoll-tracking-category": "Stránky s anketou",
+	"ajaxpoll-tracking-category-desc": "Stránka obsahuje <code>&lt;poll&gt;</code>.",
 	"ajaxpoll-vote-update": "Váš hlas bol aktualizovaný.",
+	"ajaxpoll-vote-add": "Váš hlas bol pridaný.",
+	"ajaxpoll-vote-error": "Pri spracovaní vášho hlasu nastal problém, skúste to, prosím, znova.",
 	"ajaxpoll-percent-votes": "$1% všetkých hlasov",
 	"ajaxpoll-your-vote": "Už ste hlasovali za „$1“ dňa $3 v čase $4. Svoj hlas môžete zmeniť výberom inej odpovede nižšie.",
 	"ajaxpoll-no-vote": "Prosím, hlasujte nižšie.",
