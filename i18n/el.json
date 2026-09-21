@@ -5,6 +5,7 @@
 			"Jimkats",
 			"NikosLikomitros",
 			"Nikosgranturismogt",
+			"PrinceAzuka134",
 			"Protnet",
 			"ZaDiak",
 			"Περίεργος"
@@ -22,6 +23,7 @@
 	"ajaxpoll-info": "{{PLURAL:$1|Υπήρξε μια ψήφος|Υπήρξαν $1 ψήφοι}} από την έναρξη της δημοσκόπησης στις $2.",
 	"ajaxpoll-submitting": "Παρακαλούμε περιμένετε, η ψήφος σας υποβάλλεται.",
 	"ajaxpoll-vote-permission": "Δεν έχετε δικαίωμα να ψηφίσετε.",
+	"ajaxpoll-readonly": "Δεν είναι δυνατή η ψηφοφορία σε αυτήν την δημοσκόπηση, η βάση δεδομένων είναι κλειδωμένη για τον ακόλουθο λόγο: $1 .",
 	"ajaxpoll-revoke-vote": "Θέλω να ανακαλέσω την ψήφο μου",
 	"ajaxpoll-vote-revoked": "Η ψήφος σας έχει ανακληθεί.",
 	"right-ajaxpoll-vote": "Ψήφος σε δημοσκοπήσεις βασισμένες σε AJAX"
